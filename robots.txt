@@ -1,0 +1,1 @@
+Sitemap: https://lter.github.io/eco-data-synth-primer/sitemap.xml
