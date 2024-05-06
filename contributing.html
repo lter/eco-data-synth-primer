@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ecological Data Synthesis: A Primer on Essential Methods - Home</title>
+<title>Ecological Data Synthesis: A Primer on Essential Methods - Editing the Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./home.html" aria-current="page"> 
+    <a class="nav-link" href="./home.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -128,7 +128,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#method-1-through-github" id="toc-method-1-through-github" class="nav-link" data-scroll-target="#method-1-through-github">Method 1: Through GitHub</a></li>
+  <li><a href="#method-2-through-rstudio" id="toc-method-2-through-rstudio" class="nav-link" data-scroll-target="#method-2-through-rstudio">Method 2: Through RStudio</a></li>
+  <li><a href="#method-3-through-others" id="toc-method-3-through-others" class="nav-link" data-scroll-target="#method-3-through-others">Method 3: Through Others</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -137,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">Editing the Website</h1>
 </div>
 
 
@@ -156,9 +161,33 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Under construction, check back soon!</p>
+<p>This page houses the beginnings of our ‘how to edit the website’ instructions. Note that this page is <u>primarily for internal use</u> so it assumes you already are a member of the group and have the necessary access to the source GitHub repository. There are a few viable options for contributing to this website. Choose the method that aligns best with your skills and/or the one that sparks the most joy for you.</p>
+<section id="method-1-through-github" class="level3">
+<h3 class="anchored" data-anchor-id="method-1-through-github">Method 1: Through GitHub</h3>
+<p>We’ve done some fancy behind-the-scenes wrangling with GitHub to support this method (see <a href="https://quarto.org/docs/publishing/github-pages.html#publish-command">here</a> if that is of interest) but the key take-away is that edits made directly in GitHub should “just work.” There is however a small caveat to this option: <u>you can only do this if the page you’re editing has <em>no</em> “code chunks”</u>. The processing of code chunks is handled slightly differently from ‘normal’ text and requires a local computer. Even if your changes don’t affect code chunks directly it only matters whether or not there are code chunks in the page at all. Hopefully that’s not too limiting of a caveat!</p>
+<p>Here’s what you’ll need to do beforehand:</p>
+<ol type="1">
+<li>Create a <a href="https://github.com/">GitHub</a> account</li>
+<li>Make sure you have edit access to <a href="https://github.com/lter/eco-data-synth-primer">the GitHub repository</a> where the materials live</li>
+</ol>
+</section>
+<section id="method-2-through-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="method-2-through-rstudio">Method 2: Through RStudio</h3>
+<p>If you’re more confident with a Git-based workflow, you can use RStudio (or any comparable platform) to make edits to the website.</p>
+<p>Here’s what you’ll need to do beforehand:</p>
+<ol type="1">
+<li>Do the <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/#workshop-preparation">five setup steps</a> in this GitHub workshop</li>
+<li>Install <a href="https://quarto.org/docs/get-started/">Quarto</a> on your computer</li>
+<li>Make sure you have edit access to <a href="https://github.com/lter/eco-data-synth-primer">the GitHub repository</a> where the materials live</li>
+<li>Clone that repository to your computer</li>
+</ol>
+</section>
+<section id="method-3-through-others" class="level3">
+<h3 class="anchored" data-anchor-id="method-3-through-others">Method 3: Through Others</h3>
+<p>If you’d prefer, you can write the text that you’d like to include in the text editing software (e.g, Microsoft Word, Google Docs, etc.) of your choice. Once you’ve written it there, send it to someone else on the team who can use one of the preceding methods to get that content integrated. Ideally, hosting through GitHub (and creating this document) empowers you to make edits on your own behalf but if that feels out of reach in this moment <strong>we absolutely still want your insight</strong> so please don’t hesitate to go this direction if necessary.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
