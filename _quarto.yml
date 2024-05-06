@@ -29,8 +29,8 @@ format:
     code-line-numbers: false
     code-copy: hover
     theme: 
-      light: light.scss
-      dark: dark.scss
+      light: theme_light.scss
+      dark: theme_dark.scss
     mainfont: Roboto
     toc: true
     link-external-newwindow: true
