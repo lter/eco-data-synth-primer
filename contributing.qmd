@@ -15,10 +15,49 @@ Here's what you'll need to do beforehand:
 1. Create a [GitHub](https://github.com/) account
 2. Make sure you have edit access to [the GitHub repository](https://github.com/lter/eco-data-synth-primer) where the materials live
 
+Once you've done that you can follow these steps to directly affect the website via GitHub! To start, go to the course's [GitHub repository](https://github.com/lter/eco-data-synth-primer) and click the file for the page you want to edit. You can deduce that because the URL of that page will exactly match the file name. For example, let's imagine that we want to edit the contributing page [lter.github.io/eco-data-synth-primer/contributing.html](https://lter.github.io/eco-data-synth-primer/contributing.html). The file that controls this page is `contributing.qmd` which you can be sure of because it shares everything but the file extension with the link.
 
+<p align="center">
+<img src="images/github-edits_step-1.png" alt="Screen capture of the landing page of a GitHub repository" width="85%"/>
+</p>
 
-Here I can edit the website file directly through GitHub!
+Once you're there, click the name of the file you want to edit (for the demonstration purposes we'll click `contributing.qmd`). On the resulting page, you'll want to click the small pencil icon just above and to the right of the website content (see beneath the word "History" in the screenshot below).
 
+<p align="center">
+<img src="images/github-edits_step-2.png" alt="Screen capture of the GitHub view of a file" width="85%"/>
+</p>
+
+Now you can make any edits you'd like! Don't worry about writing one super long line because when the website "renders" (i.e., builds itself) the text will be automatically wrapped to the width of the screen. In the screenshot below I've added "Here I can edit the website file directly through GitHub" on line 20.
+
+<p align="center">
+<img src="images/github-edits_step-3.png" alt="Screen capture of a file being edited in GitHub" width="85%"/>
+</p>
+
+Once you're happy with your edits and want them to be sent to the "real" website, you'll need to "commit" those changes. Click the bright blue--or green depending on your GitHub settings--button in the top right. In the small pop-up window that results, type a short description of what purpose your edits serve. **This message is important** because these comments will create the timeline that we can use to see or return to previous versions of the course materials.
+
+<p align="center">
+<img src="images/github-edits_step-4.png" alt="Screen capture of the commit message pop-up window as it appears in GitHub" width="45%"/>
+</p>
+
+Now you'll find yourself back in the 'viewing' part of GitHub and you should see your edits in the file. However, **your edits are not _yet_ in the live website**. The site must first render your changes. This rendering effort is essentially the computer parsing your edits to a Quarto document (i.e., a `.qmd` file) into the HTML format needed for the website.
+
+You can check the status of this rendering by clicking the "Actions" tab of the repository. You'll see an orange--or red, again depending on your GitHub settings--circle with a progress wheel. After a few minutes that should turn into a blue--or green--check mark. You may notice that the name of the Action exactly matches the text you put in the top field of the commit message pop-up window earlier.
+
+<p align="center">
+<img src="images/github-edits_step-5.png" alt="Screen capture of a GitHub Action that is in progress with a little pinwheel circle" width="75%"/>
+</p>
+
+Once that Action finishes you'll see a much faster one called "pages build and deployment" show up and go through the same process. This action is tying together the new website (all the unchanged files plus whatever files were changed by your edits) and updating the living website with that content.
+
+<p align="center">
+<img src="images/github-edits_step-6.png" alt="Screen capture of a  GitHub Action that has finished with a little check mark" width="75%"/>
+</p>
+
+Once both of those Actions have finished you should be able to visit the website link and see your edits in the live version! Note that you may need to refresh your browser page to update your cache so if you don't immediately see your edits you may want to wait a moment and refresh the page.
+
+<p align="center">
+<img src="images/github-edits_step-7.png" alt="Screen capture of a website with the edits demonstrated in earlier screenshots incorporated" width="85%"/>
+</p>
 
 ### Method 2: Through RStudio
 
