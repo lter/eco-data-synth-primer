@@ -17,6 +17,8 @@ Here's what you'll need to do beforehand:
 
 
 
+Here I can edit the website file directly through GitHub!
+
 
 ### Method 2: Through RStudio
 
