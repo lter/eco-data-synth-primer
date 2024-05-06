@@ -1,23 +1,19 @@
 ---
-title: "Contributing"
+title: "Editing the Website"
 ---
 
 ## Overview
 
-This page houses the beginnings of our 'how to edit the website' instructions. Note that this page is <u>primarily for internal use</u> so it assumes you already are a member of the group and have the necessary access to the source GitHub repository.
-
-## Editing the Website
-
-There are a few viable options for contributing to this website. Choose the method that aligns best with your skills and/or the one that sparks the most joy for you.
+This page houses the beginnings of our 'how to edit the website' instructions. Note that this page is <u>primarily for internal use</u> so it assumes you already are a member of the group and have the necessary access to the source GitHub repository. There are a few viable options for contributing to this website. Choose the method that aligns best with your skills and/or the one that sparks the most joy for you.
 
 ### Method 1: Through GitHub
 
-We've done some fancy behind-the-scenes wrangling with GitHub to support this method (see [here](https://quarto.org/docs/publishing/github-pages.html#publish-command) if that is of interest) but the key take-away is that edits made directly in GitHub should "just work."
+We've done some fancy behind-the-scenes wrangling with GitHub to support this method (see [here](https://quarto.org/docs/publishing/github-pages.html#publish-command) if that is of interest) but the key take-away is that edits made directly in GitHub should "just work." There is however a small caveat to this option: <u>you can only do this if the page you're editing has _no_ "code chunks"</u>. The processing of code chunks is handled slightly differently from 'normal' text and requires a local computer. Even if your changes don't affect code chunks directly it only matters whether or not there are code chunks in the page at all. Hopefully that's not too limiting of a caveat!
 
 Here's what you'll need to do beforehand:
 
 1. Create a [GitHub](https://github.com/) account
-2. Make sure you have access to [the GitHub repository](https://github.com/lter/eco-data-synth-primer) where the materials live
+2. Make sure you have edit access to [the GitHub repository](https://github.com/lter/eco-data-synth-primer) where the materials live
 
 
 
@@ -26,8 +22,14 @@ Here's what you'll need to do beforehand:
 
 If you're more confident with a Git-based workflow, you can use RStudio (or any comparable platform) to make edits to the website.
 
+Here's what you'll need to do beforehand:
+
+1. Do the [five setup steps](https://nceas.github.io/scicomp-workshop-collaborative-coding/#workshop-preparation) in this GitHub workshop
+2. Install [Quarto](https://quarto.org/docs/get-started/) on your computer
+3. Make sure you have edit access to [the GitHub repository](https://github.com/lter/eco-data-synth-primer) where the materials live
+4. Clone that repository to your computer
 
 
-### Method 3: Through Collaborators
+### Method 3: Through Others
 
-If you'd prefer, you can write the text that you'd like to include in a standard text editor software (e.g, Microsoft Word, Google Docs, etc.). Once you've written it there, send it to someone else on the team who can use one of the preceding methods to get that content integrated. Ideally, hosting through GitHub (and creating this document) empowers you to make edits on your own behalf but if that feels out of reach in this moment **we absolutely still want your insight** so please don't hesitate to go this direction if necessary.
+If you'd prefer, you can write the text that you'd like to include in the text editing software (e.g, Microsoft Word, Google Docs, etc.) of your choice. Once you've written it there, send it to someone else on the team who can use one of the preceding methods to get that content integrated. Ideally, hosting through GitHub (and creating this document) empowers you to make edits on your own behalf but if that feels out of reach in this moment **we absolutely still want your insight** so please don't hesitate to go this direction if necessary.

@@ -14,7 +14,6 @@ website:
     right:
       - text: "People"
         menu: 
-          - text: "Greg Maurer"
           - text: "Contributing"
             href: contributing.qmd
       - icon: github
