@@ -41,6 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -130,6 +132,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
   <ul class="collapse">
+  <li><a href="#cautionary-conflicts-note" id="toc-cautionary-conflicts-note" class="nav-link" data-scroll-target="#cautionary-conflicts-note">Cautionary Conflicts Note</a></li>
   <li><a href="#method-1-through-github" id="toc-method-1-through-github" class="nav-link" data-scroll-target="#method-1-through-github">Method 1: Through GitHub</a></li>
   <li><a href="#method-2-through-rstudio" id="toc-method-2-through-rstudio" class="nav-link" data-scroll-target="#method-2-through-rstudio">Method 2: Through RStudio</a></li>
   <li><a href="#method-3-through-others" id="toc-method-3-through-others" class="nav-link" data-scroll-target="#method-3-through-others">Method 3: Through Others</a></li>
@@ -162,6 +165,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This page houses the beginnings of our ‘how to edit the website’ instructions. Note that this page is <u>primarily for internal use</u> so it assumes you already are a member of the group and have the necessary access to the source GitHub repository. There are a few viable options for contributing to this website. Choose the method that aligns best with your skills and/or the one that sparks the most joy for you.</p>
+<section id="cautionary-conflicts-note" class="level3">
+<h3 class="anchored" data-anchor-id="cautionary-conflicts-note">Cautionary Conflicts Note</h3>
+<p>GitHub makes a lot of the technical aspects of collaborating much simpler but there is one thing to watch out for: conflicts. Essentially, <u>GitHub is <em>not</em> Google Docs</u>. This means that while we can edit this website <em>collaboratively</em> we cannot do so <em>simultaneously</em>. When multiple people edit the same file in different ways, GitHub doesn’t know which set of changes should take priority (and it is often the case that we want both sets of edits!) and so it returns a conflict message that essentially says ‘you figure it out human’.</p>
+<p>Fortunately the way to avoid conflicts is straightforward: communicate with one another! Before making any edits to the files in this website, reach out to the rest of the group and let them know! This can be as simple as “hey, I’ll be working on topic X from 10-11 ET so please don’t edit anything in the meantime.” For those of you working in GitHub directly you don’t really need to worry too much about this because your edits will always take priority but it’s good to think about so you don’t set the stage for others to encounter conflicts.</p>
+</section>
 <section id="method-1-through-github" class="level3">
 <h3 class="anchored" data-anchor-id="method-1-through-github">Method 1: Through GitHub</h3>
 <p>We’ve done some fancy behind-the-scenes wrangling with GitHub to support this method (see <a href="https://quarto.org/docs/publishing/github-pages.html#publish-command">here</a> if that is of interest) but the key take-away is that edits made directly in GitHub should “just work.” There is however a small caveat to this option: <u>you can only do this if the page you’re editing has <em>no</em> “code chunks”</u>. The processing of code chunks is handled slightly differently from ‘normal’ text and requires a local computer. Even if your changes don’t affect code chunks directly it only matters whether or not there are code chunks in the page at all. Hopefully that’s not too limiting of a caveat!</p>
@@ -170,7 +178,35 @@ ul.task-list li input[type="checkbox"] {
 <li>Create a <a href="https://github.com/">GitHub</a> account</li>
 <li>Make sure you have edit access to <a href="https://github.com/lter/eco-data-synth-primer">the GitHub repository</a> where the materials live</li>
 </ol>
-<p>Here I can edit the website file directly through GitHub!</p>
+<p>Once you’ve done that you can follow these steps to directly affect the website via GitHub! To start, go to the course’s <a href="https://github.com/lter/eco-data-synth-primer">GitHub repository</a> and click the file for the page you want to edit. You can deduce that because the URL of that page will exactly match the file name. For example, let’s imagine that we want to edit the contributing page <a href="https://lter.github.io/eco-data-synth-primer/contributing.html">lter.github.io/eco-data-synth-primer/contributing.html</a>. The file that controls this page is <code>contributing.qmd</code> which you can be sure of because it shares everything but the file extension with the link.</p>
+<p align="center">
+<img src="images/github-edits_step-1.png" alt="Screen capture of the landing page of a GitHub repository" width="85%">
+</p>
+<p>Once you’re there, click the name of the file you want to edit (for the demonstration purposes we’ll click <code>contributing.qmd</code>). On the resulting page, you’ll want to click the small pencil icon just above and to the right of the website content (see beneath the word “History” in the screenshot below).</p>
+<p align="center">
+<img src="images/github-edits_step-2.png" alt="Screen capture of the GitHub view of a file" width="85%">
+</p>
+<p>Now you can make any edits you’d like! Don’t worry about writing one super long line because when the website “renders” (i.e., builds itself) the text will be automatically wrapped to the width of the screen. In the screenshot below I’ve added “Here I can edit the website file directly through GitHub” on line 20.</p>
+<p align="center">
+<img src="images/github-edits_step-3.png" alt="Screen capture of a file being edited in GitHub" width="85%">
+</p>
+<p>Once you’re happy with your edits and want them to be sent to the “real” website, you’ll need to “commit” those changes. Click the bright blue–or green depending on your GitHub settings–button in the top right. In the small pop-up window that results, type a short description of what purpose your edits serve. <strong>This message is important</strong> because these comments will create the timeline that we can use to see or return to previous versions of the course materials.</p>
+<p align="center">
+<img src="images/github-edits_step-4.png" alt="Screen capture of the commit message pop-up window as it appears in GitHub" width="45%">
+</p>
+<p>Now you’ll find yourself back in the ‘viewing’ part of GitHub and you should see your edits in the file. However, <strong>your edits are not <em>yet</em> in the live website</strong>. The site must first render your changes. This rendering effort is essentially the computer parsing your edits to a Quarto document (i.e., a <code>.qmd</code> file) into the HTML format needed for the website.</p>
+<p>You can check the status of this rendering by clicking the “Actions” tab of the repository. You’ll see an orange–or red, again depending on your GitHub settings–circle with a progress wheel. After a few minutes that should turn into a blue–or green–check mark. You may notice that the name of the Action exactly matches the text you put in the top field of the commit message pop-up window earlier.</p>
+<p align="center">
+<img src="images/github-edits_step-5.png" alt="Screen capture of a GitHub Action that is in progress with a little pinwheel circle" width="75%">
+</p>
+<p>Once that Action finishes you’ll see a much faster one called “pages build and deployment” show up and go through the same process. This action is tying together the new website (all the unchanged files plus whatever files were changed by your edits) and updating the living website with that content.</p>
+<p align="center">
+<img src="images/github-edits_step-6.png" alt="Screen capture of a  GitHub Action that has finished with a little check mark" width="75%">
+</p>
+<p>Once both of those Actions have finished you should be able to visit the website link and see your edits in the live version! Note that you may need to refresh your browser page to update your cache so if you don’t immediately see your edits you may want to wait a moment and refresh the page.</p>
+<p align="center">
+<img src="images/github-edits_step-7.png" alt="Screen capture of a website with the edits demonstrated in earlier screenshots incorporated" width="85%">
+</p>
 </section>
 <section id="method-2-through-rstudio" class="level3">
 <h3 class="anchored" data-anchor-id="method-2-through-rstudio">Method 2: Through RStudio</h3>
@@ -182,6 +218,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Make sure you have edit access to <a href="https://github.com/lter/eco-data-synth-primer">the GitHub repository</a> where the materials live</li>
 <li>Clone that repository to your computer</li>
 </ol>
+<p>Editing a Quarto website is fairly straightforward once you’ve handled the prepartory steps outlined above. You’ll begin by editing your chosen files and–periodically–committing those changes.</p>
+<p>The <code>.gitignore</code> should be set up in such a way that you cannot commit files you “shouldn’t” be committing but the rule of thumb is that you should feel free to commit either (A) changes to files ending in <code>.qmd</code> or (B) anything in the <code>_freeze/</code> directory. The <code>_freeze/</code> directory is how Quarto stores files that need some amount of computing so that it doesn’t waste computing resources re-rendering those files all the time and instead only re-renders when needed. Note that only files with one or more code chunks will ever put anything in that folder.</p>
+<p>Our GitHub Actions (see the ‘Method 1’ tutorial) are set up in such a way that once you push your commits the website should re-build itself automatically. Just wait for the GitHub Actions to complete and/or refresh your browser after pushing and you should see your edits reflected in the website.</p>
+<p>While editing you may find the <i class="fa-solid fa-terminal" aria-label="terminal"></i> <code>quarto preview</code> command line call helpful as it will create a new tab in your browser that will dynamically show any edits you make. This is really nice particularly for writing or debugging a code chunk as you’ll be able to see the outputs in real time without waiting for the site to render only to find out your code doesn’t work as intended.</p>
 </section>
 <section id="method-3-through-others" class="level3">
 <h3 class="anchored" data-anchor-id="method-3-through-others">Method 3: Through Others</h3>
