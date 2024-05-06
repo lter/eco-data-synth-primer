@@ -48,7 +48,7 @@ vignettes/*.pdf
 *.Rproj
 
 # Rendered docs folder
-# docs/
+docs/
 
 # Microsoft Office partial files
 ~$*.pptx
