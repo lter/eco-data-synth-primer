@@ -16,6 +16,8 @@ website:
         menu: 
           - text: "Greg Maurer"
             href: https://github.com/gremau
+          - text: "Nick Lyon"
+            href: https://njlyon0.github.io
       - icon: github
         href: https://github.com/lter/eco-data-synth-primer
         aria-label: GitHub
