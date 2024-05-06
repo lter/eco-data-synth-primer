@@ -6,6 +6,12 @@ title: "Editing the Website"
 
 This page houses the beginnings of our 'how to edit the website' instructions. Note that this page is <u>primarily for internal use</u> so it assumes you already are a member of the group and have the necessary access to the source GitHub repository. There are a few viable options for contributing to this website. Choose the method that aligns best with your skills and/or the one that sparks the most joy for you.
 
+### Cautionary Conflicts Note
+
+GitHub makes a lot of the technical aspects of collaborating much simpler but there is one thing to watch out for: conflicts. Essentially, <u>GitHub is _not_ Google Docs</u>. This means that while we can edit this website _collaboratively_ we cannot do so _simultaneously_. When multiple people edit the same file in different ways, GitHub doesn't know which set of changes should take priority (and it is often the case that we want both sets of edits!) and so it returns a conflict message that essentially says 'you figure it out human'.
+
+Fortunately the way to avoid conflicts is straightforward: communicate with one another! Before making any edits to the files in this website, reach out to the rest of the group and let them know! This can be as simple as "hey, I'll be working on topic X from 10-11 ET so please don't edit anything in the meantime." For those of you working in GitHub directly you don't really need to worry too much about this because your edits will always take priority but it's good to think about so you don't set the stage for others to encounter conflicts.
+
 ### Method 1: Through GitHub
 
 We've done some fancy behind-the-scenes wrangling with GitHub to support this method (see [here](https://quarto.org/docs/publishing/github-pages.html#publish-command) if that is of interest) but the key take-away is that edits made directly in GitHub should "just work." There is however a small caveat to this option: <u>you can only do this if the page you're editing has _no_ "code chunks"</u>. The processing of code chunks is handled slightly differently from 'normal' text and requires a local computer. Even if your changes don't affect code chunks directly it only matters whether or not there are code chunks in the page at all. Hopefully that's not too limiting of a caveat!
