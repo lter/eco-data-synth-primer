@@ -10,7 +10,7 @@ website:
   navbar:
     left:
       - text: "Home"
-        href: home.qmd
+        href: index.qmd
     right:
       - text: "People"
         menu: 
