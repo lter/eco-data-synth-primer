@@ -82,6 +82,7 @@ The `.gitignore` should be set up in such a way that you cannot commit files you
 
 Our GitHub Actions (see the 'Method 1' tutorial) are set up in such a way that once you push your commits the website should re-build itself automatically. Just wait for the GitHub Actions to complete and/or refresh your browser after pushing and you should see your edits reflected in the website.
 
+While editing you may find the {{< fa terminal >}} `quarto preview` command line call helpful as it will create a new tab in your browser that will dynamically show any edits you make. This is really nice particularly for writing or debugging a code chunk as you'll be able to see the outputs in real time without waiting for the site to render only to find out your code doesn't work as intended.
 
 ### Method 3: Through Others
 
