@@ -1,20 +1,36 @@
 project:
   type: website
+  execute-dir: project
   output-dir: docs
 
 website:
-  title: "eco-data-synth-primer"
+  title: "Ecological Data Synthesis: A Primer on Essential Methods"
+  repo-url: https://github.com/lter/eco-data-synth-primer
+  repo-actions: [issue]
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "Home"
+        href: home.qmd
+    right:
+      - text: "People"
+        menu: 
+          - text: "Greg Maurer"
+            href: https://github.com/gremau
+      - icon: github
+        href: https://github.com/lter/eco-data-synth-primer
+        aria-label: GitHub
+
+execute:
+  freeze: auto
 
 format:
   html:
-    theme: cosmo
+    code-overflow: wrap
+    code-line-numbers: false
+    code-copy: hover
+    theme: 
+      light: cosmo
     css: styles.css
     toc: true
-
-
-
+    link-external-newwindow: true
+    link-external-icon: false
