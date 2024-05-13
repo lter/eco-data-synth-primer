@@ -11,6 +11,12 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Module 1"
+        href: module1.qmd
+      - text: "Module 2"
+        href: module2.qmd
+      - text: "Module 3"
+        href: module3.qmd
     right:
       - text: "People"
         menu: 
