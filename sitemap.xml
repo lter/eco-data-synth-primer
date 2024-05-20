@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lter.github.io/eco-data-synth-primer/index.html</loc>
-    <lastmod>2024-05-13T17:00:22.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/eco-data-synth-primer/module2.html</loc>
-    <lastmod>2024-05-13T17:00:22.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/eco-data-synth-primer/module1.html</loc>
-    <lastmod>2024-05-13T17:00:22.787Z</lastmod>
-  </url>
-  <url>
     <loc>https://lter.github.io/eco-data-synth-primer/contributing.html</loc>
-    <lastmod>2024-05-13T17:00:22.775Z</lastmod>
+    <lastmod>2024-05-20T17:59:30.678Z</lastmod>
   </url>
   <url>
     <loc>https://lter.github.io/eco-data-synth-primer/module3.html</loc>
-    <lastmod>2024-05-13T17:00:22.787Z</lastmod>
+    <lastmod>2024-05-20T17:59:30.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/eco-data-synth-primer/index.html</loc>
+    <lastmod>2024-05-20T17:59:30.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/eco-data-synth-primer/module2.html</loc>
+    <lastmod>2024-05-20T17:59:30.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/eco-data-synth-primer/module1.html</loc>
+    <lastmod>2024-05-20T17:59:30.686Z</lastmod>
   </url>
 </urlset>
