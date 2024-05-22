@@ -6,8 +6,9 @@ title: "Module 3: Tying it all together"
 
 
 - **Understand** data publishing best-practices and the features that make data easy to re-use
-- **Evaluate** the usability of a published dataset
-- **Evaluate** the reproducibility of a current data synthesis project
+- **Evaluate** the metadata and fitness-for-use of published synthesis datasets
+- **Understand** concepts of data provenance, reproducible analysis, and citations
+- **Evaluate** the reproducibility of a recent data synthesis project
 - **Understand** the different models of data accessibility, licensing, and authorship practices and **apply** them to a synthesis group’s desired outcomes
 - **Understand** several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.
 - **Create** a plan to maintain a synthesis project and associated data over the long-term
@@ -15,11 +16,29 @@ title: "Module 3: Tying it all together"
 
 # Publishing data for re-use
 
+**Estimated time: 12 min**
+
 ## Formats for synthesis datasets
 
 * Database
 * Text tables
+* Special data types
 
+## Metadata
+
+* Who, what, when, where, how?
+* Sometimes "why?" helps too.
+
+## Activity: Evaluate published datasets
+
+**Estimated time: 10 min**
+
+Form breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:
+
+1. Where were the data collected?
+2. What variable were measured and in what units?
+3. Are the data raw or have they been altered since collection? If the latter, how?
+4. Were the first three questions easy to answer? Why or why not?
 
 ## Summary
 
@@ -28,4 +47,46 @@ title: "Module 3: Tying it all together"
 
 ## Additional resources
 
+* ...
+* ...
+
+# Connecting the elements of a synthesis project
+
+**Estimated time: 25 min**
+
+There are three interconnected elements to a synthesis project (or any research project, really): the data, the analytical workflow, and the results. Each of these elements should reference the others.
+
+[Figure 1](./images/mod3_fig1_tying.png)
+
+## Publishing data (5)
+
+## Sharing the workflow (7)
+
+## Writing the results (3)
+ 
+## Tying these all together (5)
+
+## Giving everyone credit (5)
+
+## Activity: Evaluate 2 synthesis projects
+
+**Estimated time: 12 min**
+
+Form breakout groups and course instructors will assign each group a synthesis project, with links to one or more elements (the code, a paper, a dataset, etc.). Try to put together the rest of the picture (other publications, source/derived data, etc.). Then, answer these questions:
+
+1. Who was involved in the synthesis project?
+2. How many journal articles and datasets were published?
+3. Could you reproduce results or contribute new data to the project based on what you found?
+4. What elements are missing or difficult to undersand?
+
+## Additional resources
+
 * [NEON's guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
+
+# Maintaining momentum
+
+**Estimated time: 10 min?**
+
+## Funding sources
+
+???
