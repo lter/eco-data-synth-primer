@@ -3,9 +3,9 @@ title: "Home"
 ---
 
 ## Overview
-- Module 1
-- Module 2
-- Module 3
+- Module 1: Starting with Team Science
+- Module 2: Operational Synthesis
+- Module 3: Tying It All Together
 
 Under construction, check back soon!
 
