@@ -3,3 +3,24 @@ title: "Module 1: Starting with team science"
 ---
 
 # Learning objectives
+
+- **Understand** 
+- **Create**
+
+# Part 1
+
+**Estimated time: XX min**
+
+## subtitle
+
+## subtitle
+
+## Summary
+
+* ...
+* ...
+
+## Additional resources
+
+* ...
+* ...
