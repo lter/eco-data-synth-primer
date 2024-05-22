@@ -7,7 +7,7 @@ title: "Module 1: Starting with team science"
 - **Understand** 
 - **Create**
 
-# Part 1
+# Motivating Synthesis
 
 **Estimated time: XX min**
 
@@ -22,5 +22,14 @@ title: "Module 1: Starting with team science"
 
 ## Additional resources
 
+* ...Parker and Hackett 2021
 * ...
-* ...
+
+# Identifying a Question
+
+# Building a Team
+
+# Setting Expectations
+
+# Making a Communication and Work Plan
+
