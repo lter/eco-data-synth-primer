@@ -18,7 +18,7 @@
     "href": "module3.html",
     "title": "Module 3: Tying it all together",
     "section": "",
-    "text": "Understand data publishing best-practices and the features that make data easy to re-use\nEvaluate the metadata and fitness-for-use of published synthesis datasets\nUnderstand concepts of data provenance, reproducible analysis, and citations\nEvaluate the reproducibility of a recent data synthesis project\nUnderstand the different models of data accessibility, licensing, and authorship practices and apply them to a synthesis group’s desired outcomes\nUnderstand several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.\nCreate a plan to maintain a synthesis project and associated data over the long-term"
+    "text": "Understand data publishing best-practices and the features that make data easy to re-use\nEvaluate the metadata and fitness-for-use of published synthesis datasets\nUnderstand the three primary “products” that come out of synthesis groups\nUnderstand concepts of data provenance, reproducible analysis, and citations\nEvaluate the reproducibility of a recent data synthesis project\nUnderstand the different models of data accessibility, licensing, and authorship practices and apply them to a synthesis group’s desired outcomes\nUnderstand several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.\nCreate a plan to maintain a synthesis project and associated data over the long-term"
   },
   {
     "objectID": "module3.html#formats-for-synthesis-datasets",
@@ -60,21 +60,21 @@
     "href": "module3.html#publishing-data-5",
     "title": "Module 3: Tying it all together",
     "section": "Publishing data (5)",
-    "text": "Publishing data (5)"
+    "text": "Publishing data (5)\n\nData and metadata\nResearch data repositories\nLicensing, etc."
   },
   {
     "objectID": "module3.html#sharing-the-workflow-7",
     "href": "module3.html#sharing-the-workflow-7",
     "title": "Module 3: Tying it all together",
     "section": "Sharing the workflow (7)",
-    "text": "Sharing the workflow (7)"
+    "text": "Sharing the workflow (7)\n\nData sources\nCode for analysis\nVersion control systems\nFuture contributions"
   },
   {
     "objectID": "module3.html#writing-the-results-3",
     "href": "module3.html#writing-the-results-3",
     "title": "Module 3: Tying it all together",
     "section": "Writing the results (3)",
-    "text": "Writing the results (3)"
+    "text": "Writing the results (3)\n\nMost often this means writing a paper\n\nCiting data in a paper\nPresenting a reproducible workflow\n\nOther products may be apps, teaching modules, etc.\n\nMacrosystemsEDDIE as an example?\nShiny apps"
   },
   {
     "objectID": "module3.html#tying-these-all-together-5",
@@ -91,11 +91,11 @@
     "text": "Giving everyone credit (5)"
   },
   {
-    "objectID": "module3.html#activity-evaluate-2-synthesis-projects",
-    "href": "module3.html#activity-evaluate-2-synthesis-projects",
+    "objectID": "module3.html#activity-evaluate-three-synthesis-projects",
+    "href": "module3.html#activity-evaluate-three-synthesis-projects",
     "title": "Module 3: Tying it all together",
-    "section": "Activity: Evaluate 2 synthesis projects",
-    "text": "Activity: Evaluate 2 synthesis projects\nEstimated time: 12 min\nForm breakout groups and course instructors will assign each group a synthesis project, with links to one or more elements (the code, a paper, a dataset, etc.). Try to put together the rest of the picture (other publications, source/derived data, etc.). Then, answer these questions:\n\nWho was involved in the synthesis project?\nHow many journal articles and datasets were published?\nCould you reproduce results or contribute new data to the project based on what you found?\nWhat elements are missing or difficult to undersand?"
+    "section": "Activity: Evaluate three synthesis projects",
+    "text": "Activity: Evaluate three synthesis projects\nEstimated time: 12 min\nForm breakout groups and course instructors will assign each group a synthesis project, with links to one or more elements (the code, a paper, a dataset, etc.). Try to put together the rest of the picture (other publications, source/derived data, etc.). Then, answer these questions:\n\nWho was involved in the synthesis project?\nHow many journal articles and datasets were published?\nCould you reproduce results or contribute new data to the project based on what you found?\nWhat elements are missing or difficult to undersand?"
   },
   {
     "objectID": "module3.html#additional-resources-1",
