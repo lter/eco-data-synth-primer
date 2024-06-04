@@ -7,6 +7,7 @@ title: "Module 3: Tying it all together"
 
 - **Understand** data publishing best-practices and the features that make data easy to re-use
 - **Evaluate** the metadata and fitness-for-use of published synthesis datasets
+- **Understand** the three primary "products" that come out of synthesis groups
 - **Understand** concepts of data provenance, reproducible analysis, and citations
 - **Evaluate** the reproducibility of a recent data synthesis project
 - **Understand** the different models of data accessibility, licensing, and authorship practices and **apply** them to a synthesis group’s desired outcomes
@@ -54,25 +55,46 @@ Form breakout groups and course instructors will assign each group a dataset (a 
 
 **Estimated time: 25 min**
 
-There are three interconnected elements to a synthesis project (or any research project, really): the data, the analytical workflow, and the results. Each of these elements should reference the others.
+There are three interconnected elements to a synthesis project (or any research project, really): the data, 
+the analytical workflow, and the results. Each of these elements is a valuable product of synthesis science,
+and each should reference the others.
 
-[Figure 1](./images/mod3_fig1_tying.png)
+![Figure 1](./images/mod3_fig1_tying.png)
 
 ## Publishing data (5)
 
+* Data and metadata
+* Research data repositories
+* Licensing, etc.
+
 ## Sharing the workflow (7)
 
+* Data sources
+* Code for analysis
+* Version control systems
+* Future contributions
+
 ## Writing the results (3)
+
+* Most often this means writing a paper
+  - Citing data in a paper
+  - Presenting a reproducible workflow
+* Other products may be apps, teaching modules, etc.
+  - MacrosystemsEDDIE as an example?
+  - Shiny apps
  
 ## Tying these all together (5)
 
+
 ## Giving everyone credit (5)
 
-## Activity: Evaluate 2 synthesis projects
+## Activity: Evaluate three synthesis projects
 
 **Estimated time: 12 min**
 
-Form breakout groups and course instructors will assign each group a synthesis project, with links to one or more elements (the code, a paper, a dataset, etc.). Try to put together the rest of the picture (other publications, source/derived data, etc.). Then, answer these questions:
+Form breakout groups and course instructors will assign each group a synthesis project, with links to one or more
+elements (the code, a paper, a dataset, etc.). Try to put together the rest of the picture (other publications, 
+source/derived data, etc.). Then, answer these questions:
 
 1. Who was involved in the synthesis project?
 2. How many journal articles and datasets were published?
