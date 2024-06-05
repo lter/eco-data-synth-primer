@@ -1,3 +1,21 @@
 ---
 title: "Module 2: Operational synthesis"
 ---
+
+# Learning Objectives
+
+After completing this module, you will be able to:
+
+- **Identify** characteristics of reproducible coding / project organization
+- **Explain** benefits of reproducibility (to your team and beyond)
+- **Summarize** the advantages of creating a defined contribution workflow
+- **Define** fundamental vocabulary of version control systems
+- **Create** a repository on GitHub
+- **Explain** how synthesis teams can use GitHub to collaborate more efficiently and reproducibly
+
+
+
+
+
+
+
