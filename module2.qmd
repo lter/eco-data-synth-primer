@@ -13,28 +13,63 @@ After completing this module, you will be able to:
 - **Create** a repository on GitHub
 - **Explain** how synthesis teams can use GitHub to collaborate more efficiently and reproducibly
 
-# Reproducibility in Synthesis
+# Reproducibility Practices
+
+## General Considerations - _10 minutes_
+
+
+
+## Synthesis Considerations - _10 minutes_
+
+
+
+
 
 
 # Version Control
 
-## Vocabulary
+## Vocabulary - _5 minutes_
 
+Brief definitions for a selection of fundamental version control vocabulary terms
 
-## GitHub
+- Version control: 
+- Repository: 
+- 
 
+## GitHub - _10 minutes_
 
-# Synthesis Group Case Studies
+While this section of the module focuses on [GitHub](https://github.com/), there are several other viable alternatives for working with Git individually or as part of a larger team (e.g., [GitLab](https://about.gitlab.com/), [GitKraken](https://www.gitkraken.com/), etc.). Any of these may be viable option for your team and we focus on GitHub here only to ensure a standard backdrop for the case studies we'll discuss shortly.
+
+# Synthesis Group Case Studies - _10 minutes_
 
 :::{.panel-tabset}
 ## Example 1
 
+Highlights:
 
+- Straightforward & transparent numbering of workflow scripts
+- Custom `.gitignore` safety net
+
+https://github.com/lter/lter-sparc-soil-p
 
 ## Example 2
 
+Highlights:
+
+- Really consistent file naming conventions & folder organization
+- Active contribution to code base by all group members
+
+https://github.com/lter/lterwg-flux-gradient
 
 ## Example 3
+
+Highlights:
+
+- Separate repositories for each manuscript
+- Nice use of README as pseudo-bookmarks for later reference to other repositories
+
+
+https://github.com/lter/lterwg-silica-data
 
 :::
 
