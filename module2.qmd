@@ -15,32 +15,91 @@ After completing this module, you will be able to:
 
 # Reproducibility Practices
 
-## General Considerations - _10 minutes_
+Making one's work "reproducible"--particularly in code contexts--has become increasingly popular but is not always clearly defined. For the purposes of this short course, we believe that reproducible work:
+
+- Uses scripted workflows for all interactions with data
+- Contains sufficient documentation for those outside of the project team to navigate the project's contents
+- Contains detailed metadata for all data products
+- 
+- 
+- 
 
 
 
-## Synthesis Considerations - _10 minutes_
+## General Considerations
 
+**Estimated time: 10 min**
 
+Documentation!
 
+- One folder / project
+- Further organize content via sub-folders
+- Make file names informative and intuitive
+- Use READMEs to record organization rules / explanation
+- 
 
+Code
 
+- Load libraries explicitly
+- Track (and document) software versions
+- Namespace functions (if not already required by your coding language)
+- Use relative file paths that are operating system-agnostic
+- Balance how descriptive object names are with striving for concise names
+- _Use comments_ in the code!
+- Consider custom functions
+- 
+
+Contributing
+
+- Create a formal plan for collaborating _with which your whole team agrees_
+- Quarantine external inputs
+- Plan for "future you"
+- 
+
+## Synthesis Considerations
+
+**Estimated time: 10 min**
+
+How does reproducibility in synthesis considerations differ from individual / non-synthesis applications?
+
+- Judgement calls need to be made / agreed to as a group
+    - But "defer to the doers"
+- Increased emphasis on contribution guidelines / planning being formalized
+- More communication needs
+- 
+- 
 
 # Version Control
 
-## Vocabulary - _5 minutes_
+## Vocabulary
+
+**Estimated time: 5 min**
 
 Brief definitions for a selection of fundamental version control vocabulary terms
 
 - Version control: 
 - Repository: 
 - 
+- 
+- 
 
-## GitHub - _10 minutes_
+## GitHub
+
+**Estimated time: 10 min**
 
 While this section of the module focuses on [GitHub](https://github.com/), there are several other viable alternatives for working with Git individually or as part of a larger team (e.g., [GitLab](https://about.gitlab.com/), [GitKraken](https://www.gitkraken.com/), etc.). Any of these may be viable option for your team and we focus on GitHub here only to ensure a standard backdrop for the case studies we'll discuss shortly.
 
-# Synthesis Group Case Studies - _10 minutes_
+There are a _lot_ of GitHub tutorials that exist already so, rather than add our own variant to the list, we'll work through part of one created by the Scientific Computing team of the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/) (NCEAS). 
+
+**See the workshop materials [here](https://nceas.github.io/scicomp-workshop-collaborative-coding/github.html).**
+
+Given the time restrictions for this short course, we'll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will _certainly_ have a method of connecting to GitHub/etc. so if this topic is of interest it will be beneficial for you to search out the relevant tutorial.
+
+# Synthesis Group Case Studies
+
+**Estimated time: 10 min**
+
+To make some of these concepts more tangible, let's consider some case studies. The following tabs contain GitHub repositories for real teams that have engaged in synthesis research and chosen to preserve and maintain their scripts in GitHub. Each has different strengths and you may find that facets of each feel most appropriate for your group to adopt. There is no single "right" way of tackling this but hopefully parts of these exemplars inspire you.
 
 :::{.panel-tabset}
 ## Example 1
