@@ -136,7 +136,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#reproducibility-practices" id="toc-reproducibility-practices" class="nav-link" data-scroll-target="#reproducibility-practices">Reproducibility Practices</a>
+  <ul class="collapse">
+  <li><a href="#general-considerations" id="toc-general-considerations" class="nav-link" data-scroll-target="#general-considerations">General Considerations</a></li>
+  <li><a href="#synthesis-considerations" id="toc-synthesis-considerations" class="nav-link" data-scroll-target="#synthesis-considerations">Synthesis Considerations</a></li>
+  </ul></li>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version Control</a>
+  <ul class="collapse">
+  <li><a href="#vocabulary" id="toc-vocabulary" class="nav-link" data-scroll-target="#vocabulary">Vocabulary</a></li>
+  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
+  </ul></li>
+  <li><a href="#synthesis-group-case-studies" id="toc-synthesis-group-case-studies" class="nav-link" data-scroll-target="#synthesis-group-case-studies">Synthesis Group Case Studies</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
+  <ul class="collapse">
+  <li><a href="#courses-workshops-and-tutorials" id="toc-courses-workshops-and-tutorials" class="nav-link" data-scroll-target="#courses-workshops-and-tutorials">Courses, Workshops, and Tutorials</a></li>
+  <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature">Literature</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -160,8 +182,156 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="learning-objectives" class="level1">
+<h1>Learning Objectives</h1>
+<p>After completing this module, you will be able to:</p>
+<ul>
+<li><strong>Identify</strong> characteristics of reproducible coding / project organization</li>
+<li><strong>Explain</strong> benefits of reproducibility (to your team and beyond)</li>
+<li><strong>Summarize</strong> the advantages of creating a defined contribution workflow</li>
+<li><strong>Define</strong> fundamental vocabulary of version control systems</li>
+<li><strong>Create</strong> a repository on GitHub</li>
+<li><strong>Explain</strong> how synthesis teams can use GitHub to collaborate more efficiently and reproducibly</li>
+</ul>
+</section>
+<section id="reproducibility-practices" class="level1">
+<h1>Reproducibility Practices</h1>
+<p>Making one’s work “reproducible”–particularly in code contexts–has become increasingly popular but is not always clearly defined. For the purposes of this short course, we believe that reproducible work:</p>
+<ul>
+<li>Uses scripted workflows for all interactions with data</li>
+<li>Contains sufficient documentation for those outside of the project team to navigate the project’s contents</li>
+<li>Contains detailed metadata for all data products</li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<section id="general-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="general-considerations">General Considerations</h2>
+<p><strong>Estimated time: 10 min</strong></p>
+<p>Documentation!</p>
+<ul>
+<li>One folder / project</li>
+<li>Further organize content via sub-folders</li>
+<li>Make file names informative and intuitive</li>
+<li>Use READMEs to record organization rules / explanation</li>
+<li></li>
+</ul>
+<p>Code</p>
+<ul>
+<li>Load libraries explicitly</li>
+<li>Track (and document) software versions</li>
+<li>Namespace functions (if not already required by your coding language)</li>
+<li>Use relative file paths that are operating system-agnostic</li>
+<li>Balance how descriptive object names are with striving for concise names</li>
+<li><em>Use comments</em> in the code!</li>
+<li>Consider custom functions</li>
+<li></li>
+</ul>
+<p>Contributing</p>
+<ul>
+<li>Create a formal plan for collaborating <em>with which your whole team agrees</em></li>
+<li>Quarantine external inputs</li>
+<li>Plan for “future you”</li>
+<li></li>
+</ul>
+</section>
+<section id="synthesis-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="synthesis-considerations">Synthesis Considerations</h2>
+<p><strong>Estimated time: 10 min</strong></p>
+<p>How does reproducibility in synthesis considerations differ from individual / non-synthesis applications?</p>
+<ul>
+<li>Judgement calls need to be made / agreed to as a group
+<ul>
+<li>But “defer to the doers”</li>
+</ul></li>
+<li>Increased emphasis on contribution guidelines / planning being formalized</li>
+<li>More communication needs</li>
+<li></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="version-control" class="level1">
+<h1>Version Control</h1>
+<section id="vocabulary" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulary">Vocabulary</h2>
+<p><strong>Estimated time: 5 min</strong></p>
+<p>Brief definitions for a selection of fundamental version control vocabulary terms</p>
+<ul>
+<li>Version control:</li>
+<li>Repository:</li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</section>
+<section id="github" class="level2">
+<h2 class="anchored" data-anchor-id="github">GitHub</h2>
+<p><strong>Estimated time: 10 min</strong></p>
+<p>While this section of the module focuses on <a href="https://github.com/">GitHub</a>, there are several other viable alternatives for working with Git individually or as part of a larger team (e.g., <a href="https://about.gitlab.com/">GitLab</a>, <a href="https://www.gitkraken.com/">GitKraken</a>, etc.). Any of these may be viable option for your team and we focus on GitHub here only to ensure a standard backdrop for the case studies we’ll discuss shortly.</p>
+<p>There are a <em>lot</em> of GitHub tutorials that exist already so, rather than add our own variant to the list, we’ll work through part of one created by the Scientific Computing team of the <a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis</a> (NCEAS).</p>
+<p><strong>See the workshop materials <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/github.html">here</a>.</strong></p>
+<p>Given the time restrictions for this short course, we’ll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will <em>certainly</em> have a method of connecting to GitHub/etc. so if this topic is of interest it will be beneficial for you to search out the relevant tutorial.</p>
+</section>
+</section>
+<section id="synthesis-group-case-studies" class="level1">
+<h1>Synthesis Group Case Studies</h1>
+<p><strong>Estimated time: 10 min</strong></p>
+<p>To make some of these concepts more tangible, let’s consider some case studies. The following tabs contain GitHub repositories for real teams that have engaged in synthesis research and chosen to preserve and maintain their scripts in GitHub. Each has different strengths and you may find that facets of each feel most appropriate for your group to adopt. There is no single “right” way of tackling this but hopefully parts of these exemplars inspire you.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Example 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Example 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Example 3</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Highlights:</p>
+<ul>
+<li>Straightforward &amp; transparent numbering of workflow scripts</li>
+<li>Custom <code>.gitignore</code> safety net</li>
+</ul>
+<p>https://github.com/lter/lter-sparc-soil-p</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Highlights:</p>
+<ul>
+<li>Really consistent file naming conventions &amp; folder organization</li>
+<li>Active contribution to code base by all group members</li>
+</ul>
+<p>https://github.com/lter/lterwg-flux-gradient</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>Highlights:</p>
+<ul>
+<li>Separate repositories for each manuscript</li>
+<li>Nice use of README as pseudo-bookmarks for later reference to other repositories</li>
+</ul>
+<p>https://github.com/lter/lterwg-silica-data</p>
+</div>
+</div>
+</div>
+</section>
+<section id="additional-resources" class="level1">
+<h1>Additional Resources</h1>
+<section id="courses-workshops-and-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="courses-workshops-and-tutorials">Courses, Workshops, and Tutorials</h2>
+<ul>
+<li><a href="https://lter.github.io/ssecr/">Synthesis Skills for Early Career Researchers</a> (SSECR) course. <strong>2024</strong>. LTER Network Office</li>
+<li><a href="https://learning.nceas.ucsb.edu/2024-02-arctic/">Reproducible Approaches to Arctic Research Using R</a> workshop. <strong>2024</strong>. Arctic Data Center &amp; NCEAS Learning Hub</li>
+<li><a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/">Collaborative Coding with GitHub</a> workshop. <strong>2024</strong>. NCEAS Scientific Computing team</li>
+<li><a href="https://nceas.github.io/scicomp-workshop-tidyverse/">Coding in the Tidyverse</a> workshop. <strong>2023</strong>. NCEAS Scientific Computing team</li>
+<li><a href="https://njlyon0.github.io/asm-2022_shiny-workshop/">Shiny Apps for Sharing Science</a> workshop. <strong>2022</strong>. Lyon, N.J. <em>et al.</em></li>
+<li><a href="https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/">Ten Commandments for Good Data Management</a>. <strong>2016</strong>. McGill, B.</li>
+</ul>
+</section>
+<section id="literature" class="level2">
+<h2 class="anchored" data-anchor-id="literature">Literature</h2>
+<ul>
+<li>Harrer, M. <em>et al.</em> <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/">Doing Meta-Analysis with R: A Hands-On Guide</a>. <strong>2023</strong>. <em>GitHub</em></li>
+<li>Todd-Brown, K.E.O., <em>et al.</em> <a href="https://bg.copernicus.org/articles/19/3505/2022/">Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential</a>. <strong>2022</strong>. <em>Biogeosciences</em></li>
+<li>Borer, E.T. <em>et al.</em> <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205">Some Simple Guidelines for Effective Data Management</a>. <strong>2009</strong>. <em>Ecological Society of America Bulletin</em></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -727,4 +897,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

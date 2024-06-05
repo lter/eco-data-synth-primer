@@ -133,6 +133,55 @@
     "text": "Agenda\nNote that the agenda is subject to change.\n\nModule 1: Starting with Team Science\nModule 2: Operational Synthesis\nModule 3: Tying It All Together"
   },
   {
+    "objectID": "module2.html",
+    "href": "module2.html",
+    "title": "Module 2: Operational synthesis",
+    "section": "",
+    "text": "After completing this module, you will be able to:\n\nIdentify characteristics of reproducible coding / project organization\nExplain benefits of reproducibility (to your team and beyond)\nSummarize the advantages of creating a defined contribution workflow\nDefine fundamental vocabulary of version control systems\nCreate a repository on GitHub\nExplain how synthesis teams can use GitHub to collaborate more efficiently and reproducibly"
+  },
+  {
+    "objectID": "module2.html#general-considerations",
+    "href": "module2.html#general-considerations",
+    "title": "Module 2: Operational synthesis",
+    "section": "General Considerations",
+    "text": "General Considerations\nEstimated time: 10 min\nDocumentation!\n\nOne folder / project\nFurther organize content via sub-folders\nMake file names informative and intuitive\nUse READMEs to record organization rules / explanation\n\n\nCode\n\nLoad libraries explicitly\nTrack (and document) software versions\nNamespace functions (if not already required by your coding language)\nUse relative file paths that are operating system-agnostic\nBalance how descriptive object names are with striving for concise names\nUse comments in the code!\nConsider custom functions\n\n\nContributing\n\nCreate a formal plan for collaborating with which your whole team agrees\nQuarantine external inputs\nPlan for “future you”"
+  },
+  {
+    "objectID": "module2.html#synthesis-considerations",
+    "href": "module2.html#synthesis-considerations",
+    "title": "Module 2: Operational synthesis",
+    "section": "Synthesis Considerations",
+    "text": "Synthesis Considerations\nEstimated time: 10 min\nHow does reproducibility in synthesis considerations differ from individual / non-synthesis applications?\n\nJudgement calls need to be made / agreed to as a group\n\nBut “defer to the doers”\n\nIncreased emphasis on contribution guidelines / planning being formalized\nMore communication needs"
+  },
+  {
+    "objectID": "module2.html#vocabulary",
+    "href": "module2.html#vocabulary",
+    "title": "Module 2: Operational synthesis",
+    "section": "Vocabulary",
+    "text": "Vocabulary\nEstimated time: 5 min\nBrief definitions for a selection of fundamental version control vocabulary terms\n\nVersion control:\nRepository:"
+  },
+  {
+    "objectID": "module2.html#github",
+    "href": "module2.html#github",
+    "title": "Module 2: Operational synthesis",
+    "section": "GitHub",
+    "text": "GitHub\nEstimated time: 10 min\nWhile this section of the module focuses on GitHub, there are several other viable alternatives for working with Git individually or as part of a larger team (e.g., GitLab, GitKraken, etc.). Any of these may be viable option for your team and we focus on GitHub here only to ensure a standard backdrop for the case studies we’ll discuss shortly.\nThere are a lot of GitHub tutorials that exist already so, rather than add our own variant to the list, we’ll work through part of one created by the Scientific Computing team of the National Center for Ecological Analysis and Synthesis (NCEAS).\nSee the workshop materials here.\nGiven the time restrictions for this short course, we’ll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will certainly have a method of connecting to GitHub/etc. so if this topic is of interest it will be beneficial for you to search out the relevant tutorial."
+  },
+  {
+    "objectID": "module2.html#courses-workshops-and-tutorials",
+    "href": "module2.html#courses-workshops-and-tutorials",
+    "title": "Module 2: Operational synthesis",
+    "section": "Courses, Workshops, and Tutorials",
+    "text": "Courses, Workshops, and Tutorials\n\nSynthesis Skills for Early Career Researchers (SSECR) course. 2024. LTER Network Office\nReproducible Approaches to Arctic Research Using R workshop. 2024. Arctic Data Center & NCEAS Learning Hub\nCollaborative Coding with GitHub workshop. 2024. NCEAS Scientific Computing team\nCoding in the Tidyverse workshop. 2023. NCEAS Scientific Computing team\nShiny Apps for Sharing Science workshop. 2022. Lyon, N.J. et al.\nTen Commandments for Good Data Management. 2016. McGill, B."
+  },
+  {
+    "objectID": "module2.html#literature",
+    "href": "module2.html#literature",
+    "title": "Module 2: Operational synthesis",
+    "section": "Literature",
+    "text": "Literature\n\nHarrer, M. et al. Doing Meta-Analysis with R: A Hands-On Guide. 2023. GitHub\nTodd-Brown, K.E.O., et al. Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential. 2022. Biogeosciences\nBorer, E.T. et al. Some Simple Guidelines for Effective Data Management. 2009. Ecological Society of America Bulletin"
+  },
+  {
     "objectID": "module1.html",
     "href": "module1.html",
     "title": "Module 1: Starting with team science",
