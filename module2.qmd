@@ -13,9 +13,46 @@ After completing this module, you will be able to:
 - **Create** a repository on GitHub
 - **Explain** how synthesis teams can use GitHub to collaborate more efficiently and reproducibly
 
+# Reproducibility in Synthesis
+
+
+# Version Control
+
+## Vocabulary
+
+
+## GitHub
+
+
+# Synthesis Group Case Studies
+
+:::{.panel-tabset}
+## Example 1
 
 
 
+## Example 2
 
+
+## Example 3
+
+:::
+
+# Additional Resources
+
+## Courses, Workshops, and Tutorials
+
+- [Synthesis Skills for Early Career Researchers](https://lter.github.io/ssecr/) (SSECR) course. **2024**. LTER Network Office
+- [Reproducible Approaches to Arctic Research Using R](https://learning.nceas.ucsb.edu/2024-02-arctic/) workshop. **2024**. Arctic Data Center & NCEAS Learning Hub
+- [Collaborative Coding with GitHub](https://nceas.github.io/scicomp-workshop-collaborative-coding/) workshop. **2024**. NCEAS Scientific Computing team
+- [Coding in the Tidyverse](https://nceas.github.io/scicomp-workshop-tidyverse/) workshop. **2023**. NCEAS Scientific Computing team
+- [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/) workshop. **2022**. Lyon, N.J. _et al._
+- [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/). **2016**. McGill, B.
+
+## Literature
+
+- Harrer, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2023**. _GitHub_
+- Todd-Brown, K.E.O., _et al._ [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/). **2022**. _Biogeosciences_
+- Borer, E.T. _et al._ [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. _Ecological Society of America Bulletin_
 
 
