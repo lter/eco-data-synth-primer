@@ -20,6 +20,8 @@ website:
     right:
       - text: "People"
         menu: 
+          - text: "Instructors"
+            href: people.qmd
           - text: "Contributing"
             href: contributing.qmd
       - icon: github
