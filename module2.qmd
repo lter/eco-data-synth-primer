@@ -15,12 +15,16 @@ After completing this module, you will be able to:
 
 # Reproducibility Practices
 
+<p align="center">
+<img src="images/mod2_repro.png" width="90%"/>
+</p>
+
 Making one's work "reproducible"--particularly in code contexts--has become increasingly popular but is not always clearly defined. For the purposes of this short course, we believe that reproducible work:
 
 - Uses scripted workflows for all interactions with data
 - Contains sufficient documentation for those outside of the project team to navigate the project's contents
 - Contains detailed metadata for all data products
-- 
+- Allows anyone to recreate the entire workflow from start to finish
 - 
 - 
 
@@ -30,30 +34,35 @@ Making one's work "reproducible"--particularly in code contexts--has become incr
 
 **Estimated time: 10 min**
 
-Documentation!
+### {{< fa file-lines >}} Documentation
 
-- One folder / project
+- One folder per project
 - Further organize content via sub-folders
 - Make file names informative and intuitive
+   - Avoid spaces and special characters in file names
+   - Follow a consistent naming convention throughout
 - Use READMEs to record organization rules / explanation
 - 
 
-Code
+### {{< fa laptop-code >}} Code
 
-- Load libraries explicitly
+- Use a version control system
+- Load libraries/packages explicitly
 - Track (and document) software versions
 - Namespace functions (if not already required by your coding language)
 - Use relative file paths that are operating system-agnostic
 - Balance how descriptive object names are with striving for concise names
 - _Use comments_ in the code!
 - Consider custom functions
+- For scripts that need to be run in order, consider adding step numbers to the file name
 - 
 
-Contributing
+### {{< fa people-group >}} Contributing
 
 - Create a formal plan for collaborating _with which your whole team agrees_
 - Quarantine external inputs
 - Plan for "future you"
+- Communicate to your collaborators whenever you're working on a specific script to avoid conflicting edits
 - 
 
 ## Synthesis Considerations
@@ -66,10 +75,14 @@ How does reproducibility in synthesis considerations differ from individual / no
     - But "defer to the doers"
 - Increased emphasis on contribution guidelines / planning being formalized
 - More communication needs
-- 
+- Must ensure that every team member has sufficient access to the project files
 - 
 
 # Version Control
+
+<p align="center">
+<img src="images/mod2_final.png" width="80%"/>
+</p>
 
 ## Vocabulary
 
@@ -77,10 +90,10 @@ How does reproducibility in synthesis considerations differ from individual / no
 
 Brief definitions for a selection of fundamental version control vocabulary terms
 
-- Version control: 
-- Repository: 
-- 
-- 
+- Version control system: software that tracks iterative changes to your code and other files
+- Repository: the specific folder/directory that is being tracked by a version control system
+- Git: a popular open-source distributed version control system
+- GitHub: a website that allows users to store their Git repositories online and share them with others 
 - 
 
 ## GitHub
@@ -93,7 +106,7 @@ There are a _lot_ of GitHub tutorials that exist already so, rather than add our
 
 **See the workshop materials [here](https://nceas.github.io/scicomp-workshop-collaborative-coding/github.html).**
 
-Given the time restrictions for this short course, we'll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will _certainly_ have a method of connecting to GitHub/etc. so if this topic is of interest it will be beneficial for you to search out the relevant tutorial.
+Given the time restrictions for this short course, we'll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will _certainly_ have a method of connecting to GitHub/etc., so if this topic is of interest it will be beneficial for you to search out the relevant tutorial.
 
 # Synthesis Group Case Studies
 
@@ -109,7 +122,7 @@ Highlights:
 - Straightforward & transparent numbering of workflow scripts
 - Custom `.gitignore` safety net
 
-https://github.com/lter/lter-sparc-soil-p
+[https://github.com/lter/lter-sparc-soil-p](https://github.com/lter/lter-sparc-soil-p)
 
 ## Example 2
 
@@ -118,7 +131,7 @@ Highlights:
 - Really consistent file naming conventions & folder organization
 - Active contribution to code base by all group members
 
-https://github.com/lter/lterwg-flux-gradient
+[https://github.com/lter/lterwg-flux-gradient](https://github.com/lter/lterwg-flux-gradient)
 
 ## Example 3
 
@@ -128,9 +141,11 @@ Highlights:
 - Nice use of README as pseudo-bookmarks for later reference to other repositories
 
 
-https://github.com/lter/lterwg-silica-data
+[https://github.com/lter/lterwg-silica-data](https://github.com/lter/lterwg-silica-data)
 
 :::
+
+For more information about LTER synthesis working groups and how you can get involved in one, click [here](https://lternet.edu/synthesis/). 
 
 # Additional Resources
 
