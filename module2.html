@@ -41,6 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -147,7 +149,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#reproducibility-practices" id="toc-reproducibility-practices" class="nav-link" data-scroll-target="#reproducibility-practices">Reproducibility Practices</a>
   <ul class="collapse">
-  <li><a href="#general-considerations" id="toc-general-considerations" class="nav-link" data-scroll-target="#general-considerations">General Considerations</a></li>
+  <li><a href="#general-considerations" id="toc-general-considerations" class="nav-link" data-scroll-target="#general-considerations">General Considerations</a>
+  <ul class="collapse">
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation"><i class="fa-solid fa-file-lines" aria-label="file-lines"></i> Documentation</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code"><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> Code</a></li>
+  <li><a href="#contributing" id="toc-contributing" class="nav-link" data-scroll-target="#contributing"><i class="fa-solid fa-people-group" aria-label="people-group"></i> Contributing</a></li>
+  </ul></li>
   <li><a href="#synthesis-considerations" id="toc-synthesis-considerations" class="nav-link" data-scroll-target="#synthesis-considerations">Synthesis Considerations</a></li>
   </ul></li>
   <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version Control</a>
@@ -200,44 +207,60 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="reproducibility-practices" class="level1">
 <h1>Reproducibility Practices</h1>
+<p align="center">
+<img src="images/mod2_repro.png" width="90%">
+</p>
 <p>Making one’s work “reproducible”–particularly in code contexts–has become increasingly popular but is not always clearly defined. For the purposes of this short course, we believe that reproducible work:</p>
 <ul>
 <li>Uses scripted workflows for all interactions with data</li>
 <li>Contains sufficient documentation for those outside of the project team to navigate the project’s contents</li>
 <li>Contains detailed metadata for all data products</li>
-<li></li>
+<li>Allows anyone to recreate the entire workflow from start to finish</li>
 <li></li>
 <li></li>
 </ul>
 <section id="general-considerations" class="level2">
 <h2 class="anchored" data-anchor-id="general-considerations">General Considerations</h2>
 <p><strong>Estimated time: 10 min</strong></p>
-<p>Documentation!</p>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation"><i class="fa-solid fa-file-lines" aria-label="file-lines"></i> Documentation</h3>
 <ul>
-<li>One folder / project</li>
+<li>One folder per project</li>
 <li>Further organize content via sub-folders</li>
-<li>Make file names informative and intuitive</li>
+<li>Make file names informative and intuitive
+<ul>
+<li>Avoid spaces and special characters in file names</li>
+<li>Follow a consistent naming convention throughout</li>
+</ul></li>
 <li>Use READMEs to record organization rules / explanation</li>
 <li></li>
 </ul>
-<p>Code</p>
+</section>
+<section id="code" class="level3">
+<h3 class="anchored" data-anchor-id="code"><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> Code</h3>
 <ul>
-<li>Load libraries explicitly</li>
+<li>Use a version control system</li>
+<li>Load libraries/packages explicitly</li>
 <li>Track (and document) software versions</li>
 <li>Namespace functions (if not already required by your coding language)</li>
 <li>Use relative file paths that are operating system-agnostic</li>
 <li>Balance how descriptive object names are with striving for concise names</li>
 <li><em>Use comments</em> in the code!</li>
 <li>Consider custom functions</li>
+<li>For scripts that need to be run in order, consider adding step numbers to the file name</li>
 <li></li>
 </ul>
-<p>Contributing</p>
+</section>
+<section id="contributing" class="level3">
+<h3 class="anchored" data-anchor-id="contributing"><i class="fa-solid fa-people-group" aria-label="people-group"></i> Contributing</h3>
 <ul>
 <li>Create a formal plan for collaborating <em>with which your whole team agrees</em></li>
 <li>Quarantine external inputs</li>
 <li>Plan for “future you”</li>
+<li>Communicate to your collaborators whenever you’re working on a specific script to avoid conflicting edits</li>
 <li></li>
 </ul>
+</section>
 </section>
 <section id="synthesis-considerations" class="level2">
 <h2 class="anchored" data-anchor-id="synthesis-considerations">Synthesis Considerations</h2>
@@ -250,22 +273,25 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li>Increased emphasis on contribution guidelines / planning being formalized</li>
 <li>More communication needs</li>
-<li></li>
+<li>Must ensure that every team member has sufficient access to the project files</li>
 <li></li>
 </ul>
 </section>
 </section>
 <section id="version-control" class="level1">
 <h1>Version Control</h1>
+<p align="center">
+<img src="images/mod2_final.png" width="80%">
+</p>
 <section id="vocabulary" class="level2">
 <h2 class="anchored" data-anchor-id="vocabulary">Vocabulary</h2>
 <p><strong>Estimated time: 5 min</strong></p>
 <p>Brief definitions for a selection of fundamental version control vocabulary terms</p>
 <ul>
-<li>Version control:</li>
-<li>Repository:</li>
-<li></li>
-<li></li>
+<li>Version control system: software that tracks iterative changes to your code and other files</li>
+<li>Repository: the specific folder/directory that is being tracked by a version control system</li>
+<li>Git: a popular open-source distributed version control system</li>
+<li>GitHub: a website that allows users to store their Git repositories online and share them with others</li>
 <li></li>
 </ul>
 </section>
@@ -275,7 +301,7 @@ ul.task-list li input[type="checkbox"] {
 <p>While this section of the module focuses on <a href="https://github.com/">GitHub</a>, there are several other viable alternatives for working with Git individually or as part of a larger team (e.g., <a href="https://about.gitlab.com/">GitLab</a>, <a href="https://www.gitkraken.com/">GitKraken</a>, etc.). Any of these may be viable option for your team and we focus on GitHub here only to ensure a standard backdrop for the case studies we’ll discuss shortly.</p>
 <p>There are a <em>lot</em> of GitHub tutorials that exist already so, rather than add our own variant to the list, we’ll work through part of one created by the Scientific Computing team of the <a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis</a> (NCEAS).</p>
 <p><strong>See the workshop materials <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/github.html">here</a>.</strong></p>
-<p>Given the time restrictions for this short course, we’ll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will <em>certainly</em> have a method of connecting to GitHub/etc. so if this topic is of interest it will be beneficial for you to search out the relevant tutorial.</p>
+<p>Given the time restrictions for this short course, we’ll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will <em>certainly</em> have a method of connecting to GitHub/etc., so if this topic is of interest it will be beneficial for you to search out the relevant tutorial.</p>
 </section>
 </section>
 <section id="synthesis-group-case-studies" class="level1">
@@ -291,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Straightforward &amp; transparent numbering of workflow scripts</li>
 <li>Custom <code>.gitignore</code> safety net</li>
 </ul>
-<p>https://github.com/lter/lter-sparc-soil-p</p>
+<p><a href="https://github.com/lter/lter-sparc-soil-p">https://github.com/lter/lter-sparc-soil-p</a></p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Highlights:</p>
@@ -299,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Really consistent file naming conventions &amp; folder organization</li>
 <li>Active contribution to code base by all group members</li>
 </ul>
-<p>https://github.com/lter/lterwg-flux-gradient</p>
+<p><a href="https://github.com/lter/lterwg-flux-gradient">https://github.com/lter/lterwg-flux-gradient</a></p>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Highlights:</p>
@@ -307,10 +333,11 @@ ul.task-list li input[type="checkbox"] {
 <li>Separate repositories for each manuscript</li>
 <li>Nice use of README as pseudo-bookmarks for later reference to other repositories</li>
 </ul>
-<p>https://github.com/lter/lterwg-silica-data</p>
+<p><a href="https://github.com/lter/lterwg-silica-data">https://github.com/lter/lterwg-silica-data</a></p>
 </div>
 </div>
 </div>
+<p>For more information about LTER synthesis working groups and how you can get involved in one, click <a href="https://lternet.edu/synthesis/">here</a>.</p>
 </section>
 <section id="additional-resources" class="level1">
 <h1>Additional Resources</h1>
