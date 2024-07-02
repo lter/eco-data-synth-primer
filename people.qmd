@@ -2,14 +2,43 @@
 title: "People"
 ---
 
-## Design Team
+The course is currently being organized by Greg Maurer (gmaurer@nmsu.edu), with generous assistance from Marty Downs and Nick Lyon. See the Contributors section for more information.
 
+## Contributors
 
+We have a long list of synthesis scientists actively involved in the course working group who are contributing expertise and instructional content, and many will be present as instructors at the 2024 ESA Meeting. Names and web profiles are listed below.
 
-- Nick J Lyon (_they/them)_ -- {{< fa user >}} [Website](https://njlyon0.github.io/) -- {{< fa brands github >}} [GitHub](https://github.com/njlyon0) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0003-3905-1078)
+- Kathryn Barry -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
+
+- Joanna Carey -- {{< fa user >}} [Website](https://www.babson.edu/about/our-leaders-and-scholars/faculty-and-academic-divisions/faculty-profiles/joanna-carey.php) -- {{< fa brands google-scholar >}} [Publications](https://scholar.google.com/citations?user=n_HQZ7QAAAAJ&hl=en)
 
 - Angel Chen (_she/her_) -- {{< fa user >}} [Website](https://angelchen7.github.io/) -- {{< fa brands github >}} [GitHub](https://github.com/angelchen7/) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0003-3515-6710)
 
+- Laura Dee -- {{< fa user >}} [Website](www.lauraedee.com) -- {{< fa brands google-scholar >}} -- {{< fa brands github >}} [GitHub](https://github.com/lauradee/) [Publications](https://scholar.google.com/citations?user=fkHAm5YAAAAJ&hl=en)
 
+- Marty Downs -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
 
+- Stevan Earl -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
+
+- Sarah Elmendorf -- {{< fa user >}} [Website](https://www.colorado.edu/instaar/sarah-elmendorf) -- {{< fa brands github >}} [GitHub](https://github.com/scelmendorf/) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0002-3007-8058)
+
+- Jalene LaMontagne -- {{< fa user >}} [Website](https://lamontagnelab.weebly.com/) -- {{< fa brands google-scholar >}} [Publications](https://scholar.google.com/citations?user=BSOec3pWk-0C&hl) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0001-7713-8591)
+
+- Nick J Lyon (_they/them)_ -- {{< fa user >}} [Website](https://njlyon0.github.io/) -- {{< fa brands github >}} [GitHub](https://github.com/njlyon0) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0003-3905-1078)
+
+- Gregory Maurer (_he/him_) -- {{< fa user >}} [Website](https://greg.pronghorns.net/) -- {{< fa brands github >}} [GitHub](https://github.com/gremau) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0002-3007-8058)
+
+- Colin Smith -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
+
+- Eric Sokol -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
+
+- Alexandra (Sasha) Wright -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
+
+## Other contributors
+
+In addition to those above, several people contributed to early iterations on the concept and content of the course.
+
+- Forest Isbell -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
+
+- Kim Komatsu -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
 

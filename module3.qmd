@@ -19,7 +19,16 @@ title: "Module 3: Tying it all together"
 
 **Estimated time: 12 min**
 
-## Formats for synthesis datasets
+Harmonized data that are findable, accessible, interoperable, and reusable (FAIR) are an important output for any ecological data synthesis project. Two key questions that should be considered during the data publishing phase are:
+
+    a. How should the data be structured or formatted?
+    b. What metadata are needed to describe the data?
+    
+Both questions should be answered in such a way that the usability of the data is maximized. 
+
+## Synthesis data structures and formats
+
+Data structure refers to the arrangement and organization of individual units of information in a data file. Data format generally refers to the data file type, i.e. text files, Microsoft Excel files, .jpeg image files, etc. Some data files are both a format and a structure. For example, comma separated value, or CSV, files are a common text-based data files where each line of text represents a table row, and data in columns are separated by commas.
 
 * Database
 * Text tables
@@ -27,8 +36,17 @@ title: "Module 3: Tying it all together"
 
 ## Metadata
 
-* Who, what, when, where, how?
-* Sometimes "why?" helps too.
+Metadata are data about the data. As a general rule, metadata should describe
+
+  * **Who** collected the data
+  * **What** was observed or measured
+  * **When** the data were collected
+  * **Where** the data were collected
+  * **How** the data were collected (methods, instruments, etc.)
+
+Oftentimes, including information about **why** the data were collected can help future users understand the context of the data and use them.
+
+**Assembling metadata should begin early**, and is an integral part of doing data synthesis throughout the life-cycle of the project. Consider building metadata collection in to the workflow and project management elements of your project.
 
 ## Activity: Evaluate published datasets
 
@@ -37,9 +55,24 @@ title: "Module 3: Tying it all together"
 Form breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:
 
 1. Where were the data collected?
-2. What variable were measured and in what units?
+2. What variables were measured and in what units?
 3. Are the data raw or have they been altered since collection? If the latter, how?
 4. Were the first three questions easy to answer? Why or why not?
+
+:::{.panel-tabset}
+## Example 1
+
+EDI dataset 1
+
+## Example 2
+
+EDI dataset 2
+
+## Example 3
+
+Dataset from a researcher/program website?
+
+:::
 
 ## Summary
 
@@ -48,8 +81,9 @@ Form breakout groups and course instructors will assign each group a dataset (a 
 
 ## Additional resources
 
-* ...
-* ...
+* Wilkinson, Mark D., et al. "The FAIR Guiding Principles for scientific data management and stewardship." Scientific data 3.1 (2016): 1-9. [DOI: 10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18)
+* [NEON's guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
+* [EDI repository data author guide](https://edirepository.org/resources/resources-for-data-authors)
 
 # Connecting the elements of a synthesis project
 
@@ -59,11 +93,15 @@ There are three interconnected elements to a synthesis project (or any research 
 the analytical workflow, and the results. Each of these elements is a valuable product of synthesis science,
 and each should reference the others.
 
-![Figure 1](./images/mod3_fig1_tying.png)
+<p align="center">
+<img src="images/mod3_fig1_tying.png" width="60%"/>
+</p>
+
 
 ## Publishing data (5)
 
 * Data and metadata
+* Data provenance - especially important in synthesis
 * Research data repositories
 * Licensing, etc.
 
@@ -99,11 +137,33 @@ source/derived data, etc.). Then, answer these questions:
 1. Who was involved in the synthesis project?
 2. How many journal articles and datasets were published?
 3. Could you reproduce results or contribute new data to the project based on what you found?
-4. What elements are missing or difficult to undersand?
+4. What elements are missing or difficult to understand?
+
+
+:::{.panel-tabset}
+## Example 1
+
+SoDAH
+
+## Example 2
+
+CoRRE or metacommunities
+
+https://corredata.weebly.com/
+
+## Example 3
+
+Silica exports
+
+https://github.com/lter/lterwg-silica-data
+
+:::
+
+
 
 ## Additional resources
 
-* [NEON's guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
+* 
 
 # Maintaining momentum
 
