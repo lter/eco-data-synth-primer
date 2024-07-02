@@ -4,14 +4,21 @@
     "href": "people.html",
     "title": "People",
     "section": "",
-    "text": "Nick J Lyon (they/them) –  Website –  GitHub –  ORCID\nAngel Chen (she/her) –  Website –  GitHub –  ORCID"
+    "text": "The course is currently being organized by Greg Maurer (gmaurer@nmsu.edu), with generous assistance from Marty Downs and Nick Lyon. See the Contributors section for more information."
   },
   {
-    "objectID": "people.html#design-team",
-    "href": "people.html#design-team",
+    "objectID": "people.html#contributors",
+    "href": "people.html#contributors",
     "title": "People",
-    "section": "",
-    "text": "Nick J Lyon (they/them) –  Website –  GitHub –  ORCID\nAngel Chen (she/her) –  Website –  GitHub –  ORCID"
+    "section": "Contributors",
+    "text": "Contributors\nWe have a long list of synthesis scientists actively involved in the course working group who are contributing expertise and instructional content, and many will be present as instructors at the 2024 ESA Meeting. Names and web profiles are listed below.\n\nKathryn Barry –  Website –  Publications\nJoanna Carey –  Website –  Publications\nAngel Chen (she/her) –  Website –  GitHub –  ORCID\nLaura Dee –  Website –  –  GitHub Publications\nMarty Downs –  Website –  Publications\nStevan Earl –  Website –  Publications\nSarah Elmendorf –  Website –  GitHub –  ORCID\nJalene LaMontagne –  Website –  Publications –  ORCID\nNick J Lyon (they/them) –  Website –  GitHub –  ORCID\nGregory Maurer (he/him) –  Website –  GitHub –  ORCID\nColin Smith –  Website –  Publications\nEric Sokol –  Website –  Publications\nAlexandra (Sasha) Wright –  Website –  Publications"
+  },
+  {
+    "objectID": "people.html#other-contributors",
+    "href": "people.html#other-contributors",
+    "title": "People",
+    "section": "Other contributors",
+    "text": "Other contributors\nIn addition to those above, several people contributed to early iterations on the concept and content of the course.\n\nForest Isbell –  Website –  Publications\nKim Komatsu –  Website –  Publications"
   },
   {
     "objectID": "module2.html",
@@ -112,25 +119,25 @@
     "text": "Understand data publishing best-practices and the features that make data easy to re-use\nEvaluate the metadata and fitness-for-use of published synthesis datasets\nUnderstand the three primary “products” that come out of synthesis groups\nUnderstand concepts of data provenance, reproducible analysis, and citations\nEvaluate the reproducibility of a recent data synthesis project\nUnderstand the different models of data accessibility, licensing, and authorship practices and apply them to a synthesis group’s desired outcomes\nUnderstand several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.\nCreate a plan to maintain a synthesis project and associated data over the long-term"
   },
   {
-    "objectID": "module3.html#formats-for-synthesis-datasets",
-    "href": "module3.html#formats-for-synthesis-datasets",
+    "objectID": "module3.html#synthesis-data-structures-and-formats",
+    "href": "module3.html#synthesis-data-structures-and-formats",
     "title": "Module 3: Tying it all together",
-    "section": "Formats for synthesis datasets",
-    "text": "Formats for synthesis datasets\n\nDatabase\nText tables\nSpecial data types"
+    "section": "Synthesis data structures and formats",
+    "text": "Synthesis data structures and formats\nData structure refers to the arrangement and organization of individual units of information in a data file. Data format generally refers to the data file type, i.e. text files, Microsoft Excel files, .jpeg image files, etc. Some data files are both a format and a structure. For example, comma separated value, or CSV, files are a common text-based data files where each line of text represents a table row, and data in columns are separated by commas.\n\nDatabase\nText tables\nSpecial data types"
   },
   {
     "objectID": "module3.html#metadata",
     "href": "module3.html#metadata",
     "title": "Module 3: Tying it all together",
     "section": "Metadata",
-    "text": "Metadata\n\nWho, what, when, where, how?\nSometimes “why?” helps too."
+    "text": "Metadata\nMetadata are data about the data. As a general rule, metadata should describe\n\nWho collected the data\nWhat was observed or measured\nWhen the data were collected\nWhere the data were collected\nHow the data were collected (methods, instruments, etc.)\n\nOftentimes, including information about why the data were collected can help future users understand the context of the data and use them.\nAssembling metadata should begin early, and is an integral part of doing data synthesis throughout the life-cycle of the project. Consider building metadata collection in to the workflow and project management elements of your project."
   },
   {
     "objectID": "module3.html#activity-evaluate-published-datasets",
     "href": "module3.html#activity-evaluate-published-datasets",
     "title": "Module 3: Tying it all together",
     "section": "Activity: Evaluate published datasets",
-    "text": "Activity: Evaluate published datasets\nEstimated time: 10 min\nForm breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:\n\nWhere were the data collected?\nWhat variable were measured and in what units?\nAre the data raw or have they been altered since collection? If the latter, how?\nWere the first three questions easy to answer? Why or why not?"
+    "text": "Activity: Evaluate published datasets\nEstimated time: 10 min\nForm breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:\n\nWhere were the data collected?\nWhat variables were measured and in what units?\nAre the data raw or have they been altered since collection? If the latter, how?\nWere the first three questions easy to answer? Why or why not?\n\n\nExample 1Example 2Example 3\n\n\nEDI dataset 1\n\n\nEDI dataset 2\n\n\nDataset from a researcher/program website?"
   },
   {
     "objectID": "module3.html#summary",
@@ -144,14 +151,14 @@
     "href": "module3.html#additional-resources",
     "title": "Module 3: Tying it all together",
     "section": "Additional resources",
-    "text": "Additional resources\n\n…\n…"
+    "text": "Additional resources\n\nWilkinson, Mark D., et al. “The FAIR Guiding Principles for scientific data management and stewardship.” Scientific data 3.1 (2016): 1-9. DOI: 10.1038/sdata.2016.18\nNEON’s guide\nEDI repository data author guide"
   },
   {
     "objectID": "module3.html#publishing-data-5",
     "href": "module3.html#publishing-data-5",
     "title": "Module 3: Tying it all together",
     "section": "Publishing data (5)",
-    "text": "Publishing data (5)\n\nData and metadata\nResearch data repositories\nLicensing, etc."
+    "text": "Publishing data (5)\n\nData and metadata\nData provenance - especially important in synthesis\nResearch data repositories\nLicensing, etc."
   },
   {
     "objectID": "module3.html#sharing-the-workflow-7",
@@ -186,14 +193,14 @@
     "href": "module3.html#activity-evaluate-three-synthesis-projects",
     "title": "Module 3: Tying it all together",
     "section": "Activity: Evaluate three synthesis projects",
-    "text": "Activity: Evaluate three synthesis projects\nEstimated time: 12 min\nForm breakout groups and course instructors will assign each group a synthesis project, with links to one or more elements (the code, a paper, a dataset, etc.). Try to put together the rest of the picture (other publications, source/derived data, etc.). Then, answer these questions:\n\nWho was involved in the synthesis project?\nHow many journal articles and datasets were published?\nCould you reproduce results or contribute new data to the project based on what you found?\nWhat elements are missing or difficult to undersand?"
+    "text": "Activity: Evaluate three synthesis projects\nEstimated time: 12 min\nForm breakout groups and course instructors will assign each group a synthesis project, with links to one or more elements (the code, a paper, a dataset, etc.). Try to put together the rest of the picture (other publications, source/derived data, etc.). Then, answer these questions:\n\nWho was involved in the synthesis project?\nHow many journal articles and datasets were published?\nCould you reproduce results or contribute new data to the project based on what you found?\nWhat elements are missing or difficult to understand?\n\n\nExample 1Example 2Example 3\n\n\nSoDAH\n\n\nCoRRE or metacommunities\nhttps://corredata.weebly.com/\n\n\nSilica exports\nhttps://github.com/lter/lterwg-silica-data"
   },
   {
     "objectID": "module3.html#additional-resources-1",
     "href": "module3.html#additional-resources-1",
     "title": "Module 3: Tying it all together",
     "section": "Additional resources",
-    "text": "Additional resources\n\nNEON’s guide"
+    "text": "Additional resources"
   },
   {
     "objectID": "module3.html#funding-sources",
@@ -205,22 +212,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "A course for collaborative ecologists",
     "section": "",
-    "text": "Under construction, check back soon!"
-  },
-  {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Home",
-    "section": "",
-    "text": "Under construction, check back soon!"
+    "text": "This course and the website are under construction. Please check back soon!\nIn recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time, the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a ”team sport”. Objectives for learners are to (a) develop an end-to-end (conception to publication) plan for collaborative synthesis research, and (b) gain data synthesis skills that are immediately useful in a research team setting. Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, analytical workflows, and publication of derived datasets. The course uses real-world examples, demonstrations, and interactive lessons. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips. Many workshop activities will be oriented toward helping learners develop their own ideas and plans for ecological data synthesis."
   },
   {
     "objectID": "index.html#agenda",
     "href": "index.html#agenda",
-    "title": "Home",
+    "title": "A course for collaborative ecologists",
     "section": "Agenda",
-    "text": "Agenda\nNote that the agenda is subject to change.\n\nModule 1: Starting with Team Science\nModule 2: Operational Synthesis\nModule 3: Tying It All Together"
+    "text": "Agenda\nThis agenda is subject to change as the course is developed.\n\nModule 1: Starting with Team Science\nModule 2: Operational Synthesis\nModule 3: Tying It All Together"
+  },
+  {
+    "objectID": "index.html#photo-credits",
+    "href": "index.html#photo-credits",
+    "title": "A course for collaborative ecologists",
+    "section": "Photo credits:",
+    "text": "Photo credits:\nIn the collage above: Jacob Bøtter via Flickr, CC BY-SA 2.0 | Jeremy Yoder via Flickr, CC BY-SA 2.0 | Marco Pfeiffer, CC BY-SA 4.0 | Gabriel De La Rosa, CC BY-SA 4.0 | Weecology lab CC BY 4.0 | NEON (National Ecological Observatory Network)"
   }
 ]
