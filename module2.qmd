@@ -15,7 +15,7 @@ After completing this module, you will be able to:
 
 # What happens during synthesis research? (Greg added - please review)
 
-Here are a couple of serviceable definitions of what research is
+Here are a couple of serviceable definitions of what research is:
 
 > "creative and systematic work undertaken in order to increase the stock of knowledge"
 >
@@ -50,7 +50,7 @@ Making one's work "reproducible"--particularly in code contexts--has become incr
 - Contains sufficient documentation for those outside of the project team to navigate the project's contents
 - Contains detailed metadata for all data products
 - Allows anyone to recreate the entire workflow from start to finish
-- 
+- Leads to modular, extensible research projects. Adding data from a new site, or a new analysis, should be relatively easy in a reproducible workflow.
 - 
 
 
@@ -67,6 +67,10 @@ Making one's work "reproducible"--particularly in code contexts--has become incr
    - Avoid spaces and special characters in file names
    - Follow a consistent naming convention throughout
 - Use READMEs to record organization rules / explanation
+- Keep a log of where data came from. 
+   - Where did you search?
+   - What search terms did you use?
+   - List the dataset identifiers you downloaded/used.
 - 
 
 ### {{< fa laptop-code >}} Code
@@ -103,42 +107,60 @@ How does reproducibility in synthesis considerations differ from individual / no
 - Must ensure that every team member has sufficient access to the project files
 - 
 
-# Harmonizing data (Greg added - please review)
+# Cleaning and harmonizing data (Greg added - please review)
 
-In synthesis projects, it is common to bring together datasets collected from different sources for analysis. This follows naturally from the large scope of the scientific questions being asked. The source datasets selected for analysis may have been collected by different people, in different places, using different methods, as part of different projects... or all of the above. Typically, some degree of "harmonization" - or putting data together in common structures, file formats, and units of measurement -  is necessary before analysis can begin. This can be easy or difficult depending on how different the original datasets are, and on how much **metadata** (see callout below) is available to understand those datasets. 
+The scientific questions being asked in synthesis projects are usually broad in scope, and it is therefore common to bring together datasets collected from different sources for analysis. The datasets selected for analysis (source data) may have been collected by different people, in different places, using different methods, as part of different projects... or all of the above. Typically, some amount of data **cleaning** - filtering or removing unwanted observations - and data **harmonization** - putting data together in common structures, file formats, and units of measurement - is necessary before analysis can begin. This process can be easy or difficult depending on the quality of the source data, how different they are, and on how much **metadata** (see callout below) is available to understand them. 
 
 ::: {.callout-tip collapse="true"}
 ## What is metadata?
 
-Metadata is "data about the data," or information that describes **who** collected the data, **what** was observed or measured, **when** the data were collected, **where** the data were collected, **how** the observations or measurements were made, and **why** they were collected. We'll talk a little more about metadata in Module 3 of this course.
+Metadata is "data about the data," or information that describes **who** collected the data, **what** was observed or measured, **when** the data were collected, **where** the data were collected, **how** the observations or measurements were made, and **why** they were collected. Metadata provide important contextual information about the origin of the data and how they can be analyzed or used. They are most useful when attached or linked to the data being described, and data and related metadata together are commonly referred to as a *dataset*.
 
-See [here](https://edirepository.org/resources/creating-metadata-for-publication) for more information about scientific metadata. 
+Metadata for ecological research data are well described in Michener et al (1997)^[Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2], but there are many other kinds of metadata with different purposes.^[Mayernik, M.S. and Acker, A. (2018), Tracing the traces: The critical role of metadata within networked communications. Journal of the Association for Information Science and Technology, 69: 177-180. https://doi.org/10.1002/asi.23927] When publishing datasets, research data repositories typically provide guidance on metadata needs, as seen [here](https://edirepository.org/resources/creating-metadata-for-publication), for example. 
 :::
 
+## Data cleaning and filtering
 
-In the figure below, two datasets from different LTER sites have been harmonized into one file for analysis. We don't have all the metadata here, but based on the column naming lets assume that the source data file on the left (`Konza_harvestplots.txt`, yellow) contains columns for the sampling date, a plot identifier, treatments applied to the plots, and the measured biomass values. From the filename it appears that this comes from the Konza Prarie LTER site. In the file on the right (`2022_clips.csv`, blue) it appears that we have columns denoting the sampled site, in this case Sevilleta LTER (abbreviated as SEV), the sampling date, a plot identifier, a treatment categorical value, and again, the measured biomass values. 
+Usually, not all data in a given dataset are useful. This may be because there are some real or suspected errors in the data, or because they are simply not needed to answer the scientific question being asked (wrong variable, site not of interest, etc.). Data that are not useful are usually excluded from analysis or removed altogether.
+
+There are a variety of ways to approach cleaning and filtering data, and these are beyond the scope of this course. Below are a few guidelines to remember when cleaning and filtering data, followed by some more in-depth resources on the subject
+
+1. Always preserve the raw data
+2. Use a scripted workflow to clean and filter the raw data, and follow the usual rules about reproducibility (comments, version control, functionalization)
+
+## Data harmonization 
+
+Data harmonization is the process of bringing different datasets into a common structure or format for analysis.
+
+### A harmonization example
+
+In the figure below, two datasets from different LTER sites have been harmonized into one file for analysis. We don't have all the metadata here, but based on the column naming we can assume that the file on the left (`Konza_harvestplots.txt`, yellow) contains columns for the sampling date, a plot identifier, a treatment categorical value, and measured biomass values. The filename suggests that the data come from the Konza Prarie LTER site. The file on the right (`2022_clips.csv`, blue) has a column denoting the LTER site, in this case Sevilleta LTER (abbreviated as SEV), as well as similar date, plot identifier, treatment, and measured biomass columns. 
 
 ::: {.callout-note appearance="simple" icon="false"}
 There are some similarities and some differences in these two source files. A harmonized file (`lter_grass_biomass_harmonized.txt`) appears below.
 
-**Can you identify some things that have been harmonized?**
+**Can you identify some changes made to data structure, format, or units to harmonize these data?**
 :::
 
 <p align="center">
 <img src="images/data_harmonization_example.png" width="90%"/>
 </p>
 
-Several important decisions were made to create the harmonized file. Among them:
+Even though the data files were similar, several important changes were made to create the harmonized file. Among them:
 
 - The **site** column was preserved and contains the "SEV" and "KNZ" categorical values denoting which LTER site is observed in each row.
 - The dates in the **date** column were converted to a standard format (*YYYY-MM-DD*). Incidentally, this matches the International Organization for Standardization (ISO) recommendation for date/time data, making it generally a good choice for dates.
 - A new **rep** column was created to identify the replicate measurements at each site. This is essentially a standard version the plot identifier columns (**PlotID** and **plot**) in the original data file. Also note that the original values are preserved in the new **plot_orig** column.
 - The treatment columns from the original data files (**Treatment** and **trt**) were standardized to one column with "C" and "F" categorical values, for control and fertilized treatments, respectively.
-- The biomass values were converted to the same area basis of grams per meter squared (g/m^2^) because the Konza measurements were for total biomass in 2x2 meter plots. *Note that this conversion is for illustration purposes only* - we couldn't be sure if this conversion was correct without it being spelled out in the metadata, or asking the data provider directly.
+- The biomass values from Konza were converted to units grams per meter squared (g/m^2^) because the original Konza measurements were for total biomass in 2x2 meter plots. *Note that this conversion is for illustration purposes only* - we couldn't be sure if this conversion was correct without it being spelled out in the metadata, or asking the data provider directly.
+
+## A word on output formats
 
 The harmonized data format chosen for a synthesis project depends on the source data, analysis plans, and overall project goals. **It makes the best sense to decide on a harmonized data format as a team BEFORE analysis begins, if at all possible.** As a general rule, it is also wise to use a scripted workflow that is as reproducible as possible to accomplish the harmonization you need for your project. Following this guidance lets others understand, check, and adapt your work, and will also make it much, much easier to bring new data into the analysis.
 
 # Version Control
+
+In all scientific research, the data work (cleaning, harmonizing, analyzing) and the writing are iterative processes. They change over time and the resulting dataset, paper, or other output is usually the product of a long series of revisions. In synthesis research, the process can become even more complex because the team is usually large, and multiple people are contributing data, analysis, writing revisions, etc. Using some kind of **version control** helps manage this complexity by recording the changes, tracking individual contributions, and ensuring that something can be rolled-back to an earlier state if needed.
 
 <p align="center">
 <img src="images/mod2_final.png" width="80%"/>
