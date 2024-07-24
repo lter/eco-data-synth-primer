@@ -16,9 +16,9 @@ We have a long list of synthesis scientists actively involved in the course work
 
 - Laura Dee -- {{< fa user >}} [Website](www.lauraedee.com) -- {{< fa brands google-scholar >}} -- {{< fa brands github >}} [GitHub](https://github.com/lauradee/) [Publications](https://scholar.google.com/citations?user=fkHAm5YAAAAJ&hl=en)
 
-- Marty Downs -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
+- Marty Downs -- {{< fa user >}} [Website](https://lternet.edu/) -- {{< fa brands orcid >}} [Publications](https://orcid.org/0000-0003-2833-956X)
 
-- Stevan Earl -- {{< fa user >}} [Website](NULL) -- {{< fa brands google-scholar >}} [Publications](NULL)
+- Stevan Earl -- {{< fa user >}} [Website](https://sustainability-innovation.asu.edu/person/stevan-earl/) -- {{< fa brands github >}} [GitHub](https://github.com/srearl) -- {{< fa brands orcid >}} [Publications](https://orcid.org/0000-0002-4465-452X)
 
 - Sarah Elmendorf -- {{< fa user >}} [Website](https://www.colorado.edu/instaar/sarah-elmendorf) -- {{< fa brands github >}} [GitHub](https://github.com/scelmendorf/) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0002-3007-8058)
 
