@@ -21,53 +21,25 @@
     "text": "Other contributors\nIn addition to those above, several people contributed to early iterations on the concept and content of the course.\n\nForest Isbell –  Website –  Publications\nKim Komatsu –  Website –  Publications"
   },
   {
-    "objectID": "module2.html",
-    "href": "module2.html",
-    "title": "Module 2: Operational synthesis",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A course for collaborative ecologists",
     "section": "",
-    "text": "After completing this module, you will be able to:\n\nIdentify characteristics of reproducible coding / project organization\nExplain benefits of reproducibility (to your team and beyond)\nSummarize the advantages of creating a defined contribution workflow\nDefine fundamental vocabulary of version control systems\nCreate a repository on GitHub\nExplain how synthesis teams can use GitHub to collaborate more efficiently and reproducibly"
+    "text": "This course and the website are under construction. Please check back soon!\nIn recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time, the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a ”team sport”. Objectives for learners are to (a) develop an end-to-end (conception to publication) plan for collaborative synthesis research, and (b) gain data synthesis skills that are immediately useful in a research team setting. Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, analytical workflows, and publication of derived datasets. The course uses real-world examples, demonstrations, and interactive lessons. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips. Many workshop activities will be oriented toward helping learners develop their own ideas and plans for ecological data synthesis."
   },
   {
-    "objectID": "module2.html#general-considerations",
-    "href": "module2.html#general-considerations",
-    "title": "Module 2: Operational synthesis",
-    "section": "General Considerations",
-    "text": "General Considerations\nEstimated time: 10 min\n\n Documentation\n\nOne folder per project\nFurther organize content via sub-folders\nMake file names informative and intuitive\n\nAvoid spaces and special characters in file names\nFollow a consistent naming convention throughout\n\nUse READMEs to record organization rules / explanation\n\n\n\n\n Code\n\nUse a version control system\nLoad libraries/packages explicitly\nTrack (and document) software versions\nNamespace functions (if not already required by your coding language)\nUse relative file paths that are operating system-agnostic\nBalance how descriptive object names are with striving for concise names\nUse comments in the code!\nConsider custom functions\nFor scripts that need to be run in order, consider adding step numbers to the file name\n\n\n\n\n Contributing\n\nCreate a formal plan for collaborating with which your whole team agrees\nQuarantine external inputs\nPlan for “future you”\nCommunicate to your collaborators whenever you’re working on a specific script to avoid conflicting edits"
+    "objectID": "index.html#agenda",
+    "href": "index.html#agenda",
+    "title": "A course for collaborative ecologists",
+    "section": "Agenda",
+    "text": "Agenda\nThis agenda is subject to change as the course is developed.\n\nModule 1: Starting with Team Science\nModule 2: Operational Synthesis\nModule 3: Tying It All Together"
   },
   {
-    "objectID": "module2.html#synthesis-considerations",
-    "href": "module2.html#synthesis-considerations",
-    "title": "Module 2: Operational synthesis",
-    "section": "Synthesis Considerations",
-    "text": "Synthesis Considerations\nEstimated time: 10 min\nHow does reproducibility in synthesis considerations differ from individual / non-synthesis applications?\n\nJudgement calls need to be made / agreed to as a group\n\nBut “defer to the doers”\n\nIncreased emphasis on contribution guidelines / planning being formalized\nMore communication needs\nMust ensure that every team member has sufficient access to the project files"
-  },
-  {
-    "objectID": "module2.html#vocabulary",
-    "href": "module2.html#vocabulary",
-    "title": "Module 2: Operational synthesis",
-    "section": "Vocabulary",
-    "text": "Vocabulary\nEstimated time: 5 min\nBrief definitions for a selection of fundamental version control vocabulary terms\n\nVersion control system: software that tracks iterative changes to your code and other files\nRepository: the specific folder/directory that is being tracked by a version control system\nGit: a popular open-source distributed version control system\nGitHub: a website that allows users to store their Git repositories online and share them with others"
-  },
-  {
-    "objectID": "module2.html#github",
-    "href": "module2.html#github",
-    "title": "Module 2: Operational synthesis",
-    "section": "GitHub",
-    "text": "GitHub\nEstimated time: 10 min\nWhile this section of the module focuses on GitHub, there are several other viable alternatives for working with Git individually or as part of a larger team (e.g., GitLab, GitKraken, etc.). Any of these may be viable option for your team and we focus on GitHub here only to ensure a standard backdrop for the case studies we’ll discuss shortly.\nThere are a lot of GitHub tutorials that exist already so, rather than add our own variant to the list, we’ll work through part of one created by the Scientific Computing team of the National Center for Ecological Analysis and Synthesis (NCEAS).\nSee the workshop materials here.\nGiven the time restrictions for this short course, we’ll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will certainly have a method of connecting to GitHub/etc., so if this topic is of interest it will be beneficial for you to search out the relevant tutorial."
-  },
-  {
-    "objectID": "module2.html#courses-workshops-and-tutorials",
-    "href": "module2.html#courses-workshops-and-tutorials",
-    "title": "Module 2: Operational synthesis",
-    "section": "Courses, Workshops, and Tutorials",
-    "text": "Courses, Workshops, and Tutorials\n\nSynthesis Skills for Early Career Researchers (SSECR) course. 2024. LTER Network Office\nReproducible Approaches to Arctic Research Using R workshop. 2024. Arctic Data Center & NCEAS Learning Hub\nCollaborative Coding with GitHub workshop. 2024. NCEAS Scientific Computing team\nCoding in the Tidyverse workshop. 2023. NCEAS Scientific Computing team\nShiny Apps for Sharing Science workshop. 2022. Lyon, N.J. et al.\nTen Commandments for Good Data Management. 2016. McGill, B."
-  },
-  {
-    "objectID": "module2.html#literature",
-    "href": "module2.html#literature",
-    "title": "Module 2: Operational synthesis",
-    "section": "Literature",
-    "text": "Literature\n\nHarrer, M. et al. Doing Meta-Analysis with R: A Hands-On Guide. 2023. GitHub\nTodd-Brown, K.E.O., et al. Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential. 2022. Biogeosciences\nBorer, E.T. et al. Some Simple Guidelines for Effective Data Management. 2009. Ecological Society of America Bulletin"
+    "objectID": "index.html#photo-credits",
+    "href": "index.html#photo-credits",
+    "title": "A course for collaborative ecologists",
+    "section": "Photo credits:",
+    "text": "Photo credits:\nIn the collage above: Jacob Bøtter via Flickr, CC BY-SA 2.0 | Jeremy Yoder via Flickr, CC BY-SA 2.0 | Marco Pfeiffer, CC BY-SA 4.0 | Gabriel De La Rosa, CC BY-SA 4.0 | Weecology lab CC BY 4.0 | NEON (National Ecological Observatory Network)"
   },
   {
     "objectID": "contributing.html",
@@ -82,34 +54,6 @@
     "title": "Editing the Website",
     "section": "",
     "text": "This page houses the beginnings of our ‘how to edit the website’ instructions. Note that this page is primarily for internal use so it assumes you already are a member of the group and have the necessary access to the source GitHub repository. There are a few viable options for contributing to this website. Choose the method that aligns best with your skills and/or the one that sparks the most joy for you.\n\n\nGitHub makes a lot of the technical aspects of collaborating much simpler but there is one thing to watch out for: conflicts. Essentially, GitHub is not Google Docs. This means that while we can edit this website collaboratively we cannot do so simultaneously. When multiple people edit the same file in different ways, GitHub doesn’t know which set of changes should take priority (and it is often the case that we want both sets of edits!) and so it returns a conflict message that essentially says ‘you figure it out human’.\nFortunately the way to avoid conflicts is straightforward: communicate with one another! Before making any edits to the files in this website, reach out to the rest of the group and let them know! This can be as simple as “hey, I’ll be working on topic X from 10-11 ET so please don’t edit anything in the meantime.” For those of you working in GitHub directly you don’t really need to worry too much about this because your edits will always take priority but it’s good to think about so you don’t set the stage for others to encounter conflicts.\n\n\n\nWe’ve done some fancy behind-the-scenes wrangling with GitHub to support this method (see here if that is of interest) but the key take-away is that edits made directly in GitHub should “just work.” There is however a small caveat to this option: you can only do this if the page you’re editing has no “code chunks”. The processing of code chunks is handled slightly differently from ‘normal’ text and requires a local computer. Even if your changes don’t affect code chunks directly it only matters whether or not there are code chunks in the page at all. Hopefully that’s not too limiting of a caveat!\nHere’s what you’ll need to do beforehand:\n\nCreate a GitHub account\nMake sure you have edit access to the GitHub repository where the materials live\n\nOnce you’ve done that you can follow these steps to directly affect the website via GitHub! To start, go to the course’s GitHub repository and click the file for the page you want to edit. You can deduce that because the URL of that page will exactly match the file name. For example, let’s imagine that we want to edit the contributing page lter.github.io/eco-data-synth-primer/contributing.html. The file that controls this page is contributing.qmd which you can be sure of because it shares everything but the file extension with the link.\n\n\n\nOnce you’re there, click the name of the file you want to edit (for the demonstration purposes we’ll click contributing.qmd). On the resulting page, you’ll want to click the small pencil icon just above and to the right of the website content (see beneath the word “History” in the screenshot below).\n\n\n\nNow you can make any edits you’d like! Don’t worry about writing one super long line because when the website “renders” (i.e., builds itself) the text will be automatically wrapped to the width of the screen. In the screenshot below I’ve added “Here I can edit the website file directly through GitHub” on line 20.\n\n\n\nOnce you’re happy with your edits and want them to be sent to the “real” website, you’ll need to “commit” those changes. Click the bright blue–or green depending on your GitHub settings–button in the top right. In the small pop-up window that results, type a short description of what purpose your edits serve. This message is important because these comments will create the timeline that we can use to see or return to previous versions of the course materials.\n\n\n\nNow you’ll find yourself back in the ‘viewing’ part of GitHub and you should see your edits in the file. However, your edits are not yet in the live website. The site must first render your changes. This rendering effort is essentially the computer parsing your edits to a Quarto document (i.e., a .qmd file) into the HTML format needed for the website.\nYou can check the status of this rendering by clicking the “Actions” tab of the repository. You’ll see an orange–or red, again depending on your GitHub settings–circle with a progress wheel. After a few minutes that should turn into a blue–or green–check mark. You may notice that the name of the Action exactly matches the text you put in the top field of the commit message pop-up window earlier.\n\n\n\nOnce that Action finishes you’ll see a much faster one called “pages build and deployment” show up and go through the same process. This action is tying together the new website (all the unchanged files plus whatever files were changed by your edits) and updating the living website with that content.\n\n\n\nOnce both of those Actions have finished you should be able to visit the website link and see your edits in the live version! Note that you may need to refresh your browser page to update your cache so if you don’t immediately see your edits you may want to wait a moment and refresh the page.\n\n\n\n\n\n\nIf you’re more confident with a Git-based workflow, you can use RStudio (or any comparable platform) to make edits to the website.\nHere’s what you’ll need to do beforehand:\n\nDo the five setup steps in this GitHub workshop\nInstall Quarto on your computer\nMake sure you have edit access to the GitHub repository where the materials live\nClone that repository to your computer\n\nEditing a Quarto website is fairly straightforward once you’ve handled the prepartory steps outlined above. You’ll begin by editing your chosen files and–periodically–committing those changes.\nThe .gitignore should be set up in such a way that you cannot commit files you “shouldn’t” be committing but the rule of thumb is that you should feel free to commit either (A) changes to files ending in .qmd or (B) anything in the _freeze/ directory. The _freeze/ directory is how Quarto stores files that need some amount of computing so that it doesn’t waste computing resources re-rendering those files all the time and instead only re-renders when needed. Note that only files with one or more code chunks will ever put anything in that folder.\nOur GitHub Actions (see the ‘Method 1’ tutorial) are set up in such a way that once you push your commits the website should re-build itself automatically. Just wait for the GitHub Actions to complete and/or refresh your browser after pushing and you should see your edits reflected in the website.\nWhile editing you may find the  quarto preview command line call helpful as it will create a new tab in your browser that will dynamically show any edits you make. This is really nice particularly for writing or debugging a code chunk as you’ll be able to see the outputs in real time without waiting for the site to render only to find out your code doesn’t work as intended.\n\n\n\nIf you’d prefer, you can write the text that you’d like to include in the text editing software (e.g, Microsoft Word, Google Docs, etc.) of your choice. Once you’ve written it there, send it to someone else on the team who can use one of the preceding methods to get that content integrated. Ideally, hosting through GitHub (and creating this document) empowers you to make edits on your own behalf but if that feels out of reach in this moment we absolutely still want your insight so please don’t hesitate to go this direction if necessary."
-  },
-  {
-    "objectID": "module1.html",
-    "href": "module1.html",
-    "title": "Module 1: Starting with team science",
-    "section": "",
-    "text": "Understand\nCreate"
-  },
-  {
-    "objectID": "module1.html#subtitle",
-    "href": "module1.html#subtitle",
-    "title": "Module 1: Starting with team science",
-    "section": "subtitle",
-    "text": "subtitle"
-  },
-  {
-    "objectID": "module1.html#summary",
-    "href": "module1.html#summary",
-    "title": "Module 1: Starting with team science",
-    "section": "Summary",
-    "text": "Summary\n\n…\n…"
-  },
-  {
-    "objectID": "module1.html#additional-resources",
-    "href": "module1.html#additional-resources",
-    "title": "Module 1: Starting with team science",
-    "section": "Additional resources",
-    "text": "Additional resources\n\n…Parker and Hackett 2021\n…"
   },
   {
     "objectID": "module3.html",
@@ -210,24 +154,80 @@
     "text": "Funding sources\n???"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "A course for collaborative ecologists",
+    "objectID": "module2.html",
+    "href": "module2.html",
+    "title": "Module 2: Operational synthesis",
     "section": "",
-    "text": "This course and the website are under construction. Please check back soon!\nIn recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time, the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a ”team sport”. Objectives for learners are to (a) develop an end-to-end (conception to publication) plan for collaborative synthesis research, and (b) gain data synthesis skills that are immediately useful in a research team setting. Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, analytical workflows, and publication of derived datasets. The course uses real-world examples, demonstrations, and interactive lessons. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips. Many workshop activities will be oriented toward helping learners develop their own ideas and plans for ecological data synthesis."
+    "text": "After completing this module, you will be able to:\n\nIdentify characteristics of reproducible coding / project organization\nExplain benefits of reproducibility (to your team and beyond)\nSummarize the advantages of creating a defined contribution workflow\nDefine fundamental vocabulary of version control systems\nCreate a repository on GitHub\nExplain how synthesis teams can use GitHub to collaborate more efficiently and reproducibly"
   },
   {
-    "objectID": "index.html#agenda",
-    "href": "index.html#agenda",
-    "title": "A course for collaborative ecologists",
-    "section": "Agenda",
-    "text": "Agenda\nThis agenda is subject to change as the course is developed.\n\nModule 1: Starting with Team Science\nModule 2: Operational Synthesis\nModule 3: Tying It All Together"
+    "objectID": "module2.html#general-considerations",
+    "href": "module2.html#general-considerations",
+    "title": "Module 2: Operational synthesis",
+    "section": "General Considerations",
+    "text": "General Considerations\nEstimated time: 10 min\n\n Documentation\n\nOne folder per project\nFurther organize content via sub-folders\nMake file names informative and intuitive\n\nAvoid spaces and special characters in file names\nFollow a consistent naming convention throughout\n\nUse READMEs to record organization rules / explanation\n\n\n\n\n Code\n\nUse a version control system\nLoad libraries/packages explicitly\nTrack (and document) software versions\nNamespace functions (if not already required by your coding language)\nUse relative file paths that are operating system-agnostic\nBalance how descriptive object names are with striving for concise names\nUse comments in the code!\nConsider custom functions\nFor scripts that need to be run in order, consider adding step numbers to the file name\n\n\n\n\n Contributing\n\nCreate a formal plan for collaborating with which your whole team agrees\nQuarantine external inputs\nPlan for “future you”\nCommunicate to your collaborators whenever you’re working on a specific script to avoid conflicting edits"
   },
   {
-    "objectID": "index.html#photo-credits",
-    "href": "index.html#photo-credits",
-    "title": "A course for collaborative ecologists",
-    "section": "Photo credits:",
-    "text": "Photo credits:\nIn the collage above: Jacob Bøtter via Flickr, CC BY-SA 2.0 | Jeremy Yoder via Flickr, CC BY-SA 2.0 | Marco Pfeiffer, CC BY-SA 4.0 | Gabriel De La Rosa, CC BY-SA 4.0 | Weecology lab CC BY 4.0 | NEON (National Ecological Observatory Network)"
+    "objectID": "module2.html#synthesis-considerations",
+    "href": "module2.html#synthesis-considerations",
+    "title": "Module 2: Operational synthesis",
+    "section": "Synthesis Considerations",
+    "text": "Synthesis Considerations\nEstimated time: 10 min\nHow does reproducibility in synthesis considerations differ from individual / non-synthesis applications?\n\nJudgement calls need to be made / agreed to as a group\n\nBut “defer to the doers”\n\nIncreased emphasis on contribution guidelines / planning being formalized\nMore communication needs\nMust ensure that every team member has sufficient access to the project files"
+  },
+  {
+    "objectID": "module2.html#vocabulary",
+    "href": "module2.html#vocabulary",
+    "title": "Module 2: Operational synthesis",
+    "section": "Vocabulary",
+    "text": "Vocabulary\nEstimated time: 5 min\nBrief definitions for a selection of fundamental version control vocabulary terms\n\nVersion control system: software that tracks iterative changes to your code and other files\nRepository: the specific folder/directory that is being tracked by a version control system\nGit: a popular open-source distributed version control system\nGitHub: a website that allows users to store their Git repositories online and share them with others"
+  },
+  {
+    "objectID": "module2.html#github",
+    "href": "module2.html#github",
+    "title": "Module 2: Operational synthesis",
+    "section": "GitHub",
+    "text": "GitHub\nEstimated time: 10 min\nWhile this section of the module focuses on GitHub, there are several other viable alternatives for working with Git individually or as part of a larger team (e.g., GitLab, GitKraken, etc.). Any of these may be viable option for your team and we focus on GitHub here only to ensure a standard backdrop for the case studies we’ll discuss shortly.\nThere are a lot of GitHub tutorials that exist already so, rather than add our own variant to the list, we’ll work through part of one created by the Scientific Computing team of the National Center for Ecological Analysis and Synthesis (NCEAS).\nSee the workshop materials here.\nGiven the time restrictions for this short course, we’ll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will certainly have a method of connecting to GitHub/etc., so if this topic is of interest it will be beneficial for you to search out the relevant tutorial."
+  },
+  {
+    "objectID": "module2.html#courses-workshops-and-tutorials",
+    "href": "module2.html#courses-workshops-and-tutorials",
+    "title": "Module 2: Operational synthesis",
+    "section": "Courses, Workshops, and Tutorials",
+    "text": "Courses, Workshops, and Tutorials\n\nSynthesis Skills for Early Career Researchers (SSECR) course. 2024. LTER Network Office\nReproducible Approaches to Arctic Research Using R workshop. 2024. Arctic Data Center & NCEAS Learning Hub\nCollaborative Coding with GitHub workshop. 2024. NCEAS Scientific Computing team\nCoding in the Tidyverse workshop. 2023. NCEAS Scientific Computing team\nShiny Apps for Sharing Science workshop. 2022. Lyon, N.J. et al.\nTen Commandments for Good Data Management. 2016. McGill, B."
+  },
+  {
+    "objectID": "module2.html#literature",
+    "href": "module2.html#literature",
+    "title": "Module 2: Operational synthesis",
+    "section": "Literature",
+    "text": "Literature\n\nHarrer, M. et al. Doing Meta-Analysis with R: A Hands-On Guide. 2023. GitHub\nTodd-Brown, K.E.O., et al. Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential. 2022. Biogeosciences\nBorer, E.T. et al. Some Simple Guidelines for Effective Data Management. 2009. Ecological Society of America Bulletin"
+  },
+  {
+    "objectID": "module1.html",
+    "href": "module1.html",
+    "title": "Module 1: Starting with team science",
+    "section": "",
+    "text": "Understand\nCreate"
+  },
+  {
+    "objectID": "module1.html#subtitle",
+    "href": "module1.html#subtitle",
+    "title": "Module 1: Starting with team science",
+    "section": "subtitle",
+    "text": "subtitle"
+  },
+  {
+    "objectID": "module1.html#summary",
+    "href": "module1.html#summary",
+    "title": "Module 1: Starting with team science",
+    "section": "Summary",
+    "text": "Summary\n\n…\n…"
+  },
+  {
+    "objectID": "module1.html#additional-resources",
+    "href": "module1.html#additional-resources",
+    "title": "Module 1: Starting with team science",
+    "section": "Additional resources",
+    "text": "Additional resources\n\n…Parker and Hackett 2021\n…"
   }
 ]

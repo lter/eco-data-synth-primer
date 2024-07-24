@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.53">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -147,6 +147,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#what-happens-during-synthesis-research-greg-added---please-review" id="toc-what-happens-during-synthesis-research-greg-added---please-review" class="nav-link" data-scroll-target="#what-happens-during-synthesis-research-greg-added---please-review">What happens during synthesis research? (Greg added - please review)</a></li>
   <li><a href="#reproducibility-practices" id="toc-reproducibility-practices" class="nav-link" data-scroll-target="#reproducibility-practices">Reproducibility Practices</a>
   <ul class="collapse">
   <li><a href="#general-considerations" id="toc-general-considerations" class="nav-link" data-scroll-target="#general-considerations">General Considerations</a>
@@ -157,6 +158,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#synthesis-considerations" id="toc-synthesis-considerations" class="nav-link" data-scroll-target="#synthesis-considerations">Synthesis Considerations</a></li>
   </ul></li>
+  <li><a href="#harmonizing-data-greg-added---please-review" id="toc-harmonizing-data-greg-added---please-review" class="nav-link" data-scroll-target="#harmonizing-data-greg-added---please-review">Harmonizing data (Greg added - please review)</a></li>
   <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version Control</a>
   <ul class="collapse">
   <li><a href="#vocabulary" id="toc-vocabulary" class="nav-link" data-scroll-target="#vocabulary">Vocabulary</a></li>
@@ -204,6 +206,29 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Create</strong> a repository on GitHub</li>
 <li><strong>Explain</strong> how synthesis teams can use GitHub to collaborate more efficiently and reproducibly</li>
 </ul>
+</section>
+<section id="what-happens-during-synthesis-research-greg-added---please-review" class="level1">
+<h1>What happens during synthesis research? (Greg added - please review)</h1>
+<p>Here are a couple of serviceable definitions of what research is</p>
+<blockquote class="blockquote">
+<p>“creative and systematic work undertaken in order to increase the stock of knowledge”</p>
+<p><em>from the 2015 Frascati Manual</em> (https://doi.org/10.1787/9789264239012-en)</p>
+</blockquote>
+<p>or</p>
+<blockquote class="blockquote">
+<p>“studious inquiry or examination,” and especially “investigation or experimentation aimed at the discovery and interpretation of facts”</p>
+<p><em>from the Merriam-Webster dictionary</em> (https://www.merriam-webster.com)</p>
+</blockquote>
+<p>To these basic definitions of research, our definition of synthesis research adds <strong>collaborative work</strong>, and the <strong>compilation and analysis of a wide range of data sources</strong>, to achieve a more complete or generalizable research result. Some of the key activities that must happen during synthesis research are:</p>
+<ul>
+<li><strong>Asking scientific questions</strong> (often at large spatial or temporal scales)</li>
+<li><strong>Finding information</strong> (or data) from a wide variety of sources to answer those questions</li>
+<li><strong>Harmonizing diverse data</strong> to make it analyzable</li>
+<li><strong>Analyzing data</strong> to answer questions</li>
+<li><strong>Interpreting</strong> the results of your analysis</li>
+<li><strong>Writing</strong> the papers or <strong>creating</strong> other research products</li>
+</ul>
+<p>As we discussed in Module 1, a collaborative, inclusive team can set the stage for successful synthesis research. Each of the specific research activities above will also benefit from this mindset, and in this module we lay out some of the most important considerations and practices for a <em>team science</em> approach to the nuts-and-bolts of synthesis research.</p>
 </section>
 <section id="reproducibility-practices" class="level1">
 <h1>Reproducibility Practices</h1>
@@ -277,6 +302,51 @@ ul.task-list li input[type="checkbox"] {
 <li></li>
 </ul>
 </section>
+</section>
+<section id="harmonizing-data-greg-added---please-review" class="level1">
+<h1>Harmonizing data (Greg added - please review)</h1>
+<p>In synthesis projects, it is common to bring together datasets collected from different sources for analysis. This follows naturally from the large scope of the scientific questions being asked. The source datasets selected for analysis may have been collected by different people, in different places, using different methods, as part of different projects… or all of the above. Typically, some degree of “harmonization” - or putting data together in common structures, file formats, and units of measurement - is necessary before analysis can begin. This can be easy or difficult depending on how different the original datasets are, and on how much <strong>metadata</strong> (see callout below) is available to understand those datasets.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What is metadata?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Metadata is “data about the data,” or information that describes <strong>who</strong> collected the data, <strong>what</strong> was observed or measured, <strong>when</strong> the data were collected, <strong>where</strong> the data were collected, <strong>how</strong> the observations or measurements were made, and <strong>why</strong> they were collected. We’ll talk a little more about metadata in Module 3 of this course.</p>
+<p>See <a href="https://edirepository.org/resources/creating-metadata-for-publication">here</a> for more information about scientific metadata.</p>
+</div>
+</div>
+</div>
+<p>In the figure below, two datasets from different LTER sites have been harmonized into one file for analysis. We don’t have all the metadata here, but based on the column naming lets assume that the source data file on the left (<code>Konza_harvestplots.txt</code>, yellow) contains columns for the sampling date, a plot identifier, treatments applied to the plots, and the measured biomass values. From the filename it appears that this comes from the Konza Prarie LTER site. In the file on the right (<code>2022_clips.csv</code>, blue) it appears that we have columns denoting the sampled site, in this case Sevilleta LTER (abbreviated as SEV), the sampling date, a plot identifier, a treatment categorical value, and again, the measured biomass values.</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>There are some similarities and some differences in these two source files. A harmonized file (<code>lter_grass_biomass_harmonized.txt</code>) appears below.</p>
+<p><strong>Can you identify some things that have been harmonized?</strong></p>
+</div>
+</div>
+</div>
+<p align="center">
+<img src="images/data_harmonization_example.png" width="90%">
+</p>
+<p>Several important decisions were made to create the harmonized file. Among them:</p>
+<ul>
+<li>The <strong>site</strong> column was preserved and contains the “SEV” and “KNZ” categorical values denoting which LTER site is observed in each row.</li>
+<li>The dates in the <strong>date</strong> column were converted to a standard format (<em>YYYY-MM-DD</em>). Incidentally, this matches the International Organization for Standardization (ISO) recommendation for date/time data, making it generally a good choice for dates.</li>
+<li>A new <strong>rep</strong> column was created to identify the replicate measurements at each site. This is essentially a standard version the plot identifier columns (<strong>PlotID</strong> and <strong>plot</strong>) in the original data file. Also note that the original values are preserved in the new <strong>plot_orig</strong> column.</li>
+<li>The treatment columns from the original data files (<strong>Treatment</strong> and <strong>trt</strong>) were standardized to one column with “C” and “F” categorical values, for control and fertilized treatments, respectively.</li>
+<li>The biomass values were converted to the same area basis of grams per meter squared (g/m<sup>2</sup>) because the Konza measurements were for total biomass in 2x2 meter plots. <em>Note that this conversion is for illustration purposes only</em> - we couldn’t be sure if this conversion was correct without it being spelled out in the metadata, or asking the data provider directly.</li>
+</ul>
+<p>The harmonized data format chosen for a synthesis project depends on the source data, analysis plans, and overall project goals. <strong>It makes the best sense to decide on a harmonized data format as a team BEFORE analysis begins, if at all possible.</strong> As a general rule, it is also wise to use a scripted workflow that is as reproducible as possible to accomplish the harmonization you need for your project. Following this guidance lets others understand, check, and adapt your work, and will also make it much, much easier to bring new data into the analysis.</p>
 </section>
 <section id="version-control" class="level1">
 <h1>Version Control</h1>
