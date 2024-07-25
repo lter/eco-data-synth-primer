@@ -94,8 +94,46 @@ Often, early career researchers will be excited about the idea of synthesis but 
 
 # Identifying a Question
 
-**Estimated time: XX min**
+Lots of questions are interesting, but not terribly well-suited for a synthesis approach. We've learned through hard personal experience taht there are a few qualities that make certain questions a better fit for a) combining data and b) work by a group. The primary qualities that we've learned to seek in synthesis projects include:
 
+-  Novel and interesting enough to spend 2-3 years deeply involved
+-  Data already exists and you know (at least generally) where to find it
+-  The question covers a large geographic area or data that aren’t normally collected/analyzed together
+-  Clearly framed, but flexible enough to allow adaptation through the process
+-  Responsive to the funding call
+-  Outputs could include several kinds of products:
+    -  Papers of various kinds,
+    -  Symposia, 
+    -  Datasets, 
+    -  Analytical packages
+
+::: {.panel-tabset}
+
+# Discussion Question
+
+What kinds of data sources might you consider including in a synthesis project, in addition to your own or others' field data?
+
+# A Few Ideas
+
+-  DataONE
+-  EDI (LTER), 
+-  GenBank
+-  NEON
+-  USGS 
+-  GBIF
+-  NASA
+-  US Park Service
+-  FluxNet
+-  Phenocam network
+-  iNaturalist 
+-  eBird
+-  Census data
+-  Data extracted from papers
+-  Scraping social media 
+-  Text analysis
+
+
+:::
 # Building a Team
 
 **Estimated time: XX min**
