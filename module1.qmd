@@ -9,14 +9,14 @@ title: "Module 1: Starting with team science"
 - **Recognize the importance of establishing group norms and expectations**
 - **Evaluate strategies for group organization and project management**
 
-# [Workshop Slides - *under development*](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
+## [Workshop Slides - *under development*](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
 
-# Define Synthesis
+## Define Synthesis
 For the purposes of today's discussion, we define synthesis as:
 
 > Synthesis is: bringing together the results of multiple studies to test novel hypotheses–usually with a team of people.
 
-# Why Synthesis?
+## Why Synthesis?
 
 <img style="float: right;" src="images/sustainability-12-09361-g001-550.jpg" alt="different levels of interaction between researchers and stakeholders" width="50%" padding="10px"/>
 This process--of bringing diverse expertise together to combine existing primary data--definitely has its challenges. Ideniftying and engaging the necessary combination of skills and experience is challenging. Scheduling meeting times can be difficult. Commitment to the process can be uneven. Nonetheless, virtually all who have experienced it find it to be a deeply rewarding experience. Why?
@@ -28,7 +28,7 @@ This process--of bringing diverse expertise together to combine existing primary
 -  Builds on existing investments of the science community by re-using data
 -  Offers a way to involve individuals who can’t or don’t want to do fieldwork in original research and expands opportunity to less research-intensive institutions.
 
-## Additional Resources
+### Additional Resources
 
 * [Adam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups](https://doi.org/10.1038/d41586-023-03618-x)
 * [Hackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science](https://doi.org/10.3390/su12229361)
@@ -73,7 +73,7 @@ With tractable questions refined, the group will move into analysis mode. Often,
 
 Later meetings will focus on developing manuscripts and/or application-related products such as white papers and decision support tools.
 
-<img align="center" src="images/LTER-SWG-timeline.png" alt="typical timeline and activities for a synthesis group" width="100%" padding="10px" caption="Synthesis working group timeline. Credit: LTER Network Office, CC BY-SA 4.0. Source: https://lternet.edu/synthesis-2021/guidance-working-group-pis/>
+<img style="align: center" src="images/LTER-SWG-timeline.png" alt="typical timeline and activities for a synthesis group" width="100%" padding="10px" caption="Synthesis working group timeline. Credit: LTER Network Office, CC BY-SA 4.0. Source: https://lternet.edu/synthesis-2021/guidance-working-group-pis/>
 
 ## How to get Involved
 
