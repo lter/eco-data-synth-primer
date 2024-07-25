@@ -9,25 +9,25 @@ title: "Module 1: Starting with team science"
 - **Recognize the importance of establishing group norms and expectations**
 - **Evaluate strategies for group organization and project management**
 
-# [Workshop Slides](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
+# [Workshop Slides-under development](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
 
 # Define Synthesis
 For the purposes of today's discussion, we define synthesis as "bringing together the results of multiple studies to test novel hypotheses–usually with a team of people."
 
 # Motivating Synthesis
-
-
-## subtitle
-
-## Summary
-
-* ...
-* ...
+This process--of bringing diverse expertise together to combine existing primary data--definitely has its challenges. Ideniftying and engaging the necessary combination of skills and experience is challenging. Scheduling meeting times can be difficult. Commitment to the process can be uneven. Nonetheless, virtually all who have experienced it find it to be a deeply rewarding experience. Why?
+- The products emerging from synthesis typically have higher impact (as defined by both academic and applied measures)
+- The process allows researchers to access and incorporate skills that they don't (yet) have themselves.
+- Working groups help early career researchers build their science networks and keep experienced researchers frsh and engaging with new ideas
+- Builds on existing investments of the science community by re-using data
+- Offers a way to involve individuals who individuals who can’t or don’t want to do fieldwork in original research and expands opportunity to less research-intensive institutions.
 
 ## Additional resources
 
-* ...Parker and Hackett 2021
-* ...
+* [Adam, 2023](https://doi.org/10.1038/d41586-023-03618-x)
+* [Hackett, 2020](https://doi.org/10.3390/su12229361)
+* [Hampton and Parker, 2011](https://doi.org/10.1525/bio.2011.61.11.9)
+* [Hackett et al., 2021](https://doi.org/10.1016/j.respol.2020.104069)
 
 # Identifying a Question
 
