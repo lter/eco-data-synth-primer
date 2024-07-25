@@ -24,16 +24,18 @@ This process--of bringing diverse expertise together to combine existing primary
 
 -  The products emerging from synthesis typically have higher impact (as defined by both academic and applied measures)
 -  The process allows researchers to access and incorporate skills that they don't (yet) have themselves.
--  Working groups help early career researchers build their science networks and keep experienced researchers frsh and engaging with new ideas
+-  Working groups help early career researchers build their science networks. 
+-  Keep experienced researchers fresh and engaging with new ideas
 -  Builds on existing investments of the science community by re-using data
 -  Offers a way to involve individuals who can’t or don’t want to do fieldwork in original research and expands opportunity to less research-intensive institutions.
 
 ## Additional resources
 
-* [Adam, 2023](https://doi.org/10.1038/d41586-023-03618-x)
-* [Hackett, 2020](https://doi.org/10.3390/su12229361)
-* [Hampton and Parker, 2011](https://doi.org/10.1525/bio.2011.61.11.9)
-* [Hackett et al., 2021](https://doi.org/10.1016/j.respol.2020.104069)
+* [Adam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups](https://doi.org/10.1038/d41586-023-03618-x)
+* [Hackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science](https://doi.org/10.3390/su12229361)
+* [Hampton and Parker, 2011. Collaboration and Productivity in Scientific Synthesis](https://doi.org/10.1525/bio.2011.61.11.9)
+* [Hackett et al., 2021. Do synthesis centers synthesize? A semantic analysis of topical diversity in research](https://doi.org/10.1016/j.respol.2020.104069)
+*  [Wyborn et al., 2018. Understanding the Impacts of Research Synthesis](https://doi.org/10.1016/j.envsci.2018.04.013)
 
 # Identifying a Question
 
