@@ -9,12 +9,12 @@ title: "Module 1: Starting with team science"
 - **Recognize the importance of establishing group norms and expectations**
 - **Evaluate strategies for group organization and project management**
 
-# [Workshop Slides-under development](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
+# [Workshop Slides - *under development*](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
 
 # Define Synthesis
 For the purposes of today's discussion, we define synthesis as:
 
-> bringing together the results of multiple studies to test novel hypotheses–usually with a team of people.
+> Synthesis is: bringing together the results of multiple studies to test novel hypotheses–usually with a team of people.
 
 # Why Synthesis?
 
@@ -28,7 +28,7 @@ This process--of bringing diverse expertise together to combine existing primary
 -  Builds on existing investments of the science community by re-using data
 -  Offers a way to involve individuals who can’t or don’t want to do fieldwork in original research and expands opportunity to less research-intensive institutions.
 
-## Additional resources
+## Additional Resources
 
 * [Adam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups](https://doi.org/10.1038/d41586-023-03618-x)
 * [Hackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science](https://doi.org/10.3390/su12229361)
