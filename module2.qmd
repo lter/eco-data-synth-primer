@@ -13,7 +13,7 @@ After completing this module, you will be able to:
 - **Create** a repository on GitHub
 - **Explain** how synthesis teams can use GitHub to collaborate more efficiently and reproducibly
 
-# What happens during synthesis research? (Greg added - please review)
+# What happens during synthesis research? NEW
 
 Here are a couple of serviceable definitions of what research is:
 
@@ -31,7 +31,7 @@ To these basic definitions of research, our definition of synthesis research add
 
 - **Asking scientific questions** (often at large spatial or temporal scales)
 - **Finding information** (or data) from a wide variety of sources to answer those questions
-- **Harmonizing diverse data** to make it analyzable
+- **Cleaning and harmonizing data** to make it usable
 - **Analyzing data** to answer questions
 - **Interpreting** the results of your analysis
 - **Writing** the papers or **creating** other research products 
@@ -107,39 +107,61 @@ How does reproducibility in synthesis considerations differ from individual / no
 - Must ensure that every team member has sufficient access to the project files
 - 
 
-# Cleaning and harmonizing data (Greg added - please review)
+# Data preparation (cleaning and harmonizing) NEW
 
-The scientific questions being asked in synthesis projects are usually broad in scope, and it is therefore common to bring together datasets collected from different sources for analysis. The datasets selected for analysis (source data) may have been collected by different people, in different places, using different methods, as part of different projects... or all of the above. Typically, some amount of data **cleaning** - filtering or removing unwanted observations - and data **harmonization** - putting data together in common structures, file formats, and units of measurement - is necessary before analysis can begin. This process can be easy or difficult depending on the quality of the source data, how different they are, and on how much **metadata** (see callout below) is available to understand them. 
+The scientific questions being asked in synthesis projects are usually broad in scope, and it is therefore common to bring together many datasets from different sources for analysis. The datasets selected for analysis (source data) may have been collected by different people, in different places, using different methods, as part of different projects... or all of the above. Typically, some amount of data **cleaning** - filtering or removing unwanted observations - and data **harmonization** - putting data together in common structures, file formats, and units of measurement - is necessary before analysis can begin. This process can be easy or difficult depending on the quality of the source data, the differences between source data, and how much **metadata** (see callout below) is available to understand them. 
 
 ::: {.callout-tip collapse="true"}
 ## What is metadata?
 
 Metadata is "data about the data," or information that describes **who** collected the data, **what** was observed or measured, **when** the data were collected, **where** the data were collected, **how** the observations or measurements were made, and **why** they were collected. Metadata provide important contextual information about the origin of the data and how they can be analyzed or used. They are most useful when attached or linked to the data being described, and data and related metadata together are commonly referred to as a *dataset*.
 
-Metadata for ecological research data are well described in Michener et al (1997)^[Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2], but there are many other kinds of metadata with different purposes.^[Mayernik, M.S. and Acker, A. (2018), Tracing the traces: The critical role of metadata within networked communications. Journal of the Association for Information Science and Technology, 69: 177-180. https://doi.org/10.1002/asi.23927] When publishing datasets, research data repositories typically provide guidance on metadata needs, as seen [here](https://edirepository.org/resources/creating-metadata-for-publication), for example. 
+Metadata for ecological research data are well described in Michener et al (1997)[^1], but there are many other kinds of metadata with different purposes.[^2] When publishing datasets, research data repositories typically provide guidance on metadata needs, as seen [here](https://edirepository.org/resources/creating-metadata-for-publication), for example.
+
+[^1]: Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2
+
+[^2]: Mayernik, M.S. and Acker, A. (2018), Tracing the traces: The critical role of metadata within networked communications. Journal of the Association for Information Science and Technology, 69: 177-180. https://doi.org/10.1002/asi.23927
 :::
 
 ## Data cleaning and filtering
 
-Usually, not all data in a given dataset are useful. This may be because there are some real or suspected errors in the data, or because they are simply not needed to answer the scientific question being asked (wrong variable, site not of interest, etc.). Data that are not useful are usually excluded from analysis or removed altogether.
+When assembling large datasets from diverse sources, as in synthesis research, not all data from the source datasets will be useful. This may be because there are real or suspected errors in the data, values are mission, or simply because they are not needed to answer the scientific question being asked (wrong variable, different ecosystem, etc.). Data that are not useful are usually excluded from analysis or removed altogether. Data cleaning tends to be a stepwise, iterative process that follows a different path for every dataset and research project. Though there are many standard techniques and algorithms for cleaning and filtering data, they are beyond the scope of this course. Below are a few guidelines to remember when cleaning and filtering data, and more in-depth resources for data cleaning are found at the end of this section.
 
-There are a variety of ways to approach cleaning and filtering data, and these are beyond the scope of this course. Below are a few guidelines to remember when cleaning and filtering data, followed by some more in-depth resources on the subject
+1. Always preserve the raw data. Chances are you'll want to go back and check the original source data at least once.
+2. Use a scripted workflow to clean and filter the raw data, and follow the usual rules about reproducibility (comments, version control, functionalization).
+3. Spread the data cleaning workload around! Data cleaning typically demands a HUGE fraction of the total time devoted to working with data [^3] [^4] [^5], and it can be tedious work. Make sure the team shares this workload equitably.
 
-1. Always preserve the raw data
-2. Use a scripted workflow to clean and filter the raw data, and follow the usual rules about reproducibility (comments, version control, functionalization)
+[^3]: Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10
+[^4]: [New York Times, 2014](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html)
+[^5]: [Anaconda State of Data Science Report, 2022](https://www.anaconda.com/resources/whitepapers/state-of-data-science-report-2022/)
+
+**Data cleaning and filtering resources**
+
+* Data cleaning is a complex topic, and entire books have been written on the subject [^6] [^7], For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
+* [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
+* In the R language, the `tidyverse` libraries (particularly `tidyr` and `dplyr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
+* In python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
+* Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's *R for Data Science* [^8] book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy), and for python, check Wes McKinney's *Python for Data Analysis* [^9] book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).
+
+[^6]: Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.
+[^7]: Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley & Sons, 2018. https://doi.org/10.1002/9781118897126
+[^8]: Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. " O'Reilly Media, Inc.", 2023. https://r4ds.hadley.nz/
+[^9]: McKinney, Wes. Python for data analysis. " O'Reilly Media, Inc.", 2022. https://wesmckinney.com/book
 
 ## Data harmonization 
 
-Data harmonization is the process of bringing different datasets into a common structure or format for analysis.
+Data harmonization is the process of bringing different datasets into a common format for analysis. The harmonized data format chosen for a synthesis project depends on the source data, analysis plans, and overall project goals. It is best to make a plan for harmonizing data BEFORE analysis begins, which means discussing this with the team in the early stages of a synthesis project. As a general rule, it is also wise to use a scripted workflow that is as reproducible as possible to accomplish the harmonization you need for your project. Following this guidance lets others understand, check, and adapt your work, and will also make it much, much easier to bring new data and analysis methods into the project.
 
-### A harmonization example
+Data harmonization is hard work that sometimes requires trial and error to arrive at a useful end product. Looking at a simple example might help.
+
+### Harmonizing grassland biomass data - an example
 
 In the figure below, two datasets from different LTER sites have been harmonized into one file for analysis. We don't have all the metadata here, but based on the column naming we can assume that the file on the left (`Konza_harvestplots.txt`, yellow) contains columns for the sampling date, a plot identifier, a treatment categorical value, and measured biomass values. The filename suggests that the data come from the Konza Prarie LTER site. The file on the right (`2022_clips.csv`, blue) has a column denoting the LTER site, in this case Sevilleta LTER (abbreviated as SEV), as well as similar date, plot identifier, treatment, and measured biomass columns. 
 
 ::: {.callout-note appearance="simple" icon="false"}
 There are some similarities and some differences in these two source files. A harmonized file (`lter_grass_biomass_harmonized.txt`) appears below.
 
-**Can you identify some changes made to data structure, format, or units to harmonize these data?**
+**Can you identify some changes made to data structure, variable formatting, or units to harmonize these data?**
 :::
 
 <p align="center">
@@ -152,15 +174,92 @@ Even though the data files were similar, several important changes were made to 
 - The dates in the **date** column were converted to a standard format (*YYYY-MM-DD*). Incidentally, this matches the International Organization for Standardization (ISO) recommendation for date/time data, making it generally a good choice for dates.
 - A new **rep** column was created to identify the replicate measurements at each site. This is essentially a standard version the plot identifier columns (**PlotID** and **plot**) in the original data file. Also note that the original values are preserved in the new **plot_orig** column.
 - The treatment columns from the original data files (**Treatment** and **trt**) were standardized to one column with "C" and "F" categorical values, for control and fertilized treatments, respectively.
-- The biomass values from Konza were converted to units grams per meter squared (g/m^2^) because the original Konza measurements were for total biomass in 2x2 meter plots. *Note that this conversion is for illustration purposes only* - we couldn't be sure if this conversion was correct without it being spelled out in the metadata, or asking the data provider directly.
+- The biomass values from Konza were converted to units grams per meter squared (g/m^2^) because the original Konza measurements were for total biomass in 2x2 meter plots. *Note that this conversion is for illustration purposes only* - we can't be sure if this conversion is correct without it being spelled out in the metadata, or asking the data provider directly.
 
-## A word on output formats
+## A word about harmonized data formats
 
-The harmonized data format chosen for a synthesis project depends on the source data, analysis plans, and overall project goals. **It makes the best sense to decide on a harmonized data format as a team BEFORE analysis begins, if at all possible.** As a general rule, it is also wise to use a scripted workflow that is as reproducible as possible to accomplish the harmonization you need for your project. Following this guidance lets others understand, check, and adapt your work, and will also make it much, much easier to bring new data into the analysis.
+Above, we've discussed several aspects of selecting a **data format**. There are at least three related, but not exactly equivalent, concepts to consider when formatting data. First, formats describe the way data are structured, organized, and related within a data file. For example, in a tabular data file about biomass, the measured biomass values might appear in one column, or in muiltiple columns. Second, the values of any variable can be represented in more than one format. The same date, for example, could be formatted using text as "June 1, 1977" or "1977-06-01." Third, format may refer to the *file format* used to hold data on a disk or other storage medium. File formats like comma separated value text files (CSV), Excel files (.xlsx), JPEG images, are commonly used for research data, and each has particular strengths for certain kinds of data.
+
+A few guidelines apply:
+
+1. For formatting a tabular dataset, **err towards simpler data structures**, which are usually easier to clean, filter, and analyze. Long-format tables, or tidy data [^3], is one common recommendation for this.
+2. When choosing a file format, **err towards open, non-proprietary file formats** that more people know and have access to. Delimited text files, such as CSV files, are a good choice for tabular data. 
+3. **Use existing community standards** for formatting variables and files as long they suit your project methods and scientific goals. Using ISO standards for date-time variables, or species identifiers from a taxonomic authority, are good examples of this practice.
+4. **There is no perfect data format!** Harmonizing data always involves some tradeoffs.
+
+
+Below we see some examples of harmonized destination formats that are possible for synthesized data.
+
+:::{.panel-tabset}
+
+## Long (Tidy)
+
+Here our grassland biomass data is in long format, often referred to as "tidy" data. There are three rules for tidy data:
+
+1. Each column is one variable.
+2. Each row is one observation.
+3. Each cell contains a single value.
+
+**Advantages**: clear meaning of rows and columns, ease in filtering/cleaning  
+**Disadvantages**: observation information is repeated, file size larger  
+**Possible file formats**: Delimited text (tab delimited shown here), spreadsheets, database tables  
+
+![The harmonized grassland data, in long format.](images/long_data_example.png){width="50%"}
+
+## Wide (Untidy)
+
+In this dataset, our grassland data has been restructured into wide format, often referred to (sometimes unfairly) as "messy" or "untidy" data. Note that the biomass variable has been split into two columns, one for control plots and one for fertilized plots.
+
+**Advantages**: compact size, easier for some statistical analyses (ANOVA, for example)  
+**Disadvantages**: may be more difficult to clean or filter, multiple observations per row  
+**Possible file formats**: Delimited text (tab delimited shown here), spreadsheets, database tables  
+
+![The harmonized grassland data, restructured into wide format.](images/wide_data_example.png){width="50%"}
+
+## Relational (database style)
+
+Below is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^10] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are "normalized" to reduce data redundancy, and increase data integrity.
+
+
+**Advantages**: reduced redundancy, greater integrity, community standard  
+**Disadvantages**: complex, significant metadata needed to describe  
+**File format**: Database stores, can be represented in delimited text (CSV)  
+
+[^10]: O'Brien, Margaret, et al. "ecocomDP: a flexible data design pattern for ecological community survey data." Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374
+
+
+![The ecocomDP schema.](images/ecocomDP_schema.jpg){width="50%"}
+
+## Cloud-native
+
+There are many possibilities to make large synthesis datasets available and useful in the cloud. These require specialized knowledge and tooling, and reliable access to cloud platforms.
+
+**Advantages**: easier access to big data  
+**Disadvantages**: less familiar/accessible to many scientists, few best practices to follow, costs can be high  
+**File format**: Parquet files, distributed/cloud databases
+
+![](images/cloud_native.png){width="50%" center=True}
+
+## Other...
+
+There are many, many other possible harmonized data formats. Here are a few possible examples:
+
+* Archives of cropped, labeled images for training machine or deep learning models.
+* Libraries of standardized raster imagery in Google Earth Engine
+
+:::
+
+# Data analysis
+
+Now that your found the data, and then cleaned, filtered, and harmonized countless source datasets, it is finally time to analyze the data! Great! Load up R or python and get started, and then tell us how it goes. We simply don't have enough time to cover all the ins and outs of data analysis in a three-hour course. However, we have put a few helpful resources below to get you started, and many of the best practices we have talked about, or will talk about apply: 
+
+1. Document your analysis steps and code, and generally try to make everything reproducible.
+2. Use a version control system.
+3. Spread the work around - data analysis is fun and exciting, and it always helps to have lots of eyes on the data.
 
 # Version Control
 
-In all scientific research, the data work (cleaning, harmonizing, analyzing) and the writing are iterative processes. They change over time and the resulting dataset, paper, or other output is usually the product of a long series of revisions. In synthesis research, the process can become even more complex because the team is usually large, and multiple people are contributing data, analysis, writing revisions, etc. Using some kind of **version control** helps manage this complexity by recording the changes, tracking individual contributions, and ensuring that something can be rolled-back to an earlier state if needed.
+In all scientific research, the data work (cleaning, harmonizing, analyzing) and the writing are iterative processes. They change over time and often require a long series of revisions. In synthesis research, the process can become even more complex because the team is usually large, and multiple people are contributing data, analysis, writing revisions, etc. Using some kind of **version control** helps manage this complexity by recording the changes, tracking individual contributions, and ensuring that something can be rolled-back to an earlier state if needed.
 
 <p align="center">
 <img src="images/mod2_final.png" width="80%"/>
