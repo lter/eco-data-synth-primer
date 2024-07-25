@@ -15,10 +15,11 @@ title: "Module 1: Starting with team science"
 For the purposes of today's discussion, we define synthesis as "bringing together the results of multiple studies to test novel hypotheses–usually with a team of people."
 
 # Motivating Synthesis
-<p align="right">
+
 ![different levels of interaction between researchers and stakeholders](..images/sustainability-12-09361-g001-550.jpg")
-</p>
+
 This process--of bringing diverse expertise together to combine existing primary data--definitely has its challenges. Ideniftying and engaging the necessary combination of skills and experience is challenging. Scheduling meeting times can be difficult. Commitment to the process can be uneven. Nonetheless, virtually all who have experienced it find it to be a deeply rewarding experience. Why?
+
 -  The products emerging from synthesis typically have higher impact (as defined by both academic and applied measures)
 -  The process allows researchers to access and incorporate skills that they don't (yet) have themselves.
 -  Working groups help early career researchers build their science networks and keep experienced researchers frsh and engaging with new ideas
