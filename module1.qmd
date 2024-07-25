@@ -73,6 +73,8 @@ With tractable questions refined, the group will move into analysis mode. Often,
 
 Later meetings will focus on developing manuscripts and/or application-related products such as white papers and decision support tools.
 
+<img align="center" src="images/LTER-SWG-timeline.png" alt="typical timeline and activities for a synthesis group" width="100%" padding="10px" caption="Synthesis working group timeline. Credit: LTER Network Office, CC BY-SA 4.0. Source: https://lternet.edu/synthesis-2021/guidance-working-group-pis/>
+
 ## How to get Involved
 
 Often, early career researchers will be excited about the idea of synthesis but be unsure how to connect with existing or nascent synthesis efforts. Here are a few ideas for how to make yourself available and valuable to synthesis groups.:
