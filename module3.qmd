@@ -5,7 +5,8 @@ title: "Module 3: Tying it all together"
 # Learning objectives
 
 
-- **Understand** data publishing best-practices and the features that make data easy to re-use
+- **Identify** the features that make published data easily
+re-useable
 - **Evaluate** the metadata and fitness-for-use of published synthesis datasets
 - **Understand** the three primary "products" that come out of synthesis groups
 - **Understand** concepts of data provenance, reproducible analysis, and citations
@@ -14,14 +15,32 @@ title: "Module 3: Tying it all together"
 - **Understand** several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.
 - **Create** a plan to maintain a synthesis project and associated data over the long-term
 
+# Introduction
+
+So far, we've made the point that ecological synthesis research is collaborative and integrates a wide range of data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment. The ability of synthesis research accomplish this frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.
 
 # Publishing data for re-use
 
 **Estimated time: 12 min**
 
-Harmonized data that are findable, accessible, interoperable, and reusable (FAIR) are an important output for any ecological data synthesis project. Two key questions that should be considered during the data publishing phase are:
+In Module 2 we discussed some considerations for creating and formatting a harmonized dataset useful for synthesis research. We also introduced the importance of metadata for making data usable. Harmonized data that are findable, accessible, interoperable, and reusable (FAIR) are an important output for almost any ecological synthesis project.
 
-    a. How should the data be structured or formatted?
+::: {.callout-tip collapse="true"}
+## More about Findable, Accessible, Interoperable, Reusable (FAIR) data
+
+The FAIR principles, standing for Findability, Accessibility, Interoperability, and Reusability,  are a community-standard set of guidelines for evaluating the quality and utility of published research data. Making an effort to meet the critera outlined in the FAIR principles promotes both human and machine usability of data, and is a worthy objective when preparing to publish the data products from a synthesis research project.
+
+The FAIR principles were first defined in the paper by Wilkinson et al (2018)[^1]. Since this time, many resources have arisen to guide the implementation the FAIR principles[^2][^3], and to quantify FAIR data successes and failures in the research and publishing communities[^4][^5].
+
+[^1]: Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
+[^2]: [GoFAIR initiative](https://www.go-fair.org/how-to-go-fair/)
+[^3]: [The FAIR Cookbook](https://faircookbook.elixir-europe.org)
+[^4]: Bahim, C., Casorrán-Amilburu, C., Dekkers, M., Herczog, E., Loozen, N., Repanas, K., Russell, K. and Stall, S. (2020) ‘The FAIR Data Maturity Model: An Approach to Harmonise FAIR Assessments’, Data Science Journal, 19(1), p. 41. Available at: https://doi.org/10.5334/dsj-2020-041.
+[^5]: Gries, Corinna, et al. "The environmental data Initiative: Connecting the past to the future through data reuse." Ecology and Evolution 13.1 (2023): e9592. https://doi.org/10.1002/ece3.9592
+
+:::
+
+
     b. What metadata are needed to describe the data?
     
 Both questions should be answered in such a way that the usability of the data is maximized. 
@@ -62,22 +81,29 @@ Form breakout groups and course instructors will assign each group a dataset (a 
 :::{.panel-tabset}
 ## Example 1
 
-EDI dataset 1
+Data from the SoDaH working group
+
+https://portal.edirepository.org/nis/mapbrowse?packageid=edi.521.1
 
 ## Example 2
 
-EDI dataset 2
+A Dryad dataset from a synthesis paper about oligotrophication
+
+https://doi.org/10.5061/dryad.v2k2607
 
 ## Example 3
 
-Dataset from a researcher/program website?
+
+Maybe this: https://portal.edirepository.org/nis/mapbrowse?packageid=edi.493.16 (needs editing)
+
+Maybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)
 
 :::
 
 ## Summary
 
 * ...
-* ...
+* Keep in mind that there is no PERFECT dataset!
 
 ## Additional resources
 
@@ -117,12 +143,17 @@ and each should reference the others.
 * Most often this means writing a paper
   - Citing data in a paper
   - Presenting a reproducible workflow
+* Data papers
+  - Anatomy of a data paper?
 * Other products may be apps, teaching modules, etc.
   - MacrosystemsEDDIE as an example?
   - Shiny apps
  
 ## Tying these all together (5)
 
+Some general considerations
+
+* Synthesis projects can become complex
 
 ## Giving everyone credit (5)
 
