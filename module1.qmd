@@ -15,7 +15,9 @@ title: "Module 1: Starting with team science"
 
 ## Summary
 
-* ...
+* **Assembling a diverse and inclusive team**
+* **Asking scientific questions**, often with a broad scope or at large spatial scales
+* **Finding information** (or data) from a wide variety of sources to answer those questions
 * ...
 
 ## Additional resources
