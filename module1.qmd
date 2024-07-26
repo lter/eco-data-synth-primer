@@ -149,6 +149,7 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 ## Data Use Principles
 
 There are a few ethical and practical guidelines that will save you a lot of trouble if you can adhere to them from the start of a project.
+
 -  Keep track of your data sources (sources, permissions, notes, related metadata, what’s included)
 -  Data sources should always be cited
 -  Communicate with data creators whenever possible 
@@ -159,6 +160,7 @@ There are a few ethical and practical guidelines that will save you a lot of tro
 ## **Sample data author outreach email for public dataset:** 
 
 >Dear Dr. Smith, 
+>
 >I am working on a synthesis of soil inverbrate diversity across North America and would like to include your dataset titled "xxx" (doi: xxx). We have downloaded the data from yyy repository, but wanted to let you know we are using it and to inquire whether there is any additional context we should be aware of or related datasets we should be sure to include. A short description of the synthesis project follows. Please let me know by xxx date if you have any questions or concerns with our use of this data.
 >
 >Thank you,
@@ -181,17 +183,15 @@ There are a few ethical and practical guidelines that will save you a lot of tro
 
 # **Authorship Discussion**
 
-> **Should all data contributors be offerred authorship? How would you deal with a data creator who demanded authorship in order to use their data?**
+> **Should all data contributors be offerred authorship? How would you handle a data creator who demanded authorship in order to use their data?**
 
 # **A Few Considerations**
 
 Having agreed-on authorship guidelines is really valuable in this situation. Are they really committed enough to join the working group and contribute to the papers? If so, it may be a good investment.
 
-How much work will they need to put in to make the data ready?
-
-How critical is this particular data source for your analysis?
-
-You will need to make your derived dataset public. Are they placing conditions on the use of their data that make that impossible?
+-  How much work will they need to put in to make the data ready?
+-  How critical is this particular data source for your analysis?
+-  You will need to make your derived dataset public. Are they placing conditions on the use of their data that make that impossible?
 
 :::
 
