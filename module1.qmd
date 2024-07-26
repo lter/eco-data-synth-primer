@@ -38,13 +38,13 @@ This process--of bringing diverse expertise together to combine existing primary
 
 # Process Overview
 
+::: {.panel-tabset}
+
+# Discussion Question
+
+> **What funding sources support synthesis work?**
+
 ## Sources of Funding and Support
-
-**NSF Programs**
-
--  [ULTRA-data Dear Colleague letter](https://www.nsf.gov/pubs/2024/nsf24081/nsf24081.jsp)
--  NSF Core Programs, e.g. [Division of Environmental Biology](https://new.nsf.gov/funding/opportunities/division-environmental-biology-deb): “synthesis activities”, “synthesis projects”
--  NSF workshops 
 
 **Synthesis Centers**
 
@@ -62,6 +62,13 @@ This process--of bringing diverse expertise together to combine existing primary
 -  Chapman Conferences
 -  [British Ecological Society](https://www.britishecologicalsociety.org/funding/synthesis-grants/) 
     -  one-third of participants from developing world
+
+**NSF Programs**
+
+-  [ULTRA-data Dear Colleague letter](https://www.nsf.gov/pubs/2024/nsf24081/nsf24081.jsp)
+-  NSF Core Programs, e.g. [Division of Environmental Biology](https://new.nsf.gov/funding/opportunities/division-environmental-biology-deb): “synthesis activities”, “synthesis projects”
+-  NSF workshops 
+
 
 ## Typical Process
 
