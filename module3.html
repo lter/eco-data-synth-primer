@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#deciding-what-to-publish" id="toc-deciding-what-to-publish" class="nav-link" data-scroll-target="#deciding-what-to-publish">Deciding what to publish</a></li>
   <li><a href="#choosing-and-publishing-to-a-repository" id="toc-choosing-and-publishing-to-a-repository" class="nav-link" data-scroll-target="#choosing-and-publishing-to-a-repository">Choosing and publishing to a repository</a></li>
   <li><a href="#activity-1-evaluate-published-datasets" id="toc-activity-1-evaluate-published-datasets" class="nav-link" data-scroll-target="#activity-1-evaluate-published-datasets">Activity 1: Evaluate published datasets</a></li>
-  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional resources</a></li>
+  <li><a href="#additional-data-publishing-resources" id="toc-additional-data-publishing-resources" class="nav-link" data-scroll-target="#additional-data-publishing-resources">Additional data publishing resources</a></li>
   </ul></li>
   <li><a href="#sharing-the-synthesis-workflow" id="toc-sharing-the-synthesis-workflow" class="nav-link" data-scroll-target="#sharing-the-synthesis-workflow">Sharing the synthesis workflow</a></li>
   <li><a href="#writing-and-disseminating-the-results" id="toc-writing-and-disseminating-the-results" class="nav-link" data-scroll-target="#writing-and-disseminating-the-results">Writing and disseminating the results</a></li>
@@ -166,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#tying-these-all-together" id="toc-tying-these-all-together" class="nav-link" data-scroll-target="#tying-these-all-together">Tying these all together</a></li>
   <li><a href="#giving-everyone-credit" id="toc-giving-everyone-credit" class="nav-link" data-scroll-target="#giving-everyone-credit">Giving everyone credit</a></li>
   <li><a href="#activity-2-evaluate-three-synthesis-projects" id="toc-activity-2-evaluate-three-synthesis-projects" class="nav-link" data-scroll-target="#activity-2-evaluate-three-synthesis-projects">Activity 2: Evaluate three synthesis projects</a></li>
-  <li><a href="#additional-resources-1" id="toc-additional-resources-1" class="nav-link" data-scroll-target="#additional-resources-1">Additional resources</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional resources</a></li>
   </ul></li>
   <li><a href="#maintaining-momentum" id="toc-maintaining-momentum" class="nav-link" data-scroll-target="#maintaining-momentum">Maintaining momentum</a>
   <ul class="collapse">
@@ -288,30 +288,30 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 </section>
 <section id="deciding-what-to-publish" class="level2">
 <h2 class="anchored" data-anchor-id="deciding-what-to-publish">Deciding what to publish</h2>
-<p><img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"> The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is “What should I publish?” The answer usually comes down to:</p>
+<p><img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"> The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is “<em>What should I publish?</em>” The answer usually comes down to:</p>
 <ul>
 <li>Publish any data used to generate research results.</li>
 <li>Publish any data that will be used by others (scientists, managers, public stakeholders), including raw data.</li>
-<li>If reproducibility is of interest or concern, publish the code or workflow used to process or analyze the data, or to generate research results (like figures).</li>
+<li>If reproducibility is of interest or concern, publish the workflow (usually code) used to process or analyze the data, or to generate research results like figures.</li>
 <li>Always publish descriptive metadata about any of the above.</li>
 </ul>
-<p>In the activity below we will browse a few published dataset to get a feel for what useful data does and doesn’t look like. You can also look at advice from a repository like <a href="https://edirepository.org/resources/designing-a-data-package">EDI</a>, or from a research network like <a href="https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs">NEON</a>.</p>
+<p>In the activity below we will browse a few published datasets to get a feel for what useful data does and doesn’t look like. You can also look at advice from a repositories like <a href="https://edirepository.org/resources/designing-a-data-package">EDI</a> and <a href="https://guide.bco-dmo.org/prepare/what-is-a-dataset">BCO-DMO</a>, or from a research network like <a href="https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs">NEON</a>.</p>
 </section>
 <section id="choosing-and-publishing-to-a-repository" class="level2">
 <h2 class="anchored" data-anchor-id="choosing-and-publishing-to-a-repository">Choosing and publishing to a repository</h2>
-<p>There are many, many research data repositories available to researchers now, making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. The repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a <a href="https://doi.org">Digital Object Identifier</a>, or DOI, that can be cited every time the dataset is used after publication. Repositories should also be stable and well supported so that data remain available in perpetuity. The <a href="https://amt.coretrustseal.org/certificates">CoreTrustSeal certified repository list</a> is one way to assess this. Finally, repositories should require at least some metadata be submitted with each dataset to ensure that the published data are FAIR. Beyond this, asking a few questions about the dataset will help with repository selection:</p>
+<p>There are many, many research data repositories available to researchers now<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>, making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a <a href="https://doi.org">Digital Object Identifier</a>, or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the <a href="https://amt.coretrustseal.org/certificates">CoreTrustSeal certified repository list</a> is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:</p>
 <ol type="1">
-<li>Who are the likely users for this data? Will they be part of a specific scientific discipline, research network, or community of stakeholders?</li>
-<li>How specialized are your data? Do they fall into a common data type or follow a specific formatting standard?</li>
+<li>Who are the likely users for this data? Will they belong to a specific scientific discipline, research network, or community of stakeholders?</li>
+<li>How specialized are your data? Do they fall into a common data type or follow a speical formatting standard?</li>
 <li>Will the data be updated regularly?</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/repository_spectrum.png" class="img-fluid figure-img" style="width:90.0%"></p>
-<figcaption>A limited slice from the spectrum of research data repositories available for publishing synthesis data.</figcaption>
+<figcaption>A limited slice from the broad spectrum of research data repositories available for publishing synthesis data.</figcaption>
 </figure>
 </div>
-<p>Once you have made a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult your local data manager if you have one available.</p>
+<p>After making a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult a project data manager if one is available to the synthesis team.</p>
 </section>
 <section id="activity-1-evaluate-published-datasets" class="level2">
 <h2 class="anchored" data-anchor-id="activity-1-evaluate-published-datasets">Activity 1: Evaluate published datasets</h2>
@@ -320,18 +320,18 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 <ol type="1">
 <li>Where were the data collected?</li>
 <li>What variables were measured and in what units?</li>
-<li>Are the data raw or have they been altered since collection? If the latter, how?</li>
+<li>What is the origin of the data and how have they been altered since collection?</li>
 <li>Were the first three questions easy to answer? Why or why not?</li>
 </ol>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Example 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Example 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Example 3</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Data from the SoDaH working group</p>
+<p>Data from the SoDaH LTER synthesis working group.</p>
 <p>https://portal.edirepository.org/nis/mapbrowse?packageid=edi.521.1</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>A Dryad dataset from a synthesis paper about oligotrophication</p>
+<p>A Dryad dataset from a synthesis paper about oligotrophication.</p>
 <p>https://doi.org/10.5061/dryad.v2k2607</p>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
@@ -341,8 +341,8 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 </div>
 </div>
 </section>
-<section id="additional-resources" class="level2">
-<h2 class="anchored" data-anchor-id="additional-resources">Additional resources</h2>
+<section id="additional-data-publishing-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-data-publishing-resources">Additional data publishing resources</h2>
 <ul>
 <li><a href="https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs">NEON’s derived data publishing guide</a></li>
 <li><a href="https://edirepository.org/resources/resources-for-data-authors">EDI repository data authorship guide</a></li>
@@ -417,8 +417,8 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 </div>
 </div>
 </section>
-<section id="additional-resources-1" class="level2">
-<h2 class="anchored" data-anchor-id="additional-resources-1">Additional resources</h2>
+<section id="additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources">Additional resources</h2>
 <ul>
 <li></li>
 </ul>
@@ -449,8 +449,9 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 <li id="fn8"><p>Lerner, et al., “Making Provenance Work for You”, The R Journal, 2023. https://journal.r-project.org/articles/RJ-2023-003/<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn9"><p><a href="https://end-to-end-provenance.github.io/">End-to-End Provenance</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn10"><p><a href="https://lternet.edu/using-lter-data/#im">List of LTER Information Managers</a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p><a href="https://amt.coretrustseal.org/certificates">Core Trust Seal certified data repositories</a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p><a href="https://www.re3data.org/">The Registry of Research Data Repositories (re3data.org)</a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12"><p><a href="https://datacurationnetwork.org/">Data curation network</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p><a href="https://www.re3data.org/">The Registry of Research Data Repositories (re3data.org)</a><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

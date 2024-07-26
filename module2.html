@@ -166,8 +166,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#example-harmonizing-grassland-biomass-data" id="toc-example-harmonizing-grassland-biomass-data" class="nav-link" data-scroll-target="#example-harmonizing-grassland-biomass-data">Example: Harmonizing grassland biomass data</a></li>
   </ul></li>
   <li><a href="#a-word-about-harmonized-data-formats" id="toc-a-word-about-harmonized-data-formats" class="nav-link" data-scroll-target="#a-word-about-harmonized-data-formats">A word about harmonized data formats</a></li>
+  <li><a href="#additional-resources-about-data-preparation" id="toc-additional-resources-about-data-preparation" class="nav-link" data-scroll-target="#additional-resources-about-data-preparation">Additional resources about data preparation</a></li>
   </ul></li>
-  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a>
+  <ul class="collapse">
+  <li><a href="#additional-resources-about-data-analysis" id="toc-additional-resources-about-data-analysis" class="nav-link" data-scroll-target="#additional-resources-about-data-analysis">Additional resources about data analysis</a></li>
+  </ul></li>
   <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version Control</a>
   <ul class="collapse">
   <li><a href="#vocabulary" id="toc-vocabulary" class="nav-link" data-scroll-target="#vocabulary">Vocabulary</a></li>
@@ -333,7 +337,7 @@ More about metadata
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Metadata is “data about the data,” or information that describes <strong>who</strong> collected the data, <strong>what</strong> was observed or measured, <strong>when</strong> the data were collected, <strong>where</strong> the data were collected, <strong>how</strong> the observations or measurements were made, and <strong>why</strong> they were collected. Metadata provide important contextual information about the origin of the data and how they can be analyzed or used. They are most useful when attached or linked to the data being described, and data and related metadata together are commonly referred to as a <em>dataset</em>.</p>
-<p>Metadata for ecological research data are well described in Michener et al (1997)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but there are many other kinds of metadata with different purposes.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> When publishing datasets, research data repositories typically provide guidance on metadata needs, as seen <a href="https://edirepository.org/resources/creating-metadata-for-publication">here</a>, for example. We’ll return to considerations about metadata in Module 3.</p>
+<p>Metadata for ecological research data are well described in Michener et al (1997),<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> but there are many other kinds of metadata with different purposes.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> If you are publishing a research dataset and have questions about metadata, ask a data manager for your project, or staff at the repository you are working with, for help. Either can typically provide guidance on creating metadata that will describe your data and be useful to the community (here is <a href="https://edirepository.org/resources/creating-metadata-for-publication">one example</a>). We’ll return to the subject of metadata in Module 3.</p>
 </div>
 </div>
 </div>
@@ -343,22 +347,14 @@ More about metadata
 <ol type="1">
 <li><strong>Always preserve the raw data</strong>. Chances are you’ll want to go back and check the original source data at least once.</li>
 <li><strong>Use a scripted workflow to clean and filter the raw data</strong>, and follow the usual rules about reproducibility (comments, version control, functionalization).</li>
-<li><strong>Consider using the concept of data processing “levels”</strong>, meaning that defined sets of data flagging, removal, or transformation operations are applied consistently to the data in stepwise fashion. For example, incoming raw data would be labeled “level 0” data, and “level 1” data is reached after the first set of processing steps is applied.</li>
-<li><strong>Spread the data cleaning workload around!</strong> Data cleaning typically demands a HUGE fraction of the total time devoted to working with data <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, and it can be tedious work. Make sure the team shares this workload equitably.</li>
+<li><strong>Consider using the concept of data processing “levels,”</strong> meaning that defined sets of data flagging, removal, or transformation operations are applied consistently to the data in stepwise fashion. For example, incoming raw data would be labeled “level 0” data, and “level 1” data is reached after the first set of processing steps is applied.</li>
+<li><strong>Spread the data cleaning workload around!</strong> Data cleaning typically demands a HUGE fraction of the total time devoted to working with data,<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> and it can be tedious work. Make sure the team shares this workload equitably.</li>
 </ol>
-<p><strong>Data cleaning and filtering resources</strong></p>
-<ul>
-<li>Data cleaning is complicated and varied, and entire books have been written on the subject <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, For some general considerations on cleaning data, see EDI’s “<a href="https://edirepository.org/resources/cleaning-data-and-quality-control">Cleaning Data and Quality Control</a>” resource</li>
-<li><a href="https://openrefine.org/">OpenRefine</a> is an open-source, cross-platform tool for iterative, scripted data cleaning.</li>
-<li>In the R language, the <code>tidyverse</code> libraries (particularly <code>tidyr</code> and <code>dplyr</code>) are often used for data cleaning, as are additional libraries like <a href="https://sfirke.github.io/janitor/"><code>janitor</code></a>.</li>
-<li>In python, <code>pandas</code> and <code>numpy</code> libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like <a href="https://pyjanitor-devs.github.io/pyjanitor/"><code>pyjanitor</code></a> (started as a re-implementation of the R version) and <a href="https://docs.cleanlab.ai/stable/index.html"><code>cleanlab</code></a> (geared towards machine learning applications).</li>
-<li>Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham’s <em>R for Data Science</em> <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> book chapter on <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a>, and for python, check Wes McKinney’s <em>Python for Data Analysis</em> <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> book chapter on <a href="https://wesmckinney.com/book/data-cleaning">data cleaning and preparation</a>.</li>
-</ul>
 </section>
 <section id="data-harmonization" class="level2">
 <h2 class="anchored" data-anchor-id="data-harmonization">Data harmonization</h2>
 <p>Data harmonization is the process of bringing different datasets into a common format for analysis. The harmonized data format chosen for a synthesis project depends on the source data, analysis plans, and overall project goals. It is best to make a plan for harmonizing data BEFORE analysis begins, which means discussing this with the team in the early stages of a synthesis project. As a general rule, it is also wise to use a scripted workflow that is as reproducible as possible to accomplish the harmonization you need for your project. Following this guidance lets others understand, check, and adapt your work, and will also make it much, much easier to bring new data and analysis methods into the project.</p>
-<p>Data harmonization is hard work that sometimes requires trial and error to arrive at a useful end product. Looking at a simple example might help.</p>
+<p>Data harmonization is hard work that sometimes requires trial and error to arrive at a useful end product. At the end of this section are some additional data harmonization resources to help you get started. Looking at a simple example might also help.</p>
 <section id="example-harmonizing-grassland-biomass-data" class="level3">
 <h3 class="anchored" data-anchor-id="example-harmonizing-grassland-biomass-data">Example: Harmonizing grassland biomass data</h3>
 <p>In the figure below, two datasets from different LTER sites have been harmonized into one file for analysis. We don’t have all the metadata here, but based on the column naming we can assume that the file on the left (<code>Konza_harvestplots.txt</code>, yellow) contains columns for the sampling date, a plot identifier, a treatment categorical value, and measured biomass values. The filename suggests that the data come from the Konza Prarie LTER site. The file on the right (<code>2022_clips.csv</code>, blue) has a column denoting the LTER site, in this case Sevilleta LTER (abbreviated as SEV), as well as similar date, plot identifier, treatment, and measured biomass columns.</p>
@@ -391,7 +387,7 @@ More about metadata
 <p>Above, we’ve discussed several aspects of selecting a <strong>data format</strong>. There are at least three related, but not exactly equivalent, concepts to consider when formatting data. First, formats describe the way data are structured, organized, and related within a data file. For example, in a tabular data file about biomass, the measured biomass values might appear in one column, or in muiltiple columns. Second, the values of any variable can be represented in more than one format. The same date, for example, could be formatted using text as “June 1, 1977” or “1977-06-01.” Third, format may refer to the <em>file format</em> used to hold data on a disk or other storage medium. File formats like comma separated value text files (CSV), Excel files (.xlsx), JPEG images, are commonly used for research data, and each has particular strengths for certain kinds of data.</p>
 <p>A few guidelines apply:</p>
 <ol type="1">
-<li>For formatting a tabular dataset, <strong>err towards simpler data structures</strong>, which are usually easier to clean, filter, and analyze. Long-format tables, or tidy data <a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>, is one common recommendation for this.</li>
+<li>For formatting a tabular dataset, <strong>err towards simpler data structures</strong>, which are usually easier to clean, filter, and analyze. Long-format tables, or tidy data <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, is one common recommendation for this.</li>
 <li>When choosing a file format, <strong>err towards open, non-proprietary file formats</strong> that more people know and have access to. Delimited text files, such as CSV files, are a good choice for tabular data.</li>
 <li><strong>Use existing community standards</strong> for formatting variables and files as long they suit your project methods and scientific goals. Using ISO standards for date-time variables, or species identifiers from a taxonomic authority, are good examples of this practice.</li>
 <li><strong>There is no perfect data format!</strong> Harmonizing data always involves some judgement calls and tradeoffs.</li>
@@ -412,7 +408,7 @@ More about metadata
 <strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/long_data_example.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/long_data_example.png" class="img-fluid figure-img" style="width:75.0%"></p>
 <figcaption>The harmonized grassland data, in long format.</figcaption>
 </figure>
 </div>
@@ -424,31 +420,31 @@ More about metadata
 <strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/wide_data_example.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/wide_data_example.png" class="img-fluid figure-img" style="width:75.0%"></p>
 <figcaption>The harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.</figcaption>
 </figure>
 </div>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Below is a schematic of the related tables that comprise the <a href="https://ediorg.github.io/ecocomDP/">ecocomDP</a><a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are “normalized” to reduce data redundancy, and increase data integrity.</p>
+<p>Below is a schematic of the related tables that comprise the <a href="https://ediorg.github.io/ecocomDP/">ecocomDP</a><a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are “normalized” to reduce data redundancy, and increase data integrity.</p>
 <p><strong>Advantages</strong>: reduced redundancy, greater integrity, community standard<br>
 <strong>Disadvantages</strong>: significant metadata needed to describe and use, more complex to publish<br>
 <strong>Possible file formats</strong>: Database stores, can be represented in delimited text (CSV)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ecocomDP_schema.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/ecocomDP_schema.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
 <figcaption>The ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.</figcaption>
 </figure>
 </div>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>There are many possibilities to make large synthesis datasets available and useful in the cloud. These require specialized knowledge and tooling, and reliable access to cloud platforms.</p>
-<p><strong>Advantages</strong>: easier access to big data<br>
+<p><strong>Advantages</strong>: easier access to big (high volume) data, can integrate with web apps<br>
 <strong>Disadvantages</strong>: less familiar/accessible to many scientists, few best practices to follow, costs can be higher<br>
-<strong>Possible file formats</strong>: Parquet files, distributed/cloud databases</p>
+<strong>Possible file formats</strong>: Parquet files, object storage, distributed/cloud databases</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/cloud_native.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/cloud_native.png" class="img-fluid figure-img" style="width:75.0%"></p>
 <figcaption>A few of the cloud-native technologies that might be useful for synthesis research products.</figcaption>
 </figure>
 </div>
@@ -465,6 +461,21 @@ More about metadata
 </div>
 </div>
 </section>
+<section id="additional-resources-about-data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources-about-data-preparation">Additional resources about data preparation</h2>
+<p><strong>Data cleaning and filtering resources</strong></p>
+<ul>
+<li>Data cleaning is complicated and varied, and entire books have been written on the subject.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a><a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> For some general considerations on cleaning data, see EDI’s “<a href="https://edirepository.org/resources/cleaning-data-and-quality-control">Cleaning Data and Quality Control</a>” resource</li>
+<li><a href="https://openrefine.org/">OpenRefine</a> is an open-source, cross-platform tool for iterative, scripted data cleaning.</li>
+<li>In the R language, the <code>tidyverse</code> libraries (particularly <code>tidyr</code> and <code>dplyr</code>) are often used for data cleaning, as are additional libraries like <a href="https://sfirke.github.io/janitor/"><code>janitor</code></a>.</li>
+<li>In python, <code>pandas</code> and <code>numpy</code> libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like <a href="https://pyjanitor-devs.github.io/pyjanitor/"><code>pyjanitor</code></a> (started as a re-implementation of the R version) and <a href="https://docs.cleanlab.ai/stable/index.html"><code>cleanlab</code></a> (geared towards machine learning applications).</li>
+<li>Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham’s <em>R for Data Science</em> book chapter on <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a>,<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> and for python check Wes McKinney’s <em>Python for Data Analysis</em> book chapter on <a href="https://wesmckinney.com/book/data-cleaning">data cleaning and preparation</a>.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></li>
+</ul>
+<p><strong>Data harmonization resources</strong></p>
+<ul>
+<li>For R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham’s <em>R for Data Science</em> book, the chapters on <a href="https://r4ds.hadley.nz/data-transform">data transforms</a> and <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a> are a good place to start. In Wes McKinney’s <em>Python for Data Analysis</em> book, the chapter on <a href="https://wesmckinney.com/book/data-wrangling">data wrangling</a> is helpful.</li>
+</ul>
+</section>
 </section>
 <section id="data-analysis" class="level1">
 <h1>Data analysis</h1>
@@ -472,8 +483,15 @@ More about metadata
 <ol type="1">
 <li><strong>Document your analysis steps and comment your code</strong>, and generally try to make everything reproducible.</li>
 <li><strong>Use version control</strong> as you analyze data.</li>
-<li><strong>Spread the work around</strong> - analyzing data is challenging, exciting, and a great learning opportunity. Having more eyes on the analysis process also helps catch interesting results or subtle errors.</li>
+<li><strong>Give everyone a chance!</strong> Analyzing data is challenging, exciting, and a great learning opportunity. Having more eyes on the analysis process also helps catch interesting results or subtle errors.</li>
 </ol>
+<section id="additional-resources-about-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources-about-data-analysis">Additional resources about data analysis</h2>
+<ul>
+<li>Harrer, M. <em>et al.</em> <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/">Doing Meta-Analysis with R: A Hands-On Guide</a>. <strong>2023</strong>. <em>GitHub</em></li>
+<li>Once again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham’s <em>R for Data Science</em> book, the chapter on <a href="https://r4ds.hadley.nz/eda">exploratory data analysis</a> will help. In McKinney’s <em>Python for Data Analysis</em> book, try the chapters on <a href="https://wesmckinney.com/book/plotting-and-visualization">plotting and visualization</a> and <a href="https://wesmckinney.com/book/modeling">the introduction to modeling</a>.</li>
+</ul>
+</section>
 </section>
 <section id="version-control" class="level1">
 <h1>Version Control</h1>
@@ -553,7 +571,6 @@ More about metadata
 <section id="literature" class="level2">
 <h2 class="anchored" data-anchor-id="literature">Literature</h2>
 <ul>
-<li>Harrer, M. <em>et al.</em> <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/">Doing Meta-Analysis with R: A Hands-On Guide</a>. <strong>2023</strong>. <em>GitHub</em></li>
 <li>Todd-Brown, K.E.O., <em>et al.</em> <a href="https://bg.copernicus.org/articles/19/3505/2022/">Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential</a>. <strong>2022</strong>. <em>Biogeosciences</em></li>
 <li>Borer, E.T. <em>et al.</em> <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205">Some Simple Guidelines for Effective Data Management</a>. <strong>2009</strong>. <em>Ecological Society of America Bulletin</em></li>
 </ul>
@@ -571,12 +588,12 @@ More about metadata
 <li id="fn3"><p>Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p><a href="http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html">New York Times, 2014</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p><a href="https://www.anaconda.com/resources/whitepapers/state-of-data-science-report-2022/">Anaconda State of Data Science Report, 2022</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley &amp; Sons, 2018. https://doi.org/10.1002/9781118897126<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. ” O’Reilly Media, Inc.”, 2023. https://r4ds.hadley.nz/<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>McKinney, Wes. Python for data analysis. ” O’Reilly Media, Inc.”, 2022. https://wesmckinney.com/book<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>O’Brien, Margaret, et al.&nbsp;“ecocomDP: a flexible data design pattern for ecological community survey data.” Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>O’Brien, Margaret, et al.&nbsp;“ecocomDP: a flexible data design pattern for ecological community survey data.” Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley &amp; Sons, 2018. https://doi.org/10.1002/9781118897126<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. ” O’Reilly Media, Inc.”, 2023. https://r4ds.hadley.nz/<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>McKinney, Wes. Python for data analysis. ” O’Reilly Media, Inc.”, 2022. https://wesmckinney.com/book<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
