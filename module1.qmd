@@ -102,22 +102,16 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 -  Clearly framed, but flexible enough to allow adaptation through the process
 -  Responsive to the funding call
 -  Outputs could include several kinds of products:
-    -  Papers
-        -  Data Papers
-        -  Primary Analyses
-        -  Perspectives
-        -  Gap Analyses
+    -  Papers (including data papers, persepctives, gap analyses, as well as primary analyses)
     -  Symposia 
     -  Datasets 
     -  Analytical Packages
 
 ::: {.panel-tabset}
 
-<style>
-{background-color: green;}
-</style>
-
 # **Discussion Question**
+
+:::: {style="background-color: green"}
 
 **What kinds of data sources might you consider including in a synthesis project, in addition to your own or others' field data?**
 
