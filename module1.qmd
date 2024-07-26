@@ -40,15 +40,15 @@ This process--of bringing diverse expertise together to combine existing primary
 
 Typically, a group of researchers--or researchers and managers or community members--will plan a series of meetings over 2-3 years. The mix of in-person v. virtual meetings and work will vary across different groups and different funders, but the general pattern is similar.
 
+<p align="center">
+<img src="images/LTER-SWG-timeline.png" width="90%" alt="graphic of typical timeline for working group process, with in person work alternating with online interaction"/>
+</p>
+
 Early meetings focus on narrowing the questions and deciding what data is needed and what analyses will be most useful. A period of data gathering and assembly comes next. The assembly of data almost always prompts a revision of the initial questions, as data rarely comes in exactly the form that researchers expected. This can be both the most frustrating and the most interesting part of the process as new hypotheses and models are floated and discussed. It is especially important to have the full participation of researchers familiar with different fields and ecosystems in this process.
 
 With tractable questions refined, the group will move into analysis mode. Often, a few individuals will do most of the data wrangling and coding, but will need continuous input on analytical decisions. In our experience, GitHub issues is one very good tool for facilitating and recording these decisions. But the "best" tool will be the one that most members of the team are most comfortable with.
 
 Later meetings will focus on developing manuscripts and/or application-related products such as white papers and decision support tools.
-
-<p align="center">
-<img src="images/LTER-SWG-timeline.png" width="90%" alt="graphic of typical timeline for working group process, with in person work alternating with online interaction"/>
-</p>
 
 ## How to get Involved
 
@@ -67,22 +67,22 @@ Often, early career researchers will be excited about the idea of synthesis but 
     -  Initiate conversations
 -  *Start your own!*
 
-# Identifying a Question
+# Identifying a Synthesis-Ready Question
 
 Lots of questions are interesting, but not terribly well-suited for a synthesis approach. We've learned through experience that there are a few qualities that make some questions a better fit for a) combining data; and b) work by a group. The main qualities that we seek in synthesis projects include:
 
--  Novel and interesting enough to be involved with for 2-3 years.
+-  Novel and interesting enough to keep you engaged for 2-3 years.
 -  Data already exist and you know (at least generally) where to find it
 -  Questions cover a large geographic area or data that aren’t normally collected or analyzed together
 -  Clearly framed, but flexible enough to allow adaptation through the process
 -  Responsive to the funding call
--  Outputs could include several kinds of products:
-    -  Papers (including data papers, persepctives, gap analyses, as well as primary analyses)
+-  Outputs could include several kinds of products. As the project progresses, gard students will become postdocs, postdocs will get faculty positions. For the project to remain satisfying to all participants, people will need to be able to take a leadership role on different kinds of products.
+    -  Papers (including data papers, perspectives, gap analyses, as well as primary analyses)
     -  Symposia 
     -  Datasets 
     -  Analytical Packages
 
-#Sources of Support for Synthesis
+# Sources of Support for Synthesis
 
 While it is certainly possible to conduct synthesis with no external support, a bit of funding will allow your group to travel to meet up in person and can, in some cases, provide salary support for postdocs, grad students or or assistance with analysis.
 
@@ -131,7 +131,7 @@ The composition of the leadership team will affect the success of the project an
 
 ## The Broader Team
 
-As individuals, we all have strengths and weaknesses. The beauty of working in teams is that you can invite people who offset your own weaknesses and who bring strengths you don't have. Often, you'll have a few core team members who have generated a synthesis idea, but then you'll want to take a clear-eyed look at what additional skills and qualities to invite. When you do so, be sure to consider:
+In our experience at NCEAS and the LTER Network Office, we've found teams of up to 10 to 15 people to be optimal for synthesis work. As individuals, we all have strengths and weaknesses. The beauty of working in teams is that you can invite people who offset your own weaknesses and who bring strengths you don't have. Often, you'll have a few core team members who have generated a synthesis idea, but then you'll want to take a clear-eyed look at what additional skills and qualities to invite. When you do so, be sure to consider:
 
 -  Skills, Aptitudes, and Communication Styles
     -  Look for a mix of empiricists, theorists, and modellers
@@ -149,10 +149,31 @@ As individuals, we all have strengths and weaknesses. The beauty of working in t
     -  Be mindful that such career-building opportunities have not been fairly distributed
     -  Be intentional seeking out people who may not be part of your typical circles (including gender, ethnicity, career stage, family status, (dis)abilities, etc.)
 
-
 # Setting Expectations
 
-**Estimated time: XX min**
+> Good teams are both chosen and made. 
+
+Diversity on teams uncovers novel approaches, perspectives, and insights and it can slow the pace and cause misunderstandings that highlight unexamined assumptions. As a synthesis team leader (and even as a participant), there are many things you can do to create opportunities for everyone to contribute their best thinking, learn from one another, and feel heard and respected.
+
+-  As the group gets started
+    -  Create a shared vision for your group
+        -  Make sure everyone starts on the same footing with a brief overview of the context for the group and the questions you're starting with
+    -  Conduct a “pre-mortem” to talk about worries and visions for a healthy group dynamic
+    -  Recognize who you are as a group, culturally, and any power dynamics that might entail
+         -  Sometimes, simply articulating the potential for oppressive power dynamics can give group members the confidence to assert themselves
+-  Throughout the process
+    -  Value and accommodate various styles of contribution
+        - Fast and slow thinkers, 
+        - Visual, auditory and kinesthetic learners,
+        - Synchronous and asynchronous contributions
+    - Practice “cultural norming” by educating participants on systemic/structural oppression and racism and ways to work against our own implicit biases
+- At intervals
+    - When you find yourself questioning whether a practice or activity is still valuable, ask each member for a quick read on whether the group should **"Start, Stop, or Continue"** the activity
+
+## Reasons for participating
+
+## Time Commitments
+
 
 # Making a Communication and Work Plan
 
@@ -160,6 +181,9 @@ As individuals, we all have strengths and weaknesses. The beauty of working in t
 
 # Intro to establishing a Project Management Plan 
 
+# Data Sources
+
+Some sources of data---such as modern remote sensing products, NEON data, and census data---have very clear, explicit ways to access and download them or work with them in the cloud. But the most interesting synthesis questions often involve combining such "big" data with other data sources that may have been collected manually, by a variety of methods and different technicians, over decades. 
 
 ::: {.panel-tabset}
 
@@ -169,22 +193,23 @@ As individuals, we all have strengths and weaknesses. The beauty of working in t
 
 # **A Few Ideas**
 
--  DataONE
--  EDI (LTER) 
--  GenBank
--  National Ecological Observatory Network (NEON)
--  US Geological Survey Streamflow Data 
--  GBIF
--  NASA Remote Sensing Data
--  US Park Service
--  FluxNet
--  Phenocam network
--  iNaturalist 
--  eBird
--  Census data
+-  [DataONE](https://www.dataone.org/)
+-  [EDI (LTER)](https://edirepository.org/) 
+-  [GenBank (NCBI)](https://www.ncbi.nlm.nih.gov/nuccore/)
+-  [National Ecological Observatory Network (NEON)](https://www.neonscience.org/data)
+-  [US Geological Survey Data](https://www.usgs.gov/products/data)
+-  [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/)
+-  [NASA Remote Sensing Data](https://data.nasa.gov/)
+-  [US Park Service](https://www.nps.gov/subjects/science/science-data.htm)
+-  [FluxNet](https://fluxnet.org/sites/site-list-and-pages/)
+-  [Phenocam network](https://phenocam.nau.edu/webcam/tools/)
+-  [iNaturalist](https://www.inaturalist.org/pages/how+can+i+use+it) 
+-  [eBird](https://science.ebird.org/en/use-ebird-data)
+-  [Census data](https://www.census.gov/data.html)
 -  Data extracted from papers
 -  Scraping social media 
 -  Text analysis
+-  ....
 
 :::
 
@@ -250,17 +275,16 @@ We've pulled together a few of the forms that we have use to keep track of the d
 
 Once you get into the details of the process, you'll want to track some more specific information
 
--  URL to the data source
--  LTER Site / other location
+-  URL to the data (and metadata) source
+-  Sampling location and site (including both coordinates and associated organizations)
 -  Short Data Description
--  Data Location (country, region)
 -  Coverage Dates/Frequency 
 -  Filename (as stored on Google Drive or shared file repository)
 -  URL to Files (cloud drive, website, server; e.g. google drive link)
 -  Date the data was last accessed / downloaded
 -  Data Creator/Owner's Name
 -  Data Creator/Owner's Email/contact
--  Working Group Participant who got the data (Name)
+-  Working group participant who got the data (Name)
 -  Used in your analysis? (Y/N)
 -  Any additional notes or decisions about *how* the data is or will be harmonized and analyzed
 
