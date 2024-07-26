@@ -151,17 +151,19 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 
 # Setting Expectations
 
-> Good teams are both chosen and made. 
-
-Diversity on teams uncovers novel approaches, perspectives, and insights and it can slow the pace and cause misunderstandings that highlight unexamined assumptions. As a synthesis team leader (and even as a participant), there are many things you can do to create opportunities for everyone to contribute their best thinking, learn from one another, and feel heard and respected.
+**Good teams are both chosen and made.** Diversity on teams uncovers novel approaches, perspectives, and insights and it can slow the pace and cause misunderstandings that highlight unexamined assumptions. As a synthesis team leader (and even as a participant), there are many things you can do to create opportunities for everyone to contribute their best thinking, learn from one another, and feel heard and respected.
 
 -  As the group gets started
     -  Create a shared vision for your group
         -  Make sure everyone starts on the same footing with a brief overview of the context for the group and the questions you're starting with
+    -  Co-develop group norms. It builds ownership of shared norms.
     -  Conduct a “pre-mortem” to talk about worries and visions for a healthy group dynamic
     -  Recognize who you are as a group, culturally, and any power dynamics that might entail
          -  Sometimes, simply articulating the potential for oppressive power dynamics can give group members the confidence to assert themselves
 -  Throughout the process
+    -  Get to know each other
+        -  Use creative icebreakers to break a pattern of silence
+        -  Invest in "social time"
     -  Value and accommodate various styles of contribution
         - Fast and slow thinkers, 
         - Visual, auditory and kinesthetic learners,
@@ -170,10 +172,14 @@ Diversity on teams uncovers novel approaches, perspectives, and insights and it 
 - At intervals
     - When you find yourself questioning whether a practice or activity is still valuable, ask each member for a quick read on whether the group should **"Start, Stop, or Continue"** the activity
 
-## Reasons for participating
+In any team project, people have different reasons for wanting to participate. For you, getting a high profile paper may be the most important thing. For others, it may be expanding their network or a chance to practice new skills. Being transparent about those motivations makes it easier to resolve tensions when they arise.
 
+::: {.callout-note}
 ## Time Commitments
 
+We all  misjudge our availability once in a while, but consistently failing to deliver on commitments disrupts others' work plans and is a major source of group dissatisfaction. Get buy-in for commitments and plan for both reminders and accountability. 
+
+:::
 
 # Making a Communication and Work Plan
 
