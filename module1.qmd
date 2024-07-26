@@ -84,7 +84,7 @@ With tractable questions refined, the group will move into analysis mode. Often,
 Later meetings will focus on developing manuscripts and/or application-related products such as white papers and decision support tools.
 
 <p align="center">
-<img src="images/LTER-SWG-timeline.png" width="90%" alt="graphic of typical timeline for working group process, with in person work alternating with online interaction/>
+<img src="images/LTER-SWG-timeline.png" width="90%" alt="graphic of typical timeline for working group process, with in person work alternating with online interaction"/>
 </p>
 
 ## How to get Involved
@@ -118,6 +118,48 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
     -  Symposia 
     -  Datasets 
     -  Analytical Packages
+
+# Building a Team
+
+## The Leadership Team
+
+The composition of the leadership team will affect the success of the project and who you will be able to recruit to the larger group. Look for:
+-  Different (and  complementary) areas of expertise
+-  Complementary professional networks
+-  Facilitation skills
+-  Emotional Intelligence	
+
+## The Broader Team
+
+As individuals, we all have strengths and weaknesses. The beauty of working in teams is that you can invite people who offset your own weaknesses and who bring strengths you don't have. Often, you'll have a few core team members who have generated a synthesis idea, but then you'll want to take a clear-eyed look at what additional skills and qualities to invite. When you do so, be sure to consider:
+
+-  Skills, Aptitudes, and Communication Styles
+    -  Look for a mix of empiricists, theorists, and modellers
+    -  Big-picture thinkers, organizers, task-oriented do-ers
+    -  Deep thinkers and risk-takers
+    -  At least some skilled coders
+-  Career stage
+    -  Senior investigators connect the team to existing literature and fields of study, connect to a broad network of experienced researchers, and have good knowledge of resources, but are often have a very limited amount of time to devorte to discussion and analyses
+    -  Junior team members often bring a fresh perspective, familiarity with newer literature, strong coding skills, and time to devote to the project
+-  Emotional intelligence
+    -  Research shows (add ref) that the bump in creativity seen in mixed-gender teams is typically due to an increase in emotional intelligence and attention to team dynamics. Include at least a few people with a process orientation and strong people skills.
+-  Power dynamics
+    -  You won't be able to anticipate all of the issues related to power dynamics that can arise, but keep them front of mind as you assemble a team. 
+-  Remember that participation in synthesis represents a significant career opportunity
+    -  Be mindful that such career-building opportunities have not been fairly distributed
+    -  Be intentional seeking out people who may not be part of your typical circles (including gender, ethnicity, career stage, family status, (dis)abilities, etc.)
+
+
+# Setting Expectations
+
+**Estimated time: XX min**
+
+# Making a Communication and Work Plan
+
+**Estimated time: XX min**
+
+# Intro to establishing a Project Management Plan 
+
 
 ::: {.panel-tabset}
 
@@ -221,50 +263,6 @@ Once you get into the details of the process, you'll want to track some more spe
 -  Working Group Participant who got the data (Name)
 -  Used in your analysis? (Y/N)
 -  Any additional notes or decisions about *how* the data is or will be harmonized and analyzed
-
-
-# Building a Team
-
-## The Leadership Team
-
-The composition of the leadership team will affect the success of the project and who you will be able to recruit to the larger group. Look for:
--  Different (and  complementary) areas of expertise
--  Complementary professional networks
--  Facilitation skills
--  Emotional Intelligence	
-
-## The Broader Team
-
-As individuals, we all have strengths and weaknesses. The beauty of working in teams is that you can invite people who offset your own weaknesses and who bring strengths you don't have. Often, you'll have a few core team members who have generated a synthesis idea, but then you'll want to take a clear-eyed look at what additional skills and qualities to invite. When you do so, be sure to consider:
-
--  Skills, Aptitudes, and Communication Styles
-    -  Look for a mix of empiricists, theorists, and modellers
-    -  Big-picture thinkers, organizers, task-oriented do-ers
-    -  Deep thinkers and risk-takers
-    -  At least some skilled coders
--  Career stage
-    -  Senior investigators connect the team to existing literature and fields of study, connect to a broad network of experienced researchers, and have good knowledge of resources, but are often have a very limited amount of time to devorte to discussion and analyses
-    -  Junior team members often bring a fresh perspective, familiarity with newer literature, strong coding skills, and time to devote to the project
--  Emotional intelligence
-    -  Research shows (add ref) that the bump in creativity seen in mixed-gender teams is typically due to an increase in emotional intelligence and attention to team dynamics. Include at least a few people with a process orientation and strong people skills.
--  Power dynamics
-    -  You won't be able to anticipate all of the issues related to power dynamics that can arise, but keep them front of mind as you assemble a team. 
--  Remember that participation in synthesis represents a significant career opportunity
-    -  Be mindful that such career-building opportunities have not been fairly distributed
-    -  Be intentional seeking out people who may not be part of your typical circles (including gender, ethnicity, career stage, family status, (dis)abilities, etc.)
-
-
-# Setting Expectations
-
-**Estimated time: XX min**
-
-# Making a Communication and Work Plan
-
-**Estimated time: XX min**
-
-# Intro to establishing a Project Management Plan 
-
-**Estimated time: XX min**
 
 # Additional Resources and Templates 
 
