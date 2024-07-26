@@ -138,6 +138,7 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 -  Data extracted from papers
 -  Scraping social media 
 -  Text analysis
+
 :::
 
 ## Data Use Principles
