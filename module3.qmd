@@ -16,7 +16,11 @@ title: "Module 3: Tying it all together"
 
 # Introduction
 
-So far, we've made the point that ecological synthesis research is collaborative and inclusive, and that it integrates a wide range of data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment. The ability of synthesis research accomplish this frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.
+So far, we've made the point that ecological synthesis research is collaborative and inclusive, and that it integrates a wide range of data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment. The ability to accomplish this in synthesis research frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.
+
+<img src="images/mod3_fig1_tying.png" style="float: right" width="50%"/>
+There are three interconnected, publishable products for a synthesis project (or any research project, really): the data, analytical workflows (code for data cleaning or statistics, for example), and research results. Each of these elements is a valuable product of synthesis science, and each one should reference the others. In this module we'll discuss the mechanics of publishing each one, and then how they can be connected and made accessible for the long-term.
+
 
 # Designing and publishing synthesis datasets
 
@@ -58,7 +62,7 @@ Oftentimes, including information about **why** the data were collected can help
 ### Data provenance metadata
 
 <img style="float: right;" src="images/provenance.png" alt="What data should you publish" width="25%" padding="10px"/>
-Provenance metadata deserves special attention for ecological data synthesis projects. **Data provenance** refers to information detailing the origin of the values in a dataset, which is particularly important for synthesis projects that bring together data from many different sources. Synthesis activities typically produce data products that are **derived** from these original sources, such as a harmonized data file, a database, or an analysis product. Provenance metadata is included with the derived product to point back to the original source data, similar to the way bibliographic references point to the source material for a book or scholarly article.
+Provenance metadata deserves special attention for ecological data synthesis projects. **Data provenance** refers to information detailing the origin of the values in a dataset, which is particularly important for synthesis projects that bring together data from many different sources. Synthesis activities typically produce new data products that are **derived** from the original source data after they have been cleaned, harmonized, and analyzed. Provenance metadata should be included with the derived products to point back to the original source data, similar to the way bibliographic references point to the source material for a book or scholarly article.
 
 A few other notes on provenance:
 
@@ -72,18 +76,18 @@ A few other notes on provenance:
 
 ### Licensing
 
-One component of the metadata you publish in your dataset will be the license. Including a license defines who has what rights to use the published dataset. This is an important decision that should be made after consulting with the synthesis team, considering the data being published, and the requirements of funders and other associated institutions. For publicly-funded research data, it is generally appropriate to use open licenses, and the Creative Commons CC-BY attribution, and CC0 public domain, licenses are probably a good choice for most ecological synthesis data. This is not legal advice and your mileage may vary.
+Published datasets should include a license in every copy of the metadata that defines who has what rights to use, reproduce, or distribute the data. Licensing decisions should be made in consultation with the synthesis team after considering the nature of the data (does it contain human subject data, for instance?), its origin (including restrictions on source data, if applicable), and the requirements of the funders and institutions associated with the project. For publicly-funded environmental research data, it is generally appropriate to use open licenses, and the Creative Commons CC-BY attribution, and CC0 public domain, licenses are probably a good choice for most ecological synthesis data. This is not legal advice and your mileage may vary.
 
 ### Metadata creation and management
 
-**Assembling metadata should begin early** and be an integral part of the data synthesis activities discussed in Module 2. Metadata can even be built-in to the workflow and project management elements of your project. Here are a few ways your team might do that:
+Assembling metadata should be an integral part of the data synthesis activities discussed in Module 2, and can even be built-in to the workflow and project management practices of a project. **Make sure to plan for and start creating metadata early** in a synthesis project. Below are a few ways to do that.
 
-1. Keep a project log and populate it with metadata for the project, including information like
+1. Keep a detailed project log and populate it with metadata for the project, including information like
     a. what source data the team is using and where they came from.
-    b. how data are being analyzed and methods for creating derived products.
+    b. how data are being analyzed and methods used to create derived products.
     c. who is doing what.
-2. Begin assembling publishable datasets (data plus metadata) as data are harmonized and analyzed. The team can do this
-    a. locally, using a directory containing data and metadata files (as text, or use [a metadata template](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx)).
+2. Start creating distinct publishable datasets (data plus metadata) as data are processed and analyzed. The team can do this
+    a. locally, using a labeled directory for the cleaned, harmonized, of derived data, along with related code and metadata files. Metadata files may be plain text, or use [a metadata template](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx).
     b. with a repository-based metadata editor, such as [ezEML](https://ezeml.edirepository.org) from the Environmental Data Initiative (EDI) repository.
 3. Get a professional data manager or data curator involved with the synthesis project. For example, the LTER Network has a community of "Information Managers" [^10] trained in data management, metadata creation, and data publishing. Research data repositories[^11] and associated data curators[^12] may also be a good resource. 
 
@@ -94,7 +98,14 @@ One component of the metadata you publish in your dataset will be the license. I
 ## Deciding what to publish
 
 <img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"/>
-The overall design of the dataset to be published is often difficult to imagine, particularly for those who are new to using or creating datasets. In the activity below we will browse a few published dataset to get a feel for what useful data does and doesn't look like. You can also look at advice from a repository like [EDI](https://edirepository.org/resources/designing-a-data-package), or from a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs).
+The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is "What should I publish?" The answer usually comes down to:
+
+- Publish any data used to generate research results.
+- Publish any data that will be used by others (scientists, managers, public stakeholders), including raw data.
+- If reproducibility is of interest or concern, publish the code or workflow used to process or analyze the data, or to generate research results (like figures).
+- Always publish descriptive metadata about any of the above.
+
+In the activity below we will browse a few published dataset to get a feel for what useful data does and doesn't look like. You can also look at advice from a repository like [EDI](https://edirepository.org/resources/designing-a-data-package), or from a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs).
 
 ## Choosing and publishing to a repository
 
@@ -106,7 +117,7 @@ There are many, many research data repositories available to researchers now, ma
 
 ![A limited slice from the spectrum of research data repositories available for publishing synthesis data.](images/repository_spectrum.png){width=90%}
 
-Once you have chosen a repository, the process of publishing the data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, or even data curation staff, to assist users with data publication. It also helps to consult your local data manager if you have one available.
+Once you have made a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult your local data manager if you have one available.
 
 ## Activity 1: Evaluate published datasets
 
@@ -146,28 +157,14 @@ Maybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)
 * [NEON's derived data publishing guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
 * [EDI repository data authorship guide](https://edirepository.org/resources/resources-for-data-authors)
 
-# Connecting the elements of a synthesis project
-
-**Estimated time: 25 min**
-
-<img src="images/mod3_fig1_tying.png" style="float: right" width="50%"/>
-There are three interconnected, publishable products for a synthesis project (or any research project, really): the data, analytical workflows (code for data cleaning or statistics, for example), and research results. Each of these elements is a valuable product of synthesis science, and each one should reference the others.
-
-## Publishing data (5)
-
-* Data and metadata
-* Data provenance - especially important in synthesis
-* Research data repositories
-* Licensing, etc.
-
-## Sharing the workflow (7)
+# Sharing the synthesis workflow
 
 * Data sources
 * Code for analysis
 * Version control systems
 * Future contributions
 
-## Writing the results (3)
+# Writing and disseminating the results
 
 * Most often this means writing a paper
   - Citing data in a paper
@@ -177,14 +174,18 @@ There are three interconnected, publishable products for a synthesis project (or
 * Other products may be apps, teaching modules, etc.
   - MacrosystemsEDDIE as an example?
   - Shiny apps
- 
-## Tying these all together (5)
+
+# Connecting the elements of a synthesis project
+
+**Estimated time: 25 min**
+
+## Tying these all together
 
 Some general considerations
 
 * Synthesis projects can become complex
 
-## Giving everyone credit (5)
+## Giving everyone credit
 
 ## Activity 2: Evaluate three synthesis projects
 
