@@ -102,10 +102,14 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 -  Clearly framed, but flexible enough to allow adaptation through the process
 -  Responsive to the funding call
 -  Outputs could include several kinds of products:
-    -  Papers of various kinds,
-    -  Symposia, 
-    -  Datasets, 
-    -  Analytical packages
+    -  Papers
+        -  Data Papers
+        -  Primary Analyses
+        -  Perspectives
+        -  Gap Analyses
+    -  Symposia 
+    -  Datasets 
+    -  Analytical Packages
 
 ::: {.panel-tabset}
 
@@ -117,15 +121,15 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 
 **What kinds of data sources might you consider including in a synthesis project, in addition to your own or others' field data?**
 
-# A Few Ideas
+# **A Few Ideas**
 
 -  DataONE
--  EDI (LTER), 
+-  EDI (LTER) 
 -  GenBank
--  NEON
--  USGS 
+-  National Ecological Observatory Network (NEON)
+-  US Geological Survey Streamflow Data 
 -  GBIF
--  NASA
+-  NASA Remote Sensing Data
 -  US Park Service
 -  FluxNet
 -  Phenocam network
@@ -135,9 +139,8 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 -  Data extracted from papers
 -  Scraping social media 
 -  Text analysis
-
-
 :::
+
 # Building a Team
 
 **Estimated time: XX min**
