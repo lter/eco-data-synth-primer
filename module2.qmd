@@ -240,7 +240,7 @@ There are many, many other possible harmonized data formats. Here are a few poss
 * Data cleaning is complicated and varied, and entire books have been written on the subject.[^7][^8] For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
 * [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
 * In the R language, the `tidyverse` libraries (particularly `tidyr` and `dplyr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
-* In python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
+* In Python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
 * Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's *R for Data Science* book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy),[^9] and for python check Wes McKinney's *Python for Data Analysis* book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).[^10]
 
 [^7]: Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.
@@ -254,7 +254,7 @@ There are many, many other possible harmonized data formats. Here are a few poss
 
 # Data analysis
 
-Once the team has found sufficient source data, then cleaned, filtered, and harmonized countless datasets, and documented and described everything with quality metadata, it is finally time to analyze the data! Great! Load up R or python and get started, and then tell us how it goes. We simply don't have enough time to cover all the ins and outs of data analysis in a three-hour course. However, we have put a few helpful resources below to get you started, and many of the best practices we have talked about, or will talk about, apply: 
+Once the team has found sufficient source data, then cleaned, filtered, and harmonized countless datasets, and documented and described everything with quality metadata, it is finally time to analyze the data! Great! Load up R or Python and get started, and then tell us how it goes. We simply don't have enough time to cover all the ins and outs of data analysis in a three-hour course. However, we have put a few helpful resources below to get you started, and many of the best practices we have talked about, or will talk about, apply: 
 
 1. **Document your analysis steps and comment your code**, and generally try to make everything reproducible.
 2. **Use version control** as you analyze data.
