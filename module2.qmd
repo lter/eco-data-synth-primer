@@ -113,11 +113,11 @@ The scientific questions being asked in synthesis projects are usually broad in 
 
 Metadata is "data about the data," or information that describes **who** collected the data, **what** was observed or measured, **when** the data were collected, **where** the data were collected, **how** the observations or measurements were made, and **why** they were collected. Metadata provide important contextual information about the origin of the data and how they can be analyzed or used. They are most useful when attached or linked to the data being described, and data and related metadata together are commonly referred to as a *dataset*.
 
-Metadata for ecological research data are well described in Michener et al (1997)[^1], but there are many other kinds of metadata with different purposes.[^2] When publishing datasets, research data repositories typically provide guidance on metadata needs, as seen [here](https://edirepository.org/resources/creating-metadata-for-publication), for example. We'll return to considerations about metadata in Module 3.
+Metadata for ecological research data are well described in Michener et al (1997),[^1] but there are many other kinds of metadata with different purposes.[^2] If you are publishing a research dataset and have questions about metadata, ask a data manager for your project, or staff at the repository you are working with, for help. Either can typically provide guidance on creating metadata that will describe your data and be useful to the community (here is [one example](https://edirepository.org/resources/creating-metadata-for-publication)). We'll return to the subject of metadata in Module 3.
 
 [^1]: Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2
-
 [^2]: Mayernik, M.S. and Acker, A. (2018), Tracing the traces: The critical role of metadata within networked communications. Journal of the Association for Information Science and Technology, 69: 177-180. https://doi.org/10.1002/asi.23927
+
 :::
 
 ## Data cleaning and filtering
@@ -126,31 +126,18 @@ When assembling large datasets from diverse sources, as in synthesis research, n
 
 1. **Always preserve the raw data**. Chances are you'll want to go back and check the original source data at least once.
 2. **Use a scripted workflow to clean and filter the raw data**, and follow the usual rules about reproducibility (comments, version control, functionalization).
-3. **Consider using the concept of data processing "levels"**, meaning that defined sets of data flagging, removal, or transformation operations are applied consistently to the data in stepwise fashion. For example, incoming raw data would be labeled "level 0" data, and "level 1" data is reached after the first set of processing steps is applied.
-4. **Spread the data cleaning workload around!** Data cleaning typically demands a HUGE fraction of the total time devoted to working with data [^3] [^4] [^5], and it can be tedious work. Make sure the team shares this workload equitably.
+3. **Consider using the concept of data processing "levels,"** meaning that defined sets of data flagging, removal, or transformation operations are applied consistently to the data in stepwise fashion. For example, incoming raw data would be labeled "level 0" data, and "level 1" data is reached after the first set of processing steps is applied.
+4. **Spread the data cleaning workload around!** Data cleaning typically demands a HUGE fraction of the total time devoted to working with data,[^3][^4][^5] and it can be tedious work. Make sure the team shares this workload equitably.
 
 [^3]: Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10
 [^4]: [New York Times, 2014](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html)
 [^5]: [Anaconda State of Data Science Report, 2022](https://www.anaconda.com/resources/whitepapers/state-of-data-science-report-2022/)
 
-**Data cleaning and filtering resources**
-
-* Data cleaning is complicated and varied, and entire books have been written on the subject [^6] [^7], For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
-* [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
-* In the R language, the `tidyverse` libraries (particularly `tidyr` and `dplyr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
-* In python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
-* Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's *R for Data Science* [^8] book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy), and for python, check Wes McKinney's *Python for Data Analysis* [^9] book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).
-
-[^6]: Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.
-[^7]: Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley & Sons, 2018. https://doi.org/10.1002/9781118897126
-[^8]: Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. " O'Reilly Media, Inc.", 2023. https://r4ds.hadley.nz/
-[^9]: McKinney, Wes. Python for data analysis. " O'Reilly Media, Inc.", 2022. https://wesmckinney.com/book
-
 ## Data harmonization 
 
 Data harmonization is the process of bringing different datasets into a common format for analysis. The harmonized data format chosen for a synthesis project depends on the source data, analysis plans, and overall project goals. It is best to make a plan for harmonizing data BEFORE analysis begins, which means discussing this with the team in the early stages of a synthesis project. As a general rule, it is also wise to use a scripted workflow that is as reproducible as possible to accomplish the harmonization you need for your project. Following this guidance lets others understand, check, and adapt your work, and will also make it much, much easier to bring new data and analysis methods into the project.
 
-Data harmonization is hard work that sometimes requires trial and error to arrive at a useful end product. Looking at a simple example might help.
+Data harmonization is hard work that sometimes requires trial and error to arrive at a useful end product. At the end of this section are some additional data harmonization resources to help you get started. Looking at a simple example might also help.
 
 ### Example: Harmonizing grassland biomass data
 
@@ -201,7 +188,7 @@ Here our grassland biomass data is in long format, often referred to as "tidy" d
 **Disadvantages**: observation information is repeated, file size larger  
 **Possible file formats**: Delimited text (tab delimited shown here), spreadsheets, database tables  
 
-![The harmonized grassland data, in long format.](images/long_data_example.png){width="50%"}
+![The harmonized grassland data, in long format.](images/long_data_example.png){width="75%"}
 
 ## Wide (Untidy)
 
@@ -211,29 +198,29 @@ In this dataset, our grassland data has been restructured into wide format, ofte
 **Disadvantages**: may be more difficult to clean/filter/append, multiple observations per row  
 **Possible file formats**: Delimited text (tab delimited shown here), spreadsheets, database tables  
 
-![The harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.](images/wide_data_example.png){width="50%"}
+![The harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.](images/wide_data_example.png){width="75%"}
 
 ## Relational (database style)
 
-Below is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^10] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are "normalized" to reduce data redundancy, and increase data integrity.
+Below is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^6] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are "normalized" to reduce data redundancy, and increase data integrity.
 
 **Advantages**: reduced redundancy, greater integrity, community standard  
 **Disadvantages**: significant metadata needed to describe and use, more complex to publish  
 **Possible file formats**: Database stores, can be represented in delimited text (CSV)  
 
-[^10]: O'Brien, Margaret, et al. "ecocomDP: a flexible data design pattern for ecological community survey data." Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374
+[^6]: O'Brien, Margaret, et al. "ecocomDP: a flexible data design pattern for ecological community survey data." Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374
 
-![The ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.](images/ecocomDP_schema.jpg){width="50%"}
+![The ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.](images/ecocomDP_schema.jpg){width="75%"}
 
 ## Cloud-native
 
 There are many possibilities to make large synthesis datasets available and useful in the cloud. These require specialized knowledge and tooling, and reliable access to cloud platforms.
 
-**Advantages**: easier access to big data  
+**Advantages**: easier access to big (high volume) data, can integrate with web apps  
 **Disadvantages**: less familiar/accessible to many scientists, few best practices to follow, costs can be higher  
-**Possible file formats**: Parquet files, distributed/cloud databases
+**Possible file formats**: Parquet files, object storage, distributed/cloud databases
 
-![A few of the cloud-native technologies that might be useful for synthesis research products.](images/cloud_native.png){width="50%"}
+![A few of the cloud-native technologies that might be useful for synthesis research products.](images/cloud_native.png){width="75%"}
 
 ## Other...
 
@@ -246,13 +233,37 @@ There are many, many other possible harmonized data formats. Here are a few poss
 
 :::
 
+## Additional resources about data preparation
+
+**Data cleaning and filtering resources**
+
+* Data cleaning is complicated and varied, and entire books have been written on the subject.[^7][^8] For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
+* [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
+* In the R language, the `tidyverse` libraries (particularly `tidyr` and `dplyr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
+* In python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
+* Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's *R for Data Science* book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy),[^9] and for python check Wes McKinney's *Python for Data Analysis* book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).[^10]
+
+[^7]: Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.
+[^8]: Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley & Sons, 2018. https://doi.org/10.1002/9781118897126
+[^9]: Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. " O'Reilly Media, Inc.", 2023. https://r4ds.hadley.nz/
+[^10]: McKinney, Wes. Python for data analysis. " O'Reilly Media, Inc.", 2022. https://wesmckinney.com/book
+
+**Data harmonization resources**
+
+* For R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham's *R for Data Science* book, the chapters on [data transforms](https://r4ds.hadley.nz/data-transform) and [data tidying](https://r4ds.hadley.nz/data-tidy) are a good place to start. In Wes McKinney's *Python for Data Analysis* book, the chapter on [data wrangling](https://wesmckinney.com/book/data-wrangling) is helpful.
+
 # Data analysis
 
 Once the team has found sufficient source data, then cleaned, filtered, and harmonized countless datasets, and documented and described everything with quality metadata, it is finally time to analyze the data! Great! Load up R or python and get started, and then tell us how it goes. We simply don't have enough time to cover all the ins and outs of data analysis in a three-hour course. However, we have put a few helpful resources below to get you started, and many of the best practices we have talked about, or will talk about, apply: 
 
 1. **Document your analysis steps and comment your code**, and generally try to make everything reproducible.
 2. **Use version control** as you analyze data.
-3. **Spread the work around** - analyzing data is challenging, exciting, and a great learning opportunity. Having more eyes on the analysis process also helps catch interesting results or subtle errors.
+3. **Give everyone a chance!** Analyzing data is challenging, exciting, and a great learning opportunity. Having more eyes on the analysis process also helps catch interesting results or subtle errors.
+
+## Additional resources about data analysis
+
+* Harrer, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2023**. _GitHub_
+* Once again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham's *R for Data Science* book, the chapter on [exploratory data analysis](https://r4ds.hadley.nz/eda) will help. In McKinney's *Python for Data Analysis* book, try the chapters on [plotting and visualization](https://wesmckinney.com/book/plotting-and-visualization) and [the introduction to modeling](https://wesmckinney.com/book/modeling).
 
 # Version Control
 
@@ -338,7 +349,6 @@ For more information about LTER synthesis working groups and how you can get inv
 
 ## Literature
 
-- Harrer, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2023**. _GitHub_
 - Todd-Brown, K.E.O., _et al._ [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/). **2022**. _Biogeosciences_
 - Borer, E.T. _et al._ [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. _Ecological Society of America Bulletin_
 

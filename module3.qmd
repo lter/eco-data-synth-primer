@@ -92,32 +92,32 @@ Assembling metadata should be an integral part of the data synthesis activities 
 3. Get a professional data manager or data curator involved with the synthesis project. For example, the LTER Network has a community of "Information Managers" [^10] trained in data management, metadata creation, and data publishing. Research data repositories[^11] and associated data curators[^12] may also be a good resource. 
 
 [^10]: [List of LTER Information Managers](https://lternet.edu/using-lter-data/#im)
-[^11]: [Core Trust Seal certified data repositories](https://amt.coretrustseal.org/certificates)
+[^11]: [The Registry of Research Data Repositories (re3data.org)](https://www.re3data.org/)
 [^12]: [Data curation network](https://datacurationnetwork.org/)
 
 ## Deciding what to publish
 
 <img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"/>
-The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is "What should I publish?" The answer usually comes down to:
+The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is "*What should I publish?*" The answer usually comes down to:
 
 - Publish any data used to generate research results.
 - Publish any data that will be used by others (scientists, managers, public stakeholders), including raw data.
-- If reproducibility is of interest or concern, publish the code or workflow used to process or analyze the data, or to generate research results (like figures).
+- If reproducibility is of interest or concern, publish the workflow (usually code) used to process or analyze the data, or to generate research results like figures.
 - Always publish descriptive metadata about any of the above.
 
-In the activity below we will browse a few published dataset to get a feel for what useful data does and doesn't look like. You can also look at advice from a repository like [EDI](https://edirepository.org/resources/designing-a-data-package), or from a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs).
+In the activity below we will browse a few published datasets to get a feel for what useful data does and doesn't look like. You can also look at advice from a repositories like [EDI](https://edirepository.org/resources/designing-a-data-package) and [BCO-DMO](https://guide.bco-dmo.org/prepare/what-is-a-dataset), or from a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs).
 
 ## Choosing and publishing to a repository
 
-There are many, many research data repositories available to researchers now, making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. The repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a [Digital Object Identifier](https://doi.org), or DOI, that can be cited every time the dataset is used after publication. Repositories should also be stable and well supported so that data remain available in perpetuity. The [CoreTrustSeal certified repository list](https://amt.coretrustseal.org/certificates) is one way to assess this. Finally, repositories should require at least some metadata be submitted with each dataset to ensure that the published data are FAIR. Beyond this, asking a few questions about the dataset will help with repository selection:
+There are many, many research data repositories available to researchers now[^11], making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a [Digital Object Identifier](https://doi.org), or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the [CoreTrustSeal certified repository list](https://amt.coretrustseal.org/certificates) is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:
 
-1. Who are the likely users for this data? Will they be part of a specific scientific discipline, research network, or community of stakeholders?
-2. How specialized are your data? Do they fall into a common data type or follow a specific formatting standard?
+1. Who are the likely users for this data? Will they belong to a specific scientific discipline, research network, or community of stakeholders?
+2. How specialized are your data? Do they fall into a common data type or follow a speical formatting standard?
 3. Will the data be updated regularly?
 
-![A limited slice from the spectrum of research data repositories available for publishing synthesis data.](images/repository_spectrum.png){width=90%}
+![A limited slice from the broad spectrum of research data repositories available for publishing synthesis data.](images/repository_spectrum.png){width=90%}
 
-Once you have made a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult your local data manager if you have one available.
+After making a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult a project data manager if one is available to the synthesis team.
 
 ## Activity 1: Evaluate published datasets
 
@@ -127,24 +127,23 @@ Form breakout groups and course instructors will assign each group a dataset (a 
 
 1. Where were the data collected?
 2. What variables were measured and in what units?
-3. Are the data raw or have they been altered since collection? If the latter, how?
+3. What is the origin of the data and how have they been altered since collection?
 4. Were the first three questions easy to answer? Why or why not?
 
 :::{.panel-tabset}
 ## Example 1
 
-Data from the SoDaH working group
+Data from the SoDaH LTER synthesis working group.
 
 https://portal.edirepository.org/nis/mapbrowse?packageid=edi.521.1
 
 ## Example 2
 
-A Dryad dataset from a synthesis paper about oligotrophication
+A Dryad dataset from a synthesis paper about oligotrophication.
 
 https://doi.org/10.5061/dryad.v2k2607
 
 ## Example 3
-
 
 Maybe this: https://portal.edirepository.org/nis/mapbrowse?packageid=edi.493.16 (needs editing)
 
@@ -152,7 +151,7 @@ Maybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)
 
 :::
 
-## Additional resources
+## Additional data publishing resources
 
 * [NEON's derived data publishing guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
 * [EDI repository data authorship guide](https://edirepository.org/resources/resources-for-data-authors)
