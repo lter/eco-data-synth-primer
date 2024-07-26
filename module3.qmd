@@ -5,8 +5,7 @@ title: "Module 3: Tying it all together"
 # Learning objectives
 
 
-- **Identify** the features that make published data easily
-re-useable
+- **Identify** the features that make published data easily re-useable
 - **Evaluate** the metadata and fitness-for-use of published synthesis datasets
 - **Understand** the three primary "products" that come out of synthesis groups
 - **Understand** concepts of data provenance, reproducible analysis, and citations
@@ -17,18 +16,18 @@ re-useable
 
 # Introduction
 
-So far, we've made the point that ecological synthesis research is collaborative and integrates a wide range of data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment. The ability of synthesis research accomplish this frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.
+So far, we've made the point that ecological synthesis research is collaborative and inclusive, and that it integrates a wide range of data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment. The ability of synthesis research accomplish this frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.
 
-# Publishing data for re-use
+# Designing and publishing synthesis datasets
 
 **Estimated time: 12 min**
 
-In Module 2 we discussed some considerations for creating and formatting a harmonized dataset useful for synthesis research. We also introduced the importance of metadata for making data usable. Harmonized data that are findable, accessible, interoperable, and reusable (FAIR) are an important output for almost any ecological synthesis project.
+In Module 2 we discussed some considerations for creating and formatting harmonized data files useful for synthesis research. We also introduced the importance of metadata for describing data and making it more usable. Publishing harmonized data files and descriptive metadata together as a **dataset** ensures that the data products produced by a synthesis team are findable, accessible, interoperable, and reusable (FAIR). FAIR data are an important output for almost any ecological synthesis project.
 
 ::: {.callout-tip collapse="true"}
 ## More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 
-The FAIR principles, standing for Findability, Accessibility, Interoperability, and Reusability,  are a community-standard set of guidelines for evaluating the quality and utility of published research data. Making an effort to meet the critera outlined in the FAIR principles promotes both human and machine usability of data, and is a worthy objective when preparing to publish the data products from a synthesis research project.
+The FAIR principles, standing for Findability, Accessibility, Interoperability, and Reusability,  are a community-standard set of guidelines for evaluating the quality and utility of published research data. Making an effort to meet the FAIR criteria promotes both human and machine usability of data, and is a worthy objective when preparing to publish the data products from a synthesis research project.
 
 The FAIR principles were first defined in the paper by Wilkinson et al (2018)[^1]. Since this time, many resources have arisen to guide the implementation the FAIR principles[^2][^3], and to quantify FAIR data successes and failures in the research and publishing communities[^4][^5].
 
@@ -40,19 +39,6 @@ The FAIR principles were first defined in the paper by Wilkinson et al (2018)[^1
 
 :::
 
-
-    b. What metadata are needed to describe the data?
-    
-Both questions should be answered in such a way that the usability of the data is maximized. 
-
-## Synthesis data structures and formats
-
-Data structure refers to the arrangement and organization of individual units of information in a data file. Data format generally refers to the data file type, i.e. text files, Microsoft Excel files, .jpeg image files, etc. Some data files are both a format and a structure. For example, comma separated value, or CSV, files are a common text-based data files where each line of text represents a table row, and data in columns are separated by commas.
-
-* Database
-* Text tables
-* Special data types
-
 ## Metadata
 
 Metadata are data about the data. As a general rule, metadata should describe
@@ -63,11 +49,66 @@ Metadata are data about the data. As a general rule, metadata should describe
   * **Where** the data were collected
   * **How** the data were collected (methods, instruments, etc.)
 
-Oftentimes, including information about **why** the data were collected can help future users understand the context of the data and use them.
+Oftentimes, including information about **why** the data were collected can help future users understand the context of the data and use them. Including metadata of this nature makes data more usable, and helps prevent the deterioration of information about data over time, as illustrated in the figure below (from Michener et al. 1997[^6]).
 
-**Assembling metadata should begin early**, and is an integral part of doing data synthesis throughout the life-cycle of the project. Consider building metadata collection in to the workflow and project management elements of your project.
+[^6]: Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2
 
-## Activity: Evaluate published datasets
+![Example of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time (Michener et al 1997.](images/michener97_information_loss.png){width=60%}
+
+### Data provenance metadata
+
+<img style="float: right;" src="images/provenance.png" alt="What data should you publish" width="25%" padding="10px"/>
+Provenance metadata deserves special attention for ecological data synthesis projects. **Data provenance** refers to information detailing the origin of the values in a dataset, which is particularly important for synthesis projects that bring together data from many different sources. Synthesis activities typically produce data products that are **derived** from these original sources, such as a harmonized data file, a database, or an analysis product. Provenance metadata is included with the derived product to point back to the original source data, similar to the way bibliographic references point to the source material for a book or scholarly article.
+
+A few other notes on provenance:
+
+  * At its simplest, documenting data sources as you collect and analyze the source data is a great start on provenance metadata. 
+  * Many data repositories provide guidelines, tools, and features for data provenance metadata[^7].
+  * Provenance metadata can become very detailed if the software and computing environment is also taken into account. This is an active area of study [^8][^9].
+
+[^7]: [Provenance metadata at the EDI repository](https://edirepository.org/resources/provenance-metadata)
+[^8]: Lerner, et al., "Making Provenance Work for You", The R Journal, 2023. https://journal.r-project.org/articles/RJ-2023-003/
+[^9]: [End-to-End Provenance](https://end-to-end-provenance.github.io/)
+
+### Licensing
+
+One component of the metadata you publish in your dataset will be the license. Including a license defines who has what rights to use the published dataset. This is an important decision that should be made after consulting with the synthesis team, considering the data being published, and the requirements of funders and other associated institutions. For publicly-funded research data, it is generally appropriate to use open licenses, and the Creative Commons CC-BY attribution, and CC0 public domain, licenses are probably a good choice for most ecological synthesis data. This is not legal advice and your mileage may vary.
+
+### Metadata creation and management
+
+**Assembling metadata should begin early** and be an integral part of the data synthesis activities discussed in Module 2. Metadata can even be built-in to the workflow and project management elements of your project. Here are a few ways your team might do that:
+
+1. Keep a project log and populate it with metadata for the project, including information like
+    a. what source data the team is using and where they came from.
+    b. how data are being analyzed and methods for creating derived products.
+    c. who is doing what.
+2. Begin assembling publishable datasets (data plus metadata) as data are harmonized and analyzed. The team can do this
+    a. locally, using a directory containing data and metadata files (as text, or use [a metadata template](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx)).
+    b. with a repository-based metadata editor, such as [ezEML](https://ezeml.edirepository.org) from the Environmental Data Initiative (EDI) repository.
+3. Get a professional data manager or data curator involved with the synthesis project. For example, the LTER Network has a community of "Information Managers" [^10] trained in data management, metadata creation, and data publishing. Research data repositories[^11] and associated data curators[^12] may also be a good resource. 
+
+[^10]: [List of LTER Information Managers](https://lternet.edu/using-lter-data/#im)
+[^11]: [Core Trust Seal certified data repositories](https://amt.coretrustseal.org/certificates)
+[^12]: [Data curation network](https://datacurationnetwork.org/)
+
+## Deciding what to publish
+
+<img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"/>
+The overall design of the dataset to be published is often difficult to imagine, particularly for those who are new to using or creating datasets. In the activity below we will browse a few published dataset to get a feel for what useful data does and doesn't look like. You can also look at advice from a repository like [EDI](https://edirepository.org/resources/designing-a-data-package), or from a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs).
+
+## Choosing and publishing to a repository
+
+There are many, many research data repositories available to researchers now, making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. The repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a [Digital Object Identifier](https://doi.org), or DOI, that can be cited every time the dataset is used after publication. Repositories should also be stable and well supported so that data remain available in perpetuity. The [CoreTrustSeal certified repository list](https://amt.coretrustseal.org/certificates) is one way to assess this. Finally, repositories should require at least some metadata be submitted with each dataset to ensure that the published data are FAIR. Beyond this, asking a few questions about the dataset will help with repository selection:
+
+1. Who are the likely users for this data? Will they be part of a specific scientific discipline, research network, or community of stakeholders?
+2. How specialized are your data? Do they fall into a common data type or follow a specific formatting standard?
+3. Will the data be updated regularly?
+
+![A limited slice from the spectrum of research data repositories available for publishing synthesis data.](images/repository_spectrum.png){width=90%}
+
+Once you have chosen a repository, the process of publishing the data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, or even data curation staff, to assist users with data publication. It also helps to consult your local data manager if you have one available.
+
+## Activity 1: Evaluate published datasets
 
 **Estimated time: 10 min**
 
@@ -100,29 +141,17 @@ Maybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)
 
 :::
 
-## Summary
-
-* ...
-* Keep in mind that there is no PERFECT dataset!
-
 ## Additional resources
 
-* Wilkinson, Mark D., et al. "The FAIR Guiding Principles for scientific data management and stewardship." Scientific data 3.1 (2016): 1-9. [DOI: 10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18)
-* [NEON's guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
-* [EDI repository data author guide](https://edirepository.org/resources/resources-for-data-authors)
+* [NEON's derived data publishing guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
+* [EDI repository data authorship guide](https://edirepository.org/resources/resources-for-data-authors)
 
 # Connecting the elements of a synthesis project
 
 **Estimated time: 25 min**
 
-There are three interconnected elements to a synthesis project (or any research project, really): the data, 
-the analytical workflow, and the results. Each of these elements is a valuable product of synthesis science,
-and each should reference the others.
-
-<p align="center">
-<img src="images/mod3_fig1_tying.png" width="60%"/>
-</p>
-
+<img src="images/mod3_fig1_tying.png" style="float: right" width="50%"/>
+There are three interconnected, publishable products for a synthesis project (or any research project, really): the data, analytical workflows (code for data cleaning or statistics, for example), and research results. Each of these elements is a valuable product of synthesis science, and each one should reference the others.
 
 ## Publishing data (5)
 
@@ -157,7 +186,7 @@ Some general considerations
 
 ## Giving everyone credit (5)
 
-## Activity: Evaluate three synthesis projects
+## Activity 2: Evaluate three synthesis projects
 
 **Estimated time: 12 min**
 

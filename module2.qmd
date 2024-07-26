@@ -13,7 +13,7 @@ After completing this module, you will be able to:
 - **Create** a repository on GitHub
 - **Explain** how synthesis teams can use GitHub to collaborate more efficiently and reproducibly
 
-# Introduction NEW
+# Introduction
 
 Here are a couple of serviceable definitions of what research is:
 
@@ -104,7 +104,7 @@ How does reproducibility in synthesis considerations differ from individual / no
 - Its best to keep track of who contributed what, so that everyone gets credit. This can be challenging in practice.
 - 
 
-# Data preparation (cleaning and harmonizing) NEW
+# Data preparation (cleaning and harmonizing)
 
 The scientific questions being asked in synthesis projects are usually broad in scope, and it is therefore common to bring together many datasets from different sources for analysis. The datasets selected for analysis (source data) may have been collected by different people, in different places, using different methods, as part of different projects... or all of the above. Typically, some amount of data **cleaning** - filtering or removing unwanted observations - and data **harmonization** - putting data together in common structures, file formats, and units of measurement - is necessary before analysis can begin. This process can be easy or difficult depending on the quality of the source data, the differences between source data, and how much **metadata** (see callout below) is available to understand them. 
 
@@ -199,6 +199,7 @@ Here our grassland biomass data is in long format, often referred to as "tidy" d
 **Advantages**: clear meaning of rows and columns, ease in filtering/cleaning/appending  
 **Disadvantages**: observation information is repeated, file size larger  
 **Possible file formats**: Delimited text (tab delimited shown here), spreadsheets, database tables  
+
 ![The harmonized grassland data, in long format.](images/long_data_example.png){width="50%"}
 
 ## Wide (Untidy)
@@ -231,7 +232,7 @@ There are many possibilities to make large synthesis datasets available and usef
 **Disadvantages**: less familiar/accessible to many scientists, few best practices to follow, costs can be higher  
 **Possible file formats**: Parquet files, distributed/cloud databases
 
-![](images/cloud_native.png){width="50%" center=True}
+![A few of the cloud-native technologies that might be useful for synthesis research products.](images/cloud_native.png){width="50%"}
 
 ## Other...
 
