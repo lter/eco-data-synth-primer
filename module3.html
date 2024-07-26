@@ -146,12 +146,17 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#publishing-data-for-re-use" id="toc-publishing-data-for-re-use" class="nav-link" data-scroll-target="#publishing-data-for-re-use">Publishing data for re-use</a>
+  <li><a href="#designing-and-publishing-synthesis-datasets" id="toc-designing-and-publishing-synthesis-datasets" class="nav-link" data-scroll-target="#designing-and-publishing-synthesis-datasets">Designing and publishing synthesis datasets</a>
   <ul class="collapse">
-  <li><a href="#synthesis-data-structures-and-formats" id="toc-synthesis-data-structures-and-formats" class="nav-link" data-scroll-target="#synthesis-data-structures-and-formats">Synthesis data structures and formats</a></li>
-  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata">Metadata</a></li>
-  <li><a href="#activity-evaluate-published-datasets" id="toc-activity-evaluate-published-datasets" class="nav-link" data-scroll-target="#activity-evaluate-published-datasets">Activity: Evaluate published datasets</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata">Metadata</a>
+  <ul class="collapse">
+  <li><a href="#data-provenance-metadata" id="toc-data-provenance-metadata" class="nav-link" data-scroll-target="#data-provenance-metadata">Data provenance metadata</a></li>
+  <li><a href="#licensing" id="toc-licensing" class="nav-link" data-scroll-target="#licensing">Licensing</a></li>
+  <li><a href="#metadata-creation-and-management" id="toc-metadata-creation-and-management" class="nav-link" data-scroll-target="#metadata-creation-and-management">Metadata creation and management</a></li>
+  </ul></li>
+  <li><a href="#deciding-what-to-publish" id="toc-deciding-what-to-publish" class="nav-link" data-scroll-target="#deciding-what-to-publish">Deciding what to publish</a></li>
+  <li><a href="#choosing-and-publishing-to-a-repository" id="toc-choosing-and-publishing-to-a-repository" class="nav-link" data-scroll-target="#choosing-and-publishing-to-a-repository">Choosing and publishing to a repository</a></li>
+  <li><a href="#activity-1-evaluate-published-datasets" id="toc-activity-1-evaluate-published-datasets" class="nav-link" data-scroll-target="#activity-1-evaluate-published-datasets">Activity 1: Evaluate published datasets</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional resources</a></li>
   </ul></li>
   <li><a href="#connecting-the-elements-of-a-synthesis-project" id="toc-connecting-the-elements-of-a-synthesis-project" class="nav-link" data-scroll-target="#connecting-the-elements-of-a-synthesis-project">Connecting the elements of a synthesis project</a>
@@ -161,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#writing-the-results-3" id="toc-writing-the-results-3" class="nav-link" data-scroll-target="#writing-the-results-3">Writing the results (3)</a></li>
   <li><a href="#tying-these-all-together-5" id="toc-tying-these-all-together-5" class="nav-link" data-scroll-target="#tying-these-all-together-5">Tying these all together (5)</a></li>
   <li><a href="#giving-everyone-credit-5" id="toc-giving-everyone-credit-5" class="nav-link" data-scroll-target="#giving-everyone-credit-5">Giving everyone credit (5)</a></li>
-  <li><a href="#activity-evaluate-three-synthesis-projects" id="toc-activity-evaluate-three-synthesis-projects" class="nav-link" data-scroll-target="#activity-evaluate-three-synthesis-projects">Activity: Evaluate three synthesis projects</a></li>
+  <li><a href="#activity-2-evaluate-three-synthesis-projects" id="toc-activity-2-evaluate-three-synthesis-projects" class="nav-link" data-scroll-target="#activity-2-evaluate-three-synthesis-projects">Activity 2: Evaluate three synthesis projects</a></li>
   <li><a href="#additional-resources-1" id="toc-additional-resources-1" class="nav-link" data-scroll-target="#additional-resources-1">Additional resources</a></li>
   </ul></li>
   <li><a href="#maintaining-momentum" id="toc-maintaining-momentum" class="nav-link" data-scroll-target="#maintaining-momentum">Maintaining momentum</a>
@@ -208,12 +213,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>So far, we’ve made the point that ecological synthesis research is collaborative and integrates a wide range of data. Synthesis research is also intended to be <strong>influential</strong> and <strong>useful</strong>. There are many definitions of “influential and useful” to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment. The ability of synthesis research accomplish this frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.</p>
+<p>So far, we’ve made the point that ecological synthesis research is collaborative and inclusive, and that it integrates a wide range of data. Synthesis research is also intended to be <strong>influential</strong> and <strong>useful</strong>. There are many definitions of “influential and useful” to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment. The ability of synthesis research accomplish this frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.</p>
 </section>
-<section id="publishing-data-for-re-use" class="level1">
-<h1>Publishing data for re-use</h1>
+<section id="designing-and-publishing-synthesis-datasets" class="level1">
+<h1>Designing and publishing synthesis datasets</h1>
 <p><strong>Estimated time: 12 min</strong></p>
-<p>In Module 2 we discussed some considerations for creating and formatting a harmonized dataset useful for synthesis research. We also introduced the importance of metadata for making data usable. Harmonized data that are findable, accessible, interoperable, and reusable (FAIR) are an important output for almost any ecological synthesis project.</p>
+<p>In Module 2 we discussed some considerations for creating and formatting harmonized data files useful for synthesis research. We also introduced the importance of metadata for describing data and making it more usable. Publishing harmonized data files and descriptive metadata together as a <strong>dataset</strong> ensures that the data products produced by a synthesis team are findable, accessible, interoperable, and reusable (FAIR). FAIR data are an important output for almost any ecological synthesis project.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -226,22 +231,11 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The FAIR principles, standing for Findability, Accessibility, Interoperability, and Reusability, are a community-standard set of guidelines for evaluating the quality and utility of published research data. Making an effort to meet the critera outlined in the FAIR principles promotes both human and machine usability of data, and is a worthy objective when preparing to publish the data products from a synthesis research project.</p>
+<p>The FAIR principles, standing for Findability, Accessibility, Interoperability, and Reusability, are a community-standard set of guidelines for evaluating the quality and utility of published research data. Making an effort to meet the FAIR criteria promotes both human and machine usability of data, and is a worthy objective when preparing to publish the data products from a synthesis research project.</p>
 <p>The FAIR principles were first defined in the paper by Wilkinson et al (2018)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Since this time, many resources have arisen to guide the implementation the FAIR principles<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, and to quantify FAIR data successes and failures in the research and publishing communities<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
 </div>
 </div>
 </div>
-<pre><code>b. What metadata are needed to describe the data?</code></pre>
-<p>Both questions should be answered in such a way that the usability of the data is maximized.</p>
-<section id="synthesis-data-structures-and-formats" class="level2">
-<h2 class="anchored" data-anchor-id="synthesis-data-structures-and-formats">Synthesis data structures and formats</h2>
-<p>Data structure refers to the arrangement and organization of individual units of information in a data file. Data format generally refers to the data file type, i.e.&nbsp;text files, Microsoft Excel files, .jpeg image files, etc. Some data files are both a format and a structure. For example, comma separated value, or CSV, files are a common text-based data files where each line of text represents a table row, and data in columns are separated by commas.</p>
-<ul>
-<li>Database</li>
-<li>Text tables</li>
-<li>Special data types</li>
-</ul>
-</section>
 <section id="metadata" class="level2">
 <h2 class="anchored" data-anchor-id="metadata">Metadata</h2>
 <p>Metadata are data about the data. As a general rule, metadata should describe</p>
@@ -252,11 +246,68 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 <li><strong>Where</strong> the data were collected</li>
 <li><strong>How</strong> the data were collected (methods, instruments, etc.)</li>
 </ul>
-<p>Oftentimes, including information about <strong>why</strong> the data were collected can help future users understand the context of the data and use them.</p>
-<p><strong>Assembling metadata should begin early</strong>, and is an integral part of doing data synthesis throughout the life-cycle of the project. Consider building metadata collection in to the workflow and project management elements of your project.</p>
+<p>Oftentimes, including information about <strong>why</strong> the data were collected can help future users understand the context of the data and use them. Including metadata of this nature makes data more usable, and helps prevent the deterioration of information about data over time, as illustrated in the figure below (from Michener et al.&nbsp;1997<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/michener97_information_loss.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Example of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time (Michener et al 1997.</figcaption>
+</figure>
+</div>
+<section id="data-provenance-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="data-provenance-metadata">Data provenance metadata</h3>
+<p><img style="float: right;" src="images/provenance.png" alt="What data should you publish" width="25%" padding="10px"> Provenance metadata deserves special attention for ecological data synthesis projects. <strong>Data provenance</strong> refers to information detailing the origin of the values in a dataset, which is particularly important for synthesis projects that bring together data from many different sources. Synthesis activities typically produce data products that are <strong>derived</strong> from these original sources, such as a harmonized data file, a database, or an analysis product. Provenance metadata is included with the derived product to point back to the original source data, similar to the way bibliographic references point to the source material for a book or scholarly article.</p>
+<p>A few other notes on provenance:</p>
+<ul>
+<li>At its simplest, documenting data sources as you collect and analyze the source data is a great start on provenance metadata.</li>
+<li>Many data repositories provide guidelines, tools, and features for data provenance metadata<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>.</li>
+<li>Provenance metadata can become very detailed if the software and computing environment is also taken into account. This is an active area of study <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a><a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</li>
+</ul>
 </section>
-<section id="activity-evaluate-published-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="activity-evaluate-published-datasets">Activity: Evaluate published datasets</h2>
+<section id="licensing" class="level3">
+<h3 class="anchored" data-anchor-id="licensing">Licensing</h3>
+<p>One component of the metadata you publish in your dataset will be the license. Including a license defines who has what rights to use the published dataset. This is an important decision that should be made after consulting with the synthesis team, considering the data being published, and the requirements of funders and other associated institutions. For publicly-funded research data, it is generally appropriate to use open licenses, and the Creative Commons CC-BY attribution, and CC0 public domain, licenses are probably a good choice for most ecological synthesis data. This is not legal advice and your mileage may vary.</p>
+</section>
+<section id="metadata-creation-and-management" class="level3">
+<h3 class="anchored" data-anchor-id="metadata-creation-and-management">Metadata creation and management</h3>
+<p><strong>Assembling metadata should begin early</strong> and be an integral part of the data synthesis activities discussed in Module 2. Metadata can even be built-in to the workflow and project management elements of your project. Here are a few ways your team might do that:</p>
+<ol type="1">
+<li>Keep a project log and populate it with metadata for the project, including information like
+<ol type="a">
+<li>what source data the team is using and where they came from.</li>
+<li>how data are being analyzed and methods for creating derived products.</li>
+<li>who is doing what.</li>
+</ol></li>
+<li>Begin assembling publishable datasets (data plus metadata) as data are harmonized and analyzed. The team can do this
+<ol type="a">
+<li>locally, using a directory containing data and metadata files (as text, or use <a href="https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx">a metadata template</a>).</li>
+<li>with a repository-based metadata editor, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the Environmental Data Initiative (EDI) repository.</li>
+</ol></li>
+<li>Get a professional data manager or data curator involved with the synthesis project. For example, the LTER Network has a community of “Information Managers” <a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> trained in data management, metadata creation, and data publishing. Research data repositories<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> and associated data curators<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> may also be a good resource.</li>
+</ol>
+</section>
+</section>
+<section id="deciding-what-to-publish" class="level2">
+<h2 class="anchored" data-anchor-id="deciding-what-to-publish">Deciding what to publish</h2>
+<p><img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"> The overall design of the dataset to be published is often difficult to imagine, particularly for those who are new to using or creating datasets. In the activity below we will browse a few published dataset to get a feel for what useful data does and doesn’t look like. You can also look at advice from a repository like <a href="https://edirepository.org/resources/designing-a-data-package">EDI</a>, or from a research network like <a href="https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs">NEON</a>.</p>
+</section>
+<section id="choosing-and-publishing-to-a-repository" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-and-publishing-to-a-repository">Choosing and publishing to a repository</h2>
+<p>There are many, many research data repositories available to researchers now, making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. The repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a <a href="https://doi.org">Digital Object Identifier</a>, or DOI, that can be cited every time the dataset is used after publication. Repositories should also be stable and well supported so that data remain available in perpetuity. The <a href="https://amt.coretrustseal.org/certificates">CoreTrustSeal certified repository list</a> is one way to assess this. Finally, repositories should require at least some metadata be submitted with each dataset to ensure that the published data are FAIR. Beyond this, asking a few questions about the dataset will help with repository selection:</p>
+<ol type="1">
+<li>Who are the likely users for this data? Will they be part of a specific scientific discipline, research network, or community of stakeholders?</li>
+<li>How specialized are your data? Do they fall into a common data type or follow a specific formatting standard?</li>
+<li>Will the data be updated regularly?</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/repository_spectrum.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>A limited slice from the spectrum of research data repositories available for publishing synthesis data.</figcaption>
+</figure>
+</div>
+<p>Once you have chosen a repository, the process of publishing the data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, or even data curation staff, to assist users with data publication. It also helps to consult your local data manager if you have one available.</p>
+</section>
+<section id="activity-1-evaluate-published-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="activity-1-evaluate-published-datasets">Activity 1: Evaluate published datasets</h2>
 <p><strong>Estimated time: 10 min</strong></p>
 <p>Form breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:</p>
 <ol type="1">
@@ -283,29 +334,18 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 </div>
 </div>
 </section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<ul>
-<li>…</li>
-<li>Keep in mind that there is no PERFECT dataset!</li>
-</ul>
-</section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional resources</h2>
 <ul>
-<li>Wilkinson, Mark D., et al.&nbsp;“The FAIR Guiding Principles for scientific data management and stewardship.” Scientific data 3.1 (2016): 1-9. <a href="https://doi.org/10.1038/sdata.2016.18">DOI: 10.1038/sdata.2016.18</a></li>
-<li><a href="https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs">NEON’s guide</a></li>
-<li><a href="https://edirepository.org/resources/resources-for-data-authors">EDI repository data author guide</a></li>
+<li><a href="https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs">NEON’s derived data publishing guide</a></li>
+<li><a href="https://edirepository.org/resources/resources-for-data-authors">EDI repository data authorship guide</a></li>
 </ul>
 </section>
 </section>
 <section id="connecting-the-elements-of-a-synthesis-project" class="level1">
 <h1>Connecting the elements of a synthesis project</h1>
 <p><strong>Estimated time: 25 min</strong></p>
-<p>There are three interconnected elements to a synthesis project (or any research project, really): the data, the analytical workflow, and the results. Each of these elements is a valuable product of synthesis science, and each should reference the others.</p>
-<p align="center">
-<img src="images/mod3_fig1_tying.png" width="60%">
-</p>
+<p><img src="images/mod3_fig1_tying.png" style="float: right" width="50%"> There are three interconnected, publishable products for a synthesis project (or any research project, really): the data, analytical workflows (code for data cleaning or statistics, for example), and research results. Each of these elements is a valuable product of synthesis science, and each one should reference the others.</p>
 <section id="publishing-data-5" class="level2">
 <h2 class="anchored" data-anchor-id="publishing-data-5">Publishing data (5)</h2>
 <ul>
@@ -353,8 +393,8 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 <section id="giving-everyone-credit-5" class="level2">
 <h2 class="anchored" data-anchor-id="giving-everyone-credit-5">Giving everyone credit (5)</h2>
 </section>
-<section id="activity-evaluate-three-synthesis-projects" class="level2">
-<h2 class="anchored" data-anchor-id="activity-evaluate-three-synthesis-projects">Activity: Evaluate three synthesis projects</h2>
+<section id="activity-2-evaluate-three-synthesis-projects" class="level2">
+<h2 class="anchored" data-anchor-id="activity-2-evaluate-three-synthesis-projects">Activity 2: Evaluate three synthesis projects</h2>
 <p><strong>Estimated time: 12 min</strong></p>
 <p>Form breakout groups and course instructors will assign each group a synthesis project, with links to one or more elements (the code, a paper, a dataset, etc.). Try to put together the rest of the picture (other publications, source/derived data, etc.). Then, answer these questions:</p>
 <ol type="1">
@@ -407,6 +447,13 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 <li id="fn3"><p><a href="https://faircookbook.elixir-europe.org">The FAIR Cookbook</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Bahim, C., Casorrán-Amilburu, C., Dekkers, M., Herczog, E., Loozen, N., Repanas, K., Russell, K. and Stall, S. (2020) ‘The FAIR Data Maturity Model: An Approach to Harmonise FAIR Assessments’, Data Science Journal, 19(1), p.&nbsp;41. Available at: https://doi.org/10.5334/dsj-2020-041.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p>Gries, Corinna, et al.&nbsp;“The environmental data Initiative: Connecting the past to the future through data reuse.” Ecology and Evolution 13.1 (2023): e9592. https://doi.org/10.1002/ece3.9592<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><a href="https://edirepository.org/resources/provenance-metadata">Provenance metadata at the EDI repository</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Lerner, et al., “Making Provenance Work for You”, The R Journal, 2023. https://journal.r-project.org/articles/RJ-2023-003/<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p><a href="https://end-to-end-provenance.github.io/">End-to-End Provenance</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p><a href="https://lternet.edu/using-lter-data/#im">List of LTER Information Managers</a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p><a href="https://amt.coretrustseal.org/certificates">Core Trust Seal certified data repositories</a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p><a href="https://datacurationnetwork.org/">Data curation network</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

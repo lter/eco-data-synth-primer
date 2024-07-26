@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#introduction-new" id="toc-introduction-new" class="nav-link" data-scroll-target="#introduction-new">Introduction NEW</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#reproducibility-practices" id="toc-reproducibility-practices" class="nav-link" data-scroll-target="#reproducibility-practices">Reproducibility Practices</a>
   <ul class="collapse">
   <li><a href="#general-considerations" id="toc-general-considerations" class="nav-link" data-scroll-target="#general-considerations">General Considerations</a>
@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#synthesis-considerations" id="toc-synthesis-considerations" class="nav-link" data-scroll-target="#synthesis-considerations">Synthesis Considerations</a></li>
   </ul></li>
-  <li><a href="#data-preparation-cleaning-and-harmonizing-new" id="toc-data-preparation-cleaning-and-harmonizing-new" class="nav-link" data-scroll-target="#data-preparation-cleaning-and-harmonizing-new">Data preparation (cleaning and harmonizing) NEW</a>
+  <li><a href="#data-preparation-cleaning-and-harmonizing" id="toc-data-preparation-cleaning-and-harmonizing" class="nav-link" data-scroll-target="#data-preparation-cleaning-and-harmonizing">Data preparation (cleaning and harmonizing)</a>
   <ul class="collapse">
   <li><a href="#data-cleaning-and-filtering" id="toc-data-cleaning-and-filtering" class="nav-link" data-scroll-target="#data-cleaning-and-filtering">Data cleaning and filtering</a></li>
   <li><a href="#data-harmonization" id="toc-data-harmonization" class="nav-link" data-scroll-target="#data-harmonization">Data harmonization</a>
@@ -216,8 +216,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Explain</strong> how synthesis teams can use GitHub to collaborate more efficiently and reproducibly</li>
 </ul>
 </section>
-<section id="introduction-new" class="level1">
-<h1>Introduction NEW</h1>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
 <p>Here are a couple of serviceable definitions of what research is:</p>
 <blockquote class="blockquote">
 <p>“creative and systematic work undertaken in order to increase the stock of knowledge”</p>
@@ -317,8 +317,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="data-preparation-cleaning-and-harmonizing-new" class="level1">
-<h1>Data preparation (cleaning and harmonizing) NEW</h1>
+<section id="data-preparation-cleaning-and-harmonizing" class="level1">
+<h1>Data preparation (cleaning and harmonizing)</h1>
 <p>The scientific questions being asked in synthesis projects are usually broad in scope, and it is therefore common to bring together many datasets from different sources for analysis. The datasets selected for analysis (source data) may have been collected by different people, in different places, using different methods, as part of different projects… or all of the above. Typically, some amount of data <strong>cleaning</strong> - filtering or removing unwanted observations - and data <strong>harmonization</strong> - putting data together in common structures, file formats, and units of measurement - is necessary before analysis can begin. This process can be easy or difficult depending on the quality of the source data, the differences between source data, and how much <strong>metadata</strong> (see callout below) is available to understand them.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -408,8 +408,13 @@ More about metadata
 </ol>
 <p><strong>Advantages</strong>: clear meaning of rows and columns, ease in filtering/cleaning/appending<br>
 <strong>Disadvantages</strong>: observation information is repeated, file size larger<br>
-<strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables<br>
-<img src="images/long_data_example.png" class="img-fluid" style="width:50.0%" alt="The harmonized grassland data, in long format."></p>
+<strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/long_data_example.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>The harmonized grassland data, in long format.</figcaption>
+</figure>
+</div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>In this dataset, our grassland data has been restructured into wide format, often referred to (sometimes unfairly) as “messy” or “untidy” data. Note that the biomass variable has been split into two columns, one for control plots and one for fertilized plots.</p>
@@ -440,7 +445,12 @@ More about metadata
 <p><strong>Advantages</strong>: easier access to big data<br>
 <strong>Disadvantages</strong>: less familiar/accessible to many scientists, few best practices to follow, costs can be higher<br>
 <strong>Possible file formats</strong>: Parquet files, distributed/cloud databases</p>
-<p><img src="images/cloud_native.png" class="img-fluid" style="width:50.0%" data-center="True"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cloud_native.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>A few of the cloud-native technologies that might be useful for synthesis research products.</figcaption>
+</figure>
+</div>
 </div>
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <p>There are many, many other possible harmonized data formats. Here are a few possible examples:</p>
