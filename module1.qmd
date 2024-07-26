@@ -195,6 +195,33 @@ Having agreed-on authorship guidelines is really valuable in this situation. Are
 
 :::
 
+## Keeping Track of Data
+
+We've pulled together a few of the forms that we have use to keep track of the data that synthesis groups plan to use...
+
+## Sample spreadsheet for initial data surveying
+
+```{=html}
+<iframe width="780" height="500" src="https://docs.google.com/document/d/1PrhX8Yk9oW_sGJeCAs95ylGu7aGcwBsB/view" title="Sample spreadsheet for initial data surveying"></iframe>
+```
+
+Once you get into the details of the process, you'll want to track some more specific information
+
+-  URL to the data source
+-  LTER Site / other location
+-  Short Data Description
+-  Data Location (country, region)
+-  Coverage Dates/Frequency 
+-  Filename (as stored on Google Drive or shared file repository)
+-  URL to Files (cloud drive, website, server; e.g. google drive link)
+-  Date the data was last accessed / downloaded
+-  Data Creator/Owner's Name
+-  Data Creator/Owner's Email/contact
+-  Working Group Participant who got the data (Name)
+-  Used in your analysis? (Y/N)
+-  Any additional notes or decisions about *how* the data is or will be harmonized and analyzed
+
+
 # Building a Team
 
 **Estimated time: XX min**
