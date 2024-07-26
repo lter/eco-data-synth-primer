@@ -57,24 +57,55 @@ Making one's work "reproducible"--particularly in code contexts--has become incr
 
 ### {{< fa file-lines >}} Documentation
 
+:::: {.columns}
+
+::: {.column width="60%"}
 - One folder per project
 - Further organize content via sub-folders
 - Make file names informative and intuitive
    - Avoid spaces and special characters in file names
    - Follow a consistent naming convention throughout
+   - Good names should be machine readable, human readable, and sorted in a useful way
 - Use READMEs to record organization rules / explanation
-- Keep a log of where source data came from. 
+- Keep a log of where source data came from.
    - Where did you search?
    - What search terms did you use?
-   - List the dataset identifiers you downloaded/used.
-- 
+   - List the dataset identifiers you downloaded/used
+   - Ideally, include downloading data as part of your scripted workflow
+:::
+
+::: {.column width="40%"}
+::: {style="font-size:0.9em;"}
+*example project structure*  
+{{< fa folder >}} project_new  
+&nbsp;&nbsp;&nbsp; {{< fa file-lines >}} README.txt  
+&nbsp;&nbsp;&nbsp; {{< fa folder >}} 01_grant_management  
+&nbsp;&nbsp;&nbsp; {{< fa folder >}} 02_project_coordination  
+&nbsp;&nbsp;&nbsp; {{< fa folder >}} 03_documentation  
+&nbsp;&nbsp;&nbsp; {{< fa folder >}} 04_participant_tracking  
+&nbsp;&nbsp;&nbsp; {{< fa folder >}} 05_data  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{< fa file-lines >}} README.txt  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{< fa folder >}} hydrology  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{< fa folder >}} water_chemistry  
+&nbsp;&nbsp;&nbsp; {{< fa folder >}} 06_src  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{< fa file-lines >}} README.txt  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{< fa folder >}} data_aggregation  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{< fa folder >}} data_harmonization  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{< fa folder >}} modeling  
+&nbsp;&nbsp;&nbsp; {{< fa folder >}} 06_publications  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{< fa folder >}} biogeochemistry  
+:::
+:::
+
+::::
 
 ### {{< fa laptop-code >}} Code
 
-- Use a version control system
+- Use a [version control](https://lter.github.io/eco-data-synth-primer/module2.html#version-control) system
 - Load libraries/packages explicitly
 - Track (and document) software versions
-- Namespace functions (if not already required by your coding language)
+- Namespace functions (if not already required by your coding language)  
+*e.g.,* `mtcars |> dplyr::mutate(hp_disp = hp / disp)`
 - Use relative file paths that are operating system-agnostic
 - Balance how descriptive object names are with striving for concise names
 - _Use comments_ in the code!
