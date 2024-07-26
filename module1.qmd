@@ -38,13 +38,15 @@ This process--of bringing diverse expertise together to combine existing primary
 
 # Process Overview
 
+While it is certainly possible to conduct synthesis with no external support, a bit of funding will allow your group to travel to meet up in person and can, in some cases, provide salary support for postdocs, grad students or or assistance with analysis.
+
 ::: {.panel-tabset}
 
 # Discussion Question
 
 > **What funding sources support synthesis work?**
 
-## Sources of Funding and Support
+# Sources of Funding and Support
 
 **Synthesis Centers**
 
@@ -69,6 +71,7 @@ This process--of bringing diverse expertise together to combine existing primary
 -  NSF Core Programs, e.g. [Division of Environmental Biology](https://new.nsf.gov/funding/opportunities/division-environmental-biology-deb): “synthesis activities”, “synthesis projects”
 -  NSF workshops 
 
+:::
 
 ## Typical Process
 
