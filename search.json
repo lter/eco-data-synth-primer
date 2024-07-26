@@ -98,11 +98,11 @@
     "text": "Additional data publishing resources\n\nNEON’s derived data publishing guide\nEDI repository data authorship guide"
   },
   {
-    "objectID": "module3.html#tying-these-all-together",
-    "href": "module3.html#tying-these-all-together",
+    "objectID": "module3.html#citing-synthesis-products",
+    "href": "module3.html#citing-synthesis-products",
     "title": "Module 3: Tying it all together",
-    "section": "Tying these all together",
-    "text": "Tying these all together\nSome general considerations\n\nSynthesis projects can become complex"
+    "section": "Citing synthesis products",
+    "text": "Citing synthesis products"
   },
   {
     "objectID": "module3.html#giving-everyone-credit",
@@ -112,11 +112,11 @@
     "text": "Giving everyone credit"
   },
   {
-    "objectID": "module3.html#activity-2-evaluate-three-synthesis-projects",
-    "href": "module3.html#activity-2-evaluate-three-synthesis-projects",
+    "objectID": "module3.html#activity-2-synthesis-project-detective",
+    "href": "module3.html#activity-2-synthesis-project-detective",
     "title": "Module 3: Tying it all together",
-    "section": "Activity 2: Evaluate three synthesis projects",
-    "text": "Activity 2: Evaluate three synthesis projects\nEstimated time: 12 min\nForm breakout groups and course instructors will assign each group a synthesis project, with links to one or more elements (the code, a paper, a dataset, etc.). Try to put together the rest of the picture (other publications, source/derived data, etc.). Then, answer these questions:\n\nWho was involved in the synthesis project?\nHow many journal articles and datasets were published?\nCould you reproduce results or contribute new data to the project based on what you found?\nWhat elements are missing or difficult to understand?\n\n\nExample 1Example 2Example 3\n\n\nSoDAH\n\n\nCoRRE or metacommunities\nhttps://corredata.weebly.com/\n\n\nSilica exports\nhttps://github.com/lter/lterwg-silica-data"
+    "section": "Activity 2: Synthesis project detective",
+    "text": "Activity 2: Synthesis project detective\nEstimated time: 12 min\nForm breakout groups and course instructors will assign each one a link to a product from a synthesis project (the code, a paper, a dataset, etc.). Using any means necessary (metadata, web search, etc.) figure out what other products are related (other publications, source/derived data, etc.) and who is involved in the synthesis team. Answer these questions as a group:\n\nIf your group received a link to a paper, were you able to find datasets and an analytical workflow?\nIf your group received a link to a code repository, could you track down papers and datasets?\nIf your group received a link to a dataset, were the connected to papers and an analytical workflow?\nWho was involved in the synthesis project?\nCould you understand the overall scope and impact of the synthesis project? Why or why not?\n\n\nExample 1Example 2Example 3\n\n\nSoDAH\n\n\nCoRRE or metacommunities\nhttps://corredata.weebly.com/\n\n\nSilica exports\nhttps://github.com/lter/lterwg-silica-data"
   },
   {
     "objectID": "module3.html#additional-resources",
@@ -186,7 +186,7 @@
     "href": "module2.html#additional-resources-about-data-preparation",
     "title": "Module 2: Operational synthesis",
     "section": "Additional resources about data preparation",
-    "text": "Additional resources about data preparation\nData cleaning and filtering resources\n\nData cleaning is complicated and varied, and entire books have been written on the subject.89 For some general considerations on cleaning data, see EDI’s “Cleaning Data and Quality Control” resource\nOpenRefine is an open-source, cross-platform tool for iterative, scripted data cleaning.\nIn the R language, the tidyverse libraries (particularly tidyr and dplyr) are often used for data cleaning, as are additional libraries like janitor.\nIn python, pandas and numpy libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like pyjanitor (started as a re-implementation of the R version) and cleanlab (geared towards machine learning applications).\nBoth the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham’s R for Data Science book chapter on data tidying,10 and for python check Wes McKinney’s Python for Data Analysis book chapter on data cleaning and preparation.11\n\nData harmonization resources\n\nFor R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham’s R for Data Science book, the chapters on data transforms and data tidying are a good place to start. In Wes McKinney’s Python for Data Analysis book, the chapter on data wrangling is helpful."
+    "text": "Additional resources about data preparation\nData cleaning and filtering resources\n\nData cleaning is complicated and varied, and entire books have been written on the subject.89 For some general considerations on cleaning data, see EDI’s “Cleaning Data and Quality Control” resource\nOpenRefine is an open-source, cross-platform tool for iterative, scripted data cleaning.\nIn the R language, the tidyverse libraries (particularly tidyr and dplyr) are often used for data cleaning, as are additional libraries like janitor.\nIn Python, pandas and numpy libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like pyjanitor (started as a re-implementation of the R version) and cleanlab (geared towards machine learning applications).\nBoth the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham’s R for Data Science book chapter on data tidying,10 and for python check Wes McKinney’s Python for Data Analysis book chapter on data cleaning and preparation.11\n\nData harmonization resources\n\nFor R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham’s R for Data Science book, the chapters on data transforms and data tidying are a good place to start. In Wes McKinney’s Python for Data Analysis book, the chapter on data wrangling is helpful."
   },
   {
     "objectID": "module2.html#additional-resources-about-data-analysis",
