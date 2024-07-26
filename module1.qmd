@@ -113,7 +113,7 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 
 :::: {style="background-color: green"}
 
-**What kinds of data sources might you consider including in a synthesis project, in addition to your own or others' field data?**
+> **What kinds of data sources might you consider including in a synthesis project, in addition to your own or others' field data?**
 
 # **A Few Ideas**
 
