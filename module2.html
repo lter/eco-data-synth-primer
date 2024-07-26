@@ -257,6 +257,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Estimated time: 10 min</strong></p>
 <section id="documentation" class="level3">
 <h3 class="anchored" data-anchor-id="documentation"><i class="fa-solid fa-file-lines" aria-label="file-lines"></i> Documentation</h3>
+<div class="columns">
+<div class="column" style="width:60%;">
 <ul>
 <li>One folder per project</li>
 <li>Further organize content via sub-folders</li>
@@ -264,24 +266,49 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Avoid spaces and special characters in file names</li>
 <li>Follow a consistent naming convention throughout</li>
+<li>Good names should be machine readable, human readable, and sorted in a useful way</li>
 </ul></li>
 <li>Use READMEs to record organization rules / explanation</li>
 <li>Keep a log of where source data came from.
 <ul>
 <li>Where did you search?</li>
 <li>What search terms did you use?</li>
-<li>List the dataset identifiers you downloaded/used.</li>
+<li>List the dataset identifiers you downloaded/used</li>
+<li>Ideally, include downloading data as part of your scripted workflow</li>
 </ul></li>
-<li></li>
 </ul>
+</div><div class="column" style="width:40%;">
+<div style="font-size:0.9em;">
+<p><em>example project structure</em><br>
+<i class="fa-solid fa-folder" aria-label="folder"></i> project_new<br>
+&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-file-lines" aria-label="file-lines"></i> README.txt<br>
+&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> 01_grant_management<br>
+&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> 02_project_coordination<br>
+&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> 03_documentation<br>
+&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> 04_participant_tracking<br>
+&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> 05_data<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-file-lines" aria-label="file-lines"></i> README.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> hydrology<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> water_chemistry<br>
+&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> 06_src<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-file-lines" aria-label="file-lines"></i> README.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> data_aggregation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> data_harmonization<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> modeling<br>
+&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> 06_publications<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> biogeochemistry</p>
+</div>
+</div>
+</div>
 </section>
 <section id="code" class="level3">
 <h3 class="anchored" data-anchor-id="code"><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> Code</h3>
 <ul>
-<li>Use a version control system</li>
+<li>Use a <a href="https://lter.github.io/eco-data-synth-primer/module2.html#version-control">version control</a> system</li>
 <li>Load libraries/packages explicitly</li>
 <li>Track (and document) software versions</li>
-<li>Namespace functions (if not already required by your coding language)</li>
+<li>Namespace functions (if not already required by your coding language)<br>
+<em>e.g.,</em> <code>mtcars |&gt; dplyr::mutate(hp_disp = hp / disp)</code></li>
 <li>Use relative file paths that are operating system-agnostic</li>
 <li>Balance how descriptive object names are with striving for concise names</li>
 <li><em>Use comments</em> in the code!</li>
