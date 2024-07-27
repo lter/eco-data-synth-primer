@@ -164,8 +164,6 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 
 **Throughout the process**
 
-![](images/LTER_Survey-2_benefit-importance.png){fig-alt="importance of various benefits to working group participants" fig-caption="Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?*" fig-align="float: right" width=50% padding=10px .lightbox}
-
 -  Get to know each other
     -  Use creative icebreakers to break a pattern of silence
     -  Invest in "social time"
@@ -174,6 +172,14 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
     - Visual, auditory and kinesthetic learners,
     - Synchronous and asynchronous contributions
 - Practice “cultural norming” by educating participants on systemic/structural oppression and racism and ways to work against our own implicit biases
+
+::: {#fig-benefits}
+
+<iframe src="images/LTER_Survey-2_benefit-importance.png" alt="importance of various benefits to working group participants" width="50%" align="float: right" padding="10px"></iframe>
+
+Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?
+
+:::
 
 **At intervals**
 
