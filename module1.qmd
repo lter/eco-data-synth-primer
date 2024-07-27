@@ -153,8 +153,6 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 
 **Good teams are both chosen and made.** Diversity on teams uncovers novel approaches, perspectives, and insights and it can slow the pace and cause misunderstandings that highlight unexamined assumptions. As a synthesis team leader (and even as a participant), there are many things you can do to create opportunities for everyone to contribute their best thinking, learn from one another, and feel heard and respected.
 
-<img src="images/LTER_Survey-2_benefit-importance.png" alt="importance of various benefits to working group participants" style="float: right; padding: 10px; width: 50%"/>
-
 **As the group gets started**
 
 -  Create a shared vision for your group
@@ -166,7 +164,7 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 
 **Throughout the process**
 
-<img src="images/LTER_Survey-2_benefit-importance.png" alt="importance of various benefits to working group participants" caption="Survey results from 5 corts of LTER-funded synthesis groups to the question: How important is it to you to gain the following potential benefits through participation in the working group?" style="float: right; padding: 10px 10px 10px 10px; width: 50%"/>
+![Survey results from 5 corts of LTER-funded synthesis groups to the question: How important is it to you to gain the following potential benefits through participation in the working group?](images/LTER_Survey-2_benefit-importance.png){fig-alt="mportance of various benefits to working group participants" fig-align="right" width=50% padding=10px}
 
 -  Get to know each other
     -  Use creative icebreakers to break a pattern of silence
