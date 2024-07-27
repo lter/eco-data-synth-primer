@@ -179,7 +179,7 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 
 In any team project, people have different reasons for wanting to participate. For you, getting a high profile paper may be the most important thing. For others, it may be expanding their network or a chance to practice new skills. Being transparent about those motivations makes it easier to resolve tensions when they arise.
 
-![Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?](images/LTER_Survey-2_benefit-importance.png){. lightbox fig-alt="importance of various benefits to working group participants" fig-align="right"}
+![Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?](images/LTER_Survey-2_benefit-importance.png){.lightbox}{fig-alt="importance of various benefits to working group participants"}
 
 ::: {.callout-note}
 ## Time Commitments
