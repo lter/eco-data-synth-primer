@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -411,7 +414,7 @@ ul.task-list li input[type="checkbox"] {
 <li>When you find yourself questioning whether a practice or activity is still valuable, ask each member for a quick read on whether the group should <strong>“Start, Stop, or Continue”</strong> the activity</li>
 </ul>
 <p>In any team project, people have different reasons for wanting to participate. For you, getting a high profile paper may be the most important thing. For others, it may be expanding their network or a chance to practice new skills. Being transparent about those motivations makes it easier to resolve tensions when they arise.</p>
-<p><img src="images/LTER_Survey-2_benefit-importance.png" class="img-fluid" alt="Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?">{. lightbox fig-alt=“importance of various benefits to working group participants” fig-align=“right”}</p>
+<p><a href="images/LTER_Survey-2_benefit-importance.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?"><img src="images/LTER_Survey-2_benefit-importance.png" class="img-fluid" alt="Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?"></a>{fig-alt=“importance of various benefits to working group participants”}</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1140,8 +1143,40 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+</body></html>
