@@ -72,224 +72,252 @@
   {
     "objectID": "module3.html",
     "href": "module3.html",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "",
-    "text": "Identify the features that make published data easily re-useable\nEvaluate the metadata and fitness-for-use of published synthesis datasets\nUnderstand the three primary “products” that come out of synthesis groups\nUnderstand concepts of data provenance, reproducible analysis, and citations\nEvaluate the reproducibility of a recent data synthesis project\nUnderstand the different models of data accessibility, licensing, and authorship practices and apply them to a synthesis group’s desired outcomes\nUnderstand several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.\nCreate a plan to maintain a synthesis project and associated data over the long-term"
+    "text": "After completing this module, you will be able to:\n\nIdentify the features that make published data easily re-useable\nEvaluate the metadata and fitness-for-use of published synthesis datasets\nUnderstand the three primary “products” that come out of synthesis groups\nUnderstand concepts of data provenance, reproducible analysis, and citations\nEvaluate the reproducibility of a recent data synthesis project\nUnderstand the different models of data accessibility, licensing, and authorship practices and apply them to a synthesis group’s desired outcomes\nUnderstand several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.\nCreate a plan to maintain a synthesis project and associated data over the long-term"
+  },
+  {
+    "objectID": "module3.html#learning-objectives",
+    "href": "module3.html#learning-objectives",
+    "title": "Tying It All Together",
+    "section": "",
+    "text": "After completing this module, you will be able to:\n\nIdentify the features that make published data easily re-useable\nEvaluate the metadata and fitness-for-use of published synthesis datasets\nUnderstand the three primary “products” that come out of synthesis groups\nUnderstand concepts of data provenance, reproducible analysis, and citations\nEvaluate the reproducibility of a recent data synthesis project\nUnderstand the different models of data accessibility, licensing, and authorship practices and apply them to a synthesis group’s desired outcomes\nUnderstand several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.\nCreate a plan to maintain a synthesis project and associated data over the long-term"
   },
   {
     "objectID": "module3.html#metadata",
     "href": "module3.html#metadata",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Metadata",
     "text": "Metadata\nMetadata are data about the data. As a general rule, metadata should describe\n\nWho collected the data\nWhat was observed or measured\nWhen the data were collected\nWhere the data were collected\nHow the data were collected (methods, instruments, etc.)\n\nOftentimes, including information about why the data were collected can help future users understand the context of the data and use them. Including metadata of this nature makes data more usable, and helps prevent the deterioration of information about data over time, as illustrated in the figure below (from Michener et al. 19976).\n\n\n\nExample of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time (Michener et al 1997.\n\n\n\nData provenance metadata\n Provenance metadata deserves special attention for ecological data synthesis projects. Data provenance refers to information detailing the origin of the values in a dataset, which is particularly important for synthesis projects that bring together data from many different sources. Synthesis activities typically produce new data products that are derived from the original source data after they have been cleaned, harmonized, and analyzed. Provenance metadata should be included with the derived products to point back to the original source data, similar to the way bibliographic references point to the source material for a book or scholarly article.\nA few other notes on provenance:\n\nAt its simplest, documenting data sources as you collect and analyze the source data is a great start on provenance metadata.\nMany data repositories provide guidelines, tools, and features for data provenance metadata7.\nProvenance metadata can become very detailed if the software and computing environment is also taken into account. This is an active area of study 89.\n\n\n\nLicensing\nPublished datasets should include a license in every copy of the metadata that defines who has what rights to use, reproduce, or distribute the data. Licensing decisions should be made in consultation with the synthesis team after considering the nature of the data (does it contain human subject data, for instance?), its origin (including restrictions on source data, if applicable), and the requirements of the funders and institutions associated with the project. For publicly-funded environmental research data, it is generally appropriate to use open licenses, and the Creative Commons CC-BY attribution, and CC0 public domain, licenses are probably a good choice for most ecological synthesis data. This is not legal advice and your mileage may vary.\n\n\nMetadata creation and management\nAssembling metadata should be an integral part of the data synthesis activities discussed in Module 2, and can even be built-in to the workflow and project management practices of a project. Make sure to plan for and start creating metadata early in a synthesis project. Below are a few ways to do that.\n\nKeep a detailed project log and populate it with metadata for the project, including information like\n\nwhat source data the team is using and where they came from.\nhow data are being analyzed and methods used to create derived products.\nwho is doing what.\n\nStart creating distinct publishable datasets (data plus metadata) as data are processed and analyzed. The team can do this\n\nlocally, using a labeled directory for the cleaned, harmonized, of derived data, along with related code and metadata files. Metadata files may be plain text, or use a metadata template.\nwith a repository-based metadata editor, such as ezEML from the Environmental Data Initiative (EDI) repository.\n\nGet a professional data manager or data curator involved with the synthesis project. For example, the LTER Network has a community of “Information Managers” 10 trained in data management, metadata creation, and data publishing. Research data repositories11 and associated data curators12 may also be a good resource."
   },
   {
     "objectID": "module3.html#deciding-what-to-publish",
     "href": "module3.html#deciding-what-to-publish",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Deciding what to publish",
     "text": "Deciding what to publish\n The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is “What should I publish?” The answer usually comes down to:\n\nPublish any data used to generate research results.\nPublish any data that will be used by others (scientists, managers, public stakeholders), including raw data.\nIf reproducibility is of interest or concern, publish the workflow (usually code) used to process or analyze the data, or to generate research results like figures.\nAlways publish descriptive metadata about any of the above.\n\nIn the activity below we will browse a few published datasets to get a feel for what useful data does and doesn’t look like. You can also look at advice from a repositories like EDI and BCO-DMO, or from a research network like NEON."
   },
   {
     "objectID": "module3.html#choosing-and-publishing-to-a-repository",
     "href": "module3.html#choosing-and-publishing-to-a-repository",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Choosing and publishing to a repository",
     "text": "Choosing and publishing to a repository\nThere are many, many research data repositories available to researchers now13, making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a Digital Object Identifier, or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the CoreTrustSeal certified repository list is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:\n\nWho are the likely users for this data? Will they belong to a specific scientific discipline, research network, or community of stakeholders?\nHow specialized are your data? Do they fall into a common data type or follow a speical formatting standard?\nWill the data be updated regularly?\n\n\n\n\nA limited slice from the broad spectrum of research data repositories available for publishing synthesis data.\n\n\nAfter making a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult a project data manager if one is available to the synthesis team."
   },
   {
     "objectID": "module3.html#activity-1-evaluate-published-datasets",
     "href": "module3.html#activity-1-evaluate-published-datasets",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Activity 1: Evaluate published datasets",
     "text": "Activity 1: Evaluate published datasets\nEstimated time: 10 min\nForm breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:\n\nWhere were the data collected?\nWhat variables were measured and in what units?\nWhat is the origin of the data and how have they been altered since collection?\nWere the first three questions easy to answer? Why or why not?\n\n\nExample 1Example 2Example 3\n\n\nData from the SoDaH LTER synthesis working group.\nhttps://portal.edirepository.org/nis/mapbrowse?packageid=edi.521.1\n\n\nA Dryad dataset from a synthesis paper about oligotrophication.\nhttps://doi.org/10.5061/dryad.v2k2607\n\n\nMaybe this: https://portal.edirepository.org/nis/mapbrowse?packageid=edi.493.16 (needs editing)\nMaybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)"
   },
   {
     "objectID": "module3.html#additional-data-publishing-resources",
     "href": "module3.html#additional-data-publishing-resources",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Additional data publishing resources",
     "text": "Additional data publishing resources\n\nNEON’s derived data publishing guide\nEDI repository data authorship guide"
   },
   {
     "objectID": "module3.html#citing-synthesis-products",
     "href": "module3.html#citing-synthesis-products",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Citing synthesis products",
     "text": "Citing synthesis products"
   },
   {
     "objectID": "module3.html#giving-everyone-credit",
     "href": "module3.html#giving-everyone-credit",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Giving everyone credit",
     "text": "Giving everyone credit"
   },
   {
     "objectID": "module3.html#activity-2-synthesis-project-detective",
     "href": "module3.html#activity-2-synthesis-project-detective",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Activity 2: Synthesis project detective",
     "text": "Activity 2: Synthesis project detective\nEstimated time: 12 min\nForm breakout groups and course instructors will assign each one a link to a product from a synthesis project (the code, a paper, a dataset, etc.). Using any means necessary (metadata, web search, etc.) figure out what other products are related (other publications, source/derived data, etc.) and who is involved in the synthesis team. Answer these questions as a group:\n\nIf your group received a link to a paper, were you able to find datasets and an analytical workflow?\nIf your group received a link to a code repository, could you track down papers and datasets?\nIf your group received a link to a dataset, were the connected to papers and an analytical workflow?\nWho was involved in the synthesis project?\nCould you understand the overall scope and impact of the synthesis project? Why or why not?\n\n\nExample 1Example 2Example 3\n\n\nSoDAH\n\n\nCoRRE or metacommunities\nhttps://corredata.weebly.com/\n\n\nSilica exports\nhttps://github.com/lter/lterwg-silica-data"
   },
   {
     "objectID": "module3.html#additional-resources",
     "href": "module3.html#additional-resources",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Additional resources",
     "text": "Additional resources"
   },
   {
     "objectID": "module3.html#funding-sources",
     "href": "module3.html#funding-sources",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Funding sources",
     "text": "Funding sources\n???"
   },
   {
     "objectID": "module3.html#footnotes",
     "href": "module3.html#footnotes",
-    "title": "Module 3: Tying it all together",
+    "title": "Tying It All Together",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nWilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18↩︎\nGoFAIR initiative↩︎\nThe FAIR Cookbook↩︎\nBahim, C., Casorrán-Amilburu, C., Dekkers, M., Herczog, E., Loozen, N., Repanas, K., Russell, K. and Stall, S. (2020) ‘The FAIR Data Maturity Model: An Approach to Harmonise FAIR Assessments’, Data Science Journal, 19(1), p. 41. Available at: https://doi.org/10.5334/dsj-2020-041.↩︎\nGries, Corinna, et al. “The environmental data Initiative: Connecting the past to the future through data reuse.” Ecology and Evolution 13.1 (2023): e9592. https://doi.org/10.1002/ece3.9592↩︎\nMichener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2↩︎\nProvenance metadata at the EDI repository↩︎\nLerner, et al., “Making Provenance Work for You”, The R Journal, 2023. https://journal.r-project.org/articles/RJ-2023-003/↩︎\nEnd-to-End Provenance↩︎\nList of LTER Information Managers↩︎\nThe Registry of Research Data Repositories (re3data.org)↩︎\nData curation network↩︎\nThe Registry of Research Data Repositories (re3data.org)↩︎\nGitHub documentation for referencing and citing content↩︎\nWhite EP, Yenni GM, Taylor SD, et al. Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104↩︎"
   },
   {
     "objectID": "module2.html",
     "href": "module2.html",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
+    "section": "",
+    "text": "After completing this module, you will be able to:\n\nIdentify characteristics of reproducible coding / project organization\nExplain benefits of reproducibility (to your team and beyond)\nSummarize the advantages of creating a defined contribution workflow\nDefine fundamental vocabulary of version control systems\nCreate a repository on GitHub\nExplain how synthesis teams can use GitHub to collaborate more efficiently and reproducibly"
+  },
+  {
+    "objectID": "module2.html#learning-objectives",
+    "href": "module2.html#learning-objectives",
+    "title": "Operational Synthesis",
     "section": "",
     "text": "After completing this module, you will be able to:\n\nIdentify characteristics of reproducible coding / project organization\nExplain benefits of reproducibility (to your team and beyond)\nSummarize the advantages of creating a defined contribution workflow\nDefine fundamental vocabulary of version control systems\nCreate a repository on GitHub\nExplain how synthesis teams can use GitHub to collaborate more efficiently and reproducibly"
   },
   {
     "objectID": "module2.html#general-considerations",
     "href": "module2.html#general-considerations",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "General Considerations",
     "text": "General Considerations\nEstimated time: 10 min\n\n Documentation\n\n\n\nOne folder per project\nFurther organize content via sub-folders\nMake file names informative and intuitive\n\nAvoid spaces and special characters in file names\nFollow a consistent naming convention throughout\nGood names should be machine readable, human readable, and sorted in a useful way\n\nUse READMEs to record organization rules / explanation\nKeep a log of where source data came from.\n\nWhere did you search?\nWhat search terms did you use?\nList the dataset identifiers you downloaded/used\nIdeally, include downloading data as part of your scripted workflow\n\n\n\n\nexample project structure\n project_new\n     README.txt\n     01_grant_management\n     02_project_coordination\n     03_documentation\n     04_participant_tracking\n     05_data\n        README.txt\n        hydrology\n        water_chemistry\n     06_src\n        README.txt\n        data_aggregation\n        data_harmonization\n        modeling\n     06_publications\n        biogeochemistry\n\n\n\n\n\n Code\n\nUse a version control system\nLoad libraries/packages explicitly\nTrack (and document) software versions\nNamespace functions (if not already required by your coding language)\ne.g., mtcars |&gt; dplyr::mutate(hp_disp = hp / disp)\nUse relative file paths that are operating system-agnostic\nBalance how descriptive object names are with striving for concise names\nUse comments in the code!\nConsider custom functions\nFor scripts that need to be run in order, consider adding step numbers to the file name\n\n\n\n\n Contributing\n\nCreate a formal plan for collaborating with which your whole team agrees\nQuarantine external inputs\nPlan for “future you”\nCommunicate to your collaborators whenever you’re working on a specific script to avoid conflicting edits"
   },
   {
     "objectID": "module2.html#synthesis-considerations",
     "href": "module2.html#synthesis-considerations",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "Synthesis Considerations",
     "text": "Synthesis Considerations\nEstimated time: 10 min\nHow does reproducibility in synthesis considerations differ from individual / non-synthesis applications?\n\nJudgement calls need to be made / agreed to as a group\n\nBut “defer to the doers”\n\nIncreased emphasis on contribution guidelines / planning being formalized\nMore communication needs\nMust ensure that every team member has sufficient access to the project files\nIts best to keep track of who contributed what, so that everyone gets credit. This can be challenging in practice."
   },
   {
     "objectID": "module2.html#cleaning-data",
     "href": "module2.html#cleaning-data",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "Cleaning data",
     "text": "Cleaning data\nWhen assembling large datasets from diverse sources, as in synthesis research, not all the source data will be useful. This may be because there are real or suspected errors, missing values, or simply because they are not needed to answer the scientific question being asked (wrong variable, different ecosystem, etc.). Data that are not useful are usually excluded from analysis or removed altogether. Data cleaning tends to be a stepwise, iterative process that follows a different path for every dataset and research project. There are some standard techniques and algorithms for cleaning and filtering data, but they are beyond the scope of this course. Below are a few guidelines to remember, and more in-depth resources for data cleaning are found at the end of this section.\n\nAlways preserve the raw data. Chances are you’ll want to go back and check the original source data at least once.\nUse a scripted workflow to clean and filter the raw data, and follow the usual rules about reproducibility (comments, version control, functionalization).\nConsider using the concept of data processing “levels,” meaning that defined sets of data flagging, removal, or transformation operations are applied consistently to the data in stepwise fashion. For example, incoming raw data would be labeled “level 0” data, and “level 1” data is reached after the first set of processing steps is applied.\nSpread the data cleaning workload around! Data cleaning typically demands a HUGE fraction of the total time devoted to working with data,345 and it can be tedious work. Make sure the team shares this workload equitably."
   },
   {
     "objectID": "module2.html#data-harmonization",
     "href": "module2.html#data-harmonization",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "Data harmonization",
     "text": "Data harmonization\nData harmonization is the process of bringing different datasets into a common format for analysis. The harmonized data format chosen for a synthesis project depends on the source data, analysis plans, and overall project goals. It is best to make a plan for harmonizing data BEFORE analysis begins, which means discussing this with the team in the early stages of a synthesis project. As a general rule, it is also wise to use a scripted workflow that is as reproducible as possible to accomplish the harmonization you need for your project. Following this guidance lets others understand, check, and adapt your work, and will also make it much, much easier to bring new data and analysis methods into the project.\nData harmonization is hard work that sometimes requires trial and error to arrive at a useful end product. At the end of this section are some additional data harmonization resources to help you get started. Looking at a simple example might also help.\n\n\n\n\n\n\nExample: Harmonizing grassland biomass data\n\n\n\nIn the figure below, two datasets from different LTER sites have been harmonized into one file for analysis. We don’t have all the metadata here, but based on the column naming we can assume that the file on the left (Konza_harvestplots.txt, yellow) contains columns for the sampling date, a plot identifier, a treatment categorical value, and measured biomass values. The filename suggests that the data come from the Konza Prarie LTER site. The file on the right (2022_clips.csv, blue) has a column denoting the LTER site, in this case Sevilleta LTER (abbreviated as SEV), as well as similar date, plot identifier, treatment, and measured biomass columns.\nThere are some similarities and some differences in these two source files. A harmonized file (lter_grass_biomass_harmonized.txt) appears below.\n\n\n\n\n\n\n\n\n\n\n\nCan you identify some changes made to data structure, variable formatting, or units to harmonize these data?\n\n\n\n\n\nEven though the data files were similar, several important changes were made to create the harmonized file. Among them:\n\nThe site column was preserved and contains the “SEV” and “KNZ” categorical values denoting which LTER site is observed in each row.\nThe dates in the date column were converted to a standard format (YYYY-MM-DD). Incidentally, this matches the International Organization for Standardization (ISO) recommendation for date/time data, making it generally a good choice for dates.\nA new rep column was created to identify the replicate measurements at each site. This is essentially a standard version the plot identifier columns (PlotID and plot) in the original data file. Also note that the original values are preserved in the new plot_orig column.\nThe treatment columns from the original data files (Treatment and trt) were standardized to one column with “C” and “F” categorical values, for control and fertilized treatments, respectively.\nThe biomass values from Konza were converted to units grams per meter squared (g/m2) because the original Konza measurements were for total biomass in 2x2 meter plots. Note that this conversion is for illustration purposes only - we can’t be sure if this conversion is correct without it being spelled out in the metadata, or asking the data provider directly."
   },
   {
     "objectID": "module2.html#a-word-about-harmonized-data-formats",
     "href": "module2.html#a-word-about-harmonized-data-formats",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "A word about harmonized data formats",
     "text": "A word about harmonized data formats\nAbove, we’ve discussed several aspects of selecting a data format. There are at least three related, but not exactly equivalent, concepts to consider when formatting data. First, formats describe the way data are structured, organized, and related within a data file. For example, in a tabular data file about biomass, the measured biomass values might appear in one column, or in muiltiple columns. Second, the values of any variable can be represented in more than one format. The same date, for example, could be formatted using text as “June 1, 1977” or “1977-06-01.” Third, format may refer to the file format used to hold data on a disk or other storage medium. File formats like comma separated value text files (CSV), Excel files (.xlsx), JPEG images, are commonly used for research data, and each has particular strengths for certain kinds of data.\nA few guidelines apply:\n\nFor formatting a tabular dataset, err towards simpler data structures, which are usually easier to clean, filter, and analyze. Long-format tables, or tidy data 6, is one common recommendation for this.\nWhen choosing a file format, err towards open, non-proprietary file formats that more people know and have access to. Delimited text files, such as CSV files, are a good choice for tabular data.\nUse existing community standards for formatting variables and files as long they suit your project methods and scientific goals. Using ISO standards for date-time variables, or species identifiers from a taxonomic authority, are good examples of this practice.\nThere is no perfect data format! Harmonizing data always involves some judgement calls and tradeoffs.\n\nWhen choosing a destination format for the harmonized data for a synthesis project, the audience and future uses of the data are also an important consideration. Consider how your synthesis team will analyze the data, as well as how the world outside that team will use and interact with the data once it is published. Again, there is no one answer, but below are a few examples of harmonized destination formats to consider.\n\nLong (Tidy)Wide (Untidy)Relational (database style)Cloud-nativeOther…\n\n\nHere our grassland biomass data is in long format, often referred to as “tidy” data. Data in this format is generally easy to understand and use. There are three rules for tidy data:\n\nEach column is one variable.\nEach row is one observation.\nEach cell contains a single value.\n\nAdvantages: clear meaning of rows and columns, ease in filtering/cleaning/appending\nDisadvantages: observation information is repeated, file size larger\nPossible file formats: Delimited text (tab delimited shown here), spreadsheets, database tables\n\n\n\nThe harmonized grassland data, in long format.\n\n\n\n\nIn this dataset, our grassland data has been restructured into wide format, often referred to (sometimes unfairly) as “messy” or “untidy” data. Note that the biomass variable has been split into two columns, one for control plots and one for fertilized plots.\nAdvantages: compact file size, easier for some statistical analyses (ANOVA, for example)\nDisadvantages: may be more difficult to clean/filter/append, multiple observations per row\nPossible file formats: Delimited text (tab delimited shown here), spreadsheets, database tables\n\n\n\nThe harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.\n\n\n\n\nBelow is a schematic of the related tables that comprise the ecocomDP7 harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are “normalized” to reduce data redundancy, and increase data integrity.\nAdvantages: reduced redundancy, greater integrity, community standard\nDisadvantages: significant metadata needed to describe and use, more complex to publish\nPossible file formats: Database stores, can be represented in delimited text (CSV)\n\n\n\nThe ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.\n\n\n\n\nThere are many possibilities to make large synthesis datasets available and useful in the cloud. These require specialized knowledge and tooling, and reliable access to cloud platforms.\nAdvantages: easier access to big (high volume) data, can integrate with web apps\nDisadvantages: less familiar/accessible to many scientists, few best practices to follow, costs can be higher\nPossible file formats: Parquet files, object storage, distributed/cloud databases\n\n\n\nA few of the cloud-native technologies that might be useful for synthesis research products.\n\n\n\n\nThere are many, many other possible harmonized data formats. Here are a few possible examples:\n\nDarwinCore archives for biodiversity data\nOrganismal trait databases\nArchives of cropped, labeled images for training machine or deep learning models\nLibraries of standardized raster imagery in Google Earth Engine"
   },
   {
     "objectID": "module2.html#additional-resources-about-data-preparation",
     "href": "module2.html#additional-resources-about-data-preparation",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "Additional resources about data preparation",
     "text": "Additional resources about data preparation\nData cleaning and filtering resources\n\nData cleaning is complicated and varied, and entire books have been written on the subject.89 For some general considerations on cleaning data, see EDI’s “Cleaning Data and Quality Control” resource\nOpenRefine is an open-source, cross-platform tool for iterative, scripted data cleaning.\nIn the R language, the tidyverse libraries (particularly tidyr and dplyr) are often used for data cleaning, as are additional libraries like janitor.\nIn Python, pandas and numpy libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like pyjanitor (started as a re-implementation of the R version) and cleanlab (geared towards machine learning applications).\nBoth the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham’s R for Data Science book chapter on data tidying,10 and for python check Wes McKinney’s Python for Data Analysis book chapter on data cleaning and preparation.11\n\nData harmonization resources\n\nFor R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham’s R for Data Science book, the chapters on data transforms and data tidying are a good place to start. In Wes McKinney’s Python for Data Analysis book, the chapter on data wrangling is helpful."
   },
   {
     "objectID": "module2.html#additional-resources-about-data-analysis",
     "href": "module2.html#additional-resources-about-data-analysis",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "Additional resources about data analysis",
     "text": "Additional resources about data analysis\n\nHarrer, M. et al. Doing Meta-Analysis with R: A Hands-On Guide. 2023. GitHub\nOnce again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham’s R for Data Science book, the chapter on exploratory data analysis will help. In McKinney’s Python for Data Analysis book, try the chapters on plotting and visualization and the introduction to modeling."
   },
   {
     "objectID": "module2.html#vocabulary",
     "href": "module2.html#vocabulary",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "Vocabulary",
     "text": "Vocabulary\nEstimated time: 5 min\nBrief definitions for a selection of fundamental version control vocabulary terms\n\nVersion control system: software that tracks iterative changes to your code and other files\nRepository: the specific folder/directory that is being tracked by a version control system\nGit: a popular open-source distributed version control system\nGitHub: a website that allows users to store their Git repositories online and share them with others"
   },
   {
     "objectID": "module2.html#github",
     "href": "module2.html#github",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "GitHub",
     "text": "GitHub\nEstimated time: 10 min\nWhile this section of the module focuses on GitHub, there are several other viable alternatives for working with Git individually or as part of a larger team (e.g., GitLab, GitKraken, etc.). Any of these may be viable option for your team and we focus on GitHub here only to ensure a standard backdrop for the case studies we’ll discuss shortly.\nThere are a lot of GitHub tutorials that exist already so, rather than add our own variant to the list, we’ll work through part of one created by the Scientific Computing team of the National Center for Ecological Analysis and Synthesis (NCEAS).\nSee the workshop materials here.\nGiven the time restrictions for this short course, we’ll only cover how you engage with GitHub directly through the GitHub website. However, your chosen software for writing code will certainly have a method of connecting to GitHub/etc., so if this topic is of interest it will be beneficial for you to search out the relevant tutorial."
   },
   {
     "objectID": "module2.html#courses-workshops-and-tutorials",
     "href": "module2.html#courses-workshops-and-tutorials",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "Courses, Workshops, and Tutorials",
     "text": "Courses, Workshops, and Tutorials\n\nSynthesis Skills for Early Career Researchers (SSECR) course. 2024. LTER Network Office\nReproducible Approaches to Arctic Research Using R workshop. 2024. Arctic Data Center & NCEAS Learning Hub\nCollaborative Coding with GitHub workshop. 2024. NCEAS Scientific Computing team\nCoding in the Tidyverse workshop. 2023. NCEAS Scientific Computing team\nShiny Apps for Sharing Science workshop. 2022. Lyon, N.J. et al.\nTen Commandments for Good Data Management. 2016. McGill, B."
   },
   {
     "objectID": "module2.html#literature",
     "href": "module2.html#literature",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "Literature",
     "text": "Literature\n\nTodd-Brown, K.E.O., et al. Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential. 2022. Biogeosciences\nBorer, E.T. et al. Some Simple Guidelines for Effective Data Management. 2009. Ecological Society of America Bulletin"
   },
   {
     "objectID": "module2.html#footnotes",
     "href": "module2.html#footnotes",
-    "title": "Module 2: Operational synthesis",
+    "title": "Operational Synthesis",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nMichener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2↩︎\nMayernik, M.S. and Acker, A. (2018), Tracing the traces: The critical role of metadata within networked communications. Journal of the Association for Information Science and Technology, 69: 177-180. https://doi.org/10.1002/asi.23927↩︎\nWickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10↩︎\nNew York Times, 2014↩︎\nAnaconda State of Data Science Report, 2022↩︎\nWickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10↩︎\nO’Brien, Margaret, et al. “ecocomDP: a flexible data design pattern for ecological community survey data.” Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374↩︎\nOsborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.↩︎\nVan der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley & Sons, 2018. https://doi.org/10.1002/9781118897126↩︎\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. ” O’Reilly Media, Inc.”, 2023. https://r4ds.hadley.nz/↩︎\nMcKinney, Wes. Python for data analysis. ” O’Reilly Media, Inc.”, 2022. https://wesmckinney.com/book↩︎"
   },
   {
     "objectID": "module1.html",
     "href": "module1.html",
-    "title": "Module 1: Starting with team science",
+    "title": "Starting with Team Science",
     "section": "",
-    "text": "Understand the power and benefits of synthesis\nIdentify funding sources for supporting synthesis\nRecognize the importance of establishing group norms and expectations\nEvaluate strategies for group organization and project management\n\n\n\n\n\n\nFor the purposes of today’s discussion, we define synthesis as:\n\nSynthesis is: bringing together the results of multiple studies to test novel hypotheses–usually with a team of people.\n\n\n\n\n This process–of bringing diverse expertise together to combine existing primary data–definitely has its challenges. Ideniftying and engaging the necessary combination of skills and experience is challenging. Scheduling meeting times can be difficult. Commitment to the process can be uneven. Nonetheless, virtually all who have experienced it find it to be a deeply rewarding experience. Why?\n\nThe products emerging from synthesis typically have higher impact (as defined by both academic and applied measures)\nThe process allows researchers to access and incorporate skills that they don’t (yet) have themselves.\nWorking groups help early career researchers build their science networks.\nKeep experienced researchers fresh and engaging with new ideas\nBuilds on existing investments of the science community by re-using data\nOffers a way to involve individuals who can’t or don’t want to do fieldwork in original research and expands opportunity to less research-intensive institutions.\n\n\n\n\nAdam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups\nHackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science\nHampton and Parker, 2011. Collaboration and Productivity in Scientific Synthesis\nHackett et al., 2021. Do synthesis centers synthesize? A semantic analysis of topical diversity in research\nWyborn et al., 2018. Understanding the Impacts of Research Synthesis"
+    "text": "After completing this module, you will be able to:\n\nUnderstand the power and benefits of synthesis\nIdentify funding sources for supporting synthesis\nRecognize the importance of establishing group norms and expectations\nEvaluate strategies for group organization and project management"
+  },
+  {
+    "objectID": "module1.html#learning-objectives",
+    "href": "module1.html#learning-objectives",
+    "title": "Starting with Team Science",
+    "section": "",
+    "text": "After completing this module, you will be able to:\n\nUnderstand the power and benefits of synthesis\nIdentify funding sources for supporting synthesis\nRecognize the importance of establishing group norms and expectations\nEvaluate strategies for group organization and project management"
+  },
+  {
+    "objectID": "module1.html#workshop-slides---under-development",
+    "href": "module1.html#workshop-slides---under-development",
+    "title": "Starting with Team Science",
+    "section": "Workshop Slides - under development",
+    "text": "Workshop Slides - under development"
   },
   {
     "objectID": "module1.html#define-synthesis",
     "href": "module1.html#define-synthesis",
-    "title": "Module 1: Starting with team science",
-    "section": "",
-    "text": "For the purposes of today’s discussion, we define synthesis as:\n\nSynthesis is: bringing together the results of multiple studies to test novel hypotheses–usually with a team of people."
+    "title": "Starting with Team Science",
+    "section": "Define Synthesis",
+    "text": "Define Synthesis\nFor the purposes of today’s discussion, we define synthesis as:\n\nSynthesis is: bringing together the results of multiple studies to test novel hypotheses–usually with a team of people."
   },
   {
     "objectID": "module1.html#why-synthesis",
     "href": "module1.html#why-synthesis",
-    "title": "Module 1: Starting with team science",
-    "section": "",
-    "text": "This process–of bringing diverse expertise together to combine existing primary data–definitely has its challenges. Ideniftying and engaging the necessary combination of skills and experience is challenging. Scheduling meeting times can be difficult. Commitment to the process can be uneven. Nonetheless, virtually all who have experienced it find it to be a deeply rewarding experience. Why?\n\nThe products emerging from synthesis typically have higher impact (as defined by both academic and applied measures)\nThe process allows researchers to access and incorporate skills that they don’t (yet) have themselves.\nWorking groups help early career researchers build their science networks.\nKeep experienced researchers fresh and engaging with new ideas\nBuilds on existing investments of the science community by re-using data\nOffers a way to involve individuals who can’t or don’t want to do fieldwork in original research and expands opportunity to less research-intensive institutions.\n\n\n\n\nAdam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups\nHackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science\nHampton and Parker, 2011. Collaboration and Productivity in Scientific Synthesis\nHackett et al., 2021. Do synthesis centers synthesize? A semantic analysis of topical diversity in research\nWyborn et al., 2018. Understanding the Impacts of Research Synthesis"
+    "title": "Starting with Team Science",
+    "section": "Why Synthesis?",
+    "text": "Why Synthesis?\n This process–of bringing diverse expertise together to combine existing primary data–definitely has its challenges. Ideniftying and engaging the necessary combination of skills and experience is challenging. Scheduling meeting times can be difficult. Commitment to the process can be uneven. Nonetheless, virtually all who have experienced it find it to be a deeply rewarding experience. Why?\n\nThe products emerging from synthesis typically have higher impact (as defined by both academic and applied measures)\nThe process allows researchers to access and incorporate skills that they don’t (yet) have themselves.\nWorking groups help early career researchers build their science networks.\nKeep experienced researchers fresh and engaging with new ideas\nBuilds on existing investments of the science community by re-using data\nOffers a way to involve individuals who can’t or don’t want to do fieldwork in original research and expands opportunity to less research-intensive institutions.\n\n\nAdditional Resources\n\nAdam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups\nHackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science\nHampton and Parker, 2011. Collaboration and Productivity in Scientific Synthesis\nHackett et al., 2021. Do synthesis centers synthesize? A semantic analysis of topical diversity in research\nWyborn et al., 2018. Understanding the Impacts of Research Synthesis"
   },
   {
     "objectID": "module1.html#how-to-get-involved",
     "href": "module1.html#how-to-get-involved",
-    "title": "Module 1: Starting with team science",
+    "title": "Starting with Team Science",
     "section": "How to get Involved",
     "text": "How to get Involved\nOften, early career researchers will be excited about the idea of synthesis but be unsure how to connect with existing or nascent synthesis efforts. Here are a few ideas for how to make yourself available and valuable to synthesis groups.:\n\nMake it known you want to be involved in synthesis\n\nLet your advisor know\nShare your enthusiasm\n\nSkill building:\n\nSynthesis Skills for Early Career Researchers: SSECR\nData Carpentries\nESIIL: innovation summit, hackathons\nEnvironmental Data Science Summit\n\nBuild your community\n\nAsk questions at meetings\nInitiate conversations\n\nStart your own!"
   },
   {
     "objectID": "module1.html#the-leadership-team",
     "href": "module1.html#the-leadership-team",
-    "title": "Module 1: Starting with team science",
+    "title": "Starting with Team Science",
     "section": "The Leadership Team",
     "text": "The Leadership Team\nThe composition of the leadership team will affect the success of the project and who you will be able to recruit to the larger group. Look for: - Different (and complementary) areas of expertise - Complementary professional networks - Facilitation skills - Emotional Intelligence"
   },
   {
     "objectID": "module1.html#the-broader-team",
     "href": "module1.html#the-broader-team",
-    "title": "Module 1: Starting with team science",
+    "title": "Starting with Team Science",
     "section": "The Broader Team",
     "text": "The Broader Team\nIn our experience at NCEAS and the LTER Network Office, we’ve found teams of up to 10 to 15 people to be optimal for synthesis work. As individuals, we all have strengths and weaknesses. The beauty of working in teams is that you can invite people who offset your own weaknesses and who bring strengths you don’t have. Often, you’ll have a few core team members who have generated a synthesis idea, but then you’ll want to take a clear-eyed look at what additional skills and qualities to invite. When you do so, be sure to consider:\n\nSkills, Aptitudes, and Communication Styles\n\nLook for a mix of empiricists, theorists, and modellers\nBig-picture thinkers, organizers, task-oriented do-ers\nDeep thinkers and risk-takers\nAt least some skilled coders\n\nCareer stage\n\nSenior investigators connect the team to existing literature and fields of study, connect to a broad network of experienced researchers, and have good knowledge of resources, but are often have a very limited amount of time to devorte to discussion and analyses\nJunior team members often bring a fresh perspective, familiarity with newer literature, strong coding skills, and time to devote to the project\n\nEmotional intelligence\n\nResearch shows (add ref) that the bump in creativity seen in mixed-gender teams is typically due to an increase in emotional intelligence and attention to team dynamics. Include at least a few people with a process orientation and strong people skills.\n\nPower dynamics\n\nYou won’t be able to anticipate all of the issues related to power dynamics that can arise, but keep them front of mind as you assemble a team.\n\nRemember that participation in synthesis represents a significant career opportunity\n\nBe mindful that such career-building opportunities have not been fairly distributed\nBe intentional seeking out people who may not be part of your typical circles (including gender, ethnicity, career stage, family status, (dis)abilities, etc.)"
   },
   {
     "objectID": "module1.html#data-use-principles",
     "href": "module1.html#data-use-principles",
-    "title": "Module 1: Starting with team science",
+    "title": "Starting with Team Science",
     "section": "Data Use Principles",
     "text": "Data Use Principles\nThere are a few ethical and practical guidelines that will save you a lot of trouble if you can adhere to them from the start of a project.\n\nKeep track of your data sources (sources, permissions, notes, related metadata, what’s included)\nData sources should always be cited\nCommunicate with data creators whenever possible\n\nThis doesn’t need to be onerous and it can uncover issues and opportunities associated with data sources.\n\n\n\n\n\n\n\n\nSample data author outreach email for public dataset:\n\n\n\n\n\n\nDear Dr. Smith,\nI am working on a synthesis of soil inverbrate diversity across North America and would like to include your dataset titled “xxx” (doi: xxx). We have downloaded the data from yyy repository, but wanted to let you know we are using it and to inquire whether there is any additional context we should be aware of or related datasets we should be sure to include. A short description of the synthesis project follows. Please let me know by xxx date if you have any questions or concerns with our use of this data.\nThank you,\n\n\n\n\n\n\n\n\n\n\nSample data author outreach email for unpublished dataset:\n\n\n\n\n\n\nDear Dr. Smith,\nI am working on a synthesis of soil inverbrate diversity across North America and would like to include the dataset behind your paper titled {xxx} (doi:{yyy}), which seems highly relevant. Would it be possible to obtain the data? Ideally, we would access it through through a public repository, such as the Environmental Data Initiative, which offers assistance in curation and submission of datasets. Either way, we would credit you as the data originator and want you know we are using it. If there is any additional context we should be aware of or related datasets we should be sure to include, please let us know. A short description of the synthesis project follows.\nThank you,\n\n\n\n\n\nAuthorship DiscussionA Few Considerations\n\n\n\nShould all data contributors be offered authorship? How would you handle a data creator who demanded authorship in order to use their data?\n\n\n\nThere are no pat answers for this situation, but having agreed-on authorship guidelines is really valuable when it comes up. We’ll cover that in more detail soon, but for now, there are a few questions to ask yourself.\n\nAre they really committed enough to join the working group and contribute to the papers? If so, it may be a good investment.\nHow much work will they need to put in to make the data ready?\nHow critical is this particular data source for your analysis?\nYou will need to make your derived dataset public. Are they placing conditions on the use of their data that make that impossible?\n\n\n\n\n\nKeeping Track of Data\nWe’ve pulled together a few of the forms that we have use to keep track of the data that synthesis groups plan to use…\nSample spreadsheet for initial data surveying\n\nOnce you get into the details of the process, you’ll want to track some more specific information\n\nURL to the data (and metadata) source\nSampling location and site (including both coordinates and associated organizations)\nShort Data Description\nCoverage Dates/Frequency\nFilename (as stored on Google Drive or shared file repository)\nURL to Files (cloud drive, website, server; e.g. google drive link)\nDate the data was last accessed / downloaded\nData Creator/Owner’s Name\nData Creator/Owner’s Email/contact\nWorking group participant who got the data (Name)\nUsed in your analysis? (Y/N)\nAny additional notes or decisions about how the data is or will be harmonized and analyzed"
   }
