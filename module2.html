@@ -172,6 +172,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#courses-workshops-and-tutorials" id="toc-courses-workshops-and-tutorials" class="nav-link" data-scroll-target="#courses-workshops-and-tutorials">Courses, Workshops, and Tutorials</a></li>
   <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature">Literature</a></li>
+  <li><a href="#other-1" id="toc-other-1" class="nav-link" data-scroll-target="#other-1">Other</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -326,6 +327,19 @@ ul.task-list li input[type="checkbox"] {
 <li>Must ensure that every team member has sufficient access to the project files</li>
 <li>Its best to keep track of who contributed what, so that everyone gets credit. This can be challenging in practice.</li>
 </ul>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true"><strong>Reproducibility Questions</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>In groups of 3-5, discuss the following questions:</p>
+<ul>
+<li>What elements of reproducibility <strong>from our list</strong> have you used/are interested in using?</li>
+<li>Which feel unreasonable or confusing?</li>
+<li>What activities do you do in your own work to ensure reproducibility that <strong>our list is missing</strong>?</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="version-control" class="level2">
@@ -357,6 +371,19 @@ ul.task-list li input[type="checkbox"] {
 <section id="data-preparation" class="level2">
 <h2 class="anchored" data-anchor-id="data-preparation">Data Preparation</h2>
 <p>The scientific questions being asked in synthesis projects are usually broad in scope, and it is therefore common to bring together many datasets from different sources for analysis. The datasets selected for analysis (source data) may have been collected by different people, in different places, using different methods, as part of different projects… or all of the above. Typically, some amount of data <strong>cleaning</strong> - filtering or removing unwanted observations - and data <strong>harmonization</strong> - putting data together in common structures, file formats, and units of measurement - is necessary before analysis can begin. This process can be easy or difficult depending on the quality of the source data, the differences between source data, and how much <strong>metadata</strong> (see callout below) is available to understand them.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><strong>Data Preparation Group Questions</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<ul>
+<li>How many of you work directly with data in your day-to-day?</li>
+<li>What percentage of the time that you spend working on data is spent on data cleaning?</li>
+<li>How much on metadata creation?</li>
+<li>How much on data preparation?</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -441,9 +468,9 @@ Can you identify some changes made to data structure, variable formatting, or un
 </ol>
 <p>When choosing a destination format for the harmonized data for a synthesis project, the <strong>audience</strong> and <strong>future uses</strong> of the data are also an important consideration. Consider how your synthesis team will analyze the data, as well as how the world outside that team will use and interact with the data once it is published. Again, there is no one answer, but below are a few examples of harmonized destination formats to consider.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Long (Tidy)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Wide (Untidy)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Relational (Database-Style)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Cloud-native</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Other…</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Long (Tidy)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Wide (Untidy)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Relational (Database-Style)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Cloud-native</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Other…</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>Here our grassland biomass data is in long format, often referred to as “tidy” data. Data in this format is generally easy to understand and use. There are three rules for tidy data:</p>
 <ol type="1">
 <li>Each column is one variable.</li>
@@ -460,7 +487,7 @@ Can you identify some changes made to data structure, variable formatting, or un
 </figure>
 </div>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>In this dataset, our grassland data has been restructured into wide format, often referred to (sometimes unfairly) as “messy” or “untidy” data. Note that the biomass variable has been split into two columns, one for control plots and one for fertilized plots.</p>
 <p><strong>Advantages</strong>: compact file size, easier for some statistical analyses (ANOVA, for example)<br>
 <strong>Disadvantages</strong>: may be more difficult to clean/filter/append, multiple observations per row<br>
@@ -472,7 +499,7 @@ Can you identify some changes made to data structure, variable formatting, or un
 </figure>
 </div>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p>Below is a schematic of the related tables that comprise the <a href="https://ediorg.github.io/ecocomDP/">ecocomDP</a><a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are “normalized” to reduce data redundancy, and increase data integrity.</p>
 <p><strong>Advantages</strong>: reduced redundancy, greater integrity, community standard<br>
 <strong>Disadvantages</strong>: significant metadata needed to describe and use, more complex to publish<br>
@@ -484,7 +511,7 @@ Can you identify some changes made to data structure, variable formatting, or un
 </figure>
 </div>
 </div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
 <p>There are many possibilities to make large synthesis datasets available and useful in the cloud. These require specialized knowledge and tooling, and reliable access to cloud platforms.</p>
 <p><strong>Advantages</strong>: easier access to big (high volume) data, can integrate with web apps<br>
 <strong>Disadvantages</strong>: less familiar/accessible to many scientists, few best practices to follow, costs can be higher<br>
@@ -496,7 +523,7 @@ Can you identify some changes made to data structure, variable formatting, or un
 </figure>
 </div>
 </div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
 <p>There are many, many other possible harmonized data formats. Here are a few possible examples:</p>
 <ul>
 <li>DarwinCore archives for biodiversity data</li>
@@ -545,9 +572,9 @@ Can you identify some changes made to data structure, variable formatting, or un
 <p><strong>Estimated time: 10 min</strong></p>
 <p>To make some of these concepts more tangible, let’s consider some case studies. The following tabs contain GitHub repositories for real teams that have engaged in synthesis research and chosen to preserve and maintain their scripts in GitHub. Each has different strengths and you may find that facets of each feel most appropriate for your group to adopt. There is no single “right” way of tackling this but hopefully parts of these exemplars inspire you.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Example 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Example 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Example 3</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Example 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Example 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Example 3</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p>LTER SPARC Group: <a href="https://lternet.edu/working-groups/soil-p-control-of-c-and-n/">Soil Phosphorus Control of Carbon and Nitrogen</a></p>
 <p>Stored their code here: <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/lter/lter-sparc-soil-p">lter / <strong>lter-sparc-soil-p</strong></a></p>
 <p><strong>Highlights</strong></p>
@@ -563,7 +590,7 @@ Can you identify some changes made to data structure, variable formatting, or un
 </ul></li>
 </ul>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p>LTER Full Synthesis Working Group: <a href="https://lternet.edu/working-groups/the-flux-gradient-project/">The Flux Gradient Project</a></p>
 <p>Stored their code here: <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/lter/lterwg-flux-gradient">lter / <strong>lterwg-flux-gradient</strong></a></p>
 <p><strong>Highlights</strong></p>
@@ -577,7 +604,7 @@ Can you identify some changes made to data structure, variable formatting, or un
 </ul></li>
 </ul>
 </div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
 <p>LTER Full Synthesis Working Group: <a href="https://lternet.edu/working-groups/from-poles-to-tropics-a-multi-biome-synthesis-investigating-the-controls-on-river-si-exports/">From Poles to Tropics: A Multi-Biome Synthesis Investigating the Controls on River Si Exports</a></p>
 <p>Stored their code here: <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/lter/lterwg-silica-spatial">lter / <strong>lterwg-silica-spatial</strong></a></p>
 <p><strong>Highlights</strong></p>
@@ -610,6 +637,12 @@ Can you identify some changes made to data structure, variable formatting, or un
 <ul>
 <li>Todd-Brown, K.E.O., <em>et al.</em> <a href="https://bg.copernicus.org/articles/19/3505/2022/">Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential</a>. <strong>2022</strong>. <em>Biogeosciences</em></li>
 <li>Borer, E.T. <em>et al.</em> <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205">Some Simple Guidelines for Effective Data Management</a>. <strong>2009</strong>. <em>Ecological Society of America Bulletin</em></li>
+</ul>
+</section>
+<section id="other-1" class="level3">
+<h3 class="anchored" data-anchor-id="other-1">Other</h3>
+<ul>
+<li><a href="https://www.conventionalcommits.org/en/v1.0.0/?utm_source=pocket_mylist">Conventional Commits</a></li>
 </ul>
 
 
