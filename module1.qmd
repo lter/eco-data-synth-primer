@@ -11,16 +11,20 @@ After completing this module, you will be able to:
 - **Recognize** the importance of establishing group norms and expectations
 - **Evaluate** strategies for group organization and project management
 
-## [Workshop Slides - *under development*](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
+## Workshop Slides - _Under Construction_
+
+[Google Slides link](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
 
 ## Define Synthesis
+
 For the purposes of today's discussion, we define synthesis as:
 
-> Synthesis is: bringing together the results of multiple studies to test novel hypotheses–usually with a team of people.
+> Bringing together the results of multiple studies to test novel hypotheses--usually with a team of people.
 
 ## Why Synthesis?
 
 <img style="float: right;" src="images/sustainability-12-09361-g001-550.jpg" alt="different levels of interaction between researchers and stakeholders" width="50%" padding="10px"/>
+
 This process--of bringing diverse expertise together to combine existing primary data--definitely has its challenges. Ideniftying and engaging the necessary combination of skills and experience is challenging. Scheduling meeting times can be difficult. Commitment to the process can be uneven. Nonetheless, virtually all who have experienced it find it to be a deeply rewarding experience. Why?
 
 -  The products emerging from synthesis typically have higher impact (as defined by both academic and applied measures)
@@ -38,7 +42,7 @@ This process--of bringing diverse expertise together to combine existing primary
 * [Hackett et al., 2021. Do synthesis centers synthesize? A semantic analysis of topical diversity in research](https://doi.org/10.1016/j.respol.2020.104069)
 *  [Wyborn et al., 2018. Understanding the Impacts of Research Synthesis](https://doi.org/10.1016/j.envsci.2018.04.013)
 
-# Process Overview
+## Process Overview
 
 Typically, a group of researchers--or researchers and managers or community members--will plan a series of meetings over 2-3 years. The mix of in-person v. virtual meetings and work will vary across different groups and different funders, but the general pattern is similar.
 
@@ -69,7 +73,7 @@ Often, early career researchers will be excited about the idea of synthesis but 
     -  Initiate conversations
 -  *Start your own!*
 
-# Identifying a Synthesis-Ready Question
+## Identifying a Synthesis-Ready Question
 
 Lots of questions are interesting, but not terribly well-suited for a synthesis approach. We've learned through experience that there are a few qualities that make some questions a better fit for a) combining data; and b) work by a group. The main qualities that we seek in synthesis projects include:
 
@@ -84,26 +88,26 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
     -  Datasets 
     -  Analytical Packages
 
-# Sources of Support for Synthesis
+## Sources of Support for Synthesis
 
 While it is certainly possible to conduct synthesis with no external support, a bit of funding will allow your group to travel to meet up in person and can, in some cases, provide salary support for postdocs, grad students or or assistance with analysis.
 
 ::: {.panel-tabset}
 
-# Discussion Question
+### Discussion Question
 
 > **What funding sources support synthesis work?**
 
-# Sources of Funding and Support
+### Sources of Funding and Support
 
 **Synthesis Centers**
 
--  [Environemntal Science Innovation and Inclusion Laboratory (ESIIL)](https://esiil.org/)
--  [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/calls-for-proposals)
+-  [Environmental Science Innovation and Inclusion Laboratory](https://esiil.org/) (ESIIL)
+-  [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/calls-for-proposals) (NCEAS)
     -  Morpho Program
 -  [USGS Powell Center](https://www.usgs.gov/centers/john-wesley-powell-center-for-analysis-and-synthesis/proposal-process)
 -  [S-div](https://www.idiv.de/en/sdiv.html)
--  [Canadian Institute of Ecology and Evolution (CIEE)](https://www.ciee-icee.ca/)
+-  [Canadian Institute of Ecology and Evolution](https://www.ciee-icee.ca/) (CIEE)
 
 **Societies**
 
@@ -121,9 +125,9 @@ While it is certainly possible to conduct synthesis with no external support, a 
 
 :::
 
-# Building a Team
+## Building a Team
 
-## The Leadership Team
+### The Leadership Team
 
 The composition of the leadership team will affect the success of the project and who you will be able to recruit to the larger group. Look for:
 -  Different (and  complementary) areas of expertise
@@ -131,7 +135,7 @@ The composition of the leadership team will affect the success of the project an
 -  Facilitation skills
 -  Emotional Intelligence	
 
-## The Broader Team
+### The Broader Team
 
 In our experience at NCEAS and the LTER Network Office, we've found teams of up to 10 to 15 people to be optimal for synthesis work. As individuals, we all have strengths and weaknesses. The beauty of working in teams is that you can invite people who offset your own weaknesses and who bring strengths you don't have. Often, you'll have a few core team members who have generated a synthesis idea, but then you'll want to take a clear-eyed look at what additional skills and qualities to invite. When you do so, be sure to consider:
 
@@ -151,7 +155,7 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
     -  Be mindful that such career-building opportunities have not been fairly distributed
     -  Be intentional seeking out people who may not be part of your typical circles (including gender, ethnicity, career stage, family status, (dis)abilities, etc.)
 
-# Setting Expectations
+## Setting Expectations
 
 **Good teams are both chosen and made.** Diversity on teams uncovers novel approaches, perspectives, and insights and it can slow the pace and cause misunderstandings that highlight unexamined assumptions. As a synthesis team leader (and even as a participant), there are many things you can do to create opportunities for everyone to contribute their best thinking, learn from one another, and feel heard and respected.
 
@@ -181,39 +185,41 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 
 In any team project, people have different reasons for wanting to participate. For you, getting a high profile paper may be the most important thing. For others, it may be expanding their network or a chance to practice new skills. Being transparent about those motivations makes it easier to resolve tensions when they arise.
 
-![Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?](images/LTER_Survey-2_benefit-importance.png){.lightbox}{fig-alt="importance of various benefits to working group participants"}
+<p align="center"/>
+<img src="images/LTER_Survey-2_benefit-importance.png" alt="Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?*" width="80%"/>
+</p>
+
+> Importance of various benefits to working group participants
 
 ::: {.callout-note}
-## Time Commitments
+### Time Commitments
 
 We all  misjudge our availability once in a while, but consistently failing to deliver on commitments disrupts others' work plans and is a major source of group dissatisfaction. Get buy-in for commitments and plan for both reminders and accountability. 
-
 :::
 
-# Making a Communication and Work Plan
+## Making a Communication and Work Plan
 
-**Estimated time: XX min**
 
-# Intro to establishing a Project Management Plan 
+## Intro to Establishing a Project Management Plan 
 
-# Data Sources
 
-Some sources of data---such as modern remote sensing products, NEON data, and census data---have very clear, explicit ways to access and download them or work with them in the cloud. But the most interesting synthesis questions often involve combining such "big" data with other data sources that may have been collected manually, by a variety of methods and different technicians, over decades. 
+## Data Sources
+
+Some sources of data--such as modern remote sensing products, NEON data, and census data--have very clear, explicit ways to access and download them or work with them in the cloud. But the most interesting synthesis questions often involve combining such "big" data with other data sources that may have been collected manually, by a variety of methods and different technicians, over decades. 
 
 ::: {.panel-tabset}
-
-# **Discussion Question**
+### **Discussion Question**
 
 > **What kinds of data sources might you consider including in a synthesis project, in addition to your own or others' field data?**
 
-# **A Few Ideas**
+### **A Few Ideas**
 
 -  [DataONE](https://www.dataone.org/)
--  [EDI (LTER)](https://edirepository.org/) 
+-  [Environmental Data Initiative](https://edirepository.org/) (EDI)
 -  [GenBank (NCBI)](https://www.ncbi.nlm.nih.gov/nuccore/)
--  [National Ecological Observatory Network (NEON)](https://www.neonscience.org/data)
+-  [National Ecological Observatory Network](https://www.neonscience.org/data) (NEON)
 -  [US Geological Survey Data](https://www.usgs.gov/products/data)
--  [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/)
+-  [Global Biodiversity Information Facility](https://www.gbif.org/) (GBIF)
 -  [NASA Remote Sensing Data](https://data.nasa.gov/)
 -  [US Park Service](https://www.nps.gov/subjects/science/science-data.htm)
 -  [FluxNet](https://fluxnet.org/sites/site-list-and-pages/)
@@ -238,8 +244,7 @@ There are a few ethical and practical guidelines that will save you a lot of tro
     -  This doesn't need to be onerous and it can uncover issues and opportunities associated with data sources. 
 
 ::: {.callout-tip collapse="true"}
-
-## **Sample data author outreach email for public dataset:** 
+### **Sample data author outreach email for public dataset:** 
 
 >Dear Dr. Smith, 
 >
@@ -248,10 +253,8 @@ There are a few ethical and practical guidelines that will save you a lot of tro
 >Thank you,
 
 :::
-
 ::: {.callout-tip collapse="true"}
-
-## **Sample data author outreach email for unpublished dataset:** 
+### **Sample data author outreach email for unpublished dataset:** 
 
 >Dear Dr. Smith, 
 >
@@ -260,14 +263,13 @@ There are a few ethical and practical guidelines that will save you a lot of tro
 >Thank you,
 
 :::
-
 ::: {.panel-tabset}
 
-# **Authorship Discussion**
+### **Authorship Discussion**
 
 > **Should all data contributors be offered authorship? How would you handle a data creator who demanded authorship in order to use their data?**
 
-# **A Few Considerations**
+### **A Few Considerations**
 
 There are no pat answers for this situation, but having agreed-on authorship guidelines is really valuable when it comes up. We'll cover that in more detail soon, but for now, there are a few questions to ask yourself.
 
@@ -278,7 +280,7 @@ There are no pat answers for this situation, but having agreed-on authorship gui
 
 :::
 
-### Keeping Track of Data
+## Keeping Track of Data
 
 We've pulled together a few of the forms that we have use to keep track of the data that synthesis groups plan to use...
 
@@ -302,7 +304,3 @@ Once you get into the details of the process, you'll want to track some more spe
 -  Working group participant who got the data (Name)
 -  Used in your analysis? (Y/N)
 -  Any additional notes or decisions about *how* the data is or will be harmonized and analyzed
-
-# Additional Resources and Templates 
-
-# Contributors 
