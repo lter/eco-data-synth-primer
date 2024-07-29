@@ -1,11 +1,9 @@
 ---
-title: "A course for collaborative ecologists"
+title: "A Course for Collaborative Ecologists"
 ---
 
-**This course and the website are under construction. Please check back soon!**
-
 <p align="center">
-<img src="images/eco-data-synth-photo-collage.png" width="100%"/>
+<img src="images/eco-data-synth-photo-collage.png" alt="Photo collage of people meeting at a long table, peple conducting fieldwork, some specimen jars, a snippet of code, some fish, and a small mammal" width="100%"/>
 </p>
 
 In recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time, the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a ”team sport”. Objectives for learners are to (a) develop an end-to-end (conception to publication) plan for collaborative synthesis research, and (b) gain data synthesis skills that are immediately useful in a research team setting. Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, analytical workflows, and publication of derived datasets. The course uses real-world examples, demonstrations, and interactive lessons. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips. Many workshop activities will be oriented toward helping learners develop their own ideas and plans for ecological data synthesis.
