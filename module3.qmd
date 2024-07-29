@@ -15,22 +15,23 @@ After completing this module, you will be able to:
 - **Understand** several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.
 - **Create** a plan to maintain a synthesis project and associated data over the long-term
 
-# Introduction
+## Introduction
 
 So far, we've made the point that ecological synthesis research is collaborative and inclusive, and that it integrates a wide range of data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment. The ability to accomplish this in synthesis research frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.
 
-<img src="images/mod3_fig1_tying.png" style="float: right" width="50%"/>
+<img src="images/mod3_fig1_tying.png" alt="Three circles labeled 'data', 'results' and 'analytical workflow' with arrows connecting each pair pointing in both directions" style="float: right" width="50%"/>
+
 There are three interconnected, publishable products for a synthesis project (or any research project, really): the data, analytical workflows (code for data cleaning or statistics, for example), and research results. Each of these elements is a valuable product of synthesis science, and each one should reference the others. In this module we'll discuss the mechanics of publishing each one, and then how they can be connected and made accessible for the long-term.
 
 
-# Designing and publishing synthesis datasets
+## Designing and Publishing Synthesis Datasets
 
 **Estimated time: 12 min**
 
 In Module 2 we discussed some considerations for creating and formatting harmonized data files useful for synthesis research. We also introduced the importance of metadata for describing data and making it more usable. Publishing harmonized data files and descriptive metadata together as a **dataset** ensures that the data products produced by a synthesis team are findable, accessible, interoperable, and reusable (FAIR). FAIR data are an important output for almost any ecological synthesis project.
 
 ::: {.callout-tip collapse="true"}
-## More about Findable, Accessible, Interoperable, Reusable (FAIR) data
+### More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 
 The FAIR principles, standing for Findability, Accessibility, Interoperability, and Reusability,  are a community-standard set of guidelines for evaluating the quality and utility of published research data. Making an effort to meet the FAIR criteria promotes both human and machine usability of data, and is a worthy objective when preparing to publish the data products from a synthesis research project.
 
@@ -58,11 +59,12 @@ Oftentimes, including information about **why** the data were collected can help
 
 [^6]: Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2
 
-![Example of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time (Michener et al 1997.](images/michener97_information_loss.png){width=60%}
+![Example of the normal degradation in information content associated with data and metadata over time ("information entropy"). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time (Michener et al 1997.](images/michener97_information_loss.png){width=60%}
 
-### Data provenance metadata
+### Data Provenance Metadata
 
 <img style="float: right;" src="images/provenance.png" alt="What data should you publish" width="25%" padding="10px"/>
+
 Provenance metadata deserves special attention for ecological data synthesis projects. **Data provenance** refers to information detailing the origin of the values in a dataset, which is particularly important for synthesis projects that bring together data from many different sources. Synthesis activities typically produce new data products that are **derived** from the original source data after they have been cleaned, harmonized, and analyzed. Provenance metadata should be included with the derived products to point back to the original source data, similar to the way bibliographic references point to the source material for a book or scholarly article.
 
 A few other notes on provenance:
@@ -79,7 +81,7 @@ A few other notes on provenance:
 
 Published datasets should include a license in every copy of the metadata that defines who has what rights to use, reproduce, or distribute the data. Licensing decisions should be made in consultation with the synthesis team after considering the nature of the data (does it contain human subject data, for instance?), its origin (including restrictions on source data, if applicable), and the requirements of the funders and institutions associated with the project. For publicly-funded environmental research data, it is generally appropriate to use open licenses, and the Creative Commons CC-BY attribution, and CC0 public domain, licenses are probably a good choice for most ecological synthesis data. This is not legal advice and your mileage may vary.
 
-### Metadata creation and management
+### Metadata Creation and Management
 
 Assembling metadata should be an integral part of the data synthesis activities discussed in Module 2, and can even be built-in to the workflow and project management practices of a project. **Make sure to plan for and start creating metadata early** in a synthesis project. Below are a few ways to do that.
 
@@ -96,9 +98,10 @@ Assembling metadata should be an integral part of the data synthesis activities 
 [^11]: [The Registry of Research Data Repositories (re3data.org)](https://www.re3data.org/)
 [^12]: [Data curation network](https://datacurationnetwork.org/)
 
-## Deciding what to publish
+## Deciding What to Publish
 
 <img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"/>
+
 The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is "*What should I publish?*" The answer usually comes down to:
 
 - Publish any data used to generate research results.
@@ -108,7 +111,7 @@ The overall design of the dataset to be published is often difficult to imagine,
 
 In the activity below we will browse a few published datasets to get a feel for what useful data does and doesn't look like. You can also look at advice from a repositories like [EDI](https://edirepository.org/resources/designing-a-data-package) and [BCO-DMO](https://guide.bco-dmo.org/prepare/what-is-a-dataset), or from a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs).
 
-## Choosing and publishing to a repository
+## Choosing and Publishing to a Repository
 
 There are many, many research data repositories available to researchers now[^11], making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a [Digital Object Identifier](https://doi.org), or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the [CoreTrustSeal certified repository list](https://amt.coretrustseal.org/certificates) is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:
 
@@ -132,19 +135,19 @@ Form breakout groups and course instructors will assign each group a dataset (a 
 4. Were the first three questions easy to answer? Why or why not?
 
 :::{.panel-tabset}
-## Example 1
+### Example 1
 
 Data from the SoDaH LTER synthesis working group.
 
 https://portal.edirepository.org/nis/mapbrowse?packageid=edi.521.1
 
-## Example 2
+### Example 2
 
 A Dryad dataset from a synthesis paper about oligotrophication.
 
 https://doi.org/10.5061/dryad.v2k2607
 
-## Example 3
+### Example 3
 
 Maybe this: https://portal.edirepository.org/nis/mapbrowse?packageid=edi.493.16 (needs editing)
 
@@ -152,12 +155,12 @@ Maybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)
 
 :::
 
-## Additional data publishing resources
+### Additional Data Publishing Resources
 
-* [NEON's derived data publishing guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
-* [EDI repository data authorship guide](https://edirepository.org/resources/resources-for-data-authors)
+- [NEON's derived data publishing guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
+- [EDI repository data authorship guide](https://edirepository.org/resources/resources-for-data-authors)
 
-# Sharing the synthesis workflow
+## Sharing the Synthesis Workflow
 
 One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. Workflows may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Sharing workflows and code are one of the most important needs for ensuring the reproducibility of science.
 
@@ -170,13 +173,10 @@ Publishing the workflow also gives interested parties an understanding of
 
 In other parts of the course, we have strongly recommended using version control and collaboration platforms to manage coding, writing, and other elements of the synthesis team workflow. In particular, we have focused on using GitHub as a one-stop shop for many of these tasks. In combination with other software and services, GitHub can be reliably used to publish workflows as well. By integrating with repositories that archive GitHub content and issue a DOI (commonly Zenodo)[^13], workflows can be published and cited by the research products that they were used to generate. This is commonly done in near-term ecological forecasting projects [^14].
 
-some kinda schematic...
-
 [^13]: [GitHub documentation for referencing and citing content](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 [^14]: White EP, Yenni GM, Taylor SD, et al. Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104 
 
-
-# Disseminating research results
+## Disseminating Research Results
 
 * Most often this means writing a paper
 * Data papers
@@ -185,14 +185,14 @@ some kinda schematic...
   - MacrosystemsEDDIE as an example?
   - Shiny apps
 
-# Connecting the elements of a synthesis project
+## Connecting the Elements of a Synthesis Project
 
 **Estimated time: 25 min**
 
-## Citing synthesis products
+## Citing Synthesis Products
 
 
-## Giving everyone credit
+## Giving Everyone Credit
 
 
 ## Activity 2: Synthesis project detective
@@ -208,34 +208,28 @@ Form breakout groups and course instructors will assign each one a link to a pro
 5. Could you understand the overall scope and impact of the synthesis project? Why or why not?
 
 :::{.panel-tabset}
-## Example 1
+### Example 1
 
 SoDAH
 
-## Example 2
+### Example 2
 
 CoRRE or metacommunities
 
 https://corredata.weebly.com/
 
-## Example 3
+### Example 3
 
-Silica exports
+Silica Exports
 
 https://github.com/lter/lterwg-silica-data
 
 :::
 
-
-
-## Additional resources
-
-* 
-
-# Maintaining momentum
+## Maintaining Momentum
 
 **Estimated time: 10 min?**
 
-## Funding sources
+## Funding Sources
 
 ???
