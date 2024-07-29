@@ -9,8 +9,6 @@ website:
   repo-actions: [issue]
   navbar:
     left:
-      - text: "Home"
-        href: index.qmd
       - text: "Module 1"
         href: module1.qmd
       - text: "Module 2"
