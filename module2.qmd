@@ -1,8 +1,8 @@
 ---
-title: "Module 2: Operational synthesis"
+title: "Operational Synthesis"
 ---
 
-# Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 

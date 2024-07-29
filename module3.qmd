@@ -1,9 +1,10 @@
 ---
-title: "Module 3: Tying it all together"
+title: "Tying It All Together"
 ---
 
-# Learning objectives
+## Learning Objectives
 
+After completing this module, you will be able to:
 
 - **Identify** the features that make published data easily re-useable
 - **Evaluate** the metadata and fitness-for-use of published synthesis datasets
