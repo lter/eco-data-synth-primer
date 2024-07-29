@@ -121,6 +121,17 @@ How does reproducibility in synthesis considerations differ from individual / no
 - Must ensure that every team member has sufficient access to the project files
 - Its best to keep track of who contributed what, so that everyone gets credit. This can be challenging in practice.
 
+::: {.panel-tabset}
+### **Reproducibility Questions**
+
+In groups of 3-5, discuss the following questions:
+
+- What elements of reproducibility **from our list** have you used/are interested in using?
+- Which feel unreasonable or confusing?
+- What activities do you do in your own work to ensure reproducibility that **our list is missing**?
+
+:::
+
 ## Version Control
 
 In all scientific research, the data work (cleaning, harmonizing, analyzing) and the writing are iterative processes. The process and products change over time and usually require a series of revisions. In *synthesis* research, the process can become even more complex because the team is usually large and multiple people are contributing data, analysis, writing, revisions, and more. Using **version control** helps manage this complexity by recording changes, tracking individual contributions, and ensuring that things can be rolled-back to an earlier state if needed.
@@ -155,6 +166,16 @@ Given the time restrictions for this short course, we'll only cover how you enga
 ## Data Preparation
 
 The scientific questions being asked in synthesis projects are usually broad in scope, and it is therefore common to bring together many datasets from different sources for analysis. The datasets selected for analysis (source data) may have been collected by different people, in different places, using different methods, as part of different projects... or all of the above. Typically, some amount of data **cleaning** - filtering or removing unwanted observations - and data **harmonization** - putting data together in common structures, file formats, and units of measurement - is necessary before analysis can begin. This process can be easy or difficult depending on the quality of the source data, the differences between source data, and how much **metadata** (see callout below) is available to understand them. 
+
+::: {.panel-tabset}
+### **Data Preparation Group Questions**
+
+- How many of you work directly with data in your day-to-day?
+- What percentage of the time that you spend working on data is spent on data cleaning?
+- How much on metadata creation?
+- How much on data preparation?
+
+:::
 
 :::{.callout-tip collapse="true"}
 ### More about Metadata
@@ -384,3 +405,7 @@ For more information about LTER synthesis working groups and how you can get inv
 
 - Todd-Brown, K.E.O., _et al._ [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/). **2022**. _Biogeosciences_
 - Borer, E.T. _et al._ [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. _Ecological Society of America Bulletin_
+
+### Other
+
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/?utm_source=pocket_mylist)
