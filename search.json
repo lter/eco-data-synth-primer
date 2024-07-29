@@ -21,25 +21,39 @@
     "text": "Other contributors\nIn addition to those above, several people contributed to early iterations on the concept and content of the course.\n\nForest Isbell –  Website –  Publications\nKim Komatsu –  Website –  Publications"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "A course for collaborative ecologists",
-    "section": "",
-    "text": "This course and the website are under construction. Please check back soon!\nIn recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time, the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a ”team sport”. Objectives for learners are to (a) develop an end-to-end (conception to publication) plan for collaborative synthesis research, and (b) gain data synthesis skills that are immediately useful in a research team setting. Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, analytical workflows, and publication of derived datasets. The course uses real-world examples, demonstrations, and interactive lessons. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips. Many workshop activities will be oriented toward helping learners develop their own ideas and plans for ecological data synthesis."
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "A Course for Collaborative Ecologists",
+    "section": "Abstract",
+    "text": "Abstract\nIn recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time, the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a “team sport”.\nObjectives for learners are twofold:\n\nDevelop an end-to-end (conception to publication) plan for collaborative synthesis research\nGain data synthesis skills that are immediately useful in a research team setting.\n\nInstructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, analytical workflows, and publication of derived datasets. The course uses real-world examples, demonstrations, and interactive lessons. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips. Many workshop activities will be oriented toward helping learners develop their own ideas and plans for ecological data synthesis."
   },
   {
     "objectID": "index.html#agenda",
     "href": "index.html#agenda",
-    "title": "A course for collaborative ecologists",
+    "title": "A Course for Collaborative Ecologists",
     "section": "Agenda",
-    "text": "Agenda\nThis agenda is subject to change as the course is developed.\n\nModule 1: Starting with Team Science\nModule 2: Operational Synthesis\nModule 3: Tying It All Together"
+    "text": "Agenda\nThis agenda is subject to change!\n\n\n\nTiming (PT)\nContent\n\n\n\n\n1-1:15p\nWelcome & Introductions\n\n\n1:15-2:15p\nModule 1: Starting with Team Science\n\n\n2:15-3p\nModule 2: Operational Synthesis\n\n\n3-3:15p\nBreak\n\n\n3:15-4p\nModule 3: Tying It All Together"
   },
   {
-    "objectID": "index.html#photo-credits",
-    "href": "index.html#photo-credits",
-    "title": "A course for collaborative ecologists",
-    "section": "Photo credits:",
-    "text": "Photo credits:\nIn the collage above: Jacob Bøtter via Flickr, CC BY-SA 2.0 | Jeremy Yoder via Flickr, CC BY-SA 2.0 | Marco Pfeiffer, CC BY-SA 4.0 | Gabriel De La Rosa, CC BY-SA 4.0 | Weecology lab CC BY 4.0 | NEON (National Ecological Observatory Network)"
+    "objectID": "index.html#introductions-icebreaker",
+    "href": "index.html#introductions-icebreaker",
+    "title": "A Course for Collaborative Ecologists",
+    "section": "Introductions & Icebreaker",
+    "text": "Introductions & Icebreaker\nBefore we begin, we’d love to get a sense for who you all are and why you’re interested in synthesis work! To that end, we’ll take a few minutes and go around the room for introductions. Please include:\n\nYour name and pronouns\nA 1-sentence summary of your work\nBriefly, why are you interested in synthesis?"
+  },
+  {
+    "objectID": "index.html#note-on-course-materials",
+    "href": "index.html#note-on-course-materials",
+    "title": "A Course for Collaborative Ecologists",
+    "section": "Note on Course Materials",
+    "text": "Note on Course Materials\nWhile we are excited to offer this short course for the first time at ESA 2024, we’ve chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, we recommend that you save the link to this site so that you can have easy access to these materials now and as they are refined going forward.\nIf you are a  GitHub aficionado, we have deployed this website via GitHub Pages so you could also “star” the website’s repository. Simply click the  GitHub octocat logo on the right side of the navbar (at the top of teh screen) to be redirected to the GitHub repository underpinning this website.\nFinally, we have developed all of this website using Quarto."
+  },
+  {
+    "objectID": "index.html#photo-credit",
+    "href": "index.html#photo-credit",
+    "title": "A Course for Collaborative Ecologists",
+    "section": "Photo Credit",
+    "text": "Photo Credit\nIn the collage above: Jacob Bøtter via Flickr, CC BY-SA 2.0 | Jeremy Yoder via Flickr, CC BY-SA 2.0 | Marco Pfeiffer, CC BY-SA 4.0 | Gabriel De La Rosa, CC BY-SA 4.0 | Weecology lab CC BY 4.0 | NEON (National Ecological Observatory Network)"
   },
   {
     "objectID": "contributing.html",
