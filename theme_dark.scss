@@ -45,5 +45,18 @@ $code-block-bg: $gray-0; // code block b
 
 /*-- scss:rules --*/
 
+// Active tabset panel (tab then tab content)
+.nav-tabs .nav-link.active { 
+  background-color: $gray-3; 
+  color: $cream;
+}
+.tab-content { background-color: $gray-3; }
+
+// Navbar dropdown elements
+.dropdown-menu{
+  --bs-dropdown-link-hover-color: #191919;
+  --bs-dropdown-link-hover-bg: #ffddd2;
+}
+
 // Underline URLs
 .reveal .slide a { text-decoration: underline; }

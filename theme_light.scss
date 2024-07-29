@@ -13,7 +13,6 @@ $url-blue: #01baef;
 $url-blue-2: #0081a7;
 
 $cream: #f4f3ee;
-$cream-2: #f8f9fa;
 $gray-0: #d6d6d6;
 $gray-1: #bcb8b1;
 $gray-2: #8a817c;
@@ -36,7 +35,7 @@ $footer-bg: $pink-2;
 $footer-text: $pink-1;
 
 // Page Colors
-$body-bg: $cream-2;
+$body-bg: $cream;
 $body-color: $black;
 $link-color: $url-blue-2;
 
@@ -46,6 +45,19 @@ $code-bg: $gray-0; // inline code background color
 $code-block-bg: $gray-0; // code block b
 
 /*-- scss:rules --*/
+
+// Active tabset panel (tab then tab content)
+.nav-tabs .nav-link.active { 
+  background-color: #FFF; 
+  color: $black;
+}
+.tab-content { background-color: #FFF; }
+
+// Navbar dropdown elements
+.dropdown-menu{
+  --bs-dropdown-link-hover-color: #f4f3ee;
+  --bs-dropdown-link-hover-bg: #e29578;
+}
 
 // Underline URLs
 .reveal .slide a { text-decoration: underline; }
