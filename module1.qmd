@@ -177,6 +177,7 @@ There are many approaches to establishing group norms, but a shared process that
 The process can be as simple as taking 15 minutes to ask the group about their shared (and diverging) values and what those imply about how the group should function. The best choice for your group will depend on the mix of participants, the nature of the content, the duration of your collaboration.
 
 ::: {.panel-tabset}
+
 ### From Biodiversity on a Changing Planet working group (PI: Peter Adler)
 
 ### From Response Diversity Network workshop
