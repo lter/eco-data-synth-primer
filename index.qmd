@@ -43,7 +43,7 @@ Before we begin, we'd love to get a sense for who you all are and why you're int
 
 While we are excited to offer this short course for the first time at [ESA 2024](https://www.esa.org/longbeach2024/), we've chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward.
 
-If you are a {{< fa brands github >}} GitHub aficionado, we have deployed this website via GitHub Pages so you could also "star" the website's repository. Simply click the {{< fa brands github >}} GitHub octocat logo on the right side of the navbar (at the top of teh screen) to be redirected to the GitHub repository underpinning this website.
+If you are a {{< fa brands github >}} GitHub aficionado, we have deployed this website via GitHub Pages so you could also "star" the website's repository. Simply click the {{< fa brands github >}} GitHub octocat logo on the right side of the navbar (at the top of the screen) to be redirected to the GitHub repository underpinning this website.
 
 Finally, we have developed all of this website using [Quarto](https://quarto.org/).
 
