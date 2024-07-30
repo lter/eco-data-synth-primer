@@ -130,6 +130,7 @@ While it is certainly possible to conduct synthesis with no external support, a 
 ### The Leadership Team
 
 The composition of the leadership team will affect the success of the project and who you will be able to recruit to the larger group. Look for:
+
 -  Different (and  complementary) areas of expertise
 -  Complementary professional networks
 -  Facilitation skills
@@ -157,7 +158,27 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 
 ## Setting Expectations
 
-**Good teams are both chosen and made.** Diversity on teams uncovers novel approaches, perspectives, and insights and it can slow the pace and cause misunderstandings that highlight unexamined assumptions. As a synthesis team leader (and even as a participant), there are many things you can do to create opportunities for everyone to contribute their best thinking, learn from one another, and feel heard and respected.
+In any team project, people have different reasons for wanting to participate - and different anxieties about what "participation" will mean. For you, getting a high profile paper may be the most important thing. For others, it may be expanding their network or a chance to practice new skills. Being transparent about those goals, and the behaviors that support them, makes it easier to resolve tensions when they arise.
+
+<p align="center"/>
+<img src="images/LTER_Survey-2_benefit-importance.png" alt="Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?*" width="80%"/>
+</p>
+
+> Importance of various benefits to working group participants
+
+::: {.callout-note}
+### Time Commitments
+
+We all  misjudge our availability once in a while, but consistently failing to deliver on commitments disrupts others' work plans and is a major source of group dissatisfaction. Get buy-in for commitments and plan for both reminders and accountability. 
+:::
+
+There are many approaches to establishing group norms, but a shared process that helps create ownership and buy-in is one key to a smoothly-functioning working group.
+
+
+
+## Making a Communication and Work Plan
+
+**Good teams are both chosen and made.** Diversity on teams uncovers novel approaches, perspectives, and insights and it can slow the pace and cause misunderstandings that highlight unexamined assumptions. As a synthesis team leader (and even as a participant), there are many things you can do to create opportunities for everyone to contribute their best thinking, learn from one another, and feel heard and respected. 
 
 **As the group gets started**
 
@@ -182,22 +203,6 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 **At intervals**
 
 - When you find yourself questioning whether a practice or activity is still valuable, ask each member for a quick read on whether the group should **"Start, Stop, or Continue"** the activity
-
-In any team project, people have different reasons for wanting to participate. For you, getting a high profile paper may be the most important thing. For others, it may be expanding their network or a chance to practice new skills. Being transparent about those motivations makes it easier to resolve tensions when they arise.
-
-<p align="center"/>
-<img src="images/LTER_Survey-2_benefit-importance.png" alt="Survey results from 5 cohorts of LTER-funded synthesis groups to the question: *How important is it to you to gain the following potential benefits through participation in the working group?*" width="80%"/>
-</p>
-
-> Importance of various benefits to working group participants
-
-::: {.callout-note}
-### Time Commitments
-
-We all  misjudge our availability once in a while, but consistently failing to deliver on commitments disrupts others' work plans and is a major source of group dissatisfaction. Get buy-in for commitments and plan for both reminders and accountability. 
-:::
-
-## Making a Communication and Work Plan
 
 
 ## Intro to Establishing a Project Management Plan 
