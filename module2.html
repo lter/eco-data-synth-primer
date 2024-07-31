@@ -488,8 +488,14 @@ What changes were made to data structure, variable formatting, or units in these
 <li>Each row is one observation.</li>
 <li>Each cell contains a single value.</li>
 </ol>
-<p><strong>Advantages</strong>: clear meaning of rows and columns, ease in filtering/cleaning/appending<br>
-<strong>Disadvantages</strong>: observation information is repeated, file size larger<br>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/tidy-data.png" class="img-fluid figure-img"></p>
+<figcaption>visual representation of the tidy data structure</figcaption>
+</figure>
+</div>
+<p><strong>Advantages</strong>: clear meaning of rows and columns; ease in filtering/cleaning/appending<br>
+<strong>Disadvantages</strong>: not as human-friendly so it can be difficult to assess the data visually<br>
 <strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -500,8 +506,8 @@ What changes were made to data structure, variable formatting, or units in these
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>In this dataset, our grassland data has been restructured into wide format, often referred to (sometimes unfairly) as “messy” or “untidy” data. Note that the biomass variable has been split into two columns, one for control plots and one for fertilized plots.</p>
-<p><strong>Advantages</strong>: compact file size, easier for some statistical analyses (ANOVA, for example)<br>
-<strong>Disadvantages</strong>: may be more difficult to clean/filter/append, multiple observations per row<br>
+<p><strong>Advantages</strong>: easier for some statistical analyses (ANOVA, for example); easier to assess the data visually<br>
+<strong>Disadvantages</strong>: may be more difficult to clean/filter/append, multiple observations per row; more likely to contain empty (NULL) cells<br>
 <strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -511,7 +517,14 @@ What changes were made to data structure, variable formatting, or units in these
 </div>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<p>Below is a schematic of the related tables that comprise the <a href="https://ediorg.github.io/ecocomDP/">ecocomDP</a><a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are “normalized” to reduce data redundancy, and increase data integrity.</p>
+<p>Below is an example of how we might structure our grassland data in a relational database. The schema consists of three tables that house information about sampling events (when, where data were collected), the plots from which the samples are collected, and the biomass values for each collection. The schema allows us to define the data types (e.g., text, integer), add constraints (e.g., values cannot be missing), and to describe relationships between tables (keys). Relational formats are <a href="https://en.wikipedia.org/wiki/Database_normalization">normalized</a> to reduce data redundancy and increase data integrity.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/grassland_schema.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>example grassland database schema</figcaption>
+</figure>
+</div>
+<p>A richer example is a schematic of the related tables that comprise the <a href="https://ediorg.github.io/ecocomDP/">ecocomDP</a><a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are “normalized” to reduce data redundancy, and increase data integrity.</p>
 <p><strong>Advantages</strong>: reduced redundancy, greater integrity, community standard<br>
 <strong>Disadvantages</strong>: significant metadata needed to describe and use, more complex to publish<br>
 <strong>Possible file formats</strong>: Database stores, can be represented in delimited text (CSV)</p>
