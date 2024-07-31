@@ -15,6 +15,7 @@ After completing this module, you will be able to:
 - **Understand** several funding opportunities that for synthesis research, their requirements and expectations, and their respective strengths and weaknesses for starting and sustaining synthesis research.
 - **Create** a plan to maintain a synthesis project and associated data over the long-term
 
+
 ## Introduction
 
 So far, we've made the point that ecological synthesis research is collaborative and inclusive, and that it integrates a wide range of data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment. The ability to accomplish this in synthesis research frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.
@@ -45,9 +46,111 @@ The FAIR principles were first defined in the paper by Wilkinson et al (2018)[^1
 
 :::
 
+
+## Activity 1: Evaluate published datasets
+
+Lets start our journey to publishing datasets by looking at some that are already published. Form breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:
+
+1. Where were the data collected?
+2. What variables were measured and in what units?
+3. What is the origin of the data and how have they been altered since collection?
+4. Were the first three questions easy to answer? Why or why not?
+
+:::{.panel-tabset}
+### Group 1
+
+**Example dataset:** <https://doi.org/10.6073/pasta/9733f6b6d2ffd12bf126dc36a763e0b4>
+
+This is an EDI dataset is from the SoDaH (Soil Data Harmonization) LTER working group.
+
+::: {.callout-caution collapse="true" icon="false"}
+
+### Observations from the instructors
+
+This dataset provides a nice example of a harmonized data product that includes **provenance metadata**. We'll talk a little more about this later, but note that all the original data sources are linked to this dataset on the landing page.
+
+- ...
+- ...
+- ...
+
+:::
+
+### Group 2
+
+**Example dataset:** <https://doi.org/10.5061/dryad.v2k2607>
+
+This is a Dryad dataset from a synthesis paper about oligotrophication.
+
+::: {.callout-caution collapse="true" icon="false"}
+
+### Observations from the instructors
+
+This dataset
+
+- ...
+- ...
+- ...
+
+:::
+
+### Group 3
+
+**Example dataset:** 
+
+Maybe this: https://portal.edirepository.org/nis/mapbrowse?packageid=edi.493.16 (needs editing)
+
+Maybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)
+
+::: {.callout-caution collapse="true" icon="false"}
+
+### Observations from the instructors
+
+This dataset
+
+- ...
+- ...
+- ...
+
+:::
+
+### Group 4
+
+**Example dataset:**
+
+::: {.callout-caution collapse="true" icon="false"}
+
+### Observations from the instructors
+
+This dataset
+
+- ...
+- ...
+- ...
+
+:::
+
+### Group 5
+
+**Example dataset:**
+
+::: {.callout-caution collapse="true" icon="false"}
+
+### Observations from the instructors
+
+This dataset
+
+- ...
+- ...
+- ...
+
+:::
+
+:::
+
+
 ## Metadata
 
-Metadata are data about the data. As a general rule, metadata should describe
+One thing that Activity 1 should be introducing is the importance of **metadata**. Metadata are data about the data. As a general rule, metadata should describe
 
   * **Who** collected the data
   * **What** was observed or measured
@@ -61,9 +164,10 @@ Oftentimes, including information about **why** the data were collected can help
 
 ![Example of the normal degradation in information content associated with data and metadata over time ("information entropy"). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time (Michener et al 1997.](images/michener97_information_loss.png){width=60%}
 
+
 ### Data Provenance Metadata
 
-<img style="float: right;" src="images/provenance.png" alt="What data should you publish" width="25%" padding="10px"/>
+<img style="float: right;" src="images/provenance.png" alt="Provenance: where did your data come from?" width="25%" padding="10px"/>
 
 Provenance metadata deserves special attention for ecological data synthesis projects. **Data provenance** refers to information detailing the origin of the values in a dataset, which is particularly important for synthesis projects that bring together data from many different sources. Synthesis activities typically produce new data products that are **derived** from the original source data after they have been cleaned, harmonized, and analyzed. Provenance metadata should be included with the derived products to point back to the original source data, similar to the way bibliographic references point to the source material for a book or scholarly article.
 
@@ -77,9 +181,11 @@ A few other notes on provenance:
 [^8]: Lerner, et al., "Making Provenance Work for You", The R Journal, 2023. https://journal.r-project.org/articles/RJ-2023-003/
 [^9]: [End-to-End Provenance](https://end-to-end-provenance.github.io/)
 
+
 ### Licensing
 
 Published datasets should include a license in every copy of the metadata that defines who has what rights to use, reproduce, or distribute the data. Licensing decisions should be made in consultation with the synthesis team after considering the nature of the data (does it contain human subject data, for instance?), its origin (including restrictions on source data, if applicable), and the requirements of the funders and institutions associated with the project. For publicly-funded environmental research data, it is generally appropriate to use open licenses, and the Creative Commons CC-BY attribution, and CC0 public domain, licenses are probably a good choice for most ecological synthesis data. This is not legal advice and your mileage may vary.
+
 
 ### Metadata Creation and Management
 
@@ -98,18 +204,35 @@ Assembling metadata should be an integral part of the data synthesis activities 
 [^11]: [The Registry of Research Data Repositories (re3data.org)](https://www.re3data.org/)
 [^12]: [Data curation network](https://datacurationnetwork.org/)
 
+
 ## Deciding What to Publish
 
 <img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"/>
 
-The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is "*What should I publish?*" The answer usually comes down to:
+The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is "*What should we publish?*" This is usually a question about what files to include in the published dataset, or what data will be useful as a published dataset.
+
+:::{.panel-tabset}
+### Discussion question
+
+> **What should be included in a published dataset?**
+
+### Some general rules
+
+As we learned in Activity 1, every dataset is different, but the answer to "What should we publish?" usually comes down to:
 
 - Publish any data used to generate research results.
 - Publish any data that will be used by others (scientists, managers, public stakeholders), including raw data.
-- If reproducibility is of interest or concern, publish the workflow (usually code) used to process or analyze the data, or to generate research results like figures.
-- Always publish descriptive metadata about any of the above.
+- If reproducibility is of interest or concern, publish the workflow.
+  - Usually this means publishing code, such as scripts written in R, python, or a shell language.
+  - What code? Any scripts used to process or analyze the data, or to generate research results like figures, are fair game.
+  - Sometimes code, especially detailed, reusable workflows like an R package, can stand alone as an independent publication. We discuss that in a later section.
+  
+And of course... **always publish descriptive metadata about any of the above.**
 
-In the activity below we will browse a few published datasets to get a feel for what useful data does and doesn't look like. You can also look at advice from a repositories like [EDI](https://edirepository.org/resources/designing-a-data-package) and [BCO-DMO](https://guide.bco-dmo.org/prepare/what-is-a-dataset), or from a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs).
+These are general rules, but you can also look at advice from a repositories like [EDI](https://edirepository.org/resources/designing-a-data-package) and [BCO-DMO](https://guide.bco-dmo.org/prepare/what-is-a-dataset), or from a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs). Asking a data manager, especially one involved with the synthesis group's work, can also be helpful, as will discussion among the full synthesis team.
+
+:::
+
 
 ## Choosing and Publishing to a Repository
 
@@ -123,42 +246,13 @@ There are many, many research data repositories available to researchers now[^11
 
 After making a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult a project data manager if one is available to the synthesis team.
 
-## Activity 1: Evaluate published datasets
-
-**Estimated time: 10 min**
-
-Form breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:
-
-1. Where were the data collected?
-2. What variables were measured and in what units?
-3. What is the origin of the data and how have they been altered since collection?
-4. Were the first three questions easy to answer? Why or why not?
-
-:::{.panel-tabset}
-### Example 1
-
-Data from the SoDaH LTER synthesis working group.
-
-https://portal.edirepository.org/nis/mapbrowse?packageid=edi.521.1
-
-### Example 2
-
-A Dryad dataset from a synthesis paper about oligotrophication.
-
-https://doi.org/10.5061/dryad.v2k2607
-
-### Example 3
-
-Maybe this: https://portal.edirepository.org/nis/mapbrowse?packageid=edi.493.16 (needs editing)
-
-Maybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)
-
-:::
 
 ### Additional Data Publishing Resources
 
 - [NEON's derived data publishing guide](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs)
 - [EDI repository data authorship guide](https://edirepository.org/resources/resources-for-data-authors)
+- [BCO-DMO repository data publishing guide](https://guide.bco-dmo.org)
+
 
 ## Sharing the Synthesis Workflow
 
@@ -167,7 +261,7 @@ One of the most valuable, shareable outputs of synthesis research is the analyti
 Publishing the workflow also gives interested parties an understanding of
 
 * the origin of the data
-* the process, or the code itself, for data cleaning, harmonization, analysis, and presentation of results (figures), which may be useful in future work
+* the process used for data cleaning, harmonization, analysis, and presentation of results (figures), which may be useful in future work
 * how the workflow was developed or changed over time
 * the contributions made by the team
 
@@ -176,24 +270,21 @@ In other parts of the course, we have strongly recommended using version control
 [^13]: [GitHub documentation for referencing and citing content](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 [^14]: White EP, Yenni GM, Taylor SD, et al. Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104 
 
-## Disseminating Research Results
 
-* Most often this means writing a paper
-* Data papers
+## Communicating Research Results
+
+One of the primary goals of synthesis research is to find useful, generalizable research results about the system under study. Most often this means writing scientific journal articles. While we aren't going to go into full detail about what constitutes, or how to write, a manuscript for a journal, there are some unique features of writing articles for synthesis projects. First, **data papers** are often an important product for synthesis groups. Second, given, the large size and cooperative nature of most synthesis teams, a **collaborative writing process** is called for.
+
+### Data papers
+
   - Anatomy of a data paper?
-* Other products may be apps, teaching modules, etc.
-  - MacrosystemsEDDIE as an example?
-  - Shiny apps
-
-## Connecting the Elements of a Synthesis Project
-
-**Estimated time: 25 min**
-
-## Citing Synthesis Products
-
-
-## Giving Everyone Credit
-
+  - These are more common for synthesis groups and are often a first output.
+  - Venuess for a data paper
+    - Nature Scientific Data
+    - Ecology
+    - Data (MDPI journal)
+    
+### Writing collaboratively
 
 ## Activity 2: Synthesis project detective
 
@@ -208,28 +299,210 @@ Form breakout groups and course instructors will assign each one a link to a pro
 5. Could you understand the overall scope and impact of the synthesis project? Why or why not?
 
 :::{.panel-tabset}
-### Example 1
+### Group 1
 
-SoDAH
+**Clue:** SoDAH
 
-### Example 2
+::: {.callout-caution collapse="true" icon="false"}
 
-CoRRE or metacommunities
+### Cracking the case
 
-https://corredata.weebly.com/
+This is the SoDAH LTER synthesis working group. The group
 
-### Example 3
+*Papers*
 
-Silica Exports
+- ...
+- ...
+- ...
 
-https://github.com/lter/lterwg-silica-data
+*Workflows*
+
+- ...
+
+*Datasets*
+
+- ...
+
+*Other*
+
+- ...
 
 :::
 
-## Maintaining Momentum
+### Group 2
 
-**Estimated time: 10 min?**
+**Clue:** https://corredata.weebly.com/
 
-## Funding Sources
+::: {.callout-caution collapse="true" icon="false"}
 
-???
+### Cracking the case
+
+This is the CoRRE synthesis working group. The group
+
+*Papers*
+
+- ...
+- ...
+- ...
+
+*Workflows*
+
+- ...
+
+*Datasets*
+
+- ...
+
+*Other*
+
+- ...
+
+:::
+
+### Group 3
+
+**Clue:** https://github.com/lter/lterwg-silica-data
+
+::: {.callout-caution collapse="true" icon="false"}
+
+### Cracking the case
+
+This is the silica exports working group. The group
+
+*Papers*
+
+- ...
+- ...
+- ...
+
+*Workflows*
+
+- ...
+
+*Datasets*
+
+- ...
+
+*Other*
+
+- ...
+
+:::
+
+### Group 4
+
+**Clue:**
+
+::: {.callout-caution collapse="true" icon="false"}
+
+### Cracking the case
+
+This is the...
+
+*Papers*
+
+- ...
+- ...
+- ...
+
+*Workflows*
+
+- ...
+
+*Datasets*
+
+- ...
+
+*Other*
+
+- ...
+
+:::
+
+### Group 5
+
+**Clue:**
+
+::: {.callout-caution collapse="true" icon="false"}
+
+### Cracking the case
+
+This is the...
+
+*Papers*
+
+- ...
+- ...
+- ...
+
+*Workflows*
+
+- ...
+
+*Datasets*
+
+- ...
+
+*Other*
+
+- ...
+
+:::
+
+:::
+
+## More ways to synthesize
+    
+<img src="images/mod3_more_products.png" alt="Three circles labeled 'data', 'results' and 'analytical workflow', plus many more possible products" style="float: right" width="50%"/>
+
+What are some other potential ways to share research? There are plenty!
+
+* Other products may be apps, teaching modules, etc.
+  - MacrosystemsEDDIE as an example?
+  - Shiny apps
+  - project websites
+
+
+## Connecting the Elements of a Synthesis Project
+
+...
+
+### Persistent unique identifiers
+
+- DOIs
+- ORCIDs & RORs
+- Other identifiers
+
+### Citing synthesis products
+
+- Journal requirements
+- Proper data availability statements
+- Citing datasets and code
+
+
+## Maintaining momentum
+
+As we discussed in Module 1, starting a synthesis project benefits from motivating scientific questions, a well-planned foundation for team science, and significant activation energy from the team. When successful, synthesis projects gather enough momentum to be productive for many years. Below are a few ideas on how to maintain this momentum.
+
+### Give everyone credit
+
+- Associate ORCID's with published products
+- Defining the type of contribution
+    - Projects should define in advance
+    - Use frameworks like CReDIT... etc.
+- Make contributions visible whenever possible.
+
+### Encourage new contributions
+
+- Provide a path for new data contributions
+- Have ways for people to get involved
+- Give team members the freedom and support to lead analyses and papers
+
+### Find monetary support
+
+Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to support dedicated personnel time.
+
+- Refer to funding sources in Module 1
+- Personnel support may need to come from larger grants
+
+
