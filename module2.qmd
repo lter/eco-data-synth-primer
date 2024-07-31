@@ -9,9 +9,8 @@ After completing this module, you will be able to:
 - **Identify** characteristics of reproducible coding / project organization
 - **Explain** benefits of reproducibility (to your team and beyond)
 - **Summarize** the advantages of creating a defined contribution workflow
-- **Define** fundamental vocabulary of version control systems
-- **Create** a repository on GitHub
 - **Explain** how synthesis teams can use GitHub to collaborate more efficiently and reproducibly
+- **Understand** best practices for preparing and analyzing data to be used in synthesis projects
 
 ## Introduction
 
@@ -140,20 +139,33 @@ In all scientific research, the data work (cleaning, harmonizing, analyzing) and
 <img src="images/mod2_final.png" alt="PhD comics strip of a graduate student prematurely titling a document 'final.doc' and then undergoing a series of revisions with progressively more complicated and less informative final names" width="80%"/>
 </p>
 
+Like this comic shows here, you might have several drafts of your paper before the finalized version. With a version control system, all the revisions in each draft are saved. Version control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.[^1]
+
+Using version control enhances your workflow by allowing you to:
+
+- maintain a descriptive history of your research project’s development while keeping a clean workspace
+  - no more cryptic file names or commented-out lines of code to track your progress
+- collaborate with team members and merge everyone's edits together
+- explore bugs or new features without disrupting your team members’ work.[^2]
+
+[^1]: Lyon, N. J., Chen, A., Brun, J. (2023). Collaborative Coding with GitHub. LNO Scientific Computing Team. https://nceas.github.io/scicomp-workshop-collaborative-coding/.
+[^2]: Poulsen, C. V. & Chen, A. (2024). NCEAS coreR for Delta Science Program. NCEAS Learning Hub. https://learning.nceas.ucsb.edu/2024-06-delta.
+
 ### Vocabulary
 
-**Estimated time: 5 min**
+<p align="center">
+<img src="images/git_local.png" alt="Image showing how Git is used from a person's local computer" width="50%"/>
+<img src="images/github_cloud.png" alt="Image showing how GitHub is an online platform that hosts Git repositories" width="46%"/>
+</p>
 
-Brief definitions for a selection of fundamental version control vocabulary terms
+Here are some brief definitions for a selection of fundamental version control vocabulary terms.
 
-- Version control system: software that tracks iterative changes to your code and other files
-- Repository: the specific folder/directory that is being tracked by a version control system
-- Git: a popular open-source distributed version control system
-- GitHub: a website that allows users to store their Git repositories online and share them with others 
+- **Version control system**: software that tracks iterative changes to your code and other files
+- **Repository**: the specific folder/directory that is being tracked by a version control system
+- **Git**: a popular open-source distributed version control system
+- **GitHub**: a website that allows users to store their Git repositories online and share them with others 
 
 ### GitHub
-
-**Estimated time: 10 min**
 
 While this section of the module focuses on [GitHub](https://github.com/), there are several other viable alternatives for working with Git individually or as part of a larger team (e.g., [GitLab](https://about.gitlab.com/), [GitKraken](https://www.gitkraken.com/), etc.). Any of these may be viable option for your team and we focus on GitHub here only to ensure a standard backdrop for the case studies we'll discuss shortly.
 
@@ -182,10 +194,10 @@ The scientific questions being asked in synthesis projects are usually broad in 
 
 Metadata is "data about the data," or information that describes **who** collected the data, **what** was observed or measured, **when** the data were collected, **where** the data were collected, **how** the observations or measurements were made, and **why** they were collected. Metadata provide important contextual information about the origin of the data and how they can be analyzed or used. They are most useful when attached or linked to the data being described, and data and related metadata together are commonly referred to as a *dataset*.
 
-Metadata for ecological research data are well described in Michener et al (1997),[^1] but there are many other kinds of metadata with different purposes.[^2] If you are publishing a research dataset and have questions about metadata, ask a data manager for your project, or staff at the repository you are working with, for help. Either can typically provide guidance on creating metadata that will describe your data and be useful to the community (here is [one example](https://edirepository.org/resources/creating-metadata-for-publication)). We'll return to the subject of metadata in Module 3.
+Metadata for ecological research data are well described in Michener et al (1997),[^3] but there are many other kinds of metadata with different purposes.[^4] If you are publishing a research dataset and have questions about metadata, ask a data manager for your project, or staff at the repository you are working with, for help. Either can typically provide guidance on creating metadata that will describe your data and be useful to the community (here is [one example](https://edirepository.org/resources/creating-metadata-for-publication)). We'll return to the subject of metadata in Module 3.
 
-[^1]: Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2
-[^2]: Mayernik, M.S. and Acker, A. (2018), Tracing the traces: The critical role of metadata within networked communications. Journal of the Association for Information Science and Technology, 69: 177-180. https://doi.org/10.1002/asi.23927
+[^3]: Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2
+[^4]: Mayernik, M.S. and Acker, A. (2018), Tracing the traces: The critical role of metadata within networked communications. Journal of the Association for Information Science and Technology, 69: 177-180. https://doi.org/10.1002/asi.23927
 
 :::
 
@@ -196,11 +208,11 @@ When assembling large datasets from diverse sources, as in synthesis research, n
 1. **Always preserve the raw data**. Chances are you'll want to go back and check the original source data at least once.
 2. **Use a scripted workflow to clean and filter the raw data**, and follow the usual rules about reproducibility (comments, version control, functionalization).
 3. **Consider using the concept of data processing "levels,"** meaning that defined sets of data flagging, removal, or transformation operations are applied consistently to the data in stepwise fashion. For example, incoming raw data would be labeled "level 0" data, and "level 1" data is reached after the first set of processing steps is applied.
-4. **Spread the data cleaning workload around!** Data cleaning typically demands a HUGE fraction of the total time devoted to working with data,[^3][^4][^5] and it can be tedious work. Make sure the team shares this workload equitably.
+4. **Spread the data cleaning workload around!** Data cleaning typically demands a HUGE fraction of the total time devoted to working with data,[^5][^6][^7] and it can be tedious work. Make sure the team shares this workload equitably.
 
-[^3]: Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10
-[^4]: [New York Times, 2014](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html)
-[^5]: [Anaconda State of Data Science Report, 2022](https://www.anaconda.com/resources/whitepapers/state-of-data-science-report-2022/)
+[^5]: Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10
+[^6]: [New York Times, 2014](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html)
+[^7]: [Anaconda State of Data Science Report, 2022](https://www.anaconda.com/resources/whitepapers/state-of-data-science-report-2022/)
 
 ### Data Harmonization 
 
@@ -241,7 +253,7 @@ Above, we've discussed several aspects of selecting a **data format**. There are
 
 A few guidelines apply:
 
-1. For formatting a tabular dataset, **err towards simpler data structures**, which are usually easier to clean, filter, and analyze. Long-format tables, or tidy data [^3], is one common recommendation for this.
+1. For formatting a tabular dataset, **err towards simpler data structures**, which are usually easier to clean, filter, and analyze. Long-format tables, or tidy data [^5], is one common recommendation for this.
 2. When choosing a file format, **err towards open, non-proprietary file formats** that more people know and have access to. Delimited text files, such as CSV files, are a good choice for tabular data. 
 3. **Use existing community standards** for formatting variables and files as long they suit your project methods and scientific goals. Using ISO standards for date-time variables, or species identifiers from a taxonomic authority, are good examples of this practice.
 4. **There is no perfect data format!** Harmonizing data always involves some judgement calls and tradeoffs.
@@ -275,13 +287,13 @@ In this dataset, our grassland data has been restructured into wide format, ofte
 
 ### Relational (Database-Style)
 
-Below is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^6] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are "normalized" to reduce data redundancy, and increase data integrity.
+Below is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^8] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are "normalized" to reduce data redundancy, and increase data integrity.
 
 **Advantages**: reduced redundancy, greater integrity, community standard  
 **Disadvantages**: significant metadata needed to describe and use, more complex to publish  
 **Possible file formats**: Database stores, can be represented in delimited text (CSV)  
 
-[^6]: O'Brien, Margaret, et al. "ecocomDP: a flexible data design pattern for ecological community survey data." Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374
+[^8]: O'Brien, Margaret, et al. "ecocomDP: a flexible data design pattern for ecological community survey data." Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374
 
 ![The ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.](images/ecocomDP_schema.jpg){width="75%"}
 
@@ -310,16 +322,16 @@ There are many, many other possible harmonized data formats. Here are a few poss
 
 **Data cleaning and filtering resources**
 
-* Data cleaning is complicated and varied, and entire books have been written on the subject.[^7][^8] For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
+* Data cleaning is complicated and varied, and entire books have been written on the subject.[^9][^10] For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
 * [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
 * In the R language, the `tidyverse` libraries (particularly `tidyr` and `dplyr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
 * In Python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
-* Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's *R for Data Science* book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy),[^9] and for python check Wes McKinney's *Python for Data Analysis* book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).[^10]
+* Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's *R for Data Science* book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy),[^11] and for python check Wes McKinney's *Python for Data Analysis* book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).[^12]
 
-[^7]: Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.
-[^8]: Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley & Sons, 2018. https://doi.org/10.1002/9781118897126
-[^9]: Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. " O'Reilly Media, Inc.", 2023. https://r4ds.hadley.nz/
-[^10]: McKinney, Wes. Python for data analysis. " O'Reilly Media, Inc.", 2022. https://wesmckinney.com/book
+[^9]: Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.
+[^10]: Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley & Sons, 2018. https://doi.org/10.1002/9781118897126
+[^11]: Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. " O'Reilly Media, Inc.", 2023. https://r4ds.hadley.nz/
+[^12]: McKinney, Wes. Python for data analysis. " O'Reilly Media, Inc.", 2022. https://wesmckinney.com/book
 
 **Data harmonization resources**
 
