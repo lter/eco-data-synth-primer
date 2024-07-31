@@ -502,6 +502,11 @@ Observations from the instructors
 <p>One of the primary goals of synthesis research is to find useful, generalizable research results about the system under study. Most often this means writing scientific journal articles. While we aren’t going to go into full detail about what constitutes, or how to write, a manuscript for a journal, there are some unique features of writing articles for synthesis projects. First, <strong>data papers</strong> are often an important product for synthesis groups. Second, given, the large size and cooperative nature of most synthesis teams, a <strong>collaborative writing process</strong> is called for.</p>
 <section id="data-papers" class="level3">
 <h3 class="anchored" data-anchor-id="data-papers">Data papers</h3>
+<p>A data descriptor article, usually know as a data paper, is a peer-reviewed journal article written to introduce and describe a (usually) new dataset. For synthesis teams, who are often producing a harmonized dataset as their first major research product, writing a data paper to accompany the dataset makes sense as a way to introduce the data, demonstrate their utility, and get the word out about the dataset. However, there are a few gotchas and best practices to mention.</p>
+<ol type="1">
+<li>Though the publisher of the data paper may archive a copy of the data to accompany the article, it is common for the data paper to reference a dataset in a research data repository. We recommend using a repository dataset for the data paper for a variety of reasons (namely, ease in discovery &amp; usability), but this may create some confusion in which DOI to cite - the paper’s or the repository’s).</li>
+<li>Be sure to consider the future usability of the dataset the data paper is describing. Data papers don’t necessarily provide the detailed metadata necessary for re-use of the dataset, so this should be provided Though the journal publishing the Even though the published Below are some example</li>
+</ol>
 <ul>
 <li>Anatomy of a data paper?</li>
 <li>These are more common for synthesis groups and are often a first output.</li>
@@ -722,15 +727,45 @@ Cracking the case
 <section id="more-ways-to-synthesize" class="level2">
 <h2 class="anchored" data-anchor-id="more-ways-to-synthesize">More ways to synthesize</h2>
 <p><img src="images/mod3_more_products.png" alt="Three circles labeled 'data', 'results' and 'analytical workflow', plus many more possible products" style="float: right" width="50%"></p>
-<p>What are some other potential ways to share research? There are plenty!</p>
+<p>We’ve talked about the three most common products of synthesis: papers, datasets, and workflows. What are some other ways to share synthesis research? There are plenty!</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Teaching materials</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Web apps</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Automation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false">Project websites</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>Synthesis research produces new scientific knowledge that other researchers, students, or stakeholders can learn and build on. Synthesis can also generate applied-science tools and methods that others need to learn how to use for themselves. Teaching modules are an important way of sharing both of these outcomes, and of broadening the reach of a synthesis project.</p>
+<p>Examples:</p>
 <ul>
-<li>Other products may be apps, teaching modules, etc.
-<ul>
-<li>MacrosystemsEDDIE as an example?</li>
-<li>Shiny apps</li>
-<li>project websites</li>
-</ul></li>
+<li>The <a href="https://serc.carleton.edu/eddie/teaching_materials/index.html">EDDIE project</a> is a clearinghouse of contributed teaching materials for the earth and environmental sciences.</li>
+<li>This website is an example of teaching materials produced by a synthesis team.</li>
 </ul>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>Interactive web applications can provide users with easy access to scientific datasets, especially large ones, analytical results, visualizations, interpretation, and many, many other things. Creating web apps is not necessarily an easy task, but if your synthesis team has the expertise, or access to web developers, web apps may be useful for outreach, or as tools the synthesis team itself can use. Frameworks like <a href="https://shiny.posit.co/">Shiny</a> (for R), <a href="https://streamlit.io">Streamlit</a>, or <a href="https://flask.palletsprojects.com">Flask</a> (both for python), and services like <a href="https://www.shinyapps.io/">Shinyapps.io</a> and <a href="https://plotly.com">Plotly</a>, can make creation of apps relatively painless.</p>
+<p>Examples</p>
+<ul>
+<li>A <a href="https://projects.ecoforecast.org/neon4cast-dashboard/phenology">dashboard app</a> for the NEON ecological forecasting challenge.</li>
+<li>The <a href="https://jornada-data.shinyapps.io/jrn_dataviewer/">Jornada LTER interactive viewer</a> for weather station data.</li>
+</ul>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p>Some research efforts have developed automation systems for research data processing, analytics, and forecasting. These often fall into the “continuous integration/continuous deployment” class of web-enabled software and data pipelines, in which one software processes (data processing, analytics, publication, etc.) may be automatically triggered by events that occur in another, connected software service (such as adding new data to a GitHub repository). These technologies enable researchers to build software pipelines that can be useful for quality control of new data, updating forecasts, and rapid deployment of data or analysis products.</p>
+<p>Examples:</p>
+<ul>
+<li>The Portal Project in southeast Arizona has developed a well-described <a href="https://portal.naturecast.org/">near-term ecological forecasting pipeline</a>.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></li>
+<li><a href="https://github.com/SCBI-ForestGEO/Dendrobands">Automated quality control</a> of dendrometer band data.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></li>
+<li><a href="https://flare-forecast.org/">Forecasting Lake and Reservoir Ecosystems</a> (FLARE) project.</li>
+</ul>
+</div>
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<p>At a certain point, the outputs of a synthesis project can become numerous and challenging to present to the public in an organized way. Project websites can serve as a gateway to an entire synthesis project by providing comprehensive listings of project outputs (papers, datasets, GitHub repositories, etc), a narrative for the research, appealing images or graphics for outreach, and links to related projects, funders, or institutions. <a href="https://pages.github.com/">GitHub Pages</a> sites are a common solution for creating simple, cost-effective (free, usually) project websites nowadays, but there are other options. A good project website can become a cohesive, engaging clearinghouse for information about a synthesis project, but they can become laborious to create and keep up-to-date.</p>
+<p>Examples:</p>
+<ul>
+<li><a href="https://portal.weecology.org/">The Portal Project</a></li>
+<li><a href="https://corredata.weebly.com/">The CoRRE project</a></li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 <section id="connecting-the-elements-of-a-synthesis-project" class="level2">
 <h2 class="anchored" data-anchor-id="connecting-the-elements-of-a-synthesis-project">Connecting the Elements of a Synthesis Project</h2>
@@ -806,6 +841,8 @@ Cracking the case
 <li id="fn13"><p><a href="https://www.re3data.org/">The Registry of Research Data Repositories (re3data.org)</a><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn14"><p><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">GitHub documentation for referencing and citing content</a><a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn15"><p>White EP, Yenni GM, Taylor SD, et al.&nbsp;Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>White EP, Yenni GM, Taylor SD, et al.&nbsp;Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>Kim, A. Y., Herrmann, V., Barreto, R., Calkins, B., Gonzalez-Akre, E., Johnson, D. J., Jordan, J. A., Magee, L., McGregor, I. R., Montero, N., Novak, K., Rogers, T., Shue, J., &amp; Anderson-Teixeira, K. J. (2022). Implementing GitHub Actions continuous integration to reduce error rates in ecological data collection. Methods in Ecology and Evolution, 13, 2572–2585. https://doi.org/10.1111/2041-210X.13982<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
