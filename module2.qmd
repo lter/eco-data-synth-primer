@@ -273,8 +273,10 @@ Here our grassland biomass data is in long format, often referred to as "tidy" d
 2. Each row is one observation.
 3. Each cell contains a single value.
 
-**Advantages**: clear meaning of rows and columns, ease in filtering/cleaning/appending  
-**Disadvantages**: observation information is repeated, file size larger  
+![visual representation of the tidy data structure](images/tidy-data.png)
+
+**Advantages**: clear meaning of rows and columns; ease in filtering/cleaning/appending  
+**Disadvantages**: not as human-friendly so it can be difficult to assess the data visually  
 **Possible file formats**: Delimited text (tab delimited shown here), spreadsheets, database tables  
 
 ![The harmonized grassland data, in long format.](images/long_data_example.png){width="75%"}
@@ -283,15 +285,19 @@ Here our grassland biomass data is in long format, often referred to as "tidy" d
 
 In this dataset, our grassland data has been restructured into wide format, often referred to (sometimes unfairly) as "messy" or "untidy" data. Note that the biomass variable has been split into two columns, one for control plots and one for fertilized plots.
 
-**Advantages**: compact file size, easier for some statistical analyses (ANOVA, for example)  
-**Disadvantages**: may be more difficult to clean/filter/append, multiple observations per row  
+**Advantages**: easier for some statistical analyses (ANOVA, for example); easier to assess the data visually  
+**Disadvantages**: may be more difficult to clean/filter/append, multiple observations per row; more likely to contain empty (NULL) cells  
 **Possible file formats**: Delimited text (tab delimited shown here), spreadsheets, database tables  
 
 ![The harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.](images/wide_data_example.png){width="75%"}
 
 ### Relational (Database-Style)
 
-Below is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^8] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are "normalized" to reduce data redundancy, and increase data integrity.
+Below is an example of how we might structure our grassland data in a relational database. The schema consists of three tables that house information about sampling events (when, where data were collected), the plots from which the samples are collected, and the biomass values for each collection. The schema allows us to define the data types (e.g., text, integer), add constraints (e.g., values cannot be missing), and to describe relationships between tables (keys). Relational formats are [normalized](https://en.wikipedia.org/wiki/Database_normalization) to reduce data redundancy and increase data integrity.
+
+![example grassland database schema](images/grassland_schema.drawio.png)
+
+A richer example is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^8] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are "normalized" to reduce data redundancy, and increase data integrity.
 
 **Advantages**: reduced redundancy, greater integrity, community standard  
 **Disadvantages**: significant metadata needed to describe and use, more complex to publish  
