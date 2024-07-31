@@ -223,7 +223,7 @@ There are some similarities and some differences in these two source files. A ha
 
 :::{.callout-warning collapse="true"}
 
-## Can you identify some changes made to data structure, variable formatting, or units to harmonize these data?
+## Take a minute to look at the harmonized file. Can you identify some changes that were made to data structure, variable formatting, or units in these data?
 
 Even though the data files were similar, several important changes were made to create the harmonized file. Among them:
 
