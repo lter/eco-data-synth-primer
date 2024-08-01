@@ -265,6 +265,25 @@ The exercise presents an opportunity for self-reflection and for participants to
 
 ## Intro to Establishing a Project Management Plan 
 
+As your group gets started working together, it it easy to assume that you will use the tools and planning strategies that the PI or project organizer is used to using. That information should carry some weight. They will devote a lot of time to the project. But also try to survey the group at an early meeting so that you know which platforms other group members use. Make decisions based on balancing platforms that will allow maximum group participation with those that will make the work easiest for those likely to be doing the work.
+
+Consider:
+
+-  How will you communicate? (Email, Slack, Google Group, Discourse, Discord, Zulip...) Who maintains the list, and how?
+    -  A regular "update" email (every 2 weeks or once a month) is a great practice
+    -  You will likely generate lots of ideas for papers and other products. How do group members who didn't happen to be in *that* conversation find out about them?
+-  Where will you share common documents and how will you organize them? (Box, Dropbox, Google Drive, Other...email them around :eye_roll:)
+-  How will you keep track of relevant references (a file folder of pdfs?, Zotero, EndNote, Mendeley...)? Each has strengths and weaknesses--consider how participants are most likely to contribute *and* how easy they will be to fnd later.   
+-  Do you need a shared calendar or virtual bulletin board? Consider Google Calendar, GitHub Pages, Quarto, or a simple WordPress or Weebly site, but beware of the time it can consume.
+-  Who is doing most of the coding? 
+    -  What platfoms do they use? 
+    -  Do others need to see/weigh in on the code? Can they access those platforms? How will they get notice that their input is needed?
+-  How do you write together? The platform matters, but so does the process.
+    -  Some groups outline as a team and then assign sections to different writers.
+    -  In others, everyone contributes figures, and concepts as bullet points, but a single author crafts the actual prose.
+    -  *Suggesting* and *track changes* features are great for modest edits on a nearly completed document, but can be overwhelming when a paper is still in development. 
+        -  An alternative is to create a read-only version of a document with line numbers and ask for comments by line number.
+        -  It is also helpful to be clear about what kind of input you are after at each stage of writing. Are you just trying to get the analysis clear or do you want wordcraft?
 
 ## Data Sources
 
