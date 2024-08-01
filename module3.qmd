@@ -201,12 +201,14 @@ Assembling metadata should be an integral part of the data synthesis activities 
 [^11]: [The Registry of Research Data Repositories (re3data.org)](https://www.re3data.org/)
 [^12]: [Data curation network](https://datacurationnetwork.org/)
 
-::: {.callout-tip collapse="true"}
 
-### Key insight
+::: {.callout-note}
+
+#### Key insight
 
 **Reproducibility and the collection of metadata are closely related.** Your team's detailed documentation of the research process allows for reproducible science, and can be mined as a source of metadata during data publication.
 
+:::
 
 ### Deciding What to Publish
 
@@ -214,7 +216,7 @@ Assembling metadata should be an integral part of the data synthesis activities 
 
 The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is "*What should we publish?*" This is usually a question about what files to include in the published dataset, or what data will be useful as a published dataset.
 
-:::{.panel-tabset}
+::: {.panel-tabset}
 ### Discussion question
 
 > **What should be included in a published dataset?**
@@ -316,7 +318,7 @@ GBIF also maintains a helpful list of [data paper journals](https://www.gbif.org
 
 Writing a paper with a large team can be a challenge. It is important to encourage team members to contribute in a way they are comfortable with, but there is the potential for technical, editorial, and personal conflict without some prior planning. Practically, there are two models for writing a manuscript with a bunch of contributors.
 
-:::{.panel-tabset}
+::: {.panel-tabset}
 ### Cloud-based collaborative writing
 
 In this model manuscripts live mainly in web-based writing platforms managed by a cloud service provider (e.g. Google Docs) and all contributors write and edit the document within that platform. Contributions may be asynchronous or synchronous since version control and conflict resolution is generally built into the platform. Most platforms have additional collaboration features, such as user account management, suggested edits, and commenting systems.
@@ -367,7 +369,7 @@ Form breakout groups and course instructors will assign each one a link to a pro
 4. Who was involved in the synthesis project?
 5. Could you understand the overall scope and impact of the synthesis project? Why or why not?
 
-:::{.panel-tabset}
+::: {.panel-tabset}
 ### Group 1
 
 **Clue:** SoDAH
