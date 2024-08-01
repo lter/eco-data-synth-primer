@@ -253,7 +253,7 @@ Even though the source data files were similar, several important changes were m
 
 ### A Word about Harmonized Data Formats
 
-Above, we've discussed several aspects of selecting a **data format**. There are at least three related, but not exactly equivalent, concepts to consider when formatting data. First, formats describe the way data are structured, organized, and related within a data file. For example, in a tabular data file about biomass, the measured biomass values might appear in one column, or in muiltiple columns. Second, the values of any variable can be represented in more than one format. The same date, for example, could be formatted using text as "July 2, 1974" or "1974-07-02." Third, format may refer to the *file format* used to hold data on a disk or other storage medium. File formats like comma separated value text files (CSV), Excel files (.xlsx), JPEG images, are commonly used for research data, and each has particular strengths for certain kinds of data.
+Above, we have discussed several aspects of selecting a **data format**. There are at least three related, but not exactly equivalent, concepts to consider when formatting data. First, formats describe the way data are structured, organized, and related within a data file. For example, in a tabular data file about biomass, the measured biomass values might appear in one column, or in muiltiple columns. Second, the values of any variable can be represented in more than one format. The same date, for example, could be formatted using text as "July 2, 1974" or "1974-07-02." Third, format may refer to the *file format* used to hold data on a disk or other storage medium. File formats like comma separated value text files (CSV), Excel files (.xlsx), JPEG images, are commonly used for research data, and each has particular strengths for certain kinds of data.
 
 A few guidelines apply:
 
@@ -291,21 +291,22 @@ In this dataset, our grassland data has been restructured into wide format, ofte
 
 ![The harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.](images/wide_data_example.png){width="75%"}
 
-### Relational (Database-Style)
+### Relational Database
 
-Below is an example of how we might structure our grassland data in a relational database. The schema consists of three tables that house information about sampling events (when, where data were collected), the plots from which the samples are collected, and the biomass values for each collection. The schema allows us to define the data types (e.g., text, integer), add constraints (e.g., values cannot be missing), and to describe relationships between tables (keys). Relational formats are [normalized](https://en.wikipedia.org/wiki/Database_normalization) to reduce data redundancy and increase data integrity.
+Below is an example of how we might structure our grassland data in a relational database. The schema consists of three tables that house information about sampling events (when, where data were collected), the plots from which the samples are collected, and the biomass values for each collection. The schema allows us to define the data types (e.g., text, integer), add constraints (e.g., values cannot be missing), and to describe relationships between tables (keys). Relational formats are [normalized](https://en.wikipedia.org/wiki/Database_normalization) to reduce data redundancy and increase data integrity, which can help us to manage complex data[^13].
 
 ![example grassland database schema](images/grassland_schema.drawio.png)
 
-A richer example is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^8] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table. Relational formats like this are "normalized" to reduce data redundancy, and increase data integrity.
-
-**Advantages**: reduced redundancy, greater integrity, community standard  
-**Disadvantages**: significant metadata needed to describe and use, more complex to publish  
+**Advantages**: reduced redundancy, greater integrity; community standard; powerful extensions (e.g., store and process spatial data); many different database flavors to meet specific needs  
+**Disadvantages**: significant metadata needed to describe and use; more complex to publish; learning curve  
 **Possible file formats**: Database stores, can be represented in delimited text (CSV)  
 
-[^8]: O'Brien, Margaret, et al. "ecocomDP: a flexible data design pattern for ecological community survey data." Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374
+A richer example is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^8] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table.
 
 ![The ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.](images/ecocomDP_schema.jpg){width="75%"}
+
+[^8]: O'Brien, Margaret, et al. "ecocomDP: a flexible data design pattern for ecological community survey data." Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374
+[^13]: Zimmerman, N. 2016. [Hand-crafted relational databases for fun and science](https://carpentries.org/blog/2016/12/hand-crafted-databases/)
 
 ### Cloud-native
 
