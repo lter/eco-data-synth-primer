@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -161,15 +161,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#cleaning-data" id="toc-cleaning-data" class="nav-link" data-scroll-target="#cleaning-data">Cleaning Data</a></li>
   <li><a href="#data-harmonization" id="toc-data-harmonization" class="nav-link" data-scroll-target="#data-harmonization">Data Harmonization</a></li>
   <li><a href="#a-word-about-harmonized-data-formats" id="toc-a-word-about-harmonized-data-formats" class="nav-link" data-scroll-target="#a-word-about-harmonized-data-formats">A Word about Harmonized Data Formats</a></li>
-  <li><a href="#additional-resources-about-data-preparation" id="toc-additional-resources-about-data-preparation" class="nav-link" data-scroll-target="#additional-resources-about-data-preparation">Additional Resources about Data Preparation</a></li>
   </ul></li>
-  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data Analysis</a>
-  <ul class="collapse">
-  <li><a href="#additional-resources-about-data-analysis" id="toc-additional-resources-about-data-analysis" class="nav-link" data-scroll-target="#additional-resources-about-data-analysis">Additional Resources About Data Analysis</a></li>
-  </ul></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data Analysis</a></li>
   <li><a href="#synthesis-group-case-studies" id="toc-synthesis-group-case-studies" class="nav-link" data-scroll-target="#synthesis-group-case-studies">Synthesis Group Case Studies</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
+  <li><a href="#data-preparation-1" id="toc-data-preparation-1" class="nav-link" data-scroll-target="#data-preparation-1">Data Preparation</a></li>
+  <li><a href="#data-analysis-1" id="toc-data-analysis-1" class="nav-link" data-scroll-target="#data-analysis-1">Data Analysis</a></li>
   <li><a href="#courses-workshops-and-tutorials" id="toc-courses-workshops-and-tutorials" class="nav-link" data-scroll-target="#courses-workshops-and-tutorials">Courses, Workshops, and Tutorials</a></li>
   <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature">Literature</a></li>
   <li><a href="#other-1" id="toc-other-1" class="nav-link" data-scroll-target="#other-1">Other</a></li>
@@ -559,21 +557,6 @@ What changes were made to data structure, variable formatting, or units in these
 </div>
 </div>
 </section>
-<section id="additional-resources-about-data-preparation" class="level3">
-<h3 class="anchored" data-anchor-id="additional-resources-about-data-preparation">Additional Resources about Data Preparation</h3>
-<p><strong>Data cleaning and filtering resources</strong></p>
-<ul>
-<li>Data cleaning is complicated and varied, and entire books have been written on the subject.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a><a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> For some general considerations on cleaning data, see EDI’s “<a href="https://edirepository.org/resources/cleaning-data-and-quality-control">Cleaning Data and Quality Control</a>” resource</li>
-<li><a href="https://openrefine.org/">OpenRefine</a> is an open-source, cross-platform tool for iterative, scripted data cleaning.</li>
-<li>In the R language, the <code>tidyverse</code> libraries (particularly <code>tidyr</code> and <code>dplyr</code>) are often used for data cleaning, as are additional libraries like <a href="https://sfirke.github.io/janitor/"><code>janitor</code></a>.</li>
-<li>In Python, <code>pandas</code> and <code>numpy</code> libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like <a href="https://pyjanitor-devs.github.io/pyjanitor/"><code>pyjanitor</code></a> (started as a re-implementation of the R version) and <a href="https://docs.cleanlab.ai/stable/index.html"><code>cleanlab</code></a> (geared towards machine learning applications).</li>
-<li>Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham’s <em>R for Data Science</em> book chapter on <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a>,<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> and for python check Wes McKinney’s <em>Python for Data Analysis</em> book chapter on <a href="https://wesmckinney.com/book/data-cleaning">data cleaning and preparation</a>.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></li>
-</ul>
-<p><strong>Data harmonization resources</strong></p>
-<ul>
-<li>For R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham’s <em>R for Data Science</em> book, the chapters on <a href="https://r4ds.hadley.nz/data-transform">data transforms</a> and <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a> are a good place to start. In Wes McKinney’s <em>Python for Data Analysis</em> book, the chapter on <a href="https://wesmckinney.com/book/data-wrangling">data wrangling</a> is helpful.</li>
-</ul>
-</section>
 </section>
 <section id="data-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="data-analysis">Data Analysis</h2>
@@ -583,13 +566,6 @@ What changes were made to data structure, variable formatting, or units in these
 <li><strong>Use version control</strong> as you analyze data.</li>
 <li><strong>Give everyone a chance!</strong> Analyzing data is challenging, exciting, and a great learning opportunity. Having more eyes on the analysis process also helps catch interesting results or subtle errors.</li>
 </ol>
-<section id="additional-resources-about-data-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="additional-resources-about-data-analysis">Additional Resources About Data Analysis</h3>
-<ul>
-<li>Harrer, M. <em>et al.</em> <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/">Doing Meta-Analysis with R: A Hands-On Guide</a>. <strong>2023</strong>. <em>GitHub</em></li>
-<li>Once again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham’s <em>R for Data Science</em> book, the chapter on <a href="https://r4ds.hadley.nz/eda">exploratory data analysis</a> will help. In McKinney’s <em>Python for Data Analysis</em> book, try the chapters on <a href="https://wesmckinney.com/book/plotting-and-visualization">plotting and visualization</a> and <a href="https://wesmckinney.com/book/modeling">the introduction to modeling</a>.</li>
-</ul>
-</section>
 </section>
 <section id="synthesis-group-case-studies" class="level2">
 <h2 class="anchored" data-anchor-id="synthesis-group-case-studies">Synthesis Group Case Studies</h2>
@@ -645,6 +621,28 @@ What changes were made to data structure, variable formatting, or units in these
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
+<section id="data-preparation-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-preparation-1">Data Preparation</h3>
+<p><strong>Data cleaning and filtering resources</strong></p>
+<ul>
+<li>Data cleaning is complicated and varied, and entire books have been written on the subject.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a><a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> For some general considerations on cleaning data, see EDI’s “<a href="https://edirepository.org/resources/cleaning-data-and-quality-control">Cleaning Data and Quality Control</a>” resource</li>
+<li><a href="https://openrefine.org/">OpenRefine</a> is an open-source, cross-platform tool for iterative, scripted data cleaning.</li>
+<li>In the R language, the <code>tidyverse</code> libraries (particularly <code>tidyr</code> and <code>dplyr</code>) are often used for data cleaning, as are additional libraries like <a href="https://sfirke.github.io/janitor/"><code>janitor</code></a>.</li>
+<li>In Python, <code>pandas</code> and <code>numpy</code> libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like <a href="https://pyjanitor-devs.github.io/pyjanitor/"><code>pyjanitor</code></a> (started as a re-implementation of the R version) and <a href="https://docs.cleanlab.ai/stable/index.html"><code>cleanlab</code></a> (geared towards machine learning applications).</li>
+<li>Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham’s <em>R for Data Science</em> book chapter on <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a>,<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> and for python check Wes McKinney’s <em>Python for Data Analysis</em> book chapter on <a href="https://wesmckinney.com/book/data-cleaning">data cleaning and preparation</a>.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></li>
+</ul>
+<p><strong>Data harmonization resources</strong></p>
+<ul>
+<li>For R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham’s <em>R for Data Science</em> book, the chapters on <a href="https://r4ds.hadley.nz/data-transform">data transforms</a> and <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a> are a good place to start. In Wes McKinney’s <em>Python for Data Analysis</em> book, the chapter on <a href="https://wesmckinney.com/book/data-wrangling">data wrangling</a> is helpful.</li>
+</ul>
+</section>
+<section id="data-analysis-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis-1">Data Analysis</h3>
+<ul>
+<li>Harrer, M. <em>et al.</em> <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/">Doing Meta-Analysis with R: A Hands-On Guide</a>. <strong>2023</strong>. <em>GitHub</em></li>
+<li>Once again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham’s <em>R for Data Science</em> book, the chapter on <a href="https://r4ds.hadley.nz/eda">exploratory data analysis</a> will help. In McKinney’s <em>Python for Data Analysis</em> book, try the chapters on <a href="https://wesmckinney.com/book/plotting-and-visualization">plotting and visualization</a> and <a href="https://wesmckinney.com/book/modeling">the introduction to modeling</a>.</li>
+</ul>
+</section>
 <section id="courses-workshops-and-tutorials" class="level3">
 <h3 class="anchored" data-anchor-id="courses-workshops-and-tutorials">Courses, Workshops, and Tutorials</h3>
 <ul>
@@ -666,7 +664,7 @@ What changes were made to data structure, variable formatting, or units in these
 <section id="other-1" class="level3">
 <h3 class="anchored" data-anchor-id="other-1">Other</h3>
 <ul>
-<li><a href="https://www.conventionalcommits.org/en/v1.0.0/?utm_source=pocket_mylist">Conventional Commits</a></li>
+<li>Better commit messages with <a href="https://www.conventionalcommits.org/en/v1.0.0/?utm_source=pocket_mylist">Conventional Commits</a></li>
 </ul>
 
 
