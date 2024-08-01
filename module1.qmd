@@ -180,22 +180,55 @@ The process can be as simple as taking 15 minutes to ask the group about their s
 
 ## From Biodiversity on a Changing Planet working group (PI: Peter Adler)
 
+This version is simplest and most appropiate when your group has some shared history and mainly needs a reminder to attend to their share values. Even so, be sure to leave enough time and space for participants to add new ideas or concerns. Offer some basic starting point values and norms, then ask the group to add any that haven't been raised yet. Record the results and return to them at the start of meetings.
+
+#### Group Values
+
+-  Inclusion
+-  Creative Thinking
+-  Teamwork
+-  Accountability
+-  Fun
+
+What else?
+
 :::
 
 ::: {.callout-note icon=false collapse="true"}
 
-### From Response Diversity Network workshop
+### From Response Diversity Network Workshop
+
+#### Community Rules for Inclusive and Productive Discussions
+
+-  We are all responsible for cultivating a respectful and inclusive atmosphere to benefit from our diverse community of participants.
+-  Listen with curiosity and resilience, not judgement.
+-  Assume the best of intentions.
+-  Allow others to participate and avoid dominating the conversation.
+-  Accept/meet people where they are.
+-  Bring a spirit of generosity (for yourself and others).
+-  Be kind to yourself.
+-  Support learning.
+-  Be attentive to power and privilege.
+-  Enjoy yourself!
 
 :::
 
 ::: {.callout-note icon=false collapse="true"}
 ### From Entering Mentoring (CIMER)
 
-For longer collaborations with more challenging power dynamics, it may be worth engaging in a slightly more involved process. In workshops run by the Center for Improved Mentoring of Experiences in Research (CIMER), a facilitator presents a set of group behaviors categorized as group-oriented or self-oriented. Participants break into small groups and self identify their top go-to behavior in each category. The exercise presents an opportunity for self-reflection and for participants to commit to (and ask for help in) curbing their unhelpful behaviors. After all, we all have them!
+For longer collaborations with more challenging power dynamics, it may be worth engaging in a slightly more involved process. In workshops run by the Center for Improved Mentoring of Experiences in Research (CIMER), a facilitator presents a set of group behaviors categorized as group-oriented or self-oriented.
 
 <p align="center"/>
 <img src="images/supporting-group-norms.png" alt="table of group-oriented and self-oriented behaviors" width="80%"/>
 </p>
+
+Break onto small groups and discuss the following questions:
+
+1.  What are some strategies to maximize group-oriented & minimize self-oriented behaviors?
+1.  Are there special considerations for an online space? How can group dynamics be different in an online vs. face-to-face environment?
+1.  How can we leverage our knowledge of group behaviors as we work together during this workshop?
+
+The exercise presents an opportunity for self-reflection and for participants to commit to (and ask for help in) curbing their unhelpful behaviors. After all, we all have them!
 
 :::
 
