@@ -328,25 +328,6 @@ There are many, many other possible harmonized data formats. Here are a few poss
 
 :::
 
-### Additional Resources about Data Preparation
-
-**Data cleaning and filtering resources**
-
-* Data cleaning is complicated and varied, and entire books have been written on the subject.[^9][^10] For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
-* [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
-* In the R language, the `tidyverse` libraries (particularly `tidyr` and `dplyr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
-* In Python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
-* Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's *R for Data Science* book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy),[^11] and for python check Wes McKinney's *Python for Data Analysis* book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).[^12]
-
-[^9]: Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.
-[^10]: Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley & Sons, 2018. https://doi.org/10.1002/9781118897126
-[^11]: Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. " O'Reilly Media, Inc.", 2023. https://r4ds.hadley.nz/
-[^12]: McKinney, Wes. Python for data analysis. " O'Reilly Media, Inc.", 2022. https://wesmckinney.com/book
-
-**Data harmonization resources**
-
-* For R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham's *R for Data Science* book, the chapters on [data transforms](https://r4ds.hadley.nz/data-transform) and [data tidying](https://r4ds.hadley.nz/data-tidy) are a good place to start. In Wes McKinney's *Python for Data Analysis* book, the chapter on [data wrangling](https://wesmckinney.com/book/data-wrangling) is helpful.
-
 ## Data Analysis
 
 Once the team has found sufficient source data, then cleaned, filtered, and harmonized countless datasets, and documented and described everything with quality metadata, it is finally time to analyze the data! Great! Load up R or Python and get started, and then tell us how it goes. We simply don't have enough time to cover all the ins and outs of data analysis in a three-hour course. However, we have put a few helpful resources below to get you started, and many of the best practices we have talked about, or will talk about, apply:
@@ -354,11 +335,6 @@ Once the team has found sufficient source data, then cleaned, filtered, and harm
 1. **Document your analysis steps and comment your code**, and generally try to make everything reproducible.
 2. **Use version control** as you analyze data.
 3. **Give everyone a chance!** Analyzing data is challenging, exciting, and a great learning opportunity. Having more eyes on the analysis process also helps catch interesting results or subtle errors.
-
-### Additional Resources About Data Analysis
-
-* Harrer, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2023**. _GitHub_
-* Once again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham's *R for Data Science* book, the chapter on [exploratory data analysis](https://r4ds.hadley.nz/eda) will help. In McKinney's *Python for Data Analysis* book, try the chapters on [plotting and visualization](https://wesmckinney.com/book/plotting-and-visualization) and [the introduction to modeling](https://wesmckinney.com/book/modeling).
 
 ## Synthesis Group Case Studies
 
@@ -414,6 +390,30 @@ For more information about LTER synthesis working groups and how you can get inv
 
 ## Additional Resources
 
+### Data Preparation
+
+**Data cleaning and filtering resources**
+
+* Data cleaning is complicated and varied, and entire books have been written on the subject.[^9][^10] For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
+* [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
+* In the R language, the `tidyverse` libraries (particularly `tidyr` and `dplyr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
+* In Python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
+* Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's *R for Data Science* book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy),[^11] and for python check Wes McKinney's *Python for Data Analysis* book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).[^12]
+
+[^9]: Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.
+[^10]: Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley & Sons, 2018. https://doi.org/10.1002/9781118897126
+[^11]: Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. " O'Reilly Media, Inc.", 2023. https://r4ds.hadley.nz/
+[^12]: McKinney, Wes. Python for data analysis. " O'Reilly Media, Inc.", 2022. https://wesmckinney.com/book
+
+**Data harmonization resources**
+
+* For R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham's *R for Data Science* book, the chapters on [data transforms](https://r4ds.hadley.nz/data-transform) and [data tidying](https://r4ds.hadley.nz/data-tidy) are a good place to start. In Wes McKinney's *Python for Data Analysis* book, the chapter on [data wrangling](https://wesmckinney.com/book/data-wrangling) is helpful.
+
+### Data Analysis
+
+* Harrer, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2023**. _GitHub_
+* Once again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham's *R for Data Science* book, the chapter on [exploratory data analysis](https://r4ds.hadley.nz/eda) will help. In McKinney's *Python for Data Analysis* book, try the chapters on [plotting and visualization](https://wesmckinney.com/book/plotting-and-visualization) and [the introduction to modeling](https://wesmckinney.com/book/modeling).
+
 ### Courses, Workshops, and Tutorials
 
 - [Synthesis Skills for Early Career Researchers](https://lter.github.io/ssecr/) (SSECR) course. **2024**. LTER Network Office
@@ -430,4 +430,4 @@ For more information about LTER synthesis working groups and how you can get inv
 
 ### Other
 
-- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/?utm_source=pocket_mylist)
+- Better commit messages with [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/?utm_source=pocket_mylist)
