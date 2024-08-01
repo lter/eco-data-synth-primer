@@ -369,10 +369,10 @@ We've pulled together a few of the forms that we have use to keep track of the d
 **Sample spreadsheet for initial data surveying**
 
 ```{=html}
-<iframe width="780" height="500" src="https://docs.google.com/document/d/1PrhX8Yk9oW_sGJeCAs95ylGu7aGcwBsB/view" title="Sample spreadsheet for initial data surveying"></iframe>
+<iframe width="780" height="500" src="https://docs.google.com/document/d/1PrhX8Yk9oW_sGJeCAs95ylGu7aGcwBsB/edit?usp=sharing&ouid=109813107716810976634&rtpof=true&sd=true" title="Sample spreadsheet for initial data surveying"></iframe>
 ```
 
-Once you get into the details of the process, you'll want to track some more specific information
+Once you get into the details of the process, you'll want to track some more specific information, but you'll hear more about that in Module 2.
 
 -  URL to the data (and metadata) source
 -  Sampling location and site (including both coordinates and associated organizations)
@@ -386,3 +386,5 @@ Once you get into the details of the process, you'll want to track some more spe
 -  Working group participant who got the data (Name)
 -  Used in your analysis? (Y/N)
 -  Any additional notes or decisions about *how* the data is or will be harmonized and analyzed
+
+## [Proceed to Module 2](https://lter.github.io/eco-data-synth-primer/module2.html)
