@@ -23,13 +23,13 @@ Instructors will cover assembling the team, study design, communication, collect
 
 This agenda is subject to change!
 
-| Timing (PT) |               Content                |
-|:-----------:|:------------------------------------:|
-|   1-1:15p   |       Welcome & Introductions        |
-| 1:15-2:15p  | Module 1: Starting with Team Science |
-|   2:15-3p   |   Module 2: Operational Synthesis    |
-|   3-3:15p   |               **Break**                |
-|   3:15-4p   |   Module 3: Tying It All Together    |
+| Timing (PT)   |               Content                |
+|:-------------:|:------------------------------------:|
+| 1:00 - 1:15p  |       Welcome & Introductions        |
+| 1:15 - 2:15p  | Module 1: Starting with Team Science |
+| 2:15 - 3:00p  |   Module 2: Operational Synthesis    |
+| 3:00 - 3:15p  |               **Break**              |
+| 3:15 - 4:00p  |   Module 3: Tying It All Together    |
 
 ## Introductions & Icebreaker
 
