@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lter.github.io/eco-data-synth-primer/people.html</loc>
-    <lastmod>2024-08-02T01:36:55.940Z</lastmod>
+    <loc>https://lter.github.io/eco-data-synth-primer/module1.html</loc>
+    <lastmod>2024-08-02T15:46:30.049Z</lastmod>
   </url>
   <url>
     <loc>https://lter.github.io/eco-data-synth-primer/index.html</loc>
-    <lastmod>2024-08-02T01:36:55.936Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/eco-data-synth-primer/contributing.html</loc>
-    <lastmod>2024-08-02T01:36:55.888Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/eco-data-synth-primer/module3.html</loc>
-    <lastmod>2024-08-02T01:36:55.936Z</lastmod>
+    <lastmod>2024-08-02T15:46:30.049Z</lastmod>
   </url>
   <url>
     <loc>https://lter.github.io/eco-data-synth-primer/module2.html</loc>
-    <lastmod>2024-08-02T01:36:55.936Z</lastmod>
+    <lastmod>2024-08-02T15:46:30.053Z</lastmod>
   </url>
   <url>
-    <loc>https://lter.github.io/eco-data-synth-primer/module1.html</loc>
-    <lastmod>2024-08-02T01:36:55.936Z</lastmod>
+    <loc>https://lter.github.io/eco-data-synth-primer/people.html</loc>
+    <lastmod>2024-08-02T15:46:30.053Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/eco-data-synth-primer/module3.html</loc>
+    <lastmod>2024-08-02T15:46:30.053Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/eco-data-synth-primer/contributing.html</loc>
+    <lastmod>2024-08-02T15:46:30.001Z</lastmod>
   </url>
 </urlset>
