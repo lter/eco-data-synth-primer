@@ -21,7 +21,7 @@ Icon legend: {{< fa globe >}} = website | {{< fa brands google scholar >}} = pub
 - **Nick J Lyon** (_they/them_) -- LTER Network Office | [{{< fa globe >}}](https://njlyon0.github.io/) [{{< fa brands github >}}](https://github.com/njlyon0) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3905-1078)
 - **Gregory Maurer** (_he/him_) -- | [{{< fa globe >}}](https://greg.pronghorns.net/) [{{< fa brands github >}}](https://github.com/gremau) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
 - **Colin Smith**
-- **Eric Sokol**
+- **Eric Sokol** (_he/him_) -- [NEON](https://www.neonscience.org/) | [{{< fa globe >}}](https://www.neonscience.org/person/eric-sokol) [{{< fa brands github >}}](https://github.com/sokole) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5923-0917)
 - **Alexandra (Sasha) Wright**
 
 ## Other Contributors
