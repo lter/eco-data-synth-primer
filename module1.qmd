@@ -92,13 +92,10 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 
 While it is certainly possible to conduct synthesis with no external support, a bit of funding will allow your group to travel to meet up in person and can, in some cases, provide salary support for postdocs, grad students or or assistance with analysis.
 
-::: {.callout-note icon="pencil" collapse="true"}
+::: {.callout-note icon="dollar-sign" collapse="true"}
+**Discuss: What funding sources support synthesis work?**
 
-### Discussion Question
-
-> **What funding sources support synthesis work?**
-
-### Sources of Funding and Support
+**Sources of Funding and Support**
 
 **Synthesis Centers**
 
