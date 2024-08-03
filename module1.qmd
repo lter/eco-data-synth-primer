@@ -150,7 +150,7 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
     -  Senior investigators connect the team to existing literature and fields of study, connect to a broad network of experienced researchers, and have good knowledge of resources, but are often have a very limited amount of time to devorte to discussion and analyses
     -  Junior team members often bring a fresh perspective, familiarity with newer literature, strong coding skills, and time to devote to the project
 -  Emotional intelligence
-    -  Research shows (add ref) that the bump in creativity seen in mixed-gender teams is typically due to an increase in emotional intelligence and attention to team dynamics. Include at least a few people with a process orientation and strong people skills.
+    -  Research shows (Aggarwal and Woolley, 2018) that the bump in creativity seen in mixed-gender teams is typically due to an increase in emotional intelligence and attention to team dynamics. Include at least a few people with a process orientation and strong people skills.
 -  Power dynamics
     -  You won't be able to anticipate all of the issues related to power dynamics that can arise, but keep them front of mind as you assemble a team. 
 -  Remember that participation in synthesis represents a significant career opportunity
