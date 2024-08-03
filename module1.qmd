@@ -248,6 +248,12 @@ The exercise presents an opportunity for self-reflection and for participants to
 -  Create a shared vision for your group
     -  Make sure everyone starts on the same footing with a brief overview of the context for the group and the questions you're starting with
 -  Co-develop group norms. It builds ownership of shared norms.
+-  **Develop an authorship policy**
+    -  What contributions warrant [authorship on a paper](https://docs.google.com/spreadsheets/d/1gDVFEKrw2hSc_x433n1B0TC1h5mk9q7Gi141Nq2nf4E/edit?usp=sharing)? Collecting data? Contributing data? Being part of a discussion that sparked the idea? Developing figures? 
+    -  But also, how do group members learn that a paper is being developed? 
+        -  Can all group members opt-in to any paper?
+        -  Or is everyone an author until they opt out?
+        -  Network and [group authorship policies](https://lter.github.io/som-website/authorship.html) are more complex than tallying contributions to a single paper. 
 -  Conduct a “pre-mortem” to talk about worries and visions for a healthy group dynamic
 -  Recognize who you are as a group, culturally, and any power dynamics that might entail
     -  Sometimes, simply articulating the potential for oppressive power dynamics can give group members the confidence to assert themselves
@@ -327,6 +333,7 @@ There are a few ethical and practical guidelines that will save you a lot of tro
 
 -  Data sources should always be cited
 -  Keep track of your data sources (sources, permissions, notes, related metadata, what’s included)
+-  Keep the data that everyone is uding in one place (single source of truth)
 -  Communicate with data creators whenever possible 
     -  This doesn't need to be onerous and it can uncover issues and opportunities associated with data sources. 
 
