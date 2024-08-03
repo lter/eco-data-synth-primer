@@ -112,8 +112,9 @@ This is an EDI dataset is from the SoDaH (Soil Data Harmonization) LTER working 
 Myctobase is a global database of mesopelagic fish data.
 
 - Link to a descriptive data paper in Scientific Data is clear.
-- There are three tables and they 
-- Data provenance is not very clear.
+- There are three tables and they described in the metadata, and metadata are provided in a separate Excel file.
+- Taxonomic names have been standardized and checked.
+- Data provenance is not very clear. Did the data come from other published sources like those in the reference list, or are there contributed data too?
 
 :::
 
@@ -180,14 +181,14 @@ Published datasets should include a license in every copy of the metadata that d
 
 Assembling metadata should be an integral part of the data synthesis activities discussed in Module 2, and can even be built-in to the workflow and project management practices of a project. **Make sure to plan for and start creating metadata early** in a synthesis project. Below are a few ways to do that.
 
-1. Keep a detailed project log and populate it with metadata for the project, including information like
+1. **Keep a detailed project log and populate it with metadata for the project, including information like:**
     a. what source data the team is using and where they came from.
     b. how data are being analyzed and methods used to create derived products.
     c. who is doing what.
-2. Start creating distinct publishable datasets (data plus metadata) as data are processed and analyzed. The team can do this
+2. **Start creating distinct publishable datasets (data plus metadata) as data are processed and analyzed.** The team can do this:
     a. locally, using a labeled directory for the cleaned, harmonized, of derived data, along with related code and metadata files. Metadata files may be plain text, or use [a metadata template](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx).
     b. with a repository-based metadata editor, such as [ezEML](https://ezeml.edirepository.org) from the Environmental Data Initiative (EDI) repository.
-3. Get a professional data manager or data curator involved with the synthesis project. For example, the LTER Network has a community of "Information Managers" [^10] trained in data management, metadata creation, and data publishing. Research data repositories[^11] and associated data curators[^12] may also be a good resource. 
+3. **Get a professional data manager or data curator involved with the synthesis project**. For example, the LTER Network has a community of "Information Managers" [^10] trained in data management, metadata creation, and data publishing. Research data repositories[^11] and associated data curators[^12] may also be a good resource. 
 
 [^10]: [List of LTER Information Managers](https://lternet.edu/using-lter-data/#im)
 [^11]: [The Registry of Research Data Repositories (re3data.org)](https://www.re3data.org/)
@@ -239,10 +240,11 @@ There are many, many research data repositories available to researchers now[^11
 2. How specialized are your data? Do they fall into a common data type or follow a special formatting standard?
 3. Will the data be updated regularly?
 4. Does the repository charge for publication?
+5. **Will the dataset benefit from some level of peer review?**
 
 ![A limited slice from the broad spectrum of research data repositories available for publishing synthesis data. These repositories are weighted towards those based in the U.S.A. ([re3data.org](https://www.re3data.org) has a comprehensive list). Also note that the FAIR spectrum below refers primarily to repository requirements. It is possible, but not always required, to include detailed, community-standard metadata in generalist repositories.](images/repository_spectrum.png){width=90%}
 
-After making a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult a project data manager if one is available to the synthesis team.
+ More specialized repositories tend to offer enhanced documentation, custom software tools, and **data curation staff that will review submitted data and assist users with data publication**. Selecting a data repository with metadata requirements or standards, and a review and curation process for submissions, will help ensure that you are publishing a more FAIR data product. Consulting a project data manager if one is available to the synthesis team will also help with repository selection. After making a choice, the process of publishing data varies from repository to repository.
 
 
 ### Additional Data Publishing Resources
@@ -274,7 +276,7 @@ Even for data users or interested parties who will not directly use the code, a 
 ::: {.panel-tabset}
 ### Discussion question
 
-> What features of published code would let you assess whether it is useful for your purposes?
+> **What features of published code would let you assess whether it is useful for your purposes?**
 
 ### Some ideas
 
@@ -285,15 +287,15 @@ Even for data users or interested parties who will not directly use the code, a 
 
 :::
 
-In other parts of the course, we have strongly recommended using version control and collaboration platforms, particulary GitHub. GitHub provides some options for sharing & publishing code, but lets explore some others too.
+In other parts of the course, we have strongly recommended using version control and collaboration platforms, particulary GitHub. GitHub's platform provides several options for sharing & publishing code, but lets explore some others too.
 
 ::: {.panel-tabset}
 
 ### GitHub
 
-[GitHub](https://github.com) is a huge, and widely used platform for sharing code (among many other services). In combination with other software and services, GitHub can be reliably used to publish scientific code in a reproducible way.
+[GitHub](https://github.com) is huge and widely used for sharing code (among many other services). In combination with other software and services, GitHub can be reliably used to publish scientific code in a reproducible way.
 
-Some features:
+**Some features:**
 
 * Zenodo integration is already included in GitHub,[^14] which can make it fairly easy to publish a repository with a DOI.
 * Large array of project management features.
@@ -304,7 +306,7 @@ Some features:
 
 The [NEON Code Hub](https://www.neonscience.org/resources/code-hub) is a good example of a research network focused code repository.
 
-Some features:
+**Some features:**
 
 * Focus is on code useful for working with NEON data.
 * Review and placement of submitted code.
@@ -313,7 +315,7 @@ Some features:
 
 [ROpenSci](https://ropensci.org) publishes R packages for scientific applications.
 
-Some features:
+**Some features:**
 
 * Wide array of R packages useful for working with scientific data.
 * Team provides review and vetting of the code before publication.
@@ -323,7 +325,7 @@ Some features:
 
 The [Python Package Index](https://pypi.org) (PyPI) is the most widely used venue for publishing Python packages. 
 
-Some features:
+**Some features:**
 
 * Python compatibility checks are performed and metadata about the code resource are required.
 
@@ -331,9 +333,17 @@ Some features:
 
 The [Comprehensive R Archive Network](https://cran.r-project.org) is a widely used resource for publishing R packages.
 
-Some features:
+**Some features:**
 
 * R compatibility checks are performed and metadata about the code resource are required.
+
+:::
+
+::: {.callout-note}
+
+#### Key insight
+
+**Peer review is valuable for all research outputs.** We expect a peer review process for journal articles, but published datasets and code can undergo peer review as well. As with manuscripts, the review process for data and code leads to higher quality, more useful products.
 
 :::
 
@@ -438,7 +448,7 @@ Form breakout groups and course instructors will assign each one a link to a pro
 
 ### Cracking the case
 
-This is the "community dynamics" synthesis working group.
+This is the "community dynamics" synthesis working group that was at least partly supported by 
 
 *Papers*
 
@@ -468,7 +478,7 @@ There is a paper describing the R package
 
 ### Cracking the case
 
-This is the CoRRE synthesis working group. The group's website lays out many of the products.
+This is the CoRRE synthesis working group., which has been supported bu iDiv and LTER (and possibly others). The group's website lays out many of the products fairly clearly, though it may not be perfectly up-to-date.
 
 *Papers*
 
@@ -476,7 +486,7 @@ This is the CoRRE synthesis working group. The group's website lays out many of 
 - Wilcox, K. R., Tredennick, A. T., Koerner, S. E., Grman, E., Hallett, L. M., Avolio, M. L., ... & Zhang, Y. (2017). Asynchrony among local communities stabilises ecosystem function of metacommunities. Ecology letters, 20(12), 1534-1545.
 - Langley, J. A., Chapman, S. K., La Pierre, K. J., Avolio, M., Bowman, W. D., Johnson, D. S., ... & Tilman, D. (2018). Ambient changes exceed treatment effects on plant species abundance in global change experiments. Global Change Biology, 24(12), 5668-5679.
 - Komatsu, K. J., Avolio, M. L., Lemoine, N. P., Isbell, F., Grman, E., Houseman, G. R., ... & Zhang, Y. (2019). Global change effects on plant communities are magnified by time and the number of global change factors imposed. Proceedings of the National Academy of Sciences, 116(36), 17867-17873. <https://doi.org/10.1073/pnas.1819027116>
-- and quite few more....
+- and quite a few more....
 
 A recent data paper
 
@@ -488,11 +498,11 @@ A recent data paper
 
 *Datasets*
 
-- Other than the data paper above and some associated data in EDI, the data appear to be by request only.
+- Other than the data paper mentioned above and some [associated data in EDI](), the data appear to be by request only.
 
 *Other*
 
-- ...
+- ?
 
 :::
 
@@ -504,7 +514,7 @@ A recent data paper
 
 ### Cracking the case
 
-This is a paper from LTER-supported Silica exports working group. We talked in Module 2 about their repositories and project management practices.
+This is a paper from the LTER-supported Silica exports working group. We talked in Module 2 about their repositories and project management practices.
 
 *Papers*
 
@@ -538,7 +548,7 @@ There are several GitHub repositories. The first one listed is a guide to others
 
 ### Cracking the case
 
-This is a paper describing an early effort to create a harmonized, global ocean oxygen product.
+This is a paper describing an early effort to create a harmonized, global ocean oxygen product. It was published in 2021, and there is currently not much other information about progress on the effort.
 
 *Papers*
 
@@ -634,11 +644,12 @@ Examples:
   
 ### Project websites
 
-At a certain point, the outputs of a synthesis project can become numerous and challenging to present to the public in an organized way. Project websites can serve as a gateway to an entire synthesis project by providing comprehensive listings of project outputs (papers, datasets, GitHub repositories, etc), a narrative for the research, appealing images or graphics for outreach, and links to related projects, funders, or institutions. [GitHub Pages](https://pages.github.com/) sites are a common solution for creating simple, cost-effective (free, usually) project websites nowadays, but there are other options. A good project website can become a cohesive, engaging clearinghouse for information about a synthesis project, but they can become laborious to create and keep up-to-date.
+At a certain point, the outputs of a synthesis project can become numerous and challenging to present to the public in an organized way. Project websites can serve as a gateway to an entire synthesis project by providing comprehensive listings of project outputs (papers, datasets, GitHub repositories, etc), a narrative for the research, appealing images or graphics for outreach, and links to related projects, funders, or institutions. [GitHub Pages](https://pages.github.com/) sites are a common solution for creating simple, cost-effective (free, usually) project websites nowadays, but there are other options. A good project website can become a cohesive, engaging clearinghouse for information about a synthesis project, but they can be laborious to create and keep up-to-date.
 
 Examples:
 
   - [The Portal Project](https://portal.weecology.org/)
+  - [The SoDaH project]().
   - [The CoRRE project](https://corredata.weebly.com/)
 
 :::
@@ -655,7 +666,7 @@ Persistent identifiers, or [PIDs](https://en.wikipedia.org/wiki/Persistent_ident
 - [Open Researcher and Contributor ID](https://orcid.org/) (ORCID), used to identify individuals, usually in the context of research or publishing activities.
 - [Research Organization Registry](https://ror.org/) (ROR), used to identify organizations, also in the context of research and publishing, primarily.
 
-These identifiers can and should be associated with all journal articles and published datasets resulting from synthesis projects. DOIs and ORCIDs can easily used code products or associated with GitHub repositories as well.
+These identifiers can and should be associated with all journal articles and published datasets resulting from synthesis projects. DOIs and ORCIDs can easily be associated with GitHub and other code repositories as well.
 
 #### Citing synthesis products
 
@@ -683,15 +694,35 @@ As we discussed in Module 1, starting a synthesis project benefits from motivati
 
 ### Give everyone credit
 
-Everyone deserves credit for the work they do, and in academic environments, this is too often overlooked. Synthesis working groups commonly begin without any dedicated personnel support, which means that some participants, usually early-career scientists, will be contributing unpaid time to the project. In the absence of pay, leaders of a synthesis team should take the initiative to make sure everyone receives appropriate credit and opportunities for career advancement when they contribute to the project. Here are a few ways to do that
+Everyone deserves credit for the work they do, and in academic environments this is too often overlooked. Synthesis working groups commonly begin without any dedicated personnel support, which means that some participants, usually early-career scientists, will be contributing unpaid time to the project. In the absence of pay, leaders of a synthesis team should take the initiative to make sure everyone receives appropriate credit and opportunities for career advancement when they contribute to the project. Below are a few thoughts on how to do that.
 
-- Make sure all contributors have an [ORCID](https://orcid.org/register). They are easy to obtain.
-- Use ORCIDs whenever contributors are associated with a research product (if possible). 
-- Define the type of contributions team members have made
-    - Decide this in advance.
-    - The [CRediT framework](https://credit.niso.org/) is a good starting point.
+:::{.panel-tabset}
 
-If there is no formal credit mechanism available (such as for a website), list each contributor by name, along with affiliations, bios, links to other profiles, and other information as desired.
+### **Do's**
+
+- Discuss and define in advance some of the contributions team members will make.
+  - This is particularly important for deciding authorship of journal articles.
+  - The [CRediT framework](https://credit.niso.org/) is a good starting point.
+  - More detail on this is in [Module 1](module1.qmd).
+- Be willing to credit participants for a wide variety of contributions.
+  - This includes writing code, cleaning data, taking meeting notes, and more.
+- Make sure all contributors have an [ORCID](https://orcid.org/register). They are easy to obtain and widely used.
+- Use ORCIDs to associate contributors with a research product whenever possible.
+- List contributors on websites, GitHub repositories, and other public-facing team materials.
+  - Its nice to include affiliations, bios, links to profile pages, and other information too.
+
+### **Don'ts**
+
+- Don't rely on any one metric for valuing contributions to the team.
+  - Code commits in GitHub, for example, may reflect the input of many people besides the one that actually wrote and committed the code.
+- Don't forget students, technicians, early-career scientists, and others.
+- Don't forget to put your name on your work!
+
+### **Discuss**
+
+> **What are we missing here?**
+
+:::
 
 ### Encourage new contributions
 
@@ -703,9 +734,14 @@ Interests and commitment to synthesis projects change over time. To sustain acti
 
 ### Find monetary support
 
-Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to support dedicated personnel time.
+Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to keep scientists engaged and support for dedicated personnel time.
 
-- Refer to funding sources in Module 1
-- Personnel support may need to come from larger grants.
+- Explore and apply to the funding sources presentied in [Module 1](module1.qmd).
+  - Personnel support may need to come from larger grants since working group funding often provides only meeting support.
+- Think creatively about how to involve students and postdocs in synthesis projects.
+  - If student/postdoc research interests & plans overlap, dedicating some time to synthesis group work can lead to career-building opportunities (networking, high-impact papers).
+- Promote the synthesis team's work!
+  - It is difficult to attract interest and new resources to a project without this.
+  
 
 
