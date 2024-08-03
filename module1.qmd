@@ -174,7 +174,7 @@ In any team project, people have different reasons for wanting to participate - 
 
 > Importance of various benefits to working group participants
 
-::: {.callout-note title="Time Commitments"}
+::: {.callout-tip title="Time Commitments"}
 
 We all  misjudge our availability once in a while, but consistently failing to deliver on commitments disrupts others' work plans and is a major source of group dissatisfaction. Get buy-in for commitments and plan for both reminders and accountability. 
 :::
@@ -337,7 +337,7 @@ There are a few ethical and practical guidelines that will save you a lot of tro
 
 :::
 
-::: {.callout-tip totle="Sample data author outreach email for unpublished dataset" collapse="true"}
+::: {.callout-tip title="Sample data author outreach email for unpublished dataset" collapse="true"}
 
 >Dear Dr. Smith, 
 >
