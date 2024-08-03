@@ -37,7 +37,8 @@ This process--of bringing diverse expertise together to combine existing primary
 ### Additional Resources
 
 * [Adam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups](https://doi.org/10.1038/d41586-023-03618-x)
-* [Hackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science](https://doi.org/10.3390/su12229361)
+*  Cheruvelil, K. S., & Soranno, P. A. (2018). [Data-Intensive Ecological Research Is Catalyzed by Open Science and Team Science](https://doi.org/10.1093/biosci/biy097). BioScience, 68(10), 813–822. https://doi.org/10.1093/biosci/biy097
+*  [Hackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science](https://doi.org/10.3390/su12229361)
 * [Hampton and Parker, 2011. Collaboration and Productivity in Scientific Synthesis](https://doi.org/10.1525/bio.2011.61.11.9)
 * [Hackett et al., 2021. Do synthesis centers synthesize? A semantic analysis of topical diversity in research](https://doi.org/10.1016/j.respol.2020.104069)
 *  [Wyborn et al., 2018. Understanding the Impacts of Research Synthesis](https://doi.org/10.1016/j.envsci.2018.04.013)
@@ -158,8 +159,10 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 
 **Additional Resources**
 
-Horowitz, S.K. and Horwitz, I.B. (2007) The effects of team diversity on team outcomes: A meta-analytic  review of team demography. Journal of Management 33: 987-1015. DOI: 10.1177/0149206307308587
-Aggarwal, I. & Woolley, A.W. (2018) Team Creativity, Cognition, and Cognitive Style Diversity. Management Science 65(4):1586-1599. DOI: 10.1287/mnsc.2017.3001
+-  Aggarwal, I. & Woolley, A.W. (2018) [Team Creativity, Cognition, and Cognitive Style Diversity](https://doi.org/10.1287/mnsc.2017.3001). Management Science 65(4):1586-1599. DOI: 10.1287/mnsc.2017.3001
+-  Cheruvelil, K.S. et al. (2014) [Creating and maintaining high-performing collaborative research teams: the importance of diversity and interpersonal skills](https://doi.org/10.1890/130001). DOI: 10.1890/130001
+-  Horowitz, S.K. and Horwitz, I.B. (2007) [The effects of team diversity on team outcomes: A meta-analytic review of team demography](https://doi.org/10.1177/0149206307308587). Journal of Management 33: 987-1015. DOI: 10.1177/0149206307308587
+- Woolley, A. W. et al. (2010). [Evidence for a Collective Intelligence Factor in the Performance of Human Groups](https://doi.org/10.1126/science.1193147). Science, 330(6004), 686–688. https://doi.org/10.1126/science.1193147
 
 ## Setting Expectations
 
