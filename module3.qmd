@@ -42,7 +42,6 @@ The FAIR principles were first defined in the paper by Wilkinson et al (2018)[^1
 
 :::
 
-
 ### Activity 1: Evaluate published datasets
 
 Lets start our journey to publishing datasets by looking at some that are already published. Form breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:
@@ -55,89 +54,82 @@ Lets start our journey to publishing datasets by looking at some that are alread
 :::{.panel-tabset}
 ### Group 1
 
-**Example dataset:** <https://doi.org/10.6073/pasta/9733f6b6d2ffd12bf126dc36a763e0b4>
-
-This is an EDI dataset is from the SoDaH (Soil Data Harmonization) LTER working group.
+**Example dataset:** Jarzyna, M.A., K.E. Norman, J.M. LaMontagne, M.R. Helmus, D. Li, S.M. Parker, M. Perez Rocha, S. Record, E.R. Sokol, P. Zarnetske, and T.D. Surasinghe. 2021. temporalNEON: Repository containing raw and cleaned-up organismal data from the National Ecological Observatory Network (NEON) useful for evaluating the links between change in biodiversity and ecosystem stability ver 1. Environmental Data Initiative. <https://doi.org/10.6073/pasta/7f0e0598132e3fea1bfd36a4257af643>.
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Observations from the instructors
 
-This dataset provides a nice example of a harmonized data product that includes **provenance metadata**. We'll talk a little more about this later, but note that all the original data sources are linked to this dataset on the landing page.
+This dataset is published in the EDI repository and comes from a synthesis group that harmonized NEON data to examine synchrony and stability in communities.
 
-- ...
-- ...
-- ...
+- Raw data, processed data, and the R code for the processing steps are all published together here.
+- Useful metadata on the geographic, temporal, and spatial coverage of the dataset are included.
+- A couple areas for improvement would be that the Abstract and Methods are a bit short on details, and no ORCIDs have been included for contributors.
 
 :::
 
 ### Group 2
 
-**Example dataset:** <https://doi.org/10.5061/dryad.v2k2607>
-
-This is a Dryad dataset from a synthesis paper about oligotrophication.
+**Example dataset:** Craine, Joseph M. et al. (2019). Data from: Isotopic evidence for oligotrophication of terrestrial ecosystems [Dataset]. Dryad. <https://doi.org/10.5061/dryad.v2k2607>
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Observations from the instructors
 
-This dataset
+This dataset contains a harmonized dataset from a global study of oligotrophication (declining nutrient availability) in terrestrial ecosystems. Included in the dataset are a combined data file with values from many data sources, and the R code to analyze the combined data and create figures used in a related paper.
 
-- ...
-- ...
-- ...
+- It is easy to find the "related work" from the Dryad dataset because the DOI appears on the landing page. The DOI (<https://doi.org/10.1038/s41559-018-0694-0>) points to the paper that used and cited this dataset, and this paper has some detail about the data sources and methods for assembling the combined dataset. 
+- In theory it should be possible to reproduce the figures presented in the text using the R code provided.
+- Without having access to the related paper above, it would be difficult, or potentially impossible, to understand and use the CSV published in Dryad because few descriptive metadata are provided there. Though this appears to be a harmonized dataset, without the paper it is also unclear the origin of the source data, and how they have been changed to generate the harmonized CSV. Knowing important information like units, categorical code meanings, original data sources, and methods of harmonization might require contacting the authors. There withou
 
 :::
 
 ### Group 3
 
-**Example dataset:** 
-
-Maybe this: https://portal.edirepository.org/nis/mapbrowse?packageid=edi.493.16 (needs editing)
-
-Maybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)
+**Example dataset:** Wieder, W.R., D. Pierson, S.R. Earl, K. Lajtha, S. Baer, F. Ballantyne, A.A. Berhe, S. Billings, L.M. Brigham, S.S. Chacon, J. Fraterrigo, S.D. Frey, K. Georgiou, M. de Graaff, A.S. Grandy, M.D. Hartman, S.E. Hobbie, C. Johnson, J. Kaye, E. Snowman, M.E. Litvak, M.C. Mack, A. Malhotra, J.A.M. Moore, K. Nadelhoffer, C. Rasmussen, W.L. Silver, B.N. Sulman, X. Walker, and S. Weintraub. 2020. SOils DAta Harmonization database (SoDaH): an open-source synthesis of soil data from research networks ver 1. Environmental Data Initiative. <https://doi.org/10.6073/pasta/9733f6b6d2ffd12bf126dc36a763e0b4>
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Observations from the instructors
 
-This dataset
+This is an EDI dataset is from the SoDaH (Soil Data Harmonization) LTER working group. It provides a nice example of a harmonized data product that also includes **provenance metadata**. We'll talk a little more about this later, but note that all the original data sources are linked to this dataset on the landing page.
 
-- ...
-- ...
-- ...
+- Data provenance is clear and extensive, and the geographic coverage adds useful detail.
+- There are many, many variables available in the dataset, most having to do with soil data and where that data came from.
+- The methods provide adequate information about how the data were harmonized. Links to related journal articles should provide examples of how those data can be used.
+- The flattened database table format probably isn't very space efficient, but should be fairly easy to use once you understand the columns.
 
 :::
 
 ### Group 4
 
-**Example dataset:**
+**Example dataset:** Woods, B., Trebilco, R., Walters, A., Hindell, M., Duhamel, G., Flores, H., Moteki, M., Pruvost, P., Reiss, C., Saunders, R., Sutton, C., & Van de Putte, A. (2021). Myctobase (1.1) [Data set]. Zenodo. <https://doi.org/10.5281/zenodo.6131579>
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Observations from the instructors
 
-This dataset
+Myctobase is a global database of mesopelagic fish data.
 
-- ...
-- ...
-- ...
+- Link to a descriptive data paper in Scientific Data is clear.
+- There are three tables and they 
+- Data provenance is not very clear.
 
 :::
 
 ### Group 5
 
-**Example dataset:**
+**Example dataset:** Ross, C.W., L. Prihodko, J.Y. Anchang, S.S. Kumar, W. Ji, and N.P. Hanan. 2018. Global Hydrologic Soil Groups (HYSOGs250m) for Curve Number-Based Runoff Modeling. ORNL DAAC, Oak Ridge, Tennessee, USA. <https://doi.org/10.3334/ORNLDAAC/1566> (2018)
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Observations from the instructors
 
-This dataset
+This dataset seems like a reasonably good example of a published, global-scale spatial data synthesis product.
 
-- ...
-- ...
-- ...
+- The R code is published with the data.
+- Provenance of the source data is reasonably clear in the User Guide.
+- The ORNL DAAC repository provides extensive metadata and good tools to preview and access the data. It is login only.
 
 :::
 
@@ -206,7 +198,7 @@ Assembling metadata should be an integral part of the data synthesis activities 
 
 #### Key insight
 
-**Reproducibility and the collection of metadata are closely related.** Your team's detailed documentation of the research process allows for reproducible science, and can be mined as a source of metadata during data publication.
+**Reproducibility and the creation of metadata are closely related.** Your team's detailed documentation of the research process allows for reproducible science, and can be mined as a source of metadata during data publication.
 
 :::
 
@@ -248,7 +240,7 @@ There are many, many research data repositories available to researchers now[^11
 3. Will the data be updated regularly?
 4. Does the repository charge for publication?
 
-![A limited slice from the broad spectrum of research data repositories available for publishing synthesis data.](images/repository_spectrum.png){width=90%}
+![A limited slice from the broad spectrum of research data repositories available for publishing synthesis data. These repositories are weighted towards those based in the U.S.A. ([re3data.org](https://www.re3data.org) has a comprehensive list). Also note that the FAIR spectrum below refers primarily to repository requirements. It is possible, but not always required, to include detailed, community-standard metadata in generalist repositories.](images/repository_spectrum.png){width=90%}
 
 After making a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult a project data manager if one is available to the synthesis team.
 
@@ -262,20 +254,87 @@ After making a choice, the process of publishing data varies from repository to 
 
 ## Sharing the Team's Workflow
 
-One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. Workflows may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Sharing workflows and code are one of the most important needs for ensuring the reproducibility of science.
+One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below), with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for examples,[^13] but this practice is also generally applicable to synthesis research.
 
-Publishing the workflow also gives interested parties an understanding of...
+[^13]: White EP, Yenni GM, Taylor SD, et al. Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104 
 
-* the origin of the data.
-* the process used for data cleaning, harmonization, analysis, and presentation of results (figures), which may be useful in future work.
-* how the workflow was developed or changed over time.
-* the contributions made by the team.
+Sharing and citing workflows and code are an essential element of reproducible science because they:
 
-In other parts of the course, we have strongly recommended using version control and collaboration platforms to manage coding, writing, and other elements of the synthesis team workflow. In particular, we have focused on using GitHub as a one-stop shop for many of these tasks. In combination with other software and services, GitHub can be reliably used to publish workflows as well. By using repositories to archive GitHub content and issue a DOI (Zenodo integration is already included in GitHub)[^13] linked to a particular version of the code, workflows can be published and cited by the research products that they were used to generate. This is commonly done in near-term ecological forecasting projects [^14].
+1. Cite the exact process used to prepare and analyze data 
+2. Create a repeatable method to integrate or analyze new data
+3. Allow other scientists to verify results
 
-[^13]: [GitHub documentation for referencing and citing content](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
-[^14]: White EP, Yenni GM, Taylor SD, et al. Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104 
+Even for data users or interested parties who will not directly use the code, a published workflow provides information about:
 
+* The origin of the data.
+* Methods for data cleaning, harmonization, analysis, and presentation of results (figures), which may be adaptable to future work
+* How the workflow was developed or changed over time
+* The contributions made by the team
+
+::: {.panel-tabset}
+### Discussion question
+
+> What features of published code would let you assess whether it is useful for your purposes?
+
+### Some ideas
+
+* Clear documentation and examples provided
+* Commenting in the code
+* Tests and build indicators
+* Publication in a repository that provides review (more on this below)
+
+:::
+
+In other parts of the course, we have strongly recommended using version control and collaboration platforms, particulary GitHub. GitHub provides some options for sharing & publishing code, but lets explore some others too.
+
+::: {.panel-tabset}
+
+### GitHub
+
+[GitHub](https://github.com) is a huge, and widely used platform for sharing code (among many other services). In combination with other software and services, GitHub can be reliably used to publish scientific code in a reproducible way.
+
+Some features:
+
+* Zenodo integration is already included in GitHub,[^14] which can make it fairly easy to publish a repository with a DOI.
+* Large array of project management features.
+
+[^14]: [GitHub documentation for referencing and citing content](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
+
+### NEON Code Hub
+
+The [NEON Code Hub](https://www.neonscience.org/resources/code-hub) is a good example of a research network focused code repository.
+
+Some features:
+
+* Focus is on code useful for working with NEON data.
+* Review and placement of submitted code.
+
+### ROpenSci
+
+[ROpenSci](https://ropensci.org) publishes R packages for scientific applications.
+
+Some features:
+
+* Wide array of R packages useful for working with scientific data.
+* Team provides review and vetting of the code before publication.
+
+### PyPI
+
+The [Python Package Index](https://ropensci.org) (PyPI) is the most widely used venue for publishing Python packages. 
+
+Some features:
+
+* Python compatibility checks are performed and metadata about the code resource are required.
+
+### CRAN
+
+The [Comprehensive R Archive Network](https://cran.r-project.org) is the most widely used resource for publishing R packages. Packages are assesed for R version compatibility upon publication.
+
+Some features:
+
+* R compatibility checks are performed and metadata about the code resource are required.
+
+:::
 
 ## Communicating Research Results
 
@@ -372,13 +431,13 @@ Form breakout groups and course instructors will assign each one a link to a pro
 ::: {.panel-tabset}
 ### Group 1
 
-**Clue:** SoDAH
+**Clue:** https://cran.r-project.org/web/packages/codyn/index.html
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Cracking the case
 
-This is the SoDAH LTER synthesis working group. The group
+This is the "community dynamics" synthesis working group.
 
 *Papers*
 
@@ -462,13 +521,13 @@ This is the silica exports working group. The group
 
 ### Group 4
 
-**Clue:**
+**Clue:** https://doi.org/10.3389/fmars.2021.724913 
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Cracking the case
 
-This is the...
+This is a paper describing an early effort to create a harmonized, global ocean oxygen product.
 
 *Papers*
 
@@ -592,9 +651,9 @@ The best way to ensure that use of a research product is recognized is through p
 :::{.panel-tabset}
 ### A useful data availability statement
 
-From Currier and Sala 2022[^16]. Note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list. The DOIs included here are helpful for quickly finding the data.
+From Currier and Sala 2022[^16]. Note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list (not shown). The DOIs included here are helpful for quickly finding the data.
 
-> All original and derived phenology data produced by the authors, and R scripts for data processing, statistical analyses, and figure production are publicly available in the Environmental Data Initiative (EDI) repository. EDI package knb-lter-jrn.210574001.2 (Currier & Sala, 2022a) contains daily phenocam image data and derived timeseries and associated scripts for processing and is available at <https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640>. EDI package knb-lter-jrn.210574002.2 (Currier & Sala, 2022b) contains observed phenological indicators and environmental drivers as well as associated scripts for final analyses and figure construction presented in this manuscript and these data are available at <https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29>. No novel code was generated by the authors of this manuscript. The precipitation data used in all analyses are derived from G-BASN data in EDI package knb-lter-jrn.210520001 (Yao et al., 2020) available at <https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f>. Daily air temperature summaries from 4 June 1914 to the present for the Jornada Experimental Range Headquarters (NOAA station GHCND:USC00294426) are freely available upon request via the National Ocean and Atmospheric Administration (<https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail>).
+> All original and derived phenology data produced by the authors, and R scripts for data processing, statistical analyses, and figure production are publicly available in the Environmental Data Initiative (EDI) repository. EDI package knb-lter-jrn.210574001.2 (Currier & Sala, 2022a) contains daily phenocam image data, derived timeseries and associated scripts for processing and is available at <https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640>. EDI package knb-lter-jrn.210574002.2 (Currier & Sala, 2022b) contains observed phenological indicators and environmental drivers as well as associated scripts for final analyses and figure construction presented in this manuscript and these data are available at <https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29>. No novel code was generated by the authors of this manuscript. The precipitation data used in all analyses are derived from G-BASN data in EDI package knb-lter-jrn.210520001 (Yao et al., 2020) available at <https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f>. Daily air temperature summaries from 4 June 1914 to the present for the Jornada Experimental Range Headquarters (NOAA station GHCND:USC00294426) are freely available upon request via the National Ocean and Atmospheric Administration (<https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail>).
 
 [^16]:  Currier, Courtney M., and Osvaldo E. Sala. 2022. “ Precipitation versus Temperature as Phenology Controls in Drylands.” Ecology 103(11): e3793. https://doi.org/10.1002/ecy.3793
 
@@ -623,11 +682,11 @@ If there is no formal credit mechanism available (such as for a website), list e
 
 ### Encourage new contributions
 
-Interests and commitment to synthesis projects change over time. To sustain active research in the team, and with the data, make sure new people can find a way to contribute.
+Interests and commitment to synthesis projects change over time. To sustain active research contributions by the team, and continued use of the data, make sure new people can find a way to participate.
 
 - Provide a path for new data contributions. This follows from making the data preparation/harmonization workflow reproducible.
-- Have open meetings when possible.
-- Give new team members the freedom and support to lead analyses and papers.
+- Have open meetings when possible to help bring in new team members that are interested and willing to contribute.
+- Give all team members the freedom and support to lead analyses, papers, and other valuable project activities.
 
 ### Find monetary support
 
