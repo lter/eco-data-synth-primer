@@ -242,8 +242,7 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Group 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Group 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Group 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Group 4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Group 5</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><strong>Example dataset:</strong> <a href="https://doi.org/10.6073/pasta/9733f6b6d2ffd12bf126dc36a763e0b4" class="uri">https://doi.org/10.6073/pasta/9733f6b6d2ffd12bf126dc36a763e0b4</a></p>
-<p>This is an EDI dataset is from the SoDaH (Soil Data Harmonization) LTER working group.</p>
+<p><strong>Example dataset:</strong> Jarzyna, M.A., K.E. Norman, J.M. LaMontagne, M.R. Helmus, D. Li, S.M. Parker, M. Perez Rocha, S. Record, E.R. Sokol, P. Zarnetske, and T.D. Surasinghe. 2021. temporalNEON: Repository containing raw and cleaned-up organismal data from the National Ecological Observatory Network (NEON) useful for evaluating the links between change in biodiversity and ecosystem stability ver 1. Environmental Data Initiative. <a href="https://doi.org/10.6073/pasta/7f0e0598132e3fea1bfd36a4257af643" class="uri">https://doi.org/10.6073/pasta/7f0e0598132e3fea1bfd36a4257af643</a>.</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -256,19 +255,18 @@ Observations from the instructors
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This dataset provides a nice example of a harmonized data product that includes <strong>provenance metadata</strong>. We’ll talk a little more about this later, but note that all the original data sources are linked to this dataset on the landing page.</p>
+<p>This dataset is published in the EDI repository and comes from a synthesis group that harmonized NEON data to examine synchrony and stability in communities.</p>
 <ul>
-<li>…</li>
-<li>…</li>
-<li>…</li>
+<li>Raw data, processed data, and the R code for the processing steps are all published together here.</li>
+<li>Useful metadata on the geographic, temporal, and spatial coverage of the dataset are included.</li>
+<li>A couple areas for improvement would be that the Abstract and Methods are a bit short on details, and no ORCIDs have been included for contributors.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><strong>Example dataset:</strong> <a href="https://doi.org/10.5061/dryad.v2k2607" class="uri">https://doi.org/10.5061/dryad.v2k2607</a></p>
-<p>This is a Dryad dataset from a synthesis paper about oligotrophication.</p>
+<p><strong>Example dataset:</strong> Craine, Joseph M. et al.&nbsp;(2019). Data from: Isotopic evidence for oligotrophication of terrestrial ecosystems [Dataset]. Dryad. <a href="https://doi.org/10.5061/dryad.v2k2607" class="uri">https://doi.org/10.5061/dryad.v2k2607</a></p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -281,20 +279,18 @@ Observations from the instructors
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This dataset</p>
+<p>This dataset contains a harmonized dataset from a global study of oligotrophication (declining nutrient availability) in terrestrial ecosystems. Included in the dataset are a combined data file with values from many data sources, and the R code to analyze the combined data and create figures used in a related paper.</p>
 <ul>
-<li>…</li>
-<li>…</li>
-<li>…</li>
+<li>It is easy to find the “related work” from the Dryad dataset because the DOI appears on the landing page. The DOI (<a href="https://doi.org/10.1038/s41559-018-0694-0" class="uri">https://doi.org/10.1038/s41559-018-0694-0</a>) points to the paper that used and cited this dataset, and this paper has some detail about the data sources and methods for assembling the combined dataset.</li>
+<li>In theory it should be possible to reproduce the figures presented in the text using the R code provided.</li>
+<li>Without having access to the related paper above, it would be difficult, or potentially impossible, to understand and use the CSV published in Dryad because few descriptive metadata are provided there. Though this appears to be a harmonized dataset, without the paper it is also unclear the origin of the source data, and how they have been changed to generate the harmonized CSV. Knowing important information like units, categorical code meanings, original data sources, and methods of harmonization might require contacting the authors. There withou</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p><strong>Example dataset:</strong></p>
-<p>Maybe this: https://portal.edirepository.org/nis/mapbrowse?packageid=edi.493.16 (needs editing)</p>
-<p>Maybe this: https://doi.org/10.6084/m9.figshare.10735652.v1 (but pretty bad)</p>
+<p><strong>Example dataset:</strong> Wieder, W.R., D. Pierson, S.R. Earl, K. Lajtha, S. Baer, F. Ballantyne, A.A. Berhe, S. Billings, L.M. Brigham, S.S. Chacon, J. Fraterrigo, S.D. Frey, K. Georgiou, M. de Graaff, A.S. Grandy, M.D.&nbsp;Hartman, S.E. Hobbie, C. Johnson, J. Kaye, E. Snowman, M.E. Litvak, M.C. Mack, A. Malhotra, J.A.M. Moore, K. Nadelhoffer, C. Rasmussen, W.L. Silver, B.N. Sulman, X. Walker, and S. Weintraub. 2020. SOils DAta Harmonization database (SoDaH): an open-source synthesis of soil data from research networks ver 1. Environmental Data Initiative. <a href="https://doi.org/10.6073/pasta/9733f6b6d2ffd12bf126dc36a763e0b4" class="uri">https://doi.org/10.6073/pasta/9733f6b6d2ffd12bf126dc36a763e0b4</a></p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -307,18 +303,19 @@ Observations from the instructors
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This dataset</p>
+<p>This is an EDI dataset is from the SoDaH (Soil Data Harmonization) LTER working group. It provides a nice example of a harmonized data product that also includes <strong>provenance metadata</strong>. We’ll talk a little more about this later, but note that all the original data sources are linked to this dataset on the landing page.</p>
 <ul>
-<li>…</li>
-<li>…</li>
-<li>…</li>
+<li>Data provenance is clear and extensive, and the geographic coverage adds useful detail.</li>
+<li>There are many, many variables available in the dataset, most having to do with soil data and where that data came from.</li>
+<li>The methods provide adequate information about how the data were harmonized. Links to related journal articles should provide examples of how those data can be used.</li>
+<li>The flattened database table format probably isn’t very space efficient, but should be fairly easy to use once you understand the columns.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p><strong>Example dataset:</strong></p>
+<p><strong>Example dataset:</strong> Woods, B., Trebilco, R., Walters, A., Hindell, M., Duhamel, G., Flores, H., Moteki, M., Pruvost, P., Reiss, C., Saunders, R., Sutton, C., &amp; Van de Putte, A. (2021). Myctobase (1.1) [Data set]. Zenodo. <a href="https://doi.org/10.5281/zenodo.6131579" class="uri">https://doi.org/10.5281/zenodo.6131579</a></p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -331,18 +328,18 @@ Observations from the instructors
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This dataset</p>
+<p>Myctobase is a global database of mesopelagic fish data.</p>
 <ul>
-<li>…</li>
-<li>…</li>
-<li>…</li>
+<li>Link to a descriptive data paper in Scientific Data is clear.</li>
+<li>There are three tables and they</li>
+<li>Data provenance is not very clear.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-<p><strong>Example dataset:</strong></p>
+<p><strong>Example dataset:</strong> Ross, C.W., L. Prihodko, J.Y. Anchang, S.S. Kumar, W. Ji, and N.P. Hanan. 2018. Global Hydrologic Soil Groups (HYSOGs250m) for Curve Number-Based Runoff Modeling. ORNL DAAC, Oak Ridge, Tennessee, USA. <a href="https://doi.org/10.3334/ORNLDAAC/1566" class="uri">https://doi.org/10.3334/ORNLDAAC/1566</a> (2018)</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -355,11 +352,11 @@ Observations from the instructors
 </div>
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This dataset</p>
+<p>This dataset seems like a reasonably good example of a published, global-scale spatial data synthesis product.</p>
 <ul>
-<li>…</li>
-<li>…</li>
-<li>…</li>
+<li>The R code is published with the data.</li>
+<li>Provenance of the source data is reasonably clear in the User Guide.</li>
+<li>The ORNL DAAC repository provides extensive metadata and good tools to preview and access the data. It is login only.</li>
 </ul>
 </div>
 </div>
@@ -428,7 +425,7 @@ Key insight
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Reproducibility and the collection of metadata are closely related.</strong> Your team’s detailed documentation of the research process allows for reproducible science, and can be mined as a source of metadata during data publication.</p>
+<p><strong>Reproducibility and the creation of metadata are closely related.</strong> Your team’s detailed documentation of the research process allows for reproducible science, and can be mined as a source of metadata during data publication.</p>
 </div>
 </div>
 </section>
@@ -475,7 +472,7 @@ Key insight
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/repository_spectrum.png" class="img-fluid figure-img" style="width:90.0%"></p>
-<figcaption>A limited slice from the broad spectrum of research data repositories available for publishing synthesis data.</figcaption>
+<figcaption>A limited slice from the broad spectrum of research data repositories available for publishing synthesis data. These repositories are weighted towards those based in the U.S.A. (<a href="https://www.re3data.org">re3data.org</a> has a comprehensive list). Also note that the FAIR spectrum below refers primarily to repository requirements. It is possible, but not always required, to include detailed, community-standard metadata in generalist repositories.</figcaption>
 </figure>
 </div>
 <p>After making a choice, the process of publishing data varies from repository to repository. More specialized repositories tend to offer enhanced documentation, custom software tools, or even data curation staff to assist users with data publication. It also helps to consult a project data manager if one is available to the synthesis team.</p>
@@ -491,15 +488,82 @@ Key insight
 </section>
 <section id="sharing-the-teams-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="sharing-the-teams-workflow">Sharing the Team’s Workflow</h2>
-<p>One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. Workflows may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Sharing workflows and code are one of the most important needs for ensuring the reproducibility of science.</p>
-<p>Publishing the workflow also gives interested parties an understanding of…</p>
+<p>One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below), with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for examples,<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> but this practice is also generally applicable to synthesis research.</p>
+<p>Sharing and citing workflows and code are an essential element of reproducible science because they:</p>
+<ol type="1">
+<li>Cite the exact process used to prepare and analyze data</li>
+<li>Create a repeatable method to integrate or analyze new data</li>
+<li>Allow other scientists to verify results</li>
+</ol>
+<p>Even for data users or interested parties who will not directly use the code, a published workflow provides information about:</p>
 <ul>
-<li>the origin of the data.</li>
-<li>the process used for data cleaning, harmonization, analysis, and presentation of results (figures), which may be useful in future work.</li>
-<li>how the workflow was developed or changed over time.</li>
-<li>the contributions made by the team.</li>
+<li>The origin of the data.</li>
+<li>Methods for data cleaning, harmonization, analysis, and presentation of results (figures), which may be adaptable to future work</li>
+<li>How the workflow was developed or changed over time</li>
+<li>The contributions made by the team</li>
 </ul>
-<p>In other parts of the course, we have strongly recommended using version control and collaboration platforms to manage coding, writing, and other elements of the synthesis team workflow. In particular, we have focused on using GitHub as a one-stop shop for many of these tasks. In combination with other software and services, GitHub can be reliably used to publish workflows as well. By using repositories to archive GitHub content and issue a DOI (Zenodo integration is already included in GitHub)<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> linked to a particular version of the code, workflows can be published and cited by the research products that they were used to generate. This is commonly done in near-term ecological forecasting projects <a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Discussion question</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Some ideas</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<blockquote class="blockquote">
+<p>What features of published code would let you assess whether it is useful for your purposes?</p>
+</blockquote>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<ul>
+<li>Clear documentation and examples provided</li>
+<li>Commenting in the code</li>
+<li>Tests and build indicators</li>
+<li>Publication in a repository that provides review (more on this below)</li>
+</ul>
+</div>
+</div>
+</div>
+<p>In other parts of the course, we have strongly recommended using version control and collaboration platforms, particulary GitHub. GitHub provides some options for sharing &amp; publishing code, but lets explore some others too.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">GitHub</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">NEON Code Hub</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">ROpenSci</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false">PyPI</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false">CRAN</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p><a href="https://github.com">GitHub</a> is a huge, and widely used platform for sharing code (among many other services). In combination with other software and services, GitHub can be reliably used to publish scientific code in a reproducible way.</p>
+<p>Some features:</p>
+<ul>
+<li>Zenodo integration is already included in GitHub,<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> which can make it fairly easy to publish a repository with a DOI.</li>
+<li>Large array of project management features.</li>
+</ul>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>The <a href="https://www.neonscience.org/resources/code-hub">NEON Code Hub</a> is a good example of a research network focused code repository.</p>
+<p>Some features:</p>
+<ul>
+<li>Focus is on code useful for working with NEON data.</li>
+<li>Review and placement of submitted code.</li>
+</ul>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p><a href="https://ropensci.org">ROpenSci</a> publishes R packages for scientific applications.</p>
+<p>Some features:</p>
+<ul>
+<li>Wide array of R packages useful for working with scientific data.</li>
+<li>Team provides review and vetting of the code before publication.</li>
+</ul>
+</div>
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<p>The <a href="https://ropensci.org">Python Package Index</a> (PyPI) is the most widely used venue for publishing Python packages.</p>
+<p>Some features:</p>
+<ul>
+<li>Python compatibility checks are performed and metadata about the code resource are required.</li>
+</ul>
+</div>
+<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
+<p>The <a href="https://cran.r-project.org">Comprehensive R Archive Network</a> is the most widely used resource for publishing R packages. Packages are assesed for R version compatibility upon publication.</p>
+<p>Some features:</p>
+<ul>
+<li>R compatibility checks are performed and metadata about the code resource are required.</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 <section id="communicating-research-results" class="level2">
 <h2 class="anchored" data-anchor-id="communicating-research-results">Communicating Research Results</h2>
@@ -555,15 +619,15 @@ Data paper examples and publication venues
 <h3 class="anchored" data-anchor-id="writing-collaboratively">Writing collaboratively</h3>
 <p>Writing a paper with a large team can be a challenge. It is important to encourage team members to contribute in a way they are comfortable with, but there is the potential for technical, editorial, and personal conflict without some prior planning. Practically, there are two models for writing a manuscript with a bunch of contributors.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Cloud-based collaborative writing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">“Pass the manuscript”</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Cloud-based collaborative writing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">“Pass the manuscript”</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <p>In this model manuscripts live mainly in web-based writing platforms managed by a cloud service provider (e.g.&nbsp;Google Docs) and all contributors write and edit the document within that platform. Contributions may be asynchronous or synchronous since version control and conflict resolution is generally built into the platform. Most platforms have additional collaboration features, such as user account management, suggested edits, and commenting systems.</p>
 <p><strong>Software platform:</strong> Google Docs, Microsoft 365 Online, Overleaf (LaTeX)<br>
 <strong>Pros:</strong> Strong collaboration features (user/permission management, contribution tracking, comments and suggestions). No need to distribute copies and then merge contributions.<br>
 <strong>Cons:</strong> Can be unfamiliar to senior contributors. Easy to lose track of links. Limited formatting features compared to local word processors. Privacy/tracking concerns.</p>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
 <p>This model relies on word processing software installed on contributors’ local machines. Copies of the manuscript are distributed to contributors for asynchronous writing and editing assignments, and contributions are then merged together into a synchronized version of the manuscript. In large teams, it may be best to have one person managing the copy/merge process.</p>
 <p><strong>Software platform:</strong> Microsoft Word (usually), email<br>
 <strong>Pros:</strong> Familiar to most. Integrates with local data management practices. Most word processors have powerful collaboration and versioning features now. Advanced formatting and editing. Less reliance on cloud providers.<br>
@@ -611,10 +675,10 @@ Data paper examples and publication venues
 <li>Could you understand the overall scope and impact of the synthesis project? Why or why not?</li>
 </ol>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Group 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Group 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Group 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false">Group 4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false">Group 5</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Group 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Group 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">Group 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false">Group 4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false">Group 5</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<p><strong>Clue:</strong> SoDAH</p>
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<p><strong>Clue:</strong> https://cran.r-project.org/web/packages/codyn/index.html</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -627,7 +691,7 @@ Cracking the case
 </div>
 <div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This is the SoDAH LTER synthesis working group. The group</p>
+<p>This is the “community dynamics” synthesis working group.</p>
 <p><em>Papers</em></p>
 <ul>
 <li>…</li>
@@ -650,7 +714,7 @@ Cracking the case
 </div>
 </div>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
 <p><strong>Clue:</strong> https://corredata.weebly.com/</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
@@ -687,7 +751,7 @@ Cracking the case
 </div>
 </div>
 </div>
-<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
 <p><strong>Clue:</strong> https://github.com/lter/lterwg-silica-data</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
@@ -724,8 +788,8 @@ Cracking the case
 </div>
 </div>
 </div>
-<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
-<p><strong>Clue:</strong></p>
+<div id="tabset-6-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-4-tab">
+<p><strong>Clue:</strong> https://doi.org/10.3389/fmars.2021.724913</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -738,7 +802,7 @@ Cracking the case
 </div>
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This is the…</p>
+<p>This is a paper describing an early effort to create a harmonized, global ocean oxygen product.</p>
 <p><em>Papers</em></p>
 <ul>
 <li>…</li>
@@ -761,7 +825,7 @@ Cracking the case
 </div>
 </div>
 </div>
-<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
+<div id="tabset-6-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-5-tab">
 <p><strong>Clue:</strong></p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
@@ -806,9 +870,9 @@ Cracking the case
 <p><img src="images/mod3_more_products.png" alt="Three circles labeled 'data', 'results' and 'analytical workflow', plus many more possible products" style="float: right" width="50%"></p>
 <p>We’ve talked about the three most common products of synthesis: papers, datasets, and workflows. But, we’ve also seen that there are plenty of other ways to share synthesis research! Education and outreach can become an important goal in for some synthesis teams, and providing access to data and actionable research results, such as forecasts, can be very useful to stakeholders. As time goes, on synthesis teams may produce many things that meet these goals and needs, moving well beyond the three kinds of products we’ve already talked about. See below for a few ideas and examples.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Teaching materials</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Web apps</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Automation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">Project websites</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">Teaching materials</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">Web apps</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false">Automation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-4" role="tab" aria-controls="tabset-7-4" aria-selected="false">Project websites</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
 <p>Synthesis research produces new scientific knowledge that other researchers, students, or stakeholders can learn and build on. Synthesis can also generate applied-science tools and methods that others need to learn how to use for themselves. Teaching modules are an important way of sharing both of these outcomes, and of broadening the reach of a synthesis project.</p>
 <p>Examples:</p>
 <ul>
@@ -816,7 +880,7 @@ Cracking the case
 <li>This website is an example of teaching materials produced by a synthesis team.</li>
 </ul>
 </div>
-<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
 <p>Interactive web applications can provide users with easy access to scientific datasets, especially large ones, analytical results, visualizations, interpretation, and many, many other things. Creating web apps is not necessarily an easy task, but if your synthesis team has the expertise, or access to web developers, web apps may be useful for outreach, or as tools the synthesis team itself can use. Frameworks like <a href="https://shiny.posit.co/">Shiny</a> (for R), <a href="https://streamlit.io">Streamlit</a>, or <a href="https://flask.palletsprojects.com">Flask</a> (both for python), and services like <a href="https://www.shinyapps.io/">Shinyapps.io</a> and <a href="https://plotly.com">Plotly</a>, can make creation of apps relatively painless.</p>
 <p>Examples</p>
 <ul>
@@ -824,7 +888,7 @@ Cracking the case
 <li>The <a href="https://jornada-data.shinyapps.io/jrn_dataviewer/">Jornada LTER interactive viewer</a> for weather station data.</li>
 </ul>
 </div>
-<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
 <p>Some research efforts have developed automation systems for research data processing, analytics, and publishing. These often fall into the “continuous integration/continuous deployment” class of web-enabled software and data pipelines, in which one software processes (data processing, analytics, publication, etc.) may be automatically triggered by events that occur in another, connected software service (such as adding new data to a GitHub repository). These technologies enable researchers to build software pipelines that can be useful for quality control of new data, updating forecasts, and rapid deployment of data or analysis products.</p>
 <p>Examples:</p>
 <ul>
@@ -833,7 +897,7 @@ Cracking the case
 <li><a href="https://flare-forecast.org/">Forecasting Lake and Reservoir Ecosystems</a> (FLARE) project.</li>
 </ul>
 </div>
-<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
+<div id="tabset-7-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-4-tab">
 <p>At a certain point, the outputs of a synthesis project can become numerous and challenging to present to the public in an organized way. Project websites can serve as a gateway to an entire synthesis project by providing comprehensive listings of project outputs (papers, datasets, GitHub repositories, etc), a narrative for the research, appealing images or graphics for outreach, and links to related projects, funders, or institutions. <a href="https://pages.github.com/">GitHub Pages</a> sites are a common solution for creating simple, cost-effective (free, usually) project websites nowadays, but there are other options. A good project website can become a cohesive, engaging clearinghouse for information about a synthesis project, but they can become laborious to create and keep up-to-date.</p>
 <p>Examples:</p>
 <ul>
@@ -861,15 +925,15 @@ Cracking the case
 <h4 class="anchored" data-anchor-id="citing-synthesis-products">Citing synthesis products</h4>
 <p>The best way to ensure that use of a research product is recognized is through proper citation. This is already common practice for journal articles, but is only recently being adopted for published datasets. The most logical place in an article to cite a published dataset is in the Methods section and in the Data Availability Statement, which most reputable journals now require. Be sure to check journal data sharing requirements well in advance so that data publication preparation can begin early enough. <strong>When citing datasets, be sure that the full bibliographic entry is correctly included in the article’s References list.</strong> Citation of code is not as widely practiced, but some journals require it and it is a best practice.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">A useful data availability statement</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Not as helpful</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true">A useful data availability statement</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false">Not as helpful</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
-<p>From Currier and Sala 2022<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>. Note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list. The DOIs included here are helpful for quickly finding the data.</p>
+<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
+<p>From Currier and Sala 2022<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>. Note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list (not shown). The DOIs included here are helpful for quickly finding the data.</p>
 <blockquote class="blockquote">
-<p>All original and derived phenology data produced by the authors, and R scripts for data processing, statistical analyses, and figure production are publicly available in the Environmental Data Initiative (EDI) repository. EDI package knb-lter-jrn.210574001.2 (Currier &amp; Sala, 2022a) contains daily phenocam image data and derived timeseries and associated scripts for processing and is available at <a href="https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640" class="uri">https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640</a>. EDI package knb-lter-jrn.210574002.2 (Currier &amp; Sala, 2022b) contains observed phenological indicators and environmental drivers as well as associated scripts for final analyses and figure construction presented in this manuscript and these data are available at <a href="https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29" class="uri">https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29</a>. No novel code was generated by the authors of this manuscript. The precipitation data used in all analyses are derived from G-BASN data in EDI package knb-lter-jrn.210520001 (Yao et al., 2020) available at <a href="https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f" class="uri">https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f</a>. Daily air temperature summaries from 4 June 1914 to the present for the Jornada Experimental Range Headquarters (NOAA station GHCND:USC00294426) are freely available upon request via the National Ocean and Atmospheric Administration (<a href="https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail" class="uri">https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail</a>).</p>
+<p>All original and derived phenology data produced by the authors, and R scripts for data processing, statistical analyses, and figure production are publicly available in the Environmental Data Initiative (EDI) repository. EDI package knb-lter-jrn.210574001.2 (Currier &amp; Sala, 2022a) contains daily phenocam image data, derived timeseries and associated scripts for processing and is available at <a href="https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640" class="uri">https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640</a>. EDI package knb-lter-jrn.210574002.2 (Currier &amp; Sala, 2022b) contains observed phenological indicators and environmental drivers as well as associated scripts for final analyses and figure construction presented in this manuscript and these data are available at <a href="https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29" class="uri">https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29</a>. No novel code was generated by the authors of this manuscript. The precipitation data used in all analyses are derived from G-BASN data in EDI package knb-lter-jrn.210520001 (Yao et al., 2020) available at <a href="https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f" class="uri">https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f</a>. Daily air temperature summaries from 4 June 1914 to the present for the Jornada Experimental Range Headquarters (NOAA station GHCND:USC00294426) are freely available upon request via the National Ocean and Atmospheric Administration (<a href="https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail" class="uri">https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail</a>).</p>
 </blockquote>
 </div>
-<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
 <blockquote class="blockquote">
 <p>Data used in the figures are included in the supplementary material. The full dataset will be provided upon reasonable request to the corresponding author.</p>
 </blockquote>
@@ -898,11 +962,11 @@ Cracking the case
 </section>
 <section id="encourage-new-contributions" class="level3">
 <h3 class="anchored" data-anchor-id="encourage-new-contributions">Encourage new contributions</h3>
-<p>Interests and commitment to synthesis projects change over time. To sustain active research in the team, and with the data, make sure new people can find a way to contribute.</p>
+<p>Interests and commitment to synthesis projects change over time. To sustain active research contributions by the team, and continued use of the data, make sure new people can find a way to participate.</p>
 <ul>
 <li>Provide a path for new data contributions. This follows from making the data preparation/harmonization workflow reproducible.</li>
-<li>Have open meetings when possible.</li>
-<li>Give new team members the freedom and support to lead analyses and papers.</li>
+<li>Have open meetings when possible to help bring in new team members that are interested and willing to contribute.</li>
+<li>Give all team members the freedom and support to lead analyses, papers, and other valuable project activities.</li>
 </ul>
 </section>
 <section id="find-monetary-support" class="level3">
@@ -934,9 +998,9 @@ Cracking the case
 <li id="fn11"><p><a href="https://www.re3data.org/">The Registry of Research Data Repositories (re3data.org)</a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12"><p><a href="https://datacurationnetwork.org/">Data curation network</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn13"><p><a href="https://www.re3data.org/">The Registry of Research Data Repositories (re3data.org)</a><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">GitHub documentation for referencing and citing content</a><a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>White EP, Yenni GM, Taylor SD, et al.&nbsp;Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn16"><p>White EP, Yenni GM, Taylor SD, et al.&nbsp;Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>White EP, Yenni GM, Taylor SD, et al.&nbsp;Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">GitHub documentation for referencing and citing content</a><a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">GitHub documentation for referencing and citing content</a><a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn17"><p>Kim, A. Y., Herrmann, V., Barreto, R., Calkins, B., Gonzalez-Akre, E., Johnson, D. J., Jordan, J. A., Magee, L., McGregor, I. R., Montero, N., Novak, K., Rogers, T., Shue, J., &amp; Anderson-Teixeira, K. J. (2022). Implementing GitHub Actions continuous integration to reduce error rates in ecological data collection. Methods in Ecology and Evolution, 13, 2572–2585. https://doi.org/10.1111/2041-210X.13982<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn18"><p>Currier, Courtney M., and Osvaldo E. Sala. 2022. “ Precipitation versus Temperature as Phenology Controls in Drylands.” Ecology 103(11): e3793. https://doi.org/10.1002/ecy.3793<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
