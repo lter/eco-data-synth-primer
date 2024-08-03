@@ -93,7 +93,7 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 
 While it is certainly possible to conduct synthesis with no external support, a bit of funding will allow your group to travel to meet up in person and can, in some cases, provide salary support for postdocs, grad students or or assistance with analysis.
 
-::: {.tabset-panel}
+::: {.panel-tabset}
 ### **Discussion Question**
 > What funding sources support synthesis work?
 
@@ -184,7 +184,7 @@ There are many approaches to establishing group norms, but a shared process that
 
 The process can be as simple as taking 15 minutes to ask the group about their shared (and diverging) values and what those imply about how the group should function. The best choice for your group will depend on the mix of participants, the nature of the content, and the duration of your collaboration.
 
-::: {.callout-note icon={< fa dollar-sign >} collapse="true"}
+::: {.callout-note icon=false collapse="true"}
 
 ## From Biodiversity on a Changing Planet working group (PI: Peter Adler)
 
