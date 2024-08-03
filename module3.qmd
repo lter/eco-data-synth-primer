@@ -317,10 +317,11 @@ Some features:
 
 * Wide array of R packages useful for working with scientific data.
 * Team provides review and vetting of the code before publication.
+* Most packages also go to CRAN.
 
 ### PyPI
 
-The [Python Package Index](https://ropensci.org) (PyPI) is the most widely used venue for publishing Python packages. 
+The [Python Package Index](https://pypi.org) (PyPI) is the most widely used venue for publishing Python packages. 
 
 Some features:
 
@@ -328,7 +329,7 @@ Some features:
 
 ### CRAN
 
-The [Comprehensive R Archive Network](https://cran.r-project.org) is the most widely used resource for publishing R packages. Packages are assesed for R version compatibility upon publication.
+The [Comprehensive R Archive Network](https://cran.r-project.org) is a widely used resource for publishing R packages.
 
 Some features:
 
@@ -441,7 +442,7 @@ This is the "community dynamics" synthesis working group.
 
 *Papers*
 
-- ...
+There is a paper describing the R package
 - ...
 - ...
 
@@ -467,21 +468,27 @@ This is the "community dynamics" synthesis working group.
 
 ### Cracking the case
 
-This is the CoRRE synthesis working group. The group
+This is the CoRRE synthesis working group. The group's website lays out many of the products.
 
 *Papers*
 
-- ...
-- ...
-- ...
+- Avolio, M. L., Pierre, K. J. L., Houseman, G. R., Koerner, S. E., Grman, E., Isbell, F., ... & Wilcox, K. R. (2015). A framework for quantifying the magnitude and variability of community responses to global change drivers. Ecosphere, 6(12), 1-14.
+- Wilcox, K. R., Tredennick, A. T., Koerner, S. E., Grman, E., Hallett, L. M., Avolio, M. L., ... & Zhang, Y. (2017). Asynchrony among local communities stabilises ecosystem function of metacommunities. Ecology letters, 20(12), 1534-1545.
+- Langley, J. A., Chapman, S. K., La Pierre, K. J., Avolio, M., Bowman, W. D., Johnson, D. S., ... & Tilman, D. (2018). Ambient changes exceed treatment effects on plant species abundance in global change experiments. Global Change Biology, 24(12), 5668-5679.
+- Komatsu, K. J., Avolio, M. L., Lemoine, N. P., Isbell, F., Grman, E., Houseman, G. R., ... & Zhang, Y. (2019). Global change effects on plant communities are magnified by time and the number of global change factors imposed. Proceedings of the National Academy of Sciences, 116(36), 17867-17873. <https://doi.org/10.1073/pnas.1819027116>
+- and quite few more....
+
+A recent data paper
+
+- Komatsu, K.J., Avolio, M.L., Padullés Cubino, J. et al. CoRRE Trait Data: A dataset of 17 categorical and continuous traits for 4079 grassland species worldwide. Sci Data 11, 795 (2024). <https://doi.org/10.1038/s41597-024-03637-x>
 
 *Workflows*
 
-- ...
+- Nothing public found so far... There may be scripts provided as supplementary files with some publications.
 
 *Datasets*
 
-- ...
+- Other than the data paper above and some associated data in EDI, the data appear to be by request only.
 
 *Other*
 
@@ -491,37 +498,41 @@ This is the CoRRE synthesis working group. The group
 
 ### Group 3
 
-**Clue:** https://github.com/lter/lterwg-silica-data
+**Clue:** <https://doi.org/10.1029/2022GB007678>
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Cracking the case
 
-This is the silica exports working group. The group
+This is a paper from LTER-supported Silica exports working group. We talked in Module 2 about their repositories and project management practices.
 
 *Papers*
 
-- ...
-- ...
-- ...
+The original clue is a paper from this group. Note the data availability statement links to a dataset published with the USGS, and the acknowledgements give some clue as to the LTER support recieved.
 
 *Workflows*
 
-- ...
+There are several GitHub repositories. The first one listed is a guide to others.
+
+- <https://github.com/lter/lterwg-silica-data>
+- <https://github.com/SwampThingPaul/SiSyn>
+- <https://github.com/lsethna/NCEAS_SiSyn_CQ>
+- <https://github.com/lter/lterwg-silica-spatial>
+- <https://github.com/njlyon0/lter_silica-high-latitude>
 
 *Datasets*
 
-- ...
+- Jankowski, K.J., Carey, J.C., Julian, P., Johnson, K., Sethna, L.R., Thomas, P.K., Wymore, A.S., Shogren, A.J., McKnight, D.M., McDowell, W.H., Heindel, R.C., Sullivan, P.L., and Jones, J. B., 2023, Dissolved silicon concentration and yield estimates from streams and rivers in North America and Antarctica,1964-2021: U.S. Geological Survey data release, <https://doi.org/10.5066/P951UKQB>
 
 *Other*
 
-- ...
+- ?
 
 :::
 
 ### Group 4
 
-**Clue:** https://doi.org/10.3389/fmars.2021.724913 
+**Clue:** <https://doi.org/10.3389/fmars.2021.724913>
 
 ::: {.callout-caution collapse="true" icon="false"}
 
@@ -531,51 +542,52 @@ This is a paper describing an early effort to create a harmonized, global ocean 
 
 *Papers*
 
-- ...
-- ...
-- ...
+The original clue is the primary paper describing this effort.
 
 *Workflows*
 
-- ...
+- ???
 
 *Datasets*
 
-- ...
+- ???
 
 *Other*
 
-- ...
+- ???
 
 :::
 
 ### Group 5
 
-**Clue:**
+**Clue:** <https://github.com/sokole/ltermetacommunities>
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Cracking the case
 
-This is the...
+This is the LTER Synthesis group called "Metacommunities"
 
 *Papers*
 
-- ...
-- ...
-- ...
+-  Wisnoski, Nathan I., Riley Andrade, Max C. N. Castorani, Christopher P. Catano, Aldo Compagnoni, Thomas Lamy, Nina K. Lany, et al. 2023. “ Diversity–Stability Relationships across Organism Groups and Ecosystem Types Become Decoupled across Spatial Scales.” Ecology 104(9): e4136. <https://doi.org/10.1002/ecy.4136>
 
 *Workflows*
 
-- ...
+- The original "clue" is a link to GitHub where code is stored.
+- This is one of the LTER-supported synthesis groups that led to the creation of the [ecocomDP](https://ediorg.github.io/ecocomDP/) data model and R package [^15]
 
 *Datasets*
 
-- ...
+There is a dataset in Zenodo
+
+- Nathan I. Wisnoski. (2023). nwisnoski/dsr-metacom: Code for Ecology publication (v1.0.4). Zenodo. <https://doi.org/10.5281/zenodo.8067504>
 
 *Other*
 
-- ...
+- Eric may know more!
+
+[^15]: O'Brien, Margaret, et al. "ecocomDP: a flexible data design pattern for ecological community survey data." Ecological Informatics 64 (2021): 101374.
 
 :::
 
@@ -603,6 +615,7 @@ Interactive web applications can provide users with easy access to scientific da
 
 Examples
 
+  - An app for finding and exploring [ecocomDP data](https://ecocomdp.neonscience.org/) in the NEON and EDI repositories.
   - A [dashboard app](https://projects.ecoforecast.org/neon4cast-dashboard/phenology) for the NEON ecological forecasting challenge.
   - The [Jornada LTER interactive viewer](https://jornada-data.shinyapps.io/jrn_dataviewer/) for weather station data.
   
@@ -613,11 +626,11 @@ Some research efforts have developed automation systems for research data proces
 Examples: 
 
   - The Portal Project in southeast Arizona has developed a well-described [near-term ecological forecasting pipeline](https://portal.naturecast.org/).[^14]
-  - [Automated quality control](https://github.com/SCBI-ForestGEO/Dendrobands) of dendrometer band data.[^15]
+  - [Automated quality control](https://github.com/SCBI-ForestGEO/Dendrobands) of dendrometer band data.[^16]
   - [Forecasting Lake and Reservoir Ecosystems](https://flare-forecast.org/) (FLARE) project.
 
 
-[^15]:  Kim, A. Y., Herrmann, V., Barreto, R., Calkins, B., Gonzalez-Akre, E., Johnson, D. J., Jordan, J. A., Magee, L., McGregor, I. R., Montero, N., Novak, K., Rogers, T., Shue, J., & Anderson-Teixeira, K. J. (2022). Implementing GitHub Actions continuous integration to reduce error rates in ecological data collection. Methods in Ecology and Evolution, 13, 2572–2585. https://doi.org/10.1111/2041-210X.13982 
+[^16]:  Kim, A. Y., Herrmann, V., Barreto, R., Calkins, B., Gonzalez-Akre, E., Johnson, D. J., Jordan, J. A., Magee, L., McGregor, I. R., Montero, N., Novak, K., Rogers, T., Shue, J., & Anderson-Teixeira, K. J. (2022). Implementing GitHub Actions continuous integration to reduce error rates in ecological data collection. Methods in Ecology and Evolution, 13, 2572–2585. https://doi.org/10.1111/2041-210X.13982 
   
 ### Project websites
 
@@ -651,11 +664,11 @@ The best way to ensure that use of a research product is recognized is through p
 :::{.panel-tabset}
 ### A useful data availability statement
 
-From Currier and Sala 2022[^16]. Note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list (not shown). The DOIs included here are helpful for quickly finding the data.
+From Currier and Sala 2022[^17]. Note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list (not shown). The DOIs included here are helpful for quickly finding the data.
 
 > All original and derived phenology data produced by the authors, and R scripts for data processing, statistical analyses, and figure production are publicly available in the Environmental Data Initiative (EDI) repository. EDI package knb-lter-jrn.210574001.2 (Currier & Sala, 2022a) contains daily phenocam image data, derived timeseries and associated scripts for processing and is available at <https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640>. EDI package knb-lter-jrn.210574002.2 (Currier & Sala, 2022b) contains observed phenological indicators and environmental drivers as well as associated scripts for final analyses and figure construction presented in this manuscript and these data are available at <https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29>. No novel code was generated by the authors of this manuscript. The precipitation data used in all analyses are derived from G-BASN data in EDI package knb-lter-jrn.210520001 (Yao et al., 2020) available at <https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f>. Daily air temperature summaries from 4 June 1914 to the present for the Jornada Experimental Range Headquarters (NOAA station GHCND:USC00294426) are freely available upon request via the National Ocean and Atmospheric Administration (<https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail>).
 
-[^16]:  Currier, Courtney M., and Osvaldo E. Sala. 2022. “ Precipitation versus Temperature as Phenology Controls in Drylands.” Ecology 103(11): e3793. https://doi.org/10.1002/ecy.3793
+[^17]:  Currier, Courtney M., and Osvaldo E. Sala. 2022. “ Precipitation versus Temperature as Phenology Controls in Drylands.” Ecology 103(11): e3793. https://doi.org/10.1002/ecy.3793
 
 ### Not as helpful
 
