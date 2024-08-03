@@ -370,7 +370,7 @@ We've pulled together a few of the forms that we have use to keep track of the d
 **Sample spreadsheet for initial data surveying**
 
 ```{=html}
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vTPvbh1UOMQBmmk9M1iWKQj7VPwe476nuQgmuDI9hUkHzFH2EikvrxmaO-nC6iO4LOxUMgH-Lp2WYc6/pub?embedded=true" title="Sample spreadsheet for initial data surveying"></iframe>
+<iframe width=780 height=540 src="https://docs.google.com/document/d/e/2PACX-1vTPvbh1UOMQBmmk9M1iWKQj7VPwe476nuQgmuDI9hUkHzFH2EikvrxmaO-nC6iO4LOxUMgH-Lp2WYc6/pub?embedded=true" title="Sample spreadsheet for initial data surveying"></iframe>
 ```
 
 Once you get into the details of the process, you'll want to track some more specific information, but you'll hear more about that in Module 2.
