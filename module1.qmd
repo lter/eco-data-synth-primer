@@ -93,11 +93,11 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 
 While it is certainly possible to conduct synthesis with no external support, a bit of funding will allow your group to travel to meet up in person and can, in some cases, provide salary support for postdocs, grad students or or assistance with analysis.
 
-::: {.panel-tabset}
-### **Discussion Question**
+::: {.panel-tabset .nav-pills}
+#### **Discussion Question**
 > What funding sources support synthesis work?
 
-### Some Ideas
+#### Some Ideas
 
 **Sources of Funding and Support**
 
@@ -121,14 +121,14 @@ While it is certainly possible to conduct synthesis with no external support, a 
 **NSF Programs**
 
 -  [ULTRA-data Dear Colleague letter](https://www.nsf.gov/pubs/2024/nsf24081/nsf24081.jsp)
--  NSF Core Programs, e.g. [Division of Environmental Biology](https://new.nsf.gov/funding/opportunities/division-environmental-biology-deb): “synthesis activities”, “synthesis projects”
+-  NSF Core Programs, e.g. [Division of Environmental Biology](https://new.nsf.gov/funding/opportunities/division-environmental-biology-deb), and others: search for “synthesis activities”, “synthesis projects”
 -  NSF workshops 
 
 :::
 
 ## Building a Team
 
-### The Leadership Team
+#### The Leadership Team
 
 The composition of the leadership team will affect the success of the project and who you will be able to recruit to the larger group. Look for:
 
@@ -137,7 +137,7 @@ The composition of the leadership team will affect the success of the project an
 -  Facilitation skills
 -  Emotional Intelligence	
 
-### The Broader Team
+#### The Broader Team
 
 In our experience at NCEAS and the LTER Network Office, we've found teams of up to 10 to 15 people to be optimal for synthesis work. As individuals, we all have strengths and weaknesses. The beauty of working in teams is that you can invite people who offset your own weaknesses and who bring strengths you don't have. Often, you'll have a few core team members who have generated a synthesis idea, but then you'll want to take a clear-eyed look at what additional skills and qualities to invite. When you do so, be sure to consider:
 
@@ -175,7 +175,7 @@ In any team project, people have different reasons for wanting to participate - 
 > Importance of various benefits to working group participants
 
 ::: {.callout-note}
-### Time Commitments
+#### Time Commitments
 
 We all  misjudge our availability once in a while, but consistently failing to deliver on commitments disrupts others' work plans and is a major source of group dissatisfaction. Get buy-in for commitments and plan for both reminders and accountability. 
 :::
@@ -186,11 +186,11 @@ The process can be as simple as taking 15 minutes to ask the group about their s
 
 ::: {.callout-note icon=false collapse="true"}
 
-## From Biodiversity on a Changing Planet working group (PI: Peter Adler)
+#### From Biodiversity on a Changing Planet working group (PI: Peter Adler)
 
 This version is simplest and most appropiate when your group has some shared history and mainly needs a reminder to attend to their share values. Even so, be sure to leave enough time and space for participants to add new ideas or concerns. Offer some basic starting point values and norms, then ask the group to add any that haven't been raised yet. Record the results and return to them at the start of meetings.
 
-#### Group Values
+**Group Values**
 
 -  Inclusion
 -  Creative Thinking
@@ -204,11 +204,11 @@ What else?
 
 ::: {.callout-note icon=false collapse="true"}
 
-### From Response Diversity Network Workshop
+#### From Response Diversity Network Workshop
 
 This version is a little more involved and directive with resepct to *behaviors* as well as values. Edit, add, or delete suggestions depending on any concerns in your group. 
 
-#### Community Rules for Inclusive and Productive Discussions
+**Community Rules for Inclusive and Productive Discussions**
 
 -  We are all responsible for cultivating a respectful and inclusive atmosphere to benefit from our diverse community of participants.
 -  Listen with curiosity and resilience, not judgement.
@@ -224,7 +224,7 @@ This version is a little more involved and directive with resepct to *behaviors*
 :::
 
 ::: {.callout-note icon=false collapse="true"}
-### From Entering Mentoring (CIMER)
+#### From Entering Mentoring (CIMER)
 
 For longer collaborations with more challenging power dynamics, it may be worth engaging in a slightly more involved process. In workshops run by the Center for Improved Mentoring of Experiences in Research (CIMER), a facilitator presents a set of group behaviors categorized as group-oriented or self-oriented.
 
@@ -298,11 +298,11 @@ Consider:
 Some sources of data--such as modern remote sensing products, NEON data, and census data--have very clear, explicit ways to access and download them or work with them in the cloud. But the most interesting synthesis questions often involve combining such "big" data with other data sources that may have been collected manually, by a variety of methods and different technicians, over decades. 
 
 ::: {.panel-tabset}
-### **Discussion Question**
+#### **Discussion Question**
 
 > **What kinds of data sources might you consider including in a synthesis project, in addition to your own or others' field data?**
 
-### **A Few Ideas**
+#### **A Few Ideas**
 
 -  [DataONE](https://www.dataone.org/)
 -  [Environmental Data Initiative](https://edirepository.org/) (EDI)
@@ -324,7 +324,7 @@ Some sources of data--such as modern remote sensing products, NEON data, and cen
 
 :::
 
-## Data Use Principles
+### Data Use Principles
 
 There are a few ethical and practical guidelines that will save you a lot of trouble if you can adhere to them from the start of a project.
 
@@ -334,7 +334,7 @@ There are a few ethical and practical guidelines that will save you a lot of tro
     -  This doesn't need to be onerous and it can uncover issues and opportunities associated with data sources. 
 
 ::: {.callout-tip collapse="true"}
-### **Sample data author outreach email for public dataset:** 
+#### **Sample data author outreach email for public dataset:** 
 
 >Dear Dr. Smith, 
 >
@@ -344,7 +344,7 @@ There are a few ethical and practical guidelines that will save you a lot of tro
 
 :::
 ::: {.callout-tip collapse="true"}
-### **Sample data author outreach email for unpublished dataset:** 
+#### **Sample data author outreach email for unpublished dataset:** 
 
 >Dear Dr. Smith, 
 >
@@ -354,12 +354,11 @@ There are a few ethical and practical guidelines that will save you a lot of tro
 
 :::
 ::: {.panel collapse="true"}
-
-### **Authorship Discussion**
+#### **Authorship Discussion**
 
 > **Should all data contributors be offered authorship? How would you handle a data creator who demanded authorship in order to use their data?**
 
-### **A Few Considerations**
+#### **A Few Considerations**
 
 There are no pat answers for this situation, but having agreed-on authorship guidelines is really valuable when it comes up. We'll cover that in more detail soon, but for now, there are a few questions to ask yourself.
 
@@ -370,7 +369,7 @@ There are no pat answers for this situation, but having agreed-on authorship gui
 
 :::
 
-## Keeping Track of Data
+### Keeping Track of Data
 
 We've pulled together a few of the forms that we have use to keep track of the data that synthesis groups plan to use...
 
