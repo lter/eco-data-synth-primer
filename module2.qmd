@@ -273,13 +273,13 @@ Here our grassland biomass data is in long format, often referred to as "tidy" d
 2. Each row is one observation.
 3. Each cell contains a single value.
 
-![visual representation of the tidy data structure](images/tidy-data.png)
+![visual representation of the tidy data structure](images/tidy-data.png){fig-alt="Image of a table of data in 'tidy' format (i.e., where each column is one variable, each row is one observation, and each cell contains a single value)"}
 
 **Advantages**: clear meaning of rows and columns; ease in filtering/cleaning/appending  
 **Disadvantages**: not as human-friendly so it can be difficult to assess the data visually  
 **Possible file formats**: Delimited text (tab delimited shown here), spreadsheets, database tables  
 
-![The harmonized grassland data, in long format.](images/long_data_example.png){width="75%"}
+![The harmonized grassland data, in long format.](images/long_data_example.png){width="75%" fig-alt="An example of tidy data in long format"}
 
 ### Wide (Untidy)
 
@@ -289,13 +289,13 @@ In this dataset, our grassland data has been restructured into wide format, ofte
 **Disadvantages**: may be more difficult to clean/filter/append, multiple observations per row; more likely to contain empty (NULL) cells  
 **Possible file formats**: Delimited text (tab delimited shown here), spreadsheets, database tables  
 
-![The harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.](images/wide_data_example.png){width="75%"}
+![The harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.](images/wide_data_example.png){width="75%" fig-alt="An example of tidy data in wide format"}
 
 ### Relational Database
 
 Below is an example of how we might structure our grassland data in a relational database. The schema consists of three tables that house information about sampling events (when, where data were collected), the plots from which the samples are collected, and the biomass values for each collection. The schema allows us to define the data types (e.g., text, integer), add constraints (e.g., values cannot be missing), and to describe relationships between tables (keys). Relational formats are [normalized](https://en.wikipedia.org/wiki/Database_normalization) to reduce data redundancy and increase data integrity, which can help us to manage complex data[^13].
 
-![example grassland database schema](images/grassland_schema.drawio.png)
+![example grassland database schema](images/grassland_schema.drawio.png){fig-alt="An example of relational data where several tables are linked by a shared column even though they have differing variables and numbers of observations"}
 
 **Advantages**: reduced redundancy, greater integrity; community standard; powerful extensions (e.g., store and process spatial data); many different database flavors to meet specific needs  
 **Disadvantages**: significant metadata needed to describe and use; more complex to publish; learning curve  
@@ -303,7 +303,7 @@ Below is an example of how we might structure our grassland data in a relational
 
 A richer example is a schematic of the related tables that comprise the [ecocomDP](https://ediorg.github.io/ecocomDP/)[^8] harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table.
 
-![The ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.](images/ecocomDP_schema.jpg){width="75%"}
+![The ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.](images/ecocomDP_schema.jpg){width="75%" fig-alt="Another example of a relational set of tables implicitly connected by shared index columns. Curved lines indicate which tables are connected to one another and which columns define that relationship"}
 
 [^8]: O'Brien, Margaret, et al. "ecocomDP: a flexible data design pattern for ecological community survey data." Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374
 [^13]: Zimmerman, N. 2016. [Hand-crafted relational databases for fun and science](https://carpentries.org/blog/2016/12/hand-crafted-databases/)
@@ -316,7 +316,7 @@ There are many possibilities to make large synthesis datasets available and usef
 **Disadvantages**: less familiar/accessible to many scientists, few best practices to follow, costs can be higher  
 **Possible file formats**: Parquet files, object storage, distributed/cloud databases
 
-![A few of the cloud-native technologies that might be useful for synthesis research products.](images/cloud_native.png){width="75%"}
+![A few of the cloud-native technologies that might be useful for synthesis research products.](images/cloud_native.png){width="75%" fig-alt="A stylized cloud containing the logos for Parquet, S3, PostgreSQL, and Apache Arrow"}
 
 ### Other...
 

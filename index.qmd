@@ -59,11 +59,11 @@ The course and its content were developed by a large team. See the [**People pag
 
 ::: {#credit-orgs layout-ncol=3}
 
-[![](images/edi-logo.png){width=1.2in}](https://edirepository.org)
+[![](images/edi-logo.png){width=1.2in}](https://edirepository.org){fig-alt="Environmental Data Initiative (EDI) logo"}
 
-[![](images/LTER-network-logo.png){width=1.2in}](https://lternet.edu)
+[![](images/LTER-network-logo.png){width=1.2in}](https://lternet.edu){fig-alt="Long Term Ecological Research (LTER) Network Office logo"}
 
-[![](images/NEON-NSF-logo.png)](https://neonscience.org)
+[![](images/NEON-NSF-logo.png)](https://neonscience.org){fig-alt="National Ecological Observatory Network (NEON) logo"}
 
 :::
 
