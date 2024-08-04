@@ -728,20 +728,26 @@ Everyone deserves credit for the work they do, and in academic environments this
 
 Interests and commitment to synthesis projects change over time. To sustain active research contributions by the team, and continued use of the data, make sure new people can find a way to participate.
 
-- Provide a path for new data contributions. This follows from making the data preparation/harmonization workflow reproducible.
-- Have open meetings when possible to help bring in new team members that are interested and willing to contribute.
-- Give all team members the freedom and support to lead analyses, papers, and other valuable project activities.
+- **Provide a path for new data contributions.**
+  - This follows from making the data preparation/harmonization workflow reproducible.
+- **Have open meetings when possible.**
+  - This helps bring in new team members that are interested and willing to contribute.
+- **Give all team members the freedom and support to lead analyses, papers, and other valuable project activities.**
 
 ### Find monetary support
 
-Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to keep scientists engaged and support for dedicated personnel time.
+Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to keep scientists engaged and find support for dedicated personnel time.
 
-- Explore and apply to the funding sources presentied in [Module 1](module1.qmd).
+- **Explore and apply to the funding sources presentied in [Module 1](module1.qmd).**
   - Personnel support may need to come from larger grants since working group funding often provides only meeting support.
-- Think creatively about how to involve students and postdocs in synthesis projects.
+- **Think creatively about how to involve students and postdocs in synthesis projects.**
   - If student/postdoc research interests & plans overlap, dedicating some time to synthesis group work can lead to career-building opportunities (networking, high-impact papers).
-- Promote the synthesis team's work!
+- **Promote the synthesis team's work!**
   - It is difficult to attract interest and new resources to a project without this.
-  
+
+
+### HAVE FUN!
+
+When done correctly, ecological synthesis research means having a lot of fun with a great team. 
 
 
