@@ -488,7 +488,7 @@ What changes were made to data structure, variable formatting, or units in these
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/tidy-data.png" class="img-fluid figure-img"></p>
+<p><img src="images/tidy-data.png" class="img-fluid figure-img" alt="Image of a table of data in 'tidy' format (i.e., where each column is one variable, each row is one observation, and each cell contains a single value)"></p>
 <figcaption>visual representation of the tidy data structure</figcaption>
 </figure>
 </div>
@@ -497,7 +497,7 @@ What changes were made to data structure, variable formatting, or units in these
 <strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/long_data_example.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p><img src="images/long_data_example.png" class="img-fluid figure-img" style="width:75.0%" alt="An example of tidy data in long format"></p>
 <figcaption>The harmonized grassland data, in long format.</figcaption>
 </figure>
 </div>
@@ -509,7 +509,7 @@ What changes were made to data structure, variable formatting, or units in these
 <strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/wide_data_example.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p><img src="images/wide_data_example.png" class="img-fluid figure-img" style="width:75.0%" alt="An example of tidy data in wide format"></p>
 <figcaption>The harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.</figcaption>
 </figure>
 </div>
@@ -518,7 +518,7 @@ What changes were made to data structure, variable formatting, or units in these
 <p>Below is an example of how we might structure our grassland data in a relational database. The schema consists of three tables that house information about sampling events (when, where data were collected), the plots from which the samples are collected, and the biomass values for each collection. The schema allows us to define the data types (e.g., text, integer), add constraints (e.g., values cannot be missing), and to describe relationships between tables (keys). Relational formats are <a href="https://en.wikipedia.org/wiki/Database_normalization">normalized</a> to reduce data redundancy and increase data integrity, which can help us to manage complex data<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/grassland_schema.drawio.png" class="img-fluid figure-img"></p>
+<p><img src="images/grassland_schema.drawio.png" class="img-fluid figure-img" alt="An example of relational data where several tables are linked by a shared column even though they have differing variables and numbers of observations"></p>
 <figcaption>example grassland database schema</figcaption>
 </figure>
 </div>
@@ -528,7 +528,7 @@ What changes were made to data structure, variable formatting, or units in these
 <p>A richer example is a schematic of the related tables that comprise the <a href="https://ediorg.github.io/ecocomDP/">ecocomDP</a><a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ecocomDP_schema.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<p><img src="images/ecocomDP_schema.jpg" class="img-fluid figure-img" style="width:75.0%" alt="Another example of a relational set of tables implicitly connected by shared index columns. Curved lines indicate which tables are connected to one another and which columns define that relationship"></p>
 <figcaption>The ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.</figcaption>
 </figure>
 </div>
@@ -540,7 +540,7 @@ What changes were made to data structure, variable formatting, or units in these
 <strong>Possible file formats</strong>: Parquet files, object storage, distributed/cloud databases</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/cloud_native.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p><img src="images/cloud_native.png" class="img-fluid figure-img" style="width:75.0%" alt="A stylized cloud containing the logos for Parquet, S3, PostgreSQL, and Apache Arrow"></p>
 <figcaption>A few of the cloud-native technologies that might be useful for synthesis research products.</figcaption>
 </figure>
 </div>
