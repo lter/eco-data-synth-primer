@@ -10,19 +10,19 @@ We have a long list of synthesis scientists actively involved in the course work
 
 Icon legend: {{< fa globe >}} = website | {{< fa brands google scholar >}} = publications | {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCID
 
-- **Kathryn Barry**
-- **Joanna Carey** -- | [{{< fa globe >}}](https://www.babson.edu/about/our-leaders-and-scholars/faculty-and-academic-divisions/faculty-profiles/joanna-carey.php) [{{< fa brands google scholar >}}](https://scholar.google.com/citations?user=n_HQZ7QAAAAJ&hl=en)
+- **Kathryn Barry** -- Utrecht University | [{{< fa globe >}}](https://www.uu.nl/staff/KEBarry)
+- **Joanna Carey** -- Babson College | [{{< fa globe >}}](https://www.babson.edu/about/our-leaders-and-scholars/faculty-and-academic-divisions/faculty-profiles/joanna-carey.php) [{{< fa brands google scholar >}}](https://scholar.google.com/citations?user=n_HQZ7QAAAAJ&hl=en)
 - **Angel Chen** (_she/her_) -- LTER Network Office | [{{< fa globe >}}](https://angelchen7.github.io/) [{{< fa brands github >}}](https://github.com/angelchen7/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3515-6710)
-- **Laura Dee** -- | [{{< fa globe >}}](www.lauraedee.com) [{{< fa brands google scholar >}}](https://scholar.google.com/citations?user=fkHAm5YAAAAJ&hl=en) [{{< fa brands github >}}](https://github.com/lauradee/)
+- **Laura Dee** -- University of Colorado Boulder | [{{< fa globe >}}](https://www.lauraedee.com) [{{< fa brands google scholar >}}](https://scholar.google.com/citations?user=fkHAm5YAAAAJ&hl=en) [{{< fa brands github >}}](https://github.com/lauradee/)
 - **Marty Downs** -- LTER Network Office | [{{< fa globe >}}](https://lternet.edu/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2833-956X)
-- **Stevan Earl** -- | [{{< fa globe >}}](https://sustainability-innovation.asu.edu/person/stevan-earl/) [{{< fa brands github >}}](https://github.com/srearl) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-4465-452X)
-- **Sarah Elmendorf** -- | [{{< fa globe >}}](https://www.colorado.edu/instaar/sarah-elmendorf) [{{< fa brands github >}}](https://github.com/scelmendorf/) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
-- **Jalene LaMontagne** -- | [{{< fa globe >}}](https://lamontagnelab.weebly.com/) [{{< fa brands google scholar >}}](https://scholar.google.com/citations?user=BSOec3pWk-0C&hl) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7713-8591)
+- **Stevan Earl** -- Arizona State University | [{{< fa globe >}}](https://sustainability-innovation.asu.edu/person/stevan-earl/) [{{< fa brands github >}}](https://github.com/srearl) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-4465-452X)
+- **Sarah Elmendorf** -- | University of Colorado Boulder [{{< fa globe >}}](https://www.colorado.edu/instaar/sarah-elmendorf) [{{< fa brands github >}}](https://github.com/scelmendorf/) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
+- **Jalene LaMontagne** -- DePaul University | [{{< fa globe >}}](https://lamontagnelab.weebly.com/) [{{< fa brands google scholar >}}](https://scholar.google.com/citations?user=BSOec3pWk-0C&hl) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7713-8591)
 - **Nick J Lyon** (_they/them_) -- LTER Network Office | [{{< fa globe >}}](https://njlyon0.github.io/) [{{< fa brands github >}}](https://github.com/njlyon0) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3905-1078)
-- **Gregory Maurer** (_he/him_) -- | [{{< fa globe >}}](https://greg.pronghorns.net/) [{{< fa brands github >}}](https://github.com/gremau) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
-- **Colin Smith**
+- **Gregory Maurer** (_he/him_) -- New Mexico State University | [{{< fa globe >}}](https://greg.pronghorns.net/) [{{< fa brands github >}}](https://github.com/gremau) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
+- **Colin Smith** (_he/him_) -- Environmental Data Initiative | [{{< fa globe >}}](https://limnology.wisc.edu/staff/smith-colin/)
 - **Eric Sokol** (_he/him_) -- [NEON](https://www.neonscience.org/) | [{{< fa globe >}}](https://www.neonscience.org/person/eric-sokol) [{{< fa brands github >}}](https://github.com/sokole) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5923-0917)
-- **Alexandra (Sasha) Wright**
+- **Alexandra (Sasha) Wright** --  California State University, Los Angeles  
 
 ## Other Contributors
 
