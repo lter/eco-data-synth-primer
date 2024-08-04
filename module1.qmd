@@ -397,5 +397,3 @@ Once you get into the details of the process, you'll want to track some more spe
 -  Working group participant who got the data (Name)
 -  Used in your analysis? (Y/N)
 -  Any additional notes or decisions about *how* the data is or will be harmonized and analyzed
-
-## [Proceed to Module 2](https://lter.github.io/eco-data-synth-primer/module2.html)
