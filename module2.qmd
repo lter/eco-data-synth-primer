@@ -43,14 +43,14 @@ Making one's work "reproducible"--particularly in code contexts--has become incr
 - Allows anyone to recreate the entire workflow from start to finish
 - Leads to modular, extensible research projects. Adding data from a new site, or a new analysis, should be relatively easy in a reproducible workflow.
 
-### {{< fa people-group >}} Contributing
+### {{< fa file-pen >}} Contributing
 
 - Create a formal plan for collaborating _with which your whole team agrees_
 - Quarantine external inputs
 - Plan for "future you"
 - Communicate to your collaborators whenever you're working on a specific script to avoid conflicting edits
 
-### {{< fa file-lines >}} Documentation
+### {{< fa file-lines >}} Documenting
 
 ::::{.columns}
 :::{.column width="55%"}
@@ -96,7 +96,7 @@ _Example project structure:_
 :::
 ::::
 
-### {{< fa laptop-code >}} Code
+### {{< fa laptop-code >}} Coding
 
 - Use a [version control](https://lter.github.io/eco-data-synth-primer/module2.html#version-control) system
 - Load libraries/packages explicitly
@@ -109,7 +109,7 @@ _Example project structure:_
 - Consider custom functions
 - For scripts that need to be run in order, consider adding step numbers to the file name
 
-### Synthesis Considerations
+### {{< fa people-group >}} Synthesizing
 
 How does reproducibility in synthesis considerations differ from individual / non-synthesis applications?
 
