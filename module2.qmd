@@ -409,6 +409,7 @@ For more information about LTER synthesis working groups and how you can get inv
 **Data harmonization resources**
 
 * For R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham's *R for Data Science* book, the chapters on [data transforms](https://r4ds.hadley.nz/data-transform) and [data tidying](https://r4ds.hadley.nz/data-tidy) are a good place to start. In Wes McKinney's *Python for Data Analysis* book, the chapter on [data wrangling](https://wesmckinney.com/book/data-wrangling) is helpful.
+* A nice [article in "The Analysis Factor"](https://www.theanalysisfactor.com/wide-and-long-data/) describes wide vs long data formats and when to choose which (TLDR, it depends on your statistical analysis plan).
 
 ### Data Analysis
 
