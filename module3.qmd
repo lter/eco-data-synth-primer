@@ -442,37 +442,41 @@ Form breakout groups and course instructors will assign each one a link to a pro
 ::: {.panel-tabset}
 ### Group 1
 
-**Clue:** https://cran.r-project.org/web/packages/codyn/index.html
+**Clue:** <https://cran.r-project.org/web/packages/codyn/index.html>
 
 ::: {.callout-caution collapse="true" icon="false"}
 
 ### Cracking the case
 
-This is the "community dynamics" synthesis working group that was at least partly supported by 
+This is the "community dynamics" synthesis working group that was at least partly supported by the LTER Network.
 
 *Papers*
 
 There is a paper describing the R package
-- ...
-- ...
+
+- Hallett, L.M., Jones, S.K., MacDonald, A.A.M., Jones, M.B., Flynn, D.F.B., Ripplinger, J., Slaughter, P., Gries, C. and Collins, S.L. (2016), codyn: An r package of community dynamics metrics. Methods Ecol Evol, 7: 1146-1151. <https://doi.org/10.1111/2041-210X.12569>
+
+And maybe this
+
+- Avolio, M. L., I. T. Carroll, S. L. Collins, G. R. Houseman, L. M. Hallett, F. Isbell, S. E. Koerner, K. J. Komatsu, M. D. Smith, and K. R. Wilcox. 2019. A comprehensive approach to analyzing community dynamics using rank abundance curves. Ecosphere 10(10):e02881. <https://doi.org/10.1002/ecs2.2881>
 
 *Workflows*
 
-- ...
+The original clue is a link to the `codyn` package on CRAN.
 
 *Datasets*
 
-- ...
+- Data are included in the R package... but not sure of the provenance.
 
 *Other*
 
-- ...
+- ?
 
 :::
 
 ### Group 2
 
-**Clue:** https://corredata.weebly.com/
+**Clue:** <https://corredata.weebly.com/>
 
 ::: {.callout-caution collapse="true" icon="false"}
 
@@ -738,7 +742,7 @@ Interests and commitment to synthesis projects change over time. To sustain acti
 
 Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to keep scientists engaged and find support for dedicated personnel time. Usually this means getting monetary support in the form of grants.
 
-- **Explore and apply to the funding sources presentied in [Module 1](module1.qmd).**
+- **Explore and apply to the funding sources presented in [Module 1](module1.qmd).**
   - Personnel support may need to come from larger grants since working group funding often provides only meeting support.
 - **Think creatively about how to get students and postdocs participating in synthesis projects.**
   - If student/postdoc research interests & plans overlap, dedicating some time to synthesis group work can lead to career-building opportunities (networking, high-impact papers).

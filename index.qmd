@@ -19,7 +19,7 @@ Objectives for learners are twofold:
 
 Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, analytical workflows, and publication of derived datasets. The course uses real-world examples, demonstrations, and interactive lessons. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips. Many workshop activities will be oriented toward helping learners develop their own ideas and plans for ecological data synthesis.
 
-## Agenda
+## Agenda for 2024-08-04
 
 This agenda is subject to change!
 
@@ -30,6 +30,10 @@ This agenda is subject to change!
 | 2:15 - 3:00p  |   Module 2: Operational Synthesis    |
 | 3:00 - 3:15p  |               **Break**              |
 | 3:15 - 4:00p  |   Module 3: Tying It All Together    |
+
+## Shared notes document
+
+A [**communal notes document**](https://docs.google.com/document/d/1q8DJ-Z4W8wuT2M-sKaz8FLeOOK-xAPxdDcN6qZ3PGyo/edit?usp=sharing) will be used during some of the discussions we'll have, and are a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
 
 ## Introductions & Icebreaker
 

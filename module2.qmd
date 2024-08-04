@@ -259,7 +259,7 @@ A few guidelines apply:
 
 1. For formatting a tabular dataset, **err towards simpler data structures**, which are usually easier to clean, filter, and analyze. Long-format tables, or tidy data [^5], is one common recommendation for this.
 2. When choosing a file format, **err towards open, non-proprietary file formats** that more people know and have access to. Delimited text files, such as CSV files, are a good choice for tabular data. 
-3. **Use existing community standards** for formatting variables and files as long they suit your project methods and scientific goals. Using ISO standards for date-time variables, or species identifiers from a taxonomic authority, are good examples of this practice.
+3. **Use existing community standards** for formatting variables and files as long as they suit your project methods and scientific goals. Using ISO standards for date-time variables, or species identifiers from a taxonomic authority, are good examples of this practice.
 4. **There is no perfect data format!** Harmonizing data always involves some judgement calls and tradeoffs.
 
 When choosing a destination format for the harmonized data for a synthesis project, the **audience** and **future uses** of the data are also an important consideration. Consider how your synthesis team will analyze the data, as well as how the world outside that team will use and interact with the data once it is published. Again, there is no one answer, but below are a few examples of harmonized destination formats to consider.
