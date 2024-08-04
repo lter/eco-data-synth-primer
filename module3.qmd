@@ -9,7 +9,7 @@ After completing this module, you will be able to:
 - **Identify** the three primary "products" that come out of synthesis groups.
 - **Understand** the metadata and other features that make published datasets useful.
 - **Evaluate** the reach and reproducibility of an ecological synthesis project's outputs.
-- **Create** a plan for your synthesis team's research products, and **apply** the contribution, publishing, and citation practices that will benefit the team.
+- **Create** a plan for your synthesis team's research products that **applies** contribution, publishing, and citation practices that will benefit the team.
 
 
 ## Introduction
@@ -734,20 +734,20 @@ Interests and commitment to synthesis projects change over time. To sustain acti
   - This helps bring in new team members that are interested and willing to contribute.
 - **Give all team members the freedom and support to lead analyses, papers, and other valuable project activities.**
 
-### Find monetary support
+### Find support
 
-Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to keep scientists engaged and find support for dedicated personnel time.
+Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to keep scientists engaged and find support for dedicated personnel time. Usually this means getting monetary support in the form of grants.
 
 - **Explore and apply to the funding sources presentied in [Module 1](module1.qmd).**
   - Personnel support may need to come from larger grants since working group funding often provides only meeting support.
-- **Think creatively about how to involve students and postdocs in synthesis projects.**
+- **Think creatively about how to get students and postdocs participating in synthesis projects.**
   - If student/postdoc research interests & plans overlap, dedicating some time to synthesis group work can lead to career-building opportunities (networking, high-impact papers).
 - **Promote the synthesis team's work!**
-  - It is difficult to attract interest and new resources to a project without this.
+  - It is difficult to attract interest from new participants and new resources for a project without doing this.
 
 
 ### HAVE FUN!
 
-When done correctly, ecological synthesis research means having a lot of fun and doing great science with your team. 
+When done correctly, ecological synthesis research means having lots of fun doing science with a great team. 
 
 
