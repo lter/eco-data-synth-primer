@@ -10,30 +10,32 @@ title: "A Course for Collaborative Ecologists"
 
 ## Abstract
 
-In recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time, the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a "team sport".
+In recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time,the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a "team sport". 
 
-Objectives for learners are twofold:
+Objectives for learners are to
 
-1.  Develop an end-to-end (conception to publication) plan for collaborative synthesis research
-2.  Gain data synthesis skills that are immediately useful in a research team setting.
+    a.  gain project management and data synthesis skills that are immediately useful in a research team setting,
+    b.  develop an end-to-end (conception to publication) plan for collaborative synthesis research and
+    c.  focus on developing their own synthesis projects, whatever stage they are in, with guidance from instructors and peers.
+    
+Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, managing analytical workflows, and publication of derived datasets and other synthesis products. The course uses real-world examples, demonstrations, and interactive lessons in small groups. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips.
 
-Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, analytical workflows, and publication of derived datasets. The course uses real-world examples, demonstrations, and interactive lessons. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips. Many workshop activities will be oriented toward helping learners develop their own ideas and plans for ecological data synthesis.
-
-## Agenda for 2024-08-04
+## Agenda for 2025-08-10
 
 This agenda is subject to change!
 
-| Timing (PT)   |               Content                |
-|:-------------:|:------------------------------------:|
-| 1:00 - 1:15p  |       Welcome & Introductions        |
-| 1:15 - 2:15p  | Module 1: Starting with Team Science |
-| 2:15 - 3:00p  |   Module 2: Operational Synthesis    |
-| 3:00 - 3:15p  |               **Break**              |
-| 3:15 - 4:00p  |   Module 3: Tying It All Together    |
+| Timing (PT)     |               Content                |
+|:---------------:|:------------------------------------:|
+| 9:00 - 9:15a    |       Welcome & Introductions        |
+| 9:15 - 10:30a   | Module 1: Starting with Team Science |
+| 10:30 - 11:45a  |   Module 2: Operational Synthesis    |
+| 12:00 - 1:00p   |               **Break**              |
+| 1:00 - 2:30p    |   Module 3: Tying It All Together    |
+| 2:30 - 4:00p    |  Mentoring session...                |
 
 ## Shared notes document
 
-A [**communal notes document**](https://docs.google.com/document/d/1q8DJ-Z4W8wuT2M-sKaz8FLeOOK-xAPxdDcN6qZ3PGyo/edit?usp=sharing) will be used during some of the discussions we'll have, and are a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
+A [**communal notes document**](https://docs.google.com/document/d/1E4fxxZmAIJyUpvdX89FtVcLfU330NTbWT0sdFoJEKME/edit?usp=sharing) will be used during some of the discussions we'll have, and are a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
 
 ## Introductions & Icebreaker
 
@@ -45,7 +47,7 @@ Before we begin, we'd love to get a sense for who you all are and why you're int
 
 ## Note on Course Materials
 
-While we are excited to offer this short course for the first time at [ESA 2024](https://www.esa.org/longbeach2024/), we've chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward.
+This short course is being offered for the second time at [ESA 2025](https://esa.org/baltimore2025/), and we've chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward.
 
 If you are a {{< fa brands github >}} GitHub aficionado, we have deployed this website via GitHub Pages so you could also "star" the website's repository. Simply click the {{< fa brands github >}} GitHub octocat logo on the right side of the navbar (at the top of the screen) to be redirected to the GitHub repository underpinning this website.
 
