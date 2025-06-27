@@ -30,6 +30,68 @@ We've already seen that creating a collaborative, inclusive team can set the sta
 
 ## 1. Make a Plan
 
+For non-synthesis projects, it can feel intuitive to skip this step. Especially if you are working alone or with a small group of close collaborators the formal process of making and documenting your strategy can feel like a waste of time relative to 'actually' doing the work. However, synthesis work uses _a lot_ of data, requires a high degree of technical collaboration, and involves a series of _big_ judgement calls that will need to be revisited. Because of these factors, **taking the time to create an actual, specific, _written_ plan (and periodically updating that plan as priorities and questions evolve) is vital to the success of synthesis projects!**
+
+See the sub-sections below for some especially critical elements to consider as you draft your plan. Note this is not exhaustive and there will definitely be other considerations that will be reasonable for your team to add to the plan based on your project's goals and team composition.
+
+### How Will You Get (and Stay) Organized?
+
+Two critical elements of oragnization are (1) the folder structure on your computer of project files and (2) how you will informatively name files so their purpose is immediately apparent. While there is no "one size fits all" solution, we recommend something like the following:
+
+::::{.columns}
+:::{.column width="55%"}
+
+Key properties of this structure:
+
+- Everything nested within a project-wide folder
+- _Limited_ use of sub-folders
+- Dedicated "README" files containing high-level information about each folder
+- Consistent folder/file naming conventions
+   - Good names should be be both human and machine-readable (and sorted in the same way by machines and people)
+   - Avoid spaces and special characters
+   - Consistent use of delimeters (e.g., "-", "_", etc.)
+- Shared file prefix (a.k.a. "slug") connecting code files with files they create
+    - Allows for easy tracing of errors because the file with issues has an explicit tie to the script that likely introduced that error
+- Includes a "data log" (a.k.a. "data inventory") for documenting data sources and critical information about each
+    - E.g., dataset identifiers/DOIs, search terms used in data repository, provenance, spatiotemporal extent and granularity, etc.)
+
+:::
+:::{.column width="5%"}
+
+:::
+:::{.column width="40%"}
+:::{style="font-size:0.9em;"}
+
+_Suggested Project Structure:_
+
+{{< fa folder >}} synthesis_project  
+&nbsp;|--&nbsp;{{< fa file-lines >}} README.md  
+&nbsp;|--&nbsp;{{< fa folder >}} code  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-lines >}} README.md  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} 01_harmonize.R  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa file-code >}} 02_quality-control.R  
+&nbsp;|--&nbsp;{{< fa folder >}} data  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-lines >}} README.md  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} data-log.csv  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa folder >}} raw  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa folder >}} tidy  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} 01_data-harmonized.csv  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa file-csv >}} 02_data-wrangled.csv  
+&nbsp;|--&nbsp;{{< fa folder >}} notes   
+&nbsp;|--&nbsp;{{< fa folder >}} presentations  
+&nbsp;&nbsp;L&nbsp; {{< fa folder >}} publications   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-lines >}} README.md  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa folder >}} community-composition  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa folder >}} biogeochemistry  
+
+:::
+:::
+::::
+
+
+
+
+
 
 
 ## 2. Prepare Data
@@ -67,52 +129,6 @@ Making one's work "reproducible"--particularly in code contexts--has become incr
 - Quarantine external inputs
 - Plan for "future you"
 - Communicate to your collaborators whenever you're working on a specific script to avoid conflicting edits
-
-### {{< fa file-lines >}} Documenting
-
-::::{.columns}
-:::{.column width="55%"}
-- One folder per project
-- Further organize content via sub-folders
-- Make file names informative and intuitive
-   - Avoid spaces and special characters in file names
-   - Follow a consistent naming convention throughout
-   - Good names should be machine readable, human readable, and sorted in a useful way
-- Use READMEs to record organization rules / explanation
-- Keep a log of where source data came from.
-   - Where did you search?
-   - What search terms did you use?
-   - List the dataset identifiers you downloaded/used
-   - Ideally, include downloading data as part of your scripted workflow
-
-:::
-:::{.column width="5%"}
-
-:::
-:::{.column width="40%"}
-:::{style="font-size:0.9em;"}
-_Example project structure:_
-
-{{< fa folder >}} project_new  
-&nbsp;|--&nbsp; {{< fa file-lines >}} README.txt  
-&nbsp;|--&nbsp; {{< fa folder >}} 01_grant_management  
-&nbsp;|--&nbsp; {{< fa folder >}} 02_project_coordination  
-&nbsp;|--&nbsp; {{< fa folder >}} 03_documentation  
-&nbsp;|--&nbsp; {{< fa folder >}} 04_participant_tracking  
-&nbsp;|--&nbsp; {{< fa folder >}} 05_data  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-lines >}} README.txt  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa folder >}} hydrology  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa folder >}} water_chemistry  
-&nbsp;|--&nbsp; {{< fa folder >}} 06_src  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-lines >}} README.txt  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa folder >}} data_aggregation  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa folder >}} data_harmonization  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa folder >}} modeling  
-&nbsp;L&nbsp; {{< fa folder >}} 06_publications  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa folder >}} biogeochemistry  
-:::
-:::
-::::
 
 ### {{< fa laptop-code >}} Coding
 
