@@ -440,6 +440,28 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Organization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>On your own or in a small group, open your computer and find the files for one of your past projects. With that project in mind, ask yourself the following:</p>
+<ul>
+<li>How hard is it for you to reorient yourself to this project based on your organization system?
+<ul>
+<li>How hard do you think it would be to onboard a new collaborator on this project?</li>
+</ul></li>
+<li>How many of the properties of the recommended structure above does your organization system follow?</li>
+<li>Are there actionable steps you could take to feel more confident in your organization system? If so, what are they?</li>
+</ul>
+<p>Once you have considered these questions, <strong>take a few minutes and try to reorganize your chosen project</strong>. If that feels risky to you, write some notes on scratch paper of how you <em>would</em> (or <em>could</em>) reorganize this project to be more functional</p>
+</div>
+</div>
 </section>
 <section id="how-will-you-collaborate" class="level3">
 <h3 class="anchored" data-anchor-id="how-will-you-collaborate">How Will You Collaborate?</h3>
@@ -459,6 +481,22 @@ ul.task-list li input[type="checkbox"] {
 <p>There are a <em>lot</em> of Git/GitHub tutorials that already exist so, rather than add yet another variant to that list, we’ll instead work through part of the workshop created by the <a href="https://lter.github.io/scicomp/">Scientific Computing team</a> of the Long Term Ecological Research (<a href="https://lternet.edu/">LTER</a>) Network Office. Note too that those materials include a detailed, step-by-step guide for working with Git/GitHub through RStudio, as well as some discussion of the project management tools that GitHub supports. As noted earlier, we won’t cover those parts of that workshop today, but they might be useful for you to revisit later.</p>
 <p>The workshop materials we will be working through live <a href="https://lter.github.io/workshop-github/">here</a> but for convenience we have also embedded the workshop directly into this short course’s website (see below).</p>
 <iframe src="https://lter.github.io/workshop-github/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Practice with GitHub
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let’s use some of the skills that we just discussed during the GitHub tutorial!</p>
+<p>When you make a repository under your username with the same name as your user (e.g., <code>njlyon0 / njlyon0</code>) this is a “special repository”. Any content that you put in the README file of that repository will show up at the top of your GitHub profile (e.g., <a href="https://github.com/angelchen7">here</a>, or <a href="https://github.com/njlyon0">here</a>). Making this landing page for your GitHub page can be a nice way of demonstrating your GitHub savvy and–for those without a professional website–can be a nice stand-in until you feel that a full website is warranted.</p>
+<p>For our purposes today, <strong>creating this repository and filling it out through GitHub is a nice chance for you to build muscle memory with creating and editing files directly through GitHub!</strong></p>
+<p>Take a few minutes to create this special repository and add a few sentences about yourself and your personal/professional interests.</p>
+</div>
+</div>
 </section>
 </section>
 </section>
@@ -472,7 +510,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Contains detailed <strong>metadata</strong> for all data products and prerequisite software</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -481,7 +519,7 @@ More About Metadata
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Metadata is “data about the data,” or information that describes <strong>who</strong> collected the data, <strong>what</strong> was observed or measured, <strong>when</strong> the data were collected, <strong>where</strong> the data were collected, <strong>how</strong> the observations or measurements were made, and <strong>why</strong> they were collected. Metadata provide important contextual information about the origin of the data and how they can be analyzed or used. They are most useful when attached or linked to the data being described, and data and related metadata together are commonly referred to as a <em>dataset</em>.</p>
 <p>Metadata for ecological research data are well described in Michener et al (1997),<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> but there are many other kinds of metadata with different purposes.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> If you are publishing a research dataset and have questions about metadata, ask a data manager for your project, or staff at the repository you are working with, for help. Either can typically provide guidance on creating metadata that will describe your data and be useful to the community (here is <a href="https://edirepository.org/resources/creating-metadata-for-publication">one example</a>). We’ll return to the subject of metadata in Module 3.</p>
@@ -511,17 +549,30 @@ More About Metadata
 <h3 class="anchored" data-anchor-id="reproducibility-in-synthesis">Reproducibility in Synthesis</h3>
 <p>Finally, there are a few additional considerations for reproducible synthesis work in particular. Judgement calls need to be made and agreed to as a team. However, group members should “defer to the doers.” If you have a very strong opinion that differs from the feeling of most of the rest of the group and will result in a lot of extra work, you should be ready to volunteer to do that work or allow those who will be responsible for the work to have a larger role in deciding the shape of that effort.</p>
 <p>Reproducible synthesis work also requires dramatically more communication–especially around contribution guidelines and intellectual credit. It’s best to keep track of who contributed what, so that everyone gets credit. This can be challenging in practice and makes sense to start recording early and in a transparent way.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Reproducibility Questions</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>In groups of 3-5, discuss the following questions:</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Reproducibility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In small groups, discuss the following questions:</p>
 <ul>
-<li>What elements of reproducibility <strong>from our list</strong> have you used/are interested in using?</li>
+<li>What elements of reproducibility that we identify have you used/are interested in using?</li>
 <li>Which feel unreasonable or confusing?</li>
 <li>What activities do you do in your own work to ensure reproducibility that <strong>our list is missing</strong>?</li>
 </ul>
-</div>
+<p>If you have a script you’ve worked on recently, open it and read through it.</p>
+<ul>
+<li>How reproducible do you think that code is?</li>
+<li>How easy would it be for someone else to understand what the code does?
+<ul>
+<li>How easy would it be for them to actually run the code?</li>
+</ul></li>
+</ul>
 </div>
 </div>
 </section>
@@ -529,17 +580,26 @@ More About Metadata
 <h3 class="anchored" data-anchor-id="data-preparation-overview">Data Preparation Overview</h3>
 <p>The scientific questions being asked in synthesis projects are usually broad in scope, and it is therefore common to bring together many datasets from different sources for analysis. The datasets selected for analysis (source data) may have been collected by different people, in different places, using different methods, as part of different projects, or all of the above. Typically you will need to <strong>harmonize</strong> these disparate datasets by standardizing data structure, units of measurement, and file format. Once this is done, you’ll move on to <strong>data cleaning</strong> where you can check for malformed values, unreasonable rows, and filter out unwanted observations.</p>
 <p>These processes can be easy or difficult depending on the quality of the source data, the differences between source data, and how much <strong>metadata</strong> (see callout above) is available to understand them. Also, note that you could clean each input dataset separately first, then harmonize the data, but it may be easier to harmonize first. For example, if you have 10 datasets, each with some type of sampling date column, it will be <em>much</em> easier to filter out particular dates if all that information is in the same format in the same column as opposed to working with whatever idiosyncratic formats and/or column names are present in each original file.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><strong>Data Preparation Group Questions</strong></a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Discussion: Data Preparation
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>How many of you work directly with data in your day-to-day?</li>
-<li>What percentage of the time that you spend working on data is spent on data cleaning?</li>
-<li>How much on metadata creation?</li>
-<li>How much on data preparation?</li>
+<li>Of the time you spend working with data, what percentage is spent:
+<ul>
+<li>Harmonizing data?</li>
+<li>Cleaning data?</li>
+<li>Creating metadata?</li>
+<li>Documenting your process (including making comments in code)?</li>
+</ul></li>
 </ul>
-</div>
 </div>
 </div>
 </section>
@@ -548,7 +608,7 @@ More About Metadata
 <p>Data harmonization is the process of bringing different datasets into a common format for analysis. The harmonized data format chosen for a synthesis project depends on the source data, analysis plans, and overall project goals. It is best to make a plan for harmonizing data <em>before</em> analysis begins, which means discussing this with the team in the early stages of a synthesis project. As a general rule, it is also wise to use a scripted workflow that is as reproducible as possible to accomplish the harmonization you need for your project. Following this guidance lets others understand, check, and adapt your work, and will also make it much, <em>much</em> easier to bring new data and analysis methods into the project.</p>
 <p>Data harmonization is hard work that sometimes requires trial and error to arrive at a useful end product. At the end of this section are some additional data harmonization resources to help you get started. Looking at a simple example might also help.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -557,7 +617,7 @@ Example: Harmonizing grassland biomass data
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>In the figure below, two datasets from different LTER sites have been harmonized for analysis. We don’t have all the metadata here, but based on the column naming we can assume that the file on the left (<code>Konza_harvestplots.txt</code>, <strong><span style="color:orange">yellow</span></strong>) contains columns for the sampling date, a plot identifier, a treatment categorical value, and measured biomass values. The filename suggests that the data come from the Konza Prarie LTER site. The file on the right (<code>2022_clips.csv</code>, <strong><span style="color:blue">blue</span></strong>) has a column denoting the LTER site, in this case Sevilleta LTER (abbreviated as SEV), as well as similar date, plot identifier, treatment, and measured biomass columns.</p>
 <p>There are some similarities and some differences in these two source files. A harmonized file (<code>lter_grass_biomass_harmonized.txt</code>) appears below.</p>
@@ -566,7 +626,7 @@ Example: Harmonizing grassland biomass data
 </p>
 <p>Take a minute to look at the harmonized file and consider <strong>how</strong> these data were harmonized. Then, answer the question below.</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -575,7 +635,7 @@ Click Me for Answer!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>What changes were made to data structure, variable formatting, or units in these data?</strong> Even though the source data files were similar, several important changes were made to create the harmonized file. Among them:</p>
 <ul>
@@ -615,9 +675,9 @@ Click Me for Answer!
 </ol>
 <p>When choosing a destination format for the harmonized data for a synthesis project, the <strong>audience</strong> and <strong>future uses</strong> of the data are also an important consideration. Consider how your synthesis team will analyze the data, as well as how the world outside that team will use and interact with the data once it is published. Again, there is no one answer, but below are a few examples of harmonized destination formats to consider.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Long Format (a.k.a. “Tidy”)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Wide Format</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Relational Databases</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Cloud-Native</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Other…</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Long Format (a.k.a. “Tidy”)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Wide Format</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Relational Databases</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Cloud-Native</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Other…</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Here our grassland biomass data is in long format, often referred to as “tidy” data. Data in this format is generally easy to understand and use. There are three rules for tidy data:</p>
 <ol type="1">
 <li>Each column is one variable.</li>
@@ -640,7 +700,7 @@ Click Me for Answer!
 </figure>
 </div>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>In this dataset, our grassland data has been restructured into wide format, often referred to (sometimes unfairly) as “messy” or “untidy” data. Note that the biomass variable has been split into two columns, one for control plots and one for fertilized plots.</p>
 <p><strong>Advantages</strong>: easier for some statistical analyses; easier to assess the data visually<br>
 <strong>Disadvantages</strong>: may be more difficult to clean/filter/append, multiple observations per row; more likely to contain empty (<code>NULL</code>) cells<br>
@@ -652,7 +712,7 @@ Click Me for Answer!
 </figure>
 </div>
 </div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Below is an example of how we might structure our grassland data in a relational database. The schema consists of three tables that house information about sampling events (when, where data were collected), the plots from which the samples are collected, and the biomass values for each collection. The schema allows us to define the data types (e.g., text, integer), add constraints (e.g., values cannot be missing), and to describe relationships between tables (keys). Relational formats are <a href="https://en.wikipedia.org/wiki/Database_normalization">normalized</a> to reduce data redundancy and increase data integrity, which can help us to manage complex data<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -671,7 +731,7 @@ Click Me for Answer!
 </figure>
 </div>
 </div>
-<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>There are many possibilities to make large synthesis datasets available and useful in the cloud. These require specialized knowledge and tooling, and reliable access to cloud platforms.</p>
 <p><strong>Advantages</strong>: easier access to big (high volume) data, can integrate with web apps<br>
 <strong>Disadvantages</strong>: less familiar/accessible to many scientists, few best practices to follow, costs can be higher<br>
@@ -683,7 +743,7 @@ Click Me for Answer!
 </figure>
 </div>
 </div>
-<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <p>There are many, many other possible harmonized data formats. Here are a few possible examples:</p>
 <ul>
 <li>DarwinCore archives for biodiversity data</li>
@@ -726,9 +786,9 @@ Click Me for Answer!
 <h2 class="anchored" data-anchor-id="synthesis-group-case-studies">Synthesis Group Case Studies</h2>
 <p>To make some of these concepts more tangible, let’s consider some case studies. The following tabs contain GitHub repositories for real teams that have engaged in synthesis research and chosen to preserve and maintain their scripts in GitHub. Each has different strengths and you may find that facets of each feel most appropriate for your group to adopt. There is no single “right” way of tackling this but hopefully parts of these exemplars inspire you.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Example 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Example 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Example 3</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Example 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Example 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Example 3</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>LTER SPARC Group: <a href="https://lternet.edu/working-groups/soil-p-control-of-c-and-n/">Soil Phosphorus Control of Carbon and Nitrogen</a></p>
 <p>Stored their code here: <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/lter/lter-sparc-soil-p">lter / <strong>lter-sparc-soil-p</strong></a></p>
 <p><strong>Highlights</strong></p>
@@ -744,7 +804,7 @@ Click Me for Answer!
 </ul></li>
 </ul>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>LTER Full Synthesis Working Group: <a href="https://lternet.edu/working-groups/the-flux-gradient-project/">The Flux Gradient Project</a></p>
 <p>Stored their code here: <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/lter/lterwg-flux-gradient">lter / <strong>lterwg-flux-gradient</strong></a></p>
 <p><strong>Highlights</strong></p>
@@ -758,7 +818,7 @@ Click Me for Answer!
 </ul></li>
 </ul>
 </div>
-<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>LTER Full Synthesis Working Group: <a href="https://lternet.edu/working-groups/from-poles-to-tropics-a-multi-biome-synthesis-investigating-the-controls-on-river-si-exports/">From Poles to Tropics: A Multi-Biome Synthesis Investigating the Controls on River Si Exports</a></p>
 <p>Stored their code here: <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/lter/lterwg-silica-spatial">lter / <strong>lterwg-silica-spatial</strong></a></p>
 <p><strong>Highlights</strong></p>
@@ -799,9 +859,9 @@ Click Me for Answer!
 <section id="data-preparation" class="level3">
 <h3 class="anchored" data-anchor-id="data-preparation">Data Preparation</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Harmonizing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Cleaning &amp; Filtering</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Harmonizing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Cleaning &amp; Filtering</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>For R and Python users, there are excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization.</p>
 <ul>
 <li>In Hadley Wickham’s <em>R for Data Science</em> book, the chapters on <a href="https://r4ds.hadley.nz/data-transform">data transforms</a> and <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a> are a good place to start</li>
@@ -810,7 +870,7 @@ Click Me for Answer!
 <li>A nice <a href="https://www.theanalysisfactor.com/wide-and-long-data/">article in “The Analysis Factor”</a> describes wide vs long data formats and when to choose which (TLDR, it depends on your statistical analysis plan).</li>
 </ul>
 </div>
-<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Data cleaning is complicated and varied, and entire books have been written on the subject.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a><a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
 <ul>
 <li>For some general considerations on cleaning data, see EDI’s “<a href="https://edirepository.org/resources/cleaning-data-and-quality-control">Cleaning Data and Quality Control</a>” resource</li>
