@@ -385,45 +385,53 @@ For more information about LTER synthesis working groups and how you can get inv
 
 ## Additional Resources
 
+### Courses, Workshops, and Tutorials
+
+- [Synthesis Skills for Early Career Researchers](https://lter.github.io/ssecr/) (SSECR) course. **2025**. LTER Network Office
+- [Collaborative Coding with GitHub](https://lter.github.io/workshop-github/) workshop. **2025**. LTER Scientific Computing team
+- [Coding in the Tidyverse](https://lter.github.io/workshop-tidyverse/) workshop. **2025**. LTER Scientific Computing team
+- [R / Python Bilingualism](https://njlyon0.github.io/collab_bilingualism/) tutorial. **2025**. Nick J Lyon
+- [R Programming for Biologists](https://njlyon0.github.io/teach_r-for-biologists/) (300-level undergraduate) course. **2024**. Nick J Lyon
+- [Reproducible Approaches to Arctic Research Using R](https://learning.nceas.ucsb.edu/2024-02-arctic/) workshop. **2024**. Arctic Data Center & NCEAS Learning Hub
+- [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/) workshop. **2022**. Lyon, N.J. _et al._
+- [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/). **2016**. McGill, B.
+
+### Literature
+
+- Lyon, N.J. & Earl, S. [Conventional Commits: A better way to track changes with Git](https://lternet.edu/stories/databits-conventional-commits/). **2024**. _DataBits_
+- Todd-Brown, K.E.O., _et al._ [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/). **2022**. _Biogeosciences_
+- Borer, E.T. _et al._ [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. _Ecological Society of America Bulletin_
+
 ### Data Preparation
 
-**Data cleaning and filtering resources**
+:::{.panel-tabset}
+#### Harmonizing
 
-* Data cleaning is complicated and varied, and entire books have been written on the subject.[^9][^10] For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
-* [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
-* In the R language, the `tidyverse` libraries (particularly `tidyr` and `dplyr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
-* In Python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
-* Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's *R for Data Science* book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy),[^11] and for python check Wes McKinney's *Python for Data Analysis* book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).[^12]
+For R and Python users, there are excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization.
+
+- In Hadley Wickham's _R for Data Science_ book, the chapters on [data transforms](https://r4ds.hadley.nz/data-transform) and [data tidying](https://r4ds.hadley.nz/data-tidy) are a good place to start
+- Also for R users, the LTER Network's `ltertools` package has a nice approach to harmonization with its intuitively-named `harmonize` function. See the [`ltertools` package vignette for details](https://lter.github.io/ltertools/articles/ltertools.html#harmonization)
+- In Wes McKinney's _Python for Data Analysis_ book, the chapter on [data wrangling](https://wesmckinney.com/book/data-wrangling) is helpful.
+- A nice [article in "The Analysis Factor"](https://www.theanalysisfactor.com/wide-and-long-data/) describes wide vs long data formats and when to choose which (TLDR, it depends on your statistical analysis plan).
+
+#### Cleaning & Filtering
+
+Data cleaning is complicated and varied, and entire books have been written on the subject.[^9][^10] 
+
+- For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource
+- [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
+- In R, the `tidyverse` libraries (e.g., `dplyr`, `tidyr`, `stringr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
+- In Python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
+- Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's _R for Data Science_ book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy),[^11] and for python check Wes McKinney's _Python for Data Analysis_ book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning).[^12]
 
 [^9]: Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.
 [^10]: Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley & Sons, 2018. https://doi.org/10.1002/9781118897126
 [^11]: Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. " O'Reilly Media, Inc.", 2023. https://r4ds.hadley.nz/
 [^12]: McKinney, Wes. Python for data analysis. " O'Reilly Media, Inc.", 2022. https://wesmckinney.com/book
 
-**Data harmonization resources**
-
-* For R and Python users, there are, again, excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization. In Hadley Wickham's *R for Data Science* book, the chapters on [data transforms](https://r4ds.hadley.nz/data-transform) and [data tidying](https://r4ds.hadley.nz/data-tidy) are a good place to start. In Wes McKinney's *Python for Data Analysis* book, the chapter on [data wrangling](https://wesmckinney.com/book/data-wrangling) is helpful.
-* A nice [article in "The Analysis Factor"](https://www.theanalysisfactor.com/wide-and-long-data/) describes wide vs long data formats and when to choose which (TLDR, it depends on your statistical analysis plan).
+:::
 
 ### Data Analysis
 
-* Harrer, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2023**. _GitHub_
-* Once again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham's *R for Data Science* book, the chapter on [exploratory data analysis](https://r4ds.hadley.nz/eda) will help. In McKinney's *Python for Data Analysis* book, try the chapters on [plotting and visualization](https://wesmckinney.com/book/plotting-and-visualization) and [the introduction to modeling](https://wesmckinney.com/book/modeling).
-
-### Courses, Workshops, and Tutorials
-
-- [Synthesis Skills for Early Career Researchers](https://lter.github.io/ssecr/) (SSECR) course. **2024**. LTER Network Office
-- [Reproducible Approaches to Arctic Research Using R](https://learning.nceas.ucsb.edu/2024-02-arctic/) workshop. **2024**. Arctic Data Center & NCEAS Learning Hub
-- [Collaborative Coding with GitHub](https://nceas.github.io/scicomp-workshop-collaborative-coding/) workshop. **2024**. NCEAS Scientific Computing team
-- [Coding in the Tidyverse](https://nceas.github.io/scicomp-workshop-tidyverse/) workshop. **2023**. NCEAS Scientific Computing team
-- [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/) workshop. **2022**. Lyon, N.J. _et al._
-- [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/). **2016**. McGill, B.
-
-### Literature
-
-- Todd-Brown, K.E.O., _et al._ [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/). **2022**. _Biogeosciences_
-- Borer, E.T. _et al._ [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. _Ecological Society of America Bulletin_
-
-### Other
-
-- Better commit messages with [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/?utm_source=pocket_mylist)
+- Harrer, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2023**. _GitHub_
+- Once again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham's *R for Data Science* book, the chapter on [exploratory data analysis](https://r4ds.hadley.nz/eda) will help. In McKinney's *Python for Data Analysis* book, try the chapters on [plotting and visualization](https://wesmckinney.com/book/plotting-and-visualization) and [the introduction to modeling](https://wesmckinney.com/book/modeling).
