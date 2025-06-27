@@ -36,7 +36,9 @@ See the sub-sections below for some especially critical elements to consider as 
 
 ### How Will You Get (and Stay) Organized?
 
-Two critical elements of oragnization are (1) the folder structure on your computer of project files and (2) how you will informatively name files so their purpose is immediately apparent. While there is no "one size fits all" solution, we recommend something like the following:
+Two critical elements of oragnization are (1) the folder structure on your computer of project files and (2) how you will informatively name files so their purpose is immediately apparent. Also, **it is easier to _start_ organized than it is to _get_ organized**, so implementing a system at the start of your project and sticking to it will be much easier than trying to re-organize months or years worth of work after the fact.
+
+While there is no "one size fits all" solution to project organization, we recommend something like the following:
 
 ::::{.columns}
 :::{.column width="55%"}
@@ -88,15 +90,20 @@ _Suggested Project Structure:_
 :::
 ::::
 
+### How Will You Collaborate?
 
+Once you've decided on your organization method, you'll need to decide _as a team_ how you will work together. It is critical that your _whole_ team agrees to whatever method you come up with because it will result in a lot of unnecessary work if a subset of people do not follow the plan--and thus introduce disorganization and inconsistency that someone will have to spend time fixing later.
 
+<u>A good rule of thumb is that you should plan for "future you."</u> What collaboration methods will you in 6+ months thank 'past you' for implementing? It may also be helpful to consider the negative side of that question: what shortcuts could you take now that 'future you' will be unhappy with?
 
+A huge part of deciding how you will collaborate is deciding how you will _communicate_ as a team. When you work asynchronously, how will you tell others that you are working on a particular code or document file? This _does not_ have to be high tech--an email or Slack message can suffice--but if you don't communicate about the minutiae, you risk duplicating effort or putting in conflicting work.
 
 
 
 ## 2. Prepare Data
 
 
+- Quarantine external inputs
 
 
 ## 3. Analyze Data
@@ -123,12 +130,7 @@ Making one's work "reproducible"--particularly in code contexts--has become incr
 - Allows anyone to recreate the entire workflow from start to finish
 - Leads to modular, extensible research projects. Adding data from a new site, or a new analysis, should be relatively easy in a reproducible workflow.
 
-### {{< fa file-pen >}} Contributing
 
-- Create a formal plan for collaborating _with which your whole team agrees_
-- Quarantine external inputs
-- Plan for "future you"
-- Communicate to your collaborators whenever you're working on a specific script to avoid conflicting edits
 
 ### {{< fa laptop-code >}} Coding
 
