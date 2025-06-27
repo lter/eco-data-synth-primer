@@ -20,13 +20,32 @@ In [Module 1](https://lter.github.io/eco-data-synth-primer/module1.html) we disc
 
 Once the synthesis team moves into the operational phase of research, which includes the integration and analysis of data, there are some key activities that must happen:
 
-- <u>**Planning** how the team will handle technical challenges</u>
-- **Harmonizing and cleaning data** to make it usable
-- **Analyzing data** to answer questions
-- **Interpreting** the results of your analysis
-- **Writing** the papers or **creating** other research products 
+1. **Make a plan** for technical challenges
+2. **Harmonize** and **tidy data** _in a reproducible way_
+3. **Analyze data** to answer your questions
+
+Once you have analyzed your data, you can interpret the results and create products as you likely would in a non-synthesis project--though the scale and impact of your products are likely to be larger for a synthesis project than for a typical scientific effort. More on these later steps of synthesis work in [Module 3](https://lter.github.io/eco-data-synth-primer/module3.html).
 
 We've already seen that creating a collaborative, inclusive team can set the stage for successful synthesis research. Each of the operational activities above will also benefit from this mindset, and in this module we highlight some of the most important considerations and practices for a _team science_ approach to the nuts-and-bolts of synthesis research.
+
+## 1. Make a Plan
+
+
+
+## 2. Prepare Data
+
+
+
+
+## 3. Analyze Data
+
+
+
+
+
+
+
+
 
 ## Reproducibility Practices
 
