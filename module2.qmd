@@ -90,6 +90,19 @@ _Suggested Project Structure:_
 :::
 ::::
 
+:::{.callout-warning icon="false"}
+#### Activity: Organization
+
+On your own or in a small group, open your computer and find the files for one of your past projects. With that project in mind, ask yourself the following:
+
+- How hard is it for you to reorient yourself to this project based on your organization system?
+    - How hard do you think it would be to onboard a new collaborator on this project?
+- How many of the properties of the recommended structure above does your organization system follow?
+- Are there actionable steps you could take to feel more confident in your organization system? If so, what are they?
+
+Once you have considered these questions, **take a few minutes and try to reorganize your chosen project**. If that feels risky to you, write some notes on scratch paper of how you _would_ (or _could_) reorganize this project to be more functional
+:::
+
 ### How Will You Collaborate?
 
 Once you've decided on your organization method, you'll need to decide _as a team_ how you will work together. It is critical that your _whole_ team agrees to whatever method you come up with because it will result in a lot of unnecessary work if a subset of people do not follow the plan--and thus introduce disorganization and inconsistency that someone will have to spend time fixing later.
@@ -119,6 +132,19 @@ The workshop materials we will be working through live [here](https://lter.githu
  ```{=html}
 <iframe src="https://lter.github.io/workshop-github/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
 ```
+
+:::{.callout-warning icon="false"}
+#### Activity: Practice with GitHub
+
+Let's use some of the skills that we just discussed during the GitHub tutorial!
+
+When you make a repository under your username with the same name as your user (e.g., `njlyon0 / njlyon0`) this is a "special repository". Any content that you put in the README file of that repository will show up at the top of your GitHub profile (e.g., [here](https://github.com/angelchen7), or [here](https://github.com/njlyon0)). Making this landing page for your GitHub page can be a nice way of demonstrating your GitHub savvy and--for those without a professional website--can be a nice stand-in until you feel that a full website is warranted.
+
+For our purposes today, **creating this repository and filling it out through GitHub is a nice chance for you to build muscle memory with creating and editing files directly through GitHub!**
+
+Take a few minutes to create this special repository and add a few sentences about yourself and your personal/professional interests.
+
+:::
 
 ## 2. Prepare Data
 
@@ -161,14 +187,20 @@ Finally, there are a few additional considerations for reproducible synthesis wo
 
 Reproducible synthesis work also requires dramatically more communication--especially around contribution guidelines and intellectual credit. It's best to keep track of who contributed what, so that everyone gets credit. This can be challenging in practice and makes sense to start recording early and in a transparent way.
 
-::: {.panel-tabset} 
-### Reproducibility Questions
+:::{.callout-warning icon="false"}
+#### Activity: Reproducibility
 
-In groups of 3-5, discuss the following questions:
+In small groups, discuss the following questions:
 
-- What elements of reproducibility **from our list** have you used/are interested in using?
+- What elements of reproducibility that we identify have you used/are interested in using?
 - Which feel unreasonable or confusing?
 - What activities do you do in your own work to ensure reproducibility that **our list is missing**?
+
+If you have a script you've worked on recently, open it and read through it. 
+
+- How reproducible do you think that code is?
+- How easy would it be for someone else to understand what the code does?
+    - How easy would it be for them to actually run the code?
 
 :::
 
@@ -178,13 +210,15 @@ The scientific questions being asked in synthesis projects are usually broad in 
 
 These processes can be easy or difficult depending on the quality of the source data, the differences between source data, and how much **metadata** (see callout above) is available to understand them. Also, note that you could clean each input dataset separately first, then harmonize the data, but it may be easier to harmonize first. For example, if you have 10 datasets, each with some type of sampling date column, it will be _much_ easier to filter out particular dates if all that information is in the same format in the same column as opposed to working with whatever idiosyncratic formats and/or column names are present in each original file.
 
-::: {.panel-tabset}
-#### **Data Preparation Group Questions**
+:::{.callout-warning icon="false"}
+#### Discussion: Data Preparation
 
 - How many of you work directly with data in your day-to-day?
-- What percentage of the time that you spend working on data is spent on data cleaning?
-- How much on metadata creation?
-- How much on data preparation?
+- Of the time you spend working with data, what percentage is spent:
+    - Harmonizing data?
+    - Cleaning data?
+    - Creating metadata?
+    - Documenting your process (including making comments in code)?
 
 :::
 
