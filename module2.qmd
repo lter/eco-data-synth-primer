@@ -6,28 +6,27 @@ title: "Operational Synthesis"
 
 After completing this module, you will be able to:
 
-- **Identify** characteristics of reproducible coding / project organization
-- **Explain** benefits of reproducibility (to your team and beyond)
 - **Summarize** the advantages of creating a defined contribution workflow
 - **Explain** how synthesis teams can use GitHub to collaborate more efficiently and reproducibly
+- **Identify** characteristics of reproducible coding / project organization
+- **Explain** benefits of reproducibility (to your team and beyond)
 - **Understand** best practices for preparing and analyzing data to be used in synthesis projects
 
 ## Introduction
 
-Here are a few serviceable definitions of what research is:
+Scientific research can be defined as "creative and systematic work undertaken in order to increase the stock of knowledge" ([2015 Frascati Manual](https://doi.org/10.1787/9789264239012-en)). To this basic definition of research, **our definition of _synthesis_ research adds <u>collaborative work</u>, and the <u>integration and analysis of a wide range of data sources</u>**.
 
-- "Creative and systematic work undertaken in order to increase the stock of knowledge" *from the [2015 Frascati Manual](https://doi.org/10.1787/9789264239012-en)*
-- "Studious inquiry or examination," and especially "investigation or experimentation aimed at the discovery and interpretation of facts" *from the [Merriam-Webster dictionary](https://www.merriam-webster.com)*
+In [Module 1](https://lter.github.io/eco-data-synth-primer/module1.html) we discussed many of the collaborative considerations for synthesis research, including creating a diverse and inclusive team, asking synthesis-ready scientific questions (often broad in scope or spatial scale), and finding suitable information (or data) from a wide variety of sources to answer those questions. 
 
-To these basic definitions of research, **our definition of synthesis research adds
-_collaborative work_, and the _integration and analysis of a wide range of data sources_**, to achieve a more complete, generalizable, or useful research result. In Module 1 we discussed many of the collaborative considerations for synthesis research, including creating a diverse and inclusive team, asking synthesis-ready scientific questions (often broad in scope or spatial scale), and finding suitable information (or data) from a wide variety of sources to answer those questions. Once the synthesis team moves into the operational phase of research, which includes the integration and analysis of data, there are some key activities that must happen:
+Once the synthesis team moves into the operational phase of research, which includes the integration and analysis of data, there are some key activities that must happen:
 
-- **Cleaning and harmonizing data** to make it usable
+- <u>**Planning** how the team will handle technical challenges</u>
+- **Harmonizing and cleaning data** to make it usable
 - **Analyzing data** to answer questions
 - **Interpreting** the results of your analysis
 - **Writing** the papers or **creating** other research products 
 
-We've already seen that creating a collaborative, inclusive team can set the stage for successful synthesis research. Each of the operational activities above will also benefit from this mindset, and in this module we highlight some of the most important considerations and practices for a *team science* approach to the nuts-and-bolts of synthesis research.
+We've already seen that creating a collaborative, inclusive team can set the stage for successful synthesis research. Each of the operational activities above will also benefit from this mindset, and in this module we highlight some of the most important considerations and practices for a _team science_ approach to the nuts-and-bolts of synthesis research.
 
 ## Reproducibility Practices
 
