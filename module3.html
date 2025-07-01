@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -393,7 +413,7 @@ More about Findable, Accessible, Interoperable, Reusable (FAIR) data
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The FAIR principles, standing for Findability, Accessibility, Interoperability, and Reusability, are a community-standard set of guidelines for evaluating the quality and utility of published research data. Making an effort to meet the FAIR criteria promotes both human and machine usability of data, and is a worthy objective when preparing to publish data from a synthesis research project.</p>
-<p>The FAIR principles were first defined in the paper by Wilkinson et al (2018)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Since this time, many resources have arisen to guide the implementation the FAIR principles<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, and to quantify FAIR data successes and failures in the research and publishing communities<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
+<p>The FAIR principles were first defined in the paper by Wilkinson et al.<span class="citation" data-cites="wilkinson_fair_2016">(<a href="#ref-wilkinson_fair_2016" role="doc-biblioref">2016</a>)</span>. Since this time, many resources have arisen to guide the implementation of the FAIR principles<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and to quantify FAIR data successes and failures in the research and publishing communities <span class="citation" data-cites="bahim_fair_2020 gries_environmental_2023">(<a href="#ref-bahim_fair_2020" role="doc-biblioref">Bahim et al. 2020</a>; <a href="#ref-gries_environmental_2023" role="doc-biblioref">Gries et al. 2023</a>)</span>.</p>
 </div>
 </div>
 </div>
@@ -545,11 +565,11 @@ Observations from the instructors
 <li><strong>How</strong> the data were collected (methods, instruments, etc.)</li>
 <li>Sometimes, stating <strong>why</strong> the data were collected can help future users understand data context evaluate fitness for use.</li>
 </ul>
-<p>Including metadata of this nature makes data more usable, and helps prevent the deterioration of information about data over time, as illustrated in the figure below (from Michener et al.&nbsp;1997<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>).</p>
+<p>Including metadata of this nature makes data more usable, and helps prevent the deterioration of information about data over time, as illustrated in the figure below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/michener97_information_loss.png" class="img-fluid figure-img" style="width:60.0%" alt="A graphic demonstrating the loss of data and metadata over time with particular events that precipitate more dramatic loss indicated with arrows (e.g., retirement of key personnel, fading memory of those involved, etc."></p>
-<figcaption>Example of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time (Michener et al 1997.</figcaption>
+<figcaption>Example of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time <span class="citation" data-cites="michener_nongeospatial_1997">(from <a href="#ref-michener_nongeospatial_1997" role="doc-biblioref">Michener et al. 1997</a>)</span>.</figcaption>
 </figure>
 </div>
 <section id="data-provenance-metadata" class="level4">
@@ -559,8 +579,8 @@ Observations from the instructors
 <p>A few other notes on provenance:</p>
 <ul>
 <li>At its simplest, documenting data sources as you collect and analyze the source data is a great start on provenance metadata.</li>
-<li>Many data repositories provide guidelines, tools, and features for data provenance metadata<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>.</li>
-<li>Provenance metadata can become very detailed if the software and computing environment is also taken into account. This is an active area of study <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a><a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</li>
+<li>Many data repositories provide guidelines, tools, and features for data provenance metadata<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</li>
+<li>Provenance metadata can become very detailed if the software and computing environment is also taken into account. This is an active area of study <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</li>
 </ul>
 </section>
 <section id="licensing" class="level4">
@@ -582,7 +602,7 @@ Observations from the instructors
 <li>locally, using a labeled directory for the cleaned, harmonized, of derived data, along with related code and metadata files. Metadata files may be plain text, or use <a href="https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx">a metadata template</a>.</li>
 <li>with a repository-based metadata editor, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the Environmental Data Initiative (EDI) repository.</li>
 </ol></li>
-<li><strong>Get a professional data manager or data curator involved with the synthesis project</strong>. For example, the LTER Network has a community of “Information Managers” <a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> trained in data management, metadata creation, and data publishing. Research data repositories<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> and associated data curators<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> may also be a good resource.</li>
+<li><strong>Get a professional data manager or data curator involved with the synthesis project</strong>. For example, the LTER Network has a community of “Information Managers” <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> trained in data management, metadata creation, and data publishing. Research data repositories<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> and associated data curators<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> may also be a good resource.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -631,7 +651,7 @@ Key insight
 </section>
 <section id="choosing-and-publishing-to-a-repository" class="level3">
 <h3 class="anchored" data-anchor-id="choosing-and-publishing-to-a-repository">Choosing and Publishing to a Repository</h3>
-<p>There are many, many research data repositories available to researchers now<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>, making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a <a href="https://doi.org">Digital Object Identifier</a>, or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the <a href="https://amt.coretrustseal.org/certificates">CoreTrustSeal certified repository list</a> is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:</p>
+<p>There are many, many research data repositories available to researchers now[^11], making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a <a href="https://doi.org">Digital Object Identifier</a>, or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the <a href="https://amt.coretrustseal.org/certificates">CoreTrustSeal certified repository list</a> is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:</p>
 <ol type="1">
 <li>Who are the likely users for this data? Will they belong to a specific scientific discipline, research network, or community of stakeholders?</li>
 <li>How specialized are your data? Do they fall into a common data type or follow a special formatting standard?</li>
@@ -658,7 +678,7 @@ Key insight
 </section>
 <section id="sharing-the-teams-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="sharing-the-teams-workflow">Sharing the Team’s Workflow</h2>
-<p>One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below), with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for examples,<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> but this practice is also generally applicable to synthesis research.</p>
+<p>One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below), with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for examples <span class="citation" data-cites="white_developing_2019">(<a href="#ref-white_developing_2019" role="doc-biblioref">White et al. 2019</a>, for example)</span>, but this practice is also generally applicable to synthesis research.</p>
 <p>Sharing and citing workflows and code are an essential element of reproducible science because they:</p>
 <ol type="1">
 <li>Cite the exact process used to prepare and analyze data</li>
@@ -698,7 +718,7 @@ Key insight
 <p><a href="https://github.com">GitHub</a> is huge and widely used for sharing code (among many other services). In combination with other software and services, GitHub can be reliably used to publish scientific code in a reproducible way.</p>
 <p><strong>Some features:</strong></p>
 <ul>
-<li>Zenodo integration is already included in GitHub,<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> which can make it fairly easy to publish a repository with a DOI.</li>
+<li>Zenodo integration is already included in GitHub,<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> which can make it fairly easy to publish a repository with a DOI.</li>
 <li>Large array of project management features.</li>
 </ul>
 </div>
@@ -1035,7 +1055,7 @@ Cracking the case
 <p><em>Workflows</em></p>
 <ul>
 <li>The original “clue” is a link to GitHub where code is stored.</li>
-<li>This is one of the LTER-supported synthesis groups that led to the creation of the <a href="https://ediorg.github.io/ecocomDP/">ecocomDP</a> data model and R package <a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></li>
+<li>This is one of the LTER-supported synthesis groups that led to the creation of the <a href="https://ediorg.github.io/ecocomDP/">ecocomDP</a> data model and R package <span class="citation" data-cites="obrien_ecocomdp_2021">(<a href="#ref-obrien_ecocomdp_2021" role="doc-biblioref">O’Brien et al. 2021</a>)</span></li>
 </ul>
 <p><em>Datasets</em></p>
 <p>There is a dataset in Zenodo</p>
@@ -1081,8 +1101,8 @@ Cracking the case
 <p>Some research efforts have developed automation systems for research data processing, analytics, and publishing. These often fall into the “continuous integration/continuous deployment” class of web-enabled software and data pipelines, in which one software processes (data processing, analytics, publication, etc.) may be automatically triggered by events that occur in another, connected software service (such as adding new data to a GitHub repository). These technologies enable researchers to build software pipelines that can be useful for quality control of new data, updating forecasts, and rapid deployment of data or analysis products.</p>
 <p>Examples:</p>
 <ul>
-<li>The Portal Project in southeast Arizona has developed a well-described <a href="https://portal.naturecast.org/">near-term ecological forecasting pipeline</a>.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></li>
-<li><a href="https://github.com/SCBI-ForestGEO/Dendrobands">Automated quality control</a> of dendrometer band data.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a></li>
+<li>The Portal Project in southeast Arizona has developed a well-described <a href="https://portal.naturecast.org/">near-term ecological forecasting pipeline</a> <span class="citation" data-cites="kim_implementing_2022">(also described in <a href="#ref-kim_implementing_2022" role="doc-biblioref">Kim et al. 2022</a>)</span>.</li>
+<li><a href="https://github.com/SCBI-ForestGEO/Dendrobands">Automated quality control</a> of dendrometer band data.[^16]</li>
 <li><a href="https://flare-forecast.org/">Forecasting Lake and Reservoir Ecosystems</a> (FLARE) project.</li>
 </ul>
 </div>
@@ -1118,7 +1138,7 @@ Cracking the case
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true">A useful data availability statement</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false">Not as helpful</a></li></ul>
 <div class="tab-content">
 <div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
-<p>From Currier and Sala 2022<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>. Note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list (not shown). The DOIs included here are helpful for quickly finding the data.</p>
+<p>In the Data Availability Statement from <span class="citation" data-cites="currier_precipitation_2022">Currier and Sala (<a href="#ref-currier_precipitation_2022" role="doc-biblioref">2022</a>)</span>, note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list (not shown). The DOIs included here are helpful for quickly finding the data.</p>
 <blockquote class="blockquote">
 <p>All original and derived phenology data produced by the authors, and R scripts for data processing, statistical analyses, and figure production are publicly available in the Environmental Data Initiative (EDI) repository. EDI package knb-lter-jrn.210574001.2 (Currier &amp; Sala, 2022a) contains daily phenocam image data, derived timeseries and associated scripts for processing and is available at <a href="https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640" class="uri">https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640</a>. EDI package knb-lter-jrn.210574002.2 (Currier &amp; Sala, 2022b) contains observed phenological indicators and environmental drivers as well as associated scripts for final analyses and figure construction presented in this manuscript and these data are available at <a href="https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29" class="uri">https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29</a>. No novel code was generated by the authors of this manuscript. The precipitation data used in all analyses are derived from G-BASN data in EDI package knb-lter-jrn.210520001 (Yao et al., 2020) available at <a href="https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f" class="uri">https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f</a>. Daily air temperature summaries from 4 June 1914 to the present for the Jornada Experimental Range Headquarters (NOAA station GHCND:USC00294426) are freely available upon request via the National Ocean and Atmospheric Administration (<a href="https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail" class="uri">https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail</a>).</p>
 </blockquote>
@@ -1218,32 +1238,49 @@ Cracking the case
 <p>When done correctly, ecological synthesis research means having lots of fun doing science with a great team.</p>
 
 
+
 </section>
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bahim_fair_2020" class="csl-entry" role="listitem">
+Bahim, Christophe, Carlos Casorrán-Amilburu, Makx Dekkers, Edit Herczog, Nicolas Loozen, Konstantinos Repanas, Keith Russell, and Shelley Stall. 2020. <span>“The <span>FAIR</span> <span>Data</span> <span>Maturity</span> <span>Model</span>: <span>An</span> <span>Approach</span> to <span>Harmonise</span> <span>FAIR</span> <span>Assessments</span>.”</span> <em>Data Science Journal</em> 19 (1). <a href="https://doi.org/10.5334/dsj-2020-041">https://doi.org/10.5334/dsj-2020-041</a>.
+</div>
+<div id="ref-currier_precipitation_2022" class="csl-entry" role="listitem">
+Currier, Courtney M., and Osvaldo E. Sala. 2022. <span>“Precipitation Versus Temperature as Phenology Controls in Drylands.”</span> <em>Ecology</em> 103 (11): e3793. <a href="https://doi.org/10.1002/ecy.3793">https://doi.org/10.1002/ecy.3793</a>.
+</div>
+<div id="ref-gries_environmental_2023" class="csl-entry" role="listitem">
+Gries, Corinna, Paul C. Hanson, Margaret O’Brien, Mark Servilla, Kristin Vanderbilt, and Robert Waide. 2023. <span>“The <span>Environmental</span> <span>Data</span> <span>Initiative</span>: <span>Connecting</span> the Past to the Future Through Data Reuse.”</span> <em>Ecology and Evolution</em> 13 (1): e9592. <a href="https://doi.org/10.1002/ece3.9592">https://doi.org/10.1002/ece3.9592</a>.
+</div>
+<div id="ref-kim_implementing_2022" class="csl-entry" role="listitem">
+Kim, Albert Y., Valentine Herrmann, Ross Barreto, Brianna Calkins, Erika Gonzalez-Akre, Daniel J. Johnson, Jennifer A. Jordan, et al. 2022. <span>“Implementing <span>GitHub</span> <span>Actions</span> Continuous Integration to Reduce Error Rates in Ecological Data Collection.”</span> <em>Methods in Ecology and Evolution</em> 13 (11): 2572–85. <a href="https://doi.org/10.1111/2041-210X.13982">https://doi.org/10.1111/2041-210X.13982</a>.
+</div>
+<div id="ref-lerner_making_2023" class="csl-entry" role="listitem">
+Lerner, Barbara, Emery Boose, Orenna Brand, Aaron M. Ellison, Elizabeth Fong, Matthew Lau, Khanh Ngo, et al. 2023. <span>“Making <span>Provenance</span> <span>Work</span> for <span>You</span>.”</span> <em>The R Journal</em> 14 (4): 141–59. <a href="https://rjournal.github.io/">https://rjournal.github.io/</a>.
+</div>
+<div id="ref-michener_nongeospatial_1997" class="csl-entry" role="listitem">
+Michener, William K., James W. Brunt, John J. Helly, Thomas B. Kirchner, and Susan G. Stafford. 1997. <span>“Nongeospatial <span>Metadata</span> for the <span>Ecological</span> <span>Sciences</span>.”</span> <em>Ecological Applications</em> 7 (1): 330–42. <a href="https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2">https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2</a>.
+</div>
+<div id="ref-obrien_ecocomdp_2021" class="csl-entry" role="listitem">
+O’Brien, Margaret, Colin A. Smith, Eric R. Sokol, Corinna Gries, Nina Lany, Sydne Record, and Max C. N. Castorani. 2021. <span>“<span class="nocase">ecocomDP</span>: <span>A</span> Flexible Data Design Pattern for Ecological Community Survey Data.”</span> <em>Ecological Informatics</em> 64 (September): 101374. <a href="https://doi.org/10.1016/j.ecoinf.2021.101374">https://doi.org/10.1016/j.ecoinf.2021.101374</a>.
+</div>
+<div id="ref-white_developing_2019" class="csl-entry" role="listitem">
+White, Ethan P., Glenda M. Yenni, Shawn D. Taylor, Erica M. Christensen, Ellen K. Bledsoe, Juniper L. Simonis, and S. K. Morgan Ernest. 2019. <span>“Developing an Automated Iterative Near-Term Forecasting System for an Ecological Study.”</span> <em>Methods in Ecology and Evolution</em> 10 (3): 332–44. <a href="https://doi.org/10.1111/2041-210X.13104">https://doi.org/10.1111/2041-210X.13104</a>.
+</div>
+<div id="ref-wilkinson_fair_2016" class="csl-entry" role="listitem">
+Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The <span>FAIR</span> <span>Guiding</span> <span>Principles</span> for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1): 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Wilkinson, M., Dumontier, M., Aalbersberg, I. et al.&nbsp;The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p><a href="https://www.go-fair.org/how-to-go-fair/">GoFAIR initiative</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><a href="https://faircookbook.elixir-europe.org">The FAIR Cookbook</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Bahim, C., Casorrán-Amilburu, C., Dekkers, M., Herczog, E., Loozen, N., Repanas, K., Russell, K. and Stall, S. (2020) ‘The FAIR Data Maturity Model: An Approach to Harmonise FAIR Assessments’, Data Science Journal, 19(1), p.&nbsp;41. Available at: https://doi.org/10.5334/dsj-2020-041.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Gries, Corinna, et al.&nbsp;“The environmental data Initiative: Connecting the past to the future through data reuse.” Ecology and Evolution 13.1 (2023): e9592. https://doi.org/10.1002/ece3.9592<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p><a href="https://edirepository.org/resources/provenance-metadata">Provenance metadata at the EDI repository</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Lerner, et al., “Making Provenance Work for You”, The R Journal, 2023. https://journal.r-project.org/articles/RJ-2023-003/<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p><a href="https://end-to-end-provenance.github.io/">End-to-End Provenance</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p><a href="https://lternet.edu/using-lter-data/#im">List of LTER Information Managers</a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p><a href="https://www.re3data.org/">The Registry of Research Data Repositories (re3data.org)</a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p><a href="https://datacurationnetwork.org/">Data curation network</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p><a href="https://www.re3data.org/">The Registry of Research Data Repositories (re3data.org)</a><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p>White EP, Yenni GM, Taylor SD, et al.&nbsp;Developing an automated iterative near-term forecasting system for an ecological study. Methods Ecol Evol. 2019; 10: 332–344. https://doi.org/10.1111/2041-210X.13104<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">GitHub documentation for referencing and citing content</a><a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn16"><p>O’Brien, Margaret, et al.&nbsp;“ecocomDP: a flexible data design pattern for ecological community survey data.” Ecological Informatics 64 (2021): 101374.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn17"><p><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">GitHub documentation for referencing and citing content</a><a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn18"><p>Kim, A. Y., Herrmann, V., Barreto, R., Calkins, B., Gonzalez-Akre, E., Johnson, D. J., Jordan, J. A., Magee, L., McGregor, I. R., Montero, N., Novak, K., Rogers, T., Shue, J., &amp; Anderson-Teixeira, K. J. (2022). Implementing GitHub Actions continuous integration to reduce error rates in ecological data collection. Methods in Ecology and Evolution, 13, 2572–2585. https://doi.org/10.1111/2041-210X.13982<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn19"><p>Currier, Courtney M., and Osvaldo E. Sala. 2022. “ Precipitation versus Temperature as Phenology Controls in Drylands.” Ecology 103(11): e3793. https://doi.org/10.1002/ecy.3793<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>The GO FAIR Initiative’s <a href="https://www.go-fair.org/how-to-go-fair/">“How to GO FAIR”</a> and the <a href="https://fairplus.github.io/the-fair-cookbook/content/home.html">FAIR Cookbook</a> are two examples of implementation guides.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The EDI repository’s <a href="https://edirepository.org/resources/provenance-metadata">provenance metadata</a> documentation is an example applicable to publishing with the EML metadata standard. Other metadata standards and repositories have different systems.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>See <span class="citation" data-cites="lerner_making_2023">Lerner et al. (<a href="#ref-lerner_making_2023" role="doc-biblioref">2023</a>)</span> or resources at the <a href="https://end-to-end-provenance.github.io/">End-to-End Provenance</a> project.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Here is a <a href="https://lternet.edu/using-lter-data/#im">list of LTER Information Managers</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>The <a href="https://www.re3data.org/">Registry of Research Data Repositories (re3data.org)</a> project is a comprehensive tracker of information about research data repositories.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>The <a href="https://datacurationnetwork.org/">Data Curation Network</a> is a professional membership organization for data curators.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>The process of publishing a GitHub repository release to Zenodo is covered in the <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">GitHub</a> and <a href="https://help.zenodo.org/docs/github/enable-repository/">Zenodo</a> documentation, and <a href="https://tutorials.inbo.be/tutorials/git_zenodo/">other places</a>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
