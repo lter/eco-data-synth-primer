@@ -32,6 +32,8 @@ website:
 execute:
   freeze: auto
 
+bibliography: references.bib
+
 format:
   html:
     code-overflow: wrap
