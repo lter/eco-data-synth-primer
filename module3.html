@@ -563,12 +563,12 @@ Observations from the instructors
 <li><strong>When</strong> the data were collected</li>
 <li><strong>Where</strong> the data were collected</li>
 <li><strong>How</strong> the data were collected (methods, instruments, etc.)</li>
-<li>Sometimes, stating <strong>why</strong> the data were collected can help future users understand data context evaluate fitness for use.</li>
+<li>Sometimes, stating <strong>why</strong> the data were collected can help future users understand data context and evaluate fitness for use.</li>
 </ul>
 <p>Including metadata of this nature makes data more usable, and helps prevent the deterioration of information about data over time, as illustrated in the figure below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/michener97_information_loss.png" class="img-fluid figure-img" style="width:60.0%" alt="A graphic demonstrating the loss of data and metadata over time with particular events that precipitate more dramatic loss indicated with arrows (e.g., retirement of key personnel, fading memory of those involved, etc."></p>
+<p><img src="images/michener97_information_loss.png" class="img-fluid figure-img" style="width:60.0%" alt="A graphic demonstrating the loss of data and metadata over time with particular events that precipitate more dramatic loss indicated with arrows (e.g., retirement of key personnel, fading memory of those involved, etc.)"></p>
 <figcaption>Example of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time <span class="citation" data-cites="michener_nongeospatial_1997">(from <a href="#ref-michener_nongeospatial_1997" role="doc-biblioref">Michener et al. 1997</a>)</span>.</figcaption>
 </figure>
 </div>
@@ -602,7 +602,7 @@ Observations from the instructors
 <li>locally, using a labeled directory for the cleaned, harmonized, of derived data, along with related code and metadata files. Metadata files may be plain text, or use <a href="https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx">a metadata template</a>.</li>
 <li>with a repository-based metadata editor, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the Environmental Data Initiative (EDI) repository.</li>
 </ol></li>
-<li><strong>Get a professional data manager or data curator involved with the synthesis project</strong>. For example, the LTER Network has a community of “Information Managers” <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> trained in data management, metadata creation, and data publishing. Research data repositories<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> and associated data curators<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> may also be a good resource.</li>
+<li><strong>Get a professional data manager or data curator involved with the synthesis project</strong>. For example, the LTER Network has a community of “Information Managers” <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> trained in data management, metadata creation, and data publishing. Research data repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -651,7 +651,7 @@ Key insight
 </section>
 <section id="choosing-and-publishing-to-a-repository" class="level3">
 <h3 class="anchored" data-anchor-id="choosing-and-publishing-to-a-repository">Choosing and Publishing to a Repository</h3>
-<p>There are many, many research data repositories available to researchers now[^11], making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a <a href="https://doi.org">Digital Object Identifier</a>, or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the <a href="https://amt.coretrustseal.org/certificates">CoreTrustSeal certified repository list</a> is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:</p>
+<p>There are many, many research data repositories available to researchers now<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a <a href="https://doi.org">Digital Object Identifier</a>, or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the <a href="https://amt.coretrustseal.org/certificates">CoreTrustSeal certified repository list</a> is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:</p>
 <ol type="1">
 <li>Who are the likely users for this data? Will they belong to a specific scientific discipline, research network, or community of stakeholders?</li>
 <li>How specialized are your data? Do they fall into a common data type or follow a special formatting standard?</li>
@@ -897,12 +897,9 @@ Cracking the case
 <div class="callout-body-container callout-body">
 <p>This is the “community dynamics” synthesis working group that was at least partly supported by the LTER Network.</p>
 <p><em>Papers</em></p>
-<p>There is a paper describing the R package</p>
+<p>There are two papers describing the R package and the analysis methods it encodes:</p>
 <ul>
 <li>Hallett, L.M., Jones, S.K., MacDonald, A.A.M., Jones, M.B., Flynn, D.F.B., Ripplinger, J., Slaughter, P., Gries, C. and Collins, S.L. (2016), codyn: An r package of community dynamics metrics. Methods Ecol Evol, 7: 1146-1151. <a href="https://doi.org/10.1111/2041-210X.12569" class="uri">https://doi.org/10.1111/2041-210X.12569</a></li>
-</ul>
-<p>And maybe this</p>
-<ul>
 <li>Avolio, M. L., I. T. Carroll, S. L. Collins, G. R. Houseman, L. M. Hallett, F. Isbell, S. E. Koerner, K. J. Komatsu, M. D. Smith, and K. R. Wilcox. 2019. A comprehensive approach to analyzing community dynamics using rank abundance curves. Ecosphere 10(10):e02881. <a href="https://doi.org/10.1002/ecs2.2881" class="uri">https://doi.org/10.1002/ecs2.2881</a></li>
 </ul>
 <p><em>Workflows</em></p>
@@ -933,7 +930,7 @@ Cracking the case
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This is the CoRRE synthesis working group., which has been supported bu iDiv and LTER (and possibly others). The group’s website lays out many of the products fairly clearly, though it may not be perfectly up-to-date.</p>
+<p>This is the CoRRE synthesis working group, which has been supported by iDiv and LTER (and possibly others). The group’s website lays out many of the products fairly clearly, though it may not be perfectly up-to-date.</p>
 <p><em>Papers</em></p>
 <ul>
 <li>Avolio, M. L., Pierre, K. J. L., Houseman, G. R., Koerner, S. E., Grman, E., Isbell, F., … &amp; Wilcox, K. R. (2015). A framework for quantifying the magnitude and variability of community responses to global change drivers. Ecosphere, 6(12), 1-14.</li>
@@ -952,7 +949,7 @@ Cracking the case
 </ul>
 <p><em>Datasets</em></p>
 <ul>
-<li>Other than the data paper mentioned above and some <a href="">associated data in EDI</a>, the data appear to be by request only.</li>
+<li>Other than the data paper mentioned above and some <a href="https://doi.org/10.6073/pasta/a33c9be2bd819d6b1a2c52663d561158">associated data in EDI</a>, the primary data appear to be available by request only.</li>
 </ul>
 <p><em>Other</em></p>
 <ul>
@@ -1014,9 +1011,10 @@ Cracking the case
 </div>
 <div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This is a paper describing an early effort to create a harmonized, global ocean oxygen product. It was published in 2021, and there is currently not much other information about progress on the effort.</p>
+<p>This is a paper describing a new effort to create a harmonized, global ocean oxygen product, called GO<sub>2</sub>DAT. The paper was published in 2021, and there is currently not much other information about progress on the effort. The paper is best understood as a community-accepted roadmap for this global ocean data synthesis project.</p>
 <p><em>Papers</em></p>
 <p>The original clue is the primary paper describing this effort.</p>
+<p>Two years later, <a href="https://doi.org/10.3389/fmars.2023.1078908">this paper</a> assessed progress on GO<sub>2</sub>DAT among other global ocean biogeochemistry synthesis projects and described it as still being in the “Documentation phase.”</p>
 <p><em>Workflows</em></p>
 <ul>
 <li>???</li>
@@ -1111,7 +1109,7 @@ Cracking the case
 <p>Examples:</p>
 <ul>
 <li><a href="https://portal.weecology.org/">The Portal Project</a></li>
-<li><a href="">The SoDaH project</a>.</li>
+<li><a href="https://lter.github.io/som-website/">The SoDaH project</a>.</li>
 <li><a href="https://corredata.weebly.com/">The CoRRE project</a></li>
 </ul>
 </div>
@@ -1133,7 +1131,7 @@ Cracking the case
 </section>
 <section id="citing-synthesis-products" class="level4">
 <h4 class="anchored" data-anchor-id="citing-synthesis-products">Citing synthesis products</h4>
-<p>The best way to ensure that use of a research product is recognized is through proper citation. This is already common practice for journal articles, but is only recently being adopted for published datasets. The most logical place in an article to cite a published dataset is in the Methods section and in the Data Availability Statement, which most reputable journals now require. Be sure to check journal data sharing requirements well in advance so that data publication preparation can begin early enough. <strong>When citing datasets, be sure that the full bibliographic entry is correctly included in the article’s References list.</strong> Citation of code is not as widely practiced, but some journals require it and it is a best practice.</p>
+<p>The best way to ensure that use of a research product is recognized is through proper citation. This is already common practice for journal articles, but is only recently being adopted for published datasets. The most logical place in an article to cite a published dataset is in the Methods section and in the Data Availability Statement, which most reputable journals now require. Be sure to check journal data sharing requirements well in advance so that data publication preparation can begin early enough. <strong>When citing datasets, be sure that the full bibliographic entry is correctly included in the article’s reference list.</strong> Citation of code is not as widely practiced, but some journals require it and it is a best practice.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true">A useful data availability statement</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false">Not as helpful</a></li></ul>
 <div class="tab-content">
@@ -1144,6 +1142,7 @@ Cracking the case
 </blockquote>
 </div>
 <div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
+<p>Although conventions are changing, it is still common to find data availability statements that introduce barriers to data access or reproducibility. Often they are worded along these lines:</p>
 <blockquote class="blockquote">
 <p>Data used in the figures are included in the supplementary material. The full dataset will be provided upon reasonable request to the corresponding author.</p>
 </blockquote>
@@ -1206,7 +1205,8 @@ Cracking the case
 <ul>
 <li><strong>Provide a path for new data contributions.</strong>
 <ul>
-<li>This follows from making the data preparation/harmonization workflow reproducible.</li>
+<li>Consider adding a “How to contribute” section to a project website or GitHub repository README.</li>
+<li>Making your synthesis project’s data preparation/harmonization workflow reproducible and well-documented will make it easy for new data contributors.</li>
 </ul></li>
 <li><strong>Have open meetings when possible.</strong>
 <ul>
@@ -1278,8 +1278,8 @@ Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Applet
 <li id="fn2"><p>The EDI repository’s <a href="https://edirepository.org/resources/provenance-metadata">provenance metadata</a> documentation is an example applicable to publishing with the EML metadata standard. Other metadata standards and repositories have different systems.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>See <span class="citation" data-cites="lerner_making_2023">Lerner et al. (<a href="#ref-lerner_making_2023" role="doc-biblioref">2023</a>)</span> or resources at the <a href="https://end-to-end-provenance.github.io/">End-to-End Provenance</a> project.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Here is a <a href="https://lternet.edu/using-lter-data/#im">list of LTER Information Managers</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>The <a href="https://www.re3data.org/">Registry of Research Data Repositories (re3data.org)</a> project is a comprehensive tracker of information about research data repositories.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>The <a href="https://datacurationnetwork.org/">Data Curation Network</a> is a professional membership organization for data curators.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>The <a href="https://datacurationnetwork.org/">Data Curation Network</a> is a professional membership organization for data curators.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>The <a href="https://www.re3data.org/">Registry of Research Data Repositories (re3data.org)</a> project is a comprehensive tracker of information about research data repositories.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7"><p>The process of publishing a GitHub repository release to Zenodo is covered in the <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">GitHub</a> and <a href="https://help.zenodo.org/docs/github/enable-repository/">Zenodo</a> documentation, and <a href="https://tutorials.inbo.be/tutorials/git_zenodo/">other places</a>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
