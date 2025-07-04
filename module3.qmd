@@ -14,18 +14,18 @@ After completing this module, you will be able to:
 
 ## Introduction
 
-So far, we've made the point that ecological synthesis research is collaborative and inclusive, and that it integrates a wide range of data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful synthesis research tends to expand the boundaries of knowledge and aims to improve human lives or the environment.
+So far in the course, we've made the point that ecological synthesis research benefits from an inclusive, team-based approach to science, and that teams should use effective, collaborative methods to integrate and analyze their data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful ecological synthesis teams typically aim to expand our understanding of ecological systems, and to improve human lives and the environment.
 <img src="images/mod3_fig1_tying.png" alt="Three circles labeled 'data', 'results' and 'analytical workflow' with arrows connecting each pair pointing in both directions" style="float: right" width="45%" padding="10px"/>
-The ability to accomplish this in synthesis research frequently depends on what knowledge or products are created, and how the synthesis team disseminates and communicates them to the outside world.
+Their ability to accomplish this frequently depends on what research products are created, and how thosw are communicated and shared with the outside world.
 
-There are three interconnected, publishable products that are the most common outputs from a synthesis project (or potentially any research project, really): **the data**, **analytical workflows** (code for data cleaning or statistics, for example), and **research results**. Each of these elements is a valuable product of synthesis science, and each one should reference the others. In this module we'll discuss the mechanics of publishing each one, and then how they can be connected and made accessible for the long-term.
+"Research products" can be defined broadly, but there are three interconnected, publishable products that are the most common outputs from a synthesis project (or any research project, really): **the data**, **analytical workflows** (code for data cleaning or statistics, for example) and **research results**. Each of these is a valuable product of synthesis science, and each one should reference the others. In this module we'll discuss the mechanics of publishing each one, and how they can be made accessible and useful for the long-term.
 
 
-## Designing and Publishing Datasets
+## Publishing a synthesis dataset
 
 **Estimated time: 12 min**
 
-In Module 2 we discussed some considerations for creating and formatting harmonized data files useful for synthesis research. We also introduced the importance of metadata for describing data and making it more usable. Publishing harmonized data files and descriptive metadata together as a **dataset** ensures that the data products produced by a synthesis team are **findable**, **accessible**, **interoperable**, and **reusable** (FAIR). FAIR data are an important output for almost any ecological synthesis project.
+In Module 2 we discussed some considerations for creating and formatting harmonized data files in synthesis research. We also introduced the importance of metadata for describing data and making it more usable. Publishing harmonized data files and descriptive metadata together as a **dataset** helps ensure that the data products produced by a synthesis team are **findable**, **accessible**, **interoperable**, and **reusable** (FAIR). FAIR data are an important outcome for most ecological synthesis projects.
 
 ::: {.callout-tip collapse="true"}
 ### More about Findable, Accessible, Interoperable, Reusable (FAIR) data
@@ -40,7 +40,7 @@ The FAIR principles were first defined in the paper by Wilkinson et al.[-@wilkin
 
 ### Activity 1: Evaluate published datasets
 
-Lets start our journey to publishing datasets by looking at some that are already published. Form breakout groups and course instructors will assign each group a dataset (a DOI) for evaluation. With your group, answer these questions about the dataset:
+Lets start our journey to publishing datasets by looking at some that are already published. Form breakout groups and course instructors will assign each group a dataset for evaluation. With your group, answer these questions about the dataset:
 
 1. Where were the data collected?
 2. What variables were measured and in what units?
@@ -66,6 +66,23 @@ This dataset is published in the EDI repository and comes from a synthesis group
 
 ### Group 2
 
+**Example dataset:** Gutenson, J. (2025). Yellowstone Synthetic Rating Curve Analysis. HydroShare. <http://www.hydroshare.org/resource/c8388cc25940447296c0cd8eea58d97a>
+
+::: {.callout-caution collapse="true" icon="false"}
+
+### Observations from the instructors
+
+This dataset consists of a variety of data from different sources used to create "synthetic rating curves" - something to do with flood risk - in the Yellowstone Basin. The dataset contains lots of files in a folder structure, mainly consisting of spatial data (maps and raster data) as well as some scripts and possible metadata files in text format.
+
+- Though this seems to be part of a study published in, or being prepared for, the "Journal of Flood Risk Management," but there aren't many details given to help find that article.
+- There are many useful-looking files here, but there aren't any descriptions given in the metadata, so it would be hard to know how to use them.
+- The provenance (origin info) or many of the data files is given in the Abstract, which is helpful.
+- There is no DOI issued for this dataset, so it is difficult to know how permanent the dataset is and it would be tricky to cite it in a paper. That said, this was only recently published and it may still be a work in progress. Perhaps more metadata will be added and a DOI issued as the study progresses!
+
+:::
+
+### Group 3
+
 **Example dataset:** Craine, Joseph M. et al. (2019). Data from: Isotopic evidence for oligotrophication of terrestrial ecosystems [Dataset]. Dryad. <https://doi.org/10.5061/dryad.v2k2607>
 
 ::: {.callout-caution collapse="true" icon="false"}
@@ -76,11 +93,11 @@ This dataset contains a harmonized dataset from a global study of oligotrophicat
 
 - It is easy to find the "related work" from the Dryad dataset because the DOI appears on the landing page. The DOI (<https://doi.org/10.1038/s41559-018-0694-0>) points to the paper that used and cited this dataset, and this paper has some detail about the data sources and methods for assembling the combined dataset. 
 - In theory it should be possible to reproduce the figures presented in the text using the R code provided.
-- Without having access to the related paper above, it would be difficult, or potentially impossible, to understand and use the CSV published in Dryad because few descriptive metadata are provided there. Though this appears to be a harmonized dataset, without the paper it is also unclear the origin of the source data, and how they have been changed to generate the harmonized CSV. Knowing important information like units, categorical code meanings, original data sources, and methods of harmonization might require contacting the authors. There withou
+- Without having access to the related paper above, it would be difficult, or potentially impossible, to understand and use the CSV published in Dryad because few descriptive metadata are provided there. Though this appears to be a harmonized dataset, without the paper it is also unclear the origin of the source data, and how they have been changed to generate the harmonized CSV. Knowing important information like units, categorical code meanings, original data sources, and methods of harmonization might require contacting the authors.
 
 :::
 
-### Group 3
+### Group 4
 
 **Example dataset:** Wieder, W.R., D. Pierson, S.R. Earl, K. Lajtha, S. Baer, F. Ballantyne, A.A. Berhe, S. Billings, L.M. Brigham, S.S. Chacon, J. Fraterrigo, S.D. Frey, K. Georgiou, M. de Graaff, A.S. Grandy, M.D. Hartman, S.E. Hobbie, C. Johnson, J. Kaye, E. Snowman, M.E. Litvak, M.C. Mack, A. Malhotra, J.A.M. Moore, K. Nadelhoffer, C. Rasmussen, W.L. Silver, B.N. Sulman, X. Walker, and S. Weintraub. 2020. SOils DAta Harmonization database (SoDaH): an open-source synthesis of soil data from research networks ver 1. Environmental Data Initiative. <https://doi.org/10.6073/pasta/9733f6b6d2ffd12bf126dc36a763e0b4>
 
@@ -88,7 +105,7 @@ This dataset contains a harmonized dataset from a global study of oligotrophicat
 
 ### Observations from the instructors
 
-This is an EDI dataset is from the SoDaH (Soil Data Harmonization) LTER working group. It provides a nice example of a harmonized data product that also includes **provenance metadata**. We'll talk a little more about this later, but note that all the original data sources are linked to this dataset on the landing page.
+This is an EDI dataset from the SoDaH (Soil Data Harmonization) LTER working group. It provides a nice example of a harmonized data product that also includes **provenance metadata**. We'll talk a little more about this later, but note that all the original data sources are linked to this dataset on the landing page.
 
 - Data provenance is clear and extensive, and the geographic coverage adds useful detail.
 - There are many, many variables available in the dataset, most having to do with soil data and where that data came from.
@@ -97,7 +114,7 @@ This is an EDI dataset is from the SoDaH (Soil Data Harmonization) LTER working 
 
 :::
 
-### Group 4
+### Group 5
 
 **Example dataset:** Woods, B., Trebilco, R., Walters, A., Hindell, M., Duhamel, G., Flores, H., Moteki, M., Pruvost, P., Reiss, C., Saunders, R., Sutton, C., & Van de Putte, A. (2021). Myctobase (1.1) [Data set]. Zenodo. <https://doi.org/10.5281/zenodo.6131579>
 
@@ -114,7 +131,7 @@ Myctobase is a global database of mesopelagic fish data.
 
 :::
 
-### Group 5
+### Group 6
 
 **Example dataset:** Ross, C.W., L. Prihodko, J.Y. Anchang, S.S. Kumar, W. Ji, and N.P. Hanan. 2018. Global Hydrologic Soil Groups (HYSOGs250m) for Curve Number-Based Runoff Modeling. ORNL DAAC, Oak Ridge, Tennessee, USA. <https://doi.org/10.3334/ORNLDAAC/1566> (2018)
 
@@ -132,10 +149,52 @@ This dataset seems like a reasonably good example of a published, global-scale s
 
 :::
 
+### Designing your dataset
+
+<img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"/>
+
+The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is "*What should we publish?*" This is usually a question about what files to include in the published dataset, or what data will be useful as a published dataset. Every dataset is different, but the answer often depends where your data fall on the **Raw** &rarr; **Ready** &rarr; **Results** spectrum.
+
+* **Raw** refers to "source data" that have not been altered very much from their original state at collection. They have undergone no, or minimal, QA/QC, filtering, reformatting, and other changes.
+* **Ready** data are derived from raw data and are made ready for analysis with cleaning, filtering, reformatting, summary statistics, joining with other data, and other changes.
+* **Results** data are the product of a planned analysis. Often these are the data used to produce figures and statistics for a journal article or other research product.
+
+Synthesis groups typically rely on previously-published datasets as their *raw*, or source, data and therefore usually publish *ready* and *results* datasets. Activity 1 provides a few examples of well-designed (and not-so-well-designed) synthesis datasets. Lets discuss what we saw there. 
+
+::: {.panel-tabset}
+### Discussion question
+
+> **What should be included in a published dataset?**
+
+### Data files
+
+-  To publish a harmonized synthesis dataset (*ready* data), follow the guidance in Module 2 about preparing the data so it is most useful to your team and others (use simple data structures, open file formats, community-accepted data standards, etc.).
+- When publishing a dataset for an analysis of your team's synthesis data (*results* data, such as for a journal article), include any derived data files that were used to generate figures, statistics, and other research results being reported on.
+- It is ok to include many data files in one dataset as long as they are related to each other, they are well-described, and their purpose is clear (see the points about metadata below).
 
 ### Metadata
 
-One thing that Activity 1 introduces is the importance of **metadata**. Metadata are data about the data. As a general rule, metadata should describe
+We'll talk about the details of metadata below, but you should **always include descriptive metadata with your data files.** There are many ways to do this and it may depend on the repository you will publish to.
+
+- Some repositories accept standardized metadata files and some have a form-based metadata editors that can be used to enter metadata during the submission of a dataet.
+- It is ok to also include separate metadata files in the form of text files, MS Word documents, PDF files, and other formats, with your published dataset if additional metadata is necessary.
+- Many repositories don't *require* much metadata, but it is a good idea to provide it anyways. Your colleagues and your future self will thank you.
+
+### Other files
+
+A few other things may be included in published datasets that don't necessarily fall into the data or metadata categories. 
+
+- Often it makes sense to ensure the reproducibility of research results by publishing a workflow with the data. Usually this means publishing code files, such as scripts written in R, python, or a shell language, in the dataset with results. 
+- The workflow for generating a harmonized synthesis dataset, especially detailed, reusable workflows like an R package, can often stand alone as an independent publication. We discuss that in a later section.
+- Some repositories may include additional files with published datasets, including quality reports, manifests, and other contextual information about the dataset.
+  
+:::
+
+These are general guidelines, but for more advice on what to include in a published dataset you can also look to repositories like [EDI](https://edirepository.org/resources/designing-a-data-package) and [BCO-DMO](https://guide.bco-dmo.org/prepare/what-is-a-dataset), or a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs). Asking a data manager, especially one involved with your synthesis group's work, can also be helpful, as will discussion among the full synthesis team.
+
+### Metadata
+
+Another thing that Activity 1 introduces is the importance of **metadata**. Metadata are data about the data. As a general rule, metadata should describe
 
   * **Who** collected the data
   * **What** was observed or measured
@@ -153,11 +212,11 @@ Including metadata of this nature makes data more usable, and helps prevent the 
 
 <img style="float: right;" src="images/provenance.png" alt="Provenance: where did your data come from?" width="25%" padding="10px"/>
 
-Provenance metadata deserves special attention for ecological data synthesis projects. **Data provenance** refers to information detailing the origin of the values in a dataset, which is particularly important for synthesis projects that bring together data from many different sources. Synthesis activities typically produce new data products that are **derived** from the original source data after they have been cleaned, harmonized, and analyzed. Provenance metadata should be included with the derived products to point back to the original source data, similar to the way bibliographic references point to the source material for a book or scholarly article.
+Provenance metadata deserves special attention for ecological data synthesis projects. **Data provenance** refers to information detailing the origin of the values in a dataset, which is important for synthesis projects that bring together data from many different sources. Synthesis activities typically produce new data products that are **derived** from the original source data after they have been cleaned, harmonized, and analyzed. Provenance metadata should be included with the derived products to point back to the original source data, similar to the way bibliographic references point to the source material for a book or scholarly article.
 
 A few other notes on provenance:
 
-  * At its simplest, documenting data sources as you collect and analyze the source data is a great start on provenance metadata. 
+  * Documenting your data sources in a log file or spreadsheet as you collect and analyze them is a great way to start gathering the provenance metadata you need. 
   * Many data repositories provide guidelines, tools, and features for data provenance metadata[^2].
   * Provenance metadata can become very detailed if the software and computing environment is also taken into account. This is an active area of study [^3].
 
@@ -191,37 +250,10 @@ Assembling metadata should be an integral part of the data synthesis activities 
 
 #### Key insight
 
-**Reproducibility and the creation of metadata are closely related.** Your team's detailed documentation of the research process allows for reproducible science, and can be mined as a source of metadata during data publication.
+**Reproducibility and the creation of metadata are closely related.** Your team's detailed documentation of the research process allows for reproducible science, and can be mined as a source of metadata when you prepare data for publication.
 
 :::
 
-### Deciding What to Publish
-
-<img style="float: right;" src="images/what_data.png" alt="What data should you publish" width="20%" padding="10px"/>
-
-The overall design of the dataset to be published is often difficult to imagine, particularly for people new to using or creating datasets. One of the most common questions data managers hear is "*What should we publish?*" This is usually a question about what files to include in the published dataset, or what data will be useful as a published dataset.
-
-::: {.panel-tabset}
-### Discussion question
-
-> **What should be included in a published dataset?**
-
-### Some general rules
-
-As we learned in Activity 1, every dataset is different, but the answer to "What should we publish?" usually comes down to:
-
-- Publish any data used to generate research results.
-- Publish any data that will be used by others (scientists, managers, public stakeholders), including raw data.
-- If reproducibility is of interest or concern, publish the workflow.
-  - Usually this means publishing code, such as scripts written in R, python, or a shell language.
-  - What code? Any scripts used to process or analyze the data, or to generate research results like figures, are fair game.
-  - Sometimes code, especially detailed, reusable workflows like an R package, can stand alone as an independent publication. We discuss that in a later section.
-  
-And of course... **always publish descriptive metadata about any of the above.**
-
-These are general rules, but you can also look at advice from a repositories like [EDI](https://edirepository.org/resources/designing-a-data-package) and [BCO-DMO](https://guide.bco-dmo.org/prepare/what-is-a-dataset), or from a research network like [NEON](https://www.neonscience.org/data-samples/guidelines-policies/publishing-research-outputs). Asking a data manager, especially one involved with the synthesis group's work, can also be helpful, as will discussion among the full synthesis team.
-
-:::
 
 
 ### Choosing and Publishing to a Repository
@@ -234,7 +266,7 @@ There are many, many research data repositories available to researchers now[^6]
 4. Does the repository charge for publication?
 5. **Will the dataset benefit from some level of peer review?**
 
-![A limited slice from the broad spectrum of research data repositories available for publishing synthesis data. These repositories are weighted towards those based in the U.S.A. ([re3data.org](https://www.re3data.org) has a comprehensive list). Also note that the FAIR spectrum below refers primarily to repository requirements. It is possible, but not always required, to include detailed, community-standard metadata in generalist repositories.](images/repository_spectrum.png){width=90% fig-alt="A graphic containing the logos for many different data repositories arranged along a gradient of 'less FAIR' to 'more FAIR' where FAIRness is defined as 'Metadata/formatting standards'"}
+![A small selection from the broad spectrum of research data repositories available for publishing synthesis data. These repositories are weighted towards those based in the U.S.A. ([re3data.org](https://www.re3data.org) has a comprehensive list). Also note that the FAIR gradient below refers primarily to repository requirements. It is possible, but not always required, to include detailed, community-standard metadata in generalist repositories.](images/repository_spectrum.png){width=90% fig-alt="A graphic containing the logos for many different data repositories arranged along a gradient of 'less FAIR' to 'more FAIR' where FAIRness is defined as 'Metadata/formatting standards'"}
 
  More specialized repositories tend to offer enhanced documentation, custom software tools, and **data curation staff that will review submitted data and assist users with data publication**. Selecting a data repository with metadata requirements or standards, and a review and curation process for submissions, will help ensure that you are publishing a more FAIR data product. Consulting a project data manager if one is available to the synthesis team will also help with repository selection. After making a choice, the process of publishing data varies from repository to repository.
 
