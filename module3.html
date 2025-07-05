@@ -659,17 +659,18 @@ Observations from the instructors
 </section>
 <section id="metadata-creation-and-management" class="level4">
 <h4 class="anchored" data-anchor-id="metadata-creation-and-management">Metadata Creation and Management</h4>
-<p>Assembling metadata should be an integral part of the data synthesis activities discussed in Module 2, and can even be built-in to the workflow and project management practices of a project. <strong>Make sure to plan for and start creating metadata early</strong> in a synthesis project. Below are a few ways to do that.</p>
+<p>Assembling metadata should be an integral part of the data synthesis activities discussed in Module 2, and can even be built into the workflows and project management practices the synthesis team uses. <strong>Make sure to plan for and start creating metadata early</strong>. Below are a few ways to do that.</p>
 <ol type="1">
 <li><strong>Keep a detailed project log and populate it with metadata for the project, including information like:</strong>
 <ol type="a">
-<li>what source data the team is using and where they came from.</li>
-<li>how data are being analyzed and methods used to create derived products.</li>
-<li>who is doing what.</li>
+<li>what source data the team is using and where they came from</li>
+<li>how source data are being harmonized for analysis</li>
+<li>data analysis steps and methods used to create figures,statistics, and derived data products</li>
+<li>who is doing what</li>
 </ol></li>
 <li><strong>Start creating distinct publishable datasets (data plus metadata) as data are processed and analyzed.</strong> The team can do this:
 <ol type="a">
-<li>locally, using a labeled directory for the cleaned, harmonized, of derived data, along with related code and metadata files. Metadata files may be plain text, or use <a href="https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx">a metadata template</a>.</li>
+<li>locally, using a labeled directory for the cleaned, harmonized, and derived data, along with related code and metadata files. Metadata files may be plain text, or use <a href="https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx">a metadata template</a>.</li>
 <li>with a repository-based metadata editor, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the Environmental Data Initiative (EDI) repository.</li>
 </ol></li>
 <li><strong>Get a professional data manager or data curator involved with the synthesis project</strong>. For example, the LTER Network has a community of “Information Managers” <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> trained in data management, metadata creation, and data publishing. Research data repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
@@ -691,7 +692,7 @@ Key insight
 </section>
 <section id="choosing-and-publishing-to-a-repository" class="level3">
 <h3 class="anchored" data-anchor-id="choosing-and-publishing-to-a-repository">Choosing and Publishing to a Repository</h3>
-<p>There are many, many research data repositories available to researchers now<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a <a href="https://doi.org">Digital Object Identifier</a>, or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the <a href="https://amt.coretrustseal.org/certificates">CoreTrustSeal certified repository list</a> is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:</p>
+<p>There are a multitude of research data repositories available to researchers now<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, which can make choosing where to publish data feel overwhelming. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a <a href="https://doi.org">Digital Object Identifier</a>, or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide some means to publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the <a href="https://amt.coretrustseal.org/certificates">CoreTrustSeal certified repository list</a> is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:</p>
 <ol type="1">
 <li>Who are the likely users for this data? Will they belong to a specific scientific discipline, research network, or community of stakeholders?</li>
 <li>How specialized are your data? Do they fall into a common data type or follow a special formatting standard?</li>
@@ -705,7 +706,7 @@ Key insight
 <figcaption>A small selection from the broad spectrum of research data repositories available for publishing synthesis data. These repositories are weighted towards those based in the U.S.A. (<a href="https://www.re3data.org">re3data.org</a> has a comprehensive list). Also note that the FAIR gradient below refers primarily to repository requirements. It is possible, but not always required, to include detailed, community-standard metadata in generalist repositories.</figcaption>
 </figure>
 </div>
-<p>More specialized repositories tend to offer enhanced documentation, custom software tools, and <strong>data curation staff that will review submitted data and assist users with data publication</strong>. Selecting a data repository with metadata requirements or standards, and a review and curation process for submissions, will help ensure that you are publishing a more FAIR data product. Consulting a project data manager if one is available to the synthesis team will also help with repository selection. After making a choice, the process of publishing data varies from repository to repository.</p>
+<p>More specialized repositories tend to offer enhanced documentation, custom software tools, and <strong>data curation staff that will review submitted data and assist users with data publication</strong>. Selecting a data repository with metadata requirements or standards, and a review and curation process for submissions, will help ensure that you are publishing a more FAIR data product. Consulting a project data manager if one is available to the synthesis team also helps with repository selection. After making a choice, the process of publishing data varies from repository to repository.</p>
 </section>
 <section id="additional-data-publishing-resources" class="level3">
 <h3 class="anchored" data-anchor-id="additional-data-publishing-resources">Additional Data Publishing Resources</h3>
@@ -718,19 +719,19 @@ Key insight
 </section>
 <section id="sharing-the-teams-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="sharing-the-teams-workflow">Sharing the Team’s Workflow</h2>
-<p>One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below), with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for examples <span class="citation" data-cites="white_developing_2019">(<a href="#ref-white_developing_2019" role="doc-biblioref">White et al. 2019</a>, for example)</span>, but this practice is also generally applicable to synthesis research.</p>
-<p>Sharing and citing workflows and code are an essential element of reproducible science because they:</p>
+<p>One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below) with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for example workflows [e.g.@white_developing_2019], but the practice of publishing workflows is generally applicable to synthesis research.</p>
+<p>Sharing and citing workflows and code are an essential element of reproducible science because doing so:</p>
 <ol type="1">
-<li>Cite the exact process used to prepare and analyze data</li>
-<li>Create a repeatable method to integrate or analyze new data</li>
-<li>Allow other scientists to verify results</li>
+<li>describes the exact process used to prepare and analyze data.</li>
+<li>provides a reproducible method to integrate or analyze new data.</li>
+<li>allows other scientists to verify results.</li>
 </ol>
-<p>Even for data users or interested parties who will not directly use the code, a published workflow provides information about:</p>
+<p>Even for people who will not directly use the code, a published workflow provides information about:</p>
 <ul>
-<li>The origin of the data.</li>
-<li>Methods for data cleaning, harmonization, analysis, and presentation of results (figures), which may be adaptable to future work</li>
-<li>How the workflow was developed or changed over time</li>
-<li>The contributions made by the team</li>
+<li>the origin of the data.</li>
+<li>methods for data cleaning, harmonization, analysis, and presentation of results (figures).</li>
+<li>how the workflow was developed or changed over time.</li>
+<li>the contributions made by the team.</li>
 </ul>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Discussion question</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Some ideas</a></li></ul>
@@ -755,14 +756,16 @@ Key insight
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">GitHub</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">NEON Code Hub</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">ROpenSci</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false">PyPI</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false">CRAN</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p><img style="float: right;" src="images/github-mark.png" alt="The GitHub logo" width="15%" padding="10px"></p>
 <p><a href="https://github.com">GitHub</a> is huge and widely used for sharing code (among many other services). In combination with other software and services, GitHub can be reliably used to publish scientific code in a reproducible way.</p>
 <p><strong>Some features:</strong></p>
 <ul>
-<li>Zenodo integration is already included in GitHub,<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> which can make it fairly easy to publish a repository with a DOI.</li>
+<li>Zenodo integration is already included in GitHub,<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> which makes it fairly easy to publish a repository with a DOI.</li>
 <li>Large array of features for managing contributions and sharing of the code</li>
 </ul>
 </div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p><img style="float: right;" src="images/NEON-NSF-logo.png" alt="The NSF NEON logo" width="30%" padding="10px"></p>
 <p>The <a href="https://www.neonscience.org/resources/code-hub">NEON Code Hub</a> is a good example of a research network focused code repository.</p>
 <p><strong>Some features:</strong></p>
 <ul>
@@ -771,6 +774,7 @@ Key insight
 </ul>
 </div>
 <div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p><img style="float: right;" src="images/ropensci-logo.png" alt="The rOpenSci logo" width="15%" padding="10px"></p>
 <p><a href="https://ropensci.org">ROpenSci</a> publishes R packages for scientific applications.</p>
 <p><strong>Some features:</strong></p>
 <ul>
@@ -780,6 +784,7 @@ Key insight
 </ul>
 </div>
 <div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<p><img style="float: right;" src="images/pypi-logo.png" alt="The Python Package Index (PyPI) logo" width="20%" padding="10px"></p>
 <p>The <a href="https://pypi.org">Python Package Index</a> (PyPI) is the most widely used venue for publishing Python packages.</p>
 <p><strong>Some features:</strong></p>
 <ul>
@@ -787,7 +792,8 @@ Key insight
 </ul>
 </div>
 <div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
-<p>The <a href="https://cran.r-project.org">Comprehensive R Archive Network</a> is a widely used resource for publishing R packages.</p>
+<p><img style="float: right;" src="images/R-logo.png" alt="The R language logo (standing for CRAN here)" width="20%" padding="10px"></p>
+<p>The <a href="https://cran.r-project.org">Comprehensive R Archive Network</a> (CRAN) is a widely used resource for publishing R packages.</p>
 <p><strong>Some features:</strong></p>
 <ul>
 <li>R compatibility checks are performed and metadata about the code resource are required.</li>
@@ -819,15 +825,15 @@ Key insight
 <ol type="1">
 <li><strong>Publish the dataset described by the data paper in a reputable data repository.</strong>
 <ul>
-<li>Although some data paper publishers host data themselves, they are usually published only as supplementary material for article, or are only held for review. Most data-focused journals require that accepted data papers should describe and reference a dataset published in a research data repository. Follow the guidance above to select a repository and prepare the dataset for publication.</li>
+<li>Although some publishers host the data described in a data paper themselves, this is often as supplementary material to the article, and sometimes the data are only held for review. Most data-focused journals require that accepted data papers should describe and reference a dataset published in a research data repository. Follow the guidance above to select a repository and prepare the dataset for publication.</li>
 </ul></li>
 <li><strong>Be sure to cite the data paper and the dataset properly.</strong>
 <ul>
-<li>The existence of a data paper and a dataset, each describing the same data and each with its own DOI, can create confusion about what to cite in related works. If the novelty and utility of the dataset, or the methods used to assemble it, are being referenced by a related work, then it may be most appropriate to cite the data paper. If the actual data are being used (analyzed, interpreted, etc.) in a related work, then cite the published dataset. In many cases it is expected to cite both.</li>
+<li>The existence of a data paper and a dataset, each describing the same data and each with its own DOI, can create confusion about what to cite in related works. If the novelty and utility of the dataset, or the methods used to assemble it, are being referenced by a related work, then it may be most appropriate to cite the data paper. If the actual data are being used (analyzed, interpreted, etc.) in a related work, then definitely cite the published dataset. In many cases it is expected to cite both.</li>
 </ul></li>
 <li><strong>Don’t shortchange the metadata in the published dataset just because there is also a data paper.</strong>
 <ul>
-<li>Consider the future usability of the data the data paper describes, and ensure that the associated published dataset contains detailed, community-standard metadata. Not all users will see the data paper, and data paper publishers may have incomplete or quirky requirements for metadata.</li>
+<li>Consider the future usability of the data the data paper describes, and ensure that the associated published dataset contains detailed, community-standard metadata. Not all users will find or be able to access the data paper, and data paper publishers may have incomplete or quirky requirements for metadata.</li>
 </ul></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -845,7 +851,8 @@ Data paper examples and publication venues
 <p><strong>Some examples of data papers related to synthesis projects:</strong></p>
 <ul>
 <li>Komatsu, Kimberly J., et al.&nbsp;“CoRRE Trait Data: A dataset of 17 categorical and continuous traits for 4079 grassland species worldwide.” Scientific Data 11.1 (2024): 795. <a href="https://doi.org/10.1038/s41597-024-03637-x" class="uri">https://doi.org/10.1038/s41597-024-03637-x</a></li>
-<li>…</li>
+<li>Wieder, William R., Derek Pierson, Stevan Earl, Kate Lajtha, Sara Baer, Ford Ballantyne, Asmeret Asefaw Berhe et al.&nbsp;“SoDaH: the SOils DAta Harmonization database, an open-source synthesis of soil data from research networks, version 1.0.” Earth System Science Data Discussions 2020 (2020): 1-19. <a href="https://doi.org/10.5194/essd-13-1843-2021" class="uri">https://doi.org/10.5194/essd-13-1843-2021</a></li>
+<li>Zhang, Liang, Edom Moges, James W. Kirchner, Elizabeth Coda, Tianchi Liu, Adam S. Wymore, Zexuan Xu, and Laurel G. Larsen. “CHOSEN: A synthesis of hydrometeorological data from intensively monitored catchments and comparative analysis of hydrologic extremes.” Hydrological Processes 35, no. 11 (2021): e14429. <a href="https://doi.org/10.1002/hyp.14429" class="uri">https://doi.org/10.1002/hyp.14429</a></li>
 </ul>
 <p><strong>A few suggested venues for publishing data papers:</strong></p>
 <ul>
@@ -867,7 +874,7 @@ Data paper examples and publication venues
 <div class="tab-content">
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <p>In this model manuscripts live mainly in web-based writing platforms managed by a cloud service provider (e.g.&nbsp;Google Docs) and all contributors write and edit the document within that platform. Contributions may be asynchronous or synchronous since version control and conflict resolution is generally built into the platform. Most platforms have additional collaboration features, such as user account management, suggested edits, and commenting systems.</p>
-<p><strong>Software platform:</strong> Google Docs, Microsoft 365 Online, Overleaf (LaTeX)<br>
+<p><strong>Software platform:</strong> Google Docs, Microsoft 365 Online, Authorea, Overleaf (LaTeX)<br>
 <strong>Pros:</strong> Strong collaboration features (user/permission management, contribution tracking, comments and suggestions). No need to distribute copies and then merge contributions.<br>
 <strong>Cons:</strong> Can be unfamiliar to senior contributors. Easy to lose track of links. Limited formatting features compared to local word processors. Privacy/tracking concerns.</p>
 </div>
@@ -898,7 +905,7 @@ Data paper examples and publication venues
 <li><strong>It can be beneficial to have a manuscript coordinator.</strong>
 <ul>
 <li>The coordinator can help split up writing and editing tasks equitably</li>
-<li>Someone needs to manage conflicts, check for consistency, etc.</li>
+<li>Someone needs to manage conflicts, check for consistency, make some executive decisions, etc.</li>
 <li>Often this is the lead author</li>
 </ul></li>
 </ol>
@@ -906,11 +913,11 @@ Data paper examples and publication venues
 </section>
 <section id="connecting-the-pieces" class="level2">
 <h2 class="anchored" data-anchor-id="connecting-the-pieces">Connecting the Pieces</h2>
-<p>We’ve now covered how a synthesis team should approach creating and publishing its main research outputs (data, code, results). Now we’ll discuss how to begin making these useful to the world, which starts with making sure the products of synthesis research point to each other. Lets begin with an activity.</p>
+<p>We’ve now covered how a synthesis team should approach creating and publishing its main research outputs (data, code, research results). Now we’ll discuss how to begin making these useful to the world, which starts with making sure the products of synthesis research point to each other. Lets begin with an activity.</p>
 <section id="activity-2-synthesis-project-detective" class="level3">
 <h3 class="anchored" data-anchor-id="activity-2-synthesis-project-detective">Activity 2: Synthesis project detective</h3>
 <p><strong>Estimated time: 12 min</strong></p>
-<p>Form breakout groups and course instructors will assign each one a link to a product from a synthesis project (the code, a paper, a dataset, etc.). Using any means necessary (metadata, web search, etc.) figure out what other products are related (other publications, source/derived data, etc.) and who is involved in the synthesis team. Answer these questions as a group:</p>
+<p>Form breakout groups and course instructors will assign each one a link to a product from a synthesis project (the code, a paper, a dataset, etc.). Using any means necessary (metadata, web search, etc.) figure out what other products are part of the same project (related publications, source/derived data, etc.) and who is involved in the synthesis team. Answer these questions as a group:</p>
 <ol type="1">
 <li>If your group received a link to a paper, were you able to find datasets and a code repository (for an analytical workflow)?</li>
 <li>If your group received a link to a code repository, were you able to find papers and datasets?</li>
@@ -1114,7 +1121,7 @@ Cracking the case
 <section id="more-ways-to-synthesize" class="level3">
 <h3 class="anchored" data-anchor-id="more-ways-to-synthesize">More ways to synthesize</h3>
 <p><img src="images/mod3_more_products.png" alt="Three circles labeled 'data', 'results' and 'analytical workflow', plus many more possible products" style="float: right" width="50%"></p>
-<p>We’ve talked about the three most common products of synthesis: papers, datasets, and workflows. But, we’ve also seen that there are plenty of other ways to share synthesis research! Education and outreach can become an important goal in for some synthesis teams, and providing access to data and actionable research results, such as forecasts, can be very useful to stakeholders. As time goes, on synthesis teams may produce many things that meet these goals and needs, moving well beyond the three kinds of products we’ve already talked about. See below for a few ideas and examples.</p>
+<p>We’ve talked about the three most common products of synthesis: papers, datasets, and workflows. But, we’ve also seen that there are plenty of other ways to share synthesis research! Education and outreach can become an important goal in for some synthesis teams, and providing access to data and actionable research results, such as forecasts, can be very useful to stakeholders. As time goes on, synthesis teams may produce many things that meet these goals and needs, moving well beyond the three kinds of products we’ve already talked about. See below for a few ideas and examples.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">Teaching materials</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">Web apps</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false">Automation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-4" role="tab" aria-controls="tabset-7-4" aria-selected="false">Project websites</a></li></ul>
 <div class="tab-content">
@@ -1127,7 +1134,7 @@ Cracking the case
 </ul>
 </div>
 <div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
-<p>Interactive web applications can provide users with easy access to scientific datasets, especially large ones, analytical results, visualizations, interpretation, and many, many other things. Creating web apps is not necessarily an easy task, but if your synthesis team has the expertise, or access to web developers, web apps may be useful for outreach, or as tools the synthesis team itself can use. Frameworks like <a href="https://shiny.posit.co/">Shiny</a> (for R), <a href="https://streamlit.io">Streamlit</a>, or <a href="https://flask.palletsprojects.com">Flask</a> (both for python), and services like <a href="https://www.shinyapps.io/">Shinyapps.io</a> and <a href="https://plotly.com">Plotly</a>, can make creation of apps relatively painless.</p>
+<p>Interactive web applications can provide users with easy access to scientific datasets, especially large ones, analytical results, visualizations, interpretation, and many other things. Creating web apps is not necessarily an easy task, but if your synthesis team has the expertise, or access to web developers, web apps may be useful for outreach, or as tools the synthesis team itself can use. Frameworks like <a href="https://shiny.posit.co/">Shiny</a> (for R), <a href="https://streamlit.io">Streamlit</a>, or <a href="https://flask.palletsprojects.com">Flask</a> (both for python), and services like <a href="https://www.shinyapps.io/">Shinyapps.io</a> and <a href="https://plotly.com">Plotly</a>, can make creation of apps relatively painless.</p>
 <p>Examples</p>
 <ul>
 <li>An app for finding and exploring <a href="https://ecocomdp.neonscience.org/">ecocomDP data</a> in the NEON and EDI repositories.</li>
@@ -1145,7 +1152,7 @@ Cracking the case
 </ul>
 </div>
 <div id="tabset-7-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-4-tab">
-<p>At a certain point, the outputs of a synthesis project can become numerous and challenging to present to the public in an organized way. Project websites can serve as a gateway to an entire synthesis project by providing comprehensive listings of project outputs (papers, datasets, GitHub repositories, etc), a narrative for the research, appealing images or graphics for outreach, and links to related projects, funders, or institutions. <a href="https://pages.github.com/">GitHub Pages</a> sites are a common solution for creating simple, cost-effective (free, usually) project websites nowadays, but there are other options. A good project website can become a cohesive, engaging clearinghouse for information about a synthesis project, but they can be laborious to create and keep up-to-date.</p>
+<p>At a certain point, the outputs of a synthesis project can become numerous and challenging to present to the public in an organized way. Project websites can serve as a gateway to an entire synthesis project by providing comprehensive listings of project outputs (papers, datasets, GitHub repositories, etc), participants and data contributors, a narrative for the research, appealing images or graphics for outreach, and links to related projects, funders, or institutions. Websites built with <a href="https://pages.github.com/">GitHub Pages</a> are a common solution for creating simple, cost-effective (free, usually) project websites nowadays, but there are other options. A good project website can become a cohesive, engaging clearinghouse for information about a synthesis project, but they can be laborious to create and keep up-to-date.</p>
 <p>Examples:</p>
 <ul>
 <li><a href="https://portal.weecology.org/">The Portal Project</a></li>
@@ -1158,10 +1165,10 @@ Cracking the case
 </section>
 <section id="linking-synthesis-products-together" class="level3">
 <h3 class="anchored" data-anchor-id="linking-synthesis-products-together">Linking synthesis products together</h3>
-<p>Reflecting on all the information above, we can see one common feature of the many different products of a synthesis team: they exist primarily as digital objects on the internet. The internet may seem fluid, but fortunately there are ways to identify and connect these digital objects in a stable way.</p>
+<p>Reflecting on all the information above, we can see one common feature of the many different products of a synthesis team: they exist primarily as digital objects on the internet. The internet may seem fluid and ephemeral, but fortunately there are ways to identify and connect these digital objects in a stable way.</p>
 <section id="persistent-identifiers" class="level4">
 <h4 class="anchored" data-anchor-id="persistent-identifiers">Persistent identifiers</h4>
-<p>Persistent identifiers, or <a href="https://en.wikipedia.org/wiki/Persistent_identifier">PIDs</a>, are references to digital objects that are intended to last a long time. For objects on the internet, they are intended to be unique, i.e.&nbsp;having a 1:1 relationship between the PID and the digital object, and machine actionable, meaning they can be understood by software like web browsers. There are many different types of PIDs, but the most useful ones in the context of publishing research products are:</p>
+<p>Persistent identifiers, or <a href="https://en.wikipedia.org/wiki/Persistent_identifier">PIDs</a>, are references to digital objects or identities that are intended to last a long time. To be useful on the internet, PIDs should be unique, i.e.&nbsp;having a 1:1 relationship between the PID and the digital object, and machine actionable, meaning they can be understood by software like web browsers. There are many different types of PIDs, but the most useful ones in the context of publishing research products are:</p>
 <ul>
 <li><a href="https://www.doi.org/">Digital Object Identifiers</a> (DOI), used to identify digital publications like journal articles, datasets, or governement reports.</li>
 <li><a href="https://orcid.org/">Open Researcher and Contributor ID</a> (ORCID), used to identify individuals, usually in the context of research or publishing activities.</li>
@@ -1171,7 +1178,7 @@ Cracking the case
 </section>
 <section id="citing-synthesis-products" class="level4">
 <h4 class="anchored" data-anchor-id="citing-synthesis-products">Citing synthesis products</h4>
-<p>The best way to ensure that use of a research product is recognized is through proper citation. This is already common practice for journal articles, but is only recently being adopted for published datasets. The most logical place in an article to cite a published dataset is in the Methods section and in the Data Availability Statement, which most reputable journals now require. Be sure to check journal data sharing requirements well in advance so that data publication preparation can begin early enough. <strong>When citing datasets, be sure that the full bibliographic entry is correctly included in the article’s reference list.</strong> Citation of code is not as widely practiced, but some journals require it and it is a best practice.</p>
+<p>The best way to ensure that use of a research product is recognized is through proper citation. This is already common practice for journal articles, but is only recently being adopted for published datasets. The most logical place in an article to cite a published dataset is in the Methods section and in the Data Availability Statement, which most reputable journals now require. Be sure to check journal data sharing requirements and begin preparing for data publication well in advance of article submission. <strong>When citing datasets, be sure that the full bibliographic entry is correctly included in the article’s reference list.</strong> Citation of code is not as widely practiced, but some journals require it and it is a best practice.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true">A useful data availability statement</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false">Not as helpful</a></li></ul>
 <div class="tab-content">
@@ -1257,6 +1264,7 @@ Cracking the case
 </section>
 <section id="find-support" class="level3">
 <h3 class="anchored" data-anchor-id="find-support">Find support</h3>
+<p><img style="float: right;" src="images/researchfunding.webp" alt="Research funding icon - flask and dollar sign" width="15%" padding="10px"></p>
 <p>Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to keep scientists engaged and find support for dedicated personnel time. Usually this means getting monetary support in the form of grants.</p>
 <ul>
 <li><strong>Explore and apply to the funding sources presented in <a href="./module1.html">Module 1</a>.</strong>
@@ -1305,9 +1313,6 @@ Michener, William K., James W. Brunt, John J. Helly, Thomas B. Kirchner, and Sus
 <div id="ref-obrien_ecocomdp_2021" class="csl-entry" role="listitem">
 O’Brien, Margaret, Colin A. Smith, Eric R. Sokol, Corinna Gries, Nina Lany, Sydne Record, and Max C. N. Castorani. 2021. <span>“<span class="nocase">ecocomDP</span>: <span>A</span> Flexible Data Design Pattern for Ecological Community Survey Data.”</span> <em>Ecological Informatics</em> 64 (September): 101374. <a href="https://doi.org/10.1016/j.ecoinf.2021.101374">https://doi.org/10.1016/j.ecoinf.2021.101374</a>.
 </div>
-<div id="ref-white_developing_2019" class="csl-entry" role="listitem">
-White, Ethan P., Glenda M. Yenni, Shawn D. Taylor, Erica M. Christensen, Ellen K. Bledsoe, Juniper L. Simonis, and S. K. Morgan Ernest. 2019. <span>“Developing an Automated Iterative Near-Term Forecasting System for an Ecological Study.”</span> <em>Methods in Ecology and Evolution</em> 10 (3): 332–44. <a href="https://doi.org/10.1111/2041-210X.13104">https://doi.org/10.1111/2041-210X.13104</a>.
-</div>
 <div id="ref-wilkinson_fair_2016" class="csl-entry" role="listitem">
 Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The <span>FAIR</span> <span>Guiding</span> <span>Principles</span> for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1): 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.
 </div>
@@ -1317,7 +1322,7 @@ Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Applet
 <li id="fn1"><p>The GO FAIR Initiative’s <a href="https://www.go-fair.org/how-to-go-fair/">“How to GO FAIR”</a> and the <a href="https://fairplus.github.io/the-fair-cookbook/content/home.html">FAIR Cookbook</a> are two examples of implementation guides.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>The EDI repository’s <a href="https://edirepository.org/resources/provenance-metadata">provenance metadata</a> documentation is an example applicable to publishing with the EML metadata standard. Other metadata standards and repositories have different systems.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>See <span class="citation" data-cites="lerner_making_2023">Lerner et al. (<a href="#ref-lerner_making_2023" role="doc-biblioref">2023</a>)</span> or resources at the <a href="https://end-to-end-provenance.github.io/">End-to-End Provenance</a> project.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Both the Creative Commons (CC) and the Open Knowledge Foundation (OKF) have extensive documentation about licensing data in different contexts, including <a href="https://wiki.creativecommons.org/wiki/Data#Frequently_asked_questions_about_data.2C_generally">the CC data FAQ</a> and <a href="https://opendefinition.org/guide/data/">OKF’s Open data definition</a>). The <a href="https://creativecommons.org/choose/">CC license chooser</a> is a quick and easy way make a licensing choice once you understand your options.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Both the Creative Commons (CC) and the Open Knowledge Foundation (OKF) have extensive documentation about licensing data in different contexts, including <a href="https://wiki.creativecommons.org/wiki/Data#Frequently_asked_questions_about_data.2C_generally">the CC data FAQ</a> and <a href="https://opendefinition.org/guide/data/">OKF’s Open data definition</a>. The <a href="https://creativecommons.org/choose/">CC license chooser</a> is a quick and easy way make a licensing choice once you understand your options.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p>Here is a <a href="https://lternet.edu/using-lter-data/#im">list of LTER Information Managers</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6"><p>The <a href="https://datacurationnetwork.org/">Data Curation Network</a> is a professional membership organization for data curators.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7"><p>The <a href="https://www.re3data.org/">Registry of Research Data Repositories (re3data.org)</a> project is a comprehensive tracker of information about research data repositories.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
