@@ -227,19 +227,20 @@ A few other notes on provenance:
 
 Published datasets should include a license in every copy of the metadata that defines who has what rights to use, reproduce, or distribute the data. Licensing decisions should be made in consultation with the synthesis team after considering the nature of the data (does it contain human subject data, for instance?), its origin (including restrictions on source data, if applicable), where the data will be published and used (different countries have different intellectual property and copyright laws), and the requirements of the funders and institutions associated with the project. There are quite a few guides available online that can help your group make a decision.[^4] For publicly-funded research data, it is generally appropriate to use open licenses, and the Creative Commons CC-BY attribution, and CC0 public domain, licenses are probably a good choice for most ecological synthesis data. This is not legal advice and your mileage may vary.
 
-[^4]: Both the Creative Commons (CC) and the Open Knowledge Foundation (OKF) have extensive documentation about licensing data in different contexts, including [the CC data FAQ](https://wiki.creativecommons.org/wiki/Data#Frequently_asked_questions_about_data.2C_generally) and [OKF's Open data definition](https://opendefinition.org/guide/data/)). The [CC license chooser](https://creativecommons.org/choose/) is a quick and easy way make a licensing choice once you understand your options.
+[^4]: Both the Creative Commons (CC) and the Open Knowledge Foundation (OKF) have extensive documentation about licensing data in different contexts, including [the CC data FAQ](https://wiki.creativecommons.org/wiki/Data#Frequently_asked_questions_about_data.2C_generally) and [OKF's Open data definition](https://opendefinition.org/guide/data/). The [CC license chooser](https://creativecommons.org/choose/) is a quick and easy way make a licensing choice once you understand your options.
 
 
 #### Metadata Creation and Management
 
-Assembling metadata should be an integral part of the data synthesis activities discussed in Module 2, and can even be built-in to the workflow and project management practices of a project. **Make sure to plan for and start creating metadata early** in a synthesis project. Below are a few ways to do that.
+Assembling metadata should be an integral part of the data synthesis activities discussed in Module 2, and can even be built into the workflows and project management practices the synthesis team uses. **Make sure to plan for and start creating metadata early**. Below are a few ways to do that.
 
 1. **Keep a detailed project log and populate it with metadata for the project, including information like:**
-    a. what source data the team is using and where they came from.
-    b. how data are being analyzed and methods used to create derived products.
-    c. who is doing what.
+    a. what source data the team is using and where they came from
+    b. how source data are being harmonized for analysis
+    c. data analysis steps and methods used to create figures,statistics, and derived data products
+    c. who is doing what
 2. **Start creating distinct publishable datasets (data plus metadata) as data are processed and analyzed.** The team can do this:
-    a. locally, using a labeled directory for the cleaned, harmonized, of derived data, along with related code and metadata files. Metadata files may be plain text, or use [a metadata template](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx).
+    a. locally, using a labeled directory for the cleaned, harmonized, and derived data, along with related code and metadata files. Metadata files may be plain text, or use [a metadata template](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx).
     b. with a repository-based metadata editor, such as [ezEML](https://ezeml.edirepository.org) from the Environmental Data Initiative (EDI) repository.
 3. **Get a professional data manager or data curator involved with the synthesis project**. For example, the LTER Network has a community of "Information Managers" [^5] trained in data management, metadata creation, and data publishing. Research data repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.[^6]
 
@@ -256,10 +257,9 @@ Assembling metadata should be an integral part of the data synthesis activities 
 :::
 
 
-
 ### Choosing and Publishing to a Repository
 
-There are many, many research data repositories available to researchers now[^7], making the choice of where to publish data fairly challenging. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a [Digital Object Identifier](https://doi.org), or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide the means to create/publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the [CoreTrustSeal certified repository list](https://amt.coretrustseal.org/certificates) is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:
+There are a multitude of research data repositories available to researchers now[^7], which can make choosing where to publish data feel overwhelming. A few basic data repository features are essential when publishing a synthesis dataset. First, the repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a [Digital Object Identifier](https://doi.org), or DOI, that can be cited every time the dataset is used after publication. Second, repositories should require, and provide some means to publish, metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR. Finally, research data repositories should be stable and well supported so that data remain available and usable in perpetuity. Choosing a repository from the [CoreTrustSeal certified repository list](https://amt.coretrustseal.org/certificates) is one way to assess this. Beyond this, asking a few questions about the dataset will help with repository selection:
 
 1. Who are the likely users for this data? Will they belong to a specific scientific discipline, research network, or community of stakeholders?
 2. How specialized are your data? Do they fall into a common data type or follow a special formatting standard?
@@ -269,7 +269,7 @@ There are many, many research data repositories available to researchers now[^7]
 
 ![A small selection from the broad spectrum of research data repositories available for publishing synthesis data. These repositories are weighted towards those based in the U.S.A. ([re3data.org](https://www.re3data.org) has a comprehensive list). Also note that the FAIR gradient below refers primarily to repository requirements. It is possible, but not always required, to include detailed, community-standard metadata in generalist repositories.](images/repository_spectrum.png){width=90% fig-alt="A graphic containing the logos for many different data repositories arranged along a gradient of 'less FAIR' to 'more FAIR' where FAIRness is defined as 'Metadata/formatting standards'"}
 
- More specialized repositories tend to offer enhanced documentation, custom software tools, and **data curation staff that will review submitted data and assist users with data publication**. Selecting a data repository with metadata requirements or standards, and a review and curation process for submissions, will help ensure that you are publishing a more FAIR data product. Consulting a project data manager if one is available to the synthesis team will also help with repository selection. After making a choice, the process of publishing data varies from repository to repository.
+ More specialized repositories tend to offer enhanced documentation, custom software tools, and **data curation staff that will review submitted data and assist users with data publication**. Selecting a data repository with metadata requirements or standards, and a review and curation process for submissions, will help ensure that you are publishing a more FAIR data product. Consulting a project data manager if one is available to the synthesis team also helps with repository selection. After making a choice, the process of publishing data varies from repository to repository.
 
 [^7]: The [Registry of Research Data Repositories (re3data.org)](https://www.re3data.org/) project is a comprehensive tracker of information about research data repositories.
 
@@ -282,20 +282,20 @@ There are many, many research data repositories available to researchers now[^7]
 
 ## Sharing the Team's Workflow
 
-One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below), with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for examples [@white_developing_2019, for example], but this practice is also generally applicable to synthesis research.
+One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below) with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for example workflows [e.g.@white_developing_2019], but the practice of publishing workflows is generally applicable to synthesis research.
 
-Sharing and citing workflows and code are an essential element of reproducible science because they:
+Sharing and citing workflows and code are an essential element of reproducible science because doing so:
 
-1. Cite the exact process used to prepare and analyze data 
-2. Create a repeatable method to integrate or analyze new data
-3. Allow other scientists to verify results
+1. describes the exact process used to prepare and analyze data.
+2. provides a reproducible method to integrate or analyze new data.
+3. allows other scientists to verify results.
 
-Even for data users or interested parties who will not directly use the code, a published workflow provides information about:
+Even for people who will not directly use the code, a published workflow provides information about:
 
-* The origin of the data.
-* Methods for data cleaning, harmonization, analysis, and presentation of results (figures), which may be adaptable to future work
-* How the workflow was developed or changed over time
-* The contributions made by the team
+* the origin of the data.
+* methods for data cleaning, harmonization, analysis, and presentation of results (figures).
+* how the workflow was developed or changed over time.
+* the contributions made by the team.
 
 ::: {.panel-tabset}
 ### Discussion question
@@ -317,16 +317,20 @@ In other parts of the course, we have strongly recommended using version control
 
 ### GitHub
 
+<img style="float: right;" src="images/github-mark.png" alt="The GitHub logo" width="15%" padding="10px"/>
+
 [GitHub](https://github.com) is huge and widely used for sharing code (among many other services). In combination with other software and services, GitHub can be reliably used to publish scientific code in a reproducible way.
 
 **Some features:**
 
-* Zenodo integration is already included in GitHub,[^8] which can make it fairly easy to publish a repository with a DOI.
+* Zenodo integration is already included in GitHub,[^8] which makes it fairly easy to publish a repository with a DOI.
 * Large array of features for managing contributions and sharing of the code
 
 [^8]: The process of publishing a GitHub repository release to Zenodo is covered in the [GitHub](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content) and [Zenodo](https://help.zenodo.org/docs/github/enable-repository/) documentation, and [other places](https://tutorials.inbo.be/tutorials/git_zenodo/).
 
 ### NEON Code Hub
+
+<img style="float: right;" src="images/NEON-NSF-logo.png" alt="The NSF NEON logo" width="30%" padding="10px"/>
 
 The [NEON Code Hub](https://www.neonscience.org/resources/code-hub) is a good example of a research network focused code repository.
 
@@ -336,6 +340,8 @@ The [NEON Code Hub](https://www.neonscience.org/resources/code-hub) is a good ex
 * Review and placement of submitted code.
 
 ### ROpenSci
+
+<img style="float: right;" src="images/ropensci-logo.png" alt="The rOpenSci logo" width="15%" padding="10px"/>
 
 [ROpenSci](https://ropensci.org) publishes R packages for scientific applications.
 
@@ -347,6 +353,8 @@ The [NEON Code Hub](https://www.neonscience.org/resources/code-hub) is a good ex
 
 ### PyPI
 
+<img style="float: right;" src="images/pypi-logo.png" alt="The Python Package Index (PyPI) logo" width="20%" padding="10px"/>
+
 The [Python Package Index](https://pypi.org) (PyPI) is the most widely used venue for publishing Python packages. 
 
 **Some features:**
@@ -355,7 +363,9 @@ The [Python Package Index](https://pypi.org) (PyPI) is the most widely used venu
 
 ### CRAN
 
-The [Comprehensive R Archive Network](https://cran.r-project.org) is a widely used resource for publishing R packages.
+<img style="float: right;" src="images/R-logo.png" alt="The R language logo (standing for CRAN here)" width="20%" padding="10px"/>
+
+The [Comprehensive R Archive Network](https://cran.r-project.org) (CRAN) is a widely used resource for publishing R packages.
 
 **Some features:**
 
@@ -382,11 +392,11 @@ A data descriptor article, usually known as a data paper, is a peer-reviewed jou
 Data papers may be simpler and shorter than research articles (not always though), but there are still a few gotchas that can arise. Below are some recommendations, and the rationale behind them.
 
 1. **Publish the dataset described by the data paper in a reputable data repository.**
-    - Although some data paper publishers host data themselves, they are usually published only as supplementary material for article, or are only held for review. Most data-focused journals require that accepted data papers should describe and reference a dataset published in a research data repository. Follow the guidance above to select a repository and prepare the dataset for publication.
+    - Although some publishers host the data described in a data paper themselves, this is often as supplementary material to the article, and sometimes the data are only held for review. Most data-focused journals require that accepted data papers should describe and reference a dataset published in a research data repository. Follow the guidance above to select a repository and prepare the dataset for publication.
 2. **Be sure to cite the data paper and the dataset properly.**
-    - The existence of a data paper and a dataset, each describing the same data and each with its own DOI, can create confusion about what to cite in related works. If the novelty and utility of the dataset, or the methods used to assemble it, are being referenced by a related work, then it may be most appropriate to cite the data paper. If the actual data are being used (analyzed, interpreted, etc.) in a related work, then cite the published dataset. In many cases it is expected to cite both.
+    - The existence of a data paper and a dataset, each describing the same data and each with its own DOI, can create confusion about what to cite in related works. If the novelty and utility of the dataset, or the methods used to assemble it, are being referenced by a related work, then it may be most appropriate to cite the data paper. If the actual data are being used (analyzed, interpreted, etc.) in a related work, then definitely cite the published dataset. In many cases it is expected to cite both.
 3. **Don't shortchange the metadata in the published dataset just because there is also a data paper.**
-    - Consider the future usability of the data the data paper describes, and ensure that the associated published dataset contains detailed, community-standard metadata. Not all users will see the data paper, and data paper publishers may have incomplete or quirky requirements for metadata.
+    - Consider the future usability of the data the data paper describes, and ensure that the associated published dataset contains detailed, community-standard metadata. Not all users will find or be able to access the data paper, and data paper publishers may have incomplete or quirky requirements for metadata.
 
 ::: {.callout-tip collapse="true"}
 
@@ -395,7 +405,8 @@ Data papers may be simpler and shorter than research articles (not always though
 **Some examples of data papers related to synthesis projects:**
 
   - Komatsu, Kimberly J., et al. "CoRRE Trait Data: A dataset of 17 categorical and continuous traits for 4079 grassland species worldwide." Scientific Data 11.1 (2024): 795. <https://doi.org/10.1038/s41597-024-03637-x>
-  - ...
+  - Wieder, William R., Derek Pierson, Stevan Earl, Kate Lajtha, Sara Baer, Ford Ballantyne, Asmeret Asefaw Berhe et al. "SoDaH: the SOils DAta Harmonization database, an open-source synthesis of soil data from research networks, version 1.0." Earth System Science Data Discussions 2020 (2020): 1-19. <https://doi.org/10.5194/essd-13-1843-2021>
+  - Zhang, Liang, Edom Moges, James W. Kirchner, Elizabeth Coda, Tianchi Liu, Adam S. Wymore, Zexuan Xu, and Laurel G. Larsen. "CHOSEN: A synthesis of hydrometeorological data from intensively monitored catchments and comparative analysis of hydrologic extremes." Hydrological Processes 35, no. 11 (2021): e14429. <https://doi.org/10.1002/hyp.14429>
 
 **A few suggested venues for publishing data papers:**
 
@@ -417,7 +428,7 @@ Writing a paper with a large team can be a challenge. It is important to encoura
 
 In this model manuscripts live mainly in web-based writing platforms managed by a cloud service provider (e.g. Google Docs) and all contributors write and edit the document within that platform. Contributions may be asynchronous or synchronous since version control and conflict resolution is generally built into the platform. Most platforms have additional collaboration features, such as user account management, suggested edits, and commenting systems.
 
-**Software platform:** Google Docs, Microsoft 365 Online, Overleaf (LaTeX)  
+**Software platform:** Google Docs, Microsoft 365 Online, Authorea, Overleaf (LaTeX)  
 **Pros:** Strong collaboration features (user/permission management, contribution tracking, comments and suggestions). No need to distribute copies and then merge contributions.  
 **Cons:** Can be unfamiliar to senior contributors. Easy to lose track of links. Limited formatting features compared to local word processors. Privacy/tracking concerns.  
 
@@ -443,19 +454,19 @@ In addition to these practical considerations, there are some team consideration
     - This can help avoid hurt feelings during the editing process.
 4. **It can be beneficial to have a manuscript coordinator.**
     - The coordinator can help split up writing and editing tasks equitably
-    - Someone needs to manage conflicts, check for consistency, etc.
+    - Someone needs to manage conflicts, check for consistency, make some executive decisions, etc.
     - Often this is the lead author
 
 
 ## Connecting the Pieces
 
-We've now covered how a synthesis team should approach creating and publishing its main research outputs (data, code, results). Now we'll discuss how to begin making these useful to the world, which starts with making sure the products of synthesis research point to each other. Lets begin with an activity.
+We've now covered how a synthesis team should approach creating and publishing its main research outputs (data, code, research results). Now we'll discuss how to begin making these useful to the world, which starts with making sure the products of synthesis research point to each other. Lets begin with an activity.
 
 ### Activity 2: Synthesis project detective
 
 **Estimated time: 12 min**
 
-Form breakout groups and course instructors will assign each one a link to a product from a synthesis project (the code, a paper, a dataset, etc.). Using any means necessary (metadata, web search, etc.) figure out what other products are related (other publications, source/derived data, etc.) and who is involved in the synthesis team. Answer these questions as a group:
+Form breakout groups and course instructors will assign each one a link to a product from a synthesis project (the code, a paper, a dataset, etc.). Using any means necessary (metadata, web search, etc.) figure out what other products are part of the same project (related publications, source/derived data, etc.) and who is involved in the synthesis team. Answer these questions as a group:
 
 1. If your group received a link to a paper, were you able to find datasets and a code repository (for an analytical workflow)?
 2. If your group received a link to a code repository, were you able to find papers and datasets?
@@ -632,7 +643,7 @@ There is a dataset in Zenodo
     
 <img src="images/mod3_more_products.png" alt="Three circles labeled 'data', 'results' and 'analytical workflow', plus many more possible products" style="float: right" width="50%"/>
 
-We've talked about the three most common products of synthesis: papers, datasets, and workflows. But, we've also seen that there are plenty of other ways to share synthesis research! Education and outreach can become an important goal in for some synthesis teams, and providing access to data and actionable research results, such as forecasts, can be very useful to stakeholders. As time goes, on synthesis teams may produce many things that meet these goals and needs, moving well beyond the three kinds of products we've already talked about. See below for a few ideas and examples.
+We've talked about the three most common products of synthesis: papers, datasets, and workflows. But, we've also seen that there are plenty of other ways to share synthesis research! Education and outreach can become an important goal in for some synthesis teams, and providing access to data and actionable research results, such as forecasts, can be very useful to stakeholders. As time goes on, synthesis teams may produce many things that meet these goals and needs, moving well beyond the three kinds of products we've already talked about. See below for a few ideas and examples.
 
 :::{.panel-tabset}
 ### Teaching materials
@@ -646,7 +657,7 @@ Examples:
 
 ### Web apps
 
-Interactive web applications can provide users with easy access to scientific datasets, especially large ones, analytical results, visualizations, interpretation, and many, many other things. Creating web apps is not necessarily an easy task, but if your synthesis team has the expertise, or access to web developers, web apps may be useful for outreach, or as tools the synthesis team itself can use. Frameworks like [Shiny](https://shiny.posit.co/) (for R), [Streamlit](https://streamlit.io), or [Flask](https://flask.palletsprojects.com) (both for python), and services like [Shinyapps.io](https://www.shinyapps.io/) and [Plotly](https://plotly.com), can make creation of apps relatively painless.
+Interactive web applications can provide users with easy access to scientific datasets, especially large ones, analytical results, visualizations, interpretation, and many other things. Creating web apps is not necessarily an easy task, but if your synthesis team has the expertise, or access to web developers, web apps may be useful for outreach, or as tools the synthesis team itself can use. Frameworks like [Shiny](https://shiny.posit.co/) (for R), [Streamlit](https://streamlit.io), or [Flask](https://flask.palletsprojects.com) (both for python), and services like [Shinyapps.io](https://www.shinyapps.io/) and [Plotly](https://plotly.com), can make creation of apps relatively painless.
 
 Examples
 
@@ -666,7 +677,7 @@ Examples:
   
 ### Project websites
 
-At a certain point, the outputs of a synthesis project can become numerous and challenging to present to the public in an organized way. Project websites can serve as a gateway to an entire synthesis project by providing comprehensive listings of project outputs (papers, datasets, GitHub repositories, etc), a narrative for the research, appealing images or graphics for outreach, and links to related projects, funders, or institutions. [GitHub Pages](https://pages.github.com/) sites are a common solution for creating simple, cost-effective (free, usually) project websites nowadays, but there are other options. A good project website can become a cohesive, engaging clearinghouse for information about a synthesis project, but they can be laborious to create and keep up-to-date.
+At a certain point, the outputs of a synthesis project can become numerous and challenging to present to the public in an organized way. Project websites can serve as a gateway to an entire synthesis project by providing comprehensive listings of project outputs (papers, datasets, GitHub repositories, etc), participants and data contributors, a narrative for the research, appealing images or graphics for outreach, and links to related projects, funders, or institutions. Websites built with [GitHub Pages](https://pages.github.com/) are a common solution for creating simple, cost-effective (free, usually) project websites nowadays, but there are other options. A good project website can become a cohesive, engaging clearinghouse for information about a synthesis project, but they can be laborious to create and keep up-to-date.
 
 Examples:
 
@@ -678,11 +689,11 @@ Examples:
 
 ### Linking synthesis products together
 
-Reflecting on all the information above, we can see one common feature of the many different products of a synthesis team: they exist primarily as digital objects on the internet. The internet may seem fluid, but fortunately there are ways to identify and connect these digital objects in a stable way.
+Reflecting on all the information above, we can see one common feature of the many different products of a synthesis team: they exist primarily as digital objects on the internet. The internet may seem fluid and ephemeral, but fortunately there are ways to identify and connect these digital objects in a stable way.
 
 #### Persistent identifiers
 
-Persistent identifiers, or [PIDs](https://en.wikipedia.org/wiki/Persistent_identifier), are references to digital objects that are intended to last a long time. For objects on the internet, they are intended to be unique, i.e. having a 1:1 relationship between the PID and the digital object, and machine actionable, meaning they can be understood by software like web browsers. There are many different types of PIDs, but the most useful ones in the context of publishing research products are:
+Persistent identifiers, or [PIDs](https://en.wikipedia.org/wiki/Persistent_identifier), are references to digital objects or identities that are intended to last a long time. To be useful on the internet, PIDs should be unique, i.e. having a 1:1 relationship between the PID and the digital object, and machine actionable, meaning they can be understood by software like web browsers. There are many different types of PIDs, but the most useful ones in the context of publishing research products are:
 
 - [Digital Object Identifiers](https://www.doi.org/) (DOI), used to identify digital publications like journal articles, datasets, or governement reports.
 - [Open Researcher and Contributor ID](https://orcid.org/) (ORCID), used to identify individuals, usually in the context of research or publishing activities.
@@ -692,7 +703,7 @@ These identifiers can and should be associated with all journal articles and pub
 
 #### Citing synthesis products
 
-The best way to ensure that use of a research product is recognized is through proper citation. This is already common practice for journal articles, but is only recently being adopted for published datasets. The most logical place in an article to cite a published dataset is in the Methods section and in the Data Availability Statement, which most reputable journals now require. Be sure to check journal data sharing requirements well in advance so that data publication preparation can begin early enough. **When citing datasets, be sure that the full bibliographic entry is correctly included in the article's reference list.** Citation of code is not as widely practiced, but some journals require it and it is a best practice.
+The best way to ensure that use of a research product is recognized is through proper citation. This is already common practice for journal articles, but is only recently being adopted for published datasets. The most logical place in an article to cite a published dataset is in the Methods section and in the Data Availability Statement, which most reputable journals now require. Be sure to check journal data sharing requirements and begin preparing for data publication well in advance of article submission. **When citing datasets, be sure that the full bibliographic entry is correctly included in the article's reference list.** Citation of code is not as widely practiced, but some journals require it and it is a best practice.
 
 :::{.panel-tabset}
 
@@ -759,6 +770,8 @@ Interests and commitment to synthesis projects change over time. To sustain acti
 - **Give all team members the freedom and support to lead analyses, papers, and other valuable project activities.**
 
 ### Find support
+
+<img style="float: right;" src="images/researchfunding.webp" alt="Research funding icon - flask and dollar sign" width="15%" padding="10px"/>
 
 Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to keep scientists engaged and find support for dedicated personnel time. Usually this means getting monetary support in the form of grants.
 
