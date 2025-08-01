@@ -42,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ab8cebeebc487dfce703832e90176ee0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-d8cb6429866b68adf3cc698eba7a4ce5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-ab8cebeebc487dfce703832e90176ee0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e4fd0e37fe3e73d0df29e3f991624bd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-4afdd12a19c6bce460b6eef18963befd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-e4fd0e37fe3e73d0df29e3f991624bd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -624,20 +624,23 @@ Example: Harmonizing grassland biomass data
 <p align="center">
 <img src="images/data_harmonization_example.png" alt="Image showing two small data tables with different column names and data structure being modified to be able to combine them into a single, larger table" width="90%">
 </p>
-<p>Take a minute to look at the harmonized file and consider <strong>how</strong> these data were harmonized. Then, answer the question below.</p>
+<p>Take a minute to look at the harmonized file and consider <strong>how</strong> these data were harmonized. Then, answer this question:</p>
+<blockquote class="blockquote">
+<p><strong>What changes were made to data structure, variable formatting, or units in these data?</strong></p>
+</blockquote>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Click Me for Answer!
+Click here for answers…
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>What changes were made to data structure, variable formatting, or units in these data?</strong> Even though the source data files were similar, several important changes were made to create the harmonized file. Among them:</p>
+<p>Even though the source data files were similar, several important changes were made to create the harmonized file. Among them:</p>
 <ul>
 <li>The <strong>site</strong> column was preserved and contains the “SEV” and “KNZ” categorical values denoting which LTER site is observed in each row.</li>
 <li>The dates in the <strong>date</strong> column were converted to a standard format (<em>YYYY-MM-DD</em>). Incidentally, this matches the International Organization for Standardization (ISO) recommendation for date/time data, making it generally a good choice for dates.</li>
