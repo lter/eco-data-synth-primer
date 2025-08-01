@@ -240,12 +240,14 @@ There are some similarities and some differences in these two source files. A ha
 <img src="images/data_harmonization_example.png" alt="Image showing two small data tables with different column names and data structure being modified to be able to combine them into a single, larger table" width="90%"/>
 </p>
 
-Take a minute to look at the harmonized file and consider **how** these data were harmonized. Then, answer the question below.
+Take a minute to look at the harmonized file and consider **how** these data were harmonized. Then, answer this question:
+
+> **What changes were made to data structure, variable formatting, or units in these data?**
 
 :::{.callout-caution collapse="true" icon="false"}
-#### Click Me for Answer!
+#### Click here for answers...
 
-**What changes were made to data structure, variable formatting, or units in these data?** Even though the source data files were similar, several important changes were made to create the harmonized file. Among them:
+Even though the source data files were similar, several important changes were made to create the harmonized file. Among them:
 
 - The **site** column was preserved and contains the "SEV" and "KNZ" categorical values denoting which LTER site is observed in each row.
 - The dates in the **date** column were converted to a standard format (_YYYY-MM-DD_). Incidentally, this matches the International Organization for Standardization (ISO) recommendation for date/time data, making it generally a good choice for dates.
@@ -254,6 +256,7 @@ Take a minute to look at the harmonized file and consider **how** these data wer
 - The biomass values from Konza were converted to units grams per meter squared (g/m^2^) because the original Konza measurements were for total biomass in 2x2 meter plots. _Note that this conversion is for illustration purposes only_--we can't be sure if this conversion is correct without it being spelled out in the metadata, or asking the data provider directly.
 
 :::
+
 :::
 
 #### A Word About Harmonized Data Formats

@@ -23,8 +23,6 @@ Their ability to accomplish this frequently depends on what research products ar
 
 ## Publishing a synthesis dataset
 
-**Estimated time: 12 min**
-
 In Module 2 we discussed some considerations for creating and formatting harmonized data files in synthesis research. We also introduced the importance of metadata for describing data and making it more usable. Publishing harmonized data files and descriptive metadata together as a **dataset** helps ensure that the data products produced by a synthesis team are **findable**, **accessible**, **interoperable**, and **reusable** (FAIR). FAIR data are an important outcome for most ecological synthesis projects.
 
 ::: {.callout-tip collapse="true"}
@@ -282,7 +280,7 @@ There are a multitude of research data repositories available to researchers now
 
 ## Sharing the Team's Workflow
 
-One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below) with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for example workflows [e.g.@white_developing_2019], but the practice of publishing workflows is generally applicable to synthesis research.
+One of the most valuable, shareable outputs of synthesis research is the analytical workflow used to derive datasets and produce scientific results. Most often, these workflows are written in computer code, such as R, Python, or another language. The code may consist of a collection of scripts, or they may be organized into stand-alone modules or libraries. The latter is easier to share and re-use, but requires more advanced knowledge of software design. Code can be published in a repository (see the options below) with a DOI issued for particular versions of the code, which allows the workflow and code to be cited by the research products that they were used to generate. Ecological forecasting projects are one good place to look for example workflows [e.g. @white_developing_2019], but the practice of publishing workflows is generally applicable to synthesis research.
 
 Sharing and citing workflows and code are an essential element of reproducible science because doing so:
 
@@ -463,8 +461,6 @@ In addition to these practical considerations, there are some team consideration
 We've now covered how a synthesis team should approach creating and publishing its main research outputs (data, code, research results). Now we'll discuss how to begin making these useful to the world, which starts with making sure the products of synthesis research point to each other. Lets begin with an activity.
 
 ### Activity 2: Synthesis project detective
-
-**Estimated time: 12 min**
 
 Form breakout groups and course instructors will assign each one a link to a product from a synthesis project (the code, a paper, a dataset, etc.). Using any means necessary (metadata, web search, etc.) figure out what other products are part of the same project (related publications, source/derived data, etc.) and who is involved in the synthesis team. Answer these questions as a group:
 
@@ -786,5 +782,3 @@ Maintaining momentum for a synthesis project over the long term is highly depend
 ### HAVE FUN!
 
 When done correctly, ecological synthesis research means having lots of fun doing science with a great team. 
-
-
