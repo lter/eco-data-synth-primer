@@ -26,12 +26,13 @@ This agenda is subject to change!
 
 | Timing (PT)     |               Content                |
 |:---------------:|:------------------------------------:|
-| 9:00 - 9:15a    |       Welcome & Introductions        |
-| 9:15 - 10:30a   | Module 1: Starting with Team Science |
-| 10:30 - 11:45a  |   Module 2: Operational Synthesis    |
+| 9:00 - 9:30a    |       Welcome & Introductions        |
+| 9:30 - 10:30a   | Module 1: Starting with Team Science |
+| 10:30a - 12:00p |   Module 2: Operational Synthesis    |
 | 12:00 - 1:00p   |               **Break**              |
-| 1:00 - 2:30p    |   Module 3: Tying It All Together    |
-| 2:30 - 4:00p    |  Mentoring session...                |
+| 1:00 - 2:00p    |      ... Module 2, continued ...     |
+| 2:00 - 3:00p    |   Module 3: Tying it all together    |
+| 3:00 - 4:00p    |   Mentoring session...               |
 
 ## Shared notes document
 

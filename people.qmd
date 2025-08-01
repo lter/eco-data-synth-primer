@@ -6,7 +6,7 @@ The course is currently being organized by Greg Maurer (gmaurer@nmsu.edu), with 
 
 ## Contributors
 
-We have a long list of synthesis scientists actively involved in the course working group who are contributing expertise and instructional content, and many will be present as instructors at the 2024 ESA Meeting. Names and web profiles are listed below in alphabetical order by last name.
+We have a long list of synthesis scientists actively involved in the course working group who are contributing expertise and instructional content. Names and web profiles are listed below in alphabetical order by last name.
 
 Icon legend: {{< fa globe >}} = website | {{< fa brands google scholar >}} = publications | {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCID
 
@@ -17,12 +17,44 @@ Icon legend: {{< fa globe >}} = website | {{< fa brands google scholar >}} = pub
 - **Marty Downs** -- LTER Network Office | [{{< fa globe >}}](https://lternet.edu/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2833-956X)
 - **Stevan Earl** -- Arizona State University | [{{< fa globe >}}](https://sustainability-innovation.asu.edu/person/stevan-earl/) [{{< fa brands github >}}](https://github.com/srearl) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-4465-452X)
 - **Sarah Elmendorf** -- | University of Colorado Boulder [{{< fa globe >}}](https://www.colorado.edu/instaar/sarah-elmendorf) [{{< fa brands github >}}](https://github.com/scelmendorf/) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
-- **Jalene LaMontagne** -- DePaul University | [{{< fa globe >}}](https://lamontagnelab.weebly.com/) [{{< fa brands google scholar >}}](https://scholar.google.com/citations?user=BSOec3pWk-0C&hl) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7713-8591)
+- **Jalene LaMontagne** -- University of Missouri-St. Louis / Missouri Botanical Garden | [{{< fa globe >}}](https://lamontagnelab.weebly.com/) [{{< fa brands google scholar >}}](https://scholar.google.com/citations?user=BSOec3pWk-0C&hl) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7713-8591)
 - **Nick J Lyon** (_they/them_) -- LTER Network Office | [{{< fa globe >}}](https://njlyon0.github.io/) [{{< fa brands github >}}](https://github.com/njlyon0) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3905-1078)
 - **Gregory Maurer** (_he/him_) -- New Mexico State University | [{{< fa globe >}}](https://greg.pronghorns.net/) [{{< fa brands github >}}](https://github.com/gremau) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
 - **Colin Smith** (_he/him_) -- Environmental Data Initiative | [{{< fa globe >}}](https://limnology.wisc.edu/staff/smith-colin/)
 - **Eric Sokol** (_he/him_) -- [NEON](https://www.neonscience.org/) | [{{< fa globe >}}](https://www.neonscience.org/person/eric-sokol) [{{< fa brands github >}}](https://github.com/sokole) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5923-0917)
 - **Alexandra (Sasha) Wright** --  California State University, Los Angeles  
+
+## Course instructors
+
+Instructors and assistants have changed each time the course has run. So far, instructors have come from the list of contributors above.
+
+::: {.panel-tabset}
+#### **ESA 2025**
+
+ESA 2025 Summer Meeting in Baltimore, MD.
+ 
+**Instructors**:
+
+* Marty Downs
+* Jalene Lamontagne
+* Nick Lyon
+* Greg Maurer
+* Eric Sokol
+
+#### **ESA 2024**
+
+ESA 2024 Summer Meeting in Long Beach, CA.
+
+**Instructors**:
+
+* Angel Chen
+* Marty Downs
+* Stevan Earl
+* Nick Lyon
+* Greg Maurer
+* Eric Sokol
+
+:::
 
 ## Other Contributors
 
