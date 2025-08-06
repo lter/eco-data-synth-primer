@@ -15,13 +15,13 @@ After completing this module, you will be able to:
 
 [Google Slides link](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
 
-**Define Synthesis**
-
-Scientific research can be defined as "creative and systematic work undertaken in order to increase the stock of knowledge" ([2015 Frascati Manual](https://doi.org/10.1787/9789264239012-en)). To this basic definition of research, **our definition of *synthesis* research adds** <u>collaborative work</u>, and the <u>integration and analysis of a wide range of data sources</u>.
-
 ## Why Synthesis?
 
-<img src="images/LTER_Survey-2_benefit-importance.png" alt="the importance of various potential benfits of synthesis research to participants" style="float: right;" width="50%" padding="10px"/>
+**Define Synthesis**
+
+Scientific research can be defined as "creative and systematic work undertaken in order to increase the stock of knowledge" (2015 Frascati Manual). To this basic definition of research, our definition of synthesis research adds *collaborative work*, and the *integration and analysis of a wide range of data sources*.
+
+![The importance of various potential benefits of synthesis research to participants](images/LTER_Survey-2_benefit-importance.png){alt="the importance of various potential benfits of synthesis research to participants" padding="10px" style="float: right;" fig-align="right" width="50%"}
 
 This process--of bringing diverse expertise together to combine existing primary data--definitely has its challenges. Identifying and engaging the necessary combination of skills and experience is challenging. Scheduling meeting times can be difficult. Commitment to the process can be uneven. Nonetheless, virtually all who have experienced it find it to be a deeply rewarding experience. Why?
 
@@ -89,26 +89,26 @@ This process--of bringing diverse expertise together to combine existing primary
 |                                                                                                                                                      | **Biotic homogenization destabilizes ecosystem functioning by decreasing spatial asynchrony. Ecology 2021.                                                                                                                                                       |
 +------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-: Key products from recent LTER synthesis groups
+## Identifying a Synthesis-Ready Question
 
-### Additional Resources
+Lots of questions are interesting, but not terribly well-suited for a synthesis approach. We've learned through experience that there are a few qualities that make some questions a better fit for a) combining data; and b) work by a group. The main qualities that we seek in synthesis projects include:
 
--   [Adam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups](https://doi.org/10.1038/d41586-023-03618-x)
--   Cheruvelil, K. S., & Soranno, P. A. (2018). [Data-Intensive Ecological Research Is Catalyzed by Open Science and Team Science](https://doi.org/10.1093/biosci/biy097). BioScience, 68(10), 813–822. https://doi.org/10.1093/biosci/biy097
--   [Hackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science](https://doi.org/10.3390/su12229361)
--   [Hampton and Parker, 2011. Collaboration and Productivity in Scientific Synthesis](https://doi.org/10.1525/bio.2011.61.11.9)
--   [Hackett et al., 2021. Do synthesis centers synthesize? A semantic analysis of topical diversity in research](https://doi.org/10.1016/j.respol.2020.104069)
--   [Wyborn et al., 2018. Understanding the Impacts of Research Synthesis](https://doi.org/10.1016/j.envsci.2018.04.013)
+-   Novel and interesting enough to keep you engaged for 2-3 years.
+-   Data already exist and you know (at least generally) where to find it
+-   Questions cover a large geographic area or data that aren’t normally collected or analyzed together
+-   Clearly framed, but flexible enough to allow adaptation through the process
+-   Outputs could include several kinds of products. As the project progresses, grad students will become postdocs, postdocs will get faculty positions. For the project to remain satisfying to all participants, people will need to be able to take a leadership role on different kinds of products.
+    -   Papers (including data papers, perspectives, gap analyses, as well as primary analyses)
+    -   Symposia
+    -   Datasets
+    -   Analytical Packages
+-   Responsive to the funding call!
 
 ## Process Overview
 
 Typically, a group of researchers--or researchers and managers or community members--will plan a series of meetings over 2-3 years. The mix of in-person v. virtual meetings and work will vary across different groups and different funders, but the general pattern is similar.
 
-<p align="center">
-
-<img src="images/LTER-SWG-timeline.png" alt="graphic of typical timeline for working group process, with in person work alternating with online interaction" width="90%"/>
-
-</p>
+![Graphic of typical timeline for working group process, with in person work alternating with online interaction](images/LTER-SWG-timeline.png){alt="graphic of typical timeline for working group process, with in person work alternating with online interaction" fig-align="center" width="90%"}
 
 Early meetings focus on narrowing the questions and deciding what data is needed and what analyses will be most useful. A period of data gathering and assembly comes next. The assembly of data almost always prompts a revision of the initial questions, as data rarely comes in exactly the form that researchers expected. This can be both the most frustrating and the most interesting part of the process as new hypotheses and models are floated and discussed. It is especially important to have the full participation of researchers familiar with different fields and ecosystems in this process.
 
@@ -132,21 +132,6 @@ Often, early career researchers will be excited about the idea of synthesis but 
     -   Ask questions at meetings
     -   Initiate conversations
 -   *Start your own!*
-
-**Identifying a Synthesis-Ready Question**
-
-Lots of questions are interesting, but not terribly well-suited for a synthesis approach. We've learned through experience that there are a few qualities that make some questions a better fit for a) combining data; and b) work by a group. The main qualities that we seek in synthesis projects include:
-
--   Novel and interesting enough to keep you engaged for 2-3 years.
--   Data already exist and you know (at least generally) where to find it
--   Questions cover a large geographic area or data that aren’t normally collected or analyzed together
--   Clearly framed, but flexible enough to allow adaptation through the process
--   Responsive to the funding call
--   Outputs could include several kinds of products. As the project progresses, gard students will become postdocs, postdocs will get faculty positions. For the project to remain satisfying to all participants, people will need to be able to take a leadership role on different kinds of products.
-    -   Papers (including data papers, perspectives, gap analyses, as well as primary analyses)
-    -   Symposia
-    -   Datasets
-    -   Analytical Packages
 
 ## Sources of Support for Synthesis
 
@@ -445,3 +430,12 @@ Once you get into the details of the process, you'll want to track some more spe
 -   Working group participant who got the data (Name)
 -   Used in your analysis? (Y/N)
 -   Any additional notes or decisions about *how* the data is or will be harmonized and analyzed
+
+### Additional Resources
+
+-   [Adam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups](https://doi.org/10.1038/d41586-023-03618-x)
+-   Cheruvelil, K. S., & Soranno, P. A. (2018). [Data-Intensive Ecological Research Is Catalyzed by Open Science and Team Science](https://doi.org/10.1093/biosci/biy097). BioScience, 68(10), 813–822. https://doi.org/10.1093/biosci/biy097
+-   [Hackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science](https://doi.org/10.3390/su12229361)
+-   [Hampton and Parker, 2011. Collaboration and Productivity in Scientific Synthesis](https://doi.org/10.1525/bio.2011.61.11.9)
+-   [Hackett et al., 2021. Do synthesis centers synthesize? A semantic analysis of topical diversity in research](https://doi.org/10.1016/j.respol.2020.104069)
+-   [Wyborn et al., 2018. Understanding the Impacts of Research Synthesis](https://doi.org/10.1016/j.envsci.2018.04.013)
