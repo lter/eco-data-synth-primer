@@ -46,6 +46,14 @@ Before we begin, we'd love to get a sense for who you all are and why you're int
 - A 1-sentence summary of your work
 - Briefly, _<u>why are you interested in synthesis</u>?_
 
+## Code of Conduct
+
+[ESA Code of Conduct](https://esa.org/baltimore2025/code-of-conduct/?_gl=1*152l98t*_ga*MTM1ODE1ODg1Mi4xNzM0NDYyNDc4*_ga_GXP5K1BM5L*czE3NTQ1MDQxMjMkbzkkZzAkdDE3NTQ1MDQxMjMkajYwJGwwJGgw)
+
+Briefly: Treat all participants with kindness, respect, and consideration, valuing a diversity of views and opinions.
+Report unacceptable behavior at (844)-641-4133 or email codeofconduct@esa.org
+
+
 ## Note on Course Materials
 
 This short course is being offered for the second time at [ESA 2025](https://esa.org/baltimore2025/), and we've chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward.
