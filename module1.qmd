@@ -186,18 +186,22 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
     -   Deep thinkers and risk-takers
     -   At least some skilled coders
 -   Career stage
-    -   Senior investigators connect the team to existing literature and fields of study, connect to a broad network of experienced researchers, and have good knowledge of resources, but are often have a very limited amount of time to devorte to discussion and analyses
-    -   Junior team members often bring a fresh perspective, familiarity with newer literature, strong coding skills, and time to devote to the project
+    -   Senior investigators connect the team to existing literature and fields of study, connect to a broad network of experienced researchers, and have good knowledge of resources, but are often have a very limited amount of time to devote to discussion and analyses.
+    -   Junior team members often bring a fresh perspective, familiarity with newer literature, strong coding skills, and time to devote to the project.
 -   Emotional intelligence
     -   Research shows (Aggarwal and Woolley, 2018) that the bump in creativity seen in mixed-gender teams is typically due to an increase in emotional intelligence and attention to team dynamics. Include at least a few people with a process orientation and strong people skills.
 -   Power dynamics
     -   You won't be able to anticipate all of the issues related to power dynamics that can arise, but keep them front of mind as you assemble a team.
--   Remember that participation in synthesis represents a significant career opportunity
-    -   Be mindful that such career-building opportunities have not been fairly distributed
-    -   Be intentional seeking out people who may not be part of your typical circles (including gender, ethnicity, career stage, family status, (dis)abilities, etc.)
+-   Remember that participation in synthesis represents a significant career opportunity.
+    -   Be mindful that such career-building opportunities have not been fairly distributed.
+    -   Be intentional about seeking out people who may not be part of your typical circles (including gender, ethnicity, career stage, family status, (dis)abilities, etc.).
 
 
 ## Setting Expectations
+
+Once you've assembled a team, there are several steps you can take to get the best work out of the combination of people you've assembled. Starting as early as the invitation to join the team, encourage participants to think about what they have to contribute, what they hope to get out of participating, and to be clear about the level of commitment they can make.
+
+
 
 **Process Design**
 
@@ -211,7 +215,7 @@ We all misjudge our availability once in a while, but consistently failing to de
 
 ## Establish Group Norms
 
-There are many approaches to establishing group norms, but a shared process that helps create ownership and buy-in is one key to a smoothly-functioning working group.
+![](images/mod1_group_norms.png){padding="10px" style="float: right" width="300" alt="easel and flipchart with a list of group norms such as: "}There are many approaches to establishing group norms, but a shared process that helps create ownership and buy-in is one key to a smoothly-functioning working group.
 
 The process can be as simple as taking 15 minutes to ask the group about their shared (and diverging) values and what those imply about how the group should function. The best choice for your group will depend on the mix of participants, the nature of the content, and the duration of your collaboration.
 
@@ -263,6 +267,13 @@ Break onto small groups and discuss the following questions:
 
 The exercise presents an opportunity for self-reflection and for participants to commit to (and ask for help in) curbing their unhelpful behaviors. After all, we all have them!
 
+::: {.callout-tip collapse="true"}
+## Small Group Discussion
+
+- Break into small groups of 3-4 people
+- Each individual in the group chooses a different one of the microstructures in the table below and spends ~ 3 minutes reading it and thinking about what situations they have encountered that would have benefited from using it.
+- Each group member summarizes how the structure works and what they found interesting or useful about it (5 min total)
+
 :::
 
 ## Some Alternatives to Conventional Meeting Structures
@@ -270,6 +281,10 @@ The exercise presents an opportunity for self-reflection and for participants to
 Differences in thinking and learning styles, disciplinary background, power, and other dimensions of diversity mean that there's no such thing as a one-size-fits-all approach for participatory processes. Nonetheless, we tend to default to a small set of traditional ways of sharing information and engaging people when we meet. These conventional structures are often either too limiting (presentations, status reports, and managed discussions) or too free-form and disorganized (open discussions and brainstorms) to effectively tap the wisdom of the group (Lipmanowicz and McCandless, 2014). To support the engagement of all participants, we need to break out of those traditional ways of meeting.
 
 Books and websites like Liberating Structures, Gamestorming, and the Facilitator's Guide to Participatory Decision Making offer dozens of alternative group processes (see Resources). Known as microstructures or knowledge games, these simple, fun activities are designed to include everyone, distribute control, and unleash creativity. One or more activities can be matched to your intended outcomes and arranged in a sequence to advance the team toward your overall goal. Liberating Structures offers a [matching matrix](https://www.liberatingstructures.com/matching-matrix) to help you identify microstructures that could fit your needs and an app you can use to browse and assemble strings of activities. [Gamestorming](https://gamestorming.com/) organizes their activities into categories (e.g. games for opening, games for decision-making) for exploration.
+
+:::
+
+
 
 Here are a few microstructures that work well for small group virtual meetings. They also work for larger groups and in person settings:
 
