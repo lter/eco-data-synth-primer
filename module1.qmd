@@ -11,9 +11,9 @@ After completing this module, you will be able to:
 -   **Have tools for** establishing group norms and expectations
 -   **Evaluate** strategies for group organization and project management
 
-**Workshop Slides - *Under Construction***
+<!-- **Workshop Slides - *Under Construction***
 
-[Google Slides link](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p)
+[Google Slides link](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p) -->
 
 ## Why Synthesis?
 
@@ -133,7 +133,7 @@ While it is certainly possible to conduct synthesis with no external support, a 
 
 ## Building a Team
 
-![](images/mod1_team.png){padding="10px" style="float: right" width="350" alt="The US olympic gymnastics team in a victory embrace"}
+![](images/mod1_team.png){padding="20px" style="float: right" width="40%" alt="The US olympic gymnastics team in a victory embrace"}
 Research from organizational development (Horowitz and Hoowitz 2007, Agawal and Wooley, 2018) and the science of team science (Cheruvelil et al. 2014) finds that teams combining members form multiple fields, backgrounds, and functional styles are more creative and produce better results. There's a big caveat, though. They only get those positive results when the team adopts a **learning mindset** and **the collaboration process allows each participant to contribute in the way that works for them.**
 
 Diverse Teams Yield:
@@ -289,7 +289,7 @@ Here are a few microstructures that work well for small group virtual meetings. 
 | Feasibility-Impact Matrix (see figure below) | **<span style="color:blue">Analytical</span>**, **<span style="color:green">Practical</span>**, **<span style="color:gold">Experimental</span>** | Compare alternatives | Discuss and agree on definitions for two criteria for evaluating ideas: feasibility of implementation and impact potential; Rate each idea against these two axes and map onto 2x2 grid |
 
 <p align="center">
-<img src="images/figure_project-impact-vs-feasibility.png" alt="Graph of impact versus feasibility where both axes range from low to high and the plot area is divided into four equal sections" width="70%"/>
+<img src="images/mod1_project-impact-vs-feasibility.png" alt="Graph of impact versus feasibility where both axes range from low to high and the plot area is divided into four equal sections" width="70%"/>
 </p>
 
 **Making a Communication and Work Plan**
@@ -458,3 +458,20 @@ Once you get into the details of the process, you'll want to track some more spe
 -   Pieterse, A.N et al. (2013) [Cultural Diversity and Team Performance: The Role of Team Member Goal Orientation](https://doi.org/10.5465/amj.2010.0992). doi: 10.5465/amj.2010.0992
 -   van Knippenberg,D. and Hoever, I.J. (2017) [Team Diversity and Team Creativity: A Categorization-Elaboration Perspective](https://doi.org/10.1093/oso/9780190222093.003.0003). doi: 10.1093/oso/9780190222093.003.0003
 -   Woolley, A. W. et al. (2010). [Evidence for a Collective Intelligence Factor in the Performance of Human Groups](https://doi.org/10.1126/science.1193147). Science, 330(6004), 686–688. doi: 10.1126/science.1193147
+- Khuri et al., [Inclusive Practice Glossary for Facilitators](https://collaborativecapacities.com/wp-content/uploads/Inclusive_Practice_Glossary_for_Facilitators-March2024.pdf). **2024**.
+- Cravens, A.E., _et al._, [Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration](https://doi.org/10.1057/s41599-022-01217-1). **2022**.
+- Woodley, L. _et al._, [A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events](https://doi.org/10.5281/zenodo.4987666). **2021**.
+- Tarallo, B. & Monlux, M. Surviving the Horror of Online Meetings: How to Facilitate Good Virtual Meetings & Manage Meeting Monsters. **2021**.
+- Lipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. **2014**.
+- Kaner, S. [Facilitator's Guide to Participatory Decision-Making (Revised)](https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959). **2014**.
+- Kantor, D. Reading the room: Group dynamics for coaches and leaders. John Wiley & Sons. **2012**.
+- Gray, D. _et al._, Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O'Reilly Media. **2010**.
+- Bohm, D. On Dialogue. Routledge Classics. **2004**.
+
+
+### Websites
+
+- [Liberating Structures: Including and Unleashing Everyone](https://www.liberatingstructures.com/)
+- [Gamestorming](https://gamestorming.com/)
+- [SciTS and Team Science Resources](https://www.inscits.org/scits-a-team-science-resources) compiled by INSciTS, the International Network for the Science of Team Science
+- [Dealing with Disruptive Behaviors in Meetings](https://coast.noaa.gov/ddb/)
