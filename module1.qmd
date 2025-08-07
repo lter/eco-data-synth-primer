@@ -446,28 +446,27 @@ Once you get into the details of the process, you'll want to track some more spe
 
 ### Additional Resources
 
--   [Adam, 2023. ‘Disruptive’ science: in-person teams make more breakthroughs than remote groups](https://doi.org/10.1038/d41586-023-03618-x)
--   Cheruvelil, K. S., & Soranno, P. A. (2018). [Data-Intensive Ecological Research Is Catalyzed by Open Science and Team Science](https://doi.org/10.1093/biosci/biy097). BioScience, 68(10), 813–822. https://doi.org/10.1093/biosci/biy097
--   [Hackett, 2020. Collaboration and Sustainability: Making Science Useful, Making Useful Science](https://doi.org/10.3390/su12229361)
--   [Hampton and Parker, 2011. Collaboration and Productivity in Scientific Synthesis](https://doi.org/10.1525/bio.2011.61.11.9)
--   [Hackett et al., 2021. Do synthesis centers synthesize? A semantic analysis of topical diversity in research](https://doi.org/10.1016/j.respol.2020.104069)
--   [Wyborn et al., 2018. Understanding the Impacts of Research Synthesis](https://doi.org/10.1016/j.envsci.2018.04.013)
+-   Adam, 2023. [‘Disruptive’ science: in-person teams make more breakthroughs than remote groups](https://doi.org/10.1038/d41586-023-03618-x)
 -   Aggarwal, I. & Woolley, A.W. (2018) [Team Creativity, Cognition, and Cognitive Style Diversity](https://doi.org/10.1287/mnsc.2017.3001). Management Science 65(4):1586-1599. doi: 10.1287/mnsc.2017.3001
+- Bohm, D. On Dialogue. Routledge Classics. **2004**.
 -   Cheruvelil, K.S. et al. (2014) [Creating and maintaining high-performing collaborative research teams: the importance of diversity and interpersonal skills](https://doi.org/10.1890/130001). doi: 10.1890/130001
--   Horowitz, S.K. and Horwitz, I.B. (2007) [The effects of team diversity on team outcomes: A meta-analytic review of team demography](https://doi.org/10.1177/0149206307308587). Journal of Management 33: 987-1015. doi: 10.1177/0149206307308587
--   Pieterse, A.N et al. (2013) [Cultural Diversity and Team Performance: The Role of Team Member Goal Orientation](https://doi.org/10.5465/amj.2010.0992). doi: 10.5465/amj.2010.0992
--   van Knippenberg,D. and Hoever, I.J. (2017) [Team Diversity and Team Creativity: A Categorization-Elaboration Perspective](https://doi.org/10.1093/oso/9780190222093.003.0003). doi: 10.1093/oso/9780190222093.003.0003
--   Woolley, A. W. et al. (2010). [Evidence for a Collective Intelligence Factor in the Performance of Human Groups](https://doi.org/10.1126/science.1193147). Science, 330(6004), 686–688. doi: 10.1126/science.1193147
-- Khuri et al., [Inclusive Practice Glossary for Facilitators](https://collaborativecapacities.com/wp-content/uploads/Inclusive_Practice_Glossary_for_Facilitators-March2024.pdf). **2024**.
+-   Cheruvelil, K. S., & Soranno, P. A. (2018). [Data-Intensive Ecological Research Is Catalyzed by Open Science and Team Science](https://doi.org/10.1093/biosci/biy097). BioScience, 68(10), 813–822. https://doi.org/10.1093/biosci/biy097
 - Cravens, A.E., _et al._, [Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration](https://doi.org/10.1057/s41599-022-01217-1). **2022**.
-- Woodley, L. _et al._, [A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events](https://doi.org/10.5281/zenodo.4987666). **2021**.
-- Tarallo, B. & Monlux, M. Surviving the Horror of Online Meetings: How to Facilitate Good Virtual Meetings & Manage Meeting Monsters. **2021**.
-- Lipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. **2014**.
+- Gray, D. _et al._, Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O'Reilly Media. **2010**.
+-   Hackett, 2020. [Collaboration and Sustainability: Making Science Useful, Making Useful Science](https://doi.org/10.3390/su12229361)
+-   Hampton and Parker, 2011. [Collaboration and Productivity in Scientific Synthesis](https://doi.org/10.1525/bio.2011.61.11.9)
+-   Hackett et al., 2021. [Do synthesis centers synthesize? A semantic analysis of topical diversity in research](https://doi.org/10.1016/j.respol.2020.104069)
+-   Horowitz, S.K. and Horwitz, I.B. (2007) [The effects of team diversity on team outcomes: A meta-analytic review of team demography](https://doi.org/10.1177/0149206307308587). Journal of Management 33: 987-1015. doi: 10.1177/0149206307308587
 - Kaner, S. [Facilitator's Guide to Participatory Decision-Making (Revised)](https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959). **2014**.
 - Kantor, D. Reading the room: Group dynamics for coaches and leaders. John Wiley & Sons. **2012**.
-- Gray, D. _et al._, Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O'Reilly Media. **2010**.
-- Bohm, D. On Dialogue. Routledge Classics. **2004**.
-
+- Khuri et al., [Inclusive Practice Glossary for Facilitators](https://collaborativecapacities.com/wp-content/uploads/Inclusive_Practice_Glossary_for_Facilitators-March2024.pdf). **2024**.
+- Lipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. **2014**.
+-   Pieterse, A.N et al. (2013) [Cultural Diversity and Team Performance: The Role of Team Member Goal Orientation](https://doi.org/10.5465/amj.2010.0992). doi: 10.5465/amj.2010.0992
+- Tarallo, B. & Monlux, M. Surviving the Horror of Online Meetings: How to Facilitate Good Virtual Meetings & Manage Meeting Monsters. **2021**.
+-   van Knippenberg,D. and Hoever, I.J. (2017) [Team Diversity and Team Creativity: A Categorization-Elaboration Perspective](https://doi.org/10.1093/oso/9780190222093.003.0003). doi: 10.1093/oso/9780190222093.003.0003
+- Woodley, L. _et al._, [A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events](https://doi.org/10.5281/zenodo.4987666). **2021**.
+-   Woolley, A. W. et al. (2010). [Evidence for a Collective Intelligence Factor in the Performance of Human Groups](https://doi.org/10.1126/science.1193147). Science, 330(6004), 686–688. doi: 10.1126/science.1193147
+-   Wyborn et al., 2018. [Understanding the Impacts of Research Synthesis](https://doi.org/10.1016/j.envsci.2018.04.013)
 
 ### Websites
 
