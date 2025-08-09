@@ -16,7 +16,7 @@ After completing this module, you will be able to:
 
 So far in the course, we've made the point that ecological synthesis research benefits from an inclusive, team-based approach to science, and that teams should use effective, collaborative methods to integrate and analyze their data. Synthesis research is also intended to be **influential** and **useful**. There are many definitions of "influential and useful" to consider here, but successful ecological synthesis teams typically aim to expand our understanding of ecological systems, and to improve human lives and the environment.
 <img src="images/mod3_fig1_tying.png" alt="Three circles labeled 'data', 'results' and 'analytical workflow' with arrows connecting each pair pointing in both directions" style="float: right" width="45%" padding="10px"/>
-Their ability to accomplish this frequently depends on what research products are created, and how thosw are communicated and shared with the outside world.
+Their ability to accomplish this frequently depends on what research products are created, and how those are communicated and shared with the outside world.
 
 "Research products" can be defined broadly, but there are three interconnected, publishable products that are the most common outputs from a synthesis project (or any research project, really): **the data**, **analytical workflows** (code for data cleaning or statistics, for example) and **research results**. Each of these is a valuable product of synthesis science, and each one should reference the others. In this module we'll discuss the mechanics of publishing each one, and how they can be made accessible and useful for the long-term.
 
@@ -667,8 +667,8 @@ Some research efforts have developed automation systems for research data proces
 
 Examples: 
 
-  - The Portal Project in southeast Arizona has developed a well-described [near-term ecological forecasting pipeline](https://portal.naturecast.org/) [also described in @kim_implementing_2022].
-  - [Automated quality control](https://github.com/SCBI-ForestGEO/Dendrobands) of dendrometer band data.[^16]
+  - The Portal Project in southeast Arizona has developed a well-described [near-term ecological forecasting pipeline](https://portal.naturecast.org/) [also described in @white_developing_2019].
+  - [Automated quality control](https://github.com/SCBI-ForestGEO/Dendrobands) of dendrometer band data.[@kim_implementing_2022]
   - [Forecasting Lake and Reservoir Ecosystems](https://flare-forecast.org/) (FLARE) project.
   
 ### Project websites
