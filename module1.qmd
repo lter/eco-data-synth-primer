@@ -320,8 +320,8 @@ Differences in thinking and learning styles, disciplinary background, power, and
 
 Books and websites like *Liberating Structures*, *Gamestorming*, and the *Facilitator's Guide to Participatory Decision Making* offer dozens of alternative group processes (see [Resources](#websites)). Known as microstructures or knowledge games, these simple, fun activities are designed to include everyone, distribute control, and unleash creativity. One or more activities can be matched to your intended outcomes and arranged in a sequence to advance the team toward your overall goal. Liberating Structures offers a [matching matrix](https://www.liberatingstructures.com/matching-matrix) to help you identify microstructures that could fit your needs and an app you can use to browse and assemble strings of activities. [Gamestorming](https://gamestorming.com/) organizes their activities into categories (e.g. games for opening, games for decision-making) for exploration.
 
-::: {.callout-note title="A closer look at meeting microstructures" collapse="false"}
-## Small Group Discussion
+::: {.callout-note title="Small Group Discussion" collapse="false"}
+### A closer look at meeting microstructures
 
 - Break into small groups of 3-4 people
 - Each individual in the group chooses a different one of the microstructures in the table below and spends ~ 3 minutes reading it and thinking about what situations they have encountered that would have benefited from using it.
