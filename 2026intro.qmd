@@ -1,5 +1,5 @@
 ---
-title: "A Course for Collaborative Ecologists"
+title: "So You Have an Idea. Now what?"
 ---
 
 <p align="center">
@@ -17,9 +17,9 @@ The full short course which we offered in 2025, is a survey of methods for makin
 Objectives for learners are to
 
 ```         
-a.  gain team science and project management skills that are needed for synthesis and that are immediately useful in a research team setting,
+a. gain team science and project management skills that are needed for synthesis and that are immediately useful in a research team setting,
 b. locate and become familiar with resources to gain the data science skills needed for reproducible synthesis
-c.  focus on developing their own synthesis projects, whatever stage they are in, through interaction with instructors and peers.
+c. focus on developing their own synthesis projects, whatever stage they are in, through interaction with instructors and peers.
 ```
 
 Instructors will cover an overview of the synthesis process, assembling the team, identifying and refining the question(s), collecting primary data sources, and project management. The course uses real-world examples, demonstrations, and interactive lessons in small groups. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips.
@@ -39,7 +39,7 @@ This agenda is subject to change!
 
 ## Shared notes document
 
-A [**communal notes document**](https://docs.google.com/document/d/1RC7tXnGvxRCd2xqjYowOmDKkiCU_VN51ldOOGyL3dTc/edit?usp=sharing) will be used during some of the discussions we'll have, and are a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
+A [**communal notes document**](https://docs.google.com/document/d/1RC7tXnGvxRCd2xqjYowOmDKkiCU_VN51ldOOGyL3dTc/edit?usp=sharing) will be used during some of the discussions we'll have, and is a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
 
 ## Introductions & Icebreaker
 
@@ -57,7 +57,7 @@ Briefly: Treat all participants with kindness, respect, and consideration, valui
 
 ## Note on Course Materials
 
-This short course is being offered for the second time at [ESA 2025](https://esa.org/baltimore2025/), and we've chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward. Also, much of the content is covered more completely in our year-long synthesis course: [Synthesis Skills for Early Career Researchers (SSECR)](https://lter.github.io/ssecr/).
+This workshop is an adaptation of a full short course that was offered in 2024 and 2025. Materials from those courses are available on the [EDI GitHub EcoDataSynth](https://lter.github.io/eco-data-synth-primer/) repository, which also links to the materials fro this workshop. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward. Also, much of the content is covered more completely in our semester-long synthesis course: [Synthesis Skills for Early Career Researchers (SSECR)](https://lter.github.io/ssecr/).
 
 If you are a {{< fa brands github >}} GitHub aficionado, we have deployed this website via GitHub Pages so you could also "star" the website's repository. Simply click the {{< fa brands github >}} GitHub octocat logo on the right side of the navbar (at the top of the screen) to be redirected to the GitHub repository underpinning this website.
 
@@ -78,3 +78,6 @@ The course and its content were developed by a large team. See the [**People pag
 :::
 
 **Collage photo credits:** Jacob Bøtter via Flickr, CC BY-SA 2.0 \| Jeremy Yoder via Flickr, CC BY-SA 2.0 \| Marco Pfeiffer, CC BY-SA 4.0 \| Gabriel De La Rosa, CC BY-SA 4.0 \| Weecology lab CC BY 4.0 \| NEON (National Ecological Observatory Network)
+
+# Why Synthesis?
+
