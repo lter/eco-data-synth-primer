@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>content – Ecological Data Synthesis: A Primer on Essential Methods</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/edi-logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-2a18216f63744a95c3bef59ec3efa677.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-0e9caa7b821ce3b44121625e33dfa496.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2a18216f63744a95c3bef59ec3efa677.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Ecological Data Synthesis: A Primer on Essential Methods</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./module1.html"> 
+<span class="menu-text">Module 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./module2.html"> 
+<span class="menu-text">Module 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./module3.html"> 
+<span class="menu-text">Module 3</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="./people.html">
+ <span class="dropdown-text">Instructors</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./contributing.html">
+ <span class="dropdown-text">Contributing</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lter/eco-data-synth-primer"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-do-we-mean-by-synthesis" id="toc-what-do-we-mean-by-synthesis" class="nav-link active" data-scroll-target="#what-do-we-mean-by-synthesis">What Do We Mean by Synthesis?</a></li>
+  <li><a href="#general-synthesis-process" id="toc-general-synthesis-process" class="nav-link" data-scroll-target="#general-synthesis-process">General Synthesis Process</a></li>
+  <li><a href="#why-synthesize" id="toc-why-synthesize" class="nav-link" data-scroll-target="#why-synthesize">Why Synthesize?</a>
+  <ul class="collapse">
+  <li><a href="#funding-and-resources" id="toc-funding-and-resources" class="nav-link" data-scroll-target="#funding-and-resources">Funding and Resources</a></li>
+  <li><a href="#sources-of-support-for-synthesis" id="toc-sources-of-support-for-synthesis" class="nav-link" data-scroll-target="#sources-of-support-for-synthesis">Sources of Support for Synthesis</a></li>
+  <li><a href="#different-funders-emphasize-different-resources" id="toc-different-funders-emphasize-different-resources" class="nav-link" data-scroll-target="#different-funders-emphasize-different-resources">Different Funders Emphasize Different Resources</a></li>
+  <li><a href="#how-to-get-involved-in-synthesis" id="toc-how-to-get-involved-in-synthesis" class="nav-link" data-scroll-target="#how-to-get-involved-in-synthesis">How to Get Involved in Synthesis</a></li>
+  <li><a href="#start-your-own" id="toc-start-your-own" class="nav-link" data-scroll-target="#start-your-own">Start Your Own!</a></li>
+  <li><a href="#what-makes-a-good-question-for-synthesis" id="toc-what-makes-a-good-question-for-synthesis" class="nav-link" data-scroll-target="#what-makes-a-good-question-for-synthesis">What Makes a “Good” Question for Synthesis?</a></li>
+  <li><a href="#what-kinds-of-data-sources-might-you-bring-to-bear" id="toc-what-kinds-of-data-sources-might-you-bring-to-bear" class="nav-link" data-scroll-target="#what-kinds-of-data-sources-might-you-bring-to-bear">What Kinds of Data Sources Might You Bring to Bear?</a></li>
+  <li><a href="#potential-data-sources" id="toc-potential-data-sources" class="nav-link" data-scroll-target="#potential-data-sources">Potential Data Sources</a></li>
+  <li><a href="#data-use-principles" id="toc-data-use-principles" class="nav-link" data-scroll-target="#data-use-principles">Data Use Principles</a></li>
+  <li><a href="#data-tracking-for-each-included-dataset-pre-proposal" id="toc-data-tracking-for-each-included-dataset-pre-proposal" class="nav-link" data-scroll-target="#data-tracking-for-each-included-dataset-pre-proposal">Data Tracking for Each Included Dataset (Pre-Proposal)</a></li>
+  <li><a href="#building-a-team" id="toc-building-a-team" class="nav-link" data-scroll-target="#building-a-team">Building a Team</a></li>
+  <li><a href="#leadership-team-main-group" id="toc-leadership-team-main-group" class="nav-link" data-scroll-target="#leadership-team-main-group">Leadership Team &amp; Main Group</a></li>
+  <li><a href="#diversity-benefits-teams" id="toc-diversity-benefits-teams" class="nav-link" data-scroll-target="#diversity-benefits-teams">Diversity Benefits Teams</a></li>
+  <li><a href="#but-those-benefits-are-not-guaranteed" id="toc-but-those-benefits-are-not-guaranteed" class="nav-link" data-scroll-target="#but-those-benefits-are-not-guaranteed">…But Those Benefits Are Not Guaranteed</a></li>
+  <li><a href="#good-teams-are-both-chosen-and-made" id="toc-good-teams-are-both-chosen-and-made" class="nav-link" data-scroll-target="#good-teams-are-both-chosen-and-made">Good Teams Are Both Chosen and Made</a></li>
+  <li><a href="#setting-expectations" id="toc-setting-expectations" class="nav-link" data-scroll-target="#setting-expectations">Setting Expectations</a></li>
+  <li><a href="#discussing-group-norms" id="toc-discussing-group-norms" class="nav-link" data-scroll-target="#discussing-group-norms">Discussing Group Norms</a></li>
+  <li><a href="#establishing-group-norms-can-be-simple" id="toc-establishing-group-norms-can-be-simple" class="nav-link" data-scroll-target="#establishing-group-norms-can-be-simple">Establishing Group Norms Can Be Simple</a></li>
+  <li><a href="#or-more-involved" id="toc-or-more-involved" class="nav-link" data-scroll-target="#or-more-involved">…Or More Involved</a></li>
+  <li><a href="#group-behaviors" id="toc-group-behaviors" class="nav-link" data-scroll-target="#group-behaviors">Group Behaviors</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#discussing-authorship" id="toc-discussing-authorship" class="nav-link" data-scroll-target="#discussing-authorship">Discussing Authorship</a></li>
+  <li><a href="#authorship-and-other-forms-of-credit" id="toc-authorship-and-other-forms-of-credit" class="nav-link" data-scroll-target="#authorship-and-other-forms-of-credit">Authorship (and Other Forms of Credit)</a></li>
+  <li><a href="#one-approach" id="toc-one-approach" class="nav-link" data-scroll-target="#one-approach">One Approach</a></li>
+  <li><a href="#authorship-guidelines-example" id="toc-authorship-guidelines-example" class="nav-link" data-scroll-target="#authorship-guidelines-example">Authorship Guidelines Example</a></li>
+  <li><a href="#should-all-data-contributors-be-offered-authorship" id="toc-should-all-data-contributors-be-offered-authorship" class="nav-link" data-scroll-target="#should-all-data-contributors-be-offered-authorship">Should All Data Contributors Be Offered Authorship?</a></li>
+  <li><a href="#does-providing-data-authorship" id="toc-does-providing-data-authorship" class="nav-link" data-scroll-target="#does-providing-data-authorship">Does Providing Data = Authorship?</a></li>
+  <li><a href="#project-management" id="toc-project-management" class="nav-link" data-scroll-target="#project-management">Project Management</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+
+<section id="what-do-we-mean-by-synthesis" class="level2">
+<h2 class="anchored" data-anchor-id="what-do-we-mean-by-synthesis">What Do We Mean by Synthesis?</h2>
+<p>Bringing together data from many sources to generate new scientific insights or test new hypotheses.</p>
+<p>Today, we’ll focus on the particular flavor of synthesis that involves a team of people.</p>
+</section>
+<section id="general-synthesis-process" class="level2">
+<h2 class="anchored" data-anchor-id="general-synthesis-process">General Synthesis Process</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/general-synthesis-process.png" class="img-fluid figure-img" alt="Graphic depicting a linear progression from idea development and team formation through a series of meetings focused on data discovery, analysis and products."></p>
+<figcaption>Generalized synthesis process</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/synthesis-spiral-2.png" class="img-fluid figure-img" alt="Spiral graphic with detours, dead ends, and spinoff projects." width="2000"></p>
+<figcaption><strong>How it really happens…</strong></figcaption>
+</figure>
+</div>
+<p>From: Ten simple rules for ecological synthesis research (2026) Methods in Ecology and Evolution, <em>in press</em></p>
+</section>
+<section id="why-synthesize" class="level2">
+<h2 class="anchored" data-anchor-id="why-synthesize">Why Synthesize?</h2>
+<ul>
+<li>Higher impact products</li>
+<li>Incorporating (and learning) new skills</li>
+<li>Building your science community</li>
+<li>Leveraging the effort of the science community by re-using data</li>
+<li>Inclusion — a way to involve less research-intensive institutions and individuals who can’t/don’t want to do fieldwork</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Academic</th>
+<th style="text-align: center;">Application</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/nceas-synthesis-survey.png" class="img-fluid" alt="Visual from the NCEAS synthesis survey on what people got out of working groups."></td>
+<td style="text-align: center;"><img src="images/Reid_pnas.0900313106fig01.jpeg" class="img-fluid" alt="Motivations for synthesis (Reid 2009/Hackett 2020)."></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">What benefits were most important to NCEAS working group participants?</td>
+<td style="text-align: center;">Motivations for synthesis <a href="https://doi.org/10.3390/su12229361">Hackett, E.J. (2020).</a> Sustainability, reproduced from <a href="https://doi.org/10.1073/pnas.0900313106">Reid et al.&nbsp;(2009)</a> PNAS</td>
+</tr>
+</tbody>
+</table>
+<section id="funding-and-resources" class="level3">
+<h3 class="anchored" data-anchor-id="funding-and-resources">Funding and Resources</h3>
+<p><em>(Discussion prompt for participants — consider presenting as an interactive poll.)</em></p>
+</section>
+<section id="sources-of-support-for-synthesis" class="level3">
+<h3 class="anchored" data-anchor-id="sources-of-support-for-synthesis">Sources of Support for Synthesis</h3>
+<p><strong>Synthesis Centers</strong></p>
+<ul>
+<li><a href="https://www.nceas.ucsb.edu/calls-for-proposals">NCEAS</a></li>
+<li><a href="https://esiil.org/">ESIIL</a></li>
+<li><a href="https://www.usgs.gov/centers/john-wesley-powell-center-for-analysis-and-synthesis/proposal-process">USGS Powell Center</a></li>
+<li><a href="https://www.idiv.de/en/sdiv.html">S-div</a></li>
+<li><a href="https://www.nceas.ucsb.edu/morpho">Morpho Program</a></li>
+<li><a href="https://www.ciee-icee.ca/">Canadian Institute of Ecology and Evolution (CIEE)</a></li>
+</ul>
+<p><strong>Societies</strong></p>
+<ul>
+<li><a href="https://www.newphytologist.org/workshops">New Phytologist Workshops</a></li>
+<li><a href="https://www.grc.org/about/proposing-a-new-gordon-conference/">Gordon Research Conferences</a></li>
+<li>Chapman Conferences</li>
+<li><a href="https://www.britishecologicalsociety.org/funding/synthesis-grants/">British Ecological Society</a> (one-third of participants from the developing world)</li>
+</ul>
+<p><strong>NSF Programs</strong></p>
+<ul>
+<li><a href="https://www.nsf.gov/pubs/2024/nsf24081/nsf24081.jsp">ULTRA-Data DCL</a></li>
+<li>Core programs, e.g., <a href="https://new.nsf.gov/funding/opportunities/division-environmental-biology-deb">DEB</a>, IOS, MCB, Emerging Frontiers, OCE, OPP, RISE
+<ul>
+<li>Search solicitations for “synthesis activities,” “synthesis projects”</li>
+</ul></li>
+<li>NSF workshops</li>
+</ul>
+</section>
+<section id="different-funders-emphasize-different-resources" class="level3">
+<h3 class="anchored" data-anchor-id="different-funders-emphasize-different-resources">Different Funders Emphasize Different Resources</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Funder</th>
+<th>PI salary &amp; direct project support</th>
+<th>Direct analytical support</th>
+<th>Postdoc funding</th>
+<th>Facilitation &amp; communication support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NSF</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ESIIL</td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>LTER</td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>NCEAS/Morpho</td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+</tr>
+<tr class="odd">
+<td>Powell Center</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<p>Everyone offers travel support, but different programs offer different kinds of additional support — remember to budget for the kinds of support that are allowed.</p>
+</section>
+<section id="how-to-get-involved-in-synthesis" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-get-involved-in-synthesis">How to Get Involved in Synthesis</h3>
+<p><strong>Build your community</strong></p>
+<ul>
+<li>Let advisors and colleagues know</li>
+<li>Share your enthusiasm</li>
+<li>Ask questions at meetings</li>
+<li>Initiate conversations — in person, by email, or on social media</li>
+</ul>
+<p><strong>Build your skills</strong></p>
+<ul>
+<li>Environmental Science Innovation and Inclusion Lab (ESIIL): <a href="https://esiil.org/innovation-summit">Innovation Summit</a>, hackathons</li>
+<li>LTER: <a href="https://lter.github.io/ssecr/">Synthesis Skills for Early Career Researchers (SSECR)</a></li>
+<li><a href="https://datacarpentry.org/">Data Carpentries</a></li>
+<li>NCEAS: <a href="https://www.nceas.ucsb.edu/environmental-data-science-summit">Environmental Data Science Summit</a></li>
+</ul>
+</section>
+<section id="start-your-own" class="level3">
+<h3 class="anchored" data-anchor-id="start-your-own">Start Your Own!</h3>
+</section>
+<section id="what-makes-a-good-question-for-synthesis" class="level3">
+<h3 class="anchored" data-anchor-id="what-makes-a-good-question-for-synthesis">What Makes a “Good” Question for Synthesis?</h3>
+<ul>
+<li>Novel and interesting enough to spend 2–3 years deeply involved</li>
+<li>Ripe for synthesis
+<ul>
+<li>Data already exist</li>
+<li>Large geographic area or temporal extent</li>
+<li>Data that aren’t normally collected/analyzed together</li>
+</ul></li>
+<li>Clearly framed, but flexible</li>
+<li>Results could include several kinds of products: papers of various kinds, symposia, datasets, analytical packages</li>
+<li>Responsive to the funding call!</li>
+</ul>
+</section>
+<section id="what-kinds-of-data-sources-might-you-bring-to-bear" class="level3">
+<h3 class="anchored" data-anchor-id="what-kinds-of-data-sources-might-you-bring-to-bear">What Kinds of Data Sources Might You Bring to Bear?</h3>
+<p><em>(Discussion prompt.)</em></p>
+</section>
+<section id="potential-data-sources" class="level3">
+<h3 class="anchored" data-anchor-id="potential-data-sources">Potential Data Sources</h3>
+<ul>
+<li>DataONE</li>
+<li>LTER</li>
+<li>LTREB Projects</li>
+<li>NEON</li>
+<li>GenBank</li>
+<li>USGS</li>
+<li>GBIF</li>
+<li>NASA</li>
+<li>US Park Service</li>
+<li>FluxNet</li>
+<li>Phenocam network</li>
+<li>iNaturalist</li>
+<li>eBird</li>
+<li>Census data</li>
+<li>Data extracted from papers</li>
+<li>Scraping social media</li>
+<li>Text analysis</li>
+</ul>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/data-sources-photo-1.jpg" class="img-fluid figure-img"></p>
+<figcaption>Photo: Fitz Gerard Villafuerte, <a href="https://flic.kr/p/7FhRig" class="uri">https://flic.kr/p/7FhRig</a> (CC BY-NC-ND 2.0)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/data-sources-photo-2.jpg" class="img-fluid figure-img"></p>
+<figcaption>Photo: Mathias Appel, <a href="https://flic.kr/p/FRdYj6" class="uri">https://flic.kr/p/FRdYj6</a> (CC0)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/data-sources-photo-3.jpg" class="img-fluid figure-img"></p>
+<figcaption>Photo: Erica Fisher, <a href="https://flic.kr/p/8AccNX" class="uri">https://flic.kr/p/8AccNX</a> (CC BY-SA 2.0)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="data-use-principles" class="level3">
+<h3 class="anchored" data-anchor-id="data-use-principles">Data Use Principles</h3>
+<ul>
+<li>Keep track of your data sources (sources, permissions, notes, related metadata, what’s included)</li>
+<li>Data sources should always be cited</li>
+<li>Communicate with data creators whenever possible</li>
+</ul>
+<p><strong>Sample outreach email:</strong></p>
+<blockquote class="blockquote">
+<p>Dear Dr.&nbsp;{last_name},</p>
+<p>I am working on a synthesis of soil invertebrate diversity across North America and would like to include your dataset titled “{xxx}” (doi: {yyy}). We have downloaded the data from {zzz} repository, but wanted to let you know we are using it and to inquire whether there is any additional context we should be aware of or related datasets we should be sure to include. A short description of the synthesis project follows. Please let me know by {date} if you have any questions or concerns with our use of this data.</p>
+<p>Thank you,</p>
+</blockquote>
+<p><strong>Authorship discussion prompts:</strong></p>
+<ul>
+<li>Different models — inviting or not</li>
+<li>Authorship guidelines — interacting</li>
+<li>Is there other information that is relevant to this dataset?</li>
+<li>It may take work to get their data — how is that compensated?</li>
+</ul>
+</section>
+<section id="data-tracking-for-each-included-dataset-pre-proposal" class="level3">
+<h3 class="anchored" data-anchor-id="data-tracking-for-each-included-dataset-pre-proposal">Data Tracking for Each Included Dataset (Pre-Proposal)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Field</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>URL to the data source</td>
+</tr>
+<tr class="even">
+<td>LTER Site / other location</td>
+</tr>
+<tr class="odd">
+<td>Short data description</td>
+</tr>
+<tr class="even">
+<td>Data location (country, region)</td>
+</tr>
+<tr class="odd">
+<td>Dates</td>
+</tr>
+<tr class="even">
+<td>Filename (as stored on the Google Drive)</td>
+</tr>
+<tr class="odd">
+<td>URL to files (cloud drive, website, server; e.g., Google Drive link)</td>
+</tr>
+<tr class="even">
+<td>Date the data was last accessed/downloaded</td>
+</tr>
+<tr class="odd">
+<td>Data creator/owner’s name</td>
+</tr>
+<tr class="even">
+<td>Data creator/owner’s email/contact</td>
+</tr>
+<tr class="odd">
+<td>Working group participant who obtained the data (name)</td>
+</tr>
+<tr class="even">
+<td>Used in your analysis? (Y/N)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="building-a-team" class="level3">
+<h3 class="anchored" data-anchor-id="building-a-team">Building a Team</h3>
+</section>
+<section id="leadership-team-main-group" class="level3">
+<h3 class="anchored" data-anchor-id="leadership-team-main-group">Leadership Team &amp; Main Group</h3>
+<p>The leadership team will affect who you can recruit to the larger group.</p>
+<p><strong>Look for:</strong></p>
+<ul>
+<li>Different (and complementary) expertise</li>
+<li>Complementary professional networks</li>
+<li>Facilitation skills</li>
+<li>Emotional intelligence</li>
+</ul>
+<p><strong>Needs people who are/have:</strong></p>
+<ul>
+<li>Conceptual skills</li>
+<li>Data skills</li>
+<li>Time and incentive to do the work</li>
+<li>Connected to prior work in the area</li>
+<li>Adjacent to the main project — but with new perspectives</li>
+<li>(Synthesis efforts are big career builders — use them as a chance to open doors for others)</li>
+<li>Able to help promote the work or connect to information consumers</li>
+</ul>
+</section>
+<section id="diversity-benefits-teams" class="level3">
+<h3 class="anchored" data-anchor-id="diversity-benefits-teams">Diversity Benefits Teams</h3>
+<p>Diversity (disciplinary, cultural, gender, cognitive) has many benefits to teams:</p>
+<ul>
+<li>More creative and innovative approaches</li>
+<li>Avoiding “groupthink”</li>
+<li>Better cognitive elaboration; more complex thinking</li>
+<li>Checks assumptions</li>
+<li>Diversity broadens group scanning ability and consideration of alternative solutions</li>
+<li>Diverse groups achieve better task completion and more efficient use of resources</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/diversity-benefits-figure.png" class="img-fluid figure-img"></p>
+<figcaption>Creating and maintaining high-performing collaborative research teams (Figure 2, Cheruvelil et al.&nbsp;2014).</figcaption>
+</figure>
+</div>
+<p><strong>References:</strong></p>
+<blockquote class="blockquote">
+<p>Horowitz, S.K. and Horwitz, I.B. (2007). The effects of team diversity on team outcomes: A meta-analytic review of team demography. <em>Journal of Management</em>, 33, 987–1015. <a href="https://doi.org/10.1177/0149206307308587" class="uri">https://doi.org/10.1177/0149206307308587</a></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Aggarwal, I. &amp; Woolley, A.W. (2018). Team creativity, cognition, and cognitive style diversity. <em>Management Science</em>, 65(4), 1586–1599. <a href="https://doi.org/10.1287/mnsc.2017.3001" class="uri">https://doi.org/10.1287/mnsc.2017.3001</a></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Figure 2 from Cheruvelil, K.S. et al.&nbsp;(2014). Creating and maintaining high-performing collaborative research teams: the importance of diversity and interpersonal skills. <a href="https://doi.org/10.1890/130001" class="uri">https://doi.org/10.1890/130001</a></p>
+</blockquote>
+</section>
+<section id="but-those-benefits-are-not-guaranteed" class="level3">
+<h3 class="anchored" data-anchor-id="but-those-benefits-are-not-guaranteed">…But Those Benefits Are Not Guaranteed</h3>
+<p>Research in the science of team science demonstrates that they are achieved through:</p>
+<ul>
+<li><strong>Cognitive elaboration</strong> — spelling out your assumptions and mental models</li>
+<li><strong>Effective coordination</strong> — participants are able to contribute in the manner and at the times that they are best</li>
+<li><strong>Learning goal orientation</strong> — openness to revising assumptions and world views</li>
+</ul>
+<p><strong>To build the safety and trust on which these depend:</strong></p>
+<ul>
+<li>Spend time early to talk through various perspectives on the question that may be present in the group</li>
+<li>Articulate your coordination practices (Where will you keep data? How will you communicate? How often will you meet? What’s your authorship model? Do these work for slow and fast processors? Introverts and extroverts?)</li>
+<li>Pay attention to speaking time</li>
+<li>Be willing to look foolish — ask the “dumb” questions</li>
+<li>Spend social time together — meals, activities</li>
+</ul>
+<p><strong>References:</strong></p>
+<blockquote class="blockquote">
+<p>Pieterse, A.N. et al.&nbsp;(2013). Cultural diversity and team performance: The role of team member goal orientation. <em>Academy of Management Journal</em>. <a href="https://doi.org/10.5465/amj.2010.0992" class="uri">https://doi.org/10.5465/amj.2010.0992</a></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>van Knippenberg, D. and Hoever, I.J. (2017). Team diversity and team creativity: A categorization-elaboration perspective. <a href="https://doi.org/10.1093/oso/9780190222093.003.0003" class="uri">https://doi.org/10.1093/oso/9780190222093.003.0003</a></p>
+</blockquote>
+</section>
+<section id="good-teams-are-both-chosen-and-made" class="level3">
+<h3 class="anchored" data-anchor-id="good-teams-are-both-chosen-and-made">Good Teams Are Both Chosen and Made</h3>
+<p>Diversity uncovers novel approaches, perspectives, and insights — AND can slow the pace, reveal assumptions, cause misunderstandings.</p>
+<ul>
+<li>Create a shared vision for your group (What behaviors and outcomes do you want? What do you want to avoid? Who are you as a group, culturally?)</li>
+<li>Value and accommodate various styles of contribution (fast and slow thinkers; visual, auditory, and kinesthetic learners; allow for synchronous and asynchronous contribution)</li>
+<li>Normalize discussion of systemic/structural oppression and racism and highlight ways of working to counter our own implicit biases</li>
+<li>Good check-in exercise: <strong>Start, Stop, Continue</strong> — what activities should we start doing, stop doing, or continue doing?</li>
+</ul>
+<blockquote class="blockquote">
+<p>“No jerks” is a good start, but not enough.</p>
+</blockquote>
+</section>
+<section id="setting-expectations" class="level3">
+<h3 class="anchored" data-anchor-id="setting-expectations">Setting Expectations</h3>
+<ul>
+<li><strong>Code of conduct</strong>: expected behavior; multiple reporting pathways</li>
+<li><strong>Group norms</strong>: co-development matters; authorship policy</li>
+<li><strong>Work plan</strong>: establish early and communicate changes; set clear expectations for attention, contribution, and communication</li>
+<li><strong>Get to know each other</strong>: icebreakers; invest in “social” time</li>
+</ul>
+</section>
+<section id="discussing-group-norms" class="level3">
+<h3 class="anchored" data-anchor-id="discussing-group-norms">Discussing Group Norms</h3>
+</section>
+<section id="establishing-group-norms-can-be-simple" class="level3">
+<h3 class="anchored" data-anchor-id="establishing-group-norms-can-be-simple">Establishing Group Norms Can Be Simple</h3>
+<ul>
+<li>Group values</li>
+<li>Inclusion</li>
+<li>Creative thinking</li>
+<li>Teamwork</li>
+<li>Accountability</li>
+<li>Fun</li>
+<li>What else?</li>
+</ul>
+<p><em>From an NSF-funded Biodiversity on a Changing Planet working group (PI: Peter Adler)</em></p>
+</section>
+<section id="or-more-involved" class="level3">
+<h3 class="anchored" data-anchor-id="or-more-involved">…Or More Involved</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/response-diversity-network-workshop.png" class="img-fluid figure-img"></p>
+<figcaption>Response Diversity Network workshop community rules for inclusive and productive discussions.</figcaption>
+</figure>
+</div>
+<p><em>From the Response Diversity Network workshop hosted by OIST (contributed by Sam Ross, Owen Petchey)</em></p>
+</section>
+<section id="group-behaviors" class="level3">
+<h3 class="anchored" data-anchor-id="group-behaviors">Group Behaviors</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Group-oriented</th>
+<th>Dimension</th>
+<th>Self-oriented</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Including</strong>: invites others to participate and even at times mediates conflicts; promotes group cohesion and collaboration</td>
+<td>Harmony</td>
+<td><strong>Dominating</strong>: takes much of the time to express and focus on their own views; tries to take control by use of power and time; excludes others</td>
+</tr>
+<tr class="even">
+<td><strong>Clarifying</strong>: makes issues clear for the group by asking relevant questions, listening, and summarizing discussions</td>
+<td>Questions</td>
+<td><strong>Discounting</strong>: disregards or minimizes group or individual ideas; interrogates others; severe behavior might involve microaggressions</td>
+</tr>
+<tr class="odd">
+<td><strong>Reminding/inspiring</strong>: reminds group of original targets, enlivens group through challenging steps, and even inspires new directions as appropriate</td>
+<td>Focus</td>
+<td><strong>Digressing</strong>: rambles, takes a lot of space, and takes the group away from primary purpose without considering other people’s expectations</td>
+</tr>
+<tr class="even">
+<td><strong>Cooperating</strong>: is interested in the views and perspectives of the other group members and is willing to adapt for the good of the group</td>
+<td>Collaboration</td>
+<td><strong>Blocking/hindering</strong>: impedes group progress by obstructing most ideas and suggestions (“That will never work because…”)</td>
+</tr>
+<tr class="odd">
+<td><strong>Sharing</strong>: is willing to risk being courageous and vulnerable appropriately for the group or activity success</td>
+<td>Risk</td>
+<td><strong>Withdrawing</strong>: removes self from discussions or decision making; distracted by other work, e.g., email or texts</td>
+</tr>
+<tr class="even">
+<td><strong>Process-checking</strong>: reminds and questions the group on process issues such as agenda, time frames, topics, methods, etc.</td>
+<td>Pace</td>
+<td><strong>Rushing</strong>: encourages the group to move on before tasks are complete; gets “tired” of listening to others and working as a group</td>
+</tr>
+<tr class="odd">
+<td><strong>Sharing lessons</strong>: communicates salient lessons without revealing private details</td>
+<td>Sharing afterward</td>
+<td><strong>Sharing personal info</strong>: reveals confidential and vulnerable details to others</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reflection" class="level3">
+<h3 class="anchored" data-anchor-id="reflection">Reflection</h3>
+<ul>
+<li>Which group-oriented behavior comes most naturally to you?</li>
+<li>Which self-oriented behavior do you find creeping in most often?</li>
+<li>What are some strategies to maximize group-oriented and minimize self-oriented behaviors?</li>
+</ul>
+</section>
+<section id="discussing-authorship" class="level3">
+<h3 class="anchored" data-anchor-id="discussing-authorship">Discussing Authorship</h3>
+</section>
+<section id="authorship-and-other-forms-of-credit" class="level3">
+<h3 class="anchored" data-anchor-id="authorship-and-other-forms-of-credit">Authorship (and Other Forms of Credit)</h3>
+<p>Many kinds (and sources) of data → harmonized by people, both in-person and remote → interpreted by people, both in-person and remote → using a variety of tools → yield a wide variety of products.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/authorship-credit-diagram.png" class="img-fluid figure-img"></p>
+<figcaption>Data flows from many sources, through people and tools, to a wide variety of products.</figcaption>
+</figure>
+</div>
+<p>This presents many opportunities for oversight and misunderstandings.</p>
+</section>
+<section id="one-approach" class="level3">
+<h3 class="anchored" data-anchor-id="one-approach">One Approach</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/synthesis-resources-screenshot.png" class="img-fluid figure-img"></p>
+<figcaption>LTER synthesis resources: participant contributions table for manuscript co-authorship.</figcaption>
+</figure>
+</div>
+<p>Contact information: <a href="https://lternet.edu/synthesis-resources/" class="uri">https://lternet.edu/synthesis-resources/</a></p>
+</section>
+<section id="authorship-guidelines-example" class="level3">
+<h3 class="anchored" data-anchor-id="authorship-guidelines-example">Authorship Guidelines Example</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/authorship-guidelines-screenshot.png" class="img-fluid figure-img"></p>
+<figcaption>Example authorship guidelines page (SoDaH database).</figcaption>
+</figure>
+</div>
+<p><a href="https://lter.github.io/som-website/authorship.html" class="uri">https://lter.github.io/som-website/authorship.html</a></p>
+</section>
+<section id="should-all-data-contributors-be-offered-authorship" class="level3">
+<h3 class="anchored" data-anchor-id="should-all-data-contributors-be-offered-authorship">Should All Data Contributors Be Offered Authorship?</h3>
+<p>How would you approach a data creator who demanded authorship in order to use their data?</p>
+</section>
+<section id="does-providing-data-authorship" class="level3">
+<h3 class="anchored" data-anchor-id="does-providing-data-authorship">Does Providing Data = Authorship?</h3>
+<p>There are no pat answers for this situation, but having agreed-on authorship guidelines is really valuable when it comes up. Questions to ask yourself:</p>
+<ul>
+<li>Are they really committed enough to join the working group and contribute to the papers? If so, it may be a good investment.</li>
+<li>How much work will they need to put in to make the data ready?</li>
+<li>How critical is this particular data source for your analysis?</li>
+<li>You will need to make your derived dataset public — are they placing conditions on the use of their data that make that impossible?</li>
+</ul>
+</section>
+<section id="project-management" class="level3">
+<h3 class="anchored" data-anchor-id="project-management">Project Management</h3>
+<ul>
+<li>Identify what activities need greater lead time and broader involvement</li>
+<li>Tracking progress towards goals means identifying goals</li>
+<li>Identify who does what and where things go
+<ul>
+<li>Encourage ownership of subprojects</li>
+<li>Single source of truth</li>
+</ul></li>
+<li>Choose a communication/information-sharing tool
+<ul>
+<li>Lots of options, but the “best” is the one that will be used by this team</li>
+<li>Share a quickstart guide for those who aren’t familiar</li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lter\.github\.io\/eco-data-synth-primer\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
