@@ -1,6 +1,8 @@
 ## What Do We Mean by Synthesis?
 
-Bringing together data from many sources to generate new scientific insights or test new hypotheses.
+::: pull-quote
+**Synthesis**: Bringing together data from many sources to generate new scientific insights or test new hypotheses.
+:::
 
 Today, we'll focus on the particular flavor of synthesis that involves a team of people.
 
@@ -21,7 +23,7 @@ From: Ten simple rules for ecological synthesis research (2026) Methods in Ecolo
 - Inclusion — a way to involve less research-intensive institutions and individuals who can't/don't want to do fieldwork
 
 | Academic | Application |
-|:--:|:--:|
+|:-----------------------------------:|:---------------------------------:|
 | ![Visual from the NCEAS synthesis survey on what people got out of working groups.](images/nceas-synthesis-survey.png) | ![Motivations for synthesis (Reid 2009/Hackett 2020).](images/Reid_pnas.0900313106fig01.jpeg) |
 | What benefits were most important to NCEAS working group participants? | Motivations for synthesis [Hackett, E.J. (2020).](https://doi.org/10.3390/su12229361) Sustainability, reproduced from [Reid et al. (2009)](https://doi.org/10.1073/pnas.0900313106) PNAS |
 
@@ -31,58 +33,45 @@ From: Ten simple rules for ecological synthesis research (2026) Methods in Ecolo
 
 ### Sources of Support for Synthesis
 
-**Synthesis Centers**
+::: panel-tabset
+## Synthesis Centers
 
 - [NCEAS](https://www.nceas.ucsb.edu/calls-for-proposals)
+  - [Morpho Program](https://www.nceas.ucsb.edu/morpho)
+  - [Luna Program](https://www.nceas.ucsb.edu/luna)
 - [ESIIL](https://esiil.org/)
+- [LTER](https://lternet.edu/stories/rfp-2026/)
 - [USGS Powell Center](https://www.usgs.gov/centers/john-wesley-powell-center-for-analysis-and-synthesis/proposal-process)
 - [S-div](https://www.idiv.de/en/sdiv.html)
-- [Morpho Program](https://www.nceas.ucsb.edu/morpho)
 - [Canadian Institute of Ecology and Evolution (CIEE)](https://www.ciee-icee.ca/)
 
-**Societies**
+## Societies
 
 - [New Phytologist Workshops](https://www.newphytologist.org/workshops)
 - [Gordon Research Conferences](https://www.grc.org/about/proposing-a-new-gordon-conference/)
 - Chapman Conferences
 - [British Ecological Society](https://www.britishecologicalsociety.org/funding/synthesis-grants/) (one-third of participants from the developing world)
 
-**NSF Programs**
+## NSF Programs
 
 - [ULTRA-Data DCL](https://www.nsf.gov/pubs/2024/nsf24081/nsf24081.jsp)
 - Core programs, e.g., [DEB](https://new.nsf.gov/funding/opportunities/division-environmental-biology-deb), IOS, MCB, Emerging Frontiers, OCE, OPP, RISE
   - Search solicitations for "synthesis activities," "synthesis projects"
 - NSF workshops
+:::
 
 ### Different Funders Emphasize Different Resources
 
-| Funder | PI salary & direct project support | Direct analytical support | Postdoc funding | Facilitation & communication support |
-|----|----|----|----|----|
-| NSF | ✓ |  |  |  |
-| ESIIL |  | ✓ |  |  |
-| LTER |  | ✓ |  |  |
-| NCEAS/Morpho |  |  |  | ✓ |
-| Powell Center | ? | ? | ? | ? |
+| Funder | Travel | PI salary & direct project support | Direct analytical support | Postdoc funding | Facilitation & communication support |
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| NSF | ✓ | ✓ |  | ✓ |  |
+| ESIIL | ✓ |  | ✓ | ✓ |  |
+| LTER | ✓ |  | ✓ |  |  |
+| NCEAS/Morpho/Luna | ✓ |  |  |  | ✓ |
+| Powell Center | ✓ |  |  | ✓ |  |
 
 Everyone offers travel support, but different programs offer different kinds of additional support — remember to budget for the kinds of support that are allowed.
 
-### How to Get Involved in Synthesis
-
-**Build your community**
-
-- Let advisors and colleagues know
-- Share your enthusiasm
-- Ask questions at meetings
-- Initiate conversations — in person, by email, or on social media
-
-**Build your skills**
-
-- Environmental Science Innovation and Inclusion Lab (ESIIL): [Innovation Summit](https://esiil.org/innovation-summit), hackathons
-- LTER: [Synthesis Skills for Early Career Researchers (SSECR)](https://lter.github.io/ssecr/)
-- [Data Carpentries](https://datacarpentry.org/)
-- NCEAS: [Environmental Data Science Summit](https://www.nceas.ucsb.edu/environmental-data-science-summit)
-
-### Start Your Own!
 
 ### What Makes a "Good" Question for Synthesis?
 
@@ -272,7 +261,7 @@ Diversity uncovers novel approaches, perspectives, and insights — AND can slow
 ### Group Behaviors
 
 | Group-oriented | Dimension | Self-oriented |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **Including**: invites others to participate and even at times mediates conflicts; promotes group cohesion and collaboration | Harmony | **Dominating**: takes much of the time to express and focus on their own views; tries to take control by use of power and time; excludes others |
 | **Clarifying**: makes issues clear for the group by asking relevant questions, listening, and summarizing discussions | Questions | **Discounting**: disregards or minimizes group or individual ideas; interrogates others; severe behavior might involve microaggressions |
 | **Reminding/inspiring**: reminds group of original targets, enlivens group through challenging steps, and even inspires new directions as appropriate | Focus | **Digressing**: rambles, takes a lot of space, and takes the group away from primary purpose without considering other people's expectations |
