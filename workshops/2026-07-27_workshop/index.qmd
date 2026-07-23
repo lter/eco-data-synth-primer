@@ -1,0 +1,67 @@
+---
+#title: "ESA 2026: Ecological synthesis: So you have an idea... What next?"
+#description: "Workshop offered at the upcoming ESA 2026 annual meeting in Salt Lake City, UT"
+#author: "The eco-data-synth team"
+#date: "2026-07-27"
+#date-modified: "2026-07-23"
+draft: False
+---
+
+## Upcoming at ESA 2026! Ecological synthesis: So you have an idea... What next?
+
+_Date:_ 2026-07-09  
+_Time:_ 1:00-3:30pm MDT  
+_Room:_ 355F  
+([_WK 03 program link_](https://events.rdmobile.com/Sessions/Details/3562356))  
+
+In recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time,the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. In 2026, we are offering a workshop, focusing on refining a synthesis-relevant question, building and stewarding a team of collaborators, and identifying the applicable data.
+
+The full short course which we offered in 2025, is a survey of methods for making ecological synthesis research a "team sport", and all the materials remain available on this website.
+
+**Objectives for learners are to**
+         
+1. gain team science and project management skills that are needed for synthesis and that are immediately useful in a research team setting,
+2. locate and become familiar with resources to gain the data science skills needed for reproducible synthesis
+3. focus on developing their own synthesis projects, whatever stage they are in, through interaction with instructors and peers.
+
+
+Instructors will cover an overview of the synthesis process, assembling the team, identifying and refining the question(s), collecting primary data sources, and project management. The course uses real-world examples, demonstrations, and interactive lessons in small groups. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips.
+
+## Agenda for 2026-07-27
+
+This agenda is subject to change!
+
+| Timing (PT) |             Content             |
+|:-----------:|:-------------------------------:|
+|   1:30 pm   |     Welcome & Introductions     |
+|   1:40 pm   | Synthesis Process and Resources |
+|   1:50 pm   |  What makes a "good" question   |
+|   2:10 pm   | Building and stewarding a team  |
+|   2:30 pm   |          Locating data          |
+|   2:50 pm   |             Wrap-up             |
+
+## Shared notes document
+
+A [**communal notes document**](https://docs.google.com/document/d/1RC7tXnGvxRCd2xqjYowOmDKkiCU_VN51ldOOGyL3dTc/edit?usp=sharing) will be used during some of the discussions we'll have, and is a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
+
+## Introductions & Icebreaker
+
+Before we begin, we'd love to get a sense for who you all are and why you're interested in synthesis work! To that end, we'll take a few minutes and go around the room for introductions. Please include:
+
+- Your name and pronouns
+- A 1-sentence summary of your work
+- Briefly, <u>why are you interested in synthesis</u>?
+
+## Instructors
+
+* Laura Dee
+* Marty Downs
+* Nick Lyon
+* Greg Maurer
+* Eric Sokol
+
+## Code of Conduct
+
+[ESA Code of Conduct](https://esa.org/saltlake2026/about/meetings-code-of-conduct/)
+
+Briefly: Treat all participants with kindness, respect, and consideration, valuing a diversity of views and opinions. Report unacceptable behavior at 202-833-8773 or email <codeofconduct@esa.org>.

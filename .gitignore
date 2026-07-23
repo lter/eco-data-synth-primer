@@ -54,3 +54,5 @@ docs/
 ~$*.pptx
 ~$*.xlsx
 ~$*.docx
+
+**/*.quarto_ipynb

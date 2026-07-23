@@ -1,0 +1,8 @@
+---
+title: "Past and upcoming workshops"
+listing: 
+  contents: ./
+  sort: "date desc"
+  type: default
+  categories: true
+---

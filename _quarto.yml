@@ -18,6 +18,8 @@ website:
         href: module2.qmd
       - text: "Module 3"
         href: module3.qmd
+      - text: "Workshops"
+        href: workshops/posts.qmd
     right:
       - text: "People"
         menu: 
