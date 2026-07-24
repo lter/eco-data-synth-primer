@@ -1,0 +1,44 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: docs
+  render:
+    - "*.qmd"
+
+website:
+  title: "Ecological Data Synthesis: A Primer on Essential Methods"
+  favicon: images/edi-logo.png
+  repo-url: https://github.com/lter/eco-data-synth-primer
+  repo-actions: [issue]
+  navbar:
+    left:
+      - text: "Workshops"
+        href: workshops/posts.qmd
+    right:
+      - text: "People"
+        menu: 
+          - text: "Instructors"
+            href: people.qmd
+          - text: "Contributing"
+            href: contributing.qmd
+      - icon: github
+        href: https://github.com/lter/eco-data-synth-primer
+        aria-label: GitHub
+
+execute:
+  freeze: auto
+
+bibliography: references.bib
+
+format:
+  html:
+    code-overflow: wrap
+    code-line-numbers: false
+    code-copy: hover
+    theme: 
+      light: theme_light.scss
+      dark: theme_dark.scss
+    mainfont: Roboto
+    toc: true
+    link-external-newwindow: true
+    link-external-icon: false
