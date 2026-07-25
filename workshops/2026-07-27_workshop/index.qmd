@@ -27,41 +27,7 @@ The full short course, which we offered in 2025, is a survey of methods for maki
 
 Instructors will cover an overview of the synthesis process, assembling the team, identifying and refining the question(s), collecting primary data sources, and project management. The course uses real-world examples, demonstrations, and interactive lessons in small groups. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips.
 
-## Agenda for 2026-07-27
 
-This agenda is subject to change!
+## Proceed to 2026 Workshop
 
-| Timing (PT) |             Content             |
-|:-----------:|:-------------------------------:|
-|   1:30 pm   |     Welcome & Introductions     |
-|   1:40 pm   | Synthesis Process and Resources |
-|   1:50 pm   |  What makes a "good" question   |
-|   2:10 pm   | Building and stewarding a team  |
-|   2:30 pm   |          Locating data          |
-|   2:50 pm   |             Wrap-up             |
-
-## Shared notes document
-
-A [**communal notes document**](https://docs.google.com/document/d/1RC7tXnGvxRCd2xqjYowOmDKkiCU_VN51ldOOGyL3dTc/edit?usp=sharing) will be used during some of the discussions we'll have, and is a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
-
-## Introductions & Icebreaker
-
-Before we begin, we'd love to get a sense for who you all are and why you're interested in synthesis work! To that end, we'll take a few minutes and go around the room for introductions. Please include:
-
-- Your name and pronouns
-- A 1-sentence summary of your work
-- Briefly, <u>why are you interested in synthesis</u>?
-
-## Instructors
-
-* Laura Dee
-* Marty Downs
-* Nick Lyon
-* Greg Maurer
-* Eric Sokol
-
-## Code of Conduct
-
-[ESA Code of Conduct](https://esa.org/saltlake2026/about/meetings-code-of-conduct/)
-
-Briefly: Treat all participants with kindness, respect, and consideration, valuing a diversity of views and opinions. Report unacceptable behavior at 202-833-8773 or email <codeofconduct@esa.org>.
+[**Ecological synthesis: So you have an idea... What next?**](/2026content.qmd)

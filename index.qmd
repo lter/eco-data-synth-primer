@@ -4,16 +4,21 @@ title: "A Course for Collaborative Ecologists"
 
 <p align="center">
 
-<img src="images/eco-data-synth-photo-collage.png" alt="Photo collage of people meeting at a long table, peple conducting fieldwork, some specimen jars, a snippet of code, some fish, and a small mammal" width="100%"/>
+<img src="images/eco-data-synth-photo-collage.png" alt="Photo collage of people meeting at a long table, people conducting fieldwork, some specimen jars, a snippet of code, some fish, and a small mammal" width="100%"/>
 
 </p>
 
-
-{{< include workshops/2026-07-27_workshop/index.qmd >}}
+{{< include /workshops/2026-07-27_workshop/index.qmd >}}
 
 ## Note on Course Materials
 
-This short course has been offered multiple times, with some variations, at [Ecological Society of America annual meetings](https://esa.orghttps://esa.org). See the [workshops listing](workshops/posts.qmd) for details. We've chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward. Also, much of the content is covered more completely in our year-long synthesis course: [Synthesis Skills for Early Career Researchers (SSECR)](https://lter.github.io/ssecr/).
+This short course has been offered multiple times, with some variations, at [Ecological Society of America annual meetings](https://esa.org). See the [workshops listing](workshops/posts.qmd) for details. We've chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward. Also, much of the content is covered more completely in our year-long synthesis course: [Synthesis Skills for Early Career Researchers (SSECR)](https://lter.github.io/ssecr/).
+
+
+-  **2026 ESA 90-min Workshop: [So you have an idea. Now what?](/workshops/2026-07-27_workshop)**
+-  **2025 ESA 6-hour Short Course: [Ecological data synthesis: a primer on essential methods for team science](/workshops/2025-08-10_workshop)**
+-  **2024 ESA 3-hour Short Course: [Ecological data synthesis: a primer on essential methods](/workshops/2024-08-04_workshop)**
+
 
 If you are a {{< fa brands github >}} GitHub aficionado, we have deployed this website via GitHub Pages so you could also "star" the website's repository. Simply click the {{< fa brands github >}} GitHub octocat logo on the right side of the navbar (at the top of the screen) to be redirected to the GitHub repository underpinning this website.
 

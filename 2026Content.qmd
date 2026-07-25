@@ -1,3 +1,79 @@
+---
+title: "So You Have an Idea. Now what?"
+---
+
+
+## Abstract
+
+The plethora of open data that is now available creates opportunities for important and innovative science through data synthesis. Synthesis science combines data from multiple studies to draw conclusions about broader ecological theory and mechanisms or to extend the range of inference. It often results in higher-impact publications and generates science that is especially valuable in practice and policy. When done well, it’s also really fun! In this workshop, we’ll explore the interactive process of developing a synthesis project idea and building a team that can see it through. In the first portion of the workshop, we’ll cover common team synthesis models and funding sources, as well as the skills that are essential for gathering a team, keeping them on-track, and facilitating generative discussion. In the second half of the workshop, we’ll break into small groups, facilitated by experienced synthesizers, to explore your synthesis ideas and help you develop plans to move them forward. 
+
+Objectives for learners are to
+
+```         
+a. gain team science and project management skills that are needed for synthesis and that are immediately useful in a research team setting,
+b. locate and become familiar with resources to gain the data science skills needed for reproducible synthesis
+c. focus on developing their own synthesis projects, whatever stage they are in, through interaction with instructors and peers.
+```
+
+## Code of Conduct
+
+[ESA Code of Conduct](https://esa.org/baltimore2025/code-of-conduct/?_gl=1*152l98t*_ga*MTM1ODE1ODg1Mi4xNzM0NDYyNDc4*_ga_GXP5K1BM5L*czE3NTQ1MDQxMjMkbzkkZzAkdDE3NTQ1MDQxMjMkajYwJGwwJGgw)
+
+Briefly: Treat all participants with kindness, respect, and consideration, valuing a diversity of views and opinions. Report unacceptable behavior at (844)-641-4133 or email codeofconduct\@esa.org
+
+## Agenda for 2026-07-27
+
+This agenda is subject to change!
+
+| Timing (PT) |             Content             |
+|:-----------:|:-------------------------------:|
+|   1:30 pm   |     Welcome & Introductions     |
+|   1:40 pm   | Synthesis Process and Resources |
+|   1:50 pm   |  What makes a "good" question   |
+|   2:10 pm   | Building and stewarding a team  |
+|   2:20 pm   |  Locating and managing data    |
+|   2:30 pm   |          Discussion            |
+
+## Shared notes document
+
+A [**communal notes document**](https://docs.google.com/document/d/1RC7tXnGvxRCd2xqjYowOmDKkiCU_VN51ldOOGyL3dTc/edit?usp=sharing) will be used during some of the discussions we'll have, and is a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
+
+## Introductions
+
+Before we begin, we'd love to get a sense for who you all are and why you're interested in synthesis work! Please briefly introduce yourself at your tables:
+
+- Your name and pronouns
+- A 1-sentence summary of your work
+- Briefly, <u>why are you interested in synthesis</u>?
+
+Decide on a name for your table-group and add a tab to the notes document with that name.
+
+
+## Note on Course Materials
+
+This workshop is an adaptation of a full short course that was offered in 2024 and 2025. Materials from those courses are available on the [EDI GitHub EcoDataSynth](https://lter.github.io/eco-data-synth-primer/) repository, which also links to the materials for this workshop. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward. Also, much of the content is covered more completely in our semester-long synthesis course: [Synthesis Skills for Early Career Researchers (SSECR)](https://lter.github.io/ssecr/).
+
+If you are a {{< fa brands github >}} GitHub aficionado, we have deployed this website via GitHub Pages so you could also "star" the website's repository. Simply click the {{< fa brands github >}} GitHub octocat logo on the right side of the navbar (at the top of the screen) to be redirected to the GitHub repository underpinning this website.
+
+Finally, we have developed all of this website using [Quarto](https://quarto.org/).
+
+## Credits
+
+The course and its content were developed by a large team. See the [**People page**](people.qmd) to learn more.
+
+**Supported by:**
+
+::: {#credit-orgs layout-ncol="3"}
+[![](images/edi-logo.png){width="1.2in"}](https://edirepository.org)
+
+[![](images/LTER-network-logo.png){width="1.2in"}](https://lternet.edu)
+
+[![](images/NEON-NSF-logo.png)](https://neonscience.org)
+:::
+
+**Collage photo credits:** Jacob Bøtter via Flickr, CC BY-SA 2.0 \| Jeremy Yoder via Flickr, CC BY-SA 2.0 \| Marco Pfeiffer, CC BY-SA 4.0 \| Gabriel De La Rosa, CC BY-SA 4.0 \| Weecology lab CC BY 4.0 \| NEON (National Ecological Observatory Network)
+
+
 ## What Do We Mean by Synthesis?
 
 ::: pull-quote
@@ -118,6 +194,17 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 
 : {tbl-colwidths="[25,55]" .striped .hover}
 
+::: {.callout-note collapse="false"}
+
+#### Discussion
+
+Open our [**communal notes document**](https://docs.google.com/document/d/1RC7tXnGvxRCd2xqjYowOmDKkiCU_VN51ldOOGyL3dTc/edit?usp=sharing), head to your tab and take a few minutes to jot down your own notes, then discuss.
+
+- What ideas do you have for synthetic studies?
+- What factors make them synthesis-ready?
+- How could they be adapted if needed (narrower or broader scope, alternative products)?
+
+:::
 
 ::: {.callout-tip collapse="true"}
 
@@ -280,7 +367,7 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
     -   You won't be able to anticipate all of the issues related to power dynamics that can arise, but keep them front of mind as you assemble a team.
 -   Remember that participation in synthesis represents a significant career opportunity.
     -   Be mindful that such career-building opportunities have not been fairly distributed.
-    -   Be intentional about seeking out people who may not be part of your typical circles (including gender, ethnicity, career stage, family status, (dis)abilities, etc.).
+    -   Be intentional about seeking out people who may not be part of your typical circles
     
 :::
 
@@ -294,6 +381,29 @@ In our experience at NCEAS and the LTER Network Office, we've found teams of up 
 - Pay attention to **speaking time**
 - Ask the "dumb" questions, they often surface unexamined assumptions
 - Spend social time together — meals, activities
+
+::: {.callout-note title="Keeping Track of AI" collapse="false"}
+
+Opinions on the reliability, practicality, and ethics of AI use differ substantially. Some see it as a value-neutral tool, like a programming language or a design application. Others have strong moral reservations about its use. Most groups will need to have at least two kinds of conversations about it. Early in your team-forming process, the group should make some broad decisions about how extensively you want to use AI and for what tasks.
+
+A few potential uses to discuss:
+
+- data discovery
+- literature review
+- literature synthesis
+- original coding
+- commenting and cleaning code
+- recommending statistical analyses
+- drafting figures
+- original writing
+- editing
+- proofing
+
+No matter how extensively the group decides to use AI, there is also a very practical concern about reproducibility. Using AI can dramatically speed data discovery and construction of analytical pipelines, but also presents a strong temptation to just "get it working." Just as you will soon forget why you chose to filter your data in a particular way or chose one analytical technique over another, you will also forget which model and prompts you used, potentially introducing biases that cannot be unwound at a later time.
+
+Nick's AI tracking template here?
+
+:::
 
 **References:**
 
@@ -394,6 +504,7 @@ Once you've decided on your organization method, you'll need to decide _as a tea
 <u>A good rule of thumb is that you should plan for "future you."</u> What collaboration methods will you in 6+ months thank 'past you' for implementing? It may also be helpful to consider the negative side of that question: what shortcuts could you take now that 'future you' will be unhappy with?
 
 A huge part of deciding how you will collaborate is deciding how you will _communicate_ as a team. When you work asynchronously, how will you tell others that you are working on a particular code or document file? This _does not_ have to be high tech--an email or Slack message can suffice--but if you don't communicate about the minutiae, you risk duplicating effort or putting in conflicting work.
+
 
 ### Where Will Code Live?
 
