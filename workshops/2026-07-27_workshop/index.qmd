@@ -26,4 +26,4 @@ The full short course, which we offered in 2025, is a survey of methods for maki
 
 Instructors will cover an overview of the synthesis process, assembling the team, identifying and refining the question(s), collecting primary data sources, and project management. The course uses real-world examples, demonstrations, and interactive lessons in small groups. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips.
 
-## [Proceed to 2026 Workshop](/2026content.qmd)
+## [Proceed to 2026 Workshop](../2026Content.qmd)
