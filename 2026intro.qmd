@@ -4,7 +4,7 @@ title: "So You Have an Idea. Now what?"
 
 <p align="center">
 
-<img src="images/eco-data-synth-photo-collage.png" alt="Photo collage of people meeting at a long table, peple conducting fieldwork, some specimen jars, a snippet of code, some fish, and a small mammal" width="100%"/>
+<img src="images/eco-data-synth-photo-collage.png" alt="Photo collage of people meeting at a long table, people conducting fieldwork, some specimen jars, a snippet of code, some fish, and a small mammal" width="100%"/>
 
 </p>
 
