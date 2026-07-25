@@ -1,3 +1,19 @@
+
+## 2026 ESA Version ('v3.0')
+
+added workshop folders and workshops page to separate annual offerings
+
+Workshop (90 minute) version, touching briefly on:
+
+- synthesis process
+- good questions for synthesis
+- funding the effort
+- finding data
+- building and stewarding a team
+- organizing data
+- discussion of participants' ideas
+
+
 ## 2025 ESA Version (`v2.0`)
 
 Changes will be listed below as they are made:
