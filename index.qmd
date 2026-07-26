@@ -4,7 +4,7 @@ title: "A Course for Collaborative Ecologists"
 
 <p align="center">
 
-<img src="images/eco-data-synth-photo-collage.png" alt="Photo collage of people meeting at a long table, people conducting fieldwork, some specimen jars, a snippet of code, some fish, and a small mammal" width="100%"/>
+<img src="content/images/eco-data-synth-photo-collage.png" alt="Photo collage of people meeting at a long table, people conducting fieldwork, some specimen jars, a snippet of code, some fish, and a small mammal" width="100%"/>
 
 </p>
 
@@ -31,7 +31,9 @@ Objectives for learners are:
 
 Instructors will cover an overview of the synthesis process, assembling the team, identifying and refining the question(s), collecting primary data sources, and project management. The course uses real-world examples, demonstrations, and interactive lessons in small groups. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips.
 
-### [Proceed to 2026 Workshop Materials](/2026Content.qmd)
+### Workshop Materials
+
+**Click [here](/content/2026-content.qmd)**
 
 ## ESA 2025
 
@@ -94,6 +96,12 @@ Before we begin, we'd love to get a sense for who you all are and why you're int
 Briefly: Treat all participants with kindness, respect, and consideration, valuing a diversity of views and opinions.
 Report unacceptable behavior at (844)-641-4133 or email codeofconduct@esa.org
 
+### Workshop Materials
+
+- Module 1 ("Starting with Team Science") - **click [here](/content/2025-module1.qmd)**
+- Module 2 ("Operational Synthesis") - **click [here](/content/2025-module2.qmd)**
+- Module 3 ("Tying It All Together") - **click [here](/content/2025-module3.qmd)**
+
 ## ESA 2024
 
 ### Ecological data synthesis: a primer on essential methods
@@ -153,21 +161,19 @@ Before we begin, we'd love to get a sense for who you all are and why you're int
 Briefly: Treat all participants with kindness, respect, and consideration, valuing a diversity of views and opinions.
 Report unacceptable behavior at (844)-641-4133 or email codeofconduct@esa.org
 
+### Workshop Materials
+
+- Module 1 ("Starting with Team Science") - **click [here](/content/2024-module1.qmd)**
+- Module 2 ("Operational Synthesis") - **click [here](/content/2024-module2.qmd)**
+- Module 3 ("Tying It All Together") - **click [here](/content/2024-module3.qmd)**
+
 :::
 
 ## Note on Course Materials
 
-This short course has been offered multiple times, with some variations, at [Ecological Society of America annual meetings](https://esa.org). See the [workshops listing](workshops.qmd) for details. We've chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward. Also, much of the content is covered more completely in our year-long synthesis course: [Synthesis Skills for Early Career Researchers (SSECR)](https://lter.github.io/ssecr/).
-
-
--  **2026 ESA 90-min Workshop: [So you have an idea. Now what?](/past-workshops/2026-07-27_workshop.qmd)**
--  **2025 ESA 6-hour Short Course: [Ecological data synthesis: a primer on essential methods for team science](/past-workshops/2025-08-10_workshop.qmd)**
--  **2024 ESA 3-hour Short Course: [Ecological data synthesis: a primer on essential methods](/past-workshops/2024-08-04_workshop.qmd)**
-
+We've chosen to assemble these materials as a living website so that we can revisit and improve the materials over time. So, **we recommend that you save the link to this site** so that you can have easy access to these materials now and as they are refined going forward. Also, much of the content is covered more completely in our year-long synthesis course: [Synthesis Skills for Early Career Researchers (SSECR)](https://lter.github.io/ssecr/).
 
 If you are a {{< fa brands github >}} GitHub aficionado, we have deployed this website via GitHub Pages so you could also "star" the website's repository. Simply click the {{< fa brands github >}} GitHub octocat logo on the right side of the navbar (at the top of the screen) to be redirected to the GitHub repository underpinning this website.
-
-Finally, we have developed all of this website using [Quarto](https://quarto.org/).
 
 ## Credits
 
@@ -177,11 +183,11 @@ The course and its content were developed by a large team. See the [**People pag
 
 ::: {#credit-orgs layout-ncol=3}
 
-[![](images/edi-logo.png){width=1.2in}](https://edirepository.org){fig-alt="Environmental Data Initiative (EDI) logo"}
+[![](content/images/edi-logo.png){width=1.2in}](https://edirepository.org){fig-alt="Environmental Data Initiative (EDI) logo"}
 
-[![](images/LTER-network-logo.png){width=1.2in}](https://lternet.edu){fig-alt="Long Term Ecological Research (LTER) Network Office logo"}
+[![](content/images/LTER-network-logo.png){width=1.2in}](https://lternet.edu){fig-alt="Long Term Ecological Research (LTER) Network Office logo"}
 
-[![](images/NEON-NSF-logo.png)](https://neonscience.org){fig-alt="National Ecological Observatory Network (NEON) logo"}
+[![](content/images/NEON-NSF-logo.png)](https://neonscience.org){fig-alt="National Ecological Observatory Network (NEON) logo"}
 
 :::
 
