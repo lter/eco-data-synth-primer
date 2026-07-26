@@ -733,7 +733,7 @@ Everyone deserves credit for the work they do, and in academic environments this
 - Discuss and define in advance some of the contributions team members will make.
   - This is particularly important for deciding authorship of journal articles.
   - The [CRediT framework](https://credit.niso.org/) is a good starting point.
-  - More detail on this is in [Module 1](module1.qmd).
+  - More detail on this is in Module 1.
 - Be willing to credit participants for a wide variety of contributions.
   - This includes writing code, cleaning data, taking meeting notes, and more.
 - Make sure all contributors have an [ORCID](https://orcid.org/register). They are easy to obtain and widely used.
@@ -771,7 +771,7 @@ Interests and commitment to synthesis projects change over time. To sustain acti
 
 Maintaining momentum for a synthesis project over the long term is highly dependent on the ability to keep scientists engaged and find support for dedicated personnel time. Usually this means getting monetary support in the form of grants.
 
-- **Explore and apply to the funding sources presented in [Module 1](module1.qmd).**
+- **Explore and apply to the funding sources presented in Module 1.**
   - Personnel support may need to come from larger grants since working group funding often provides only meeting support.
 - **Think creatively about how to get students and postdocs participating in synthesis projects.**
   - If student/postdoc research interests & plans overlap, dedicating some time to synthesis group work can lead to career-building opportunities (networking, high-impact papers).

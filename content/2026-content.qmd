@@ -56,7 +56,7 @@ Finally, we have developed all of this website using [Quarto](https://quarto.org
 
 ## Credits
 
-The course and its content were developed by a large team. See the [**People page**](people.qmd) to learn more.
+The course and its content were developed by a large team. See the "People" page (top right of site navbar) to learn more.
 
 **Supported by:**
 
