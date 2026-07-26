@@ -1,0 +1,14 @@
+---
+title: "Past and upcoming workshops"
+listing:
+  contents: 
+    - "past-workshops/*.qmd"
+  type: default
+  sort: 
+    - "date desc"
+  categories: true
+title-block-banner: true
+---
+
+
+
