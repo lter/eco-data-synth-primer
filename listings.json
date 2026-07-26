@@ -1,10 +1,10 @@
 [
   {
-    "listing": "/workshops/posts.html",
+    "listing": "/workshops.html",
     "items": [
-      "/workshops/2026-07-27_workshop/index.html",
-      "/workshops/2025-08-10_workshop/index.html",
-      "/workshops/2024-08-04_workshop/index.html"
+      "/past-workshops/2026-07-27_workshop.html",
+      "/past-workshops/2025-08-10_workshop.html",
+      "/past-workshops/2024-08-04_workshop.html"
     ]
   }
 ]
