@@ -8,7 +8,152 @@ title: "A Course for Collaborative Ecologists"
 
 </p>
 
-{{< include /past-workshops/2026-07-27_workshop.qmd >}}
+:::{.panel-tabset}
+## ESA 2026
+
+### Ecological synthesis: So you have an idea... What next?
+
+> Workshop offered at the ESA 2026 annual meeting in Salt Lake City, UT
+
+_Date:_ 2026-07-27 | _Time:_ 1:30-3:00pm MDT | _Room:_ 355F | [_WK 03 Program Link_](https://events.rdmobile.com/Sessions/Details/3562356)
+
+### Abstract
+
+In recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time,the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. In 2026, we are offering a workshop, focusing on refining a synthesis-relevant question, building and stewarding a team of collaborators, and identifying the applicable data.
+
+The full short course, which we offered in 2025, is a survey of methods for making ecological synthesis research a "team sport", and all the materials remain available on this website.
+
+Objectives for learners are:
+
+1.  gain team science and project management skills that are needed for synthesis and that are immediately useful in a research team setting,
+2.  locate and become familiar with resources to gain the data science skills needed for reproducible synthesis
+3.  focus on developing their own synthesis projects, whatever stage they are in, through interaction with instructors and peers.
+
+Instructors will cover an overview of the synthesis process, assembling the team, identifying and refining the question(s), collecting primary data sources, and project management. The course uses real-world examples, demonstrations, and interactive lessons in small groups. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips.
+
+### [Proceed to 2026 Workshop Materials](/2026Content.qmd)
+
+## ESA 2025
+
+### Ecological data synthesis: a primer on essential methods for team science
+
+> 6-hour short course offered at the ESA 2025 annual meeting in Baltimore, MD
+
+_Date:_ 2025-08-10
+
+### Abstract
+
+In recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time,the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a "team sport". 
+
+Objectives for learners are:
+
+1. gain project management and data synthesis skills that are immediately useful in a research team setting,
+2. develop an end-to-end (conception to publication) plan for collaborative synthesis research and
+3. focus on developing their own synthesis projects, whatever stage they are in, with guidance from instructors and peers.
+    
+Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, managing analytical workflows, and publication of derived datasets and other synthesis products. The course uses real-world examples, demonstrations, and interactive lessons in small groups. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips.
+
+### Agenda for 2025-08-10
+
+This agenda is subject to change!
+
+| Timing (PT)     |               Content                |
+|:---------------:|:------------------------------------:|
+| 9:00 - 9:30a    |       Welcome & Introductions        |
+| 9:30 - 10:30a   | Module 1: Starting with Team Science |
+| 10:30a - 12:00p |   Module 2: Operational Synthesis    |
+| 12:00 - 1:00p   |               **Break**              |
+| 1:00 - 2:00p    |      ... Module 2, continued ...     |
+| 2:00 - 3:00p    |   Module 3: Tying it all together    |
+| 3:00 - 4:00p    |   Mentoring session...               |
+
+### Shared Notes Document
+
+A [**communal notes document**](https://docs.google.com/document/d/1E4fxxZmAIJyUpvdX89FtVcLfU330NTbWT0sdFoJEKME/edit?usp=sharing) will be used during some of the discussions we'll have, and are a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
+
+### Introductions & Icebreaker
+
+Before we begin, we'd love to get a sense for who you all are and why you're interested in synthesis work! To that end, we'll take a few minutes and go around the room for introductions. Please include:
+
+- Your name and pronouns
+- A 1-sentence summary of your work
+- Briefly, _<u>why are you interested in synthesis</u>?_
+
+### Instructors
+
+* Marty Downs
+* Jalene Lamontagne
+* Nick Lyon
+* Greg Maurer
+* Eric Sokol
+
+### Code of Conduct
+
+[ESA Code of Conduct](https://esa.org/baltimore2025/code-of-conduct/)
+
+Briefly: Treat all participants with kindness, respect, and consideration, valuing a diversity of views and opinions.
+Report unacceptable behavior at (844)-641-4133 or email codeofconduct@esa.org
+
+## ESA 2024
+
+### Ecological data synthesis: a primer on essential methods
+
+> 3-hour short course offered at the ESA 2024 annual meeting in Long Beach, CA"
+
+_Date:_ 2024-08-04
+
+### Abstract
+
+In recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time, the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a "team sport".
+
+Objectives for learners are twofold:
+
+1.  Develop an end-to-end (conception to publication) plan for collaborative synthesis research
+2.  Gain data synthesis skills that are immediately useful in a research team setting.
+
+Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, analytical workflows, and publication of derived datasets. The course uses real-world examples, demonstrations, and interactive lessons. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips. Many workshop activities will be oriented toward helping learners develop their own ideas and plans for ecological data synthesis.
+
+### Agenda for 2024-08-04
+
+This agenda is subject to change!
+
+| Timing (PT)   |               Content                |
+|:-------------:|:------------------------------------:|
+| 1:00 - 1:15p  |       Welcome & Introductions        |
+| 1:15 - 2:15p  | Module 1: Starting with Team Science |
+| 2:15 - 3:00p  |   Module 2: Operational Synthesis    |
+| 3:00 - 3:15p  |               **Break**              |
+| 3:15 - 4:00p  |   Module 3: Tying It All Together    |
+
+### Shared Notes Document
+
+A [**communal notes document**](https://docs.google.com/document/d/1q8DJ-Z4W8wuT2M-sKaz8FLeOOK-xAPxdDcN6qZ3PGyo/edit?usp=sharing) will be used during some of the discussions we'll have, and are a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
+
+### Introductions & Icebreaker
+
+Before we begin, we'd love to get a sense for who you all are and why you're interested in synthesis work! To that end, we'll take a few minutes and go around the room for introductions. Please include:
+
+- Your name and pronouns
+- A 1-sentence summary of your work
+- Briefly, _<u>why are you interested in synthesis</u>?_
+
+### Instructors
+
+* Angel Chen
+* Marty Downs
+* Stevan Earl
+* Nick Lyon
+* Greg Maurer
+* Eric Sokol
+
+### Code of Conduct
+
+[ESA Code of Conduct](https://www.esa.org/longbeach2024/code-of-conduct-for-events/index.html)
+
+Briefly: Treat all participants with kindness, respect, and consideration, valuing a diversity of views and opinions.
+Report unacceptable behavior at (844)-641-4133 or email codeofconduct@esa.org
+
+:::
 
 ## Note on Course Materials
 
