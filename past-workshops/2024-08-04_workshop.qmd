@@ -3,8 +3,6 @@ title: "ESA 2024: Ecological data synthesis: a primer on essential methods"
 description: "3-hour short course offered at the ESA 2024 annual meeting in Long Beach, CA"
 author: "The eco-data-synth team"
 date: "2024-08-04"
-date-modified: "2026-07-23"
-draft: False
 ---
 
 ## Abstract
@@ -30,7 +28,7 @@ This agenda is subject to change!
 | 3:00 - 3:15p  |               **Break**              |
 | 3:15 - 4:00p  |   Module 3: Tying It All Together    |
 
-## Shared notes document
+## Shared Notes Document
 
 A [**communal notes document**](https://docs.google.com/document/d/1q8DJ-Z4W8wuT2M-sKaz8FLeOOK-xAPxdDcN6qZ3PGyo/edit?usp=sharing) will be used during some of the discussions we'll have, and are a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
 

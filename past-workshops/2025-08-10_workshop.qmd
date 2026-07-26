@@ -3,15 +3,13 @@ title: "ESA 2025: Ecological data synthesis: a primer on essential methods for t
 description: "6-hour short course offered at the ESA 2025 annual meeting in Baltimore, MD"
 author: "The eco-data-synth team"
 date: "2025-08-10"
-date-modified: "2026-07-23"
-draft: False
 ---
 
-### Abstract
+## Abstract
 
 In recent decades, ecology has become a more collaborative discipline motivated by the search for generality across ecosystems. At the same time,the availability, quantity, and quality of environmental data have grown rapidly, creating opportunities for re-use of these data in ecological synthesis research. Though synthesis research is complex and demanding, taking an inclusive and collaborative approach to both the scientific process and the data pays dividends throughout the lifetime of a project. This short course is a survey of methods for making ecological synthesis research a "team sport". 
 
-**Objectives for learners are to**
+Objectives for learners are:
 
 1. gain project management and data synthesis skills that are immediately useful in a research team setting,
 2. develop an end-to-end (conception to publication) plan for collaborative synthesis research and
@@ -19,7 +17,7 @@ In recent decades, ecology has become a more collaborative discipline motivated 
     
 Instructors will cover assembling the team, study design, communication, collecting primary data sources, assembly/harmonization of data, managing analytical workflows, and publication of derived datasets and other synthesis products. The course uses real-world examples, demonstrations, and interactive lessons in small groups. Ecologists with synthesis experience will be on hand with seasoned research advice and data tips.
 
-### Agenda for 2025-08-10
+## Agenda for 2025-08-10
 
 This agenda is subject to change!
 
@@ -33,7 +31,7 @@ This agenda is subject to change!
 | 2:00 - 3:00p    |   Module 3: Tying it all together    |
 | 3:00 - 4:00p    |   Mentoring session...               |
 
-### Shared notes document
+## Shared Notes Document
 
 A [**communal notes document**](https://docs.google.com/document/d/1E4fxxZmAIJyUpvdX89FtVcLfU330NTbWT0sdFoJEKME/edit?usp=sharing) will be used during some of the discussions we'll have, and are a good place to drop on-the-fly feedback about the course. Keep the link handy and we'll ask for your input to these notes at key times.
 
