@@ -7,19 +7,10 @@ project:
 
 website:
   title: "Ecological Data Synthesis: A Primer on Essential Methods"
-  favicon: images/edi-logo.png
+  favicon: content/images/edi-logo.png
   repo-url: https://github.com/lter/eco-data-synth-primer
   repo-actions: [issue]
   navbar:
-    left:
-      - text: "Module 1"
-        href: module1.qmd
-      - text: "Module 2"
-        href: module2.qmd
-      - text: "Module 3"
-        href: module3.qmd
-      - text: "Workshops"
-        href: workshops/posts.qmd
     right:
       - text: "People"
         menu: 
