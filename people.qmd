@@ -2,7 +2,40 @@
 title: "People"
 ---
 
-The course is currently being organized by Greg Maurer (gmaurer@nmsu.edu), with generous assistance from Marty Downs and Nick Lyon. See the Contributors section for more information.
+Instructors and assistants have changed each time the course has run. So far, instructors have come from the list of contributors above.
+
+::: {.panel-tabset}
+## ESA 2026 Instructors
+
+* Marty Downs
+* Nick Lyon
+* Greg Maurer
+
+> ESA 2026 meeting in Salt Lake City, UT.
+
+## ESA 2025 Instructors
+
+* Marty Downs
+* Jalene Lamontagne
+* Nick Lyon
+* Greg Maurer
+* Eric Sokol
+
+> ESA 2025 meeting in Baltimore, MD.
+
+## ESA 2024 Instructors
+
+* Angel Chen
+* Marty Downs
+* Stevan Earl
+* Nick Lyon
+* Greg Maurer
+* Eric Sokol
+
+> ESA 2024 meeting in Long Beach, CA.
+
+:::
+
 
 ## Contributors
 
@@ -17,7 +50,8 @@ Icon legend: {{< fa globe >}} = website | {{< fa brands google scholar >}} = pub
 - **Marty Downs** -- LTER Network Office | [{{< fa globe >}}](https://lternet.edu/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2833-956X)
 - **Stevan Earl** -- Arizona State University | [{{< fa globe >}}](https://sustainability-innovation.asu.edu/person/stevan-earl/) [{{< fa brands github >}}](https://github.com/srearl) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-4465-452X)
 - **Sarah Elmendorf** -- | University of Colorado Boulder [{{< fa globe >}}](https://www.colorado.edu/instaar/sarah-elmendorf) [{{< fa brands github >}}](https://github.com/scelmendorf/) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
-- **Carrie Kappel** (_she/her_) -- [{{< fa globe >}}](https://legacyworksgroup.com/team-content/carrie-kappel) developed much of the inclusive facilitation material originally for the [SSECR Course](https://lter.github.io/ssecr/)
+- **Carrie Kappel** (_she/her_) -- [{{< fa globe >}}](https://legacyworksgroup.com/team-content/carrie-kappel)
+    - Developed much of the inclusive facilitation material originally from LTER's [SSECR](https://lter.github.io/ssecr/) course
 - **Li Kui** (_she/her_) -- [{{< fa brands github >}}](https://github.com/lkuiucsb) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5894-4907) 
 - **Jalene LaMontagne** -- University of Missouri-St. Louis / Missouri Botanical Garden | [{{< fa globe >}}](https://lamontagnelab.weebly.com/) [{{< fa brands google scholar >}}](https://scholar.google.com/citations?user=BSOec3pWk-0C&hl) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7713-8591)
 - **Nick J Lyon** (_they/them_) -- LTER Network Office | [{{< fa globe >}}](https://njlyon0.github.io/) [{{< fa brands github >}}](https://github.com/njlyon0) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3905-1078)
@@ -26,39 +60,7 @@ Icon legend: {{< fa globe >}} = website | {{< fa brands google scholar >}} = pub
 - **Eric Sokol** (_he/him_) -- [NEON](https://www.neonscience.org/) | [{{< fa globe >}}](https://www.neonscience.org/person/eric-sokol) [{{< fa brands github >}}](https://github.com/sokole) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5923-0917)
 - **Alexandra (Sasha) Wright** --  California State University, Los Angeles  
 
-## Course instructors
-
-Instructors and assistants have changed each time the course has run. So far, instructors have come from the list of contributors above.
-
-::: {.panel-tabset}
-#### **ESA 2025**
-
-ESA 2025 Summer Meeting in Baltimore, MD.
- 
-**Instructors**:
-
-* Marty Downs
-* Jalene Lamontagne
-* Nick Lyon
-* Greg Maurer
-* Eric Sokol
-
-#### **ESA 2024**
-
-ESA 2024 Summer Meeting in Long Beach, CA.
-
-**Instructors**:
-
-* Angel Chen
-* Marty Downs
-* Stevan Earl
-* Nick Lyon
-* Greg Maurer
-* Eric Sokol
-
-:::
-
-## Other Contributors
+### Other Contributors
 
 In addition to those above, several people contributed to early iterations on the concept and content of the course.
 
