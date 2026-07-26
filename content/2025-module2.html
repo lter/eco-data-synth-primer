@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Operational Synthesis – Ecological Data Synthesis: A Primer on Essential Methods</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../content/images/edi-logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-58bb5f24f52944d2dcceccdce1e94159.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-af30f23b608fc1c8d923181556404737.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-58bb5f24f52944d2dcceccdce1e94159.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ecological Data Synthesis: A Primer on Essential Methods</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="../people.html">
+ <span class="dropdown-text">Instructors</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../contributing.html">
+ <span class="dropdown-text">Contributing</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lter/eco-data-synth-primer"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#make-a-plan" id="toc-make-a-plan" class="nav-link" data-scroll-target="#make-a-plan">1. Make a Plan</a>
+  <ul class="collapse">
+  <li><a href="#how-will-you-get-and-stay-organized" id="toc-how-will-you-get-and-stay-organized" class="nav-link" data-scroll-target="#how-will-you-get-and-stay-organized">How Will You Get (and Stay) Organized?</a></li>
+  <li><a href="#how-will-you-collaborate" id="toc-how-will-you-collaborate" class="nav-link" data-scroll-target="#how-will-you-collaborate">How Will You Collaborate?</a></li>
+  <li><a href="#where-will-code-live" id="toc-where-will-code-live" class="nav-link" data-scroll-target="#where-will-code-live">Where Will Code Live?</a></li>
+  </ul></li>
+  <li><a href="#prepare-data" id="toc-prepare-data" class="nav-link" data-scroll-target="#prepare-data">2. Prepare Data</a>
+  <ul class="collapse">
+  <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link" data-scroll-target="#reproducible-coding">Reproducible Coding</a></li>
+  <li><a href="#reproducibility-in-synthesis" id="toc-reproducibility-in-synthesis" class="nav-link" data-scroll-target="#reproducibility-in-synthesis">Reproducibility in Synthesis</a></li>
+  <li><a href="#data-preparation-overview" id="toc-data-preparation-overview" class="nav-link" data-scroll-target="#data-preparation-overview">Data Preparation Overview</a></li>
+  <li><a href="#harmonize-data" id="toc-harmonize-data" class="nav-link" data-scroll-target="#harmonize-data">Harmonize Data</a></li>
+  <li><a href="#clean-data" id="toc-clean-data" class="nav-link" data-scroll-target="#clean-data">Clean Data</a></li>
+  </ul></li>
+  <li><a href="#analyze-data" id="toc-analyze-data" class="nav-link" data-scroll-target="#analyze-data">3. Analyze Data</a></li>
+  <li><a href="#synthesis-group-case-studies" id="toc-synthesis-group-case-studies" class="nav-link" data-scroll-target="#synthesis-group-case-studies">Synthesis Group Case Studies</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
+  <ul class="collapse">
+  <li><a href="#courses-workshops-and-tutorials" id="toc-courses-workshops-and-tutorials" class="nav-link" data-scroll-target="#courses-workshops-and-tutorials">Courses, Workshops, and Tutorials</a></li>
+  <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature">Literature</a></li>
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data Analysis</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Operational Synthesis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>After completing this module, you will be able to:</p>
+<ul>
+<li><strong>Summarize</strong> the advantages of creating a defined contribution workflow</li>
+<li><strong>Explain</strong> how synthesis teams can use GitHub to collaborate more efficiently and reproducibly</li>
+<li><strong>Identify</strong> characteristics of reproducible coding / project organization</li>
+<li><strong>Explain</strong> benefits of reproducibility (to your team and beyond)</li>
+<li><strong>Understand</strong> best practices for preparing and analyzing data to be used in synthesis projects</li>
+</ul>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Scientific research can be defined as “creative and systematic work undertaken in order to increase the stock of knowledge” (<a href="https://doi.org/10.1787/9789264239012-en">2015 Frascati Manual</a>). To this basic definition of research, <strong>our definition of <em>synthesis</em> research adds <u>collaborative work</u>, and the <u>integration and analysis of a wide range of data sources</u></strong>.</p>
+<p>In <a href="https://lter.github.io/eco-data-synth-primer/module1.html">Module 1</a> we discussed many of the collaborative considerations for synthesis research, including creating a diverse and inclusive team, asking synthesis-ready scientific questions (often broad in scope or spatial scale), and finding suitable information (or data) from a wide variety of sources to answer those questions.</p>
+<p>Once the synthesis team moves into the operational phase of research, which includes the integration and analysis of data, there are some key activities that must happen:</p>
+<ol type="1">
+<li><strong>Make a plan</strong> for technical challenges</li>
+<li><strong>Harmonize</strong> and <strong>tidy data</strong> <em>in a reproducible way</em></li>
+<li><strong>Analyze data</strong> to answer your questions</li>
+</ol>
+<p>Once you have analyzed your data, you can interpret the results and create products as you likely would in a non-synthesis project–though the scale and impact of your products are likely to be larger for a synthesis project than for a typical scientific effort. More on these later steps of synthesis work in <a href="https://lter.github.io/eco-data-synth-primer/module3.html">Module 3</a>.</p>
+<p>We’ve already seen that creating a collaborative, inclusive team can set the stage for successful synthesis research. Each of the operational activities above will also benefit from this mindset, and in this module we highlight some of the most important considerations and practices for a <em>team science</em> approach to the nuts-and-bolts of synthesis research.</p>
+</section>
+<section id="make-a-plan" class="level2">
+<h2 class="anchored" data-anchor-id="make-a-plan">1. Make a Plan</h2>
+<p>For non-synthesis projects, it can feel intuitive to skip this step. Especially if you are working alone or with a small group of close collaborators the formal process of making and documenting your strategy can feel like a waste of time relative to ‘actually’ doing the work. However, synthesis work uses <em>a lot</em> of data, requires a high degree of technical collaboration, and involves a series of <em>big</em> judgement calls that will need to be revisited. Because of these factors, <strong>taking the time to create an actual, specific, <em>written</em> plan (and periodically updating that plan as priorities and questions evolve) is vital to the success of synthesis projects!</strong></p>
+<p>See the sub-sections below for some especially critical elements to consider as you draft your plan. Note this is not exhaustive and there will definitely be other considerations that will be reasonable for your team to add to the plan based on your project’s goals and team composition.</p>
+<section id="how-will-you-get-and-stay-organized" class="level3">
+<h3 class="anchored" data-anchor-id="how-will-you-get-and-stay-organized">How Will You Get (and Stay) Organized?</h3>
+<p>Two critical elements of oragnization are (1) the folder structure on your computer of project files and (2) how you will informatively name files so their purpose is immediately apparent. Also, <strong>it is easier to <em>start</em> organized than it is to <em>get</em> organized</strong>, so implementing a system at the start of your project and sticking to it will be much easier than trying to re-organize months or years worth of work after the fact.</p>
+<p>While there is no “one size fits all” solution to project organization, we recommend something like the following:</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>Key properties of this structure:</p>
+<ul>
+<li>Everything nested within a project-wide folder</li>
+<li><em>Limited</em> use of sub-folders</li>
+<li>Dedicated “README” files containing high-level information about each folder</li>
+<li>Consistent folder/file naming conventions
+<ul>
+<li>Good names should be be both human and machine-readable (and sorted in the same way by machines and people)</li>
+<li>Avoid spaces and special characters</li>
+<li>Consistent use of delimeters (e.g., “-”, “_“, etc.)</li>
+</ul></li>
+<li>Shared file prefix (a.k.a. “slug”) connecting code files with files they create
+<ul>
+<li>Allows for easy tracing of errors because the file with issues has an explicit tie to the script that likely introduced that error</li>
+</ul></li>
+<li>Includes a “data log” (a.k.a. “data inventory”) for documenting data sources and critical information about each
+<ul>
+<li>E.g., dataset identifiers/DOIs, search terms used in data repository, provenance, spatiotemporal extent and granularity, etc.)</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:40%;">
+<div style="font-size:0.9em;">
+<p><em>Suggested Project Structure:</em></p>
+<p><i class="fa-solid fa-folder" aria-label="folder"></i> synthesis_project<br>
+&nbsp;|–&nbsp;<i class="fa-solid fa-file-lines" aria-label="file-lines"></i> README.md<br>
+&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> code<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-lines" aria-label="file-lines"></i> README.md<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> 01_harmonize.R<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> 02_quality-control.R<br>
+&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> data<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-lines" aria-label="file-lines"></i> README.md<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> data-log.csv<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> raw<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> tidy<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> 01_data-harmonized.csv<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-solid fa-file-csv" aria-label="file-csv"></i> 02_data-wrangled.csv<br>
+&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> notes<br>
+&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> presentations<br>
+&nbsp;&nbsp;L&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> publications<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-lines" aria-label="file-lines"></i> README.md<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> community-composition<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-solid fa-folder" aria-label="folder"></i> biogeochemistry</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Activity: Organization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>On your own or in a small group, open your computer and find the files for one of your past projects. With that project in mind, ask yourself the following:</p>
+<ul>
+<li>How hard is it for you to reorient yourself to this project based on your organization system?
+<ul>
+<li>How hard do you think it would be to onboard a new collaborator on this project?</li>
+</ul></li>
+<li>How many of the properties of the recommended structure above does your organization system follow?</li>
+<li>Are there actionable steps you could take to feel more confident in your organization system? If so, what are they?</li>
+</ul>
+<p>Once you have considered these questions, <strong>take a few minutes and try to reorganize your chosen project</strong>. If that feels risky to you, write some notes on scratch paper of how you <em>would</em> (or <em>could</em>) reorganize this project to be more functional</p>
+</div>
+</div>
+</section>
+<section id="how-will-you-collaborate" class="level3">
+<h3 class="anchored" data-anchor-id="how-will-you-collaborate">How Will You Collaborate?</h3>
+<p>Once you’ve decided on your organization method, you’ll need to decide <em>as a team</em> how you will work together. It is critical that your <em>whole</em> team agrees to whatever method you come up with because it will result in a lot of unnecessary work if a subset of people do not follow the plan–and thus introduce disorganization and inconsistency that someone will have to spend time fixing later.</p>
+<p><u>A good rule of thumb is that you should plan for “future you.”</u> What collaboration methods will you in 6+ months thank ‘past you’ for implementing? It may also be helpful to consider the negative side of that question: what shortcuts could you take now that ‘future you’ will be unhappy with?</p>
+<p>A huge part of deciding how you will collaborate is deciding how you will <em>communicate</em> as a team. When you work asynchronously, how will you tell others that you are working on a particular code or document file? This <em>does not</em> have to be high tech–an email or Slack message can suffice–but if you don’t communicate about the minutiae, you risk duplicating effort or putting in conflicting work.</p>
+</section>
+<section id="where-will-code-live" class="level3">
+<h3 class="anchored" data-anchor-id="where-will-code-live">Where Will Code Live?</h3>
+<p>Unlike the other planning elements, we (the instructors) feel there is a single correct answer to this: <strong>your code should live in a version control system</strong>. Broadly, “version control” systems track iterative changes to files. In addition to the specific, line-by-line changes to project files, contributions of each team member are tracked, and there are straightforward systems for ‘rolling back’ files to an earlier state if needed.</p>
+<p><img src="images/mod2_final.png" alt="PhD comics strip of a graduate student prematurely titling a document 'final.doc' and then undergoing a series of revisions with progressively more complicated and less informative final names" align="right" width="50%"></p>
+<p>As the comic to the right shows–and as all scientists know from experience–you will have several (likely <em>many</em>) drafts of a given product before the finalized version. <strong>With a version control system, all the revisions in each draft are saved <em>without needing to manually ‘re-save’ the file with a date stamp or version number in the filename</em></strong>. Version control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.</p>
+<p>While there are several version control options, <strong>we recommend Git as the version control software and <a href="https://github.com/">GitHub</a> as the online platform for storing Git repositories in a shareable way</strong>. Note that there are viable alternatives to GitHub (e.g., <a href="https://about.gitlab.com/">GitLab</a>, <a href="https://www.gitkraken.com/">GitKraken</a>, etc.) but (A) all of these rely on Git ‘under the hood’ and (B) in order to give an effective tutorial of version control in this course, we need to narrow our focus to just one of these website options. From here onwards, we’ll use focus on GitHub but it may be worthwhile for your team to investigate some of the GitHub alternatives as they will all offer similar functionality.</p>
+<section id="github-tutorial" class="level4">
+<h4 class="anchored" data-anchor-id="github-tutorial">GitHub Tutorial</h4>
+<p>Given the time restrictions for this short course, <strong>we’ll only cover how you can engage with GitHub directly through its website today</strong>. However, this focus is actually a benefit to synthesis teams because learning how to engage with a Git repository via GitHub can enable collaborators who are less comfortable writing code to still fully contribute and stay abreast of the team’s progress.</p>
+<p>There are a <em>lot</em> of Git/GitHub tutorials that already exist so, rather than add yet another variant to that list, we’ll instead work through part of the workshop created by the <a href="https://lter.github.io/scicomp/">Scientific Computing team</a> of the Long Term Ecological Research (<a href="https://lternet.edu/">LTER</a>) Network Office. Note too that those materials include a detailed, step-by-step guide for working with Git/GitHub through RStudio, as well as some discussion of the project management tools that GitHub supports. As noted earlier, we won’t cover those parts of that workshop today, but they might be useful for you to revisit later.</p>
+<p>The workshop materials we will be working through live <a href="https://lter.github.io/workshop-github/">here</a> but for convenience we have also embedded the workshop directly into this short course’s website (see below).</p>
+<iframe src="https://lter.github.io/workshop-github/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Activity: Practice with GitHub
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let’s use some of the skills that we just discussed during the GitHub tutorial!</p>
+<p>When you make a repository under your username with the same name as your user (e.g., <code>njlyon0 / njlyon0</code>) this is a “special repository”. Any content that you put in the README file of that repository will show up at the top of your GitHub profile (e.g., <a href="https://github.com/angelchen7">here</a>, or <a href="https://github.com/njlyon0">here</a>). Making this landing page for your GitHub page can be a nice way of demonstrating your GitHub savvy and–for those without a professional website–can be a nice stand-in until you feel that a full website is warranted.</p>
+<p>For our purposes today, <strong>creating this repository and filling it out through GitHub is a nice chance for you to build muscle memory with creating and editing files directly through GitHub!</strong></p>
+<p>Take a few minutes to create this special repository and add a few sentences about yourself and your personal/professional interests.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="prepare-data" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-data">2. Prepare Data</h2>
+<p>Synthesis efforts are intensely data-heavy by their nature; as such, you’ll need to spend more time and effort in the data preparation phase than you would in a non-synthesis project. This means that <strong>doing reproducible work pays huge dividends!</strong> Making one’s work “reproducible”–particularly in code contexts–has become increasingly popular but is not always clearly defined. For the purposes of this short course, we believe that reproducible work has the following properties:</p>
+<ol type="1">
+<li>Contains sufficient documentation for those outside of the project team to navigate and understand the project’s contents</li>
+<li>Allows anyone to recreate the entire workflow from start to finish</li>
+<li>Leads to modular, extensible research projects; adding data from a new site, or a new analysis, should be relatively easy in a reproducible workflow</li>
+<li>Contains detailed <strong>metadata</strong> for all data products and prerequisite software</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>More About Metadata
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Metadata is “data about the data,” or information that describes <strong>who</strong> collected the data, <strong>what</strong> was observed or measured, <strong>when</strong> the data were collected, <strong>where</strong> the data were collected, <strong>how</strong> the observations or measurements were made, and <strong>why</strong> they were collected. Metadata provide important contextual information about the origin of the data and how they can be analyzed or used. They are most useful when attached or linked to the data being described, and data and related metadata together are commonly referred to as a <em>dataset</em>.</p>
+<p>Metadata for ecological research data are well described in Michener et al (1997),<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> but there are many other kinds of metadata with different purposes.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> If you are publishing a research dataset and have questions about metadata, ask a data manager for your project, or staff at the repository you are working with, for help. Either can typically provide guidance on creating metadata that will describe your data and be useful to the community (here is <a href="https://edirepository.org/resources/creating-metadata-for-publication">one example</a>). We’ll return to the subject of metadata in Module 3.</p>
+</div>
+</div>
+</div>
+<section id="reproducible-coding" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-coding">Reproducible Coding</h3>
+<p>While the reproducibility guidelines identified above apply to many different facets of a project, there are a few more when considering reproducible <em>code</em> specifically. For example:</p>
+<ul>
+<li><em>All</em> interactions with data should be done with code</li>
+<li>A version control system should be used to track changes to code</li>
+<li>All code should include non-coding “comments” to provide explanation/context</li>
+<li>Any necessary software libraries should be loaded explicitly at the start of each script</li>
+<li>Relative file paths that are agnostic to operating system
+<ul>
+<li>E.g., <code>file.path("data", "bees.csv")</code> instead of <code>"~/Users/me/Documents/synthesis_project/data/bees.csv"</code></li>
+</ul></li>
+<li>Functions should be “namespaced” (if not already required by your coding language)
+<ul>
+<li>E.g., <code>dplyr::mutate()</code> instead of <code>mutate()</code></li>
+</ul></li>
+</ul>
+<p>The above list is non-exhaustive and there are other conditions you may want to consider such as using custom functions for repeated operations or adding sequential numbers to script names that must be run in a particular order but generally following the above list will keep your code on the “more reproducible” side of things.</p>
+</section>
+<section id="reproducibility-in-synthesis" class="level3">
+<h3 class="anchored" data-anchor-id="reproducibility-in-synthesis">Reproducibility in Synthesis</h3>
+<p>Finally, there are a few additional considerations for reproducible synthesis work in particular. Judgement calls need to be made and agreed to as a team. However, group members should “defer to the doers.” If you have a very strong opinion that differs from the feeling of most of the rest of the group and will result in a lot of extra work, you should be ready to volunteer to do that work or allow those who will be responsible for the work to have a larger role in deciding the shape of that effort.</p>
+<p>Reproducible synthesis work also requires dramatically more communication–especially around contribution guidelines and intellectual credit. It’s best to keep track of who contributed what, so that everyone gets credit. This can be challenging in practice and makes sense to start recording early and in a transparent way.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Activity: Reproducibility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In small groups, discuss the following questions:</p>
+<ul>
+<li>What elements of reproducibility that we identify have you used/are interested in using?</li>
+<li>Which feel unreasonable or confusing?</li>
+<li>What activities do you do in your own work to ensure reproducibility that <strong>our list is missing</strong>?</li>
+</ul>
+<p>If you have a script you’ve worked on recently, open it and read through it.</p>
+<ul>
+<li>How reproducible do you think that code is?</li>
+<li>How easy would it be for someone else to understand what the code does?
+<ul>
+<li>How easy would it be for them to actually run the code?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="data-preparation-overview" class="level3">
+<h3 class="anchored" data-anchor-id="data-preparation-overview">Data Preparation Overview</h3>
+<p>The scientific questions being asked in synthesis projects are usually broad in scope, and it is therefore common to bring together many datasets from different sources for analysis. The datasets selected for analysis (source data) may have been collected by different people, in different places, using different methods, as part of different projects, or all of the above. Typically you will need to <strong>harmonize</strong> these disparate datasets by standardizing data structure, units of measurement, and file format. Once this is done, you’ll move on to <strong>data cleaning</strong> where you can check for malformed values, unreasonable rows, and filter out unwanted observations.</p>
+<p>These processes can be easy or difficult depending on the quality of the source data, the differences between source data, and how much <strong>metadata</strong> (see callout above) is available to understand them. Also, note that you could clean each input dataset separately first, then harmonize the data, but it may be easier to harmonize first. For example, if you have 10 datasets, each with some type of sampling date column, it will be <em>much</em> easier to filter out particular dates if all that information is in the same format in the same column as opposed to working with whatever idiosyncratic formats and/or column names are present in each original file.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Discussion: Data Preparation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>How many of you work directly with data in your day-to-day?</li>
+<li>Of the time you spend working with data, what percentage is spent:
+<ul>
+<li>Harmonizing data?</li>
+<li>Cleaning data?</li>
+<li>Creating metadata?</li>
+<li>Documenting your process (including making comments in code)?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="harmonize-data" class="level3">
+<h3 class="anchored" data-anchor-id="harmonize-data">Harmonize Data</h3>
+<p>Data harmonization is the process of bringing different datasets into a common format for analysis. The harmonized data format chosen for a synthesis project depends on the source data, analysis plans, and overall project goals. It is best to make a plan for harmonizing data <em>before</em> analysis begins, which means discussing this with the team in the early stages of a synthesis project. As a general rule, it is also wise to use a scripted workflow that is as reproducible as possible to accomplish the harmonization you need for your project. Following this guidance lets others understand, check, and adapt your work, and will also make it much, <em>much</em> easier to bring new data and analysis methods into the project.</p>
+<p>Data harmonization is hard work that sometimes requires trial and error to arrive at a useful end product. At the end of this section are some additional data harmonization resources to help you get started. Looking at a simple example might also help.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example: Harmonizing grassland biomass data
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In the figure below, two datasets from different LTER sites have been harmonized for analysis. We don’t have all the metadata here, but based on the column naming we can assume that the file on the left (<code>Konza_harvestplots.txt</code>, <strong><span style="color:orange">yellow</span></strong>) contains columns for the sampling date, a plot identifier, a treatment categorical value, and measured biomass values. The filename suggests that the data come from the Konza Prarie LTER site. The file on the right (<code>2022_clips.csv</code>, <strong><span style="color:blue">blue</span></strong>) has a column denoting the LTER site, in this case Sevilleta LTER (abbreviated as SEV), as well as similar date, plot identifier, treatment, and measured biomass columns.</p>
+<p>There are some similarities and some differences in these two source files. A harmonized file (<code>lter_grass_biomass_harmonized.txt</code>) appears below.</p>
+<p align="center">
+<img src="images/data_harmonization_example.png" alt="Image showing two small data tables with different column names and data structure being modified to be able to combine them into a single, larger table" width="90%">
+</p>
+<p>Take a minute to look at the harmonized file and consider <strong>how</strong> these data were harmonized. Then, answer this question:</p>
+<blockquote class="blockquote">
+<p><strong>What changes were made to data structure, variable formatting, or units in these data?</strong></p>
+</blockquote>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Click here for answers…
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Even though the source data files were similar, several important changes were made to create the harmonized file. Among them:</p>
+<ul>
+<li>The <strong>site</strong> column was preserved and contains the “SEV” and “KNZ” categorical values denoting which LTER site is observed in each row.</li>
+<li>The dates in the <strong>date</strong> column were converted to a standard format (<em>YYYY-MM-DD</em>). Incidentally, this matches the International Organization for Standardization (ISO) recommendation for date/time data, making it generally a good choice for dates.</li>
+<li>A new <strong>rep</strong> column was created to identify the replicate measurements at each site. This is essentially a standard version the plot identifier columns (<strong>PlotID</strong> and <strong>plot</strong>) in the original data file. Also note that the original values are preserved in the new <strong>plot_orig</strong> column.</li>
+<li>The treatment columns from the original data files (<strong>Treatment</strong> and <strong>trt</strong>) were standardized to one column with “C” and “F” categorical values, for control and fertilized treatments, respectively.</li>
+<li>The biomass values from Konza were converted to units grams per meter squared (g/m<sup>2</sup>) because the original Konza measurements were for total biomass in 2x2 meter plots. <em>Note that this conversion is for illustration purposes only</em>–we can’t be sure if this conversion is correct without it being spelled out in the metadata, or asking the data provider directly.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="a-word-about-harmonized-data-formats" class="level4">
+<h4 class="anchored" data-anchor-id="a-word-about-harmonized-data-formats">A Word About Harmonized Data Formats</h4>
+<p>Above, we have discussed several aspects of selecting a <strong>data format</strong>. There are at least three related, but not exactly equivalent, concepts to consider when formatting data. First, formats describe the way data are structured, organized, and related within a data file. For example, in a tabular data file about biomass, the measured biomass values might appear in one column, or in muiltiple columns. Second, the values of any variable can be represented in more than one format. The same date, for example, could be formatted using text as “July 2, 1974” or “1974-07-02.” Third, format may refer to the <em>file format</em> used to hold data on a disk or other storage medium. File formats like comma separated value text files (CSV), Excel files (XLSX), JPEG images, are commonly used for research data, and each has particular strengths for certain kinds of data.</p>
+<p>A few guidelines apply:</p>
+<ol type="1">
+<li>For formatting a tabular dataset, <strong>err towards simpler data structures</strong>, which are usually easier to clean, filter, and analyze
+<ul>
+<li>Keeping data in “long format”,<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> is one common recommendation for this</li>
+</ul></li>
+<li>When choosing a file format, <strong>err towards open, non-proprietary file formats</strong> that more people know and have access to
+<ul>
+<li>Delimited text files, such as CSV files, are a good choice for tabular data</li>
+</ul></li>
+<li><strong>Use existing community standards</strong> for formatting variables and files as long as they suit your project methods and scientific goals
+<ul>
+<li>Using ISO standards for date-time variables, or species identifiers from a taxonomic authority, are good examples of this practice</li>
+</ul></li>
+<li><strong>There is no perfect data format!</strong>
+<ul>
+<li>Harmonizing data always involves some judgement calls and tradeoffs</li>
+</ul></li>
+</ol>
+<p>When choosing a destination format for the harmonized data for a synthesis project, the <strong>audience</strong> and <strong>future uses</strong> of the data are also an important consideration. Consider how your synthesis team will analyze the data, as well as how the world outside that team will use and interact with the data once it is published. Again, there is no one answer, but below are a few examples of harmonized destination formats to consider.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Long Format (a.k.a. “Tidy”)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Wide Format</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Relational Databases</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Cloud-Native</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Other…</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Here our grassland biomass data is in long format, often referred to as “tidy” data. Data in this format is generally easy to understand and use. There are three rules for tidy data:</p>
+<ol type="1">
+<li>Each column is one variable.</li>
+<li>Each row is one observation.</li>
+<li>Each cell contains a single value.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/tidy-data.png" class="img-fluid figure-img" alt="Image of a table of data in 'tidy' format (i.e., where each column is one variable, each row is one observation, and each cell contains a single value)"></p>
+<figcaption>visual representation of the tidy data structure</figcaption>
+</figure>
+</div>
+<p><strong>Advantages</strong>: clear meaning of rows and columns; ease in filtering/cleaning/appending<br>
+<strong>Disadvantages</strong>: not as human-friendly so it can be difficult to assess the data visually<br>
+<strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/long_data_example.png" class="img-fluid figure-img" style="width:75.0%" alt="An example of tidy data in long format"></p>
+<figcaption>The harmonized grassland data, in long format.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>In this dataset, our grassland data has been restructured into wide format, often referred to (sometimes unfairly) as “messy” or “untidy” data. Note that the biomass variable has been split into two columns, one for control plots and one for fertilized plots.</p>
+<p><strong>Advantages</strong>: easier for some statistical analyses; easier to assess the data visually<br>
+<strong>Disadvantages</strong>: may be more difficult to clean/filter/append, multiple observations per row; more likely to contain empty (<code>NULL</code>) cells<br>
+<strong>Possible file formats</strong>: Delimited text (tab delimited shown here), spreadsheets, database tables</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wide_data_example.png" class="img-fluid figure-img" style="width:75.0%" alt="An example of tidy data in wide format"></p>
+<figcaption>The harmonized grassland data, restructured into wide format with biomass values in control and fertilized columns.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>Below is an example of how we might structure our grassland data in a relational database. The schema consists of three tables that house information about sampling events (when, where data were collected), the plots from which the samples are collected, and the biomass values for each collection. The schema allows us to define the data types (e.g., text, integer), add constraints (e.g., values cannot be missing), and to describe relationships between tables (keys). Relational formats are <a href="https://en.wikipedia.org/wiki/Database_normalization">normalized</a> to reduce data redundancy and increase data integrity, which can help us to manage complex data<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/grassland_schema.drawio.png" class="img-fluid figure-img" alt="An example of relational data where several tables are linked by a shared column even though they have differing variables and numbers of observations"></p>
+<figcaption>example grassland database schema</figcaption>
+</figure>
+</div>
+<p><strong>Advantages</strong>: reduced redundancy, greater integrity; community standard; powerful extensions (e.g., store and process spatial data); many different database flavors to meet specific needs<br>
+<strong>Disadvantages</strong>: significant metadata needed to describe and use; more complex to publish; learning curve<br>
+<strong>Possible file formats</strong>: Database stores, can be represented in delimited text (CSV)</p>
+<p>A richer example is a schematic of the related tables that comprise the <a href="https://ediorg.github.io/ecocomDP/">ecocomDP</a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> harmonized data format for biodiversity data. Eight tables are defined, along with a set of relationships between tables (keys), and constraints on the allowable values in each table.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ecocomDP_schema.jpg" class="img-fluid figure-img" style="width:75.0%" alt="Another example of a relational set of tables implicitly connected by shared index columns. Curved lines indicate which tables are connected to one another and which columns define that relationship"></p>
+<figcaption>The ecocomDP schema. Each table has a name (top cell) and a list of columns. Shaded column names are primary keys, hashed columns have constraints, and arrows represent relations between keys/constraints in different tables.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>There are many possibilities to make large synthesis datasets available and useful in the cloud. These require specialized knowledge and tooling, and reliable access to cloud platforms.</p>
+<p><strong>Advantages</strong>: easier access to big (high volume) data, can integrate with web apps<br>
+<strong>Disadvantages</strong>: less familiar/accessible to many scientists, few best practices to follow, costs can be higher<br>
+<strong>Possible file formats</strong>: Parquet files, object storage, distributed/cloud databases</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cloud_native.png" class="img-fluid figure-img" style="width:75.0%" alt="A stylized cloud containing the logos for Parquet, S3, PostgreSQL, and Apache Arrow"></p>
+<figcaption>A few of the cloud-native technologies that might be useful for synthesis research products.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<p>There are many, many other possible harmonized data formats. Here are a few possible examples:</p>
+<ul>
+<li>DarwinCore archives for biodiversity data</li>
+<li>Organismal trait databases</li>
+<li>Archives of cropped, labeled images for training machine or deep learning models</li>
+<li>Libraries of standardized raster imagery in Google Earth Engine</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="clean-data" class="level3">
+<h3 class="anchored" data-anchor-id="clean-data">Clean Data</h3>
+<p>When assembling large datasets from diverse sources, as in synthesis research, not all the source data will be useful. This may be because there are real or suspected errors, missing values, or simply because they are not needed to answer the scientific question being asked (wrong variable, different ecosystem, etc.). Data that are not useful are usually excluded from analysis or removed altogether. Data cleaning tends to be a stepwise, iterative process that follows a different path for every dataset and research project. There are some standard techniques and algorithms for cleaning and filtering data, but they are beyond the scope of this course. Below are a few guidelines to remember, and more in-depth resources for data cleaning are found at the end of this section.</p>
+<ol type="1">
+<li><strong>Always preserve the raw data</strong>. Chances are you’ll want to go back and check the original source data at least once.</li>
+<li><strong>Use a scripted workflow to clean and filter the raw data</strong>, and follow the usual rules about reproducibility (comments, version control, functionalization).</li>
+<li><strong>Consider using the concept of data processing “levels,”</strong> meaning that defined sets of data flagging, removal, or transformation operations are applied consistently to the data in stepwise fashion. For example, incoming raw data would be labeled “level 0” data, and “level 1” data is reached after the first set of processing steps is applied.</li>
+<li><strong>Spread the data cleaning workload around!</strong> Data cleaning typically demands a <em>huge</em> fraction of the total time devoted to working with data,<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a><a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a><a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> and it can be tedious work. Make sure the team shares this workload equitably.</li>
+</ol>
+<section id="a-word-about-filtering-data" class="level4">
+<h4 class="anchored" data-anchor-id="a-word-about-filtering-data">A Word About Filtering Data</h4>
+<p>When filtering data, you are removing rows that you do not want to include in analysis. However, “filtering” is not a monolith and can be split into two categories that warrant different strategies. Some data are unusable and are removed for that reason, however, some data are <em>potentially</em> usable, but aren’t relevant to the current analysis.</p>
+<p>Because of this latter category, <strong>filtering data should be done as late as possible in your workflow</strong>, ideally, as the final step before analysis. The reason for this is that you will eventually finish testing your first hypothesis and then the criteria for ‘is this data usable’ will change! If the very first step of your workflow as removing all data you didn’t want in that moment, you might have to return all the way to the start in order to get the data you now need for this subsequent hypothesis.</p>
+<p>If instead, you develop your workflow with as much of the usable data as possible, when your filtering criteria evolve, most of your workflow–i.e., the labor-intensive harmonization and cleaning steps–is already good as-is and likely won’t need to be revisited. You simply create a new ‘filter’ script with the new criteria and can immediately leap into analysis.</p>
+</section>
+</section>
+</section>
+<section id="analyze-data" class="level2">
+<h2 class="anchored" data-anchor-id="analyze-data">3. Analyze Data</h2>
+<p>Once the team has found sufficient source data, then harmonized, cleaned, and filtered countless datasets, and documented and described everything with quality metadata, it is finally time to analyze the data! Great! Load up R or Python and get started, and then tell us how it goes. We simply don’t have enough time to cover all the ins and outs of data analysis in a this course. However, we have put a few helpful resources below to get you started, and many of the best practices we have talked about, or will talk about, apply:</p>
+<ol type="1">
+<li><strong>Document your analysis steps and comment your code</strong>, and generally try to make everything reproducible.</li>
+<li><strong>Use version control</strong> as you analyze data.</li>
+<li><strong>Give everyone a chance!</strong> Analyzing data is challenging, exciting, and a great learning opportunity. Having more eyes on the analysis process also helps catch interesting results or subtle errors.</li>
+</ol>
+</section>
+<section id="synthesis-group-case-studies" class="level2">
+<h2 class="anchored" data-anchor-id="synthesis-group-case-studies">Synthesis Group Case Studies</h2>
+<p>To make some of these concepts more tangible, let’s consider some case studies. The following tabs contain GitHub repositories for real teams that have engaged in synthesis research and chosen to preserve and maintain their scripts in GitHub. Each has different strengths and you may find that facets of each feel most appropriate for your group to adopt. There is no single “right” way of tackling this but hopefully parts of these exemplars inspire you.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Example 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Example 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Example 3</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>LTER SPARC Group: <a href="https://lternet.edu/working-groups/soil-p-control-of-c-and-n/">Soil Phosphorus Control of Carbon and Nitrogen</a></p>
+<p>Stored their code here: <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/lter/lter-sparc-soil-p">lter / <strong>lter-sparc-soil-p</strong></a></p>
+<p><strong>Highlights</strong></p>
+<ul>
+<li>Straightforward &amp; transparent numbering of workflow scripts
+<ul>
+<li>File names also reasonably informative even without numbering</li>
+</ul></li>
+<li>Simple README in each folder written in human-readable language</li>
+<li>Custom <code>.gitignore</code> safety net
+<ul>
+<li>Controls which files are “ignored” by Git (prevents accidentally sharing data/private information)</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>LTER Full Synthesis Working Group: <a href="https://lternet.edu/working-groups/the-flux-gradient-project/">The Flux Gradient Project</a></p>
+<p>Stored their code here: <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/lter/lterwg-flux-gradient">lter / <strong>lterwg-flux-gradient</strong></a></p>
+<p><strong>Highlights</strong></p>
+<ul>
+<li><em>Extremely</em> consistent file naming conventions</li>
+<li>Strong use of sub-folders for within-project organization</li>
+<li>Top-level README includes robust description of naming convention, folder structure, and order of scripts in workflow</li>
+<li>Active contribution to code base by nearly all group members
+<ul>
+<li>Facilitated by strong internal documentation and consenus-building prior to choosing this structure</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>LTER Full Synthesis Working Group: <a href="https://lternet.edu/working-groups/from-poles-to-tropics-a-multi-biome-synthesis-investigating-the-controls-on-river-si-exports/">From Poles to Tropics: A Multi-Biome Synthesis Investigating the Controls on River Si Exports</a></p>
+<p>Stored their code here: <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/lter/lterwg-silica-spatial">lter / <strong>lterwg-silica-spatial</strong></a></p>
+<p><strong>Highlights</strong></p>
+<ul>
+<li>Files performing similar functions share a prefix in their file name</li>
+<li>Use of GitHub “Release” feature to get a persistent DOI for their codebase</li>
+<li>Separate repositories for each manuscript</li>
+<li>Nice use of README as pseudo-bookmarks for later reference to other repositories</li>
+</ul>
+</div>
+</div>
+</div>
+<p>For more information about LTER synthesis working groups and how you can get involved in one, click <a href="https://lternet.edu/synthesis/">here</a>.</p>
+</section>
+<section id="additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
+<section id="courses-workshops-and-tutorials" class="level3">
+<h3 class="anchored" data-anchor-id="courses-workshops-and-tutorials">Courses, Workshops, and Tutorials</h3>
+<ul>
+<li><a href="https://lter.github.io/ssecr/">Synthesis Skills for Early Career Researchers</a> (SSECR) course. <strong>2025</strong>. LTER Network Office</li>
+<li><a href="https://lter.github.io/workshop-github/">Collaborative Coding with GitHub</a> workshop. <strong>2025</strong>. LTER Scientific Computing team</li>
+<li><a href="https://lter.github.io/workshop-tidyverse/">Coding in the Tidyverse</a> workshop. <strong>2025</strong>. LTER Scientific Computing team</li>
+<li><a href="https://njlyon0.github.io/collab_bilingualism/">R / Python Bilingualism</a> tutorial. <strong>2025</strong>. Nick J Lyon</li>
+<li><a href="https://njlyon0.github.io/teach_r-for-biologists/">R Programming for Biologists</a> (300-level undergraduate) course. <strong>2024</strong>. Nick J Lyon</li>
+<li><a href="https://learning.nceas.ucsb.edu/2024-02-arctic/">Reproducible Approaches to Arctic Research Using R</a> workshop. <strong>2024</strong>. Arctic Data Center &amp; NCEAS Learning Hub</li>
+<li><a href="https://njlyon0.github.io/asm-2022_shiny-workshop/">Shiny Apps for Sharing Science</a> workshop. <strong>2022</strong>. Lyon, N.J. <em>et al.</em></li>
+<li><a href="https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/">Ten Commandments for Good Data Management</a>. <strong>2016</strong>. McGill, B.</li>
+</ul>
+</section>
+<section id="literature" class="level3">
+<h3 class="anchored" data-anchor-id="literature">Literature</h3>
+<ul>
+<li>Lyon, N.J. &amp; Earl, S. <a href="https://lternet.edu/stories/databits-conventional-commits/">Conventional Commits: A better way to track changes with Git</a>. <strong>2024</strong>. <em>DataBits</em></li>
+<li>Todd-Brown, K.E.O., <em>et al.</em> <a href="https://bg.copernicus.org/articles/19/3505/2022/">Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential</a>. <strong>2022</strong>. <em>Biogeosciences</em></li>
+<li>Borer, E.T. <em>et al.</em> <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205">Some Simple Guidelines for Effective Data Management</a>. <strong>2009</strong>. <em>Ecological Society of America Bulletin</em></li>
+</ul>
+</section>
+<section id="data-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="data-preparation">Data Preparation</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Harmonizing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Cleaning &amp; Filtering</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>For R and Python users, there are excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization.</p>
+<ul>
+<li>In Hadley Wickham’s <em>R for Data Science</em> book, the chapters on <a href="https://r4ds.hadley.nz/data-transform">data transforms</a> and <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a> are a good place to start</li>
+<li>Also for R users, the LTER Network’s <code>ltertools</code> package has a nice approach to harmonization with its intuitively-named <code>harmonize</code> function. See the <a href="https://lter.github.io/ltertools/articles/ltertools.html#harmonization"><code>ltertools</code> package vignette for details</a></li>
+<li>In Wes McKinney’s <em>Python for Data Analysis</em> book, the chapter on <a href="https://wesmckinney.com/book/data-wrangling">data wrangling</a> is helpful.</li>
+<li>A nice <a href="https://www.theanalysisfactor.com/wide-and-long-data/">article in “The Analysis Factor”</a> describes wide vs long data formats and when to choose which (TLDR, it depends on your statistical analysis plan).</li>
+</ul>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>Data cleaning is complicated and varied, and entire books have been written on the subject.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a><a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
+<ul>
+<li>For some general considerations on cleaning data, see EDI’s “<a href="https://edirepository.org/resources/cleaning-data-and-quality-control">Cleaning Data and Quality Control</a>” resource</li>
+<li><a href="https://openrefine.org/">OpenRefine</a> is an open-source, cross-platform tool for iterative, scripted data cleaning.</li>
+<li>In R, the <code>tidyverse</code> libraries (e.g., <code>dplyr</code>, <code>tidyr</code>, <code>stringr</code>) are often used for data cleaning, as are additional libraries like <a href="https://sfirke.github.io/janitor/"><code>janitor</code></a>.</li>
+<li>In Python, <code>pandas</code> and <code>numpy</code> libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like <a href="https://pyjanitor-devs.github.io/pyjanitor/"><code>pyjanitor</code></a> (started as a re-implementation of the R version) and <a href="https://docs.cleanlab.ai/stable/index.html"><code>cleanlab</code></a> (geared towards machine learning applications).</li>
+<li>Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham’s <em>R for Data Science</em> book chapter on <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a>,<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> and for python check Wes McKinney’s <em>Python for Data Analysis</em> book chapter on <a href="https://wesmckinney.com/book/data-cleaning">data cleaning and preparation</a>.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis">Data Analysis</h3>
+<ul>
+<li>Harrer, M. <em>et al.</em> <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/">Doing Meta-Analysis with R: A Hands-On Guide</a>. <strong>2023</strong>. <em>GitHub</em></li>
+<li>Once again, for R and Python users, the same two books mentioned above provide excellent beginning guidance on data analysis techniques (exploratory analysis, summary stats, visualization, model fitting, etc). In Wickham’s <em>R for Data Science</em> book, the chapter on <a href="https://r4ds.hadley.nz/eda">exploratory data analysis</a> will help. In McKinney’s <em>Python for Data Analysis</em> book, try the chapters on <a href="https://wesmckinney.com/book/plotting-and-visualization">plotting and visualization</a> and <a href="https://wesmckinney.com/book/modeling">the introduction to modeling</a>.</li>
+</ul>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Michener, W.K., Brunt, J.W., Helly, J.J., Kirchner, T.B. and Stafford, S.G. (1997), NONGEOSPATIAL METADATA FOR THE ECOLOGICAL SCIENCES. Ecological Applications, 7: 330-342. https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Mayernik, M.S. and Acker, A. (2018), Tracing the traces: The critical role of metadata within networked communications. Journal of the Association for Information Science and Technology, 69: 177-180. https://doi.org/10.1002/asi.23927<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Zimmerman, N. 2016. <a href="https://carpentries.org/blog/2016/12/hand-crafted-databases/">Hand-crafted relational databases for fun and science</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>O’Brien, Margaret, et al.&nbsp;“ecocomDP: a flexible data design pattern for ecological community survey data.” Ecological Informatics 64 (2021): 101374. https://doi.org/10.1016/j.ecoinf.2021.101374<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><a href="http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html">New York Times, 2014</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><a href="https://www.anaconda.com/resources/whitepapers/state-of-data-science-report-2022/">Anaconda State of Data Science Report, 2022</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Osborne, Jason W. Best practices in data cleaning: A complete guide to everything you need to do before and after collecting your data. Sage publications, 2012.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Van der Loo, Mark, and Edwin De Jonge. Statistical data cleaning with applications in R. John Wiley &amp; Sons, 2018. https://doi.org/10.1002/9781118897126<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. ” O’Reilly Media, Inc.”, 2023. https://r4ds.hadley.nz/<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>McKinney, Wes. Python for data analysis. ” O’Reilly Media, Inc.”, 2022. https://wesmckinney.com/book<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lter\.github\.io\/eco-data-synth-primer\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

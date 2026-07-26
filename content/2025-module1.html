@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Starting with Team Science – Ecological Data Synthesis: A Primer on Essential Methods</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../content/images/edi-logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-58bb5f24f52944d2dcceccdce1e94159.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-af30f23b608fc1c8d923181556404737.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-58bb5f24f52944d2dcceccdce1e94159.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ecological Data Synthesis: A Primer on Essential Methods</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="../people.html">
+ <span class="dropdown-text">Instructors</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../contributing.html">
+ <span class="dropdown-text">Contributing</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lter/eco-data-synth-primer"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#why-synthesis" id="toc-why-synthesis" class="nav-link" data-scroll-target="#why-synthesis">Why Synthesis?</a>
+  <ul class="collapse">
+  <li><a href="#examples-of-recent-synthesis-products" id="toc-examples-of-recent-synthesis-products" class="nav-link" data-scroll-target="#examples-of-recent-synthesis-products">Examples of Recent Synthesis Products</a></li>
+  </ul></li>
+  <li><a href="#identifying-a-synthesis-ready-question" id="toc-identifying-a-synthesis-ready-question" class="nav-link" data-scroll-target="#identifying-a-synthesis-ready-question">Identifying a Synthesis-Ready Question</a></li>
+  <li><a href="#process-overview" id="toc-process-overview" class="nav-link" data-scroll-target="#process-overview">Process Overview</a></li>
+  <li><a href="#sources-of-support-for-synthesis" id="toc-sources-of-support-for-synthesis" class="nav-link" data-scroll-target="#sources-of-support-for-synthesis">Sources of Support for Synthesis</a></li>
+  <li><a href="#building-a-team" id="toc-building-a-team" class="nav-link" data-scroll-target="#building-a-team">Building a Team</a></li>
+  <li><a href="#making-a-communication-and-work-plan" id="toc-making-a-communication-and-work-plan" class="nav-link" data-scroll-target="#making-a-communication-and-work-plan">Making a Communication and Work Plan</a></li>
+  <li><a href="#establishing-a-project-management-plan" id="toc-establishing-a-project-management-plan" class="nav-link" data-scroll-target="#establishing-a-project-management-plan">Establishing a Project Management Plan</a>
+  <ul class="collapse">
+  <li><a href="#process-design-for-meetings" id="toc-process-design-for-meetings" class="nav-link" data-scroll-target="#process-design-for-meetings">Process Design for Meetings</a></li>
+  <li><a href="#establish-group-norms" id="toc-establish-group-norms" class="nav-link" data-scroll-target="#establish-group-norms">Establish Group Norms</a></li>
+  </ul></li>
+  <li><a href="#ensuring-equitable-access-to-participation" id="toc-ensuring-equitable-access-to-participation" class="nav-link" data-scroll-target="#ensuring-equitable-access-to-participation">Ensuring Equitable Access to Participation</a></li>
+  <li><a href="#benefits-of-enabling-full-participation" id="toc-benefits-of-enabling-full-participation" class="nav-link" data-scroll-target="#benefits-of-enabling-full-participation">Benefits of Enabling Full Participation</a></li>
+  <li><a href="#moving-from-debate-to-dialogue" id="toc-moving-from-debate-to-dialogue" class="nav-link" data-scroll-target="#moving-from-debate-to-dialogue">Moving from Debate to Dialogue</a></li>
+  <li><a href="#some-alternatives-to-conventional-meeting-structures" id="toc-some-alternatives-to-conventional-meeting-structures" class="nav-link" data-scroll-target="#some-alternatives-to-conventional-meeting-structures">Some Alternatives to Conventional Meeting Structures</a>
+  <ul class="collapse">
+  <li><a href="#tool-highlights-microstructures" id="toc-tool-highlights-microstructures" class="nav-link" data-scroll-target="#tool-highlights-microstructures">Tool Highlights: Microstructures</a></li>
+  </ul></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a>
+  <ul class="collapse">
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
+  <li><a href="#websites-and-other-tools" id="toc-websites-and-other-tools" class="nav-link" data-scroll-target="#websites-and-other-tools">Websites and other Tools</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Starting with Team Science</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>After completing this module, you will be able to:</p>
+<ul>
+<li><strong>Understand</strong> the power and benefits of synthesis</li>
+<li><strong>Identify</strong> funding sources for supporting synthesis</li>
+<li><strong>Have tools for</strong> establishing group norms and expectations</li>
+<li><strong>Evaluate</strong> strategies for group organization and project management</li>
+</ul>
+<!-- **Workshop Slides - *Under Construction***
+
+[Google Slides link](https://docs.google.com/presentation/d/1B9bcdyZzoiGw2QEc1uudJbKixXWs40vmRYk_qv9hR2w/edit#slide=id.p) -->
+</section>
+<section id="why-synthesis" class="level2">
+<h2 class="anchored" data-anchor-id="why-synthesis">Why Synthesis?</h2>
+<p><strong>Define Synthesis</strong></p>
+<p>Scientific research can be defined as “creative and systematic work undertaken in order to increase the stock of knowledge” (2015 Frascati Manual). To this basic definition of research, our definition of synthesis research adds <em>collaborative work</em>, and the <em>integration and analysis of a wide range of data sources</em>.</p>
+<p>This process–of bringing diverse expertise together to combine existing primary data–definitely has its challenges. Identifying and engaging the necessary combination of skills and experience is challenging. Scheduling meeting times can be difficult. Commitment to the process can be uneven. Nonetheless, virtually all who have experienced it find it to be a deeply rewarding experience. Why?</p>
+<div class="quarto-figure quarto-figure-center" style="float: right">
+<figure class="figure">
+<p><img src="images/LTER_Survey-2_benefit-importance.png" class="img-fluid figure-img" data-padding="10px" width="350"></p>
+<figcaption>The importance of various potential benefits of synthesis research to participants</figcaption>
+</figure>
+</div>
+<ul>
+<li>The products emerging from synthesis typically have higher impact (as defined by both academic and applied measures)</li>
+<li>The process allows researchers to access and incorporate skills that they don’t (yet) have themselves.</li>
+<li>Working groups help early career researchers build their science networks.</li>
+<li>Keep experienced researchers fresh and engaging with new ideas</li>
+<li>Builds on existing investments of the science community by re-using data</li>
+<li>Offers a way to involve individuals who can’t or don’t want to do fieldwork in original research and expands opportunity to less research-intensive institutions.</li>
+</ul>
+<section id="examples-of-recent-synthesis-products" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-recent-synthesis-products">Examples of Recent Synthesis Products</h3>
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/mod1_plant_repro.png" class="img-fluid" alt="spruce tree laden with comes" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/identifying-environmental-drivers-of-plant-reproduction-across-lter-sites/"><strong>Environmental drivers of plant reproduction</strong></a>: <strong>Community Synchrony in Seed Production is Associated with Trait Similarity and Climate Across North America.</strong> Ecology Letters, 2024.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/mod1_metacommunities.jpg" class="img-fluid" alt="meandering stream through wetlands and forests" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/a-synthesis-to-identify-how-metacommunity-dynamics-mediate-community-responses-to-disturbance-across-the-ecosystems-represented-in-the-lter-network/"><strong>Metacommunity dynamics mediate community responses to disturbance</strong></a>: <strong>The dual nature of metacommunity variability, Oikos, 2021</strong>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/mod1_sodah.png" class="img-fluid" alt="barley sprouts growing on deep organic soil" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/advancing-soil-organic-matter-research/"><strong>Soil organic matter: multi-scale observations, manipulations &amp; models</strong></a>: <strong>Dataset: SoDaH: the SOils DAta Harmonization database, an open-source synthesis of soil data from research networks, version 1.0., EDI 2020</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/mod1_synchrony.jpg" class="img-fluid quarto-figure quarto-figure-left" alt="A flower filled meadow in foothills" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/synthesizing-population-and-community-synchrony-to-understand-drivers-of-ecological-stability-across-lter-sites/"><strong>Population and Community Synchrony</strong></a>: The spatial synchrony of species richness and its implications for ecosystem stability. Ecology 2021.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/mod1_stream_cycling.jpg" class="img-fluid" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/global-patterns-in-stream-energy-and-nutrient-cycling/"><strong>Global Patterns in Stream Energy and Nutrient Cycling</strong></a>: Shifting stoichiometry: Long-term trends in stream-dissolved organic matter reveal altered C:N ratios due to history of atmospheric acid deposition, Global Change Biology, 2022.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/mod1_si_exports.jpg" class="img-fluid" alt="micrograph of diatoms" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/from-poles-to-tropics-a-multi-biome-synthesis-investigating-the-controls-on-river-si-exports/"><strong>Controls on River Silica Exports</strong></a> (<em>Combined data from more than 1000 watersheds on 6 continents.</em>): Climate, Hydrology, and Nutrients Control the Seasonality of Si Concentrations in Rivers. JGR Biosciences 2024</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/mod1_mcd.png" class="img-fluid" alt="fish, swimming among kelp" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/marine-consumer-nutrient-dynamics/"><strong>Marine consumer nutrient dynamics</strong></a>: Dataset: Estimates of nitrogen and phosphorus excretion rates in individual marine and estuarine animals ver 1. EDI 2024.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/mod1_fire-aridlands.jpg" class="img-fluid" alt="wildland fire silouatting a tree" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/fire-and-aridland-streams/"><strong>Fire and Aridland Streams</strong></a>: Persistent and lagged effects of fire on stream solutes linked to intermittent precipitation in arid lands. Biogeochemistry 2024</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/mod1_EMERGENT.png" class="img-fluid" alt="graphic of tree, microbes, fungi, and forest soils" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/ecological-metagenome-derived-reference-genomes-and-traits-emergent/"><strong>Ecological Metagenome- Derived Reference Genomes and Traits</strong></a>: From soil to sequence: filling the critical gap in genome-resolved metagenomics is essential to the future of soil microbial ecology, Environmental Microbiome, 2024</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/mod1_drought_effects.jpg" class="img-fluid" alt="dried, cracked soil crust" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/a-global-synthesis-of-multi-year-drought-effects-on-terrestrial-ecosystems/"><strong>Global Synthesis of Multi-year Drought Effects</strong></a> (<em>Integrated 100 grassland and shrubland sites across 6 continents</em>): Extreme drought impacts have been underestimated in grasslands and shrublands globally. PNAS 2024.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/mod1_c2e.png" class="img-fluid" alt="patchwork of growth effects in a matrix of treatments" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/#:~:text=Integrating%20plant%20community%20and%20ecosystem%20responses%20to%20chronic%20global%20change%20drivers"><strong>Integrating plant community and ecosystem responses to chronic global change drivers</strong></a>: Dataset: CoRRE Trait Data: A dataset of 17 categorical and continuous traits for 4079 grassland species worldwide, Scientific Data, 2024</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/mod1_biodiversity-productivity.jpg" class="img-fluid" alt="wildflowers in foreground with sun rising over forest in background" width="300"></td>
+<td style="text-align: left;"><a href="https://lternet.edu/working-groups/scaling-up-productivity-responses-to-changes-in-biodiversity/"><strong>Scaling-Up Productivity Responses to Changes in Biodiversity</strong></a>**: Biotic homogenization destabilizes ecosystem functioning by decreasing spatial asynchrony. Ecology 2021.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="identifying-a-synthesis-ready-question" class="level2">
+<h2 class="anchored" data-anchor-id="identifying-a-synthesis-ready-question">Identifying a Synthesis-Ready Question</h2>
+<p>Lots of questions are interesting, but not terribly well-suited for a synthesis approach. We’ve learned through experience that there are a few qualities that make some questions a better fit for a) combining data; and b) work by a group. The main qualities that we seek in synthesis projects include:</p>
+<ul>
+<li>Novel and interesting enough to keep you engaged for 2-3 years.</li>
+<li>Data already exist and you know (at least generally) where to find it</li>
+<li>Questions cover a large geographic area or data that aren’t normally collected or analyzed together</li>
+<li>Clearly framed, but flexible enough to allow adaptation through the process</li>
+<li>Outputs could include several kinds of products. As the project progresses, grad students will become postdocs, postdocs will get faculty positions. For the project to remain satisfying to all participants, people will need to be able to take a leadership role on different kinds of products.
+<ul>
+<li>Papers (including data papers, perspectives, gap analyses, as well as primary analyses)</li>
+<li>Symposia</li>
+<li>Datasets</li>
+<li>Analytical Packages</li>
+</ul></li>
+<li>Responsive to the funding call!</li>
+</ul>
+</section>
+<section id="process-overview" class="level2">
+<h2 class="anchored" data-anchor-id="process-overview">Process Overview</h2>
+<p>Typically, a group of researchers–or researchers and managers or community members–will plan a series of meetings over 2-3 years. The mix of in-person v. virtual meetings and work will vary across different groups and different funders, but the general pattern is similar.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/LTER-SWG-timeline.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<figcaption>LTER working group process</figcaption>
+</figure>
+</div>
+<p>Early meetings focus on narrowing the questions and deciding what data is needed and what analyses will be most useful. A period of data gathering and assembly comes next. The assembly of data almost always prompts a revision of the initial questions, as data rarely comes in exactly the form that researchers expected. This can be both the most frustrating and the most interesting part of the process as new hypotheses and models are floated and discussed. It is especially important to have the full participation of researchers familiar with different fields and ecosystems in this process.</p>
+<p>With tractable questions refined, the group will move into analysis mode. Often, a few individuals will do most of the data wrangling and coding, but will need continuous input on analytical decisions. In our experience, GitHub issues is one very good tool for facilitating and recording these decisions. But the “best” tool will be the one that most members of the team are most comfortable with.</p>
+<p>Later meetings will focus on developing manuscripts and/or application-related products such as white papers and decision support tools.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Getting Involved in Synthesis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Often, early career researchers will be excited about the idea of synthesis but be unsure how to connect with existing or nascent synthesis efforts. Here are a few ideas for how to make yourself available and valuable to synthesis groups.:</p>
+<ul>
+<li>Make it known you want to be involved in synthesis
+<ul>
+<li>Let your advisor know</li>
+<li>Share your enthusiasm</li>
+</ul></li>
+<li>Skill building:
+<ul>
+<li>Synthesis Skills for Early Career Researchers: SSECR</li>
+<li>Data Carpentries</li>
+<li>ESIIL: innovation summit, hackathons</li>
+<li>Environmental Data Science Summit</li>
+</ul></li>
+<li>Build your community
+<ul>
+<li>Ask questions at meetings</li>
+<li>Initiate conversations</li>
+</ul></li>
+<li><em>Start your own!</em></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="sources-of-support-for-synthesis" class="level2">
+<h2 class="anchored" data-anchor-id="sources-of-support-for-synthesis">Sources of Support for Synthesis</h2>
+<p>While it is certainly possible to conduct synthesis with no external support, a bit of funding will allow your group to travel to meet up in person and can, in some cases, provide salary support for postdocs, grad students or or assistance with analysis.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset nav-pills">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href=""><strong>Discussion Question</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Some Ideas</a></li></ul>
+<div class="tab-content nav-pills">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<blockquote class="blockquote">
+<p>What funding sources support synthesis work?</p>
+</blockquote>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>Sources of Funding and Support</strong></p>
+<p><strong>Synthesis Centers</strong></p>
+<ul>
+<li><a href="https://esiil.org/">Environmental Science Innovation and Inclusion Laboratory</a> (ESIIL)</li>
+<li><a href="https://www.nceas.ucsb.edu/calls-for-proposals">National Center for Ecological Analysis and Synthesis</a> (NCEAS)
+<ul>
+<li>Morpho Program</li>
+</ul></li>
+<li><a href="https://www.usgs.gov/centers/john-wesley-powell-center-for-analysis-and-synthesis/proposal-process">USGS Powell Center</a></li>
+<li><a href="https://www.idiv.de/en/sdiv.html">S-div</a></li>
+<li><a href="https://www.ciee-icee.ca/">Canadian Institute of Ecology and Evolution</a> (CIEE)</li>
+</ul>
+<p><strong>Societies</strong></p>
+<ul>
+<li><a href="https://www.newphytologist.org/workshops">New Phytologist Workshops</a></li>
+<li><a href="https://www.grc.org/about/proposing-a-new-gordon-conference/">Gordon Research Conferences</a></li>
+<li>Chapman Conferences</li>
+<li><a href="https://www.britishecologicalsociety.org/funding/synthesis-grants/">British Ecological Society</a>
+<ul>
+<li>one-third of participants from developing world</li>
+</ul></li>
+</ul>
+<p><strong>NSF Programs</strong></p>
+<ul>
+<li><a href="https://www.nsf.gov/pubs/2024/nsf24081/nsf24081.jsp">ULTRA-data Dear Colleague letter</a></li>
+<li>NSF Core Programs, e.g.&nbsp;<a href="https://new.nsf.gov/funding/opportunities/division-environmental-biology-deb">Division of Environmental Biology</a>, and others: search for “synthesis activities”, “synthesis projects”</li>
+<li>NSF workshops</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="building-a-team" class="level2">
+<h2 class="anchored" data-anchor-id="building-a-team">Building a Team</h2>
+<p><img src="images/mod1_team.png" class="img-fluid" style="float: right;width:40.0%" data-padding="20px" alt="The US olympic gymnastics team in a victory embrace"> Research from organizational development (Horowitz and Horowitz 2007, Agrawal and Wooley, 2018) and the science of team science (Cheruvelil et al.&nbsp;2014) finds that teams combining members form multiple fields, identities, backgrounds, and functional styles are more creative and produce better results. There’s a big caveat, though. They only get those positive results when the team adopts a <strong>learning mindset</strong> and <strong>the collaboration process allows each participant to contribute in the way that works for them.</strong> (van Knippenberg and Hoever 2017)</p>
+<p><strong>Diverse Teams Yield:</strong></p>
+<ul>
+<li>More creative and innovative approaches</li>
+<li>Avoiding ‘groupthink’</li>
+<li>Better cognitive elaboration; more complex thinking</li>
+<li>Checked assumptions</li>
+<li>Diversity broadens group scanning ability and consideration of alternative solutions</li>
+<li>Diverse groups achieve better task completion and more efficient use of resources</li>
+<li>Solutions generated by diverse groups have more legitimacy and salience</li>
+</ul>
+<div class="tabset-margin-container"></div><div class="panel-tabset nav-pills">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href=""><strong>Discussion Question</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href=""><strong>The Leadership Team</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href=""><strong>The Working Group</strong></a></li></ul>
+<div class="tab-content nav-pills">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<blockquote class="blockquote">
+<p>What are some types of difference you might seek out among group leaders and members?</p>
+</blockquote>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>The composition of the leadership team will affect the success of the project and who you will be able to recruit to the larger group. Look for:</p>
+<ul>
+<li>Different (and complementary) areas of expertise (ecologists, hydrologists, computer scientists, developmental biologists, engineers, etc.)</li>
+<li>Research approach (modelers, empiricists, humanists, community-engaged researchers)</li>
+<li>Complementary professional networks</li>
+<li>Facilitation and project management skills</li>
+<li>Emotional Intelligence</li>
+<li>Study system</li>
+</ul>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>In our experience at NCEAS and the LTER Network Office, we’ve found teams of up to 10 to 15 people to be optimal for synthesis work. As individuals, we all have strengths and weaknesses. The beauty of working in teams is that you can invite people who offset your own weaknesses and who bring strengths you don’t have. Often, you’ll have a few core team members who have generated a synthesis idea, but then you’ll want to take a clear-eyed look at what additional skills and qualities to invite. When you do so, be sure to consider:</p>
+<ul>
+<li>Skills, Aptitudes, and Communication Styles
+<ul>
+<li>Look for a mix of empiricists, theorists, and modellers</li>
+<li>Big-picture thinkers, organizers, task-oriented do-ers</li>
+<li>Deep thinkers and risk-takers</li>
+<li>At least some skilled coders</li>
+</ul></li>
+<li>Career stage
+<ul>
+<li>Senior investigators connect the team to existing literature and fields of study, connect to a broad network of experienced researchers, and have good knowledge of resources, but often have a very limited amount of time to devote to discussion and analyses.</li>
+<li>Junior team members often bring a fresh perspective, familiarity with newer literature, strong coding skills, and time to devote to the project.</li>
+</ul></li>
+<li>Emotional intelligence
+<ul>
+<li>Research shows (Aggarwal and Woolley, 2018) that the bump in creativity seen in mixed-gender teams is typically due to an increase in emotional intelligence and attention to team dynamics. Include at least a few people with a process orientation and strong people skills.</li>
+</ul></li>
+<li>Power dynamics
+<ul>
+<li>You won’t be able to anticipate all of the issues related to power dynamics that can arise, but keep them front of mind as you assemble a team.</li>
+</ul></li>
+<li>Remember that participation in synthesis represents a significant career opportunity.
+<ul>
+<li>Be mindful that such career-building opportunities have not been fairly distributed.</li>
+<li>Be intentional about seeking out people who may not be part of your typical circles (including gender, ethnicity, career stage, family status, (dis)abilities, etc.).</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="making-a-communication-and-work-plan" class="level2">
+<h2 class="anchored" data-anchor-id="making-a-communication-and-work-plan">Making a Communication and Work Plan</h2>
+<p>Once you’ve assembled a team, there are several steps you can take to elicit the best work out of the combination of people you’ve assembled. Starting as early as the invitation to join the team, encourage participants to think about (and communicate) what they have to contribute, what they hope to get out of participating, and to be clear about the level of commitment they can make.</p>
+<p>Good teams are both chosen and <strong>made.</strong> Diversity on teams uncovers novel approaches, perspectives, and insights, but it can also slow the pace and reveal misunderstandings and unexamined assumptions. As a synthesis team leader (and even as a participant), there are many things you can do to create opportunities for everyone to contribute their best thinking, learn from one another, and feel heard and respected.</p>
+<p><strong>As the group gets started</strong></p>
+<ul>
+<li>Create a shared vision for your group
+<ul>
+<li>Make sure everyone starts on the same footing with a brief overview of the context for the group and the questions you’re starting with</li>
+</ul></li>
+<li>Co-develop <a href="http://localhost:5277/module1.html#establish-group-norms">group norms</a>. It builds ownership of shared norms.</li>
+<li>Conduct a “pre-mortem” to talk about worries and visions for a healthy group dynamic</li>
+<li><strong>Develop an authorship policy</strong>
+<ul>
+<li>What contributions warrant <a href="https://docs.google.com/spreadsheets/d/1gDVFEKrw2hSc_x433n1B0TC1h5mk9q7Gi141Nq2nf4E/edit?usp=sharing">authorship on a paper</a>? Collecting data? Contributing data? Being part of a discussion that sparked the idea? Developing figures?</li>
+<li>But also, how do group members learn that a paper is being developed?
+<ul>
+<li>Can all group members opt-in to any paper?</li>
+<li>Or is everyone an author until they opt out?</li>
+<li>Network and <a href="https://lter.github.io/som-website/authorship.html">group authorship policies</a> are more complex than tallying contributions to a single paper.</li>
+</ul></li>
+</ul></li>
+<li>Recognize who you are as a group, culturally, and any power dynamics that might entail
+<ul>
+<li>Sometimes, simply articulating the potential for oppressive power dynamics can give group members the confidence to assert themselves</li>
+</ul></li>
+</ul>
+<p><strong>Throughout the process</strong></p>
+<ul>
+<li>Get to know each other
+<ul>
+<li>Use creative icebreakers to break a pattern of silence</li>
+<li>Invest in “social” time. It’s often when the best ideas surface.</li>
+</ul></li>
+<li>Value and accommodate various styles of contribution
+<ul>
+<li>Fast and slow thinkers,</li>
+<li>Visual, auditory and kinesthetic learners,</li>
+<li>Synchronous and asynchronous contributions</li>
+</ul></li>
+<li>Practice “cultural norming” by educating participants on systemic and implicit biases and ways to counter them</li>
+</ul>
+<p><strong>At intervals</strong></p>
+<ul>
+<li>When you find yourself questioning whether a practice or activity is still valuable, ask each member for a quick read on whether the group should <strong>“Start, Stop, or Continue”</strong> the activity</li>
+</ul>
+</section>
+<section id="establishing-a-project-management-plan" class="level2">
+<h2 class="anchored" data-anchor-id="establishing-a-project-management-plan">Establishing a Project Management Plan</h2>
+<p>As your group gets started working together, it it easy to assume that you will use the tools and planning strategies that the PI or project organizer is used to using. They will devote a lot of time to the project, so their preference will carry weight. But also try to survey the group at an early meeting so that you know which platforms other group members use. Make decisions based on balancing platforms that will allow maximum group participation with those that will make the work easiest for those likely to be doing the work.</p>
+<p><strong>Project Kickoff Guide from NCEAS. <a href="https://www.nceas.ucsb.edu/working-group-cheat-sheets">Find the series</a> on the NCEAS website</strong></p>
+<p><img src="images/mod1_proj_kickoff_1.png" class="img-fluid" style="float: center;width:90.0%" data-padding="20px" alt="project kickoff cheatsheet from NCEAS"></p>
+<p><img src="images/mod1_proj_kickoff_2.png" class="img-fluid" style="float: center;width:90.0%" data-padding="20px" alt="project kickoff cheatsheet from NCEAS"></p>
+<section id="process-design-for-meetings" class="level3">
+<h3 class="anchored" data-anchor-id="process-design-for-meetings">Process Design for Meetings</h3>
+<p>Good meeting design starts with understanding your purpose and objectives, as well as your participants. Once you understand why you need to meet (your overarching goal) and what you want to accomplish (the specific outcomes you are driving toward), you can turn to how you will accomplish your purpose (i.e.&nbsp;the agenda of activities, timings, and tech) and who will play what roles. You want participants to know their role and how to be at their best and that often requires adequate time to prepare. Try to construct meeting agendas based on goals and be sure to share them with participants well ahead of the scheduled meeting time.</p>
+<div class="quarto-figure quarto-figure-center" style="float: center">
+<figure class="figure">
+<p><img src="images/mod1_process_design.png" class="img-fluid figure-img" data-padding="10px" width="600"></p>
+<figcaption>Questions to help set purpose-driven agendas</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Time Commitments">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Time Commitments
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We all misjudge our availability once in a while, but consistently failing to deliver on commitments disrupts others’ work plans and is a major source of group dissatisfaction. Get buy-in for commitments and plan for both reminders and accountability.</p>
+</div>
+</div>
+</section>
+<section id="establish-group-norms" class="level3">
+<h3 class="anchored" data-anchor-id="establish-group-norms">Establish Group Norms</h3>
+<p><img src="images/mod1_group_norms.png" class="img-fluid" style="float: right" data-padding="10px" alt="easel and flipchart with a list of group norms such as: " width="300">There are many approaches to establishing group norms, but a shared process that helps create ownership and buy-in is one key to a smoothly-functioning working group.</p>
+<p>The process can be as simple as taking 15 minutes to ask the group about their shared (and diverging) values and what those imply about how the group should function. The best choice for your group will depend on the mix of participants, the nature of the content, and the duration of your collaboration.</p>
+<section id="example-processes-for-collaboratively-setting-group-norms" class="level4">
+<h4 class="anchored" data-anchor-id="example-processes-for-collaboratively-setting-group-norms">Example processes for collaboratively setting group norms</h4>
+<div class="callout callout-style-default callout-note callout-titled" title="Simplest">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Simplest
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>From Biodiversity on a Changing Planet working group (PI: Peter Adler)</strong></p>
+<p>This version is simplest and most appropriate when your group has some shared history and mainly needs a reminder to attend to their share values. Even so, be sure to leave enough time and space for participants to add new ideas or concerns. Offer some basic starting point values and norms, then ask the group to add any that haven’t been raised yet. Record the results and return to them at the start of meetings.</p>
+<p><strong>Group Values</strong></p>
+<ul>
+<li>Inclusion</li>
+<li>Creative Thinking</li>
+<li>Teamwork</li>
+<li>Accountability</li>
+<li>Fun</li>
+</ul>
+<p>What else?</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="More directive">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>More directive
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>From Response Diversity Network Workshop</strong></p>
+<p>This version is a little more involved and directive with respect to <em>behaviors</em> as well as values. Edit, add, or delete suggestions depending on any concerns in your group.</p>
+<p><strong>Community Rules for Inclusive and Productive Discussions</strong></p>
+<ul>
+<li>We are all responsible for cultivating a respectful and inclusive atmosphere to benefit from our diverse community of participants.</li>
+<li>Listen with curiosity and resilience, not judgement.</li>
+<li>Assume the best of intentions.</li>
+<li>Allow others to participate and avoid dominating the conversation.</li>
+<li>Accept/meet people where they are.</li>
+<li>Bring a spirit of generosity (for yourself and others).</li>
+<li>Be kind to yourself.</li>
+<li>Support learning.</li>
+<li>Be attentive to power and privilege.</li>
+<li>Enjoy yourself!</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="For Complex or sensitive situations">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>For Complex or sensitive situations
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>From Entering Mentoring (Center for Improvement of Mentored Research Experiences (CIMER))</strong></p>
+<p>For longer collaborations with more challenging power dynamics, it may be worth engaging in a slightly more involved process. In workshops run by the Center for Improved Mentoring of Experiences in Research (CIMER), a facilitator presents a set of group behaviors categorized as group-oriented or self-oriented.</p>
+<p align="center">
+</p><p><img src="images/supporting-group-norms.png" alt="table of group-oriented and self-oriented behaviors" width="80%"></p>
+<p></p>
+<p>Break onto small groups and discuss the following questions:</p>
+<ol type="1">
+<li>What are some strategies to maximize group-oriented &amp; minimize self-oriented behaviors?</li>
+<li>Are there special considerations for an online space? How can group dynamics be different in an online vs.&nbsp;face-to-face environment?</li>
+<li>How can we leverage our knowledge of group behaviors as we work together during this workshop?</li>
+</ol>
+<p>The exercise presents an opportunity for self-reflection and for participants to commit to (and ask for help in) curbing their unhelpful behaviors. After all, we all have them!</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="ensuring-equitable-access-to-participation" class="level2">
+<h2 class="anchored" data-anchor-id="ensuring-equitable-access-to-participation">Ensuring Equitable Access to Participation</h2>
+<p>To tap diverse perspectives and catalyze productivity and creative problem-solving, we need to design meetings (and projects) so <u>everyone</u> can participate fully, rather than just a few. When tackling complex challenges, voices from the edge are often critical to uncovering new insights and approaches. Democratizing participation doesn’t have to be all about controlling the dominant voices in a group; with thoughtful planning and some simple tools, you can design any conversation so that everyone can contribute.</p>
+<p>A few simple techniques can help:</p>
+<ol type="1">
+<li>Mix up the format, e.g., combining silent reflection, round robin, breakout groups, plenary, and/or “liberating structures” (more on these below)</li>
+<li>Offer different channels for information sharing - verbal, nonverbal, written, visual, informal, formal</li>
+<li>Track and stack who wants to speak</li>
+<li>Invite, amplify, and credit “quieter” voices</li>
+<li>Use active listening - reflect back what you think you are hearing in simple terms and check your assumptions regularly</li>
+</ol>
+<p>Be creative and empathetic when you design your agenda. Think about your participants and what is going to help <em>all of them</em> participate fully and creatively. Beyond the thinking preferences, you may also want to consider these other dimensions of diversity when planning your process design and facilitation:</p>
+<ul>
+<li>Introverts vs.&nbsp;extroverts</li>
+<li>Visual, auditory and kinesthetic learners</li>
+<li>Disciplinary diversity</li>
+<li>Career stage</li>
+<li>Language</li>
+<li>Time zone (for geographically distributed teams)</li>
+</ul>
+</section>
+<section id="benefits-of-enabling-full-participation" class="level2">
+<h2 class="anchored" data-anchor-id="benefits-of-enabling-full-participation">Benefits of Enabling Full Participation</h2>
+<p>Creating the conditions for all team members to feel welcome and able to fully participate advances diversity, equity, and inclusion in science. As we learned in the <a href="https://lter.github.io/ssecr/mod_team-sci.html">Team Science Practices module</a> it also has instrumental benefits, as diverse teams have been shown to be more productive and to produce higher impact results than less diverse teams. In part, that productivity can be attributed to the ability of the group to elicit and work with novel ideas and approaches, allowing more innovative analysis and problem solving.</p>
+<p>Facilitating equitable participation also helps to unleash the full capacity of a team to get things done. Too often, potential contributors opt out of offering their skills and talents to a collaborative endeavor because they feel undervalued or unclear on how to contribute. It might not feel worth their time to try to assert an idea or opinion when it doesn’t feel welcome. A process that creates opportunities for everyone to engage and feel included can help avoid this situation.</p>
+<p>Finally, when the time comes for decision making, effective facilitation can ensure that the full range of questions, opinions, and concerns has been surfaced and weighed before the group makes a decision. This is critical. If you move forward with surface-level agreement, but without true alignment, commitment to the decision is likely to erode over time.</p>
+<p align="center">
+<img src="images/figure_agreement-alignment.png" alt="Figure of two right-facing arrows filled with smaller arrows. The small arrows filling the large 'agreement' arrow mostly face right but there is a lot of variation. The small arrows filling the large 'alignment' arrow all face the same way as the larger arrow" width="50%">
+</p>
+</section>
+<section id="moving-from-debate-to-dialogue" class="level2">
+<h2 class="anchored" data-anchor-id="moving-from-debate-to-dialogue">Moving from Debate to Dialogue</h2>
+<p>Dialogue is a collaborative effort to understand and learn from each other. Debate, on the other hand, is an oppositional effort to convince the other side that you are right. Inclusive facilitation aims to support dialogue and skillful discussion. Dialogue allows groups to recognize the limits on their own and others’ individual perspectives and to strive for more coherent thought. Dialogue becomes a container for collective thinking and exploration - a process that can take teams in directions not imagined or planned. In dialogue, all views are treated as equally valid, and different views are presented as a means toward discovering a new view. Participants listen to understand one another, not to win. Complex issues are explored and shared meaning is created. When it comes time to make a decision, skillful discussion is required. Both skillful discussion and dialogue are critical to the collaborative process, and the more artfully a group can move between these two forms of discourse (and out of less productive debate and polite discussion) according to what is needed, the more effective the group will be.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Debate</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Polite Discussion</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Skillful Discussion</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Dialogue</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<ul>
+<li>Intent to win</li>
+<li>Listening to be understood</li>
+<li>Power struggles</li>
+<li>Competition “turf war”</li>
+<li>Loudest wins</li>
+<li>Ideas judged by who says them</li>
+</ul>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<ul>
+<li>Intent to protect self, others</li>
+<li>Surface friendly</li>
+<li>Ideas judged by friendships/relationships</li>
+<li>Impulsive, based on feeling, low data</li>
+<li>Influence occurs outside the meeting</li>
+<li>Limited active or empathetic listening</li>
+</ul>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<ul>
+<li>Intent is closure; informed decisions</li>
+<li>Balance influence and inquiry</li>
+<li>Focus on issues not personalities</li>
+<li>Reasoning is made explicit</li>
+<li>Ask about assumptions without criticizing</li>
+<li>Influence is based in logic and data</li>
+</ul>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<ul>
+<li>Intent to build mutual understanding</li>
+<li>Listening to understand thoughts and feelings</li>
+<li>Able to suspend assumptions</li>
+<li>Energy used to find the right questions</li>
+<li>“Container” for collective thinking</li>
+<li>Influence is found in shared meaning created by groups</li>
+</ul>
+</div>
+</div>
+</div>
+<p>David Kantor’s Four Player Model is a helpful tool for diagnosing “stuck” patterns of communication, (including entrenched debate and polite discussion), and interceding to help shift to a more productive pattern.</p>
+<p>Based on over 30 years of observation and study of face-to-face communication in many groups, Kantor developed the Four Player Model and a broader theory of Structural Dynamics. The model identifies four actions of effective communication:</p>
+<ul>
+<li><strong>Move</strong> - Initiate an idea, action, or direction for conversation</li>
+<li><strong>Follow</strong> - Continue the direction or flow of the conversation; support a move, either by agreeing or asking for more information</li>
+<li><strong>Oppose</strong> - Challenge or disagree with the idea, action, or suggested direction</li>
+<li><strong>Bystand</strong> - Notice and articulate what’s happening in the conversation, add a neutral perspective</li>
+</ul>
+<p align="center">
+<img src="images/figure_four-player-model.png" alt="Figure of four modes of communication, arrayed on two axes - Move versus Oppose on the axis of Advocacy and Follow vs. Bystand on the axis of Inquiry." width="95%">
+</p>
+<p>Each action in a group conversation can be coded into one of these four action modes. Most of us have one of these modes that we feel most comfortable in and tend to default to in a group. The most effective conversations involve good listening and the skillful use of all four modes. Common “stuck” patterns emerge when groups are not deploying all four actions.</p>
+<p align="center">
+<img src="images/figure_stuck-communication-patterns.png" alt="Four common patterns of 'stuck' communication: Serial Moves, Polite Discussion, Point-Counterpoint Debate, and Covert Opposition." width="95%">
+</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Serial Moves</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">What to Do</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>Lots of idea generation; may feel like a barrage; no clear thread, decision, or follow through</p>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>Any of the other modes can help here, since move is the only mode being engaged.</p>
+<p>Add a <strong>follow</strong> to give momentum to a particular move and steer the conversation in that direction, e.g., “Can we go back to the idea that Jose put on the table? That felt like a topic that could really use our attention. Shall we focus there?”</p>
+<p>Offer an effective <strong>oppose</strong> - “We’ve heard a lot of different ideas. I’d like to focus on the one Amelia laid out. I’m interested in the research question, but I don’t think machine learning is going to be the most productive approach. Can we dig in to this one?”</p>
+<p>Use a <strong>bystand</strong> to bring awareness to and disrupt the dynamic - “Hey gang, we’re 20 minutes into our call and we’ve put a lot of different topics on the table. Where do we want to focus ourselves so we can walk away with some clear next steps?”</p>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Polite Discussion</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">What to Do</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<p>Moves are followed with little discussion or resistance; also known as Courteous Compliance</p>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<p>Prompt an effective <strong>oppose</strong>:</p>
+<ul>
+<li>Who sees it differently?</li>
+<li>What’s at risk here?</li>
+<li>What other angles should we consider?</li>
+</ul>
+<p>Invite a <strong>bystand</strong>:</p>
+<ul>
+<li>Where is the group right now?</li>
+<li>What are you noticing?</li>
+<li>Is there an elephant in the room that needs to be named?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Point-Counterpoint / Debate</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">What to Do</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<p>Individuals are locked in a back and forth where each move is met with resistance / opposition</p>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<p>Invite a <strong>follow</strong>:</p>
+<ul>
+<li>What do you like about the proposal on the table?</li>
+<li>What do you agree with that we could build upon?</li>
+</ul>
+<p>Coach for a more effective <strong>oppose</strong> by inviting those who have been opposing to identify some aspect of the idea they do agree with (even if only 2%), in addition to the specific aspects they object to.</p>
+<p>Invite a <strong>bystand</strong>:</p>
+<ul>
+<li>In addition to the two viewpoints on the table, I’d love to hear from some other perspectives.</li>
+<li>What are you noticing?</li>
+<li>What might we be missing?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true" href="">Covert Opposition</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false" href="">What to Do</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<p>On the surface, moves are followed, and the conversation appears harmonious, but below the surface, people have unspoken reservations. Opposition tends to be expressed outside the bounds of the conversation or harbored as resentment.</p>
+<p>Uneven power dynamics are often behind this pattern - group members defer to the moves of those with more power or seniority.</p>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<p>Invite those with more power to experiment with <strong>following</strong> or <strong>bystanding</strong> to open up space for other players to make a <strong>move</strong>.</p>
+<p>Prompt a transparent <strong>oppose</strong>:</p>
+<ul>
+<li>Who sees it differently?</li>
+<li>What’s at risk here?</li>
+<li>Are there some cons to the proposed idea?</li>
+</ul>
+<p>If others aren’t comfortable, you can offer an <strong>oppose</strong>, e.g., by suggesting the limits of the proposed <strong>move</strong> be tested across different scenarios.</p>
+<p>Offer a <strong>bystand</strong>, e.g., “I want to offer a reflection from another team I was part of. On that team, we kept having meetings where it seemed like everyone was in agreement, but then we would leave, and over and over again there would be little follow through and more than a little grousing. People’s real opinions were only coming out in side conversations outside of the meeting. We lost a lot of time and forward momentum because people didn’t feel like they could air their concerns in the larger group. Do you see that happening here? Does anyone have a suggestion for how to make this a safer space to critically discuss ideas?”</p>
+</div>
+</div>
+</div>
+</section>
+<section id="some-alternatives-to-conventional-meeting-structures" class="level2">
+<h2 class="anchored" data-anchor-id="some-alternatives-to-conventional-meeting-structures">Some Alternatives to Conventional Meeting Structures</h2>
+<p>Differences in thinking and learning styles, disciplinary background, power, and other dimensions of diversity mean that there’s no such thing as a one-size-fits-all approach for participatory processes. Nonetheless, we tend to default to a small set of traditional ways of sharing information and engaging people when we meet. These conventional structures are often either too limiting (presentations, status reports, and managed discussions) or too free-form and disorganized (open discussions and brainstorms) to effectively tap the wisdom of the group (Lipmanowicz and McCandless, 2014). To support the engagement of all participants, we need to break out of those traditional ways of meeting.</p>
+<p>Books and websites like <em>Liberating Structures</em>, <em>Gamestorming</em>, and the <em>Facilitator’s Guide to Participatory Decision Making</em> offer dozens of alternative group processes (see <a href="#websites">Resources</a>). Known as microstructures or knowledge games, these simple, fun activities are designed to include everyone, distribute control, and unleash creativity. One or more activities can be matched to your intended outcomes and arranged in a sequence to advance the team toward your overall goal. Liberating Structures offers a <a href="https://www.liberatingstructures.com/matching-matrix">matching matrix</a> to help you identify microstructures that could fit your needs and an app you can use to browse and assemble strings of activities. <a href="https://gamestorming.com/">Gamestorming</a> organizes their activities into categories (e.g.&nbsp;games for opening, games for decision-making) for exploration.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Small Group Discussion">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Small Group Discussion
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<section id="a-closer-look-at-meeting-microstructures" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="a-closer-look-at-meeting-microstructures">A closer look at meeting microstructures</h3>
+<ul>
+<li>Break into small groups of 3-4 people</li>
+<li>Each individual in the group chooses a different one of the microstructures in the table below and spends ~ 3 minutes reading it and thinking about what situations they have encountered that would have benefited from using it.</li>
+<li>Each group member summarizes how the structure works and what they found interesting or useful about it (5 min total)</li>
+</ul>
+</section>
+</div>
+</div>
+<p>Here are a few microstructures that work well for small group virtual meetings. They also work for larger groups and in person settings:</p>
+<section id="tool-highlights-microstructures" class="level3">
+<h3 class="anchored" data-anchor-id="tool-highlights-microstructures">Tool Highlights: Microstructures</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Microstructure</strong></th>
+<th style="text-align: center;"><strong>Thinking Preference</strong></th>
+<th style="text-align: left;"><strong>Purpose</strong></th>
+<th style="text-align: left;"><strong>How It Works</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Icebreaker / check in</td>
+<td style="text-align: center;"><strong><span style="color:red">Relational</span></strong></td>
+<td style="text-align: left;">Connect as a team, start on a positive, human note</td>
+<td style="text-align: left;">Many versions exist, e.g., one word to describe how you are arriving; one thing you are feeling grateful for today; coolest thing you’ve learned lately; describe where you grew up without using any place names, etc.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Round robin / go around</td>
+<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
+<td style="text-align: left;">Hear from everyone</td>
+<td style="text-align: left;">Everyone answers the same prompt. Alternatives to going in order: each speaker calls on the next person after they have shared - keeping track of who has / hasn’t spoken keeps people paying attention; popcorn-style - people share in the order that they feel moved to speak</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.liberatingstructures.com/1-1-2-4-all/">1,2,4,all</a></td>
+<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong>, <strong><span style="color:gold">Experimental</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
+<td style="text-align: left;">Engage everyone in generating questions, ideas, and suggestions</td>
+<td style="text-align: left;">Individual reflection; Pair share; Two pairs combine and share as a group of 4; Small groups share highlights with whole group</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.liberatingstructures.com/14-min-specs/">Min specs</a></td>
+<td style="text-align: center;"><strong><span style="color:gold">Experimental</span></strong></td>
+<td style="text-align: left;">Specify simple rules the group must follow to achieve your purpose</td>
+<td style="text-align: left;">1,2,4,all format; Individuals brainstorm things the group must do or must not do to achieve its purpose; Share in pairs or small groups; Pare the list down to the minimum set of rules you could follow and still achieve the purpose</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://gamestorming.com/?s=affinity+map">Affinity Map</a></td>
+<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
+<td style="text-align: left;">Surface ideas, detect patterns, and analyze</td>
+<td style="text-align: left;">Brainstorm ideas using sticky notes on a wall or virtual whiteboard; Cluster into categories; If useful, prioritize within categories</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://gamestorming.com/brainwriting/">Brainwriting</a></td>
+<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong>, <strong><span style="color:gold">Experimental</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
+<td style="text-align: left;">Surface and elaborate ideas</td>
+<td style="text-align: left;">(1) Brainstorm ideas in a google doc or virtual whiteboard (or on index cards in person); (2) Read and add to each other’s ideas; (3) Discuss</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.liberatingstructures.com/9-what-so-what-now-what-w/">What, So What, Now What</a></td>
+<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong>, <strong><span style="color:gold">Experimental</span></strong></td>
+<td style="text-align: left;">Make sense of past progress or experiences and decide on future actions</td>
+<td style="text-align: left;">What - As a group, compile the facts and observations relevant to the context; So What - Reflect on the facts and their implications, identify patterns, generate hypotheses; Now What - Draw conclusions - What actions make sense?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://gamestorming.com/five-fingered-consensus/">Fist to Five</a> / Gradient of Agreement</td>
+<td style="text-align: center;"><strong><span style="color:green">Practical</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
+<td style="text-align: left;">Assess degree of consensus; seek closure</td>
+<td style="text-align: left;">Use when ready to close a discussion or make a decision; Invite participants to rate their level of agreement with a proposal on a scale of 0-5; Five fingers means “absolute, total agreement or support” and a fist means “complete opposition”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Polling</td>
+<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong></td>
+<td style="text-align: left;">Rank alternatives</td>
+<td style="text-align: left;">Before you start - clarify how you will use the results - are you gathering information or taking a vote to make a decision?; Decide how many votes per person; In person - use sticky dots; Virtually - use +1s in a google doc or a digital polling tool (e.g., Zoom, Mural, slido)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Feasibility-Impact Matrix (see figure below)</td>
+<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong>, <strong><span style="color:gold">Experimental</span></strong></td>
+<td style="text-align: left;">Compare alternatives</td>
+<td style="text-align: left;">Discuss and agree on definitions for two criteria for evaluating ideas: feasibility of implementation and impact potential; Rate each idea against these two axes and map onto 2x2 grid</td>
+</tr>
+</tbody>
+</table>
+<p align="center">
+<img src="images/mod1_project-impact-vs-feasibility.png" alt="Graph of impact versus feasibility where both axes range from low to high and the plot area is divided into four equal sections" width="70%">
+</p>
+</section>
+</section>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<p>Some sources of data–such as modern remote sensing products, NEON data, and census data–have very clear, explicit ways to access and download them or work with them in the cloud. But the most interesting synthesis questions often involve combining such “big” data with other data sources that may have been collected manually, by a variety of methods and different technicians, over decades.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true" href=""><strong>Discussion Question</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false" href=""><strong>A Few Ideas</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
+<blockquote class="blockquote">
+<p><strong>What kinds of data sources might you consider including in a synthesis project, in addition to your own or others’ field data?</strong></p>
+</blockquote>
+</div>
+<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
+<ul>
+<li><a href="https://www.dataone.org/">DataONE</a></li>
+<li><a href="https://edirepository.org/">Environmental Data Initiative</a> (EDI)</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/nuccore/">GenBank (NCBI)</a></li>
+<li><a href="https://www.neonscience.org/data">National Ecological Observatory Network</a> (NEON)</li>
+<li><a href="https://www.usgs.gov/products/data">US Geological Survey Data</a></li>
+<li><a href="https://www.gbif.org/">Global Biodiversity Information Facility</a> (GBIF)</li>
+<li><a href="https://data.nasa.gov/">NASA Remote Sensing Data</a></li>
+<li><a href="https://www.nps.gov/subjects/science/science-data.htm">US Park Service</a></li>
+<li><a href="https://fluxnet.org/sites/site-list-and-pages/">FluxNet</a></li>
+<li><a href="https://phenocam.nau.edu/webcam/tools/">Phenocam network</a></li>
+<li><a href="https://www.inaturalist.org/pages/how+can+i+use+it">iNaturalist</a></li>
+<li><a href="https://science.ebird.org/en/use-ebird-data">eBird</a></li>
+<li><a href="https://www.census.gov/data.html">Census data</a></li>
+<li>Data extracted from papers</li>
+<li>Scraping social media</li>
+<li>Text analysis</li>
+<li>….</li>
+</ul>
+</div>
+</div>
+</div>
+<p><strong>Data Use Principles</strong></p>
+<p>There are a few ethical and practical guidelines that will save you a lot of trouble if you can adhere to them from the start of a project.</p>
+<ul>
+<li>Data sources should always be cited</li>
+<li>Keep track of your data sources (sources, permissions, notes, related metadata, what’s included)</li>
+<li>Keep the data that everyone is using in one place (single source of truth)</li>
+<li>Communicate with data creators whenever possible
+<ul>
+<li>This doesn’t need to be onerous and it can uncover issues and opportunities associated with data sources.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Sample data author outreach email for public dataset">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Sample data author outreach email for public dataset
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>Dear Dr.&nbsp;Smith,</p>
+<p>I am working on a synthesis of soil inverbrate diversity across North America and would like to include your dataset titled “xxx” (doi: xxx). We have downloaded the data from yyy repository, but wanted to let you know we are using it and to inquire whether there is any additional context we should be aware of or related datasets we should be sure to include. A short description of the synthesis project follows. Please let me know by xxx date if you have any questions or concerns with our use of this data.</p>
+<p>Thank you,</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Sample data author outreach email for unpublished dataset">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Sample data author outreach email for unpublished dataset
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>Dear Dr.&nbsp;Smith,</p>
+<p>I am working on a synthesis of soil inverbrate diversity across North America and would like to include the dataset behind your paper titled {xxx} (doi:{yyy}), which seems highly relevant. Would it be possible to obtain the data? Ideally, we would access it through through a public repository, such as the <a href="https://edirepository.org/">Environmental Data Initiative</a>, which offers assistance in curation and submission of datasets. Either way, we would credit you as the data originator and want you to know we are using it. If there is any additional context we should be aware of or related datasets we should be sure to include, please let us know. A short description of the synthesis project follows.</p>
+<p>Thank you,</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-9-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-1" role="tab" aria-controls="tabset-9-1" aria-selected="true" href=""><strong>Authorship Discussion</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-2" role="tab" aria-controls="tabset-9-2" aria-selected="false" href=""><strong>A Few Considerations</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-9-1-tab">
+<blockquote class="blockquote">
+<p><strong>Should all data contributors be offered authorship? How would you handle a data creator who demanded authorship in order to use their data?</strong></p>
+</blockquote>
+</div>
+<div id="tabset-9-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-2-tab">
+<p>There are no pat answers for this situation, but having agreed-on authorship guidelines is really valuable when it comes up. We’ll cover that in more detail soon, but for now, there are a few questions to ask yourself.</p>
+<ul>
+<li>Are they really committed enough to join the working group and contribute to the papers? If so, it may be a good investment.</li>
+<li>How much work will they need to put in to make the data ready?</li>
+<li>How critical is this particular data source for your analysis?</li>
+<li>You will need to make your derived dataset public. Are they placing conditions on the use of their data that make that impossible?</li>
+</ul>
+</div>
+</div>
+</div>
+<p><strong>Keeping Track of Data</strong></p>
+<p>We’ve pulled together a few of the forms that we have use to keep track of the data that synthesis groups plan to use…</p>
+<p><strong>Sample spreadsheet for initial data surveying</strong></p>
+<iframe width="780" height="540" src="https://docs.google.com/document/d/e/2PACX-1vTPvbh1UOMQBmmk9M1iWKQj7VPwe476nuQgmuDI9hUkHzFH2EikvrxmaO-nC6iO4LOxUMgH-Lp2WYc6/pub?embedded=true" title="Sample spreadsheet for initial data surveying"></iframe>
+<p>Once you get into the details of the process, you’ll want to track some more specific information, but you’ll hear more about that in Module 2.</p>
+<ul>
+<li>URL to the data (and metadata) source</li>
+<li>Sampling location and site (including both coordinates and associated organizations)</li>
+<li>Short Data Description</li>
+<li>Coverage Dates/Frequency</li>
+<li>Filename (as stored on Google Drive or shared file repository)</li>
+<li>URL to Files (cloud drive, website, server; e.g.&nbsp;google drive link)</li>
+<li>Date the data was last accessed / downloaded</li>
+<li>Data Creator/Owner’s Name</li>
+<li>Data Creator/Owner’s Email/contact</li>
+<li>Working group participant who got the data (Name)</li>
+<li>Used in your analysis? (Y/N)</li>
+<li>Any additional notes or decisions about <em>how</em> the data is or will be harmonized and analyzed</li>
+</ul>
+<section id="additional-resources" class="level3">
+<h3 class="anchored" data-anchor-id="additional-resources">Additional Resources</h3>
+<ul>
+<li>Adam, 2023. <a href="https://doi.org/10.1038/d41586-023-03618-x">‘Disruptive’ science: in-person teams make more breakthroughs than remote groups</a></li>
+<li>Aggarwal, I. &amp; Woolley, A.W. (2018) <a href="https://doi.org/10.1287/mnsc.2017.3001">Team Creativity, Cognition, and Cognitive Style Diversity</a>. Management Science 65(4):1586-1599. doi: 10.1287/mnsc.2017.3001</li>
+<li>Bohm, D. On Dialogue. Routledge Classics. <strong>2004</strong>.</li>
+<li>Cheruvelil, K.S. et al.&nbsp;(2014) <a href="https://doi.org/10.1890/130001">Creating and maintaining high-performing collaborative research teams: the importance of diversity and interpersonal skills</a>. doi: 10.1890/130001</li>
+<li>Cheruvelil, K. S., &amp; Soranno, P. A. (2018). <a href="https://doi.org/10.1093/biosci/biy097">Data-Intensive Ecological Research Is Catalyzed by Open Science and Team Science</a>. BioScience, 68(10), 813–822. https://doi.org/10.1093/biosci/biy097</li>
+<li>Cravens, A.E., <em>et al.</em>, <a href="https://doi.org/10.1057/s41599-022-01217-1">Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration</a>. <strong>2022</strong>.</li>
+<li>Gray, D. <em>et al.</em>, Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O’Reilly Media. <strong>2010</strong>.</li>
+<li>Hackett, 2020. <a href="https://doi.org/10.3390/su12229361">Collaboration and Sustainability: Making Science Useful, Making Useful Science</a></li>
+<li>Hampton and Parker, 2011. <a href="https://doi.org/10.1525/bio.2011.61.11.9">Collaboration and Productivity in Scientific Synthesis</a></li>
+<li>Hackett et al., 2021. <a href="https://doi.org/10.1016/j.respol.2020.104069">Do synthesis centers synthesize? A semantic analysis of topical diversity in research</a></li>
+<li>Horowitz, S.K. and Horwitz, I.B. (2007) <a href="https://doi.org/10.1177/0149206307308587">The effects of team diversity on team outcomes: A meta-analytic review of team demography</a>. Journal of Management 33: 987-1015. doi: 10.1177/0149206307308587</li>
+<li>Kaner, S. <a href="https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959">Facilitator’s Guide to Participatory Decision-Making (Revised)</a>. <strong>2014</strong>.</li>
+<li>Kantor, D. Reading the room: Group dynamics for coaches and leaders. John Wiley &amp; Sons. <strong>2012</strong>.</li>
+<li>Khuri et al., <a href="https://collaborativecapacities.com/wp-content/uploads/Inclusive_Practice_Glossary_for_Facilitators-March2024.pdf">Inclusive Practice Glossary for Facilitators</a>. <strong>2024</strong>.</li>
+<li>Lipmanowicz &amp; McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. <strong>2014</strong>.</li>
+<li>Pieterse, A.N et al.&nbsp;(2013) <a href="https://doi.org/10.5465/amj.2010.0992">Cultural Diversity and Team Performance: The Role of Team Member Goal Orientation</a>. doi: 10.5465/amj.2010.0992</li>
+<li>Tarallo, B. &amp; Monlux, M. Surviving the Horror of Online Meetings: How to Facilitate Good Virtual Meetings &amp; Manage Meeting Monsters. <strong>2021</strong>.</li>
+<li>van Knippenberg,D. and Hoever, I.J. (2017) <a href="https://doi.org/10.1093/oso/9780190222093.003.0003">Team Diversity and Team Creativity: A Categorization-Elaboration Perspective</a>. doi: 10.1093/oso/9780190222093.003.0003</li>
+<li>Woodley, L. <em>et al.</em>, <a href="https://doi.org/10.5281/zenodo.4987666">A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events</a>. <strong>2021</strong>.</li>
+<li>Woolley, A. W. et al.&nbsp;(2010). <a href="https://doi.org/10.1126/science.1193147">Evidence for a Collective Intelligence Factor in the Performance of Human Groups</a>. Science, 330(6004), 686–688. doi: 10.1126/science.1193147</li>
+<li>Wyborn et al., 2018. <a href="https://doi.org/10.1016/j.envsci.2018.04.013">Understanding the Impacts of Research Synthesis</a></li>
+</ul>
+</section>
+<section id="websites-and-other-tools" class="level3">
+<h3 class="anchored" data-anchor-id="websites-and-other-tools">Websites and other Tools</h3>
+<ul>
+<li><a href="https://www.nceas.ucsb.edu/working-group-cheat-sheets">NCEAS Cheat Sheets</a></li>
+<li><a href="https://www.liberatingstructures.com/">Liberating Structures: Including and Unleashing Everyone</a></li>
+<li><a href="https://gamestorming.com/">Gamestorming</a></li>
+<li><a href="https://www.inscits.org/scits-a-team-science-resources">SciTS and Team Science Resources</a> compiled by INSciTS, the International Network for the Science of Team Science</li>
+<li><a href="https://coast.noaa.gov/ddb/">Dealing with Disruptive Behaviors in Meetings</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lter\.github\.io\/eco-data-synth-primer\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lter/eco-data-synth-primer/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
