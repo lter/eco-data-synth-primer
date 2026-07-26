@@ -2,18 +2,15 @@
 title: "So You Have an Idea. Now what?"
 ---
 
-
 ## Abstract
 
 The plethora of open data that is now available creates opportunities for important and innovative science through data synthesis. Synthesis science combines data from multiple studies to draw conclusions about broader ecological theory and mechanisms or to extend the range of inference. It often results in higher-impact publications and generates science that is especially valuable in practice and policy. When done well, it’s also really fun! In this workshop, we’ll explore the interactive process of developing a synthesis project idea and building a team that can see it through. In the first portion of the workshop, we’ll cover common team synthesis models and funding sources, as well as the skills that are essential for gathering a team, keeping them on-track, and facilitating generative discussion. In the second half of the workshop, we’ll break into small groups, facilitated by experienced synthesizers, to explore your synthesis ideas and help you develop plans to move them forward. 
 
 Objectives for learners are to
 
-```         
-a. gain team science and project management skills that are needed for synthesis and that are immediately useful in a research team setting,
-b. locate and become familiar with resources to gain the data science skills needed for reproducible synthesis
-c. focus on developing their own synthesis projects, whatever stage they are in, through interaction with instructors and peers.
-```
+1. gain team science and project management skills that are needed for synthesis and that are immediately useful in a research team setting,
+2. locate and become familiar with resources to gain the data science skills needed for reproducible synthesis
+3. focus on developing their own synthesis projects, whatever stage they are in, through interaction with instructors and peers.
 
 ## Code of Conduct
 
