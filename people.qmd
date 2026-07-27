@@ -11,6 +11,11 @@ Instructors and assistants have changed each time the course has run. So far, in
 * Nick Lyon
 * Greg Maurer
 
+## ESA 2026 Facilitators
+
+* Eric Sokol
+* Laura Dee
+
 > ESA 2026 meeting in Salt Lake City, UT.
 
 ## ESA 2025 Instructors
