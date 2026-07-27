@@ -160,6 +160,19 @@ Lots of questions are interesting, but not terribly well-suited for a synthesis 
 - Results could include several kinds of products: papers of various kinds, symposia, datasets, analytical packages
 - Responsive to the funding call!
 
+::: {.callout-tip collapse="false"}
+
+### Be adaptable!
+
+Keep in mind that early synthesis activities like data discovery and harmonization do not always go to plan. Successful synthesis sometimes requires reframing the research questions or approach as the project proceeds. 
+
+For example, if data prove difficult to find or analyze, the group could consider shifting to higher-level research questions and writing papers that:
+
+* update or propose new conceptual models and provide supporting case-studies.
+* serve as a "call to action" regarding new research opportunities or gaps in a field's observational power.
+
+:::
+
 
 ### Examples of Recent Synthesis Groups
 |   |   |
@@ -377,6 +390,15 @@ A few potential uses to discuss:
 - proofing
 
 No matter how extensively the group decides to use AI, there is also a very practical concern about reproducibility. Using AI can dramatically speed data discovery and construction of analytical pipelines, but also presents a strong temptation to just "get it working." Just as you will soon forget why you chose to filter your data in a particular way or chose one analytical technique over another, you will also forget which model and prompts you used, potentially introducing biases that cannot be unwound at a later time.
+
+To provide some minimum attribution and reproducibility for AI use during synthesis projects, have the group document and preserve at least these things:
+
+* What tasks were assigned to AI?
+* What models were used, including provider (OpenAI, Anthropic, etc.), model name, and version?
+* What specific prompts were used?
+* Was other context files were provided to the model (AGENTS.md, skills, knowledge bases, etc.)?
+* What data files were generated or modified with AI assistance?
+* Describe any human verification and error checking of AI-assisted products.
 
 Nick's AI tracking template here?
 
