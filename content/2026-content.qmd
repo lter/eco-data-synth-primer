@@ -393,6 +393,16 @@ A few potential uses to discuss:
 
 No matter how extensively the group decides to use AI, there is also a very practical concern about reproducibility. Using AI can dramatically speed data discovery and construction of analytical pipelines, but also presents a strong temptation to just "get it working." Just as you will soon forget why you chose to filter your data in a particular way or chose one analytical technique over another, you will also forget which model and prompts you used, potentially introducing biases that cannot be unwound at a later time.
 
+:::
+
+::: {.panel-tabset}
+
+## *Discussion: What to report and why*
+
+> What uses of AI seem important to report? Have you already encountered situations where you *wish* you had kept better track of your AI use?
+
+## Some recommendations
+
 To provide some minimum attribution and reproducibility for AI use during synthesis projects, have the group document and preserve at least these things:
 
 * What tasks were assigned to AI?
@@ -402,15 +412,8 @@ To provide some minimum attribution and reproducibility for AI use during synthe
 * What data files were generated or modified with AI assistance?
 * Describe any human verification and error checking of AI-assisted products.
 
-Nick's AI tracking template here?
-
 :::
 
-**References:**
-
-> Pieterse, A.N. et al. (2013). Cultural diversity and team performance: The role of team member goal orientation. *Academy of Management Journal*. <https://doi.org/10.5465/amj.2010.0992>
-
-> van Knippenberg, D. and Hoever, I.J. (2017). Team diversity and team creativity: A categorization-elaboration perspective. <https://doi.org/10.1093/oso/9780190222093.003.0003>
 
 
 ## Make a Plan
