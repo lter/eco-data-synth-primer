@@ -393,6 +393,8 @@ A few potential uses to discuss:
 
 No matter how extensively the group decides to use AI, there is also a very practical concern about reproducibility. Using AI can dramatically speed data discovery and construction of analytical pipelines, but also presents a strong temptation to just "get it working." Just as you will soon forget why you chose to filter your data in a particular way or chose one analytical technique over another, you will also forget which model and prompts you used, potentially introducing biases that cannot be unwound at a later time.
 
+The LTER Network has developed a [template AI use tracker](https://docs.google.com/spreadsheets/d/1HI4sJw3UiKjNFhL8GZai5wlJGoxAdAiNKqT7xLd5FXY/edit?gid=0#gid=0) that may serve as a useful starting point for _recording_ how your group uses AI. Note that this should be used **after your group has already agreed on _how_ to use AI tools!**
+
 :::
 
 ::: {.panel-tabset}
