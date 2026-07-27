@@ -434,59 +434,119 @@ See the sub-sections below for some especially critical elements to consider as 
 
 ### How Will You Get (and Stay) Organized?
 
-Two critical elements of oragnization are (1) the folder structure on your computer of project files and (2) how you will informatively name files so their purpose is immediately apparent. Also, **it is easier to _start_ organized than it is to _get_ organized**, so implementing a system at the start of your project and sticking to it will be much easier than trying to re-organize months or years worth of work after the fact.
+Project organization is one of those topics that is--maybe--not exciting but is absolutely _critical_ to the success of synthesis working groups. In individual projects conducted over short timescales, an absence of an overarching strategy for organization can be survivable but in a project that will last for several years and will have many actively contributing colleagues this lack quickly becomes an insurmountable hurdle. Also, **it is easier to _start_ organized than it is to _get_ organized**, so implementing a system at the start of your project and sticking to it will be much easier than trying to re-organize months or years worth of work after the fact.
 
-While there is no "one size fits all" solution to project organization, we recommend something like the following:
+### When Should We Plan?
+
+**It is never too early to draft your organization plan!** The longer you wait to discuss an organization strategy and decide on a system the worse it will be to go back and retroactively sort the content your group has produced into the structure you agree upon. If you make a plan early on it should be clear where a given file should 'live' as it is created which completely removes the labor-intensive reorganization that is inherent to organizing plans made later in a project's lifecycle.
+
+### Broad Considerations
+
+There is no single "best" mode of organizing a project. However, there are some decision points that most groups consider even if not all groups reach the same conclusions at those junctures. Here are some guiding questions that might prove helpful as your group discusses your organizing plan:
+
+- **What "modules" or "silos" are likely to be necessary for your project?**
+    - Semi-discrete subcomponents of the project are likely to exist and should (probably) be separated into different folders
+    - For example, groups almost always have at least the following four major folders: "data", "notes", "publications", and "presentations"
+- **What level of organization can your group _easily_ maintain for 2-4 years?**
+    - Ideally your chosen structure will require little to no maintenance after it is initially set-up
+- **How hard will it be to onboard new members to navigate your chosen system?**
+    - Your group will likely need to onboard new members and if they don't know where they should add their contributions they may add files in incorrect places or refrain from contributing at all--either outcome would be a sad loss for your group
+    - Note this question also applies to 'future you' if you focus on other work for a time and then need to remind yourself how to navigate this project
+
+### LTER Recommendation Example
+
+While there is no "one size fits all" solution, **our team has identified a structure that has worked quite well for past groups because it is relatively simple to maintain and easily extensible as project questions evolve.** In addition, it avoids an overly nested folder structure which makes it easier for new members (or 'future you') to become familiar with the overall schema.
+
+Top-level folders are colored <span style="color:#209ACA">**blue**</span> so that the high-level structure is easier to quickly scan.
 
 ::::{.columns}
-:::{.column width="55%"}
+:::{.column width="50%"}
+### Google Drive Structure
 
-Key properties of this structure:
+<div style="font-family: monospace;">
 
-- Everything nested within a project-wide folder
+{{< fa brands google-drive >}} **Shared Drive**  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **data**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-csv >}} data-log.csv  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa folder >}} raw  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa folder >}} tidy  
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-csv >}} 01_data-harmonized.csv  
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-csv >}} 02_data-wrangled.csv  
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;└ - {{< fa file-csv >}} 03_data-filtered.csv  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa folder >}} climate  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa folder >}} land-cover  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **notes**</span>   
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **presentations**</span>  
+└ - <span style="color:#209ACA">{{< fa folder >}} **publications**</span>   
+&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa folder >}} community-composition  
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa folder >}} data     
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;└ - {{< fa folder >}} graphs   
+&nbsp;&nbsp;&nbsp;&nbsp;└ - {{< fa folder >}} synchrony  
+</div>
+
+:::
+:::{.column width="50%"}
+### GitHub Structure
+
+<div style="font-family: monospace;">
+{{< fa brands github >}} **GitHub Repository**  
+|--&nbsp; {{< fa file-lines >}} README.md  
+|--&nbsp; {{< fa file-lines >}} .gitignore  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **scripts**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} 00_download-data.R  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} 01_harmonize.R  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} 02_quality-control.R  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} 03_filter.R  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} 04_stats.R  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-code >}} 05_graph.R  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **tools**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-lines >}} README.md  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} fxn_calc-beta-diversity.R  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-code >}} fxn_bookmark-graph.R   
+└ - <span style="color:#209ACA">{{< fa folder >}} **explore**</span>  
+&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-lines >}} README.md  
+&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} downs-stats.py  
+&nbsp;&nbsp;&nbsp;&nbsp;└ - {{< fa file-code >}} lyon-graphs.R  
+</div>
+:::
+::::
+
+Check out the tabs below for highlights of these structures!
+
+:::{.panel-tabset}
+### **_Both!_**
+
 - _Limited_ use of sub-folders
-- Dedicated "README" files containing high-level information about each folder
 - Consistent folder/file naming conventions
-   - Good names should be be both human and machine-readable (and sorted in the same way by machines and people)
+   - Good names should be be both human and machine-readable
    - Avoid spaces and special characters
    - Consistent use of delimeters (e.g., "-", "_", etc.)
 - Shared file prefix (a.k.a. "slug") connecting code files with files they create
     - Allows for easy tracing of errors because the file with issues has an explicit tie to the script that likely introduced that error
-- Includes a "data log" (a.k.a. "data inventory") for documenting data sources and critical information about each
-    - E.g., dataset identifiers/DOIs, search terms used in data repository, provenance, spatiotemporal extent and granularity, etc.)
+
+### {{< fa brands google-drive >}} Google Drive-Specific
+
+- **Contains inputs to code and outputs from code but _not_ code itself**
+    - Trust that GitHub does a better job of tracking code files than Drive can
+    - Also remember that duplicating code files and storing them in multiple places is a recipe for heartache as there is no "single source of truth" upon which to depend
+- Dedicated place for notes / presentations
+- Shared `data/` folder agnostic to specific product
+    - Will let your group start with the same data product for each paper (just filtered/analyzed differently for each product)
+
+### {{< fa brands github >}} GitHub-Specific
+
+- **Contains code but _not_ inputs/outputs**
+     - Use the `.gitignore` file to regulate what Git will/won't track (for more info, see [here](https://lter.github.io/workshop-github/git_ignore.html))
+- Dedicated "README" files containing high-level information about each folder
+- Numbered script names making workflow order explicit
+- Use of custom functions for repeated operations
+    - This is a great way of ensuring reproducibility--and if you create enough functions, a software package might be a nice 'bonus' product for your group!
+- `explore/` folder for 'rough draft' scripts developed by particular members
+    - Including this can be a great way of making everyone feel more comfortable contributing--even if they are not completely confident in their coding skills
+    - Including surnames in file names here can be a nice way of avoiding merge conflicts
+    - You can always rename these files and move them to the `scripts/` folder if they seem valuable for the core workflow!
 
 :::
-:::{.column width="5%"}
-
-:::
-:::{.column width="40%"}
-:::{style="font-size:0.9em;"}
-
-_Suggested Project Structure:_
-
-{{< fa folder >}} synthesis_project  
-&nbsp;|--&nbsp;{{< fa file-lines >}} README.md  
-&nbsp;|--&nbsp;{{< fa folder >}} code  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-lines >}} README.md  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} 01_harmonize.R  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa file-code >}} 02_quality-control.R  
-&nbsp;|--&nbsp;{{< fa folder >}} data  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-lines >}} README.md  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} data-log.csv  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa folder >}} raw  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa folder >}} tidy  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} 01_data-harmonized.csv  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa file-csv >}} 02_data-wrangled.csv  
-&nbsp;|--&nbsp;{{< fa folder >}} notes   
-&nbsp;|--&nbsp;{{< fa folder >}} presentations  
-&nbsp;&nbsp;L&nbsp; {{< fa folder >}} publications   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-lines >}} README.md  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa folder >}} community-composition  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa folder >}} biogeochemistry  
-
-:::
-:::
-::::
 
 :::{.callout-warning icon="false"}
 #### Activity: Organization
